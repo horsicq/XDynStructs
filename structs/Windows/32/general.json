@@ -1,0 +1,10 @@
+[
+{
+    "name":"char",
+    "size":1
+},
+{
+    "name":"long",
+    "size":4
+}
+]
