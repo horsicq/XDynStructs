@@ -1,0 +1,15 @@
+struct _LOG_HANDLE_CONTEXT// Size=0x80
+{
+    void * LogHandle;// Offset=0x0 Size=0x8
+    void  ( * FlushToLsnRoutine)(void * ,union _LARGE_INTEGER );// Offset=0x8 Size=0x8
+    void  ( * QueryLogHandleInfoRoutine)(void * ,unsigned short * );// Offset=0x10 Size=0x8
+    struct _DIRTY_PAGE_STATISTICS DirtyPageStatistics;// Offset=0x18 Size=0x18
+    struct _DIRTY_PAGE_THRESHOLDS DirtyPageThresholds;// Offset=0x30 Size=0x20
+    unsigned long AdditionalPagesToWrite;// Offset=0x50 Size=0x4
+    unsigned long CcLWScanDPThreshold;// Offset=0x54 Size=0x4
+    union _LARGE_INTEGER LargestLsnForCurrentLWScan;// Offset=0x58 Size=0x8
+    struct _FILE_OBJECT * RelatedFileObject;// Offset=0x60 Size=0x8
+    unsigned long long LargestLsnFileObjectKey;// Offset=0x68 Size=0x8
+    union _LARGE_INTEGER LastLWTimeStamp;// Offset=0x70 Size=0x8
+    unsigned long Flags;// Offset=0x78 Size=0x4
+};

@@ -1,0 +1,7 @@
+struct _PNP_RESERVED_PROVIDER_INFO// Size=0x38
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x10
+    struct _LIST_ENTRY DependentList;// Offset=0x10 Size=0x10
+    struct _UNICODE_STRING ReservationId;// Offset=0x20 Size=0x10
+    long ReferenceCount;// Offset=0x30 Size=0x4
+};

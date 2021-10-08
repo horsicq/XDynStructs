@@ -1,0 +1,9 @@
+struct tagSWITCH_CONTEXT_DATA// Size=0x40
+{
+    struct _GUID guPlatform;// Offset=0x0 Size=0x10
+    struct _GUID guMinPlatform;// Offset=0x10 Size=0x10
+    unsigned long ulElementCount;// Offset=0x20 Size=0x4
+    unsigned short ulContextMinimum;// Offset=0x24 Size=0x2
+    unsigned long long ullOsMaxVersionTested;// Offset=0x28 Size=0x8
+    struct _GUID guElements[1];// Offset=0x30 Size=0x10
+};

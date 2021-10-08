@@ -1,0 +1,5 @@
+struct _DUMMY_FILE_OBJECT// Size=0x110
+{
+    struct _OBJECT_HEADER ObjectHeader;// Offset=0x0 Size=0x38
+    char FileObjectBody[216];// Offset=0x38 Size=0xd8
+};

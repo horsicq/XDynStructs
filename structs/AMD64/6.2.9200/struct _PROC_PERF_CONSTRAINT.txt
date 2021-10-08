@@ -1,0 +1,18 @@
+struct _PROC_PERF_CONSTRAINT// Size=0x58
+{
+    struct _KPRCB * Prcb;// Offset=0x0 Size=0x8
+    unsigned long long PerfContext;// Offset=0x8 Size=0x8
+    unsigned long PlatformCap;// Offset=0x10 Size=0x4
+    unsigned long ThermalCap;// Offset=0x14 Size=0x4
+    unsigned long LimitReasons;// Offset=0x18 Size=0x4
+    unsigned long long PlatformCapStartTime;// Offset=0x20 Size=0x8
+    unsigned long TargetPercent;// Offset=0x28 Size=0x4
+    unsigned long DesiredPercent;// Offset=0x2c Size=0x4
+    unsigned long SelectedPercent;// Offset=0x30 Size=0x4
+    unsigned long SelectedFrequency;// Offset=0x34 Size=0x4
+    unsigned long PreviousFrequency;// Offset=0x38 Size=0x4
+    unsigned long PreviousPercent;// Offset=0x3c Size=0x4
+    unsigned long LatestFrequencyPercent;// Offset=0x40 Size=0x4
+    unsigned long long SelectedState;// Offset=0x48 Size=0x8
+    unsigned char Force;// Offset=0x50 Size=0x1
+};

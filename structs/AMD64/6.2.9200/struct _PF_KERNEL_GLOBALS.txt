@@ -1,0 +1,11 @@
+struct _PF_KERNEL_GLOBALS// Size=0x60
+{
+    unsigned long long AccessBufferAgeThreshold;// Offset=0x0 Size=0x8
+    struct _EX_RUNDOWN_REF AccessBufferRef;// Offset=0x8 Size=0x8
+    struct _KEVENT AccessBufferExistsEvent;// Offset=0x10 Size=0x18
+    unsigned long AccessBufferMax;// Offset=0x28 Size=0x4
+    union _SLIST_HEADER AccessBufferList;// Offset=0x40 Size=0x10
+    long StreamSequenceNumber;// Offset=0x50 Size=0x4
+    unsigned long Flags;// Offset=0x54 Size=0x4
+    long ScenarioPrefetchCount;// Offset=0x58 Size=0x4
+};

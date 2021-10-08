@@ -1,0 +1,11 @@
+struct _MMVAD_SHORT// Size=0x40
+{
+    struct _MM_AVL_NODE VadNode;// Offset=0x0 Size=0x18
+    unsigned long StartingVpn;// Offset=0x18 Size=0x4
+    unsigned long EndingVpn;// Offset=0x1c Size=0x4
+    struct _EX_PUSH_LOCK PushLock;// Offset=0x20 Size=0x8
+    union <unnamed-tag> u;// Offset=0x28 Size=0x4
+    union <unnamed-tag> u1;// Offset=0x2c Size=0x4
+    struct _MI_VAD_EVENT_BLOCK * EventList;// Offset=0x30 Size=0x8
+    long ReferenceCount;// Offset=0x38 Size=0x4
+};

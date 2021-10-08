@@ -1,0 +1,8 @@
+struct _MM_PAGED_POOL_INFO// Size=0x60
+{
+    struct _FAST_MUTEX Mutex;// Offset=0x0 Size=0x38
+    struct _RTL_BITMAP PagedPoolAllocationMap;// Offset=0x38 Size=0x10
+    struct _MMPTE * FirstPteForPagedPool;// Offset=0x48 Size=0x8
+    unsigned long PagedPoolHint;// Offset=0x50 Size=0x4
+    unsigned long long AllocatedPagedPool;// Offset=0x58 Size=0x8
+};

@@ -1,0 +1,28 @@
+struct _PPM_IDLE_STATES// Size=0x2d8
+{
+    unsigned char ForceIdle;// Offset=0x0 Size=0x1
+    unsigned char EstimateIdleDuration;// Offset=0x1 Size=0x1
+    unsigned char ExitLatencyTraceEnabled;// Offset=0x2 Size=0x1
+    unsigned long ExitLatencyCountdown;// Offset=0x4 Size=0x4
+    unsigned long TargetState;// Offset=0x8 Size=0x4
+    unsigned long ActualState;// Offset=0xc Size=0x4
+    unsigned long ActualPlatformState;// Offset=0x10 Size=0x4
+    unsigned long OldState;// Offset=0x14 Size=0x4
+    unsigned long OverrideIndex;// Offset=0x18 Size=0x4
+    unsigned long PlatformIdleCount;// Offset=0x1c Size=0x4
+    unsigned long ProcessorIdleCount;// Offset=0x20 Size=0x4
+    unsigned long Type;// Offset=0x24 Size=0x4
+    unsigned long ReasonFlags;// Offset=0x28 Size=0x4
+    long long InitiateWakeStamp;// Offset=0x30 Size=0x8
+    long PreviousStatus;// Offset=0x38 Size=0x4
+    struct _KAFFINITY_EX PrimaryProcessorMask;// Offset=0x40 Size=0xa8
+    struct _KAFFINITY_EX SecondaryProcessorMask;// Offset=0xe8 Size=0xa8
+    void  ( * IdlePrepare)(struct _PROCESSOR_IDLE_PREPARE_INFO * );// Offset=0x190 Size=0x8
+    long  ( * IdleExecute)(void * );// Offset=0x198 Size=0x8
+    void  ( * IdleComplete)(void * );// Offset=0x1a0 Size=0x8
+    void  ( * IdleCancel)(void * ,unsigned long );// Offset=0x1a8 Size=0x8
+    unsigned char  ( * IdleIsHalted)(void * );// Offset=0x1b0 Size=0x8
+    unsigned char  ( * IdleInitiateWake)(void * );// Offset=0x1b8 Size=0x8
+    struct _PROCESSOR_IDLE_PREPARE_INFO PrepareInfo;// Offset=0x1c0 Size=0x58
+    struct _PPM_IDLE_STATE State[1];// Offset=0x218 Size=0xc0
+};

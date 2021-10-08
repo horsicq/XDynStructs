@@ -1,0 +1,4 @@
+struct _ARBITER_PARAMETERS// Size=0x20
+{
+    union <unnamed-tag> Parameters;// Offset=0x0 Size=0x20
+};

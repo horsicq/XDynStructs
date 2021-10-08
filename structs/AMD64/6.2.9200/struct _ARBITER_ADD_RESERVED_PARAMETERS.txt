@@ -1,0 +1,4 @@
+struct _ARBITER_ADD_RESERVED_PARAMETERS// Size=0x8
+{
+    struct _DEVICE_OBJECT * ReserveDevice;// Offset=0x0 Size=0x8
+};

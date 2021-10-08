@@ -1,0 +1,7 @@
+struct _POP_CURRENT_BROADCAST// Size=0x18
+{
+    unsigned char InProgress;// Offset=0x0 Size=0x1
+    struct _SYSTEM_POWER_STATE_CONTEXT SystemContext;// Offset=0x4 Size=0x4
+    enum POWER_ACTION PowerAction;// Offset=0x8 Size=0x4
+    struct _POP_DEVICE_SYS_STATE * DeviceState;// Offset=0x10 Size=0x8
+};

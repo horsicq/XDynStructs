@@ -1,0 +1,11 @@
+struct _PNP_DEVICE_COMPLETION_REQUEST// Size=0x40
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x10
+    struct _DEVICE_NODE * DeviceNode;// Offset=0x10 Size=0x8
+    void * Context;// Offset=0x18 Size=0x8
+    enum _PNP_DEVNODE_STATE CompletionState;// Offset=0x20 Size=0x4
+    unsigned long IrpPended;// Offset=0x24 Size=0x4
+    long Status;// Offset=0x28 Size=0x4
+    void * Information;// Offset=0x30 Size=0x8
+    long ReferenceCount;// Offset=0x38 Size=0x4
+};

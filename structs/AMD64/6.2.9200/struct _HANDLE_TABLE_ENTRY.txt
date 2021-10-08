@@ -1,0 +1,16 @@
+struct _HANDLE_TABLE_ENTRY// Size=0x10
+{
+    long long VolatileLowValue;// Offset=0x0 Size=0x8
+    long long LowValue;// Offset=0x0 Size=0x8
+    struct _HANDLE_TABLE_ENTRY_INFO * InfoTable;// Offset=0x0 Size=0x8
+    unsigned long long Unlocked:1;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x1
+    unsigned long long RefCnt:19;// Offset=0x0 Size=0x8 BitOffset=0x1 BitSize=0x13
+    unsigned long long Attributes:3;// Offset=0x0 Size=0x8 BitOffset=0x14 BitSize=0x3
+    unsigned long long ObjectPointerBits:41;// Offset=0x0 Size=0x8 BitOffset=0x17 BitSize=0x29
+    long long HighValue;// Offset=0x8 Size=0x8
+    struct _HANDLE_TABLE_ENTRY * NextFreeHandleEntry;// Offset=0x8 Size=0x8
+    struct _EXHANDLE LeafHandleValue;// Offset=0x8 Size=0x8
+    unsigned long GrantedAccessBits:25;// Offset=0x8 Size=0x4 BitOffset=0x0 BitSize=0x19
+    unsigned long Spare:7;// Offset=0x8 Size=0x4 BitOffset=0x19 BitSize=0x7
+    unsigned long TypeInfo;// Offset=0xc Size=0x4
+};

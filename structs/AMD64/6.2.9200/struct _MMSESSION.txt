@@ -1,0 +1,10 @@
+struct _MMSESSION// Size=0x58
+{
+    struct _FAST_MUTEX SystemSpaceViewLock;// Offset=0x0 Size=0x38
+    struct _FAST_MUTEX * SystemSpaceViewLockPointer;// Offset=0x38 Size=0x8
+    struct _MMVIEW * SystemSpaceViewTable;// Offset=0x40 Size=0x8
+    unsigned long SystemSpaceHashSize;// Offset=0x48 Size=0x4
+    unsigned long SystemSpaceHashEntries;// Offset=0x4c Size=0x4
+    unsigned long SystemSpaceHashKey;// Offset=0x50 Size=0x4
+    unsigned long BitmapFailures;// Offset=0x54 Size=0x4
+};

@@ -1,0 +1,21 @@
+struct _UMS_CONTROL_BLOCK// Size=0x90
+{
+    struct _RTL_UMS_CONTEXT * UmsContext;// Offset=0x0 Size=0x8
+    struct _SINGLE_LIST_ENTRY * CompletionListEntry;// Offset=0x8 Size=0x8
+    struct _KEVENT * CompletionListEvent;// Offset=0x10 Size=0x8
+    unsigned long ServiceSequenceNumber;// Offset=0x18 Size=0x4
+    struct _KQUEUE UmsQueue;// Offset=0x20 Size=0x40
+    struct _LIST_ENTRY QueueEntry;// Offset=0x60 Size=0x10
+    struct _RTL_UMS_CONTEXT * YieldingUmsContext;// Offset=0x70 Size=0x8
+    void * YieldingParam;// Offset=0x78 Size=0x8
+    void * UmsTeb;// Offset=0x80 Size=0x8
+    struct _KQUEUE * UmsAssociatedQueue;// Offset=0x20 Size=0x8
+    struct _LIST_ENTRY * UmsQueueListEntry;// Offset=0x28 Size=0x8
+    struct _KEVENT UmsWaitEvent;// Offset=0x30 Size=0x18
+    void * StagingArea;// Offset=0x48 Size=0x8
+    unsigned long UmsPrimaryDeliveredContext:1;// Offset=0x50 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long UmsAssociatedQueueUsed:1;// Offset=0x50 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long UmsThreadParked:1;// Offset=0x50 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long UmsFlags;// Offset=0x50 Size=0x4
+    unsigned short TebSelector;// Offset=0x88 Size=0x2
+};

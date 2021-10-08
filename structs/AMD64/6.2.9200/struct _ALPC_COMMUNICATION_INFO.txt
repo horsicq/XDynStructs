@@ -1,0 +1,8 @@
+struct _ALPC_COMMUNICATION_INFO// Size=0x40
+{
+    struct _ALPC_PORT * ConnectionPort;// Offset=0x0 Size=0x8
+    struct _ALPC_PORT * ServerCommunicationPort;// Offset=0x8 Size=0x8
+    struct _ALPC_PORT * ClientCommunicationPort;// Offset=0x10 Size=0x8
+    struct _LIST_ENTRY CommunicationList;// Offset=0x18 Size=0x10
+    struct _ALPC_HANDLE_TABLE HandleTable;// Offset=0x28 Size=0x18
+};

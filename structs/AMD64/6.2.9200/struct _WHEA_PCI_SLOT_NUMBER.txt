@@ -1,0 +1,4 @@
+struct _WHEA_PCI_SLOT_NUMBER// Size=0x4
+{
+    union <unnamed-tag> u;// Offset=0x0 Size=0x4
+};

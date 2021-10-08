@@ -1,0 +1,16 @@
+struct _MMSUPPORT_FLAGS// Size=0x4
+{
+    unsigned char WorkingSetType:3;// Offset=0x0 Size=0x1 BitOffset=0x0 BitSize=0x3
+    unsigned char ForceCredits:3;// Offset=0x0 Size=0x1 BitOffset=0x3 BitSize=0x3
+    unsigned char MaximumWorkingSetHard:1;// Offset=0x0 Size=0x1 BitOffset=0x6 BitSize=0x1
+    unsigned char MinimumWorkingSetHard:1;// Offset=0x0 Size=0x1 BitOffset=0x7 BitSize=0x1
+    unsigned char SessionMaster:1;// Offset=0x1 Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char TrimmerState:2;// Offset=0x1 Size=0x1 BitOffset=0x1 BitSize=0x2
+    unsigned char Reserved:1;// Offset=0x1 Size=0x1 BitOffset=0x3 BitSize=0x1
+    unsigned char PageStealers:4;// Offset=0x1 Size=0x1 BitOffset=0x4 BitSize=0x4
+    unsigned char MemoryPriority:8;// Offset=0x2 Size=0x1 BitOffset=0x0 BitSize=0x8
+    unsigned char WsleDeleted:1;// Offset=0x3 Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char VmExiting:1;// Offset=0x3 Size=0x1 BitOffset=0x1 BitSize=0x1
+    unsigned char ExpansionFailed:1;// Offset=0x3 Size=0x1 BitOffset=0x2 BitSize=0x1
+    unsigned char Available:5;// Offset=0x3 Size=0x1 BitOffset=0x3 BitSize=0x5
+};

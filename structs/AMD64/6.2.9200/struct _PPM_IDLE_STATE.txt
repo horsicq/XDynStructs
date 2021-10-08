@@ -1,0 +1,12 @@
+struct _PPM_IDLE_STATE// Size=0xc0
+{
+    struct _KAFFINITY_EX DomainMembers;// Offset=0x0 Size=0xa8
+    unsigned long Latency;// Offset=0xa8 Size=0x4
+    unsigned long Power;// Offset=0xac Size=0x4
+    unsigned long StateFlags;// Offset=0xb0 Size=0x4
+    unsigned char StateType;// Offset=0xb4 Size=0x1
+    unsigned char InterruptsEnabled;// Offset=0xb5 Size=0x1
+    unsigned char Interruptible;// Offset=0xb6 Size=0x1
+    unsigned char ContextRetained;// Offset=0xb7 Size=0x1
+    unsigned char CacheCoherent;// Offset=0xb8 Size=0x1
+};

@@ -1,0 +1,16 @@
+struct _PROC_FEEDBACK// Size=0x70
+{
+    unsigned long long Lock;// Offset=0x0 Size=0x8
+    unsigned long long CyclesLast;// Offset=0x8 Size=0x8
+    unsigned long long CyclesActive;// Offset=0x10 Size=0x8
+    struct _PROC_FEEDBACK_COUNTER * Counters[2];// Offset=0x18 Size=0x10
+    unsigned long long LastUpdateTime;// Offset=0x28 Size=0x8
+    unsigned long long UnscaledTime;// Offset=0x30 Size=0x8
+    long long UnaccountedTime;// Offset=0x38 Size=0x8
+    unsigned long long ScaledTime[2];// Offset=0x40 Size=0x10
+    unsigned long long UnaccountedKernelTime;// Offset=0x50 Size=0x8
+    unsigned long long PerformanceScaledKernelTime;// Offset=0x58 Size=0x8
+    unsigned long UserTimeLast;// Offset=0x60 Size=0x4
+    unsigned long KernelTimeLast;// Offset=0x64 Size=0x4
+    unsigned char KernelTimesIndex;// Offset=0x68 Size=0x1
+};

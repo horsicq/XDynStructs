@@ -1,0 +1,17 @@
+struct _CONTROL_AREA// Size=0x70
+{
+    struct _SEGMENT * Segment;// Offset=0x0 Size=0x8
+    struct _LIST_ENTRY ListHead;// Offset=0x8 Size=0x10
+    unsigned long long NumberOfSectionReferences;// Offset=0x18 Size=0x8
+    unsigned long long NumberOfPfnReferences;// Offset=0x20 Size=0x8
+    unsigned long long NumberOfMappedViews;// Offset=0x28 Size=0x8
+    unsigned long long NumberOfUserReferences;// Offset=0x30 Size=0x8
+    union <unnamed-tag> u;// Offset=0x38 Size=0x4
+    unsigned long FlushInProgressCount;// Offset=0x3c Size=0x4
+    struct _EX_FAST_REF FilePointer;// Offset=0x40 Size=0x8
+    long ControlAreaLock;// Offset=0x48 Size=0x4
+    unsigned long ModifiedWriteCount;// Offset=0x4c Size=0x4
+    struct _MI_CONTROL_AREA_WAIT_BLOCK * WaitList;// Offset=0x50 Size=0x8
+    union <unnamed-tag> u2;// Offset=0x58 Size=0x10
+    unsigned long long LockedPages;// Offset=0x68 Size=0x8
+};
