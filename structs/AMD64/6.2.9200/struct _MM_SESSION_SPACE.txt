@@ -1,7 +1,7 @@
 struct _MM_SESSION_SPACE// Size=0x1f80
 {
     long ReferenceCount;// Offset=0x0 Size=0x4
-    union <unnamed-tag> u;// Offset=0x4 Size=0x4
+    union _unnamed_860 u;// Offset=0x4 Size=0x4
     unsigned long SessionId;// Offset=0x8 Size=0x4
     long ProcessReferenceToSession;// Offset=0xc Size=0x4
     struct _LIST_ENTRY ProcessList;// Offset=0x10 Size=0x10

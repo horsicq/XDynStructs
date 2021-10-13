@@ -21,7 +21,7 @@ struct _DUMP_INITIALIZATION_CONTEXT// Size=0x108
     void * TargetAddress;// Offset=0x78 Size=0x8
     long  ( * WritePendingRoutine)(long ,union _LARGE_INTEGER * ,struct _MDL * ,void * );// Offset=0x80 Size=0x8
     unsigned long PartitionStyle;// Offset=0x88 Size=0x4
-    union <unnamed-tag> DiskInfo;// Offset=0x8c Size=0x10
+    union _unnamed_1140 DiskInfo;// Offset=0x8c Size=0x10
     long  ( * ReadRoutine)(long ,union _LARGE_INTEGER * ,struct _MDL * );// Offset=0xa0 Size=0x8
     long  ( * GetDriveTelemetryRoutine)(unsigned long ,unsigned long ,void * ,unsigned long );// Offset=0xa8 Size=0x8
     unsigned long LogSectionTruncateSize;// Offset=0xb0 Size=0x4

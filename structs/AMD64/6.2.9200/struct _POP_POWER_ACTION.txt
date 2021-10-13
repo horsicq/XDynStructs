@@ -21,6 +21,6 @@ struct _POP_POWER_ACTION// Size=0xe0
     unsigned long long WakeTime;// Offset=0x48 Size=0x8
     unsigned long long SleepTime;// Offset=0x50 Size=0x8
     enum SYSTEM_POWER_CONDITION WakeAlarmSignaled;// Offset=0x58 Size=0x4
-    struct <unnamed-tag> WakeAlarm[3];// Offset=0x60 Size=0x30
+    struct _unnamed_816 WakeAlarm[3];// Offset=0x60 Size=0x30
     struct SYSTEM_POWER_CAPABILITIES FilteredCapabilities;// Offset=0x90 Size=0x4c
 };

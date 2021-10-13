@@ -7,7 +7,7 @@ struct _TP_CALLBACK_ENVIRON_V3// Size=0x48
     void * RaceDll;// Offset=0x20 Size=0x8
     struct _ACTIVATION_CONTEXT * ActivationContext;// Offset=0x28 Size=0x8
     void  ( * FinalizationCallback)(struct _TP_CALLBACK_INSTANCE * ,void * );// Offset=0x30 Size=0x8
-    union <unnamed-tag> u;// Offset=0x38 Size=0x4
+    union _unnamed_17 u;// Offset=0x38 Size=0x4
     enum _TP_CALLBACK_PRIORITY CallbackPriority;// Offset=0x3c Size=0x4
     unsigned long Size;// Offset=0x40 Size=0x4
 };

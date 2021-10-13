@@ -8,7 +8,7 @@ struct _KALPC_VIEW// Size=0x60
     unsigned long long Size;// Offset=0x30 Size=0x8
     void * SecureViewHandle;// Offset=0x38 Size=0x8
     void * WriteAccessHandle;// Offset=0x40 Size=0x8
-    union <unnamed-tag> u1;// Offset=0x48 Size=0x4
+    union _unnamed_348 u1;// Offset=0x48 Size=0x4
     unsigned long NumberOfOwnerMessages;// Offset=0x4c Size=0x4
     struct _LIST_ENTRY ProcessViewListEntry;// Offset=0x50 Size=0x10
 };

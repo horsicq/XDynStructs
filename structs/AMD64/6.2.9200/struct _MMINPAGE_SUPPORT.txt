@@ -11,8 +11,8 @@ struct _MMINPAGE_SUPPORT// Size=0x178
     struct _MMPFN * LockedProtoPfn;// Offset=0x78 Size=0x8
     long WaitCount;// Offset=0x80 Size=0x4
     unsigned long ByteCount;// Offset=0x84 Size=0x4
-    union <unnamed-tag> u3;// Offset=0x88 Size=0x4
-    union <unnamed-tag> u1;// Offset=0x8c Size=0x4
+    union _unnamed_1162 u3;// Offset=0x88 Size=0x4
+    union _unnamed_1163 u1;// Offset=0x8c Size=0x4
     struct _FILE_OBJECT * FilePointer;// Offset=0x90 Size=0x8
     struct _CONTROL_AREA * ControlArea;// Offset=0x98 Size=0x8
     void * FaultingAddress;// Offset=0xa0 Size=0x8

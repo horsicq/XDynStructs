@@ -1,7 +1,7 @@
 struct _PORT_MESSAGE// Size=0x28
 {
-    union <unnamed-tag> u1;// Offset=0x0 Size=0x4
-    union <unnamed-tag> u2;// Offset=0x4 Size=0x4
+    union _unnamed_330 u1;// Offset=0x0 Size=0x4
+    union _unnamed_332 u2;// Offset=0x4 Size=0x4
     struct _CLIENT_ID ClientId;// Offset=0x8 Size=0x10
     float DoNotUseThisField;// Offset=0x8 Size=0x8
     unsigned long MessageId;// Offset=0x18 Size=0x4

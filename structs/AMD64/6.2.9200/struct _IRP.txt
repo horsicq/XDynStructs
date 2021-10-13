@@ -6,7 +6,7 @@ struct _IRP// Size=0xd0
     unsigned short Reserved;// Offset=0x6 Size=0x2
     struct _MDL * MdlAddress;// Offset=0x8 Size=0x8
     unsigned long Flags;// Offset=0x10 Size=0x4
-    union <unnamed-tag> AssociatedIrp;// Offset=0x18 Size=0x8
+    union _unnamed_92 AssociatedIrp;// Offset=0x18 Size=0x8
     struct _LIST_ENTRY ThreadListEntry;// Offset=0x20 Size=0x10
     struct _IO_STATUS_BLOCK IoStatus;// Offset=0x30 Size=0x10
     char RequestorMode;// Offset=0x40 Size=0x1
@@ -19,8 +19,8 @@ struct _IRP// Size=0xd0
     unsigned char AllocationFlags;// Offset=0x47 Size=0x1
     struct _IO_STATUS_BLOCK * UserIosb;// Offset=0x48 Size=0x8
     struct _KEVENT * UserEvent;// Offset=0x50 Size=0x8
-    union <unnamed-tag> Overlay;// Offset=0x58 Size=0x10
+    union _unnamed_94 Overlay;// Offset=0x58 Size=0x10
     void  ( * CancelRoutine)(struct _DEVICE_OBJECT * ,struct _IRP * );// Offset=0x68 Size=0x8
     void * UserBuffer;// Offset=0x70 Size=0x8
-    union <unnamed-tag> Tail;// Offset=0x78 Size=0x58
+    union _unnamed_96 Tail;// Offset=0x78 Size=0x58
 };

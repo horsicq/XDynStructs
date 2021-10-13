@@ -2,8 +2,8 @@ struct _RTLP_RANGE_LIST_ENTRY// Size=0x38
 {
     unsigned long long Start;// Offset=0x0 Size=0x8
     unsigned long long End;// Offset=0x8 Size=0x8
-    struct <unnamed-tag> Allocated;// Offset=0x10 Size=0x10
-    struct <unnamed-tag> Merged;// Offset=0x10 Size=0x10
+    struct _unnamed_918 Allocated;// Offset=0x10 Size=0x10
+    struct _unnamed_919 Merged;// Offset=0x10 Size=0x10
     unsigned char Attributes;// Offset=0x20 Size=0x1
     unsigned char PublicFlags;// Offset=0x21 Size=0x1
     unsigned short PrivateFlags;// Offset=0x22 Size=0x2

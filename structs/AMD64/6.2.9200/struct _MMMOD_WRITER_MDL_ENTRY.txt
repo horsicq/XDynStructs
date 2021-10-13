@@ -1,7 +1,7 @@
 struct _MMMOD_WRITER_MDL_ENTRY// Size=0xa0
 {
     struct _LIST_ENTRY Links;// Offset=0x0 Size=0x10
-    union <unnamed-tag> u;// Offset=0x10 Size=0x10
+    union _unnamed_552 u;// Offset=0x10 Size=0x10
     struct _IRP * Irp;// Offset=0x20 Size=0x8
     struct _MODWRITER_FLAGS u1;// Offset=0x28 Size=0x4
     unsigned long ByteCount;// Offset=0x2c Size=0x4

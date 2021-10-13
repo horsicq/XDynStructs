@@ -1,7 +1,7 @@
 struct _IMAGE_SECTION_HEADER// Size=0x28
 {
     unsigned char Name[8];// Offset=0x0 Size=0x8
-    union <unnamed-tag> Misc;// Offset=0x8 Size=0x4
+    union _unnamed_755 Misc;// Offset=0x8 Size=0x4
     unsigned long VirtualAddress;// Offset=0xc Size=0x4
     unsigned long SizeOfRawData;// Offset=0x10 Size=0x4
     unsigned long PointerToRawData;// Offset=0x14 Size=0x4

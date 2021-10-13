@@ -6,7 +6,7 @@ struct _KALPC_SECTION// Size=0x48
     void * SectionHandle;// Offset=0x18 Size=0x8
     struct _EPROCESS * OwnerProcess;// Offset=0x20 Size=0x8
     struct _ALPC_PORT * OwnerPort;// Offset=0x28 Size=0x8
-    union <unnamed-tag> u1;// Offset=0x30 Size=0x4
+    union _unnamed_342 u1;// Offset=0x30 Size=0x4
     unsigned long NumberOfRegions;// Offset=0x34 Size=0x4
     struct _LIST_ENTRY RegionListHead;// Offset=0x38 Size=0x10
 };

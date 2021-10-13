@@ -2,7 +2,7 @@ struct _TRACE_LOGFILE_HEADER// Size=0x118
 {
     unsigned long BufferSize;// Offset=0x0 Size=0x4
     unsigned long Version;// Offset=0x4 Size=0x4
-    struct <unnamed-tag> VersionDetail;// Offset=0x4 Size=0x4
+    struct _unnamed_386 VersionDetail;// Offset=0x4 Size=0x4
     unsigned long ProviderVersion;// Offset=0x8 Size=0x4
     unsigned long NumberOfProcessors;// Offset=0xc Size=0x4
     union _LARGE_INTEGER EndTime;// Offset=0x10 Size=0x8

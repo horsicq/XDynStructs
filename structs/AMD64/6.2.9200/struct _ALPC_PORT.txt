@@ -27,7 +27,7 @@ struct _ALPC_PORT// Size=0x1b8
     void * CallbackContext;// Offset=0x168 Size=0x8
     struct _LIST_ENTRY CanceledQueue;// Offset=0x170 Size=0x10
     long SequenceNo;// Offset=0x180 Size=0x4
-    union <unnamed-tag> u1;// Offset=0x184 Size=0x4
+    union _unnamed_353 u1;// Offset=0x184 Size=0x4
     struct _ALPC_PORT * TargetQueuePort;// Offset=0x188 Size=0x8
     struct _ALPC_PORT * TargetSequencePort;// Offset=0x190 Size=0x8
     struct _KALPC_MESSAGE * CachedMessage;// Offset=0x198 Size=0x8

@@ -5,7 +5,7 @@ struct _KALPC_REGION// Size=0x58
     unsigned long long Offset;// Offset=0x18 Size=0x8
     unsigned long long Size;// Offset=0x20 Size=0x8
     unsigned long long ViewSize;// Offset=0x28 Size=0x8
-    union <unnamed-tag> u1;// Offset=0x30 Size=0x4
+    union _unnamed_345 u1;// Offset=0x30 Size=0x4
     unsigned long NumberOfViews;// Offset=0x34 Size=0x4
     struct _LIST_ENTRY ViewListHead;// Offset=0x38 Size=0x10
     struct _KALPC_VIEW * ReadOnlyView;// Offset=0x48 Size=0x8

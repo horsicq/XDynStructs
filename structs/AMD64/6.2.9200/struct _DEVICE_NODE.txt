@@ -47,12 +47,12 @@ struct _DEVICE_NODE// Size=0x2c8
     unsigned short QueryTranslatorMask;// Offset=0x20a Size=0x2
     unsigned short NoArbiterMask;// Offset=0x20c Size=0x2
     unsigned short QueryArbiterMask;// Offset=0x20e Size=0x2
-    union <unnamed-tag> OverUsed1;// Offset=0x210 Size=0x8
-    union <unnamed-tag> OverUsed2;// Offset=0x218 Size=0x8
+    union _unnamed_253 OverUsed1;// Offset=0x210 Size=0x8
+    union _unnamed_254 OverUsed2;// Offset=0x218 Size=0x8
     struct _CM_RESOURCE_LIST * BootResources;// Offset=0x220 Size=0x8
     struct _CM_RESOURCE_LIST * BootResourcesTranslated;// Offset=0x228 Size=0x8
     unsigned long CapabilityFlags;// Offset=0x230 Size=0x4
-    struct <unnamed-tag> DockInfo;// Offset=0x238 Size=0x20
+    struct _unnamed_256 DockInfo;// Offset=0x238 Size=0x20
     unsigned long DisableableDepends;// Offset=0x258 Size=0x4
     struct _LIST_ENTRY PendedSetInterfaceState;// Offset=0x260 Size=0x10
     struct _LIST_ENTRY LegacyBusListEntry;// Offset=0x270 Size=0x10

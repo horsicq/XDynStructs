@@ -6,5 +6,5 @@ struct _IO_RESOURCE_DESCRIPTOR// Size=0x20
     unsigned char Spare1;// Offset=0x3 Size=0x1
     unsigned short Flags;// Offset=0x4 Size=0x2
     unsigned short Spare2;// Offset=0x6 Size=0x2
-    union <unnamed-tag> u;// Offset=0x8 Size=0x18
+    union _unnamed_638 u;// Offset=0x8 Size=0x18
 };

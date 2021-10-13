@@ -12,7 +12,7 @@ struct _ACCESS_STATE// Size=0xa0
     struct _SECURITY_SUBJECT_CONTEXT SubjectSecurityContext;// Offset=0x20 Size=0x20
     void * SecurityDescriptor;// Offset=0x40 Size=0x8
     void * AuxData;// Offset=0x48 Size=0x8
-    union <unnamed-tag> Privileges;// Offset=0x50 Size=0x2c
+    union _unnamed_81 Privileges;// Offset=0x50 Size=0x2c
     unsigned char AuditPrivileges;// Offset=0x7c Size=0x1
     struct _UNICODE_STRING ObjectName;// Offset=0x80 Size=0x10
     struct _UNICODE_STRING ObjectTypeName;// Offset=0x90 Size=0x10

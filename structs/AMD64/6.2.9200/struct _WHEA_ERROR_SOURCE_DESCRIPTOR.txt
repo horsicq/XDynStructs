@@ -10,5 +10,5 @@ struct _WHEA_ERROR_SOURCE_DESCRIPTOR// Size=0x3cc
     unsigned long ErrorSourceId;// Offset=0x1c Size=0x4
     unsigned long PlatformErrorSourceId;// Offset=0x20 Size=0x4
     unsigned long Flags;// Offset=0x24 Size=0x4
-    union <unnamed-tag> Info;// Offset=0x28 Size=0x3a4
+    union _unnamed_504 Info;// Offset=0x28 Size=0x3a4
 };

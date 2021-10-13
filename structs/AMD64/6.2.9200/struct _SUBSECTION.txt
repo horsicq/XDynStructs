@@ -6,7 +6,7 @@ struct _SUBSECTION// Size=0x38
     unsigned long PtesInSubsection;// Offset=0x18 Size=0x4
     unsigned long UnusedPtes;// Offset=0x20 Size=0x4
     struct _MM_AVL_TABLE * GlobalPerSessionHead;// Offset=0x20 Size=0x8
-    union <unnamed-tag> u;// Offset=0x28 Size=0x4
+    union _unnamed_693 u;// Offset=0x28 Size=0x4
     unsigned long StartingSector;// Offset=0x2c Size=0x4
     unsigned long NumberOfFullSectors;// Offset=0x30 Size=0x4
 };

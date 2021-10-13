@@ -5,7 +5,7 @@ struct PROCESSOR_PERFSTATE_POLICY// Size=0x1c
     unsigned char MinThrottle;// Offset=0x5 Size=0x1
     unsigned char BusyAdjThreshold;// Offset=0x6 Size=0x1
     unsigned char Spare;// Offset=0x7 Size=0x1
-    union <unnamed-tag> Flags;// Offset=0x7 Size=0x1
+    union _unnamed_683 Flags;// Offset=0x7 Size=0x1
     unsigned long TimeCheck;// Offset=0x8 Size=0x4
     unsigned long IncreaseTime;// Offset=0xc Size=0x4
     unsigned long DecreaseTime;// Offset=0x10 Size=0x4

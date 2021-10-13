@@ -7,7 +7,7 @@ struct _VI_DEADLOCK_NODE// Size=0xd0
     struct _LIST_ENTRY FreeListEntry;// Offset=0x28 Size=0x10
     struct _VI_DEADLOCK_RESOURCE * Root;// Offset=0x38 Size=0x8
     struct _VI_DEADLOCK_THREAD * ThreadEntry;// Offset=0x40 Size=0x8
-    union <unnamed-tag> u1;// Offset=0x48 Size=0x4
+    union _unnamed_1033 u1;// Offset=0x48 Size=0x4
     long ChildrenCount;// Offset=0x4c Size=0x4
     void * StackTrace[8];// Offset=0x50 Size=0x40
     void * ParentStackTrace[8];// Offset=0x90 Size=0x40
