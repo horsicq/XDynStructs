@@ -1,0 +1,42 @@
+struct _POP_THERMAL_ZONE// Size=0x368
+{
+    struct _POP_POLICY_DEVICE PolicyDevice;// Offset=0x0 Size=0x40
+    struct _LIST_ENTRY Link;// Offset=0x0 Size=0x10
+    enum POWER_POLICY_DEVICE_TYPE DeviceType;// Offset=0x10 Size=0x4
+    void * Notification;// Offset=0x18 Size=0x8
+    struct _UNICODE_STRING Name;// Offset=0x20 Size=0x10
+    struct _DEVICE_OBJECT * Device;// Offset=0x30 Size=0x8
+    struct _IRP * Irp;// Offset=0x38 Size=0x8
+    unsigned char State;// Offset=0x40 Size=0x1
+    unsigned char Flags;// Offset=0x41 Size=0x1
+    unsigned char Removing;// Offset=0x42 Size=0x1
+    unsigned char Mode;// Offset=0x43 Size=0x1
+    unsigned char PendingMode;// Offset=0x44 Size=0x1
+    unsigned char ActivePoint;// Offset=0x45 Size=0x1
+    unsigned char PendingActivePoint;// Offset=0x46 Size=0x1
+    unsigned char Critical;// Offset=0x47 Size=0x1
+    unsigned char ThermalStandby;// Offset=0x48 Size=0x1
+    unsigned char OverThrottled;// Offset=0x49 Size=0x1
+    long HighPrecisionThrottle;// Offset=0x4c Size=0x4
+    long Throttle;// Offset=0x50 Size=0x4
+    long PendingThrottle;// Offset=0x54 Size=0x4
+    unsigned long ThrottleReasons;// Offset=0x58 Size=0x4
+    unsigned long long LastPassiveTime;// Offset=0x60 Size=0x8
+    unsigned long SampleRate;// Offset=0x68 Size=0x4
+    unsigned long LastTemp;// Offset=0x6c Size=0x4
+    struct _THERMAL_INFORMATION_EX Info;// Offset=0x70 Size=0x5c
+    struct _THERMAL_POLICY Policy;// Offset=0xcc Size=0x18
+    unsigned char PolicyDriver;// Offset=0xe4 Size=0x1
+    unsigned long PollingRate;// Offset=0xe8 Size=0x4
+    unsigned long long LastTemperatureTime;// Offset=0xf0 Size=0x8
+    unsigned long long LastActiveStartTime;// Offset=0xf8 Size=0x8
+    unsigned long long LastPassiveStartTime;// Offset=0x100 Size=0x8
+    struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x108 Size=0x20
+    struct _KTIMER2 ZoneUpdateTimer;// Offset=0x128 Size=0x88
+    struct _POP_RW_LOCK Lock;// Offset=0x1b0 Size=0x10
+    struct _KEVENT ZoneStopped;// Offset=0x1c0 Size=0x18
+    struct _KEVENT TemperatureUpdated;// Offset=0x1d8 Size=0x18
+    unsigned long InstanceId;// Offset=0x1f0 Size=0x4
+    struct _POP_THERMAL_TELEMETRY_TRACKER TelemetryTracker;// Offset=0x1f8 Size=0x160
+    struct _UNICODE_STRING Description;// Offset=0x358 Size=0x10
+};

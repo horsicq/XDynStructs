@@ -1,0 +1,13 @@
+struct _PPM_PERF_STATE// Size=0x28
+{
+    unsigned long Frequency;// Offset=0x0 Size=0x4
+    unsigned long Power;// Offset=0x4 Size=0x4
+    unsigned char PercentFrequency;// Offset=0x8 Size=0x1
+    unsigned char IncreaseLevel;// Offset=0x9 Size=0x1
+    unsigned char DecreaseLevel;// Offset=0xa Size=0x1
+    unsigned char Type;// Offset=0xb Size=0x1
+    unsigned long long Control;// Offset=0x10 Size=0x8
+    unsigned long long Status;// Offset=0x18 Size=0x8
+    unsigned long TotalHitCount;// Offset=0x20 Size=0x4
+    unsigned long DesiredCount;// Offset=0x24 Size=0x4
+};

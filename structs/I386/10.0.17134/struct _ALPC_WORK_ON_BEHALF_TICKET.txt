@@ -1,0 +1,5 @@
+struct _ALPC_WORK_ON_BEHALF_TICKET// Size=0x8
+{
+    unsigned long ThreadId;// Offset=0x0 Size=0x4
+    unsigned long ThreadCreationTimeLow;// Offset=0x4 Size=0x4
+};

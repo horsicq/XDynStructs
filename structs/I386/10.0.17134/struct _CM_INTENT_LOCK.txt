@@ -1,0 +1,5 @@
+struct _CM_INTENT_LOCK// Size=0x8
+{
+    unsigned long OwnerCount;// Offset=0x0 Size=0x4
+    struct _CM_KCB_UOW ** OwnerTable;// Offset=0x4 Size=0x4
+};

@@ -1,0 +1,4 @@
+struct _MMWORKING_SET_EXPANSION_HEAD// Size=0x8
+{
+    struct _LIST_ENTRY ListHead;// Offset=0x0 Size=0x8
+};

@@ -1,0 +1,10 @@
+struct _POP_FX_WORK_ORDER_WATCHDOG_INFO// Size=0xb0
+{
+    struct _LIST_ENTRY Link;// Offset=0x0 Size=0x10
+    struct _KTIMER Timer;// Offset=0x10 Size=0x40
+    struct _KDPC Dpc;// Offset=0x50 Size=0x40
+    struct _POP_FX_WORK_ORDER * WorkOrder;// Offset=0x90 Size=0x8
+    struct _PEP_WORK_INFORMATION * CurrentWorkInfo;// Offset=0x98 Size=0x8
+    unsigned long long WatchdogStart;// Offset=0xa0 Size=0x8
+    struct _KTHREAD * WorkerThread;// Offset=0xa8 Size=0x8
+};

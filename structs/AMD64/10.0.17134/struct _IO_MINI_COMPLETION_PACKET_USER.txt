@@ -1,0 +1,12 @@
+struct _IO_MINI_COMPLETION_PACKET_USER// Size=0x50
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x10
+    unsigned long PacketType;// Offset=0x10 Size=0x4
+    void * KeyContext;// Offset=0x18 Size=0x8
+    void * ApcContext;// Offset=0x20 Size=0x8
+    long IoStatus;// Offset=0x28 Size=0x4
+    unsigned long long IoStatusInformation;// Offset=0x30 Size=0x8
+    void  ( * MiniPacketCallback)(struct _IO_MINI_COMPLETION_PACKET_USER * ,void * );// Offset=0x38 Size=0x8
+    void * Context;// Offset=0x40 Size=0x8
+    unsigned char Allocated;// Offset=0x48 Size=0x1
+};

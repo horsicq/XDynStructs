@@ -1,0 +1,9 @@
+struct _EXT_IOMMU_DEVICE_ID// Size=0x18
+{
+    enum _EXT_IOMMU_DEVICE_TYPE DeviceType;// Offset=0x0 Size=0x4
+    struct _EXT_IOMMU_DEVICE_ID_PCI Pci;// Offset=0x8 Size=0x10
+    struct _EXT_IOMMU_DEVICE_ID_ACPI Acpi;// Offset=0x8 Size=0x4
+    unsigned char IoApicId;// Offset=0x8 Size=0x1
+    unsigned long long LogicalId;// Offset=0x8 Size=0x8
+    struct _EXT_IOMMU_DEVICE_ID_TEST Test;// Offset=0x8 Size=0x8
+};

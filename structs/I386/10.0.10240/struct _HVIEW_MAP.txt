@@ -1,0 +1,9 @@
+struct _HVIEW_MAP// Size=0x320
+{
+    unsigned long MappedLength;// Offset=0x0 Size=0x4
+    struct _EX_PUSH_LOCK Lock;// Offset=0x4 Size=0x4
+    struct _FILE_OBJECT * FileObject;// Offset=0x8 Size=0x4
+    struct _HVIEW_MAP_DIRECTORY * Directory;// Offset=0xc Size=0x4
+    unsigned long PagesCharged;// Offset=0x10 Size=0x4
+    struct _HVIEW_MAP_PIN_LOG PinLog;// Offset=0x18 Size=0x308
+};

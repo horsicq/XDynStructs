@@ -1,0 +1,31 @@
+struct _RTL_UMS_CONTEXT// Size=0x540
+{
+    struct _SINGLE_LIST_ENTRY Link;// Offset=0x0 Size=0x8
+    struct _CONTEXT Context;// Offset=0x10 Size=0x4d0
+    void * Teb;// Offset=0x4e0 Size=0x8
+    void * UserContext;// Offset=0x4e8 Size=0x8
+    unsigned long ScheduledThread:1;// Offset=0x4f0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long HasQuantumReq:1;// Offset=0x4f0 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long HasAffinityReq:1;// Offset=0x4f0 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long HasPriorityReq:1;// Offset=0x4f0 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long Suspended:1;// Offset=0x4f0 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long VolatileContext:1;// Offset=0x4f0 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long Terminated:1;// Offset=0x4f0 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long DebugActive:1;// Offset=0x4f0 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long RunningOnSelfThread:1;// Offset=0x4f0 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long DenyRunningOnSelfThread:1;// Offset=0x4f0 Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long ReservedFlags:22;// Offset=0x4f0 Size=0x4 BitOffset=0xa BitSize=0x16
+    long Flags;// Offset=0x4f0 Size=0x4
+    unsigned long long KernelUpdateLock:1;// Offset=0x4f8 Size=0x8 BitOffset=0x0 BitSize=0x1
+    unsigned long long Reserved:1;// Offset=0x4f8 Size=0x8 BitOffset=0x1 BitSize=0x1
+    unsigned long long PrimaryClientID:62;// Offset=0x4f8 Size=0x8 BitOffset=0x2 BitSize=0x3e
+    unsigned long long ContextLock;// Offset=0x4f8 Size=0x8
+    unsigned long long QuantumValue;// Offset=0x500 Size=0x8
+    struct _GROUP_AFFINITY AffinityMask;// Offset=0x508 Size=0x10
+    long Priority;// Offset=0x518 Size=0x4
+    struct _RTL_UMS_CONTEXT * PrimaryUmsContext;// Offset=0x520 Size=0x8
+    unsigned long SwitchCount;// Offset=0x528 Size=0x4
+    unsigned long KernelYieldCount;// Offset=0x52c Size=0x4
+    unsigned long MixedYieldCount;// Offset=0x530 Size=0x4
+    unsigned long YieldCount;// Offset=0x534 Size=0x4
+};

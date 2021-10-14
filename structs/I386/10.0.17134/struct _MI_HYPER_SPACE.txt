@@ -1,0 +1,5 @@
+struct _MI_HYPER_SPACE// Size=0x2000
+{
+    unsigned char VadBitmap[6144];// Offset=0x0 Size=0x1800
+    unsigned char PaddingToPageBoundary[2048];// Offset=0x1800 Size=0x800
+};

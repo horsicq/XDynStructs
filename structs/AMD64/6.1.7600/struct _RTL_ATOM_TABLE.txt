@@ -1,0 +1,8 @@
+struct _RTL_ATOM_TABLE// Size=0x70
+{
+    unsigned long Signature;// Offset=0x0 Size=0x4
+    struct _RTL_CRITICAL_SECTION CriticalSection;// Offset=0x8 Size=0x28
+    struct _RTL_HANDLE_TABLE RtlHandleTable;// Offset=0x30 Size=0x30
+    unsigned long NumberOfBuckets;// Offset=0x60 Size=0x4
+    struct _RTL_ATOM_TABLE_ENTRY * Buckets[1];// Offset=0x68 Size=0x8
+};

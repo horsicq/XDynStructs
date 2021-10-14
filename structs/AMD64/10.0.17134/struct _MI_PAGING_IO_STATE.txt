@@ -1,0 +1,12 @@
+struct _MI_PAGING_IO_STATE// Size=0x50
+{
+    struct _RTL_AVL_TREE PageFileHead;// Offset=0x0 Size=0x8
+    long PageFileHeadSpinLock;// Offset=0x8 Size=0x4
+    long PrefetchSeekThreshold;// Offset=0xc Size=0x4
+    union _SLIST_HEADER InPageSupportSListHead[2];// Offset=0x10 Size=0x20
+    unsigned char InPageSupportSListMinimum[2];// Offset=0x30 Size=0x2
+    unsigned long InPageSinglePages;// Offset=0x34 Size=0x4
+    long DelayPageFaults;// Offset=0x38 Size=0x4
+    unsigned long FileCompressionBoundary;// Offset=0x3c Size=0x4
+    unsigned char MdlsAdjusted;// Offset=0x40 Size=0x1
+};

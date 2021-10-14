@@ -1,0 +1,6 @@
+struct _DIRTY_PAGE_STATISTICS// Size=0xc
+{
+    unsigned long DirtyPages;// Offset=0x0 Size=0x4
+    unsigned long DirtyPagesLastScan;// Offset=0x4 Size=0x4
+    unsigned long DirtyPagesScheduledLastScan;// Offset=0x8 Size=0x4
+};

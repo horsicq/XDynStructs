@@ -1,0 +1,10 @@
+union _u// Size=0x50
+{
+    struct _CM_KEY_NODE KeyNode;// Offset=0x0 Size=0x50
+    struct _CM_KEY_VALUE KeyValue;// Offset=0x0 Size=0x18
+    struct _CM_KEY_SECURITY KeySecurity;// Offset=0x0 Size=0x28
+    struct _CM_KEY_INDEX KeyIndex;// Offset=0x0 Size=0x8
+    struct _CM_BIG_DATA ValueData;// Offset=0x0 Size=0x8
+    unsigned long KeyList[1];// Offset=0x0 Size=0x4
+    wchar_t KeyString[1];// Offset=0x0 Size=0x2
+};

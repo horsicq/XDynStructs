@@ -1,0 +1,41 @@
+struct _MI_PARTITION_MODWRITES// Size=0x1b0
+{
+    struct _MMPAGE_FILE_EXPANSION AttemptForCantExtend;// Offset=0x0 Size=0x38
+    struct _MMPAGE_FILE_EXPANSION PageFileContract;// Offset=0x38 Size=0x38
+    unsigned long NumberOfMappedMdls;// Offset=0x70 Size=0x4
+    long NumberOfMappedMdlsInUse;// Offset=0x74 Size=0x4
+    unsigned long NumberOfMappedMdlsInUsePeak;// Offset=0x78 Size=0x4
+    struct _MMMOD_WRITER_LISTHEAD MappedFileHeader;// Offset=0x7c Size=0x18
+    unsigned char NeedMappedMdl;// Offset=0x94 Size=0x1
+    unsigned char NeedPageFileMdl;// Offset=0x95 Size=0x1
+    unsigned char TransitionInserted;// Offset=0x96 Size=0x1
+    long LastModifiedWriteError;// Offset=0x98 Size=0x4
+    long LastMappedWriteError;// Offset=0x9c Size=0x4
+    unsigned long MappedFileWriteSucceeded;// Offset=0xa0 Size=0x4
+    unsigned long MappedWriteBurstCount;// Offset=0xa4 Size=0x4
+    unsigned long LowPriorityModWritesOutstanding;// Offset=0xa8 Size=0x4
+    struct _KEVENT BoostModWriteIoPriorityEvent;// Offset=0xac Size=0x10
+    long ModifiedWriterThreadPriority;// Offset=0xbc Size=0x4
+    unsigned long ModifiedPagesLowPriorityGoal;// Offset=0xc0 Size=0x4
+    struct _KEVENT ModifiedPageWriterEvent;// Offset=0xc4 Size=0x10
+    long WriteAllPagefilePages;// Offset=0xd4 Size=0x4
+    long WriteAllMappedPages;// Offset=0xd8 Size=0x4
+    struct _KEVENT MappedPageWriterEvent;// Offset=0xdc Size=0x10
+    struct _MI_MODWRITE_DATA ModWriteData;// Offset=0xf0 Size=0x30
+    struct _KEVENT RescanPageFilesEvent;// Offset=0x120 Size=0x10
+    struct _MMMOD_WRITER_LISTHEAD PagingFileHeader;// Offset=0x130 Size=0x18
+    struct _ETHREAD * ModifiedPageWriterThread;// Offset=0x148 Size=0x4
+    struct _EX_RUNDOWN_REF ModifiedPageWriterRundown;// Offset=0x14c Size=0x4
+    struct _WORK_QUEUE_ITEM PagefileScanWorkItem;// Offset=0x150 Size=0x10
+    unsigned long PagefileScanCount;// Offset=0x160 Size=0x4
+    long ClusterWritesDisabled[2];// Offset=0x164 Size=0x8
+    unsigned char DelayMappedWrite;// Offset=0x16c Size=0x1
+    unsigned long PagefileReservationsEnabled;// Offset=0x170 Size=0x4
+    struct _EX_PUSH_LOCK PageFileCreationLock;// Offset=0x174 Size=0x4
+    struct _WORK_QUEUE_ITEM TrimPagefileWorkItem;// Offset=0x178 Size=0x10
+    unsigned long long LastTrimPagefileTime;// Offset=0x188 Size=0x8
+    struct _WORK_QUEUE_ITEM WsSwapPagefileContractWorkItem;// Offset=0x190 Size=0x10
+    long WsSwapPageFileContractionInProgress;// Offset=0x1a0 Size=0x4
+    struct _EX_PUSH_LOCK WorkingSetSwapLock;// Offset=0x1a4 Size=0x4
+    long WorkingSetInswapLock;// Offset=0x1a8 Size=0x4
+};

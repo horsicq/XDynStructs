@@ -1,0 +1,29 @@
+struct _ETW_REALTIME_CONSUMER// Size=0xa0
+{
+    struct _LIST_ENTRY Links;// Offset=0x0 Size=0x10
+    void * ProcessHandle;// Offset=0x10 Size=0x8
+    struct _EPROCESS * ProcessObject;// Offset=0x18 Size=0x8
+    void * NextNotDelivered;// Offset=0x20 Size=0x8
+    void * RealtimeConnectContext;// Offset=0x28 Size=0x8
+    struct _KEVENT * DisconnectEvent;// Offset=0x30 Size=0x8
+    struct _KEVENT * DataAvailableEvent;// Offset=0x38 Size=0x8
+    unsigned long * UserBufferCount;// Offset=0x40 Size=0x8
+    struct _SINGLE_LIST_ENTRY * UserBufferListHead;// Offset=0x48 Size=0x8
+    unsigned long BuffersLost;// Offset=0x50 Size=0x4
+    unsigned long EmptyBuffersCount;// Offset=0x54 Size=0x4
+    unsigned short LoggerId;// Offset=0x58 Size=0x2
+    unsigned char Flags;// Offset=0x5a Size=0x1
+    unsigned char ShutDownRequested:1;// Offset=0x5a Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char NewBuffersLost:1;// Offset=0x5a Size=0x1 BitOffset=0x1 BitSize=0x1
+    unsigned char Disconnected:1;// Offset=0x5a Size=0x1 BitOffset=0x2 BitSize=0x1
+    unsigned char Notified:1;// Offset=0x5a Size=0x1 BitOffset=0x3 BitSize=0x1
+    unsigned char Wow:1;// Offset=0x5a Size=0x1 BitOffset=0x4 BitSize=0x1
+    struct _RTL_BITMAP ReservedBufferSpaceBitMap;// Offset=0x60 Size=0x10
+    unsigned char * ReservedBufferSpace;// Offset=0x70 Size=0x8
+    unsigned long ReservedBufferSpaceSize;// Offset=0x78 Size=0x4
+    unsigned long UserPagesAllocated;// Offset=0x7c Size=0x4
+    unsigned long UserPagesReused;// Offset=0x80 Size=0x4
+    unsigned long * EventsLostCount;// Offset=0x88 Size=0x8
+    unsigned long * BuffersLostCount;// Offset=0x90 Size=0x8
+    struct _ETW_SILODRIVERSTATE * SiloState;// Offset=0x98 Size=0x8
+};

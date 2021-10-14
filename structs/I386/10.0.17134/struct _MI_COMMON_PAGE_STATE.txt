@@ -1,0 +1,14 @@
+struct _MI_COMMON_PAGE_STATE// Size=0x40
+{
+    struct _MMPFN * PageOfOnesPfn;// Offset=0x0 Size=0x4
+    unsigned long PageOfOnes;// Offset=0x4 Size=0x4
+    struct _MMPFN * DummyPagePfn;// Offset=0x8 Size=0x4
+    unsigned long DummyPage;// Offset=0xc Size=0x4
+    unsigned long PageOfZeroes;// Offset=0x10 Size=0x4
+    void * ZeroMapping;// Offset=0x14 Size=0x4
+    void * OnesMapping;// Offset=0x18 Size=0x4
+    unsigned long long ZeroCrc;// Offset=0x20 Size=0x8
+    unsigned long long OnesCrc;// Offset=0x28 Size=0x8
+    unsigned long BitmapGapFrames[2];// Offset=0x30 Size=0x8
+    unsigned long PfnGapFrames[2];// Offset=0x38 Size=0x8
+};

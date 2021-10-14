@@ -1,0 +1,12 @@
+struct _PROC_PERF_CONSTRAINT// Size=0x30
+{
+    struct _KPRCB * Prcb;// Offset=0x0 Size=0x8
+    unsigned long long PerfContext;// Offset=0x8 Size=0x8
+    unsigned long PercentageCap;// Offset=0x10 Size=0x4
+    unsigned long ThermalCap;// Offset=0x14 Size=0x4
+    unsigned long TargetFrequency;// Offset=0x18 Size=0x4
+    unsigned long AcumulatedFullFrequency;// Offset=0x1c Size=0x4
+    unsigned long AcumulatedZeroFrequency;// Offset=0x20 Size=0x4
+    unsigned long FrequencyHistoryTotal;// Offset=0x24 Size=0x4
+    unsigned long AverageFrequency;// Offset=0x28 Size=0x4
+};

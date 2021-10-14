@@ -1,0 +1,9 @@
+struct _TRIAGE_9F_POWER// Size=0x14
+{
+    unsigned short Signature;// Offset=0x0 Size=0x2
+    unsigned short Revision;// Offset=0x2 Size=0x2
+    struct _LIST_ENTRY * IrpList;// Offset=0x4 Size=0x4
+    struct _LIST_ENTRY * ThreadList;// Offset=0x8 Size=0x4
+    struct _TRIAGE_EX_WORK_QUEUE * DelayedWorkQueue;// Offset=0xc Size=0x4
+    struct _TRIAGE_EX_WORK_QUEUE * DelayedIoWorkQueue;// Offset=0x10 Size=0x4
+};

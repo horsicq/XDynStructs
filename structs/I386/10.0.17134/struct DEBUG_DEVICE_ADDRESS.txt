@@ -1,0 +1,10 @@
+struct DEBUG_DEVICE_ADDRESS// Size=0xc
+{
+    unsigned char Type;// Offset=0x0 Size=0x1
+    unsigned char Valid;// Offset=0x1 Size=0x1
+    unsigned char Reserved[2];// Offset=0x2 Size=0x2
+    unsigned char BitWidth;// Offset=0x2 Size=0x1
+    unsigned char AccessSize;// Offset=0x3 Size=0x1
+    unsigned char * TranslatedAddress;// Offset=0x4 Size=0x4
+    unsigned long Length;// Offset=0x8 Size=0x4
+};

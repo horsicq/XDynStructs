@@ -1,0 +1,5 @@
+struct _RTLP_HP_ALLOC_TRACKER// Size=0x48
+{
+    struct _RTL_CSPARSE_BITMAP AllocTrackerBitmap;// Offset=0x0 Size=0x40
+    unsigned long long BaseAddress;// Offset=0x40 Size=0x8
+};

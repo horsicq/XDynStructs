@@ -1,0 +1,33 @@
+struct _FILE_OBJECT// Size=0x80
+{
+    short Type;// Offset=0x0 Size=0x2
+    short Size;// Offset=0x2 Size=0x2
+    struct _DEVICE_OBJECT * DeviceObject;// Offset=0x4 Size=0x4
+    struct _VPB * Vpb;// Offset=0x8 Size=0x4
+    void * FsContext;// Offset=0xc Size=0x4
+    void * FsContext2;// Offset=0x10 Size=0x4
+    struct _SECTION_OBJECT_POINTERS * SectionObjectPointer;// Offset=0x14 Size=0x4
+    void * PrivateCacheMap;// Offset=0x18 Size=0x4
+    long FinalStatus;// Offset=0x1c Size=0x4
+    struct _FILE_OBJECT * RelatedFileObject;// Offset=0x20 Size=0x4
+    unsigned char LockOperation;// Offset=0x24 Size=0x1
+    unsigned char DeletePending;// Offset=0x25 Size=0x1
+    unsigned char ReadAccess;// Offset=0x26 Size=0x1
+    unsigned char WriteAccess;// Offset=0x27 Size=0x1
+    unsigned char DeleteAccess;// Offset=0x28 Size=0x1
+    unsigned char SharedRead;// Offset=0x29 Size=0x1
+    unsigned char SharedWrite;// Offset=0x2a Size=0x1
+    unsigned char SharedDelete;// Offset=0x2b Size=0x1
+    unsigned long Flags;// Offset=0x2c Size=0x4
+    struct _UNICODE_STRING FileName;// Offset=0x30 Size=0x8
+    union _LARGE_INTEGER CurrentByteOffset;// Offset=0x38 Size=0x8
+    unsigned long Waiters;// Offset=0x40 Size=0x4
+    unsigned long Busy;// Offset=0x44 Size=0x4
+    void * LastLock;// Offset=0x48 Size=0x4
+    struct _KEVENT Lock;// Offset=0x4c Size=0x10
+    struct _KEVENT Event;// Offset=0x5c Size=0x10
+    struct _IO_COMPLETION_CONTEXT * CompletionContext;// Offset=0x6c Size=0x4
+    unsigned long IrpListLock;// Offset=0x70 Size=0x4
+    struct _LIST_ENTRY IrpList;// Offset=0x74 Size=0x8
+    void * FileObjectExtension;// Offset=0x7c Size=0x4
+};

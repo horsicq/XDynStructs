@@ -1,0 +1,7 @@
+struct _MI_SYSTEM_TRIM_STATE// Size=0x40
+{
+    unsigned long long ExpansionLock;// Offset=0x0 Size=0x8
+    long TrimInProgressCount;// Offset=0x8 Size=0x4
+    struct _KEVENT PeriodicWorkingSetEvent;// Offset=0x10 Size=0x18
+    unsigned long TrimAllPageFaultCount[3];// Offset=0x28 Size=0xc
+};

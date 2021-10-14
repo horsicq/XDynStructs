@@ -1,0 +1,27 @@
+struct _ESERVERSILO_GLOBALS// Size=0x2a0
+{
+    struct _OBP_SILODRIVERSTATE ObSiloState;// Offset=0x0 Size=0x1a4
+    struct _SEP_SILOSTATE SeSiloState;// Offset=0x1a4 Size=0x18
+    struct _SEP_RM_LSA_CONNECTION_STATE SeRmSiloState;// Offset=0x1c0 Size=0x30
+    struct _ETW_SILODRIVERSTATE * EtwSiloState;// Offset=0x1f0 Size=0x4
+    struct _EPROCESS * MiSessionLeaderProcess;// Offset=0x1f4 Size=0x4
+    struct _EPROCESS * ExpDefaultErrorPortProcess;// Offset=0x1f8 Size=0x4
+    void * ExpDefaultErrorPort;// Offset=0x1fc Size=0x4
+    unsigned long HardErrorState;// Offset=0x200 Size=0x4
+    struct _WNF_SILODRIVERSTATE WnfSiloState;// Offset=0x208 Size=0x30
+    struct _DBGK_SILOSTATE DbgkSiloState;// Offset=0x238 Size=0x10
+    struct _UNICODE_STRING PsProtectedCurrentDirectory;// Offset=0x248 Size=0x8
+    struct _UNICODE_STRING PsProtectedEnvironment;// Offset=0x250 Size=0x8
+    void * ApiSetSection;// Offset=0x258 Size=0x4
+    void * ApiSetSchema;// Offset=0x25c Size=0x4
+    unsigned char OneCoreForwardersEnabled;// Offset=0x260 Size=0x1
+    struct _UNICODE_STRING NtSystemRoot;// Offset=0x264 Size=0x8
+    struct _UNICODE_STRING SiloRootDirectoryName;// Offset=0x26c Size=0x8
+    struct _PSP_STORAGE * Storage;// Offset=0x274 Size=0x4
+    enum _SERVERSILO_STATE State;// Offset=0x278 Size=0x4
+    long ExitStatus;// Offset=0x27c Size=0x4
+    struct _KEVENT * DeleteEvent;// Offset=0x280 Size=0x4
+    struct _SILO_USER_SHARED_DATA * UserSharedData;// Offset=0x284 Size=0x4
+    void * UserSharedSection;// Offset=0x288 Size=0x4
+    struct _WORK_QUEUE_ITEM TerminateWorkItem;// Offset=0x28c Size=0x10
+};

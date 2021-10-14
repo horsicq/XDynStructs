@@ -1,0 +1,8 @@
+struct _PROCESS_DISK_COUNTERS// Size=0x28
+{
+    unsigned long long BytesRead;// Offset=0x0 Size=0x8
+    unsigned long long BytesWritten;// Offset=0x8 Size=0x8
+    unsigned long long ReadOperationCount;// Offset=0x10 Size=0x8
+    unsigned long long WriteOperationCount;// Offset=0x18 Size=0x8
+    unsigned long long FlushOperationCount;// Offset=0x20 Size=0x8
+};

@@ -1,0 +1,45 @@
+struct _EJOB// Size=0x1c8
+{
+    struct _KEVENT Event;// Offset=0x0 Size=0x18
+    struct _LIST_ENTRY JobLinks;// Offset=0x18 Size=0x10
+    struct _LIST_ENTRY ProcessListHead;// Offset=0x28 Size=0x10
+    struct _ERESOURCE JobLock;// Offset=0x38 Size=0x68
+    union _LARGE_INTEGER TotalUserTime;// Offset=0xa0 Size=0x8
+    union _LARGE_INTEGER TotalKernelTime;// Offset=0xa8 Size=0x8
+    union _LARGE_INTEGER ThisPeriodTotalUserTime;// Offset=0xb0 Size=0x8
+    union _LARGE_INTEGER ThisPeriodTotalKernelTime;// Offset=0xb8 Size=0x8
+    unsigned long TotalPageFaultCount;// Offset=0xc0 Size=0x4
+    unsigned long TotalProcesses;// Offset=0xc4 Size=0x4
+    unsigned long ActiveProcesses;// Offset=0xc8 Size=0x4
+    unsigned long TotalTerminatedProcesses;// Offset=0xcc Size=0x4
+    union _LARGE_INTEGER PerProcessUserTimeLimit;// Offset=0xd0 Size=0x8
+    union _LARGE_INTEGER PerJobUserTimeLimit;// Offset=0xd8 Size=0x8
+    unsigned long long MinimumWorkingSetSize;// Offset=0xe0 Size=0x8
+    unsigned long long MaximumWorkingSetSize;// Offset=0xe8 Size=0x8
+    unsigned long LimitFlags;// Offset=0xf0 Size=0x4
+    unsigned long ActiveProcessLimit;// Offset=0xf4 Size=0x4
+    struct _KAFFINITY_EX Affinity;// Offset=0xf8 Size=0x28
+    unsigned char PriorityClass;// Offset=0x120 Size=0x1
+    struct _JOB_ACCESS_STATE * AccessState;// Offset=0x128 Size=0x8
+    unsigned long UIRestrictionsClass;// Offset=0x130 Size=0x4
+    unsigned long EndOfJobTimeAction;// Offset=0x134 Size=0x4
+    void * CompletionPort;// Offset=0x138 Size=0x8
+    void * CompletionKey;// Offset=0x140 Size=0x8
+    unsigned long SessionId;// Offset=0x148 Size=0x4
+    unsigned long SchedulingClass;// Offset=0x14c Size=0x4
+    unsigned long long ReadOperationCount;// Offset=0x150 Size=0x8
+    unsigned long long WriteOperationCount;// Offset=0x158 Size=0x8
+    unsigned long long OtherOperationCount;// Offset=0x160 Size=0x8
+    unsigned long long ReadTransferCount;// Offset=0x168 Size=0x8
+    unsigned long long WriteTransferCount;// Offset=0x170 Size=0x8
+    unsigned long long OtherTransferCount;// Offset=0x178 Size=0x8
+    unsigned long long ProcessMemoryLimit;// Offset=0x180 Size=0x8
+    unsigned long long JobMemoryLimit;// Offset=0x188 Size=0x8
+    unsigned long long PeakProcessMemoryUsed;// Offset=0x190 Size=0x8
+    unsigned long long PeakJobMemoryUsed;// Offset=0x198 Size=0x8
+    unsigned long long CurrentJobMemoryUsed;// Offset=0x1a0 Size=0x8
+    struct _EX_PUSH_LOCK MemoryLimitsLock;// Offset=0x1a8 Size=0x8
+    struct _LIST_ENTRY JobSetLinks;// Offset=0x1b0 Size=0x10
+    unsigned long MemberLevel;// Offset=0x1c0 Size=0x4
+    unsigned long JobFlags;// Offset=0x1c4 Size=0x4
+};

@@ -1,0 +1,6 @@
+struct _PEP_ACPI_SPB_I2C_RESOURCE// Size=0x30
+{
+    struct _PEP_ACPI_SPB_RESOURCE SpbCommon;// Offset=0x0 Size=0x28
+    unsigned long ConnectionSpeed;// Offset=0x28 Size=0x4
+    unsigned short SlaveAddress;// Offset=0x2c Size=0x2
+};

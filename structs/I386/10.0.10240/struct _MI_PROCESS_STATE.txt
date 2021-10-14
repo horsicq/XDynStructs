@@ -1,0 +1,16 @@
+struct _MI_PROCESS_STATE// Size=0x70
+{
+    unsigned long ColorSeed;// Offset=0x0 Size=0x4
+    struct _KEVENT CloneDereferenceEvent;// Offset=0x4 Size=0x10
+    union _SLIST_HEADER CloneProtosSListHead;// Offset=0x18 Size=0x8
+    void * SystemDllBase;// Offset=0x20 Size=0x4
+    long RotatingUniprocessorNumber;// Offset=0x24 Size=0x4
+    union _LARGE_INTEGER CriticalSectionTimeout;// Offset=0x28 Size=0x8
+    struct _LIST_ENTRY ProcessList;// Offset=0x30 Size=0x8
+    struct _MMPTE * SharedUserDataPte;// Offset=0x38 Size=0x4
+    unsigned long FreePaeEntries;// Offset=0x3c Size=0x4
+    struct _PAE_ENTRY FirstFreePae;// Offset=0x40 Size=0x20
+    long AllocatedPaePages;// Offset=0x60 Size=0x4
+    unsigned long PaeLock;// Offset=0x64 Size=0x4
+    union _SLIST_HEADER PaeEntrySList;// Offset=0x68 Size=0x8
+};

@@ -1,0 +1,13 @@
+struct _PERF_CONTROL_STATE_SELECTION// Size=0x28
+{
+    unsigned long long SelectedState;// Offset=0x0 Size=0x8
+    unsigned long SelectedPercent;// Offset=0x8 Size=0x4
+    unsigned long SelectedFrequency;// Offset=0xc Size=0x4
+    unsigned long MinPercent;// Offset=0x10 Size=0x4
+    unsigned long MaxPercent;// Offset=0x14 Size=0x4
+    unsigned long TolerancePercent;// Offset=0x18 Size=0x4
+    unsigned long EppPercent;// Offset=0x1c Size=0x4
+    unsigned long AutonomousActivityWindow;// Offset=0x20 Size=0x4
+    unsigned char Autonomous;// Offset=0x24 Size=0x1
+    unsigned char InheritFromDomain;// Offset=0x25 Size=0x1
+};

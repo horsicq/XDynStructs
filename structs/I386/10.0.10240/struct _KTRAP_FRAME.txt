@@ -1,0 +1,42 @@
+struct _KTRAP_FRAME// Size=0x8c
+{
+    unsigned long DbgEbp;// Offset=0x0 Size=0x4
+    unsigned long DbgEip;// Offset=0x4 Size=0x4
+    unsigned long DbgArgMark;// Offset=0x8 Size=0x4
+    unsigned short TempSegCs;// Offset=0xc Size=0x2
+    unsigned char Logging;// Offset=0xe Size=0x1
+    unsigned char FrameType;// Offset=0xf Size=0x1
+    unsigned long TempEsp;// Offset=0x10 Size=0x4
+    unsigned long Dr0;// Offset=0x14 Size=0x4
+    unsigned long Dr1;// Offset=0x18 Size=0x4
+    unsigned long Dr2;// Offset=0x1c Size=0x4
+    unsigned long Dr3;// Offset=0x20 Size=0x4
+    unsigned long Dr6;// Offset=0x24 Size=0x4
+    unsigned long Dr7;// Offset=0x28 Size=0x4
+    unsigned long SegGs;// Offset=0x2c Size=0x4
+    unsigned long SegEs;// Offset=0x30 Size=0x4
+    unsigned long SegDs;// Offset=0x34 Size=0x4
+    unsigned long Edx;// Offset=0x38 Size=0x4
+    unsigned long Ecx;// Offset=0x3c Size=0x4
+    unsigned long Eax;// Offset=0x40 Size=0x4
+    unsigned char PreviousPreviousMode;// Offset=0x44 Size=0x1
+    unsigned char EntropyQueueDpc;// Offset=0x45 Size=0x1
+    unsigned char Reserved[2];// Offset=0x46 Size=0x2
+    unsigned long MxCsr;// Offset=0x48 Size=0x4
+    struct _EXCEPTION_REGISTRATION_RECORD * ExceptionList;// Offset=0x4c Size=0x4
+    unsigned long SegFs;// Offset=0x50 Size=0x4
+    unsigned long Edi;// Offset=0x54 Size=0x4
+    unsigned long Esi;// Offset=0x58 Size=0x4
+    unsigned long Ebx;// Offset=0x5c Size=0x4
+    unsigned long Ebp;// Offset=0x60 Size=0x4
+    unsigned long ErrCode;// Offset=0x64 Size=0x4
+    unsigned long Eip;// Offset=0x68 Size=0x4
+    unsigned long SegCs;// Offset=0x6c Size=0x4
+    unsigned long EFlags;// Offset=0x70 Size=0x4
+    unsigned long HardwareEsp;// Offset=0x74 Size=0x4
+    unsigned long HardwareSegSs;// Offset=0x78 Size=0x4
+    unsigned long V86Es;// Offset=0x7c Size=0x4
+    unsigned long V86Ds;// Offset=0x80 Size=0x4
+    unsigned long V86Fs;// Offset=0x84 Size=0x4
+    unsigned long V86Gs;// Offset=0x88 Size=0x4
+};

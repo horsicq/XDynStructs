@@ -1,0 +1,6 @@
+struct _PAE_ENTRY// Size=0x20
+{
+    struct _MMPTE PteEntry[4];// Offset=0x0 Size=0x20
+    struct _PAE_PAGEINFO PaeEntry;// Offset=0x0 Size=0x10
+    struct _SINGLE_LIST_ENTRY NextPae;// Offset=0x0 Size=0x4
+};

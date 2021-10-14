@@ -1,0 +1,5 @@
+struct _KTIMER2_COLLECTION// Size=0x10
+{
+    struct _RTL_RB_TREE Tree;// Offset=0x0 Size=0x8
+    unsigned long long NextDueTime;// Offset=0x8 Size=0x8
+};

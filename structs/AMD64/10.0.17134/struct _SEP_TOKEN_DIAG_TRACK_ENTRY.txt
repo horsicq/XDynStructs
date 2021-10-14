@@ -1,0 +1,10 @@
+struct _SEP_TOKEN_DIAG_TRACK_ENTRY// Size=0x120
+{
+    void * ProcessCid;// Offset=0x0 Size=0x8
+    void * ThreadCid;// Offset=0x8 Size=0x8
+    unsigned char ImageFileName[16];// Offset=0x10 Size=0x10
+    unsigned long CreateMethod;// Offset=0x20 Size=0x4
+    unsigned long long CreateTrace[30];// Offset=0x28 Size=0xf0
+    long Count;// Offset=0x118 Size=0x4
+    long CaptureCount;// Offset=0x11c Size=0x4
+};

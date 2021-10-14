@@ -1,0 +1,12 @@
+struct _ETIMER// Size=0x110
+{
+    struct _KTIMER KeTimer;// Offset=0x0 Size=0x40
+    struct _KAPC TimerApc;// Offset=0x40 Size=0x58
+    struct _KDPC TimerDpc;// Offset=0x98 Size=0x40
+    struct _LIST_ENTRY ActiveTimerListEntry;// Offset=0xd8 Size=0x10
+    unsigned long long Lock;// Offset=0xe8 Size=0x8
+    long Period;// Offset=0xf0 Size=0x4
+    unsigned char ApcAssociated;// Offset=0xf4 Size=0x1
+    struct _DIAGNOSTIC_CONTEXT * WakeReason;// Offset=0xf8 Size=0x8
+    struct _LIST_ENTRY WakeTimerListEntry;// Offset=0x100 Size=0x10
+};

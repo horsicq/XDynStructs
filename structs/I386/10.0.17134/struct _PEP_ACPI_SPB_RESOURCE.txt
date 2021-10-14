@@ -1,0 +1,10 @@
+struct _PEP_ACPI_SPB_RESOURCE// Size=0x18
+{
+    enum _PEP_ACPI_RESOURCE_TYPE Type;// Offset=0x0 Size=0x4
+    union _PEP_ACPI_RESOURCE_FLAGS Flags;// Offset=0x4 Size=0x4
+    unsigned short TypeSpecificFlags;// Offset=0x8 Size=0x2
+    unsigned char ResourceSourceIndex;// Offset=0xa Size=0x1
+    struct _UNICODE_STRING * ResourceSourceName;// Offset=0xc Size=0x4
+    char * VendorData;// Offset=0x10 Size=0x4
+    unsigned short VendorDataLength;// Offset=0x14 Size=0x2
+};

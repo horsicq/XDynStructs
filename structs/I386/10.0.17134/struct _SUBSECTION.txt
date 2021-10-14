@@ -1,0 +1,17 @@
+struct _SUBSECTION// Size=0x28
+{
+    struct _CONTROL_AREA * ControlArea;// Offset=0x0 Size=0x4
+    struct _MMPTE * SubsectionBase;// Offset=0x4 Size=0x4
+    struct _SUBSECTION * NextSubsection;// Offset=0x8 Size=0x4
+    struct _RTL_AVL_TREE GlobalPerSessionHead;// Offset=0xc Size=0x4
+    struct _MI_CONTROL_AREA_WAIT_BLOCK * CreationWaitList;// Offset=0xc Size=0x4
+    struct _MI_PER_SESSION_PROTOS * SessionDriverProtos;// Offset=0xc Size=0x4
+    union _unnamed_684 u;// Offset=0x10 Size=0x4
+    unsigned long StartingSector;// Offset=0x14 Size=0x4
+    unsigned long NumberOfFullSectors;// Offset=0x18 Size=0x4
+    unsigned long PtesInSubsection;// Offset=0x1c Size=0x4
+    union _unnamed_685 u1;// Offset=0x20 Size=0x4
+    unsigned long UnusedPtes:30;// Offset=0x24 Size=0x4 BitOffset=0x0 BitSize=0x1e
+    unsigned long ExtentQueryNeeded:1;// Offset=0x24 Size=0x4 BitOffset=0x1e BitSize=0x1
+    unsigned long DirtyPages:1;// Offset=0x24 Size=0x4 BitOffset=0x1f BitSize=0x1
+};

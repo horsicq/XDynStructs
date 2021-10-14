@@ -1,0 +1,142 @@
+struct HAL_PRIVATE_DISPATCH// Size=0x22c
+{
+    unsigned long Version;// Offset=0x0 Size=0x4
+    struct _BUS_HANDLER *  ( * HalHandlerForBus)(enum _INTERFACE_TYPE ,unsigned long );// Offset=0x4 Size=0x4
+    struct _BUS_HANDLER *  ( * HalHandlerForConfigSpace)(enum _BUS_DATA_TYPE ,unsigned long );// Offset=0x8 Size=0x4
+    void  ( * HalLocateHiberRanges)(void * );// Offset=0xc Size=0x4
+    long  ( * HalRegisterBusHandler)(enum _INTERFACE_TYPE ,enum _BUS_DATA_TYPE ,unsigned long ,enum _INTERFACE_TYPE ,unsigned long ,unsigned long ,long  ( * )(struct _BUS_HANDLER * ),struct _BUS_HANDLER ** );// Offset=0x10 Size=0x4
+    void  ( * HalSetWakeEnable)(unsigned char );// Offset=0x14 Size=0x4
+    long  ( * HalSetWakeAlarm)(unsigned long long ,unsigned long long );// Offset=0x18 Size=0x4
+    unsigned char  ( * HalPciTranslateBusAddress)(enum _INTERFACE_TYPE ,unsigned long ,union _LARGE_INTEGER ,unsigned long * ,union _LARGE_INTEGER * );// Offset=0x1c Size=0x4
+    long  ( * HalPciAssignSlotResources)(struct _UNICODE_STRING * ,struct _UNICODE_STRING * ,struct _DRIVER_OBJECT * ,struct _DEVICE_OBJECT * ,enum _INTERFACE_TYPE ,unsigned long ,unsigned long ,struct _CM_RESOURCE_LIST ** );// Offset=0x20 Size=0x4
+    void  ( * HalHaltSystem)();// Offset=0x24 Size=0x4
+    unsigned char  ( * HalFindBusAddressTranslation)(union _LARGE_INTEGER ,unsigned long * ,union _LARGE_INTEGER * ,unsigned long * ,unsigned char );// Offset=0x28 Size=0x4
+    unsigned char  ( * HalResetDisplay)();// Offset=0x2c Size=0x4
+    long  ( * HalAllocateMapRegisters)(struct _ADAPTER_OBJECT * ,unsigned long ,unsigned long ,struct _MAP_REGISTER_ENTRY * );// Offset=0x30 Size=0x4
+    long  ( * KdSetupPciDeviceForDebugging)(void * ,struct _DEBUG_DEVICE_DESCRIPTOR * );// Offset=0x34 Size=0x4
+    long  ( * KdReleasePciDeviceForDebugging)(struct _DEBUG_DEVICE_DESCRIPTOR * );// Offset=0x38 Size=0x4
+    void *  ( * KdGetAcpiTablePhase0)(struct _LOADER_PARAMETER_BLOCK * ,unsigned long );// Offset=0x3c Size=0x4
+    void  ( * KdCheckPowerButton)();// Offset=0x40 Size=0x4
+    unsigned char  ( * HalVectorToIDTEntry)(unsigned long );// Offset=0x44 Size=0x4
+    void *  ( * KdMapPhysicalMemory64)(union _LARGE_INTEGER ,unsigned long ,unsigned char );// Offset=0x48 Size=0x4
+    void  ( * KdUnmapVirtualAddress)(void * ,unsigned long ,unsigned char );// Offset=0x4c Size=0x4
+    unsigned long  ( * KdGetPciDataByOffset)(unsigned long ,unsigned long ,void * ,unsigned long ,unsigned long );// Offset=0x50 Size=0x4
+    unsigned long  ( * KdSetPciDataByOffset)(unsigned long ,unsigned long ,void * ,unsigned long ,unsigned long );// Offset=0x54 Size=0x4
+    unsigned long  ( * HalGetInterruptVectorOverride)(enum _INTERFACE_TYPE ,unsigned long ,unsigned long ,unsigned long ,unsigned char * ,unsigned long * );// Offset=0x58 Size=0x4
+    long  ( * HalGetVectorInputOverride)(unsigned long ,struct _GROUP_AFFINITY * ,unsigned long * ,enum _KINTERRUPT_POLARITY * ,struct _INTERRUPT_REMAPPING_INFO * );// Offset=0x5c Size=0x4
+    long  ( * HalLoadMicrocode)(void * );// Offset=0x60 Size=0x4
+    long  ( * HalUnloadMicrocode)();// Offset=0x64 Size=0x4
+    long  ( * HalPostMicrocodeUpdate)();// Offset=0x68 Size=0x4
+    long  ( * HalAllocateMessageTargetOverride)(struct _DEVICE_OBJECT * ,struct _GROUP_AFFINITY * ,unsigned long ,enum _KINTERRUPT_MODE ,unsigned char ,unsigned long * ,unsigned char * ,unsigned long * );// Offset=0x6c Size=0x4
+    void  ( * HalFreeMessageTargetOverride)(struct _DEVICE_OBJECT * ,unsigned long ,struct _GROUP_AFFINITY * );// Offset=0x70 Size=0x4
+    long  ( * HalDpReplaceBegin)(struct _HAL_DP_REPLACE_PARAMETERS * ,void ** );// Offset=0x74 Size=0x4
+    void  ( * HalDpReplaceTarget)(void * );// Offset=0x78 Size=0x4
+    long  ( * HalDpReplaceControl)(unsigned long ,void * );// Offset=0x7c Size=0x4
+    void  ( * HalDpReplaceEnd)(void * );// Offset=0x80 Size=0x4
+    void  ( * HalPrepareForBugcheck)(unsigned long );// Offset=0x84 Size=0x4
+    unsigned char  ( * HalQueryWakeTime)(unsigned long long * ,unsigned long long * );// Offset=0x88 Size=0x4
+    void  ( * HalReportIdleStateUsage)(unsigned char ,struct _KAFFINITY_EX * );// Offset=0x8c Size=0x4
+    void  ( * HalTscSynchronization)(unsigned char ,unsigned long * );// Offset=0x90 Size=0x4
+    long  ( * HalWheaInitProcessorGenericSection)(struct _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR * ,struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION * );// Offset=0x94 Size=0x4
+    void  ( * HalStopLegacyUsbInterrupts)(enum _SYSTEM_POWER_STATE );// Offset=0x98 Size=0x4
+    long  ( * HalReadWheaPhysicalMemory)(union _LARGE_INTEGER ,unsigned long ,void * );// Offset=0x9c Size=0x4
+    long  ( * HalWriteWheaPhysicalMemory)(union _LARGE_INTEGER ,unsigned long ,void * );// Offset=0xa0 Size=0x4
+    long  ( * HalDpMaskLevelTriggeredInterrupts)();// Offset=0xa4 Size=0x4
+    long  ( * HalDpUnmaskLevelTriggeredInterrupts)();// Offset=0xa8 Size=0x4
+    long  ( * HalDpGetInterruptReplayState)(void * ,void ** );// Offset=0xac Size=0x4
+    long  ( * HalDpReplayInterrupts)(void * );// Offset=0xb0 Size=0x4
+    unsigned char  ( * HalQueryIoPortAccessSupported)();// Offset=0xb4 Size=0x4
+    long  ( * KdSetupIntegratedDeviceForDebugging)(void * ,struct _DEBUG_DEVICE_DESCRIPTOR * );// Offset=0xb8 Size=0x4
+    long  ( * KdReleaseIntegratedDeviceForDebugging)(struct _DEBUG_DEVICE_DESCRIPTOR * );// Offset=0xbc Size=0x4
+    void  ( * HalGetEnlightenmentInformation)(struct _HAL_INTEL_ENLIGHTENMENT_INFORMATION * );// Offset=0xc0 Size=0x4
+    void *  ( * HalAllocateEarlyPages)(struct _LOADER_PARAMETER_BLOCK * ,unsigned long ,unsigned long long * ,unsigned long );// Offset=0xc4 Size=0x4
+    void *  ( * HalMapEarlyPages)(unsigned long long ,unsigned long ,unsigned long );// Offset=0xc8 Size=0x4
+    void * Dummy1;// Offset=0xcc Size=0x4
+    void * Dummy2;// Offset=0xd0 Size=0x4
+    void  ( * HalNotifyProcessorFreeze)(unsigned char ,unsigned char );// Offset=0xd4 Size=0x4
+    long  ( * HalPrepareProcessorForIdle)(unsigned long );// Offset=0xd8 Size=0x4
+    void  ( * HalRegisterLogRoutine)(struct _HAL_LOG_REGISTER_CONTEXT * );// Offset=0xdc Size=0x4
+    void  ( * HalResumeProcessorFromIdle)();// Offset=0xe0 Size=0x4
+    void * Dummy;// Offset=0xe4 Size=0x4
+    unsigned long  ( * HalVectorToIDTEntryEx)(unsigned long );// Offset=0xe8 Size=0x4
+    long  ( * HalSecondaryInterruptQueryPrimaryInformation)(struct _INTERRUPT_VECTOR_DATA * ,unsigned long * );// Offset=0xec Size=0x4
+    long  ( * HalMaskInterrupt)(unsigned long ,unsigned long );// Offset=0xf0 Size=0x4
+    long  ( * HalUnmaskInterrupt)(unsigned long ,unsigned long );// Offset=0xf4 Size=0x4
+    unsigned char  ( * HalIsInterruptTypeSecondary)(unsigned long ,unsigned long );// Offset=0xf8 Size=0x4
+    long  ( * HalAllocateGsivForSecondaryInterrupt)(char * ,unsigned short ,unsigned long * );// Offset=0xfc Size=0x4
+    long  ( * HalAddInterruptRemapping)(unsigned long ,unsigned long ,struct _PCI_BUSMASTER_DESCRIPTOR * ,unsigned char ,struct _INTERRUPT_VECTOR_DATA * ,unsigned long );// Offset=0x100 Size=0x4
+    void  ( * HalRemoveInterruptRemapping)(unsigned long ,unsigned long ,struct _PCI_BUSMASTER_DESCRIPTOR * ,unsigned char ,struct _INTERRUPT_VECTOR_DATA * ,unsigned long );// Offset=0x104 Size=0x4
+    void  ( * HalSaveAndDisableHvEnlightenment)();// Offset=0x108 Size=0x4
+    void  ( * HalRestoreHvEnlightenment)();// Offset=0x10c Size=0x4
+    void  ( * HalFlushIoBuffersExternalCache)(struct _MDL * ,unsigned char );// Offset=0x110 Size=0x4
+    void  ( * HalFlushExternalCache)(unsigned char );// Offset=0x114 Size=0x4
+    long  ( * HalPciEarlyRestore)(enum _SYSTEM_POWER_STATE );// Offset=0x118 Size=0x4
+    long  ( * HalGetProcessorId)(unsigned long ,unsigned long * );// Offset=0x11c Size=0x4
+    long  ( * HalAllocatePmcCounterSet)(unsigned long ,enum _KPROFILE_SOURCE * ,unsigned long ,struct _HAL_PMC_COUNTERS ** );// Offset=0x120 Size=0x4
+    void  ( * HalCollectPmcCounters)(struct _HAL_PMC_COUNTERS * ,unsigned long long * );// Offset=0x124 Size=0x4
+    void  ( * HalFreePmcCounterSet)(struct _HAL_PMC_COUNTERS * );// Offset=0x128 Size=0x4
+    long  ( * HalProcessorHalt)(unsigned long ,void * ,long  ( * )(void * ));// Offset=0x12c Size=0x4
+    unsigned long long  ( * HalTimerQueryCycleCounter)(unsigned long long * );// Offset=0x130 Size=0x4
+    void * Dummy3;// Offset=0x134 Size=0x4
+    void  ( * HalPciMarkHiberPhase)();// Offset=0x138 Size=0x4
+    long  ( * HalQueryProcessorRestartEntryPoint)(union _LARGE_INTEGER * );// Offset=0x13c Size=0x4
+    long  ( * HalRequestInterrupt)(unsigned long );// Offset=0x140 Size=0x4
+    long  ( * HalEnumerateUnmaskedInterrupts)(unsigned char  ( * )(void * ,struct _HAL_UNMASKED_INTERRUPT_INFORMATION * ),void * ,struct _HAL_UNMASKED_INTERRUPT_INFORMATION * );// Offset=0x144 Size=0x4
+    void  ( * HalFlushAndInvalidatePageExternalCache)(union _LARGE_INTEGER );// Offset=0x148 Size=0x4
+    long  ( * KdEnumerateDebuggingDevices)(void * ,struct _DEBUG_DEVICE_DESCRIPTOR * ,enum KD_CALLBACK_ACTION  ( * )(struct _DEBUG_DEVICE_DESCRIPTOR * ));// Offset=0x14c Size=0x4
+    void  ( * HalFlushIoRectangleExternalCache)(struct _MDL * ,unsigned long ,unsigned long ,unsigned long ,unsigned long ,unsigned char );// Offset=0x150 Size=0x4
+    void  ( * HalPowerEarlyRestore)(unsigned long );// Offset=0x154 Size=0x4
+    long  ( * HalQueryCapsuleCapabilities)(void * ,unsigned long ,unsigned long long * ,unsigned long * );// Offset=0x158 Size=0x4
+    long  ( * HalUpdateCapsule)(void * ,unsigned long ,union _LARGE_INTEGER );// Offset=0x15c Size=0x4
+    unsigned char  ( * HalPciMultiStageResumeCapable)();// Offset=0x160 Size=0x4
+    void  ( * HalDmaFreeCrashDumpRegisters)(unsigned long );// Offset=0x164 Size=0x4
+    unsigned char  ( * HalAcpiAoacCapable)();// Offset=0x168 Size=0x4
+    long  ( * HalInterruptSetDestination)(struct _INTERRUPT_VECTOR_DATA * ,struct _GROUP_AFFINITY * ,unsigned long * );// Offset=0x16c Size=0x4
+    void  ( * HalGetClockConfiguration)(struct _HAL_CLOCK_TIMER_CONFIGURATION * );// Offset=0x170 Size=0x4
+    void  ( * HalClockTimerActivate)(unsigned char );// Offset=0x174 Size=0x4
+    void  ( * HalClockTimerInitialize)();// Offset=0x178 Size=0x4
+    void  ( * HalClockTimerStop)();// Offset=0x17c Size=0x4
+    long  ( * HalClockTimerArm)(enum _HAL_CLOCK_TIMER_MODE ,unsigned long long ,unsigned long long * );// Offset=0x180 Size=0x4
+    unsigned char  ( * HalTimerOnlyClockInterruptPending)();// Offset=0x184 Size=0x4
+    void *  ( * HalAcpiGetMultiNode)();// Offset=0x188 Size=0x4
+    void  ( * )(unsigned long ,long * ) ( * HalPowerSetRebootHandler)(void  ( * )(unsigned long ,long * ));// Offset=0x18c Size=0x4
+    void  ( * HalIommuRegisterDispatchTable)(struct _HAL_IOMMU_DISPATCH * );// Offset=0x190 Size=0x4
+    void  ( * HalTimerWatchdogStart)();// Offset=0x194 Size=0x4
+    void  ( * HalTimerWatchdogResetCountdown)();// Offset=0x198 Size=0x4
+    void  ( * HalTimerWatchdogStop)();// Offset=0x19c Size=0x4
+    unsigned char  ( * HalTimerWatchdogGeneratedLastReset)();// Offset=0x1a0 Size=0x4
+    long  ( * HalTimerWatchdogTriggerSystemReset)(unsigned char );// Offset=0x1a4 Size=0x4
+    long  ( * HalInterruptVectorDataToGsiv)(struct _INTERRUPT_VECTOR_DATA * ,unsigned long * );// Offset=0x1a8 Size=0x4
+    long  ( * HalInterruptGetHighestPriorityInterrupt)(unsigned long * ,unsigned char * );// Offset=0x1ac Size=0x4
+    long  ( * HalProcessorOn)(unsigned long );// Offset=0x1b0 Size=0x4
+    long  ( * HalProcessorOff)();// Offset=0x1b4 Size=0x4
+    long  ( * HalProcessorFreeze)();// Offset=0x1b8 Size=0x4
+    long  ( * HalDmaLinkDeviceObjectByToken)(unsigned long ,struct _DEVICE_OBJECT * );// Offset=0x1bc Size=0x4
+    long  ( * HalDmaCheckAdapterToken)(unsigned long );// Offset=0x1c0 Size=0x4
+    void * Dummy4;// Offset=0x1c4 Size=0x4
+    long  ( * HalTimerConvertPerformanceCounterToAuxiliaryCounter)(unsigned long long ,unsigned long long * ,unsigned long long * );// Offset=0x1c8 Size=0x4
+    long  ( * HalTimerConvertAuxiliaryCounterToPerformanceCounter)(unsigned long long ,unsigned long long * ,unsigned long long * );// Offset=0x1cc Size=0x4
+    long  ( * HalTimerQueryAuxiliaryCounterFrequency)(unsigned long long * );// Offset=0x1d0 Size=0x4
+    long  ( * HalConnectThermalInterrupt)(unsigned char  ( * )(struct _KINTERRUPT * ,void * ));// Offset=0x1d4 Size=0x4
+    unsigned char  ( * HalIsEFIRuntimeActive)();// Offset=0x1d8 Size=0x4
+    unsigned char  ( * HalTimerQueryAndResetRtcErrors)(unsigned char );// Offset=0x1dc Size=0x4
+    void  ( * HalAcpiLateRestore)();// Offset=0x1e0 Size=0x4
+    long  ( * KdWatchdogDelayExpiration)(unsigned long long * );// Offset=0x1e4 Size=0x4
+    long  ( * HalGetProcessorStats)(enum _HAL_PROCESSOR_STAT_TYPE ,unsigned long ,unsigned long ,unsigned long * );// Offset=0x1e8 Size=0x4
+    unsigned long long  ( * HalTimerWatchdogQueryDueTime)();// Offset=0x1ec Size=0x4
+    long  ( * HalConnectSyntheticInterrupt)(unsigned char  ( * )(struct _KINTERRUPT * ,void * ));// Offset=0x1f0 Size=0x4
+    void  ( * HalPreprocessNmi)(unsigned long );// Offset=0x1f4 Size=0x4
+    long  ( * HalEnumerateEnvironmentVariablesWithFilter)(unsigned long ,unsigned char  ( * )(struct _GUID * ,wchar_t * ),void * ,unsigned long * );// Offset=0x1f8 Size=0x4
+    long  ( * HalCaptureLastBranchRecordStack)(unsigned long ,struct _HAL_LBR_ENTRY * ,unsigned long * );// Offset=0x1fc Size=0x4
+    unsigned char  ( * HalClearLastBranchRecordStack)();// Offset=0x200 Size=0x4
+    long  ( * HalConfigureLastBranchRecord)(unsigned long ,unsigned long );// Offset=0x204 Size=0x4
+    unsigned char  ( * HalGetLastBranchInformation)(unsigned long * ,unsigned long * );// Offset=0x208 Size=0x4
+    void  ( * HalResumeLastBranchRecord)(unsigned char );// Offset=0x20c Size=0x4
+    long  ( * HalStartLastBranchRecord)(unsigned long ,unsigned long * );// Offset=0x210 Size=0x4
+    long  ( * HalStopLastBranchRecord)(unsigned long );// Offset=0x214 Size=0x4
+    long  ( * HalIommuBlockDevice)(void * );// Offset=0x218 Size=0x4
+    long  ( * HalIommuUnblockDevice)(struct _EXT_IOMMU_DEVICE_ID * ,void ** );// Offset=0x21c Size=0x4
+    long  ( * HalGetIommuInterface)(unsigned long ,struct _DMA_IOMMU_INTERFACE * );// Offset=0x220 Size=0x4
+    long  ( * HalRequestGenericErrorRecovery)(void * ,unsigned long * );// Offset=0x224 Size=0x4
+    long  ( * HalTimerQueryHostPerformanceCounter)(unsigned long long * );// Offset=0x228 Size=0x4
+};

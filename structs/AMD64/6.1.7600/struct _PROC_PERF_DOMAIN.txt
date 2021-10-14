@@ -1,0 +1,29 @@
+struct _PROC_PERF_DOMAIN// Size=0xb8
+{
+    struct _LIST_ENTRY Link;// Offset=0x0 Size=0x10
+    struct _KPRCB * Master;// Offset=0x10 Size=0x8
+    struct _KAFFINITY_EX Members;// Offset=0x18 Size=0x28
+    unsigned char  ( * FeedbackHandler)(unsigned long * ,unsigned long long ,unsigned char );// Offset=0x40 Size=0x8
+    void  ( * GetFFHThrottleState)(unsigned long long * );// Offset=0x48 Size=0x8
+    void  ( * BoostPolicyHandler)(unsigned long );// Offset=0x50 Size=0x8
+    unsigned long  ( * PerfSelectionHandler)(unsigned long long ,unsigned long ,unsigned long ,unsigned long ,unsigned long ,unsigned long * ,unsigned long * );// Offset=0x58 Size=0x8
+    void  ( * PerfHandler)(unsigned long long ,unsigned long );// Offset=0x60 Size=0x8
+    struct _PROC_PERF_CONSTRAINT * Processors;// Offset=0x68 Size=0x8
+    unsigned long long PerfChangeTime;// Offset=0x70 Size=0x8
+    unsigned long ProcessorCount;// Offset=0x78 Size=0x4
+    unsigned long PreviousFrequencyMhz;// Offset=0x7c Size=0x4
+    unsigned long CurrentFrequencyMhz;// Offset=0x80 Size=0x4
+    unsigned long PreviousFrequency;// Offset=0x84 Size=0x4
+    unsigned long CurrentFrequency;// Offset=0x88 Size=0x4
+    unsigned long CurrentPerfContext;// Offset=0x8c Size=0x4
+    unsigned long DesiredFrequency;// Offset=0x90 Size=0x4
+    unsigned long MaxFrequency;// Offset=0x94 Size=0x4
+    unsigned long MinPerfPercent;// Offset=0x98 Size=0x4
+    unsigned long MinThrottlePercent;// Offset=0x9c Size=0x4
+    unsigned long MaxPercent;// Offset=0xa0 Size=0x4
+    unsigned long MinPercent;// Offset=0xa4 Size=0x4
+    unsigned long ConstrainedMaxPercent;// Offset=0xa8 Size=0x4
+    unsigned long ConstrainedMinPercent;// Offset=0xac Size=0x4
+    unsigned char Coordination;// Offset=0xb0 Size=0x1
+    long PerfChangeIntervalCount;// Offset=0xb4 Size=0x4
+};

@@ -1,0 +1,5 @@
+struct _MMDEREFERENCE_SEGMENT_HEADER// Size=0x1c
+{
+    struct _KSEMAPHORE Semaphore;// Offset=0x0 Size=0x14
+    struct _LIST_ENTRY ListHead;// Offset=0x14 Size=0x8
+};

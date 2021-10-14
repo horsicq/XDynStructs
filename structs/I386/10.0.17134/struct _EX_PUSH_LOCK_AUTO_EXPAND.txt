@@ -1,0 +1,6 @@
+struct _EX_PUSH_LOCK_AUTO_EXPAND// Size=0xc
+{
+    struct _EX_PUSH_LOCK LocalLock;// Offset=0x0 Size=0x4
+    struct _EX_PUSH_LOCK_AUTO_EXPAND_STATE State;// Offset=0x4 Size=0x4
+    unsigned long Stats;// Offset=0x8 Size=0x4
+};

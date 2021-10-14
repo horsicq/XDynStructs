@@ -1,0 +1,7 @@
+struct _OBP_SILODRIVERSTATE// Size=0x1a4
+{
+    struct _DEVICE_MAP * SystemDeviceMap;// Offset=0x0 Size=0x4
+    struct _OBP_SYSTEM_DOS_DEVICE_STATE SystemDosDeviceState;// Offset=0x4 Size=0x6c
+    struct _EX_PUSH_LOCK DeviceMapLock;// Offset=0x70 Size=0x4
+    struct _OBJECT_NAMESPACE_LOOKUPTABLE PrivateNamespaceLookupTable;// Offset=0x74 Size=0x130
+};

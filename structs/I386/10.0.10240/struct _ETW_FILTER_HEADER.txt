@@ -1,0 +1,12 @@
+struct _ETW_FILTER_HEADER// Size=0x24
+{
+    long FilterFlags;// Offset=0x0 Size=0x4
+    struct _ETW_FILTER_PID * PidFilter;// Offset=0x4 Size=0x4
+    struct _ETW_FILTER_STRING_TOKEN * ExeFilter;// Offset=0x8 Size=0x4
+    struct _ETW_FILTER_STRING_TOKEN * PkgIdFilter;// Offset=0xc Size=0x4
+    struct _ETW_FILTER_STRING_TOKEN * PkgAppIdFilter;// Offset=0x10 Size=0x4
+    struct _ETW_PERFECT_HASH_FUNCTION * StackWalkFilter;// Offset=0x14 Size=0x4
+    struct _ETW_PERFECT_HASH_FUNCTION * EventIdFilter;// Offset=0x18 Size=0x4
+    struct _ETW_PAYLOAD_FILTER * PayloadFilter;// Offset=0x1c Size=0x4
+    struct _EVENT_FILTER_HEADER * ProviderSideFilter;// Offset=0x20 Size=0x4
+};

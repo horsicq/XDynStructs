@@ -1,0 +1,6 @@
+struct _IOV_FORCED_PENDING_TRACE// Size=0x200
+{
+    struct _IRP * Irp;// Offset=0x0 Size=0x8
+    struct _ETHREAD * Thread;// Offset=0x8 Size=0x8
+    void * StackTrace[62];// Offset=0x10 Size=0x1f0
+};

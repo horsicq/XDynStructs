@@ -1,0 +1,21 @@
+struct _MI_SYSTEM_VA_STATE// Size=0x2740
+{
+    unsigned long SystemTablesLock;// Offset=0x0 Size=0x4
+    unsigned long SystemVaBias;// Offset=0x4 Size=0x4
+    unsigned long SystemAvailableVaLow;// Offset=0x8 Size=0x4
+    unsigned long VirtualBias;// Offset=0xc Size=0x4
+    void * SystemRangeStart;// Offset=0x10 Size=0x4
+    unsigned char SystemCachePdeCount[1024];// Offset=0x14 Size=0x400
+    void * SystemCacheReverseMaps[1024];// Offset=0x414 Size=0x1000
+    struct _MI_SYSTEM_REGION_REFERENCE VaRegion[1024];// Offset=0x1414 Size=0x1000
+    unsigned long TopLevelPteLockBits[128];// Offset=0x2414 Size=0x200
+    unsigned long TopLevelPteAlternateLockBits[4];// Offset=0x2614 Size=0x10
+    long DeleteKvaLock;// Offset=0x2624 Size=0x4
+    struct _MI_WSLE * WsleArrays[8];// Offset=0x2628 Size=0x20
+    struct _MI_HYPER_SPACE * PagableHyperSpace;// Offset=0x2648 Size=0x4
+    void * HyperSpaceEnd;// Offset=0x264c Size=0x4
+    struct _KEVENT FreeSystemCacheVa;// Offset=0x2650 Size=0x10
+    unsigned long SystemVaLock;// Offset=0x2660 Size=0x4
+    unsigned long SystemCacheViewLock;// Offset=0x2664 Size=0x4
+    struct _MMWSL_INSTANCE SystemWorkingSetList[8];// Offset=0x2668 Size=0xc0
+};

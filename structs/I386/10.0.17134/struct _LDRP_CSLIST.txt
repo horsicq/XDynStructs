@@ -1,0 +1,4 @@
+struct _LDRP_CSLIST// Size=0x4
+{
+    struct _SINGLE_LIST_ENTRY * Tail;// Offset=0x0 Size=0x4
+};

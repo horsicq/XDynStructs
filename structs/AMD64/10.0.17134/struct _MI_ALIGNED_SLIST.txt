@@ -1,0 +1,4 @@
+struct _MI_ALIGNED_SLIST// Size=0x40
+{
+    union _SLIST_HEADER SList;// Offset=0x0 Size=0x10
+};

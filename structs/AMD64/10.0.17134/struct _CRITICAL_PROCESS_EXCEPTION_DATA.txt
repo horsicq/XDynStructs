@@ -1,0 +1,8 @@
+struct _CRITICAL_PROCESS_EXCEPTION_DATA// Size=0x30
+{
+    struct _GUID ReportId;// Offset=0x0 Size=0x10
+    struct _UNICODE_STRING ModuleName;// Offset=0x10 Size=0x10
+    unsigned long ModuleTimestamp;// Offset=0x20 Size=0x4
+    unsigned long ModuleSize;// Offset=0x24 Size=0x4
+    unsigned long long Offset;// Offset=0x28 Size=0x8
+};

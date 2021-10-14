@@ -1,0 +1,20 @@
+struct _MI_SYSTEM_PTE_STATE// Size=0x180
+{
+    struct _NPAGED_LOOKASIDE_LIST MdlTrackerLookaside;// Offset=0x0 Size=0xc0
+    union _SLIST_HEADER DeadPteTrackerSListHead;// Offset=0xc0 Size=0x8
+    unsigned long PteTrackerLock;// Offset=0xc8 Size=0x4
+    struct _RTL_BITMAP PteTrackingBitmap;// Offset=0xcc Size=0x8
+    struct _MI_CACHED_PTES * CachedPteHeads;// Offset=0xd4 Size=0x4
+    struct _MI_CACHED_PTES * CachedKernelStackPteHeads;// Offset=0xd8 Size=0x4
+    struct _MI_SYSTEM_PTE_TYPE SystemViewPteInfo;// Offset=0xdc Size=0x34
+    struct _MI_SYSTEM_PTE_TYPE KernelStackPteInfo;// Offset=0x110 Size=0x34
+    unsigned long StackGrowthFailures;// Offset=0x144 Size=0x4
+    unsigned char KernelStackPages;// Offset=0x148 Size=0x1
+    unsigned char TrackPtesAborted;// Offset=0x149 Size=0x1
+    unsigned char AdjustCounter;// Offset=0x14a Size=0x1
+    long ReservedMappingLock;// Offset=0x14c Size=0x4
+    struct _RTL_AVL_TREE ReservedMappingTree;// Offset=0x150 Size=0x4
+    struct _MMPFN * ReservedMappingPageTablePfns;// Offset=0x154 Size=0x4
+    struct _RTL_AVL_TREE OutswappedKernelStackRoot;// Offset=0x158 Size=0x4
+    long OutswappedKernelStackLock;// Offset=0x15c Size=0x4
+};

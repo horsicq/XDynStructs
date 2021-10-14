@@ -1,0 +1,11 @@
+struct _TlgProvider_t// Size=0x40
+{
+    unsigned int LevelPlus1;// Offset=0x0 Size=0x4
+    unsigned short * ProviderMetadataPtr;// Offset=0x8 Size=0x8
+    unsigned long long KeywordAny;// Offset=0x10 Size=0x8
+    unsigned long long KeywordAll;// Offset=0x18 Size=0x8
+    unsigned long long RegHandle;// Offset=0x20 Size=0x8
+    void  ( * EnableCallback)(struct _GUID * ,unsigned long ,unsigned char ,unsigned long long ,unsigned long long ,struct _EVENT_FILTER_DESCRIPTOR * ,void * );// Offset=0x28 Size=0x8
+    void * CallbackContext;// Offset=0x30 Size=0x8
+    void  ( * AnnotationFunc)(<btNoType> );// Offset=0x38 Size=0x8
+};

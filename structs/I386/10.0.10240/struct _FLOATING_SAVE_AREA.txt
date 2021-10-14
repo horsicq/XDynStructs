@@ -1,0 +1,12 @@
+struct _FLOATING_SAVE_AREA// Size=0x70
+{
+    unsigned long ControlWord;// Offset=0x0 Size=0x4
+    unsigned long StatusWord;// Offset=0x4 Size=0x4
+    unsigned long TagWord;// Offset=0x8 Size=0x4
+    unsigned long ErrorOffset;// Offset=0xc Size=0x4
+    unsigned long ErrorSelector;// Offset=0x10 Size=0x4
+    unsigned long DataOffset;// Offset=0x14 Size=0x4
+    unsigned long DataSelector;// Offset=0x18 Size=0x4
+    unsigned char RegisterArea[80];// Offset=0x1c Size=0x50
+    unsigned long Spare0;// Offset=0x6c Size=0x4
+};

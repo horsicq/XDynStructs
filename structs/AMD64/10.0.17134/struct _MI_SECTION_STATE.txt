@@ -1,0 +1,42 @@
+struct _MI_SECTION_STATE// Size=0x280
+{
+    long SectionObjectPointersLock;// Offset=0x0 Size=0x4
+    struct _RTL_AVL_TREE SectionBasedRoot;// Offset=0x8 Size=0x8
+    struct _EX_PUSH_LOCK SectionBasedLock;// Offset=0x10 Size=0x8
+    unsigned long long UnusedSegmentPagedPool;// Offset=0x18 Size=0x8
+    unsigned long DataSectionProtectionMask;// Offset=0x20 Size=0x4
+    void * HighSectionBase;// Offset=0x28 Size=0x8
+    struct _MSUBSECTION PhysicalSubsection;// Offset=0x30 Size=0x90
+    struct _CONTROL_AREA PhysicalControlArea;// Offset=0xc0 Size=0x80
+    struct _MMPFNLIST PurgingExtentPages;// Offset=0x140 Size=0x28
+    struct _MMPFN * DanglingExtentPages;// Offset=0x168 Size=0x8
+    struct _WORK_QUEUE_ITEM DanglingExtentsWorkItem;// Offset=0x170 Size=0x20
+    unsigned char DanglingExtentsWorkerActive;// Offset=0x190 Size=0x1
+    unsigned char PurgingExtentsNeedWatchdog;// Offset=0x191 Size=0x1
+    struct _RTL_AVL_TREE PrototypePtesTree;// Offset=0x198 Size=0x8
+    long PrototypePtesTreeSpinLock;// Offset=0x1a0 Size=0x4
+    unsigned long ImageBias;// Offset=0x1a4 Size=0x4
+    struct _EX_PUSH_LOCK RelocateBitmapsLock;// Offset=0x1a8 Size=0x8
+    struct _RTL_BITMAP ImageBitMap;// Offset=0x1b0 Size=0x10
+    unsigned long ImageBias64Low;// Offset=0x1c0 Size=0x4
+    unsigned long ImageBias64High;// Offset=0x1c4 Size=0x4
+    struct _RTL_BITMAP ImageBitMap64Low;// Offset=0x1c8 Size=0x10
+    struct _RTL_BITMAP ImageBitMap64High;// Offset=0x1d8 Size=0x10
+    struct _RTL_BITMAP ImageBitMapWow64Dll;// Offset=0x1e8 Size=0x10
+    void * ApiSetSection;// Offset=0x1f8 Size=0x8
+    void * ApiSetSchema;// Offset=0x200 Size=0x8
+    unsigned long long ApiSetSchemaSize;// Offset=0x208 Size=0x8
+    unsigned long LostDataFiles;// Offset=0x210 Size=0x4
+    unsigned long LostDataPages;// Offset=0x214 Size=0x4
+    unsigned long ImageFailureReason;// Offset=0x218 Size=0x4
+    struct _SECTION * CfgBitMapSection32;// Offset=0x220 Size=0x8
+    struct _CONTROL_AREA * CfgBitMapControlArea32;// Offset=0x228 Size=0x8
+    struct _SECTION * CfgBitMapSection64;// Offset=0x230 Size=0x8
+    struct _CONTROL_AREA * CfgBitMapControlArea64;// Offset=0x238 Size=0x8
+    struct _RTL_BITMAP_EX KernelCfgBitMap;// Offset=0x240 Size=0x10
+    struct _EX_PUSH_LOCK KernelCfgBitMapLock;// Offset=0x250 Size=0x8
+    unsigned long ImageCfgFailure;// Offset=0x258 Size=0x4
+    unsigned long ImageChecksumBreakpoint;// Offset=0x25c Size=0x4
+    unsigned long ImageSizeBreakpoint;// Offset=0x260 Size=0x4
+    long ImageValidationFailed;// Offset=0x264 Size=0x4
+};

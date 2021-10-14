@@ -1,0 +1,9 @@
+struct _MM_PAGE_ACCESS_INFO// Size=0x8
+{
+    union _MM_PAGE_ACCESS_INFO_FLAGS Flags;// Offset=0x0 Size=0x4
+    unsigned long long FileOffset;// Offset=0x0 Size=0x8
+    void * VirtualAddress;// Offset=0x0 Size=0x4
+    unsigned long DontUse0:3;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x3
+    unsigned long Spare0:29;// Offset=0x0 Size=0x4 BitOffset=0x3 BitSize=0x1d
+    void * PointerProtoPte;// Offset=0x4 Size=0x4
+};

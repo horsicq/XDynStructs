@@ -1,0 +1,5 @@
+struct _ETW_PAYLOAD_FILTER// Size=0x58
+{
+    long RefCount;// Offset=0x0 Size=0x4
+    struct _AGGREGATED_PAYLOAD_FILTER PayloadFilter;// Offset=0x8 Size=0x50
+};

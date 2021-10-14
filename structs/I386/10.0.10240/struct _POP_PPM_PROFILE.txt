@@ -1,0 +1,14 @@
+struct _POP_PPM_PROFILE// Size=0x1a8
+{
+    unsigned short * Name;// Offset=0x0 Size=0x4
+    unsigned char Id;// Offset=0x4 Size=0x1
+    struct _GUID Guid;// Offset=0x8 Size=0x10
+    unsigned long Flags;// Offset=0x18 Size=0x4
+    unsigned char Priority;// Offset=0x1c Size=0x1
+    struct _PPM_ENGINE_SETTINGS Settings[2];// Offset=0x20 Size=0x160
+    unsigned long long StartTime;// Offset=0x180 Size=0x8
+    unsigned long long Count;// Offset=0x188 Size=0x8
+    unsigned long long MaxDuration;// Offset=0x190 Size=0x8
+    unsigned long long MinDuration;// Offset=0x198 Size=0x8
+    unsigned long long TotalDuration;// Offset=0x1a0 Size=0x8
+};

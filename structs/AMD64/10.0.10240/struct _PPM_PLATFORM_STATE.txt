@@ -1,0 +1,16 @@
+struct _PPM_PLATFORM_STATE// Size=0x180
+{
+    unsigned long Latency;// Offset=0x0 Size=0x4
+    unsigned long BreakEvenDuration;// Offset=0x4 Size=0x4
+    struct _PPM_VETO_ACCOUNTING VetoAccounting;// Offset=0x8 Size=0x28
+    unsigned char TransitionDebugger;// Offset=0x30 Size=0x1
+    unsigned char Platform;// Offset=0x31 Size=0x1
+    unsigned long DependencyListCount;// Offset=0x34 Size=0x4
+    struct _KAFFINITY_EX Processors;// Offset=0x38 Size=0xa8
+    struct _UNICODE_STRING Name;// Offset=0xe0 Size=0x10
+    struct _PPM_SELECTION_DEPENDENCY * DependencyLists;// Offset=0xf0 Size=0x8
+    union _PPM_COORDINATED_SYNCHRONIZATION Synchronization;// Offset=0xf8 Size=0x4
+    unsigned long long EnterTime;// Offset=0x100 Size=0x8
+    long RefCount;// Offset=0x140 Size=0x4
+    unsigned char CacheAlign0[64];// Offset=0x140 Size=0x40
+};

@@ -1,0 +1,8 @@
+struct _RTL_BALANCED_LINKS// Size=0x10
+{
+    struct _RTL_BALANCED_LINKS * Parent;// Offset=0x0 Size=0x4
+    struct _RTL_BALANCED_LINKS * LeftChild;// Offset=0x4 Size=0x4
+    struct _RTL_BALANCED_LINKS * RightChild;// Offset=0x8 Size=0x4
+    char Balance;// Offset=0xc Size=0x1
+    unsigned char Reserved[3];// Offset=0xd Size=0x3
+};

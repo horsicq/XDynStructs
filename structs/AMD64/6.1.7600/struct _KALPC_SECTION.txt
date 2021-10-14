@@ -1,0 +1,12 @@
+struct _KALPC_SECTION// Size=0x48
+{
+    void * SectionObject;// Offset=0x0 Size=0x8
+    unsigned long long Size;// Offset=0x8 Size=0x8
+    struct _ALPC_HANDLE_TABLE * HandleTable;// Offset=0x10 Size=0x8
+    void * SectionHandle;// Offset=0x18 Size=0x8
+    struct _EPROCESS * OwnerProcess;// Offset=0x20 Size=0x8
+    struct _ALPC_PORT * OwnerPort;// Offset=0x28 Size=0x8
+    union _unnamed_347 u1;// Offset=0x30 Size=0x4
+    unsigned long NumberOfRegions;// Offset=0x34 Size=0x4
+    struct _LIST_ENTRY RegionListHead;// Offset=0x38 Size=0x10
+};

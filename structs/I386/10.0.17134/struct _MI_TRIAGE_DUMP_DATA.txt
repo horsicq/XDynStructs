@@ -1,0 +1,15 @@
+struct _MI_TRIAGE_DUMP_DATA// Size=0x38
+{
+    unsigned long BadPageCount;// Offset=0x0 Size=0x4
+    long BadPagesDetected;// Offset=0x4 Size=0x4
+    long ZeroedPageSingleBitErrorsDetected;// Offset=0x8 Size=0x4
+    long ScrubPasses;// Offset=0xc Size=0x4
+    long ScrubBadPagesFound;// Offset=0x10 Size=0x4
+    unsigned long PageHashErrors;// Offset=0x14 Size=0x4
+    unsigned long long FeatureBits;// Offset=0x18 Size=0x8
+    unsigned long TimeZoneId;// Offset=0x20 Size=0x4
+    union _MI_FLAGS Flags;// Offset=0x24 Size=0x4
+    void * VsmConnection;// Offset=0x28 Size=0x4
+    struct _EXCEPTION_REGISTRATION_RECORD * ExceptionChainTerminator;// Offset=0x2c Size=0x4
+    struct _EXCEPTION_REGISTRATION_RECORD ExceptionChainTerminatorRecord;// Offset=0x30 Size=0x8
+};

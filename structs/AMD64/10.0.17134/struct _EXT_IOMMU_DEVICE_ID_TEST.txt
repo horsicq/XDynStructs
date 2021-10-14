@@ -1,0 +1,4 @@
+struct _EXT_IOMMU_DEVICE_ID_TEST// Size=0x8
+{
+    unsigned long long UniqueId;// Offset=0x0 Size=0x8
+};

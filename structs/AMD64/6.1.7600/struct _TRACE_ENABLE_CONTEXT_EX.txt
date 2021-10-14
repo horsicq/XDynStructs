@@ -1,0 +1,9 @@
+struct _TRACE_ENABLE_CONTEXT_EX// Size=0x10
+{
+    unsigned short LoggerId;// Offset=0x0 Size=0x2
+    unsigned char Level;// Offset=0x2 Size=0x1
+    unsigned char InternalFlag;// Offset=0x3 Size=0x1
+    unsigned long EnableFlags;// Offset=0x4 Size=0x4
+    unsigned long EnableFlagsHigh;// Offset=0x8 Size=0x4
+    unsigned long Reserved;// Offset=0xc Size=0x4
+};

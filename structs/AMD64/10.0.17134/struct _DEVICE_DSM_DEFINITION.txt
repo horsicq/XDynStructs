@@ -1,0 +1,10 @@
+struct _DEVICE_DSM_DEFINITION// Size=0x1c
+{
+    unsigned long Action;// Offset=0x0 Size=0x4
+    unsigned char SingleRange;// Offset=0x4 Size=0x1
+    unsigned long ParameterBlockAlignment;// Offset=0x8 Size=0x4
+    unsigned long ParameterBlockLength;// Offset=0xc Size=0x4
+    unsigned char HasOutput;// Offset=0x10 Size=0x1
+    unsigned long OutputBlockAlignment;// Offset=0x14 Size=0x4
+    unsigned long OutputBlockLength;// Offset=0x18 Size=0x4
+};

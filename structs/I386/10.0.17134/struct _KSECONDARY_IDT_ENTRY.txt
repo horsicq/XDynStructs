@@ -1,0 +1,7 @@
+struct _KSECONDARY_IDT_ENTRY// Size=0x1c
+{
+    unsigned long SpinLock;// Offset=0x0 Size=0x4
+    struct _KEVENT ConnectLock;// Offset=0x4 Size=0x10
+    unsigned char LineMasked;// Offset=0x14 Size=0x1
+    struct _KINTERRUPT * InterruptList;// Offset=0x18 Size=0x4
+};

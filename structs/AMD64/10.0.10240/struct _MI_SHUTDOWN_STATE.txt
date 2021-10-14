@@ -1,0 +1,16 @@
+struct _MI_SHUTDOWN_STATE// Size=0x80
+{
+    unsigned long StandbyListDiscard;// Offset=0x0 Size=0x4
+    unsigned char CrashDumpInitialized;// Offset=0x4 Size=0x1
+    unsigned char ConnectedStandbyActive;// Offset=0x5 Size=0x1
+    unsigned long SystemShutdown;// Offset=0x8 Size=0x4
+    long ShutdownFlushInProgress;// Offset=0xc Size=0x4
+    struct _MI_RESUME_WORKITEM ResumeItem;// Offset=0x10 Size=0x38
+    unsigned char FreeListDiscard;// Offset=0x48 Size=0x1
+    struct _ETHREAD * MirrorHoldsPfn;// Offset=0x50 Size=0x8
+    unsigned long MirroringActive;// Offset=0x58 Size=0x4
+    struct _RTL_BITMAP_EX * MirrorBitMap;// Offset=0x60 Size=0x8
+    struct _RTL_BITMAP_EX * MirrorBitMapInterlocked;// Offset=0x68 Size=0x8
+    void * MirrorListLocks;// Offset=0x70 Size=0x8
+    struct _MMPTE * CrashDumpPte;// Offset=0x78 Size=0x8
+};

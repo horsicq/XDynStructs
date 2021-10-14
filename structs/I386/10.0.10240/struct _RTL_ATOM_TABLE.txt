@@ -1,0 +1,10 @@
+struct _RTL_ATOM_TABLE// Size=0x1c
+{
+    unsigned long Signature;// Offset=0x0 Size=0x4
+    long ReferenceCount;// Offset=0x4 Size=0x4
+    struct _EX_PUSH_LOCK PushLock;// Offset=0x8 Size=0x4
+    struct _HANDLE_TABLE * ExHandleTable;// Offset=0xc Size=0x4
+    unsigned long Flags;// Offset=0x10 Size=0x4
+    unsigned long NumberOfBuckets;// Offset=0x14 Size=0x4
+    struct _RTL_ATOM_TABLE_ENTRY * Buckets[1];// Offset=0x18 Size=0x4
+};

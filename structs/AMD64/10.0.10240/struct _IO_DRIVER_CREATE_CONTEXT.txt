@@ -1,0 +1,7 @@
+struct _IO_DRIVER_CREATE_CONTEXT// Size=0x20
+{
+    short Size;// Offset=0x0 Size=0x2
+    struct _ECP_LIST * ExtraCreateParameter;// Offset=0x8 Size=0x8
+    void * DeviceObjectHint;// Offset=0x10 Size=0x8
+    struct _TXN_PARAMETER_BLOCK * TxnParameters;// Offset=0x18 Size=0x8
+};

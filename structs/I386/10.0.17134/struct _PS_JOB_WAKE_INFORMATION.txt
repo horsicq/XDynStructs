@@ -1,0 +1,6 @@
+struct _PS_JOB_WAKE_INFORMATION// Size=0x48
+{
+    unsigned long long NotificationChannel;// Offset=0x0 Size=0x8
+    unsigned long long WakeCounters[7];// Offset=0x8 Size=0x38
+    unsigned long long NoWakeCounter;// Offset=0x40 Size=0x8
+};

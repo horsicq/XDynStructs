@@ -1,0 +1,17 @@
+struct _PS_CPU_QUOTA_BLOCK// Size=0x4080
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x10
+    unsigned long SessionId;// Offset=0x10 Size=0x4
+    unsigned long CpuShareWeight;// Offset=0x14 Size=0x4
+    union _PSP_CPU_SHARE_CAPTURED_WEIGHT_DATA CapturedWeightData;// Offset=0x18 Size=0x8
+    unsigned long DuplicateInputMarker:1;// Offset=0x20 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long Reserved:31;// Offset=0x20 Size=0x4 BitOffset=0x1 BitSize=0x1f
+    long MiscFlags;// Offset=0x20 Size=0x4
+    unsigned long long BlockCurrentGenerationLock;// Offset=0x0 Size=0x8
+    unsigned long long CyclesAccumulated;// Offset=0x8 Size=0x8
+    unsigned long long CycleCredit;// Offset=0x40 Size=0x8
+    unsigned long BlockCurrentGeneration;// Offset=0x48 Size=0x4
+    unsigned long CpuCyclePercent;// Offset=0x4c Size=0x4
+    unsigned char CyclesFinishedForCurrentGeneration;// Offset=0x50 Size=0x1
+    struct _PS_PER_CPU_QUOTA_CACHE_AWARE Cpu[256];// Offset=0x80 Size=0x4000
+};

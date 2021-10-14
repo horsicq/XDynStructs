@@ -1,0 +1,9 @@
+struct _MMWSL_INSTANCE// Size=0x18
+{
+    struct _MMPTE * NextPteToTrim;// Offset=0x0 Size=0x4
+    struct _MMPTE * NextPteToAge;// Offset=0x4 Size=0x4
+    struct _MMPTE * NextPteToAccessClear;// Offset=0x8 Size=0x4
+    unsigned long LastAccessClearingRemainder;// Offset=0xc Size=0x4
+    unsigned long LastAgingRemainder;// Offset=0x10 Size=0x4
+    unsigned long LockedEntries;// Offset=0x14 Size=0x4
+};

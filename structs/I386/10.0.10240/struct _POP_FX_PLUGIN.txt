@@ -1,0 +1,12 @@
+struct _POP_FX_PLUGIN// Size=0x70
+{
+    struct _LIST_ENTRY Link;// Offset=0x0 Size=0x8
+    unsigned long Version;// Offset=0x8 Size=0x4
+    unsigned long long Flags;// Offset=0x10 Size=0x8
+    struct _KQUEUE WorkQueue;// Offset=0x18 Size=0x28
+    unsigned char  ( * AcceptDeviceNotification)(unsigned long ,void * );// Offset=0x40 Size=0x4
+    unsigned char  ( * AcceptProcessorNotification)(struct PEPHANDLE__ * ,unsigned long ,void * );// Offset=0x44 Size=0x4
+    unsigned char  ( * AcceptAcpiNotification)(unsigned long ,void * );// Offset=0x48 Size=0x4
+    unsigned long WorkOrderCount;// Offset=0x4c Size=0x4
+    struct _POP_FX_WORK_ORDER WorkOrders[1];// Offset=0x50 Size=0x1c
+};

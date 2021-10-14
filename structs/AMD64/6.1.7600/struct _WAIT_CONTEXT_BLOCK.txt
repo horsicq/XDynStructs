@@ -1,0 +1,10 @@
+struct _WAIT_CONTEXT_BLOCK// Size=0x48
+{
+    struct _KDEVICE_QUEUE_ENTRY WaitQueueEntry;// Offset=0x0 Size=0x18
+    enum _IO_ALLOCATION_ACTION  ( * DeviceRoutine)(struct _DEVICE_OBJECT * ,struct _IRP * ,void * ,void * );// Offset=0x18 Size=0x8
+    void * DeviceContext;// Offset=0x20 Size=0x8
+    unsigned long NumberOfMapRegisters;// Offset=0x28 Size=0x4
+    void * DeviceObject;// Offset=0x30 Size=0x8
+    void * CurrentIrp;// Offset=0x38 Size=0x8
+    struct _KDPC * BufferChainingDpc;// Offset=0x40 Size=0x8
+};

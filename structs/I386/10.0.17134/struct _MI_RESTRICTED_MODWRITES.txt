@@ -1,0 +1,6 @@
+struct _MI_RESTRICTED_MODWRITES// Size=0x3
+{
+    unsigned char MaximumClusterPages;// Offset=0x0 Size=0x1
+    unsigned char ReducedClusterWrites;// Offset=0x1 Size=0x1
+    unsigned char ImposeDelay;// Offset=0x2 Size=0x1
+};

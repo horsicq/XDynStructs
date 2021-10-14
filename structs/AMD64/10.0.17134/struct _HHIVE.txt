@@ -1,0 +1,52 @@
+struct _HHIVE// Size=0x600
+{
+    unsigned long Signature;// Offset=0x0 Size=0x4
+    struct _CELL_DATA *  ( * GetCellRoutine)(struct _HHIVE * ,unsigned long ,struct _HV_GET_CELL_CONTEXT * );// Offset=0x8 Size=0x8
+    void  ( * ReleaseCellRoutine)(struct _HHIVE * ,struct _HV_GET_CELL_CONTEXT * );// Offset=0x10 Size=0x8
+    void *  ( * Allocate)(unsigned long ,unsigned char ,unsigned long );// Offset=0x18 Size=0x8
+    void  ( * Free)(void * ,unsigned long );// Offset=0x20 Size=0x8
+    long  ( * FileWrite)(struct _HHIVE * ,unsigned long ,struct CMP_OFFSET_ARRAY * ,unsigned long ,unsigned long );// Offset=0x28 Size=0x8
+    long  ( * FileRead)(struct _HHIVE * ,unsigned long ,unsigned long ,void * ,unsigned long );// Offset=0x30 Size=0x8
+    void * HiveLoadFailure;// Offset=0x38 Size=0x8
+    struct _HBASE_BLOCK * BaseBlock;// Offset=0x40 Size=0x8
+    struct _CMSI_RW_LOCK FlusherLock;// Offset=0x48 Size=0x8
+    struct _CMSI_RW_LOCK WriterLock;// Offset=0x50 Size=0x8
+    struct _RTL_BITMAP DirtyVector;// Offset=0x58 Size=0x10
+    unsigned long DirtyCount;// Offset=0x68 Size=0x4
+    unsigned long DirtyAlloc;// Offset=0x6c Size=0x4
+    struct _RTL_BITMAP UnreconciledVector;// Offset=0x70 Size=0x10
+    unsigned long UnreconciledCount;// Offset=0x80 Size=0x4
+    unsigned long BaseBlockAlloc;// Offset=0x84 Size=0x4
+    unsigned long Cluster;// Offset=0x88 Size=0x4
+    unsigned char Flat:1;// Offset=0x8c Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char ReadOnly:1;// Offset=0x8c Size=0x1 BitOffset=0x1 BitSize=0x1
+    unsigned char Reserved:6;// Offset=0x8c Size=0x1 BitOffset=0x2 BitSize=0x6
+    unsigned char DirtyFlag;// Offset=0x8d Size=0x1
+    unsigned long HvBinHeadersUse;// Offset=0x90 Size=0x4
+    unsigned long HvFreeCellsUse;// Offset=0x94 Size=0x4
+    unsigned long HvUsedCellsUse;// Offset=0x98 Size=0x4
+    unsigned long CmUsedCellsUse;// Offset=0x9c Size=0x4
+    unsigned long HiveFlags;// Offset=0xa0 Size=0x4
+    unsigned long CurrentLog;// Offset=0xa4 Size=0x4
+    unsigned long CurrentLogSequence;// Offset=0xa8 Size=0x4
+    unsigned long CurrentLogMinimumSequence;// Offset=0xac Size=0x4
+    unsigned long CurrentLogOffset;// Offset=0xb0 Size=0x4
+    unsigned long MinimumLogSequence;// Offset=0xb4 Size=0x4
+    unsigned long LogFileSizeCap;// Offset=0xb8 Size=0x4
+    unsigned char LogDataPresent[2];// Offset=0xbc Size=0x2
+    unsigned char PrimaryFileValid;// Offset=0xbe Size=0x1
+    unsigned char BaseBlockDirty;// Offset=0xbf Size=0x1
+    union _LARGE_INTEGER LastLogSwapTime;// Offset=0xc0 Size=0x8
+    unsigned short FirstLogFile:3;// Offset=0xc8 Size=0x2 BitOffset=0x0 BitSize=0x3
+    unsigned short SecondLogFile:3;// Offset=0xc8 Size=0x2 BitOffset=0x3 BitSize=0x3
+    unsigned short HeaderRecovered:1;// Offset=0xc8 Size=0x2 BitOffset=0x6 BitSize=0x1
+    unsigned short LegacyRecoveryIndicated:1;// Offset=0xc8 Size=0x2 BitOffset=0x7 BitSize=0x1
+    unsigned short RecoveryInformationReserved:8;// Offset=0xc8 Size=0x2 BitOffset=0x8 BitSize=0x8
+    unsigned short RecoveryInformation;// Offset=0xc8 Size=0x2
+    unsigned char LogEntriesRecovered[2];// Offset=0xca Size=0x2
+    unsigned long RefreshCount;// Offset=0xcc Size=0x4
+    unsigned long StorageTypeCount;// Offset=0xd0 Size=0x4
+    unsigned long Version;// Offset=0xd4 Size=0x4
+    struct _HVP_VIEW_MAP ViewMap;// Offset=0xd8 Size=0x38
+    struct _DUAL Storage[2];// Offset=0x110 Size=0x4f0
+};

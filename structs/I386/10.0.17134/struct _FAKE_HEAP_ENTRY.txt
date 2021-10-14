@@ -1,0 +1,5 @@
+struct _FAKE_HEAP_ENTRY// Size=0x8
+{
+    unsigned long Size;// Offset=0x0 Size=0x4
+    unsigned long PreviousSize;// Offset=0x4 Size=0x4
+};

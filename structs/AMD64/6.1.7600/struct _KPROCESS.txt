@@ -1,0 +1,40 @@
+struct _KPROCESS// Size=0x160
+{
+    struct _DISPATCHER_HEADER Header;// Offset=0x0 Size=0x18
+    struct _LIST_ENTRY ProfileListHead;// Offset=0x18 Size=0x10
+    unsigned long long DirectoryTableBase;// Offset=0x28 Size=0x8
+    struct _LIST_ENTRY ThreadListHead;// Offset=0x30 Size=0x10
+    unsigned long long ProcessLock;// Offset=0x40 Size=0x8
+    struct _KAFFINITY_EX Affinity;// Offset=0x48 Size=0x28
+    struct _LIST_ENTRY ReadyListHead;// Offset=0x70 Size=0x10
+    struct _SINGLE_LIST_ENTRY SwapListEntry;// Offset=0x80 Size=0x8
+    struct _KAFFINITY_EX ActiveProcessors;// Offset=0x88 Size=0x28
+    long AutoAlignment:1;// Offset=0xb0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    long DisableBoost:1;// Offset=0xb0 Size=0x4 BitOffset=0x1 BitSize=0x1
+    long DisableQuantum:1;// Offset=0xb0 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long ActiveGroupsMask:4;// Offset=0xb0 Size=0x4 BitOffset=0x3 BitSize=0x4
+    long ReservedFlags:25;// Offset=0xb0 Size=0x4 BitOffset=0x7 BitSize=0x19
+    long ProcessFlags;// Offset=0xb0 Size=0x4
+    char BasePriority;// Offset=0xb4 Size=0x1
+    char QuantumReset;// Offset=0xb5 Size=0x1
+    unsigned char Visited;// Offset=0xb6 Size=0x1
+    unsigned char Unused3;// Offset=0xb7 Size=0x1
+    unsigned long ThreadSeed[4];// Offset=0xb8 Size=0x10
+    unsigned short IdealNode[4];// Offset=0xc8 Size=0x8
+    unsigned short IdealGlobalNode;// Offset=0xd0 Size=0x2
+    union _KEXECUTE_OPTIONS Flags;// Offset=0xd2 Size=0x1
+    unsigned char Unused1;// Offset=0xd3 Size=0x1
+    unsigned long Unused2;// Offset=0xd4 Size=0x4
+    unsigned long Unused4;// Offset=0xd8 Size=0x4
+    union _KSTACK_COUNT StackCount;// Offset=0xdc Size=0x4
+    struct _LIST_ENTRY ProcessListEntry;// Offset=0xe0 Size=0x10
+    unsigned long long CycleTime;// Offset=0xf0 Size=0x8
+    unsigned long KernelTime;// Offset=0xf8 Size=0x4
+    unsigned long UserTime;// Offset=0xfc Size=0x4
+    void * InstrumentationCallback;// Offset=0x100 Size=0x8
+    union _KGDTENTRY64 LdtSystemDescriptor;// Offset=0x108 Size=0x10
+    void * LdtBaseAddress;// Offset=0x118 Size=0x8
+    struct _KGUARDED_MUTEX LdtProcessLock;// Offset=0x120 Size=0x38
+    unsigned short LdtFreeSelectorHint;// Offset=0x158 Size=0x2
+    unsigned short LdtTableLength;// Offset=0x15a Size=0x2
+};

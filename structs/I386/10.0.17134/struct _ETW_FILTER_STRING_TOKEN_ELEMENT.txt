@@ -1,0 +1,5 @@
+struct _ETW_FILTER_STRING_TOKEN_ELEMENT// Size=0x8
+{
+    unsigned short Length;// Offset=0x0 Size=0x2
+    wchar_t * String;// Offset=0x4 Size=0x4
+};

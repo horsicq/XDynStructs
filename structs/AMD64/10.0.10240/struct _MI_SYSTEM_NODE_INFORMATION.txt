@@ -1,0 +1,21 @@
+struct _MI_SYSTEM_NODE_INFORMATION// Size=0x1a0
+{
+    union _SLIST_HEADER PagedPoolSListHead;// Offset=0x0 Size=0x10
+    union _SLIST_HEADER NonPagedPoolSListHead[3];// Offset=0x10 Size=0x30
+    union _SLIST_HEADER NonPagedPoolSListHeadNx[3];// Offset=0x40 Size=0x30
+    struct _CACHED_KSTACK_LIST CachedKernelStacks[2];// Offset=0x70 Size=0x40
+    unsigned long long NonPagedBitMapMaximum;// Offset=0xb0 Size=0x8
+    struct _MI_DYNAMIC_BITMAP DynamicBitMapNonPagedPool;// Offset=0xb8 Size=0x50
+    unsigned long long NonPagedPoolLowestPage;// Offset=0x108 Size=0x8
+    unsigned long long NonPagedPoolHighestPage;// Offset=0x110 Size=0x8
+    unsigned long long AllocatedNonPagedPool;// Offset=0x118 Size=0x8
+    unsigned long long PartialLargePoolRegions;// Offset=0x120 Size=0x8
+    unsigned long long PagesInPartialLargePoolRegions;// Offset=0x128 Size=0x8
+    unsigned long long CachedNonPagedPoolCount;// Offset=0x130 Size=0x8
+    unsigned long long NonPagedPoolSpinLock;// Offset=0x138 Size=0x8
+    struct _MMPFN * CachedNonPagedPool;// Offset=0x140 Size=0x8
+    void * NonPagedPoolFirstVa;// Offset=0x148 Size=0x8
+    void * NonPagedPoolLastVa;// Offset=0x150 Size=0x8
+    struct _RTL_BITMAP_EX NonPagedBitMap[3];// Offset=0x158 Size=0x30
+    unsigned long long NonPagedHint[2];// Offset=0x188 Size=0x10
+};

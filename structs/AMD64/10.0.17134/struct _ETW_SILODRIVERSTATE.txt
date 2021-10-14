@@ -1,0 +1,24 @@
+struct _ETW_SILODRIVERSTATE// Size=0x11c0
+{
+    struct _EJOB * Silo;// Offset=0x0 Size=0x8
+    struct _ESERVERSILO_GLOBALS * SiloGlobals;// Offset=0x8 Size=0x8
+    unsigned long MaxLoggers;// Offset=0x10 Size=0x4
+    struct _ETW_GUID_ENTRY EtwpSecurityProviderGuidEntry;// Offset=0x18 Size=0x190
+    struct _EX_RUNDOWN_REF_CACHE_AWARE ** EtwpLoggerRundown;// Offset=0x1a8 Size=0x8
+    struct _WMI_LOGGER_CONTEXT ** EtwpLoggerContext;// Offset=0x1b0 Size=0x8
+    struct _ETW_HASH_BUCKET EtwpGuidHashTable[64];// Offset=0x1b8 Size=0xe00
+    unsigned short EtwpSecurityLoggers[8];// Offset=0xfb8 Size=0x10
+    unsigned char EtwpSecurityProviderEnableMask;// Offset=0xfc8 Size=0x1
+    long EtwpShutdownInProgress;// Offset=0xfcc Size=0x4
+    unsigned long EtwpSecurityProviderPID;// Offset=0xfd0 Size=0x4
+    struct _ETW_PRIV_HANDLE_DEMUX_TABLE PrivHandleDemuxTable;// Offset=0xfd8 Size=0x20
+    struct _ETW_COUNTERS EtwpCounters;// Offset=0xff8 Size=0x10
+    union _LARGE_INTEGER LogfileBytesWritten;// Offset=0x1008 Size=0x8
+    struct _ETW_SILO_TRACING_BLOCK * ProcessorBlocks;// Offset=0x1010 Size=0x8
+    struct _EX_WNF_SUBSCRIPTION * ContainerRestoreWnfSubscription;// Offset=0x1018 Size=0x8
+    struct _GUID PartitionId;// Offset=0x1020 Size=0x10
+    struct _GUID ParentId;// Offset=0x1030 Size=0x10
+    union _LARGE_INTEGER QpcOffsetFromRoot;// Offset=0x1040 Size=0x8
+    unsigned long PartitionType;// Offset=0x1048 Size=0x4
+    struct _ETW_SYSTEM_LOGGER_SETTINGS SystemLoggerSettings;// Offset=0x104c Size=0x174
+};

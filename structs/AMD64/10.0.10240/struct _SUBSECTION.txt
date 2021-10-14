@@ -1,0 +1,16 @@
+struct _SUBSECTION// Size=0x38
+{
+    struct _CONTROL_AREA * ControlArea;// Offset=0x0 Size=0x8
+    struct _MMPTE * SubsectionBase;// Offset=0x8 Size=0x8
+    struct _SUBSECTION * NextSubsection;// Offset=0x10 Size=0x8
+    struct _MI_FILE_EXTENTS * FileExtents;// Offset=0x18 Size=0x8
+    struct _RTL_AVL_TREE GlobalPerSessionHead;// Offset=0x18 Size=0x8
+    struct _MI_PER_SESSION_PROTOS * SessionDriverProtos;// Offset=0x18 Size=0x8
+    union _unnamed_816 u;// Offset=0x20 Size=0x4
+    unsigned long StartingSector;// Offset=0x24 Size=0x4
+    unsigned long NumberOfFullSectors;// Offset=0x28 Size=0x4
+    unsigned long PtesInSubsection;// Offset=0x2c Size=0x4
+    union _unnamed_817 u1;// Offset=0x30 Size=0x4
+    unsigned long UnusedPtes;// Offset=0x34 Size=0x4
+    unsigned long AlignmentNoAccessPtes;// Offset=0x34 Size=0x4
+};

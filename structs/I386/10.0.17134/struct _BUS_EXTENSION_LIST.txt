@@ -1,0 +1,5 @@
+struct _BUS_EXTENSION_LIST// Size=0x8
+{
+    void * Next;// Offset=0x0 Size=0x4
+    struct _PI_BUS_EXTENSION * BusExtension;// Offset=0x4 Size=0x4
+};

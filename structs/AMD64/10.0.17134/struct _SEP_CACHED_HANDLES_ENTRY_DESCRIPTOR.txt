@@ -1,0 +1,6 @@
+struct _SEP_CACHED_HANDLES_ENTRY_DESCRIPTOR// Size=0x18
+{
+    enum _SEP_CACHED_HANDLES_ENTRY_TYPE DescriptorType;// Offset=0x0 Size=0x4
+    void * PackageSid;// Offset=0x8 Size=0x8
+    struct _UNICODE_STRING IsolationPrefix;// Offset=0x8 Size=0x10
+};

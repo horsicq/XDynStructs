@@ -1,0 +1,12 @@
+struct _MMSECURE_FLAGS// Size=0x4
+{
+    unsigned long ReadOnly:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long ReadWrite:1;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long SecNoChange:1;// Offset=0x0 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long NoDelete:1;// Offset=0x0 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long RequiresPteReversal:1;// Offset=0x0 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long ExclusiveSecure:1;// Offset=0x0 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long UserModeOnly:1;// Offset=0x0 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long NoInherit:1;// Offset=0x0 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long Spare:4;// Offset=0x0 Size=0x4 BitOffset=0x8 BitSize=0x4
+};

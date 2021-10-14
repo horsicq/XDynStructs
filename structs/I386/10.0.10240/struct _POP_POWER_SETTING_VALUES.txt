@@ -1,0 +1,31 @@
+struct _POP_POWER_SETTING_VALUES// Size=0x13c
+{
+    unsigned long StructureSize;// Offset=0x0 Size=0x4
+    struct _SYSTEM_POWER_POLICY PopPolicy;// Offset=0x4 Size=0xe8
+    enum SYSTEM_POWER_CONDITION CurrentAcDcPowerState;// Offset=0xec Size=0x4
+    unsigned char AwayModeEnabled;// Offset=0xf0 Size=0x1
+    unsigned char AwayModeEngaged;// Offset=0xf1 Size=0x1
+    unsigned char AwayModePolicyAllowed;// Offset=0xf2 Size=0x1
+    long AwayModeIgnoreUserPresent;// Offset=0xf4 Size=0x4
+    long AwayModeIgnoreAction;// Offset=0xf8 Size=0x4
+    unsigned char DisableFastS4;// Offset=0xfc Size=0x1
+    unsigned char DisableStandbyStates;// Offset=0xfd Size=0x1
+    unsigned long UnattendSleepTimeout;// Offset=0x100 Size=0x4
+    unsigned long DiskIgnoreTime;// Offset=0x104 Size=0x4
+    unsigned long DeviceIdlePolicy;// Offset=0x108 Size=0x4
+    unsigned long VideoDimTimeout;// Offset=0x10c Size=0x4
+    unsigned long VideoNormalBrightness;// Offset=0x110 Size=0x4
+    unsigned long VideoDimBrightness;// Offset=0x114 Size=0x4
+    unsigned long AlsOffset;// Offset=0x118 Size=0x4
+    unsigned long AlsEnabled;// Offset=0x11c Size=0x4
+    unsigned long EsBrightness;// Offset=0x120 Size=0x4
+    unsigned char SwitchShutdownForced;// Offset=0x124 Size=0x1
+    unsigned long SystemCoolingPolicy;// Offset=0x128 Size=0x4
+    unsigned char MediaBufferingEngaged;// Offset=0x12c Size=0x1
+    unsigned char OffloadedAudio;// Offset=0x12d Size=0x1
+    unsigned char NonOffloadedAudio;// Offset=0x12e Size=0x1
+    unsigned char FullscreenVideoPlayback;// Offset=0x12f Size=0x1
+    unsigned long EsBatteryThreshold;// Offset=0x130 Size=0x4
+    unsigned char EsUserAwaySetting;// Offset=0x134 Size=0x1
+    unsigned long WiFiInStandby;// Offset=0x138 Size=0x4
+};

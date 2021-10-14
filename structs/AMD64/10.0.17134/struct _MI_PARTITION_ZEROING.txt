@@ -1,0 +1,11 @@
+struct _MI_PARTITION_ZEROING// Size=0x68
+{
+    struct _KEVENT PageEvent;// Offset=0x0 Size=0x18
+    unsigned char ThreadActive;// Offset=0x18 Size=0x1
+    unsigned char ThreadPriorityStatic;// Offset=0x19 Size=0x1
+    long ZeroFreePageSlistMinimum;// Offset=0x1c Size=0x4
+    struct _WORK_QUEUE_ITEM RebalanceZeroFreeWorkItem;// Offset=0x20 Size=0x20
+    long ThreadCount;// Offset=0x40 Size=0x4
+    struct _KGATE Gate;// Offset=0x48 Size=0x18
+    struct _MI_ZERO_THREAD_CONTEXT * ThreadContext;// Offset=0x60 Size=0x8
+};

@@ -1,0 +1,8 @@
+struct _FIRMWARE_INFORMATION_LOADER_BLOCK// Size=0x28
+{
+    unsigned long FirmwareTypeUefi:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long EfiRuntimeUseIum:1;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long EfiRuntimePageProtectionSupported:1;// Offset=0x0 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long Reserved:29;// Offset=0x0 Size=0x4 BitOffset=0x3 BitSize=0x1d
+    union _unnamed_1599 u;// Offset=0x4 Size=0x24
+};

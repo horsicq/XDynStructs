@@ -1,0 +1,15 @@
+struct _WAIT_CONTEXT_BLOCK// Size=0x48
+{
+    struct _KDEVICE_QUEUE_ENTRY WaitQueueEntry;// Offset=0x0 Size=0x18
+    struct _LIST_ENTRY DmaWaitEntry;// Offset=0x0 Size=0x10
+    unsigned long NumberOfChannels;// Offset=0x10 Size=0x4
+    unsigned long SyncCallback:1;// Offset=0x14 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long DmaContext:1;// Offset=0x14 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long Reserved:30;// Offset=0x14 Size=0x4 BitOffset=0x2 BitSize=0x1e
+    enum _IO_ALLOCATION_ACTION  ( * DeviceRoutine)(struct _DEVICE_OBJECT * ,struct _IRP * ,void * ,void * );// Offset=0x18 Size=0x8
+    void * DeviceContext;// Offset=0x20 Size=0x8
+    unsigned long NumberOfMapRegisters;// Offset=0x28 Size=0x4
+    void * DeviceObject;// Offset=0x30 Size=0x8
+    void * CurrentIrp;// Offset=0x38 Size=0x8
+    struct _KDPC * BufferChainingDpc;// Offset=0x40 Size=0x8
+};

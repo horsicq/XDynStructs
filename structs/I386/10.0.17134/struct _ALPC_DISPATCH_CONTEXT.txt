@@ -1,0 +1,15 @@
+struct _ALPC_DISPATCH_CONTEXT// Size=0x24
+{
+    struct _ALPC_PORT * PortObject;// Offset=0x0 Size=0x4
+    struct _KALPC_MESSAGE * Message;// Offset=0x4 Size=0x4
+    struct _ALPC_COMMUNICATION_INFO * CommunicationInfo;// Offset=0x8 Size=0x4
+    struct _ETHREAD * TargetThread;// Offset=0xc Size=0x4
+    struct _ALPC_PORT * TargetPort;// Offset=0x10 Size=0x4
+    union _KALPC_DIRECT_EVENT DirectEvent;// Offset=0x14 Size=0x4
+    unsigned long Flags;// Offset=0x18 Size=0x4
+    unsigned short TotalLength;// Offset=0x1c Size=0x2
+    unsigned short Type;// Offset=0x1e Size=0x2
+    unsigned short DataInfoOffset;// Offset=0x20 Size=0x2
+    unsigned char SignalCompletion;// Offset=0x22 Size=0x1
+    unsigned char PostedToCompletionList;// Offset=0x23 Size=0x1
+};

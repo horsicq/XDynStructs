@@ -1,0 +1,14 @@
+struct _SUPPORTED_RANGES// Size=0xa0
+{
+    unsigned short Version;// Offset=0x0 Size=0x2
+    unsigned char Sorted;// Offset=0x2 Size=0x1
+    unsigned char Reserved;// Offset=0x3 Size=0x1
+    unsigned long NoIO;// Offset=0x4 Size=0x4
+    struct _SUPPORTED_RANGE IO;// Offset=0x8 Size=0x20
+    unsigned long NoMemory;// Offset=0x28 Size=0x4
+    struct _SUPPORTED_RANGE Memory;// Offset=0x30 Size=0x20
+    unsigned long NoPrefetchMemory;// Offset=0x50 Size=0x4
+    struct _SUPPORTED_RANGE PrefetchMemory;// Offset=0x58 Size=0x20
+    unsigned long NoDma;// Offset=0x78 Size=0x4
+    struct _SUPPORTED_RANGE Dma;// Offset=0x80 Size=0x20
+};

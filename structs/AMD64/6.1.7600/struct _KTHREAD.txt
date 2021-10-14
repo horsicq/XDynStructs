@@ -1,0 +1,130 @@
+struct _KTHREAD// Size=0x360
+{
+    struct _DISPATCHER_HEADER Header;// Offset=0x0 Size=0x18
+    unsigned long long CycleTime;// Offset=0x18 Size=0x8
+    unsigned long long QuantumTarget;// Offset=0x20 Size=0x8
+    void * InitialStack;// Offset=0x28 Size=0x8
+    void * StackLimit;// Offset=0x30 Size=0x8
+    void * KernelStack;// Offset=0x38 Size=0x8
+    unsigned long long ThreadLock;// Offset=0x40 Size=0x8
+    union _KWAIT_STATUS_REGISTER WaitRegister;// Offset=0x48 Size=0x1
+    unsigned char Running;// Offset=0x49 Size=0x1
+    unsigned char Alerted[2];// Offset=0x4a Size=0x2
+    unsigned long KernelStackResident:1;// Offset=0x4c Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long ReadyTransition:1;// Offset=0x4c Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long ProcessReadyQueue:1;// Offset=0x4c Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long WaitNext:1;// Offset=0x4c Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long SystemAffinityActive:1;// Offset=0x4c Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long Alertable:1;// Offset=0x4c Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long GdiFlushActive:1;// Offset=0x4c Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long UserStackWalkActive:1;// Offset=0x4c Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long ApcInterruptRequest:1;// Offset=0x4c Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long ForceDeferSchedule:1;// Offset=0x4c Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long QuantumEndMigrate:1;// Offset=0x4c Size=0x4 BitOffset=0xa BitSize=0x1
+    unsigned long UmsDirectedSwitchEnable:1;// Offset=0x4c Size=0x4 BitOffset=0xb BitSize=0x1
+    unsigned long TimerActive:1;// Offset=0x4c Size=0x4 BitOffset=0xc BitSize=0x1
+    unsigned long Reserved:19;// Offset=0x4c Size=0x4 BitOffset=0xd BitSize=0x13
+    long MiscFlags;// Offset=0x4c Size=0x4
+    struct _KAPC_STATE ApcState;// Offset=0x50 Size=0x30
+    unsigned char ApcStateFill[43];// Offset=0x50 Size=0x2b
+    char Priority;// Offset=0x7b Size=0x1
+    unsigned long NextProcessor;// Offset=0x7c Size=0x4
+    unsigned long DeferredProcessor;// Offset=0x80 Size=0x4
+    unsigned long long ApcQueueLock;// Offset=0x88 Size=0x8
+    long long WaitStatus;// Offset=0x90 Size=0x8
+    struct _KWAIT_BLOCK * WaitBlockList;// Offset=0x98 Size=0x8
+    struct _LIST_ENTRY WaitListEntry;// Offset=0xa0 Size=0x10
+    struct _SINGLE_LIST_ENTRY SwapListEntry;// Offset=0xa0 Size=0x8
+    struct _KQUEUE * Queue;// Offset=0xb0 Size=0x8
+    void * Teb;// Offset=0xb8 Size=0x8
+    struct _KTIMER Timer;// Offset=0xc0 Size=0x40
+    unsigned long AutoAlignment:1;// Offset=0x100 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long DisableBoost:1;// Offset=0x100 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long EtwStackTraceApc1Inserted:1;// Offset=0x100 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long EtwStackTraceApc2Inserted:1;// Offset=0x100 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long CalloutActive:1;// Offset=0x100 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long ApcQueueable:1;// Offset=0x100 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long EnableStackSwap:1;// Offset=0x100 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long GuiThread:1;// Offset=0x100 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long UmsPerformingSyscall:1;// Offset=0x100 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long VdmSafe:1;// Offset=0x100 Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long ReservedFlags:22;// Offset=0x100 Size=0x4 BitOffset=0xa BitSize=0x16
+    long ThreadFlags;// Offset=0x100 Size=0x4
+    unsigned long Spare0;// Offset=0x104 Size=0x4
+    struct _KWAIT_BLOCK WaitBlock[4];// Offset=0x108 Size=0xc0
+    unsigned char WaitBlockFill4[44];// Offset=0x108 Size=0x2c
+    unsigned long ContextSwitches;// Offset=0x134 Size=0x4
+    unsigned char WaitBlockFill5[92];// Offset=0x108 Size=0x5c
+    unsigned char State;// Offset=0x164 Size=0x1
+    char NpxState;// Offset=0x165 Size=0x1
+    unsigned char WaitIrql;// Offset=0x166 Size=0x1
+    char WaitMode;// Offset=0x167 Size=0x1
+    unsigned char WaitBlockFill6[140];// Offset=0x108 Size=0x8c
+    unsigned long WaitTime;// Offset=0x194 Size=0x4
+    unsigned char WaitBlockFill7[168];// Offset=0x108 Size=0xa8
+    void * TebMappedLowVa;// Offset=0x1b0 Size=0x8
+    struct _UMS_CONTROL_BLOCK * Ucb;// Offset=0x1b8 Size=0x8
+    unsigned char WaitBlockFill8[188];// Offset=0x108 Size=0xbc
+    short KernelApcDisable;// Offset=0x1c4 Size=0x2
+    short SpecialApcDisable;// Offset=0x1c6 Size=0x2
+    unsigned long CombinedApcDisable;// Offset=0x1c4 Size=0x4
+    struct _LIST_ENTRY QueueListEntry;// Offset=0x1c8 Size=0x10
+    struct _KTRAP_FRAME * TrapFrame;// Offset=0x1d8 Size=0x8
+    void * FirstArgument;// Offset=0x1e0 Size=0x8
+    void * CallbackStack;// Offset=0x1e8 Size=0x8
+    unsigned long long CallbackDepth;// Offset=0x1e8 Size=0x8
+    unsigned char ApcStateIndex;// Offset=0x1f0 Size=0x1
+    char BasePriority;// Offset=0x1f1 Size=0x1
+    char PriorityDecrement;// Offset=0x1f2 Size=0x1
+    unsigned char ForegroundBoost:4;// Offset=0x1f2 Size=0x1 BitOffset=0x0 BitSize=0x4
+    unsigned char UnusualBoost:4;// Offset=0x1f2 Size=0x1 BitOffset=0x4 BitSize=0x4
+    unsigned char Preempted;// Offset=0x1f3 Size=0x1
+    unsigned char AdjustReason;// Offset=0x1f4 Size=0x1
+    char AdjustIncrement;// Offset=0x1f5 Size=0x1
+    char PreviousMode;// Offset=0x1f6 Size=0x1
+    char Saturation;// Offset=0x1f7 Size=0x1
+    unsigned long SystemCallNumber;// Offset=0x1f8 Size=0x4
+    unsigned long FreezeCount;// Offset=0x1fc Size=0x4
+    struct _GROUP_AFFINITY UserAffinity;// Offset=0x200 Size=0x10
+    struct _KPROCESS * Process;// Offset=0x210 Size=0x8
+    struct _GROUP_AFFINITY Affinity;// Offset=0x218 Size=0x10
+    unsigned long IdealProcessor;// Offset=0x228 Size=0x4
+    unsigned long UserIdealProcessor;// Offset=0x22c Size=0x4
+    struct _KAPC_STATE * ApcStatePointer[2];// Offset=0x230 Size=0x10
+    struct _KAPC_STATE SavedApcState;// Offset=0x240 Size=0x30
+    unsigned char SavedApcStateFill[43];// Offset=0x240 Size=0x2b
+    unsigned char WaitReason;// Offset=0x26b Size=0x1
+    char SuspendCount;// Offset=0x26c Size=0x1
+    char Spare1;// Offset=0x26d Size=0x1
+    unsigned char CodePatchInProgress;// Offset=0x26e Size=0x1
+    void * Win32Thread;// Offset=0x270 Size=0x8
+    void * StackBase;// Offset=0x278 Size=0x8
+    struct _KAPC SuspendApc;// Offset=0x280 Size=0x58
+    unsigned char SuspendApcFill0[1];// Offset=0x280 Size=0x1
+    unsigned char ResourceIndex;// Offset=0x281 Size=0x1
+    unsigned char SuspendApcFill1[3];// Offset=0x280 Size=0x3
+    unsigned char QuantumReset;// Offset=0x283 Size=0x1
+    unsigned char SuspendApcFill2[4];// Offset=0x280 Size=0x4
+    unsigned long KernelTime;// Offset=0x284 Size=0x4
+    unsigned char SuspendApcFill3[64];// Offset=0x280 Size=0x40
+    struct _KPRCB * WaitPrcb;// Offset=0x2c0 Size=0x8
+    unsigned char SuspendApcFill4[72];// Offset=0x280 Size=0x48
+    void * LegoData;// Offset=0x2c8 Size=0x8
+    unsigned char SuspendApcFill5[83];// Offset=0x280 Size=0x53
+    unsigned char LargeStack;// Offset=0x2d3 Size=0x1
+    unsigned long UserTime;// Offset=0x2d4 Size=0x4
+    struct _KSEMAPHORE SuspendSemaphore;// Offset=0x2d8 Size=0x20
+    unsigned char SuspendSemaphorefill[28];// Offset=0x2d8 Size=0x1c
+    unsigned long SListFaultCount;// Offset=0x2f4 Size=0x4
+    struct _LIST_ENTRY ThreadListEntry;// Offset=0x2f8 Size=0x10
+    struct _LIST_ENTRY MutantListHead;// Offset=0x308 Size=0x10
+    void * SListFaultAddress;// Offset=0x318 Size=0x8
+    long long ReadOperationCount;// Offset=0x320 Size=0x8
+    long long WriteOperationCount;// Offset=0x328 Size=0x8
+    long long OtherOperationCount;// Offset=0x330 Size=0x8
+    long long ReadTransferCount;// Offset=0x338 Size=0x8
+    long long WriteTransferCount;// Offset=0x340 Size=0x8
+    long long OtherTransferCount;// Offset=0x348 Size=0x8
+    struct _KTHREAD_COUNTERS * ThreadCounters;// Offset=0x350 Size=0x8
+    struct _XSTATE_SAVE * XStateSave;// Offset=0x358 Size=0x8
+};

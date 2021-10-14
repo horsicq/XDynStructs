@@ -1,0 +1,17 @@
+struct _PPM_SELECTION_STATISTICS// Size=0x70
+{
+    unsigned long long SelectedCount;// Offset=0x0 Size=0x8
+    unsigned long long VetoCount;// Offset=0x8 Size=0x8
+    unsigned long long PreVetoCount;// Offset=0x10 Size=0x8
+    unsigned long long WrongProcessorCount;// Offset=0x18 Size=0x8
+    unsigned long long LatencyCount;// Offset=0x20 Size=0x8
+    unsigned long long IdleDurationCount;// Offset=0x28 Size=0x8
+    unsigned long long DeviceDependencyCount;// Offset=0x30 Size=0x8
+    unsigned long long ProcessorDependencyCount;// Offset=0x38 Size=0x8
+    unsigned long long PlatformOnlyCount;// Offset=0x40 Size=0x8
+    unsigned long long InterruptibleCount;// Offset=0x48 Size=0x8
+    unsigned long long LegacyOverrideCount;// Offset=0x50 Size=0x8
+    unsigned long long CstateCheckCount;// Offset=0x58 Size=0x8
+    unsigned long long NoCStateCount;// Offset=0x60 Size=0x8
+    unsigned long long CoordinatedDependencyCount;// Offset=0x68 Size=0x8
+};

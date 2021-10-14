@@ -1,0 +1,4 @@
+struct _MMPTE// Size=0x8
+{
+    union _unnamed_185 u;// Offset=0x0 Size=0x8
+};

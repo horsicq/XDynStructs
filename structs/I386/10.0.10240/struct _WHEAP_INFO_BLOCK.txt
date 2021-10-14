@@ -1,0 +1,6 @@
+struct _WHEAP_INFO_BLOCK// Size=0xc
+{
+    unsigned long ErrorSourceCount;// Offset=0x0 Size=0x4
+    struct _WHEAP_ERROR_SOURCE_TABLE * ErrorSourceTable;// Offset=0x4 Size=0x4
+    struct _WHEAP_WORK_QUEUE * WorkQueue;// Offset=0x8 Size=0x4
+};

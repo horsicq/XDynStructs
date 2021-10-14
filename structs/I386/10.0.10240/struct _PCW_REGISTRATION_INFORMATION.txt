@@ -1,0 +1,9 @@
+struct _PCW_REGISTRATION_INFORMATION// Size=0x18
+{
+    unsigned long Version;// Offset=0x0 Size=0x4
+    struct _UNICODE_STRING * Name;// Offset=0x4 Size=0x4
+    unsigned long CounterCount;// Offset=0x8 Size=0x4
+    struct _PCW_COUNTER_DESCRIPTOR * Counters;// Offset=0xc Size=0x4
+    long  ( * Callback)(enum _PCW_CALLBACK_TYPE ,union _PCW_CALLBACK_INFORMATION * ,void * );// Offset=0x10 Size=0x4
+    void * CallbackContext;// Offset=0x14 Size=0x4
+};

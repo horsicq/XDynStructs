@@ -1,0 +1,37 @@
+struct _DEVICE_CAPABILITIES// Size=0x40
+{
+    unsigned short Size;// Offset=0x0 Size=0x2
+    unsigned short Version;// Offset=0x2 Size=0x2
+    unsigned long DeviceD1:1;// Offset=0x4 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long DeviceD2:1;// Offset=0x4 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long LockSupported:1;// Offset=0x4 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long EjectSupported:1;// Offset=0x4 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long Removable:1;// Offset=0x4 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long DockDevice:1;// Offset=0x4 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long UniqueID:1;// Offset=0x4 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long SilentInstall:1;// Offset=0x4 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long RawDeviceOK:1;// Offset=0x4 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long SurpriseRemovalOK:1;// Offset=0x4 Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long WakeFromD0:1;// Offset=0x4 Size=0x4 BitOffset=0xa BitSize=0x1
+    unsigned long WakeFromD1:1;// Offset=0x4 Size=0x4 BitOffset=0xb BitSize=0x1
+    unsigned long WakeFromD2:1;// Offset=0x4 Size=0x4 BitOffset=0xc BitSize=0x1
+    unsigned long WakeFromD3:1;// Offset=0x4 Size=0x4 BitOffset=0xd BitSize=0x1
+    unsigned long HardwareDisabled:1;// Offset=0x4 Size=0x4 BitOffset=0xe BitSize=0x1
+    unsigned long NonDynamic:1;// Offset=0x4 Size=0x4 BitOffset=0xf BitSize=0x1
+    unsigned long WarmEjectSupported:1;// Offset=0x4 Size=0x4 BitOffset=0x10 BitSize=0x1
+    unsigned long NoDisplayInUI:1;// Offset=0x4 Size=0x4 BitOffset=0x11 BitSize=0x1
+    unsigned long Reserved1:1;// Offset=0x4 Size=0x4 BitOffset=0x12 BitSize=0x1
+    unsigned long WakeFromInterrupt:1;// Offset=0x4 Size=0x4 BitOffset=0x13 BitSize=0x1
+    unsigned long SecureDevice:1;// Offset=0x4 Size=0x4 BitOffset=0x14 BitSize=0x1
+    unsigned long ChildOfVgaEnabledBridge:1;// Offset=0x4 Size=0x4 BitOffset=0x15 BitSize=0x1
+    unsigned long DecodeIoOnBoot:1;// Offset=0x4 Size=0x4 BitOffset=0x16 BitSize=0x1
+    unsigned long Reserved:9;// Offset=0x4 Size=0x4 BitOffset=0x17 BitSize=0x9
+    unsigned long Address;// Offset=0x8 Size=0x4
+    unsigned long UINumber;// Offset=0xc Size=0x4
+    enum _DEVICE_POWER_STATE DeviceState[7];// Offset=0x10 Size=0x1c
+    enum _SYSTEM_POWER_STATE SystemWake;// Offset=0x2c Size=0x4
+    enum _DEVICE_POWER_STATE DeviceWake;// Offset=0x30 Size=0x4
+    unsigned long D1Latency;// Offset=0x34 Size=0x4
+    unsigned long D2Latency;// Offset=0x38 Size=0x4
+    unsigned long D3Latency;// Offset=0x3c Size=0x4
+};

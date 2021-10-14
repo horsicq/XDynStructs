@@ -1,0 +1,9 @@
+struct _CM_KEY_SECURITY_CACHE// Size=0x2c
+{
+    unsigned long Cell;// Offset=0x0 Size=0x4
+    unsigned long ConvKey;// Offset=0x4 Size=0x4
+    struct _LIST_ENTRY List;// Offset=0x8 Size=0x8
+    unsigned long DescriptorLength;// Offset=0x10 Size=0x4
+    unsigned long RealRefCount;// Offset=0x14 Size=0x4
+    struct _SECURITY_DESCRIPTOR_RELATIVE Descriptor;// Offset=0x18 Size=0x14
+};

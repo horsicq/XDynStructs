@@ -1,0 +1,5 @@
+struct _INTERRUPT_HT_INTR_INFO// Size=0x8
+{
+    union _unnamed_952 LowPart;// Offset=0x0 Size=0x4
+    union _unnamed_954 HighPart;// Offset=0x4 Size=0x4
+};

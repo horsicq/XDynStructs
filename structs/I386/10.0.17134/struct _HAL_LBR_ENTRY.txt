@@ -1,0 +1,6 @@
+struct _HAL_LBR_ENTRY// Size=0xc
+{
+    void * FromAddress;// Offset=0x0 Size=0x4
+    void * ToAddress;// Offset=0x4 Size=0x4
+    void * Reserved;// Offset=0x8 Size=0x4
+};

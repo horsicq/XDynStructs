@@ -1,0 +1,4 @@
+struct _TRIAGE_EX_WORK_QUEUE// Size=0x19c
+{
+    struct _KPRIQUEUE WorkPriQueue;// Offset=0x0 Size=0x19c
+};

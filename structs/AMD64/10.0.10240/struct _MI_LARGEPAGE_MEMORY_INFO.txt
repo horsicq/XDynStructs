@@ -1,0 +1,9 @@
+struct _MI_LARGEPAGE_MEMORY_INFO// Size=0x28
+{
+    struct _LIST_ENTRY ListHead;// Offset=0x0 Size=0x10
+    struct _COLORED_PAGE_INFO * ColoredPageInfoBase;// Offset=0x10 Size=0x8
+    unsigned long PagesNeedZeroing;// Offset=0x18 Size=0x4
+    unsigned char LargeImageBias;// Offset=0x1c Size=0x1
+    unsigned char Spare[3];// Offset=0x1d Size=0x3
+    unsigned long long ActualImageViewSize;// Offset=0x20 Size=0x8
+};

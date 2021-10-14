@@ -1,0 +1,18 @@
+struct _MMPFN// Size=0x30
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x10
+    struct _RTL_BALANCED_NODE TreeNode;// Offset=0x0 Size=0x18
+    union _unnamed_231 u1;// Offset=0x0 Size=0x8
+    struct _MMPTE * PteAddress;// Offset=0x8 Size=0x8
+    void * VolatilePteAddress;// Offset=0x8 Size=0x8
+    unsigned long long PteLong;// Offset=0x8 Size=0x8
+    struct _MMPTE OriginalPte;// Offset=0x10 Size=0x8
+    struct _MIPFNBLINK u2;// Offset=0x18 Size=0x8
+    union _unnamed_234 u3;// Offset=0x20 Size=0x4
+    unsigned short NodeBlinkLow;// Offset=0x24 Size=0x2
+    unsigned char Unused:4;// Offset=0x26 Size=0x1 BitOffset=0x0 BitSize=0x4
+    unsigned char Unused2:4;// Offset=0x26 Size=0x1 BitOffset=0x4 BitSize=0x4
+    unsigned char ViewCount;// Offset=0x27 Size=0x1
+    unsigned char NodeFlinkLow;// Offset=0x27 Size=0x1
+    union _unnamed_235 u4;// Offset=0x28 Size=0x8
+};

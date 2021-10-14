@@ -1,0 +1,43 @@
+struct _ARBITER_INSTANCE// Size=0x150
+{
+    unsigned long Signature;// Offset=0x0 Size=0x4
+    struct _KEVENT * MutexEvent;// Offset=0x8 Size=0x8
+    unsigned short * Name;// Offset=0x10 Size=0x8
+    unsigned short * OrderingName;// Offset=0x18 Size=0x8
+    int ResourceType;// Offset=0x20 Size=0x4
+    struct _RTL_RANGE_LIST * Allocation;// Offset=0x28 Size=0x8
+    struct _RTL_RANGE_LIST * PossibleAllocation;// Offset=0x30 Size=0x8
+    struct _ARBITER_ORDERING_LIST OrderingList;// Offset=0x38 Size=0x10
+    struct _ARBITER_ORDERING_LIST ReservedList;// Offset=0x48 Size=0x10
+    long ReferenceCount;// Offset=0x58 Size=0x4
+    struct _ARBITER_INTERFACE * Interface;// Offset=0x60 Size=0x8
+    unsigned long AllocationStackMaxSize;// Offset=0x68 Size=0x4
+    struct _ARBITER_ALLOCATION_STATE * AllocationStack;// Offset=0x70 Size=0x8
+    long  ( * UnpackRequirement)(struct _IO_RESOURCE_DESCRIPTOR * ,unsigned long long * ,unsigned long long * ,unsigned long long * ,unsigned long long * );// Offset=0x78 Size=0x8
+    long  ( * PackResource)(struct _IO_RESOURCE_DESCRIPTOR * ,unsigned long long ,struct _CM_PARTIAL_RESOURCE_DESCRIPTOR * );// Offset=0x80 Size=0x8
+    long  ( * UnpackResource)(struct _CM_PARTIAL_RESOURCE_DESCRIPTOR * ,unsigned long long * ,unsigned long long * );// Offset=0x88 Size=0x8
+    long  ( * ScoreRequirement)(struct _IO_RESOURCE_DESCRIPTOR * );// Offset=0x90 Size=0x8
+    long  ( * TestAllocation)(struct _ARBITER_INSTANCE * ,struct _ARBITER_TEST_ALLOCATION_PARAMETERS * );// Offset=0x98 Size=0x8
+    long  ( * RetestAllocation)(struct _ARBITER_INSTANCE * ,struct _ARBITER_RETEST_ALLOCATION_PARAMETERS * );// Offset=0xa0 Size=0x8
+    long  ( * CommitAllocation)(struct _ARBITER_INSTANCE * );// Offset=0xa8 Size=0x8
+    long  ( * RollbackAllocation)(struct _ARBITER_INSTANCE * );// Offset=0xb0 Size=0x8
+    long  ( * BootAllocation)(struct _ARBITER_INSTANCE * ,struct _ARBITER_BOOT_ALLOCATION_PARAMETERS * );// Offset=0xb8 Size=0x8
+    long  ( * QueryArbitrate)(struct _ARBITER_INSTANCE * ,struct _ARBITER_QUERY_ARBITRATE_PARAMETERS * );// Offset=0xc0 Size=0x8
+    long  ( * QueryConflict)(struct _ARBITER_INSTANCE * ,struct _ARBITER_QUERY_CONFLICT_PARAMETERS * );// Offset=0xc8 Size=0x8
+    long  ( * AddReserved)(struct _ARBITER_INSTANCE * ,struct _ARBITER_ADD_RESERVED_PARAMETERS * );// Offset=0xd0 Size=0x8
+    long  ( * StartArbiter)(struct _ARBITER_INSTANCE * ,struct _CM_RESOURCE_LIST * );// Offset=0xd8 Size=0x8
+    long  ( * PreprocessEntry)(struct _ARBITER_INSTANCE * ,struct _ARBITER_ALLOCATION_STATE * );// Offset=0xe0 Size=0x8
+    long  ( * AllocateEntry)(struct _ARBITER_INSTANCE * ,struct _ARBITER_ALLOCATION_STATE * );// Offset=0xe8 Size=0x8
+    unsigned char  ( * GetNextAllocationRange)(struct _ARBITER_INSTANCE * ,struct _ARBITER_ALLOCATION_STATE * );// Offset=0xf0 Size=0x8
+    unsigned char  ( * FindSuitableRange)(struct _ARBITER_INSTANCE * ,struct _ARBITER_ALLOCATION_STATE * );// Offset=0xf8 Size=0x8
+    void  ( * AddAllocation)(struct _ARBITER_INSTANCE * ,struct _ARBITER_ALLOCATION_STATE * );// Offset=0x100 Size=0x8
+    void  ( * BacktrackAllocation)(struct _ARBITER_INSTANCE * ,struct _ARBITER_ALLOCATION_STATE * );// Offset=0x108 Size=0x8
+    unsigned char  ( * OverrideConflict)(struct _ARBITER_INSTANCE * ,struct _ARBITER_ALLOCATION_STATE * );// Offset=0x110 Size=0x8
+    long  ( * InitializeRangeList)(struct _ARBITER_INSTANCE * ,unsigned long ,struct _CM_PARTIAL_RESOURCE_DESCRIPTOR * ,struct _RTL_RANGE_LIST * );// Offset=0x118 Size=0x8
+    unsigned char TransactionInProgress;// Offset=0x120 Size=0x1
+    struct _KEVENT * TransactionEvent;// Offset=0x128 Size=0x8
+    void * Extension;// Offset=0x130 Size=0x8
+    struct _DEVICE_OBJECT * BusDeviceObject;// Offset=0x138 Size=0x8
+    void * ConflictCallbackContext;// Offset=0x140 Size=0x8
+    unsigned char  ( * ConflictCallback)(void * ,struct _RTL_RANGE * );// Offset=0x148 Size=0x8
+};

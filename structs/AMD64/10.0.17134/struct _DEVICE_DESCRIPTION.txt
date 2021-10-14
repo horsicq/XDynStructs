@@ -1,0 +1,23 @@
+struct _DEVICE_DESCRIPTION// Size=0x40
+{
+    unsigned long Version;// Offset=0x0 Size=0x4
+    unsigned char Master;// Offset=0x4 Size=0x1
+    unsigned char ScatterGather;// Offset=0x5 Size=0x1
+    unsigned char DemandMode;// Offset=0x6 Size=0x1
+    unsigned char AutoInitialize;// Offset=0x7 Size=0x1
+    unsigned char Dma32BitAddresses;// Offset=0x8 Size=0x1
+    unsigned char IgnoreCount;// Offset=0x9 Size=0x1
+    unsigned char Reserved1;// Offset=0xa Size=0x1
+    unsigned char Dma64BitAddresses;// Offset=0xb Size=0x1
+    unsigned long BusNumber;// Offset=0xc Size=0x4
+    unsigned long DmaChannel;// Offset=0x10 Size=0x4
+    enum _INTERFACE_TYPE InterfaceType;// Offset=0x14 Size=0x4
+    enum _DMA_WIDTH DmaWidth;// Offset=0x18 Size=0x4
+    enum _DMA_SPEED DmaSpeed;// Offset=0x1c Size=0x4
+    unsigned long MaximumLength;// Offset=0x20 Size=0x4
+    unsigned long DmaPort;// Offset=0x24 Size=0x4
+    unsigned long DmaAddressWidth;// Offset=0x28 Size=0x4
+    unsigned long DmaControllerInstance;// Offset=0x2c Size=0x4
+    unsigned long DmaRequestLine;// Offset=0x30 Size=0x4
+    union _LARGE_INTEGER DeviceAddress;// Offset=0x38 Size=0x8
+};

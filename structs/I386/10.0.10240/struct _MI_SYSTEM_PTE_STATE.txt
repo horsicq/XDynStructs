@@ -1,0 +1,15 @@
+struct _MI_SYSTEM_PTE_STATE// Size=0x180
+{
+    union _SLIST_HEADER DeadPteTrackerSListHead;// Offset=0x0 Size=0x8
+    unsigned long PteTrackerLock;// Offset=0x8 Size=0x4
+    struct _NPAGED_LOOKASIDE_LIST MdlTrackerLookaside;// Offset=0x40 Size=0xc0
+    struct _RTL_BITMAP PteTrackingBitmap;// Offset=0x100 Size=0x8
+    struct _MI_CACHED_PTES * CachedPteHeads;// Offset=0x108 Size=0x4
+    struct _MI_SYSTEM_PTE_TYPE SystemViewPteInfo;// Offset=0x10c Size=0x34
+    unsigned char KernelStackPages;// Offset=0x140 Size=0x1
+    union _SLIST_HEADER QueuedStacks;// Offset=0x148 Size=0x8
+    unsigned long StackGrowthFailures;// Offset=0x150 Size=0x4
+    unsigned char TrackPtesAborted;// Offset=0x154 Size=0x1
+    unsigned char AdjustCounter;// Offset=0x155 Size=0x1
+    struct _MI_QUEUED_DEADSTACK_WORKITEM QueuedStacksWorkItem;// Offset=0x158 Size=0x14
+};

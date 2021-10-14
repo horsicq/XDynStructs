@@ -1,0 +1,17 @@
+struct _PEP_ACPI_EXTENDED_ADDRESS// Size=0x48
+{
+    enum _PEP_ACPI_RESOURCE_TYPE Type;// Offset=0x0 Size=0x4
+    union _PEP_ACPI_RESOURCE_FLAGS Flags;// Offset=0x4 Size=0x4
+    unsigned char ResourceFlags;// Offset=0x8 Size=0x1
+    unsigned char GeneralFlags;// Offset=0x9 Size=0x1
+    unsigned char TypeSpecificFlags;// Offset=0xa Size=0x1
+    unsigned char RevisionId;// Offset=0xb Size=0x1
+    unsigned char Reserved;// Offset=0xc Size=0x1
+    unsigned long long Granularity;// Offset=0x10 Size=0x8
+    unsigned long long MinimumAddress;// Offset=0x18 Size=0x8
+    unsigned long long MaximumAddress;// Offset=0x20 Size=0x8
+    unsigned long long TranslationAddress;// Offset=0x28 Size=0x8
+    unsigned long long AddressLength;// Offset=0x30 Size=0x8
+    unsigned long long TypeAttribute;// Offset=0x38 Size=0x8
+    struct _UNICODE_STRING * DescriptorName;// Offset=0x40 Size=0x8
+};

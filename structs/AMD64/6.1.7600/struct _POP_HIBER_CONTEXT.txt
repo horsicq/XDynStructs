@@ -1,0 +1,42 @@
+struct _POP_HIBER_CONTEXT// Size=0x110
+{
+    unsigned char WriteToFile;// Offset=0x0 Size=0x1
+    unsigned char ReserveLoaderMemory;// Offset=0x1 Size=0x1
+    unsigned char ReserveFreeMemory;// Offset=0x2 Size=0x1
+    unsigned char Reset;// Offset=0x3 Size=0x1
+    unsigned char HiberFlags;// Offset=0x4 Size=0x1
+    unsigned char WroteHiberFile;// Offset=0x5 Size=0x1
+    unsigned char MapFrozen;// Offset=0x6 Size=0x1
+    struct _RTL_BITMAP MemoryMap;// Offset=0x8 Size=0x10
+    struct _RTL_BITMAP DiscardedMemoryPages;// Offset=0x18 Size=0x10
+    struct _LIST_ENTRY ClonedRanges;// Offset=0x28 Size=0x10
+    unsigned long ClonedRangeCount;// Offset=0x38 Size=0x4
+    struct _LIST_ENTRY * NextCloneRange;// Offset=0x40 Size=0x8
+    unsigned long long NextPreserve;// Offset=0x48 Size=0x8
+    struct _MDL * LoaderMdl;// Offset=0x50 Size=0x8
+    struct _MDL * AllocatedMdl;// Offset=0x58 Size=0x8
+    unsigned long long PagesOut;// Offset=0x60 Size=0x8
+    void * IoPages;// Offset=0x68 Size=0x8
+    unsigned long IoPagesCount;// Offset=0x70 Size=0x4
+    void * CurrentMcb;// Offset=0x78 Size=0x8
+    struct _DUMP_STACK_CONTEXT * DumpStack;// Offset=0x80 Size=0x8
+    struct _KPROCESSOR_STATE * WakeState;// Offset=0x88 Size=0x8
+    unsigned long PreferredIoWriteSize;// Offset=0x90 Size=0x4
+    unsigned long IoProgress;// Offset=0x94 Size=0x4
+    unsigned long long HiberVa;// Offset=0x98 Size=0x8
+    union _LARGE_INTEGER HiberPte;// Offset=0xa0 Size=0x8
+    long Status;// Offset=0xa8 Size=0x4
+    struct PO_MEMORY_IMAGE * MemoryImage;// Offset=0xb0 Size=0x8
+    void * CompressionWorkspace;// Offset=0xb8 Size=0x8
+    unsigned char * CompressedWriteBuffer;// Offset=0xc0 Size=0x8
+    unsigned long CompressedWriteBufferSize;// Offset=0xc8 Size=0x4
+    unsigned long MaxCompressedOutputSize;// Offset=0xcc Size=0x4
+    unsigned long * PerformanceStats;// Offset=0xd0 Size=0x8
+    void * CompressionBlock;// Offset=0xd8 Size=0x8
+    void * DmaIO;// Offset=0xe0 Size=0x8
+    void * TemporaryHeap;// Offset=0xe8 Size=0x8
+    struct _MDL * BootLoaderLogMdl;// Offset=0xf0 Size=0x8
+    struct _MDL * FirmwareRuntimeInformationMdl;// Offset=0xf8 Size=0x8
+    void * ResumeContext;// Offset=0x100 Size=0x8
+    unsigned long ResumeContextPages;// Offset=0x108 Size=0x4
+};

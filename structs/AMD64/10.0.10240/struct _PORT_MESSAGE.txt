@@ -1,0 +1,10 @@
+struct _PORT_MESSAGE// Size=0x28
+{
+    union _unnamed_373 u1;// Offset=0x0 Size=0x4
+    union _unnamed_375 u2;// Offset=0x4 Size=0x4
+    struct _CLIENT_ID ClientId;// Offset=0x8 Size=0x10
+    float DoNotUseThisField;// Offset=0x8 Size=0x8
+    unsigned long MessageId;// Offset=0x18 Size=0x4
+    unsigned long long ClientViewSize;// Offset=0x20 Size=0x8
+    unsigned long CallbackId;// Offset=0x20 Size=0x4
+};

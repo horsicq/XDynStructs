@@ -1,0 +1,15 @@
+struct _PNP_DEVICE_ACTION_ENTRY// Size=0x40
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x8
+    struct _DEVICE_OBJECT * DeviceObject;// Offset=0x8 Size=0x4
+    enum _PNP_DEVICE_ACTION_REQUEST RequestType;// Offset=0xc Size=0x4
+    unsigned char ReorderingBarrier;// Offset=0x10 Size=0x1
+    unsigned long RequestArgument;// Offset=0x14 Size=0x4
+    struct _KEVENT * CompletionEvent;// Offset=0x18 Size=0x4
+    long * CompletionStatus;// Offset=0x1c Size=0x4
+    struct _GUID ActivityId;// Offset=0x20 Size=0x10
+    long RefCount;// Offset=0x30 Size=0x4
+    unsigned char Dequeued;// Offset=0x34 Size=0x1
+    struct _EX_PUSH_LOCK CancelLock;// Offset=0x38 Size=0x4
+    unsigned char CancelRequested;// Offset=0x3c Size=0x1
+};

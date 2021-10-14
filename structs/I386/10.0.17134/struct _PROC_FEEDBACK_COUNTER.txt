@@ -1,0 +1,13 @@
+struct _PROC_FEEDBACK_COUNTER// Size=0x28
+{
+    void  ( * InstantaneousRead)(unsigned long ,unsigned long * );// Offset=0x0 Size=0x4
+    void  ( * DifferentialRead)(unsigned long ,unsigned char ,unsigned long long * ,unsigned long long * );// Offset=0x0 Size=0x4
+    unsigned long long LastActualCount;// Offset=0x8 Size=0x8
+    unsigned long long LastReferenceCount;// Offset=0x10 Size=0x8
+    unsigned long CachedValue;// Offset=0x18 Size=0x4
+    unsigned char Affinitized;// Offset=0x20 Size=0x1
+    unsigned char Differential;// Offset=0x21 Size=0x1
+    unsigned char DiscardIdleTime;// Offset=0x22 Size=0x1
+    unsigned char Scaling;// Offset=0x23 Size=0x1
+    unsigned long Context;// Offset=0x24 Size=0x4
+};

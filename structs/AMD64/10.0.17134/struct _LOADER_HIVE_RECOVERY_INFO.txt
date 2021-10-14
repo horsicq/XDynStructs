@@ -1,0 +1,11 @@
+struct _LOADER_HIVE_RECOVERY_INFO// Size=0x14
+{
+    unsigned long Recovered:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long LegacyRecovery:1;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long SoftRebootConflict:1;// Offset=0x0 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long MostRecentLog:3;// Offset=0x0 Size=0x4 BitOffset=0x3 BitSize=0x3
+    unsigned long Spare:27;// Offset=0x4 Size=0x4 BitOffset=0x0 BitSize=0x1b
+    unsigned long LogNextSequence;// Offset=0x8 Size=0x4
+    unsigned long LogMinimumSequence;// Offset=0xc Size=0x4
+    unsigned long LogCurrentOffset;// Offset=0x10 Size=0x4
+};

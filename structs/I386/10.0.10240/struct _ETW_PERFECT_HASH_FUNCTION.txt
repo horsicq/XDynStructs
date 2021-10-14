@@ -1,0 +1,3 @@
+struct _ETW_PERFECT_HASH_FUNCTION// Size=0x0
+{
+};

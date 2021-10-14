@@ -1,0 +1,11 @@
+struct _MI_PROCESS_STATE// Size=0x60
+{
+    unsigned long ColorSeed;// Offset=0x0 Size=0x4
+    struct _KEVENT CloneDereferenceEvent;// Offset=0x8 Size=0x18
+    union _SLIST_HEADER CloneProtosSListHead;// Offset=0x20 Size=0x10
+    void * SystemDllBase;// Offset=0x30 Size=0x8
+    long RotatingUniprocessorNumber;// Offset=0x38 Size=0x4
+    union _LARGE_INTEGER CriticalSectionTimeout;// Offset=0x40 Size=0x8
+    struct _LIST_ENTRY ProcessList;// Offset=0x48 Size=0x10
+    struct _MMPTE * SharedUserDataPte;// Offset=0x58 Size=0x8
+};

@@ -1,0 +1,13 @@
+struct _MMVAD_FLAGS// Size=0x4
+{
+    unsigned long VadType:3;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x3
+    unsigned long Protection:5;// Offset=0x0 Size=0x4 BitOffset=0x3 BitSize=0x5
+    unsigned long PreferredNode:6;// Offset=0x0 Size=0x4 BitOffset=0x8 BitSize=0x6
+    unsigned long NoChange:1;// Offset=0x0 Size=0x4 BitOffset=0xe BitSize=0x1
+    unsigned long PrivateMemory:1;// Offset=0x0 Size=0x4 BitOffset=0xf BitSize=0x1
+    unsigned long Teb:1;// Offset=0x0 Size=0x4 BitOffset=0x10 BitSize=0x1
+    unsigned long PrivateFixup:1;// Offset=0x0 Size=0x4 BitOffset=0x11 BitSize=0x1
+    unsigned long ManySubsections:1;// Offset=0x0 Size=0x4 BitOffset=0x12 BitSize=0x1
+    unsigned long Spare:12;// Offset=0x0 Size=0x4 BitOffset=0x13 BitSize=0xc
+    unsigned long DeleteInProgress:1;// Offset=0x0 Size=0x4 BitOffset=0x1f BitSize=0x1
+};

@@ -1,0 +1,8 @@
+struct _ETW_FILTER_EVENT_NAME_DATA// Size=0x28
+{
+    unsigned char FilterIn;// Offset=0x0 Size=0x1
+    unsigned char Level;// Offset=0x1 Size=0x1
+    unsigned long long MatchAnyKeyword;// Offset=0x8 Size=0x8
+    unsigned long long MatchAllKeyword;// Offset=0x10 Size=0x8
+    struct _RTL_HASH_TABLE NameTable;// Offset=0x18 Size=0x10
+};

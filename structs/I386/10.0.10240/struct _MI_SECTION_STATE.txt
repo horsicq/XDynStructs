@@ -1,0 +1,30 @@
+struct _MI_SECTION_STATE// Size=0x140
+{
+    long SegmentListLock;// Offset=0x0 Size=0x4
+    long SectionObjectPointersLock;// Offset=0x40 Size=0x4
+    struct _EX_PUSH_LOCK SectionExtendLock;// Offset=0x44 Size=0x4
+    struct _EX_PUSH_LOCK SectionExtendSetLock;// Offset=0x48 Size=0x4
+    struct _RTL_AVL_TREE SectionBasedRoot;// Offset=0x4c Size=0x4
+    struct _EX_PUSH_LOCK SectionBasedLock;// Offset=0x50 Size=0x4
+    unsigned long UnusedSubsectionPagedPool;// Offset=0x54 Size=0x4
+    unsigned long UnusedSegmentForceFree;// Offset=0x58 Size=0x4
+    unsigned long DataSectionProtectionMask;// Offset=0x5c Size=0x4
+    void * HighSectionBase;// Offset=0x60 Size=0x4
+    struct _MSUBSECTION PhysicalSubsection;// Offset=0x64 Size=0x44
+    struct _CONTROL_AREA PhysicalControlArea;// Offset=0xa8 Size=0x50
+    struct _RTL_AVL_TREE PageFileSectionHead;// Offset=0xf8 Size=0x4
+    long PageFileSectionListSpinLock;// Offset=0xfc Size=0x4
+    unsigned long ImageBias;// Offset=0x100 Size=0x4
+    struct _EX_PUSH_LOCK RelocateBitmapsLock;// Offset=0x104 Size=0x4
+    struct _RTL_BITMAP ImageBitMap;// Offset=0x108 Size=0x8
+    void * ApiSetSection;// Offset=0x110 Size=0x4
+    void * ApiSetSchema;// Offset=0x114 Size=0x4
+    unsigned long ApiSetSchemaSize;// Offset=0x118 Size=0x4
+    unsigned long LostDataFiles;// Offset=0x11c Size=0x4
+    unsigned long LostDataPages;// Offset=0x120 Size=0x4
+    unsigned long ImageFailureReason;// Offset=0x124 Size=0x4
+    struct _SECTION * CfgBitMapSection32;// Offset=0x128 Size=0x4
+    struct _CONTROL_AREA * CfgBitMapControlArea32;// Offset=0x12c Size=0x4
+    unsigned long ImageCfgFailure;// Offset=0x130 Size=0x4
+    long ImageValidationFailed;// Offset=0x134 Size=0x4
+};

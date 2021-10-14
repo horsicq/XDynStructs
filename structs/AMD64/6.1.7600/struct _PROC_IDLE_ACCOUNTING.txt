@@ -1,0 +1,9 @@
+struct _PROC_IDLE_ACCOUNTING// Size=0x2c0
+{
+    unsigned long StateCount;// Offset=0x0 Size=0x4
+    unsigned long TotalTransitions;// Offset=0x4 Size=0x4
+    unsigned long ResetCount;// Offset=0x8 Size=0x4
+    unsigned long long StartTime;// Offset=0x10 Size=0x8
+    unsigned long long BucketLimits[16];// Offset=0x18 Size=0x80
+    struct _PROC_IDLE_STATE_ACCOUNTING State[1];// Offset=0x98 Size=0x228
+};

@@ -1,0 +1,4 @@
+union _unnamed_731// Size=0x8
+{
+    struct _unnamed_730 Disk;// Offset=0x0 Size=0x8
+};

@@ -1,0 +1,30 @@
+struct _PROCESSOR_POWER_STATE// Size=0x100
+{
+    struct _PPM_IDLE_STATES * IdleStates;// Offset=0x0 Size=0x8
+    unsigned long long IdleTimeLast;// Offset=0x8 Size=0x8
+    unsigned long long IdleTimeTotal;// Offset=0x10 Size=0x8
+    unsigned long long IdleTimeEntry;// Offset=0x18 Size=0x8
+    struct _PROC_IDLE_ACCOUNTING * IdleAccounting;// Offset=0x20 Size=0x8
+    enum _PROC_HYPERVISOR_STATE Hypervisor;// Offset=0x28 Size=0x4
+    unsigned long PerfHistoryTotal;// Offset=0x2c Size=0x4
+    unsigned char ThermalConstraint;// Offset=0x30 Size=0x1
+    unsigned char PerfHistoryCount;// Offset=0x31 Size=0x1
+    unsigned char PerfHistorySlot;// Offset=0x32 Size=0x1
+    unsigned char Reserved;// Offset=0x33 Size=0x1
+    unsigned long LastSysTime;// Offset=0x34 Size=0x4
+    unsigned long long WmiDispatchPtr;// Offset=0x38 Size=0x8
+    long WmiInterfaceEnabled;// Offset=0x40 Size=0x4
+    struct _PPM_FFH_THROTTLE_STATE_INFO FFHThrottleStateInfo;// Offset=0x48 Size=0x20
+    struct _KDPC PerfActionDpc;// Offset=0x68 Size=0x40
+    long PerfActionMask;// Offset=0xa8 Size=0x4
+    struct _PROC_IDLE_SNAP IdleCheck;// Offset=0xb0 Size=0x10
+    struct _PROC_IDLE_SNAP PerfCheck;// Offset=0xc0 Size=0x10
+    struct _PROC_PERF_DOMAIN * Domain;// Offset=0xd0 Size=0x8
+    struct _PROC_PERF_CONSTRAINT * PerfConstraint;// Offset=0xd8 Size=0x8
+    struct _PROC_PERF_LOAD * Load;// Offset=0xe0 Size=0x8
+    struct _PROC_HISTORY_ENTRY * PerfHistory;// Offset=0xe8 Size=0x8
+    unsigned long Utility;// Offset=0xf0 Size=0x4
+    unsigned long OverUtilizedHistory;// Offset=0xf4 Size=0x4
+    unsigned long AffinityCount;// Offset=0xf8 Size=0x4
+    unsigned long AffinityHistory;// Offset=0xfc Size=0x4
+};

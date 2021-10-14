@@ -1,0 +1,11 @@
+struct _DBGKD_ANY_CONTROL_SET// Size=0x1c
+{
+    struct _X86_DBGKD_CONTROL_SET X86ControlSet;// Offset=0x0 Size=0x10
+    unsigned long AlphaControlSet;// Offset=0x0 Size=0x4
+    struct _IA64_DBGKD_CONTROL_SET IA64ControlSet;// Offset=0x0 Size=0x14
+    struct _AMD64_DBGKD_CONTROL_SET Amd64ControlSet;// Offset=0x0 Size=0x1c
+    struct _ARM_DBGKD_CONTROL_SET ArmControlSet;// Offset=0x0 Size=0xc
+    struct _ARM64_DBGKD_CONTROL_SET Arm64ControlSet;// Offset=0x0 Size=0x18
+    struct _ARMCE_DBGKD_CONTROL_SET ArmCeControlSet;// Offset=0x0 Size=0xc
+    struct _PPC_DBGKD_CONTROL_SET PpcControlSet;// Offset=0x0 Size=0xc
+};

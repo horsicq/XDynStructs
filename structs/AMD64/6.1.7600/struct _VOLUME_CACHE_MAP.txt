@@ -1,0 +1,11 @@
+struct _VOLUME_CACHE_MAP// Size=0x38
+{
+    short NodeTypeCode;// Offset=0x0 Size=0x2
+    short NodeByteCode;// Offset=0x2 Size=0x2
+    unsigned long UseCount;// Offset=0x4 Size=0x4
+    struct _DEVICE_OBJECT * DeviceObject;// Offset=0x8 Size=0x8
+    struct _LIST_ENTRY VolumeCacheMapLinks;// Offset=0x10 Size=0x10
+    unsigned long Flags;// Offset=0x20 Size=0x4
+    unsigned long long DirtyPages;// Offset=0x28 Size=0x8
+    unsigned long PagesQueuedToDisk;// Offset=0x30 Size=0x4
+};

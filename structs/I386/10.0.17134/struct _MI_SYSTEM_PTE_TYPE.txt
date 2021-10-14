@@ -1,0 +1,16 @@
+struct _MI_SYSTEM_PTE_TYPE// Size=0x34
+{
+    struct _RTL_BITMAP Bitmap;// Offset=0x0 Size=0x8
+    struct _MMPTE * BasePte;// Offset=0x8 Size=0x4
+    unsigned long Flags;// Offset=0xc Size=0x4
+    enum _MI_SYSTEM_VA_TYPE VaType;// Offset=0x10 Size=0x4
+    unsigned long * FailureCount;// Offset=0x14 Size=0x4
+    unsigned long PteFailures;// Offset=0x18 Size=0x4
+    unsigned long SpinLock;// Offset=0x1c Size=0x4
+    struct _EX_PUSH_LOCK * GlobalPushLock;// Offset=0x1c Size=0x4
+    unsigned long TotalSystemPtes;// Offset=0x20 Size=0x4
+    unsigned long Hint;// Offset=0x24 Size=0x4
+    unsigned long LowestBitEverAllocated;// Offset=0x28 Size=0x4
+    struct _MI_CACHED_PTES * CachedPtes;// Offset=0x2c Size=0x4
+    unsigned long TotalFreeSystemPtes;// Offset=0x30 Size=0x4
+};

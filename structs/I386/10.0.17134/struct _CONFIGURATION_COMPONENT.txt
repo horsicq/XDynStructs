@@ -1,0 +1,15 @@
+struct _CONFIGURATION_COMPONENT// Size=0x24
+{
+    enum _CONFIGURATION_CLASS Class;// Offset=0x0 Size=0x4
+    enum _CONFIGURATION_TYPE Type;// Offset=0x4 Size=0x4
+    struct _DEVICE_FLAGS Flags;// Offset=0x8 Size=0x4
+    unsigned short Version;// Offset=0xc Size=0x2
+    unsigned short Revision;// Offset=0xe Size=0x2
+    unsigned long Key;// Offset=0x10 Size=0x4
+    unsigned long AffinityMask;// Offset=0x14 Size=0x4
+    unsigned short Group;// Offset=0x14 Size=0x2
+    unsigned short GroupIndex;// Offset=0x16 Size=0x2
+    unsigned long ConfigurationDataLength;// Offset=0x18 Size=0x4
+    unsigned long IdentifierLength;// Offset=0x1c Size=0x4
+    char * Identifier;// Offset=0x20 Size=0x4
+};

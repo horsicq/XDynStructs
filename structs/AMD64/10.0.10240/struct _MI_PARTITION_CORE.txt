@@ -1,0 +1,21 @@
+struct _MI_PARTITION_CORE// Size=0x168
+{
+    unsigned short PartitionId;// Offset=0x0 Size=0x2
+    union _unnamed_866 u;// Offset=0x4 Size=0x4
+    unsigned long long ReferenceCount;// Offset=0x8 Size=0x8
+    struct _MI_PARTITION * ParentPartition;// Offset=0x10 Size=0x8
+    struct _LIST_ENTRY ListEntry;// Offset=0x18 Size=0x10
+    struct _MI_NODE_INFORMATION * NodeInformation;// Offset=0x28 Size=0x8
+    struct _MDL * MdlPhysicalMemoryBlock;// Offset=0x30 Size=0x8
+    struct _PHYSICAL_MEMORY_DESCRIPTOR * MemoryNodeRuns;// Offset=0x38 Size=0x8
+    struct _MI_PARTITION_STATISTICS Stats;// Offset=0x40 Size=0x50
+    struct _PHYSICAL_MEMORY_DESCRIPTOR * MemoryRuns;// Offset=0x90 Size=0x8
+    struct _KEVENT ExitEvent;// Offset=0x98 Size=0x18
+    void * SystemThreadHandles[5];// Offset=0xb0 Size=0x28
+    void * PartitionObject;// Offset=0xd8 Size=0x8
+    void * PartitionObjectHandle;// Offset=0xe0 Size=0x8
+    struct _EX_PUSH_LOCK DynamicMemoryPushLock;// Offset=0xe8 Size=0x8
+    long DynamicMemoryLock;// Offset=0xf0 Size=0x4
+    struct _KEVENT TemporaryMemoryEvent;// Offset=0xf8 Size=0x18
+    struct _KEVENT * MemoryEvents[11];// Offset=0x110 Size=0x58
+};

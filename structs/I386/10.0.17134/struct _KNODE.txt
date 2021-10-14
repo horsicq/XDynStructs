@@ -1,0 +1,28 @@
+struct _KNODE// Size=0x100
+{
+    unsigned long IdleNonParkedCpuSet;// Offset=0x0 Size=0x4
+    unsigned long IdleSmtSet;// Offset=0x4 Size=0x4
+    unsigned long IdleCpuSet;// Offset=0x8 Size=0x4
+    unsigned long DeepIdleSet;// Offset=0x40 Size=0x4
+    unsigned long IdleConstrainedSet;// Offset=0x44 Size=0x4
+    unsigned long NonParkedSet;// Offset=0x48 Size=0x4
+    unsigned long NonIsrTargetedSet;// Offset=0x4c Size=0x4
+    long ParkLock;// Offset=0x50 Size=0x4
+    unsigned long Seed;// Offset=0x54 Size=0x4
+    unsigned long SiblingMask;// Offset=0x80 Size=0x4
+    struct _GROUP_AFFINITY Affinity;// Offset=0x84 Size=0xc
+    unsigned char AffinityFill[6];// Offset=0x84 Size=0x6
+    unsigned short NodeNumber;// Offset=0x8a Size=0x2
+    unsigned short PrimaryNodeNumber;// Offset=0x8c Size=0x2
+    unsigned char Stride;// Offset=0x8e Size=0x1
+    unsigned char Spare0;// Offset=0x8f Size=0x1
+    unsigned long SharedReadyQueueLeaders;// Offset=0x90 Size=0x4
+    unsigned long ProximityId;// Offset=0x94 Size=0x4
+    unsigned long Lowest;// Offset=0x98 Size=0x4
+    unsigned long Highest;// Offset=0x9c Size=0x4
+    unsigned char MaximumProcessors;// Offset=0xa0 Size=0x1
+    struct _flags Flags;// Offset=0xa1 Size=0x1
+    unsigned char Spare10;// Offset=0xa2 Size=0x1
+    struct _KHETERO_PROCESSOR_SET HeteroSets[5];// Offset=0xa4 Size=0x3c
+    unsigned long PpmConfiguredQosSets[4];// Offset=0xe0 Size=0x10
+};

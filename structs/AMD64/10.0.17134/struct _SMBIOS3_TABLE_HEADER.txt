@@ -1,0 +1,13 @@
+struct _SMBIOS3_TABLE_HEADER// Size=0x18
+{
+    unsigned char Signature[5];// Offset=0x0 Size=0x5
+    unsigned char Checksum;// Offset=0x5 Size=0x1
+    unsigned char Length;// Offset=0x6 Size=0x1
+    unsigned char MajorVersion;// Offset=0x7 Size=0x1
+    unsigned char MinorVersion;// Offset=0x8 Size=0x1
+    unsigned char Docrev;// Offset=0x9 Size=0x1
+    unsigned char EntryPointRevision;// Offset=0xa Size=0x1
+    unsigned char Reserved;// Offset=0xb Size=0x1
+    unsigned long StructureTableMaximumSize;// Offset=0xc Size=0x4
+    unsigned long long StructureTableAddress;// Offset=0x10 Size=0x8
+};

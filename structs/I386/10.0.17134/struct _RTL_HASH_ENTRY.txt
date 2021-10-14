@@ -1,0 +1,5 @@
+struct _RTL_HASH_ENTRY// Size=0x8
+{
+    struct _SINGLE_LIST_ENTRY BucketLink;// Offset=0x0 Size=0x4
+    unsigned long Key;// Offset=0x4 Size=0x4
+};

@@ -1,0 +1,47 @@
+union _PPM_POLICY_SETTINGS_MASK// Size=0x8
+{
+    unsigned long long Value;// Offset=0x0 Size=0x8
+    unsigned long PerfDecreaseTime:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long PerfIncreaseTime:1;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long PerfDecreasePolicy:1;// Offset=0x0 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long PerfIncreasePolicy:1;// Offset=0x0 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long PerfDecreaseThreshold:1;// Offset=0x0 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long PerfIncreaseThreshold:1;// Offset=0x0 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long PerfMinPolicy:1;// Offset=0x0 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long PerfMaxPolicy:1;// Offset=0x0 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long PerfTimeCheck:1;// Offset=0x0 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long PerfBoostPolicy:1;// Offset=0x0 Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long PerfBoostMode:1;// Offset=0x0 Size=0x4 BitOffset=0xa BitSize=0x1
+    unsigned long AllowThrottling:1;// Offset=0x0 Size=0x4 BitOffset=0xb BitSize=0x1
+    unsigned long PerfHistoryCount:1;// Offset=0x0 Size=0x4 BitOffset=0xc BitSize=0x1
+    unsigned long ParkingPerfState:1;// Offset=0x0 Size=0x4 BitOffset=0xd BitSize=0x1
+    unsigned long LatencyHintPerf:1;// Offset=0x0 Size=0x4 BitOffset=0xe BitSize=0x1
+    unsigned long LatencyHintUnpark:1;// Offset=0x0 Size=0x4 BitOffset=0xf BitSize=0x1
+    unsigned long CoreParkingMinCores:1;// Offset=0x0 Size=0x4 BitOffset=0x10 BitSize=0x1
+    unsigned long CoreParkingMaxCores:1;// Offset=0x0 Size=0x4 BitOffset=0x11 BitSize=0x1
+    unsigned long CoreParkingDecreasePolicy:1;// Offset=0x0 Size=0x4 BitOffset=0x12 BitSize=0x1
+    unsigned long CoreParkingIncreasePolicy:1;// Offset=0x0 Size=0x4 BitOffset=0x13 BitSize=0x1
+    unsigned long CoreParkingDecreaseTime:1;// Offset=0x0 Size=0x4 BitOffset=0x14 BitSize=0x1
+    unsigned long CoreParkingIncreaseTime:1;// Offset=0x0 Size=0x4 BitOffset=0x15 BitSize=0x1
+    unsigned long CoreParkingOverUtilizationThreshold:1;// Offset=0x0 Size=0x4 BitOffset=0x16 BitSize=0x1
+    unsigned long CoreParkingDistributeUtility:1;// Offset=0x0 Size=0x4 BitOffset=0x17 BitSize=0x1
+    unsigned long CoreParkingConcurrencyThreshold:1;// Offset=0x0 Size=0x4 BitOffset=0x18 BitSize=0x1
+    unsigned long CoreParkingHeadroomThreshold:1;// Offset=0x0 Size=0x4 BitOffset=0x19 BitSize=0x1
+    unsigned long CoreParkingDistributionThreshold:1;// Offset=0x0 Size=0x4 BitOffset=0x1a BitSize=0x1
+    unsigned long IdleAllowScaling:1;// Offset=0x0 Size=0x4 BitOffset=0x1b BitSize=0x1
+    unsigned long IdleDisable:1;// Offset=0x0 Size=0x4 BitOffset=0x1c BitSize=0x1
+    unsigned long IdleTimeCheck:1;// Offset=0x0 Size=0x4 BitOffset=0x1d BitSize=0x1
+    unsigned long IdleDemoteThreshold:1;// Offset=0x0 Size=0x4 BitOffset=0x1e BitSize=0x1
+    unsigned long IdlePromoteThreshold:1;// Offset=0x0 Size=0x4 BitOffset=0x1f BitSize=0x1
+    unsigned long HeteroDecreaseTime:1;// Offset=0x4 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long HeteroIncreaseTime:1;// Offset=0x4 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long HeteroDecreaseThreshold:1;// Offset=0x4 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long HeteroIncreaseThreshold:1;// Offset=0x4 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long Class0FloorPerformance:1;// Offset=0x4 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long Class1InitialPerformance:1;// Offset=0x4 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long EnergyPerfPreference:1;// Offset=0x4 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long AutonomousActivityWindow:1;// Offset=0x4 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long AutonomousMode:1;// Offset=0x4 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long DutyCycling:1;// Offset=0x4 Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long Spare:22;// Offset=0x4 Size=0x4 BitOffset=0xa BitSize=0x16
+};

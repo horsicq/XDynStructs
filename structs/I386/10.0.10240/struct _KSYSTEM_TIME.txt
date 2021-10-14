@@ -1,0 +1,6 @@
+struct _KSYSTEM_TIME// Size=0xc
+{
+    unsigned long LowPart;// Offset=0x0 Size=0x4
+    long High1Time;// Offset=0x4 Size=0x4
+    long High2Time;// Offset=0x8 Size=0x4
+};

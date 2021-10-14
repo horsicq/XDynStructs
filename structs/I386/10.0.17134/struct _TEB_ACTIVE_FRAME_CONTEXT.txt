@@ -1,0 +1,5 @@
+struct _TEB_ACTIVE_FRAME_CONTEXT// Size=0x8
+{
+    unsigned long Flags;// Offset=0x0 Size=0x4
+    char * FrameName;// Offset=0x4 Size=0x4
+};

@@ -1,0 +1,5 @@
+struct _PROCESSOR_PLATFORM_STATE_RESIDENCY// Size=0x10
+{
+    unsigned long long Residency;// Offset=0x0 Size=0x8
+    unsigned long long TransitionCount;// Offset=0x8 Size=0x8
+};

@@ -1,0 +1,14 @@
+struct _PPM_PLATFORM_STATES// Size=0x100
+{
+    unsigned long StateCount;// Offset=0x0 Size=0x4
+    unsigned long InterfaceVersion;// Offset=0x4 Size=0x4
+    unsigned long ProcessorCount;// Offset=0x8 Size=0x4
+    unsigned char CoordinatedInterface;// Offset=0xc Size=0x1
+    unsigned long  ( * IdleTest)(void * ,unsigned long ,unsigned long );// Offset=0x10 Size=0x4
+    long  ( * IdlePreExecute)(void * ,unsigned long ,unsigned long ,unsigned long ,unsigned long * );// Offset=0x14 Size=0x4
+    void  ( * IdleComplete)(void * ,unsigned long ,unsigned long ,unsigned long ,unsigned long * );// Offset=0x18 Size=0x4
+    long  ( * QueryPlatformStateResidency)(void * ,struct _PROCESSOR_PLATFORM_STATE_RESIDENCIES * );// Offset=0x1c Size=0x4
+    struct _PLATFORM_IDLE_ACCOUNTING * Accounting;// Offset=0x20 Size=0x4
+    unsigned char DeepSleepEnabled;// Offset=0x24 Size=0x1
+    struct _PPM_PLATFORM_STATE State[1];// Offset=0x40 Size=0xc0
+};

@@ -1,0 +1,13 @@
+struct _LOCK_TRACKER// Size=0x90
+{
+    struct _RTL_BALANCED_NODE LockTrackerNode;// Offset=0x0 Size=0x18
+    struct _MDL * Mdl;// Offset=0x18 Size=0x8
+    void * StartVa;// Offset=0x20 Size=0x8
+    unsigned long long Count;// Offset=0x28 Size=0x8
+    unsigned long Offset;// Offset=0x30 Size=0x4
+    unsigned long Length;// Offset=0x34 Size=0x4
+    unsigned long long Page;// Offset=0x38 Size=0x8
+    void * StackTrace[8];// Offset=0x40 Size=0x40
+    unsigned long Who;// Offset=0x80 Size=0x4
+    struct _EPROCESS * Process;// Offset=0x88 Size=0x8
+};

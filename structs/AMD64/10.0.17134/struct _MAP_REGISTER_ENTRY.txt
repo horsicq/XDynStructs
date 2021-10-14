@@ -1,0 +1,5 @@
+struct _MAP_REGISTER_ENTRY// Size=0x10
+{
+    void * MapRegister;// Offset=0x0 Size=0x8
+    unsigned char WriteToDevice;// Offset=0x8 Size=0x1
+};

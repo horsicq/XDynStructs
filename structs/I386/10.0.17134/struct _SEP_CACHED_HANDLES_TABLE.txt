@@ -1,0 +1,5 @@
+struct _SEP_CACHED_HANDLES_TABLE// Size=0x8
+{
+    struct _EX_PUSH_LOCK Lock;// Offset=0x0 Size=0x4
+    struct _RTL_DYNAMIC_HASH_TABLE * HashTable;// Offset=0x4 Size=0x4
+};

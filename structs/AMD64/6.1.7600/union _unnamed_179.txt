@@ -1,0 +1,6 @@
+union _unnamed_179// Size=0x8
+{
+    unsigned long long Blink;// Offset=0x0 Size=0x8
+    struct _MMPTE * ImageProtoPte;// Offset=0x0 Size=0x8
+    unsigned long long ShareCount;// Offset=0x0 Size=0x8
+};

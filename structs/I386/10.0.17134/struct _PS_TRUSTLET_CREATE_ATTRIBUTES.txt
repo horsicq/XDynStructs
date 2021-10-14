@@ -1,0 +1,5 @@
+struct _PS_TRUSTLET_CREATE_ATTRIBUTES// Size=0x18
+{
+    unsigned long long TrustletIdentity;// Offset=0x0 Size=0x8
+    struct _PS_TRUSTLET_ATTRIBUTE_DATA Attributes[1];// Offset=0x8 Size=0x10
+};

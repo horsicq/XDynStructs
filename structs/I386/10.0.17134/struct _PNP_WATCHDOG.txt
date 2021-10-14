@@ -1,0 +1,12 @@
+struct _PNP_WATCHDOG// Size=0x80
+{
+    unsigned long long WatchdogStart;// Offset=0x0 Size=0x8
+    struct _KTIMER WatchdogTimer;// Offset=0x8 Size=0x28
+    struct _KDPC WatchdogDpc;// Offset=0x30 Size=0x20
+    unsigned char WatchdogEnabled;// Offset=0x50 Size=0x1
+    unsigned char WatchdogSecondChance;// Offset=0x51 Size=0x1
+    struct _KEVENT WatchdogComplete;// Offset=0x54 Size=0x10
+    struct _WORK_QUEUE_ITEM WatchdogWorkItem;// Offset=0x64 Size=0x10
+    enum _PNP_WATCHDOG_TYPE WatchdogContextType;// Offset=0x74 Size=0x4
+    void * WatchdogContext;// Offset=0x78 Size=0x4
+};

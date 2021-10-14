@@ -1,0 +1,7 @@
+struct _VF_AVL_TABLE// Size=0xc0
+{
+    struct _RTL_AVL_TABLE RtlTable;// Offset=0x0 Size=0x68
+    struct _VF_AVL_TREE_NODE * ReservedNode;// Offset=0x68 Size=0x8
+    void * NodeToFree;// Offset=0x70 Size=0x8
+    long Lock;// Offset=0x80 Size=0x4
+};

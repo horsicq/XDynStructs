@@ -1,0 +1,16 @@
+struct _PNP_DEVICE_EVENT_ENTRY// Size=0x84
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x8
+    unsigned long Argument;// Offset=0x8 Size=0x4
+    struct _KEVENT * CallerEvent;// Offset=0xc Size=0x4
+    void  ( * Callback)(void * );// Offset=0x10 Size=0x4
+    void * Context;// Offset=0x14 Size=0x4
+    enum _PNP_VETO_TYPE * VetoType;// Offset=0x18 Size=0x4
+    struct _UNICODE_STRING * VetoName;// Offset=0x1c Size=0x4
+    unsigned long RefCount;// Offset=0x20 Size=0x4
+    unsigned long Lock;// Offset=0x24 Size=0x4
+    unsigned char Cancel;// Offset=0x28 Size=0x1
+    struct _PNP_DEVICE_EVENT_ENTRY * Parent;// Offset=0x2c Size=0x4
+    struct _GUID ActivityId;// Offset=0x30 Size=0x10
+    struct _PLUGPLAY_EVENT_BLOCK Data;// Offset=0x40 Size=0x44
+};

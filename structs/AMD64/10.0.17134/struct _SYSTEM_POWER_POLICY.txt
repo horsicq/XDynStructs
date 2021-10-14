@@ -1,0 +1,31 @@
+struct _SYSTEM_POWER_POLICY// Size=0xe8
+{
+    unsigned long Revision;// Offset=0x0 Size=0x4
+    struct POWER_ACTION_POLICY PowerButton;// Offset=0x4 Size=0xc
+    struct POWER_ACTION_POLICY SleepButton;// Offset=0x10 Size=0xc
+    struct POWER_ACTION_POLICY LidClose;// Offset=0x1c Size=0xc
+    enum _SYSTEM_POWER_STATE LidOpenWake;// Offset=0x28 Size=0x4
+    unsigned long Reserved;// Offset=0x2c Size=0x4
+    struct POWER_ACTION_POLICY Idle;// Offset=0x30 Size=0xc
+    unsigned long IdleTimeout;// Offset=0x3c Size=0x4
+    unsigned char IdleSensitivity;// Offset=0x40 Size=0x1
+    unsigned char DynamicThrottle;// Offset=0x41 Size=0x1
+    unsigned char Spare2[2];// Offset=0x42 Size=0x2
+    enum _SYSTEM_POWER_STATE MinSleep;// Offset=0x44 Size=0x4
+    enum _SYSTEM_POWER_STATE MaxSleep;// Offset=0x48 Size=0x4
+    enum _SYSTEM_POWER_STATE ReducedLatencySleep;// Offset=0x4c Size=0x4
+    unsigned long WinLogonFlags;// Offset=0x50 Size=0x4
+    unsigned long Spare3;// Offset=0x54 Size=0x4
+    unsigned long DozeS4Timeout;// Offset=0x58 Size=0x4
+    unsigned long BroadcastCapacityResolution;// Offset=0x5c Size=0x4
+    struct SYSTEM_POWER_LEVEL DischargePolicy[4];// Offset=0x60 Size=0x60
+    unsigned long VideoTimeout;// Offset=0xc0 Size=0x4
+    unsigned char VideoDimDisplay;// Offset=0xc4 Size=0x1
+    unsigned long VideoReserved[3];// Offset=0xc8 Size=0xc
+    unsigned long SpindownTimeout;// Offset=0xd4 Size=0x4
+    unsigned char OptimizeForPower;// Offset=0xd8 Size=0x1
+    unsigned char FanThrottleTolerance;// Offset=0xd9 Size=0x1
+    unsigned char ForcedThrottle;// Offset=0xda Size=0x1
+    unsigned char MinThrottle;// Offset=0xdb Size=0x1
+    struct POWER_ACTION_POLICY OverThrottled;// Offset=0xdc Size=0xc
+};

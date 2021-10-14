@@ -1,0 +1,10 @@
+struct _POOL_TRACKER_TABLE// Size=0x1c
+{
+    long Key;// Offset=0x0 Size=0x4
+    unsigned long NonPagedAllocs;// Offset=0x4 Size=0x4
+    unsigned long NonPagedFrees;// Offset=0x8 Size=0x4
+    unsigned long NonPagedBytes;// Offset=0xc Size=0x4
+    unsigned long PagedAllocs;// Offset=0x10 Size=0x4
+    unsigned long PagedFrees;// Offset=0x14 Size=0x4
+    unsigned long PagedBytes;// Offset=0x18 Size=0x4
+};

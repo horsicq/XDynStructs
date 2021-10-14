@@ -1,0 +1,8 @@
+struct _PNP_REPLACE_PROCESSOR_LIST// Size=0x14
+{
+    unsigned long * Affinity;// Offset=0x0 Size=0x4
+    unsigned long GroupCount;// Offset=0x4 Size=0x4
+    unsigned long AllocatedCount;// Offset=0x8 Size=0x4
+    unsigned long Count;// Offset=0xc Size=0x4
+    unsigned long ApicIds[1];// Offset=0x10 Size=0x4
+};

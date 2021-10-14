@@ -1,0 +1,12 @@
+struct _DEFERRED_WRITE// Size=0x48
+{
+    short NodeTypeCode;// Offset=0x0 Size=0x2
+    short NodeByteSize;// Offset=0x2 Size=0x2
+    struct _FILE_OBJECT * FileObject;// Offset=0x8 Size=0x8
+    unsigned long BytesToWrite;// Offset=0x10 Size=0x4
+    struct _LIST_ENTRY DeferredWriteLinks;// Offset=0x18 Size=0x10
+    struct _KEVENT * Event;// Offset=0x28 Size=0x8
+    void  ( * PostRoutine)(void * ,void * );// Offset=0x30 Size=0x8
+    void * Context1;// Offset=0x38 Size=0x8
+    void * Context2;// Offset=0x40 Size=0x8
+};

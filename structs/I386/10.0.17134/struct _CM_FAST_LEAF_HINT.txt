@@ -1,0 +1,5 @@
+struct _CM_FAST_LEAF_HINT// Size=0x4
+{
+    unsigned char Characters[4];// Offset=0x0 Size=0x4
+    unsigned long FullHint;// Offset=0x0 Size=0x4
+};

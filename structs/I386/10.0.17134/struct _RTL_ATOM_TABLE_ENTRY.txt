@@ -1,0 +1,9 @@
+struct _RTL_ATOM_TABLE_ENTRY// Size=0x1c
+{
+    struct _RTL_ATOM_TABLE_ENTRY * HashLink;// Offset=0x0 Size=0x4
+    unsigned short HandleIndex;// Offset=0x4 Size=0x2
+    unsigned short Atom;// Offset=0x6 Size=0x2
+    struct _RTL_ATOM_TABLE_REFERENCE Reference;// Offset=0x8 Size=0x10
+    unsigned char NameLength;// Offset=0x18 Size=0x1
+    wchar_t Name[1];// Offset=0x1a Size=0x2
+};

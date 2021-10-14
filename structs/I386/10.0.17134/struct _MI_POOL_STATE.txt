@@ -1,0 +1,27 @@
+struct _MI_POOL_STATE// Size=0x4f0
+{
+    unsigned long MaximumNonPagedPoolThreshold;// Offset=0x0 Size=0x4
+    unsigned long NonPagedPoolSListMaximum[3];// Offset=0x4 Size=0xc
+    unsigned long AllocatedNonPagedPool;// Offset=0x10 Size=0x4
+    struct _SINGLE_LIST_ENTRY BadPoolHead;// Offset=0x14 Size=0x4
+    unsigned long HighEventSets;// Offset=0x18 Size=0x4
+    unsigned char HighEventSetsValid;// Offset=0x1c Size=0x1
+    unsigned long PoolFailures[3][3];// Offset=0x20 Size=0x24
+    struct _MI_POOL_FAILURE_REASONS PoolFailureReasons;// Offset=0x44 Size=0x2c
+    unsigned long LowPagedPoolThreshold;// Offset=0x70 Size=0x4
+    unsigned long HighPagedPoolThreshold;// Offset=0x74 Size=0x4
+    long SpecialPoolPdesMax;// Offset=0x78 Size=0x4
+    unsigned char NonPagedPoolNodes[1024];// Offset=0x7c Size=0x400
+    unsigned long PagedPoolSListMaximum;// Offset=0x47c Size=0x4
+    unsigned long PreemptiveTrims[4];// Offset=0x480 Size=0x10
+    unsigned long SpecialPagesInUsePeak;// Offset=0x490 Size=0x4
+    unsigned long SpecialPoolRejected[6];// Offset=0x494 Size=0x18
+    unsigned long SpecialPagesNonPaged;// Offset=0x4ac Size=0x4
+    long SpecialPoolPdes;// Offset=0x4b0 Size=0x4
+    unsigned long SessionSpecialPoolPdesMax;// Offset=0x4b4 Size=0x4
+    long PermittedFaultsLock;// Offset=0x4b8 Size=0x4
+    struct _RTL_AVL_TREE PermittedFaultsTree;// Offset=0x4bc Size=0x4
+    struct _MI_ACCESS_VIOLATION_RANGE PermittedFaultsInitialNode[2];// Offset=0x4c0 Size=0x28
+    unsigned long TotalPagedPoolQuota;// Offset=0x4e8 Size=0x4
+    unsigned long TotalNonPagedPoolQuota;// Offset=0x4ec Size=0x4
+};

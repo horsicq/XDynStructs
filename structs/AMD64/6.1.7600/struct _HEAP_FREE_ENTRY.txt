@@ -1,0 +1,26 @@
+struct _HEAP_FREE_ENTRY// Size=0x20
+{
+    void * PreviousBlockPrivateData;// Offset=0x0 Size=0x8
+    unsigned short Size;// Offset=0x8 Size=0x2
+    unsigned char Flags;// Offset=0xa Size=0x1
+    unsigned char SmallTagIndex;// Offset=0xb Size=0x1
+    unsigned short PreviousSize;// Offset=0xc Size=0x2
+    unsigned char SegmentOffset;// Offset=0xe Size=0x1
+    unsigned char LFHFlags;// Offset=0xe Size=0x1
+    unsigned char UnusedBytes;// Offset=0xf Size=0x1
+    unsigned long long CompactHeader;// Offset=0x8 Size=0x8
+    void * Reserved;// Offset=0x0 Size=0x8
+    unsigned short FunctionIndex;// Offset=0x8 Size=0x2
+    unsigned short ContextValue;// Offset=0xa Size=0x2
+    unsigned long InterceptorValue;// Offset=0x8 Size=0x4
+    unsigned short UnusedBytesLength;// Offset=0xc Size=0x2
+    unsigned char EntryOffset;// Offset=0xe Size=0x1
+    unsigned char ExtendedBlockSignature;// Offset=0xf Size=0x1
+    void * ReservedForAlignment;// Offset=0x0 Size=0x8
+    unsigned long Code1;// Offset=0x8 Size=0x4
+    unsigned short Code2;// Offset=0xc Size=0x2
+    unsigned char Code3;// Offset=0xe Size=0x1
+    unsigned char Code4;// Offset=0xf Size=0x1
+    unsigned long long AgregateCode;// Offset=0x8 Size=0x8
+    struct _LIST_ENTRY FreeList;// Offset=0x10 Size=0x10
+};

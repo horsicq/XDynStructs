@@ -1,0 +1,142 @@
+struct _EPROCESS// Size=0x4d0
+{
+    struct _KPROCESS Pcb;// Offset=0x0 Size=0x160
+    struct _EX_PUSH_LOCK ProcessLock;// Offset=0x160 Size=0x8
+    union _LARGE_INTEGER CreateTime;// Offset=0x168 Size=0x8
+    union _LARGE_INTEGER ExitTime;// Offset=0x170 Size=0x8
+    struct _EX_RUNDOWN_REF RundownProtect;// Offset=0x178 Size=0x8
+    void * UniqueProcessId;// Offset=0x180 Size=0x8
+    struct _LIST_ENTRY ActiveProcessLinks;// Offset=0x188 Size=0x10
+    unsigned long long ProcessQuotaUsage[2];// Offset=0x198 Size=0x10
+    unsigned long long ProcessQuotaPeak[2];// Offset=0x1a8 Size=0x10
+    unsigned long long CommitCharge;// Offset=0x1b8 Size=0x8
+    struct _EPROCESS_QUOTA_BLOCK * QuotaBlock;// Offset=0x1c0 Size=0x8
+    struct _PS_CPU_QUOTA_BLOCK * CpuQuotaBlock;// Offset=0x1c8 Size=0x8
+    unsigned long long PeakVirtualSize;// Offset=0x1d0 Size=0x8
+    unsigned long long VirtualSize;// Offset=0x1d8 Size=0x8
+    struct _LIST_ENTRY SessionProcessLinks;// Offset=0x1e0 Size=0x10
+    void * DebugPort;// Offset=0x1f0 Size=0x8
+    void * ExceptionPortData;// Offset=0x1f8 Size=0x8
+    unsigned long long ExceptionPortValue;// Offset=0x1f8 Size=0x8
+    unsigned long long ExceptionPortState:3;// Offset=0x1f8 Size=0x8 BitOffset=0x0 BitSize=0x3
+    struct _HANDLE_TABLE * ObjectTable;// Offset=0x200 Size=0x8
+    struct _EX_FAST_REF Token;// Offset=0x208 Size=0x8
+    unsigned long long WorkingSetPage;// Offset=0x210 Size=0x8
+    struct _EX_PUSH_LOCK AddressCreationLock;// Offset=0x218 Size=0x8
+    struct _ETHREAD * RotateInProgress;// Offset=0x220 Size=0x8
+    struct _ETHREAD * ForkInProgress;// Offset=0x228 Size=0x8
+    unsigned long long HardwareTrigger;// Offset=0x230 Size=0x8
+    struct _MM_AVL_TABLE * PhysicalVadRoot;// Offset=0x238 Size=0x8
+    void * CloneRoot;// Offset=0x240 Size=0x8
+    unsigned long long NumberOfPrivatePages;// Offset=0x248 Size=0x8
+    unsigned long long NumberOfLockedPages;// Offset=0x250 Size=0x8
+    void * Win32Process;// Offset=0x258 Size=0x8
+    struct _EJOB * Job;// Offset=0x260 Size=0x8
+    void * SectionObject;// Offset=0x268 Size=0x8
+    void * SectionBaseAddress;// Offset=0x270 Size=0x8
+    unsigned long Cookie;// Offset=0x278 Size=0x4
+    unsigned long UmsScheduledThreads;// Offset=0x27c Size=0x4
+    struct _PAGEFAULT_HISTORY * WorkingSetWatch;// Offset=0x280 Size=0x8
+    void * Win32WindowStation;// Offset=0x288 Size=0x8
+    void * InheritedFromUniqueProcessId;// Offset=0x290 Size=0x8
+    void * LdtInformation;// Offset=0x298 Size=0x8
+    void * Spare;// Offset=0x2a0 Size=0x8
+    unsigned long long ConsoleHostProcess;// Offset=0x2a8 Size=0x8
+    void * DeviceMap;// Offset=0x2b0 Size=0x8
+    void * EtwDataSource;// Offset=0x2b8 Size=0x8
+    void * FreeTebHint;// Offset=0x2c0 Size=0x8
+    void * FreeUmsTebHint;// Offset=0x2c8 Size=0x8
+    struct _HARDWARE_PTE PageDirectoryPte;// Offset=0x2d0 Size=0x8
+    unsigned long long Filler;// Offset=0x2d0 Size=0x8
+    void * Session;// Offset=0x2d8 Size=0x8
+    unsigned char ImageFileName[15];// Offset=0x2e0 Size=0xf
+    unsigned char PriorityClass;// Offset=0x2ef Size=0x1
+    struct _LIST_ENTRY JobLinks;// Offset=0x2f0 Size=0x10
+    void * LockedPagesList;// Offset=0x300 Size=0x8
+    struct _LIST_ENTRY ThreadListHead;// Offset=0x308 Size=0x10
+    void * SecurityPort;// Offset=0x318 Size=0x8
+    void * Wow64Process;// Offset=0x320 Size=0x8
+    unsigned long ActiveThreads;// Offset=0x328 Size=0x4
+    unsigned long ImagePathHash;// Offset=0x32c Size=0x4
+    unsigned long DefaultHardErrorProcessing;// Offset=0x330 Size=0x4
+    long LastThreadExitStatus;// Offset=0x334 Size=0x4
+    struct _PEB * Peb;// Offset=0x338 Size=0x8
+    struct _EX_FAST_REF PrefetchTrace;// Offset=0x340 Size=0x8
+    union _LARGE_INTEGER ReadOperationCount;// Offset=0x348 Size=0x8
+    union _LARGE_INTEGER WriteOperationCount;// Offset=0x350 Size=0x8
+    union _LARGE_INTEGER OtherOperationCount;// Offset=0x358 Size=0x8
+    union _LARGE_INTEGER ReadTransferCount;// Offset=0x360 Size=0x8
+    union _LARGE_INTEGER WriteTransferCount;// Offset=0x368 Size=0x8
+    union _LARGE_INTEGER OtherTransferCount;// Offset=0x370 Size=0x8
+    unsigned long long CommitChargeLimit;// Offset=0x378 Size=0x8
+    unsigned long long CommitChargePeak;// Offset=0x380 Size=0x8
+    void * AweInfo;// Offset=0x388 Size=0x8
+    struct _SE_AUDIT_PROCESS_CREATION_INFO SeAuditProcessCreationInfo;// Offset=0x390 Size=0x8
+    struct _MMSUPPORT Vm;// Offset=0x398 Size=0x88
+    struct _LIST_ENTRY MmProcessLinks;// Offset=0x420 Size=0x10
+    void * HighestUserAddress;// Offset=0x430 Size=0x8
+    unsigned long ModifiedPageCount;// Offset=0x438 Size=0x4
+    unsigned long Flags2;// Offset=0x43c Size=0x4
+    unsigned long JobNotReallyActive:1;// Offset=0x43c Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long AccountingFolded:1;// Offset=0x43c Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long NewProcessReported:1;// Offset=0x43c Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long ExitProcessReported:1;// Offset=0x43c Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long ReportCommitChanges:1;// Offset=0x43c Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long LastReportMemory:1;// Offset=0x43c Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long ReportPhysicalPageChanges:1;// Offset=0x43c Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long HandleTableRundown:1;// Offset=0x43c Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long NeedsHandleRundown:1;// Offset=0x43c Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long RefTraceEnabled:1;// Offset=0x43c Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long NumaAware:1;// Offset=0x43c Size=0x4 BitOffset=0xa BitSize=0x1
+    unsigned long ProtectedProcess:1;// Offset=0x43c Size=0x4 BitOffset=0xb BitSize=0x1
+    unsigned long DefaultPagePriority:3;// Offset=0x43c Size=0x4 BitOffset=0xc BitSize=0x3
+    unsigned long PrimaryTokenFrozen:1;// Offset=0x43c Size=0x4 BitOffset=0xf BitSize=0x1
+    unsigned long ProcessVerifierTarget:1;// Offset=0x43c Size=0x4 BitOffset=0x10 BitSize=0x1
+    unsigned long StackRandomizationDisabled:1;// Offset=0x43c Size=0x4 BitOffset=0x11 BitSize=0x1
+    unsigned long AffinityPermanent:1;// Offset=0x43c Size=0x4 BitOffset=0x12 BitSize=0x1
+    unsigned long AffinityUpdateEnable:1;// Offset=0x43c Size=0x4 BitOffset=0x13 BitSize=0x1
+    unsigned long PropagateNode:1;// Offset=0x43c Size=0x4 BitOffset=0x14 BitSize=0x1
+    unsigned long ExplicitAffinity:1;// Offset=0x43c Size=0x4 BitOffset=0x15 BitSize=0x1
+    unsigned long Spare1:1;// Offset=0x43c Size=0x4 BitOffset=0x16 BitSize=0x1
+    unsigned long ForceRelocateImages:1;// Offset=0x43c Size=0x4 BitOffset=0x17 BitSize=0x1
+    unsigned long DisallowStrippedImages:1;// Offset=0x43c Size=0x4 BitOffset=0x18 BitSize=0x1
+    unsigned long LowVaAccessible:1;// Offset=0x43c Size=0x4 BitOffset=0x19 BitSize=0x1
+    unsigned long Flags;// Offset=0x440 Size=0x4
+    unsigned long CreateReported:1;// Offset=0x440 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long NoDebugInherit:1;// Offset=0x440 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long ProcessExiting:1;// Offset=0x440 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long ProcessDelete:1;// Offset=0x440 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long Wow64SplitPages:1;// Offset=0x440 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long VmDeleted:1;// Offset=0x440 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long OutswapEnabled:1;// Offset=0x440 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long Outswapped:1;// Offset=0x440 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long ForkFailed:1;// Offset=0x440 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long Wow64VaSpace4Gb:1;// Offset=0x440 Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long AddressSpaceInitialized:2;// Offset=0x440 Size=0x4 BitOffset=0xa BitSize=0x2
+    unsigned long SetTimerResolution:1;// Offset=0x440 Size=0x4 BitOffset=0xc BitSize=0x1
+    unsigned long BreakOnTermination:1;// Offset=0x440 Size=0x4 BitOffset=0xd BitSize=0x1
+    unsigned long DeprioritizeViews:1;// Offset=0x440 Size=0x4 BitOffset=0xe BitSize=0x1
+    unsigned long WriteWatch:1;// Offset=0x440 Size=0x4 BitOffset=0xf BitSize=0x1
+    unsigned long ProcessInSession:1;// Offset=0x440 Size=0x4 BitOffset=0x10 BitSize=0x1
+    unsigned long OverrideAddressSpace:1;// Offset=0x440 Size=0x4 BitOffset=0x11 BitSize=0x1
+    unsigned long HasAddressSpace:1;// Offset=0x440 Size=0x4 BitOffset=0x12 BitSize=0x1
+    unsigned long LaunchPrefetched:1;// Offset=0x440 Size=0x4 BitOffset=0x13 BitSize=0x1
+    unsigned long InjectInpageErrors:1;// Offset=0x440 Size=0x4 BitOffset=0x14 BitSize=0x1
+    unsigned long VmTopDown:1;// Offset=0x440 Size=0x4 BitOffset=0x15 BitSize=0x1
+    unsigned long ImageNotifyDone:1;// Offset=0x440 Size=0x4 BitOffset=0x16 BitSize=0x1
+    unsigned long PdeUpdateNeeded:1;// Offset=0x440 Size=0x4 BitOffset=0x17 BitSize=0x1
+    unsigned long VdmAllowed:1;// Offset=0x440 Size=0x4 BitOffset=0x18 BitSize=0x1
+    unsigned long CrossSessionCreate:1;// Offset=0x440 Size=0x4 BitOffset=0x19 BitSize=0x1
+    unsigned long ProcessInserted:1;// Offset=0x440 Size=0x4 BitOffset=0x1a BitSize=0x1
+    unsigned long DefaultIoPriority:3;// Offset=0x440 Size=0x4 BitOffset=0x1b BitSize=0x3
+    unsigned long ProcessSelfDelete:1;// Offset=0x440 Size=0x4 BitOffset=0x1e BitSize=0x1
+    unsigned long SetTimerResolutionLink:1;// Offset=0x440 Size=0x4 BitOffset=0x1f BitSize=0x1
+    long ExitStatus;// Offset=0x444 Size=0x4
+    struct _MM_AVL_TABLE VadRoot;// Offset=0x448 Size=0x40
+    struct _ALPC_PROCESS_CONTEXT AlpcContext;// Offset=0x488 Size=0x20
+    struct _LIST_ENTRY TimerResolutionLink;// Offset=0x4a8 Size=0x10
+    unsigned long RequestedTimerResolution;// Offset=0x4b8 Size=0x4
+    unsigned long ActiveThreadsHighWatermark;// Offset=0x4bc Size=0x4
+    unsigned long SmallestTimerResolution;// Offset=0x4c0 Size=0x4
+    struct _PO_DIAG_STACK_RECORD * TimerResolutionStackRecord;// Offset=0x4c8 Size=0x8
+};

@@ -1,0 +1,5 @@
+struct _HAL_NODE_RANGE// Size=0x10
+{
+    unsigned long long PageFrameIndex;// Offset=0x0 Size=0x8
+    unsigned long Node;// Offset=0x8 Size=0x4
+};

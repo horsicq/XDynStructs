@@ -1,0 +1,9 @@
+struct _EXCEPTION_RECORD// Size=0x98
+{
+    long ExceptionCode;// Offset=0x0 Size=0x4
+    unsigned long ExceptionFlags;// Offset=0x4 Size=0x4
+    struct _EXCEPTION_RECORD * ExceptionRecord;// Offset=0x8 Size=0x8
+    void * ExceptionAddress;// Offset=0x10 Size=0x8
+    unsigned long NumberParameters;// Offset=0x18 Size=0x4
+    unsigned long long ExceptionInformation[15];// Offset=0x20 Size=0x78
+};

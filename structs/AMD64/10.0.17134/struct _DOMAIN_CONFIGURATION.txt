@@ -1,0 +1,5 @@
+struct _DOMAIN_CONFIGURATION// Size=0x28
+{
+    enum _DOMAIN_CONFIGURATION_ARCH Type;// Offset=0x0 Size=0x4
+    struct _DOMAIN_CONFIGURATION_ARM64 Arm64;// Offset=0x8 Size=0x20
+};

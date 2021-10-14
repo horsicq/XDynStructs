@@ -1,0 +1,12 @@
+struct _RTL_CRITICAL_SECTION_DEBUG// Size=0x30
+{
+    unsigned short Type;// Offset=0x0 Size=0x2
+    unsigned short CreatorBackTraceIndex;// Offset=0x2 Size=0x2
+    struct _RTL_CRITICAL_SECTION * CriticalSection;// Offset=0x8 Size=0x8
+    struct _LIST_ENTRY ProcessLocksList;// Offset=0x10 Size=0x10
+    unsigned long EntryCount;// Offset=0x20 Size=0x4
+    unsigned long ContentionCount;// Offset=0x24 Size=0x4
+    unsigned long Flags;// Offset=0x28 Size=0x4
+    unsigned short CreatorBackTraceIndexHigh;// Offset=0x2c Size=0x2
+    unsigned short SpareUSHORT;// Offset=0x2e Size=0x2
+};

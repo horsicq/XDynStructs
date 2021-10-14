@@ -1,0 +1,10 @@
+struct _IOV_IRP_TRACE// Size=0x40
+{
+    struct _IRP * Irp;// Offset=0x0 Size=0x4
+    struct _KTHREAD * Thread;// Offset=0x4 Size=0x4
+    short KernelApcDisable;// Offset=0x8 Size=0x2
+    short SpecialApcDisable;// Offset=0xa Size=0x2
+    unsigned long CombinedApcDisable;// Offset=0x8 Size=0x4
+    unsigned char Irql;// Offset=0xc Size=0x1
+    void * StackTrace[12];// Offset=0x10 Size=0x30
+};

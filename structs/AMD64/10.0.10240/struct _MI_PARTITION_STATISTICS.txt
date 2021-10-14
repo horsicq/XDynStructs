@@ -1,0 +1,23 @@
+struct _MI_PARTITION_STATISTICS// Size=0x50
+{
+    unsigned long DeleteYield;// Offset=0x0 Size=0x4
+    unsigned long DeleteBad;// Offset=0x4 Size=0x4
+    unsigned long DeleteTrulyBad;// Offset=0x8 Size=0x4
+    unsigned long DeleteLargePage;// Offset=0xc Size=0x4
+    unsigned long DeleteLargePageRetry;// Offset=0x10 Size=0x4
+    unsigned long DeleteZeroFree;// Offset=0x14 Size=0x4
+    unsigned long DeleteTransition;// Offset=0x18 Size=0x4
+    unsigned long DeleteStandbyReferenced;// Offset=0x1c Size=0x4
+    unsigned long DeleteStandbyRelinkFailed;// Offset=0x20 Size=0x4
+    unsigned long DeleteStandbySharedPagefile;// Offset=0x24 Size=0x4
+    unsigned long DeleteStandbySharedFile;// Offset=0x28 Size=0x4
+    unsigned long DeleteModifiedReferenced;// Offset=0x2c Size=0x4
+    unsigned long DeleteModified;// Offset=0x30 Size=0x4
+    unsigned long DeleteModifiedNoWrite;// Offset=0x34 Size=0x4
+    unsigned long DeleteModifiedSharedPagefile;// Offset=0x38 Size=0x4
+    unsigned long DeleteModifiedSharedFile;// Offset=0x3c Size=0x4
+    unsigned long DeleteActiveSharedPagefile1;// Offset=0x40 Size=0x4
+    unsigned long DeleteActiveSharedPagefile2;// Offset=0x44 Size=0x4
+    unsigned long DeleteActiveSharedFile;// Offset=0x48 Size=0x4
+    unsigned long DeleteWriteDelay;// Offset=0x4c Size=0x4
+};

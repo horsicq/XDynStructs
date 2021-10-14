@@ -1,0 +1,9 @@
+struct _FAST_ERESOURCE// Size=0x68
+{
+    void * Reserved1[3];// Offset=0x0 Size=0x18
+    unsigned long Reserved2;// Offset=0x18 Size=0x4
+    void * Reserved3[4];// Offset=0x20 Size=0x20
+    unsigned long Reserved4[4];// Offset=0x40 Size=0x10
+    void * Reserved5;// Offset=0x50 Size=0x8
+    void * Reserved6[2];// Offset=0x58 Size=0x10
+};

@@ -1,0 +1,22 @@
+struct _ETIMER// Size=0xb8
+{
+    struct _KTIMER KeTimer;// Offset=0x0 Size=0x28
+    unsigned long Lock;// Offset=0x28 Size=0x4
+    struct _KAPC TimerApc;// Offset=0x2c Size=0x30
+    struct _KDPC TimerDpc;// Offset=0x5c Size=0x20
+    struct _LIST_ENTRY ActiveTimerListEntry;// Offset=0x7c Size=0x8
+    unsigned long Period;// Offset=0x84 Size=0x4
+    char TimerFlags;// Offset=0x88 Size=0x1
+    unsigned char ApcAssociated:1;// Offset=0x88 Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char FlushDpcs:1;// Offset=0x88 Size=0x1 BitOffset=0x1 BitSize=0x1
+    unsigned char Paused:1;// Offset=0x88 Size=0x1 BitOffset=0x2 BitSize=0x1
+    unsigned char Spare1:5;// Offset=0x88 Size=0x1 BitOffset=0x3 BitSize=0x5
+    unsigned char DueTimeType;// Offset=0x89 Size=0x1
+    unsigned short Spare2;// Offset=0x8a Size=0x2
+    struct _DIAGNOSTIC_CONTEXT * WakeReason;// Offset=0x8c Size=0x4
+    struct _LIST_ENTRY WakeTimerListEntry;// Offset=0x90 Size=0x8
+    void * VirtualizedTimerCookie;// Offset=0x98 Size=0x4
+    struct _LIST_ENTRY VirtualizedTimerLinks;// Offset=0x9c Size=0x8
+    unsigned long long DueTime;// Offset=0xa8 Size=0x8
+    unsigned long CoalescingWindow;// Offset=0xb0 Size=0x4
+};

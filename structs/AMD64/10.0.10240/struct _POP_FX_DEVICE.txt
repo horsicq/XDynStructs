@@ -1,0 +1,39 @@
+struct _POP_FX_DEVICE// Size=0x278
+{
+    struct _LIST_ENTRY Link;// Offset=0x0 Size=0x10
+    struct _IRP * Irp;// Offset=0x10 Size=0x8
+    struct _POP_IRP_DATA * IrpData;// Offset=0x18 Size=0x8
+    union _POP_FX_DEVICE_STATUS Status;// Offset=0x20 Size=0x4
+    long PowerReqCall;// Offset=0x24 Size=0x4
+    long PowerNotReqCall;// Offset=0x28 Size=0x4
+    struct _DEVICE_NODE * DevNode;// Offset=0x30 Size=0x8
+    struct PEPHANDLE__ * DpmContext;// Offset=0x38 Size=0x8
+    struct _POP_FX_PLUGIN * Plugin;// Offset=0x40 Size=0x8
+    struct PEPHANDLE__ * PluginHandle;// Offset=0x48 Size=0x8
+    struct _POP_FX_PLUGIN * AcpiPlugin;// Offset=0x50 Size=0x8
+    struct PEPHANDLE__ * AcpiPluginHandle;// Offset=0x58 Size=0x8
+    struct _DEVICE_OBJECT * DeviceObject;// Offset=0x60 Size=0x8
+    struct _DEVICE_OBJECT * TargetDevice;// Offset=0x68 Size=0x8
+    struct _POP_FX_DRIVER_CALLBACKS Callbacks;// Offset=0x70 Size=0x38
+    void * DriverContext;// Offset=0xa8 Size=0x8
+    struct _LIST_ENTRY AcpiLink;// Offset=0xb0 Size=0x10
+    struct _UNICODE_STRING DeviceId;// Offset=0xc0 Size=0x10
+    struct _IO_REMOVE_LOCK RemoveLock;// Offset=0xd0 Size=0x20
+    struct _IO_REMOVE_LOCK AcpiRemoveLock;// Offset=0xf0 Size=0x20
+    struct _POP_FX_WORK_ORDER WorkOrder;// Offset=0x110 Size=0x38
+    unsigned long long IdleLock;// Offset=0x148 Size=0x8
+    struct _KTIMER IdleTimer;// Offset=0x150 Size=0x40
+    struct _KDPC IdleDpc;// Offset=0x190 Size=0x40
+    unsigned long long IdleTimeout;// Offset=0x1d0 Size=0x8
+    unsigned long long IdleStamp;// Offset=0x1d8 Size=0x8
+    struct _DEVICE_OBJECT * NextIrpDeviceObject[2];// Offset=0x1e0 Size=0x10
+    union _POWER_STATE NextIrpPowerState[2];// Offset=0x1f0 Size=0x8
+    void  ( * NextIrpCallerCompletion)[2];// Offset=0x1f8 Size=0x10
+    void * NextIrpCallerContext[2];// Offset=0x208 Size=0x10
+    struct _KEVENT IrpCompleteEvent;// Offset=0x218 Size=0x18
+    unsigned char  ( * PowerOnDumpDeviceCallback)(struct _PEP_CRASHDUMP_INFORMATION * );// Offset=0x230 Size=0x8
+    struct _POP_FX_ACCOUNTING Accounting;// Offset=0x238 Size=0x30
+    unsigned long Flags;// Offset=0x268 Size=0x4
+    unsigned long ComponentCount;// Offset=0x26c Size=0x4
+    struct _POP_FX_COMPONENT ** Components;// Offset=0x270 Size=0x8
+};

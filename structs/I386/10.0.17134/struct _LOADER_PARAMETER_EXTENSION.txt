@@ -1,0 +1,93 @@
+struct _LOADER_PARAMETER_EXTENSION// Size=0xb68
+{
+    unsigned long Size;// Offset=0x0 Size=0x4
+    struct _PROFILE_PARAMETER_BLOCK Profile;// Offset=0x4 Size=0x10
+    void * EmInfFileImage;// Offset=0x14 Size=0x4
+    unsigned long EmInfFileSize;// Offset=0x18 Size=0x4
+    void * TriageDumpBlock;// Offset=0x1c Size=0x4
+    struct _HEADLESS_LOADER_BLOCK * HeadlessLoaderBlock;// Offset=0x20 Size=0x4
+    struct _SMBIOS3_TABLE_HEADER * SMBiosEPSHeader;// Offset=0x24 Size=0x4
+    void * DrvDBImage;// Offset=0x28 Size=0x4
+    unsigned long DrvDBSize;// Offset=0x2c Size=0x4
+    struct _NETWORK_LOADER_BLOCK * NetworkLoaderBlock;// Offset=0x30 Size=0x4
+    unsigned char * HalpIRQLToTPR;// Offset=0x34 Size=0x4
+    unsigned char * HalpVectorToIRQL;// Offset=0x38 Size=0x4
+    struct _LIST_ENTRY FirmwareDescriptorListHead;// Offset=0x3c Size=0x8
+    void * AcpiTable;// Offset=0x44 Size=0x4
+    unsigned long AcpiTableSize;// Offset=0x48 Size=0x4
+    unsigned long LastBootSucceeded:1;// Offset=0x4c Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long LastBootShutdown:1;// Offset=0x4c Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long IoPortAccessSupported:1;// Offset=0x4c Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long BootDebuggerActive:1;// Offset=0x4c Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long StrongCodeGuarantees:1;// Offset=0x4c Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long HardStrongCodeGuarantees:1;// Offset=0x4c Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long SidSharingDisabled:1;// Offset=0x4c Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long TpmInitialized:1;// Offset=0x4c Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long VsmConfigured:1;// Offset=0x4c Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long IumEnabled:1;// Offset=0x4c Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long IsSmbboot:1;// Offset=0x4c Size=0x4 BitOffset=0xa BitSize=0x1
+    unsigned long BootLogEnabled:1;// Offset=0x4c Size=0x4 BitOffset=0xb BitSize=0x1
+    unsigned long FeatureSettings:7;// Offset=0x4c Size=0x4 BitOffset=0xc BitSize=0x7
+    unsigned long FeatureSimulations:6;// Offset=0x4c Size=0x4 BitOffset=0x13 BitSize=0x6
+    unsigned long MicrocodeOptedOut:1;// Offset=0x4c Size=0x4 BitOffset=0x19 BitSize=0x1
+    unsigned long XhciLegacyHandoffSkip:1;// Offset=0x4c Size=0x4 BitOffset=0x1a BitSize=0x1
+    unsigned long Reserved:5;// Offset=0x4c Size=0x4 BitOffset=0x1b BitSize=0x5
+    struct _LOADER_PERFORMANCE_DATA * LoaderPerformanceData;// Offset=0x50 Size=0x4
+    struct _LIST_ENTRY BootApplicationPersistentData;// Offset=0x54 Size=0x8
+    void * WmdTestResult;// Offset=0x5c Size=0x4
+    struct _GUID BootIdentifier;// Offset=0x60 Size=0x10
+    unsigned long ResumePages;// Offset=0x70 Size=0x4
+    void * DumpHeader;// Offset=0x74 Size=0x4
+    void * BgContext;// Offset=0x78 Size=0x4
+    void * NumaLocalityInfo;// Offset=0x7c Size=0x4
+    void * NumaGroupAssignment;// Offset=0x80 Size=0x4
+    struct _LIST_ENTRY AttachedHives;// Offset=0x84 Size=0x8
+    unsigned long MemoryCachingRequirementsCount;// Offset=0x8c Size=0x4
+    void * MemoryCachingRequirements;// Offset=0x90 Size=0x4
+    struct _BOOT_ENTROPY_LDR_RESULT BootEntropyResult;// Offset=0x98 Size=0x798
+    unsigned long long ProcessorCounterFrequency;// Offset=0x830 Size=0x8
+    struct _LOADER_PARAMETER_HYPERVISOR_EXTENSION HypervisorExtension;// Offset=0x838 Size=0x38
+    struct _GUID HardwareConfigurationId;// Offset=0x870 Size=0x10
+    struct _LIST_ENTRY HalExtensionModuleList;// Offset=0x880 Size=0x8
+    union _LARGE_INTEGER SystemTime;// Offset=0x888 Size=0x8
+    unsigned long long TimeStampAtSystemTimeRead;// Offset=0x890 Size=0x8
+    unsigned long long BootFlags;// Offset=0x898 Size=0x8
+    unsigned long long DbgMenuOsSelection:1;// Offset=0x898 Size=0x8 BitOffset=0x0 BitSize=0x1
+    unsigned long long DbgHiberBoot:1;// Offset=0x898 Size=0x8 BitOffset=0x1 BitSize=0x1
+    unsigned long long DbgSoftRestart:1;// Offset=0x898 Size=0x8 BitOffset=0x2 BitSize=0x1
+    unsigned long long InternalBootFlags;// Offset=0x8a0 Size=0x8
+    unsigned long long DbgUtcBootTime:1;// Offset=0x8a0 Size=0x8 BitOffset=0x0 BitSize=0x1
+    unsigned long long DbgRtcBootTime:1;// Offset=0x8a0 Size=0x8 BitOffset=0x1 BitSize=0x1
+    unsigned long long DbgNoLegacyServices:1;// Offset=0x8a0 Size=0x8 BitOffset=0x2 BitSize=0x1
+    void * WfsFPData;// Offset=0x8a8 Size=0x4
+    unsigned long WfsFPDataSize;// Offset=0x8ac Size=0x4
+    struct _LOADER_BUGCHECK_PARAMETERS BugcheckParameters;// Offset=0x8b0 Size=0x14
+    void * ApiSetSchema;// Offset=0x8c4 Size=0x4
+    unsigned long ApiSetSchemaSize;// Offset=0x8c8 Size=0x4
+    struct _LIST_ENTRY ApiSetSchemaExtensions;// Offset=0x8cc Size=0x8
+    struct _UNICODE_STRING AcpiBiosVersion;// Offset=0x8d4 Size=0x8
+    struct _UNICODE_STRING SmbiosVersion;// Offset=0x8dc Size=0x8
+    struct _UNICODE_STRING EfiVersion;// Offset=0x8e4 Size=0x8
+    struct _DEBUG_DEVICE_DESCRIPTOR * KdDebugDevice;// Offset=0x8ec Size=0x4
+    struct _OFFLINE_CRASHDUMP_CONFIGURATION_TABLE_V2 OfflineCrashdumpConfigurationTable;// Offset=0x8f0 Size=0x20
+    struct _UNICODE_STRING ManufacturingProfile;// Offset=0x910 Size=0x8
+    void * BbtBuffer;// Offset=0x918 Size=0x4
+    unsigned long long XsaveAllowedFeatures;// Offset=0x920 Size=0x8
+    unsigned long XsaveFlags;// Offset=0x928 Size=0x4
+    void * BootOptions;// Offset=0x92c Size=0x4
+    unsigned long IumEnablement;// Offset=0x930 Size=0x4
+    unsigned long IumPolicy;// Offset=0x934 Size=0x4
+    long IumStatus;// Offset=0x938 Size=0x4
+    unsigned long BootId;// Offset=0x93c Size=0x4
+    struct _LOADER_PARAMETER_CI_EXTENSION * CodeIntegrityData;// Offset=0x940 Size=0x4
+    unsigned long CodeIntegrityDataSize;// Offset=0x944 Size=0x4
+    struct _LOADER_HIVE_RECOVERY_INFO SystemHiveRecoveryInfo;// Offset=0x948 Size=0x14
+    unsigned long SoftRestartCount;// Offset=0x95c Size=0x4
+    long long SoftRestartTime;// Offset=0x960 Size=0x8
+    unsigned long MajorRelease;// Offset=0x968 Size=0x4
+    unsigned long Reserved1;// Offset=0x96c Size=0x4
+    char NtBuildLab[224];// Offset=0x970 Size=0xe0
+    char NtBuildLabEx[224];// Offset=0xa50 Size=0xe0
+    struct _LOADER_RESET_REASON ResetReason;// Offset=0xb30 Size=0x30
+    unsigned long MaxPciBusNumber;// Offset=0xb60 Size=0x4
+};

@@ -1,0 +1,10 @@
+struct _WHEA_XPF_MCE_DESCRIPTOR// Size=0x398
+{
+    unsigned short Type;// Offset=0x0 Size=0x2
+    unsigned char Enabled;// Offset=0x2 Size=0x1
+    unsigned char NumberOfBanks;// Offset=0x3 Size=0x1
+    union _XPF_MCE_FLAGS Flags;// Offset=0x4 Size=0x4
+    unsigned long long MCG_Capability;// Offset=0x8 Size=0x8
+    unsigned long long MCG_GlobalControl;// Offset=0x10 Size=0x8
+    struct _WHEA_XPF_MC_BANK_DESCRIPTOR Banks[32];// Offset=0x18 Size=0x380
+};

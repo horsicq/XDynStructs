@@ -1,0 +1,8 @@
+struct _RELATION_LIST// Size=0x18
+{
+    unsigned long Count;// Offset=0x0 Size=0x4
+    unsigned long TagCount;// Offset=0x4 Size=0x4
+    unsigned long FirstLevel;// Offset=0x8 Size=0x4
+    unsigned long MaxLevel;// Offset=0xc Size=0x4
+    struct _RELATION_LIST_ENTRY * Entries[1];// Offset=0x10 Size=0x8
+};

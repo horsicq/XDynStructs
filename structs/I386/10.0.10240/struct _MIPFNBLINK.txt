@@ -1,0 +1,16 @@
+struct _MIPFNBLINK// Size=0x4
+{
+    unsigned long Blink:24;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x18
+    unsigned long TbFlushStamp:4;// Offset=0x0 Size=0x4 BitOffset=0x18 BitSize=0x4
+    unsigned long Unused:1;// Offset=0x0 Size=0x4 BitOffset=0x1c BitSize=0x1
+    unsigned long PageBlinkDeleteBit:1;// Offset=0x0 Size=0x4 BitOffset=0x1d BitSize=0x1
+    unsigned long PageBlinkLockBit:1;// Offset=0x0 Size=0x4 BitOffset=0x1e BitSize=0x1
+    unsigned long ShareCount:30;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1e
+    unsigned long PageShareCountDeleteBit:1;// Offset=0x0 Size=0x4 BitOffset=0x1e BitSize=0x1
+    unsigned long PageShareCountLockBit:1;// Offset=0x0 Size=0x4 BitOffset=0x1f BitSize=0x1
+    unsigned long EntireField;// Offset=0x0 Size=0x4
+    long Lock;// Offset=0x0 Size=0x4
+    unsigned long LockNotUsed:30;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1e
+    unsigned long DeleteBit:1;// Offset=0x0 Size=0x4 BitOffset=0x1e BitSize=0x1
+    unsigned long LockBit:1;// Offset=0x0 Size=0x4 BitOffset=0x1f BitSize=0x1
+};

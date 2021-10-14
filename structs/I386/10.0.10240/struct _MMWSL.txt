@@ -1,0 +1,22 @@
+struct _MMWSL// Size=0xe20
+{
+    unsigned long FirstFree;// Offset=0x0 Size=0x4
+    unsigned long FirstDynamic;// Offset=0x4 Size=0x4
+    unsigned long LastEntry;// Offset=0x8 Size=0x4
+    unsigned long NextSlot;// Offset=0xc Size=0x4
+    unsigned long LastInitializedWsle;// Offset=0x10 Size=0x4
+    unsigned long NextAgingSlot;// Offset=0x14 Size=0x4
+    unsigned long NextAccessClearingSlot;// Offset=0x18 Size=0x4
+    unsigned long LastAccessClearingRemainder;// Offset=0x1c Size=0x4
+    unsigned long LastAgingRemainder;// Offset=0x20 Size=0x4
+    unsigned long WsleSize;// Offset=0x24 Size=0x4
+    unsigned long NonDirectCount;// Offset=0x28 Size=0x4
+    void * LowestPagableAddress;// Offset=0x2c Size=0x4
+    struct _MMWSLE_NONDIRECT_HASH * NonDirectHash;// Offset=0x30 Size=0x4
+    struct _MMWSLE_HASH * HashTableStart;// Offset=0x34 Size=0x4
+    struct _MMWSLE_HASH * HighestPermittedHashAddress;// Offset=0x38 Size=0x4
+    unsigned long ActiveWsleCounts[16];// Offset=0x3c Size=0x40
+    struct _MI_ACTIVE_WSLE_LISTHEAD ActiveWsles[16];// Offset=0x7c Size=0x80
+    struct _MMWSLE * Wsle;// Offset=0xfc Size=0x4
+    struct _MI_USER_VA_INFO UserVaInfo;// Offset=0x100 Size=0xd20
+};

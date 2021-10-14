@@ -1,0 +1,21 @@
+struct _ALPC_COMPLETION_LIST_HEADER// Size=0x300
+{
+    unsigned long long StartMagic;// Offset=0x0 Size=0x8
+    unsigned long TotalSize;// Offset=0x8 Size=0x4
+    unsigned long ListOffset;// Offset=0xc Size=0x4
+    unsigned long ListSize;// Offset=0x10 Size=0x4
+    unsigned long BitmapOffset;// Offset=0x14 Size=0x4
+    unsigned long BitmapSize;// Offset=0x18 Size=0x4
+    unsigned long DataOffset;// Offset=0x1c Size=0x4
+    unsigned long DataSize;// Offset=0x20 Size=0x4
+    unsigned long AttributeFlags;// Offset=0x24 Size=0x4
+    unsigned long AttributeSize;// Offset=0x28 Size=0x4
+    struct _ALPC_COMPLETION_LIST_STATE State;// Offset=0x80 Size=0x8
+    unsigned long LastMessageId;// Offset=0x88 Size=0x4
+    unsigned long LastCallbackId;// Offset=0x8c Size=0x4
+    unsigned long PostCount;// Offset=0x100 Size=0x4
+    unsigned long ReturnCount;// Offset=0x180 Size=0x4
+    unsigned long LogSequenceNumber;// Offset=0x200 Size=0x4
+    struct _RTL_SRWLOCK UserLock;// Offset=0x280 Size=0x8
+    unsigned long long EndMagic;// Offset=0x288 Size=0x8
+};

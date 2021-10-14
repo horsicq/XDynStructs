@@ -1,0 +1,5 @@
+struct _DEVICE_DATA_SET_RANGE// Size=0x10
+{
+    long long StartingOffset;// Offset=0x0 Size=0x8
+    unsigned long long LengthInBytes;// Offset=0x8 Size=0x8
+};

@@ -1,0 +1,8 @@
+struct _MI_PAGEFILE_BITMAPS_CACHE_ENTRY// Size=0x38
+{
+    struct _RTL_BALANCED_NODE LengthTreeNode;// Offset=0x0 Size=0x18
+    struct _LIST_ENTRY FreeListEntry;// Offset=0x0 Size=0x10
+    struct _RTL_BALANCED_NODE LocationTreeNode;// Offset=0x18 Size=0x18
+    unsigned long StartingIndex;// Offset=0x30 Size=0x4
+    unsigned long Length;// Offset=0x34 Size=0x4
+};

@@ -1,0 +1,5 @@
+struct _EXCEPTION_REGISTRATION_RECORD// Size=0x8
+{
+    struct _EXCEPTION_REGISTRATION_RECORD * Next;// Offset=0x0 Size=0x4
+    enum _EXCEPTION_DISPOSITION  ( * Handler)(struct _EXCEPTION_RECORD * ,void * ,struct _CONTEXT * ,void * );// Offset=0x4 Size=0x4
+};

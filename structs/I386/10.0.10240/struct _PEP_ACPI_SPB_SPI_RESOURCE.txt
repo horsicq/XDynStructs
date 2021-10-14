@@ -1,0 +1,9 @@
+struct _PEP_ACPI_SPB_SPI_RESOURCE// Size=0x24
+{
+    struct _PEP_ACPI_SPB_RESOURCE SpbCommon;// Offset=0x0 Size=0x18
+    unsigned long ConnectionSpeed;// Offset=0x18 Size=0x4
+    unsigned char DataBitLength;// Offset=0x1c Size=0x1
+    unsigned char Phase;// Offset=0x1d Size=0x1
+    unsigned char Polarity;// Offset=0x1e Size=0x1
+    unsigned short DeviceSelection;// Offset=0x20 Size=0x2
+};

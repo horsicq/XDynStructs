@@ -1,0 +1,19 @@
+struct _KAPC// Size=0x58
+{
+    unsigned char Type;// Offset=0x0 Size=0x1
+    unsigned char SpareByte0;// Offset=0x1 Size=0x1
+    unsigned char Size;// Offset=0x2 Size=0x1
+    unsigned char SpareByte1;// Offset=0x3 Size=0x1
+    unsigned long SpareLong0;// Offset=0x4 Size=0x4
+    struct _KTHREAD * Thread;// Offset=0x8 Size=0x8
+    struct _LIST_ENTRY ApcListEntry;// Offset=0x10 Size=0x10
+    void  ( * KernelRoutine)(struct _KAPC * ,void  ( ** )(void * ,void * ,void * ),void ** ,void ** ,void ** );// Offset=0x20 Size=0x8
+    void  ( * RundownRoutine)(struct _KAPC * );// Offset=0x28 Size=0x8
+    void  ( * NormalRoutine)(void * ,void * ,void * );// Offset=0x30 Size=0x8
+    void * NormalContext;// Offset=0x38 Size=0x8
+    void * SystemArgument1;// Offset=0x40 Size=0x8
+    void * SystemArgument2;// Offset=0x48 Size=0x8
+    char ApcStateIndex;// Offset=0x50 Size=0x1
+    char ApcMode;// Offset=0x51 Size=0x1
+    unsigned char Inserted;// Offset=0x52 Size=0x1
+};

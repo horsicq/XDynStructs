@@ -1,0 +1,7 @@
+struct _XSTATE_CONFIGURATION// Size=0x210
+{
+    unsigned long long EnabledFeatures;// Offset=0x0 Size=0x8
+    unsigned long Size;// Offset=0x8 Size=0x4
+    unsigned long OptimizedSave:1;// Offset=0xc Size=0x4 BitOffset=0x0 BitSize=0x1
+    struct _XSTATE_FEATURE Features[64];// Offset=0x10 Size=0x200
+};

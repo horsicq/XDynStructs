@@ -1,0 +1,6 @@
+struct _FIRMWARE_INFORMATION_LOADER_BLOCK// Size=0x20
+{
+    unsigned long FirmwareTypeEfi:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long Reserved:31;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x1f
+    union _unnamed_479 u;// Offset=0x8 Size=0x18
+};
