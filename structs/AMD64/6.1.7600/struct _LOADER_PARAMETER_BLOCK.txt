@@ -12,6 +12,7 @@ struct _LOADER_PARAMETER_BLOCK// Size=0xf0
     unsigned long long Process;// Offset=0x50 Size=0x8
     unsigned long long Thread;// Offset=0x58 Size=0x8
     unsigned long RegistryLength;// Offset=0x60 Size=0x4
+    unsigned char __align0[4];// Offset=0x64 Size=0x4
     void * RegistryBase;// Offset=0x68 Size=0x8
     struct _CONFIGURATION_COMPONENT_DATA * ConfigurationRoot;// Offset=0x70 Size=0x8
     char * ArcBootDeviceName;// Offset=0x78 Size=0x8

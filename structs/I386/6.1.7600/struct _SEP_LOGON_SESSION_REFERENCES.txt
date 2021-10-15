@@ -1,0 +1,12 @@
+struct _SEP_LOGON_SESSION_REFERENCES// Size=0x34
+{
+    struct _SEP_LOGON_SESSION_REFERENCES * Next;// Offset=0x0 Size=0x4
+    struct _LUID LogonId;// Offset=0x4 Size=0x8
+    struct _LUID BuddyLogonId;// Offset=0xc Size=0x8
+    unsigned long ReferenceCount;// Offset=0x14 Size=0x4
+    unsigned long Flags;// Offset=0x18 Size=0x4
+    struct _DEVICE_MAP * pDeviceMap;// Offset=0x1c Size=0x4
+    void * Token;// Offset=0x20 Size=0x4
+    struct _UNICODE_STRING AccountName;// Offset=0x24 Size=0x8
+    struct _UNICODE_STRING AuthorityName;// Offset=0x2c Size=0x8
+};

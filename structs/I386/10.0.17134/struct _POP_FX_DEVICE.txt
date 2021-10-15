@@ -32,6 +32,7 @@ struct _POP_FX_DEVICE// Size=0x1f8
     void * NextIrpCallerContext[2];// Offset=0x130 Size=0x8
     struct _KEVENT IrpCompleteEvent;// Offset=0x138 Size=0x10
     unsigned char  ( * PowerOnDumpDeviceCallback)(struct _PEP_CRASHDUMP_INFORMATION * );// Offset=0x148 Size=0x4
+    unsigned char __align0[4];// Offset=0x14c Size=0x4
     struct _POP_FX_ACCOUNTING Accounting;// Offset=0x150 Size=0x78
     unsigned long Flags;// Offset=0x1c8 Size=0x4
     unsigned long ComponentCount;// Offset=0x1cc Size=0x4

@@ -1,0 +1,7 @@
+struct _POP_FX_ACTIVE_TIME_ACCOUNTING// Size=0x60
+{
+    unsigned long long Total;// Offset=0x0 Size=0x8
+    unsigned long long Unattributed;// Offset=0x8 Size=0x8
+    unsigned long long Buckets[5];// Offset=0x10 Size=0x28
+    unsigned long long PerBucket[5];// Offset=0x38 Size=0x28
+};

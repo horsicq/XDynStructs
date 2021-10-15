@@ -27,6 +27,7 @@ struct _EJOB// Size=0x2f8
     unsigned long EndOfJobTimeAction;// Offset=0xd0 Size=0x4
     void * CompletionPort;// Offset=0xd4 Size=0x4
     void * CompletionKey;// Offset=0xd8 Size=0x4
+    unsigned char __align0[4];// Offset=0xdc Size=0x4
     unsigned long long CompletionCount;// Offset=0xe0 Size=0x8
     unsigned long SessionId;// Offset=0xe8 Size=0x4
     unsigned long SchedulingClass;// Offset=0xec Size=0x4
@@ -69,12 +70,14 @@ struct _EJOB// Size=0x2f8
     unsigned long LowEdgeLatchFilter;// Offset=0x1f0 Size=0x4
     unsigned long OwnedHighEdgeFilters;// Offset=0x1f4 Size=0x4
     struct _EJOB * NotificationLink;// Offset=0x1f8 Size=0x4
+    unsigned char __align1[4];// Offset=0x1fc Size=0x4
     unsigned long long CurrentJobMemoryUsed;// Offset=0x200 Size=0x8
     struct _JOB_NOTIFICATION_INFORMATION * NotificationInfo;// Offset=0x208 Size=0x4
     void * NotificationInfoQuotaReference;// Offset=0x20c Size=0x4
     struct _IO_MINI_COMPLETION_PACKET_USER * NotificationPacket;// Offset=0x210 Size=0x4
     struct _JOB_CPU_RATE_CONTROL * CpuRateControl;// Offset=0x214 Size=0x4
     void * EffectiveSchedulingGroup;// Offset=0x218 Size=0x4
+    unsigned char __align2[4];// Offset=0x21c Size=0x4
     unsigned long long ReadyTime;// Offset=0x220 Size=0x8
     struct _EX_PUSH_LOCK MemoryLimitsLock;// Offset=0x228 Size=0x4
     struct _LIST_ENTRY SiblingJobLinks;// Offset=0x22c Size=0x8
@@ -85,6 +88,7 @@ struct _EJOB// Size=0x2f8
     unsigned long AncestorCount;// Offset=0x24c Size=0x4
     struct _EJOB ** Ancestors;// Offset=0x250 Size=0x4
     void * SessionObject;// Offset=0x250 Size=0x4
+    unsigned char __align3[4];// Offset=0x254 Size=0x4
     struct _EPROCESS_VALUES Accounting;// Offset=0x258 Size=0x50
     unsigned long ShadowActiveProcessCount;// Offset=0x2a8 Size=0x4
     unsigned long ActiveAuxiliaryProcessCount;// Offset=0x2ac Size=0x4

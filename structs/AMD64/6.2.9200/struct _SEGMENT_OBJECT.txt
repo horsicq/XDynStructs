@@ -2,6 +2,7 @@ struct _SEGMENT_OBJECT// Size=0x40
 {
     void * BaseAddress;// Offset=0x0 Size=0x8
     unsigned long TotalNumberOfPtes;// Offset=0x8 Size=0x4
+    unsigned char __align0[4];// Offset=0xc Size=0x4
     union _LARGE_INTEGER SizeOfSegment;// Offset=0x10 Size=0x8
     unsigned long NonExtendedPtes;// Offset=0x18 Size=0x4
     unsigned long ImageCommitment;// Offset=0x1c Size=0x4

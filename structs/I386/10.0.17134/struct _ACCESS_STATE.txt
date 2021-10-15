@@ -14,6 +14,7 @@ struct _ACCESS_STATE// Size=0x74
     void * AuxData;// Offset=0x30 Size=0x4
     union _unnamed_88 Privileges;// Offset=0x34 Size=0x2c
     unsigned char AuditPrivileges;// Offset=0x60 Size=0x1
+    unsigned char __align0[3];// Offset=0x61 Size=0x3
     struct _UNICODE_STRING ObjectName;// Offset=0x64 Size=0x8
     struct _UNICODE_STRING ObjectTypeName;// Offset=0x6c Size=0x8
 };

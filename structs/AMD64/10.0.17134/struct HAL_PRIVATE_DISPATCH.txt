@@ -1,6 +1,7 @@
 struct HAL_PRIVATE_DISPATCH// Size=0x458
 {
     unsigned long Version;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     struct _BUS_HANDLER *  ( * HalHandlerForBus)(enum _INTERFACE_TYPE ,unsigned long );// Offset=0x8 Size=0x8
     struct _BUS_HANDLER *  ( * HalHandlerForConfigSpace)(enum _BUS_DATA_TYPE ,unsigned long );// Offset=0x10 Size=0x8
     void  ( * HalLocateHiberRanges)(void * );// Offset=0x18 Size=0x8

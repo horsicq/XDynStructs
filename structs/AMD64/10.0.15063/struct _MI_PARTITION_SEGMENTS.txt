@@ -1,0 +1,28 @@
+struct _MI_PARTITION_SEGMENTS// Size=0x240
+{
+    long SegmentListLock;// Offset=0x0 Size=0x4
+    unsigned long DeleteOnCloseCount;// Offset=0x4 Size=0x4
+    long long FsControlAreaCount;// Offset=0x8 Size=0x8
+    long long PfControlAreaCount;// Offset=0x10 Size=0x8
+    struct _KEVENT DeleteSubsectionCleanup;// Offset=0x18 Size=0x18
+    struct _KEVENT UnusedSegmentCleanup;// Offset=0x30 Size=0x18
+    unsigned long long SubsectionDeletePtes;// Offset=0x48 Size=0x8
+    struct _MMDEREFERENCE_SEGMENT_HEADER DereferenceSegmentHeader;// Offset=0x50 Size=0x30
+    struct _LIST_ENTRY DeleteOnCloseList;// Offset=0x80 Size=0x10
+    struct _KTIMER DeleteOnCloseTimer;// Offset=0x90 Size=0x40
+    unsigned char DeleteOnCloseTimerActive;// Offset=0xd0 Size=0x1
+    unsigned char __align0[7];// Offset=0xd1 Size=0x7
+    struct _LIST_ENTRY UnusedSegmentList;// Offset=0xd8 Size=0x10
+    struct _LIST_ENTRY UnusedSubsectionList;// Offset=0xe8 Size=0x10
+    struct _LIST_ENTRY DeleteSubsectionList;// Offset=0xf8 Size=0x10
+    struct _KEVENT ControlAreaDeleteEvent;// Offset=0x108 Size=0x18
+    struct _SINGLE_LIST_ENTRY ControlAreaDeleteList;// Offset=0x120 Size=0x8
+    struct _MI_PTE_CHAIN_HEAD FreeSystemCache;// Offset=0x128 Size=0x18
+    struct _KEVENT CloneDereferenceEvent;// Offset=0x140 Size=0x18
+    unsigned char __align1[8];// Offset=0x158 Size=0x8
+    union _SLIST_HEADER CloneProtosSListHead;// Offset=0x160 Size=0x10
+    struct _EX_PUSH_LOCK SystemCacheInitLock;// Offset=0x170 Size=0x8
+    struct _MI_CROSS_PARTITION_CHARGES SharedCharges[4];// Offset=0x178 Size=0x80
+    struct _KEVENT * SharedChargesDrainEvent;// Offset=0x1f8 Size=0x8
+    struct _KEVENT * PagefileControlAreasDrainEvent;// Offset=0x200 Size=0x8
+};

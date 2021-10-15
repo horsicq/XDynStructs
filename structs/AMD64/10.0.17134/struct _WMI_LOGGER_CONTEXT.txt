@@ -8,6 +8,7 @@ struct _WMI_LOGGER_CONTEXT// Size=0x510
     unsigned long EventMarker[2];// Offset=0x14 Size=0x8
     unsigned long ErrorMarker;// Offset=0x1c Size=0x4
     unsigned long SizeMask;// Offset=0x20 Size=0x4
+    unsigned char __align0[4];// Offset=0x24 Size=0x4
     long long  ( * GetCpuClock)();// Offset=0x28 Size=0x8
     struct _ETHREAD * LoggerThread;// Offset=0x30 Size=0x8
     long LoggerStatus;// Offset=0x38 Size=0x4
@@ -18,6 +19,7 @@ struct _WMI_LOGGER_CONTEXT// Size=0x510
     struct _LIST_ENTRY DebugIdTrackingList;// Offset=0x70 Size=0x10
     struct _ETW_DECODE_CONTROL_ENTRY * DecodeControlList;// Offset=0x80 Size=0x8
     unsigned long DecodeControlCount;// Offset=0x88 Size=0x4
+    unsigned char __align1[4];// Offset=0x8c Size=0x4
     struct _WMI_BUFFER_HEADER * BatchedBufferList;// Offset=0x90 Size=0x8
     struct _EX_FAST_REF CurrentBuffer;// Offset=0x90 Size=0x8
     struct _UNICODE_STRING LoggerName;// Offset=0x98 Size=0x10
@@ -50,6 +52,7 @@ struct _WMI_LOGGER_CONTEXT// Size=0x510
     unsigned long ProviderInfoSize;// Offset=0x154 Size=0x4
     struct _LIST_ENTRY Consumers;// Offset=0x158 Size=0x10
     unsigned long NumConsumers;// Offset=0x168 Size=0x4
+    unsigned char __align2[4];// Offset=0x16c Size=0x4
     struct _ETW_REALTIME_CONSUMER * TransitionConsumer;// Offset=0x170 Size=0x8
     void * RealtimeLogfileHandle;// Offset=0x178 Size=0x8
     struct _UNICODE_STRING RealtimeLogfileName;// Offset=0x180 Size=0x10
@@ -59,8 +62,10 @@ struct _WMI_LOGGER_CONTEXT// Size=0x510
     unsigned long long RealtimeLogfileUsage;// Offset=0x1a8 Size=0x8
     unsigned long long RealtimeMaximumFileSize;// Offset=0x1b0 Size=0x8
     unsigned long RealtimeBuffersSaved;// Offset=0x1b8 Size=0x4
+    unsigned char __align3[4];// Offset=0x1bc Size=0x4
     struct _ETW_REF_CLOCK RealtimeReferenceTime;// Offset=0x1c0 Size=0x10
     enum _ETW_RT_EVENT_LOSS NewRTEventsLost;// Offset=0x1d0 Size=0x4
+    unsigned char __align4[4];// Offset=0x1d4 Size=0x4
     struct _KEVENT LoggerEvent;// Offset=0x1d8 Size=0x18
     struct _KEVENT FlushEvent;// Offset=0x1f0 Size=0x18
     struct _KTIMER FlushTimeOutTimer;// Offset=0x208 Size=0x40
@@ -111,6 +116,7 @@ struct _WMI_LOGGER_CONTEXT// Size=0x510
     unsigned long DbgRequestFlushTimer:1;// Offset=0x344 Size=0x4 BitOffset=0xa BitSize=0x1
     unsigned long DbgRequestUpdateDebugger:1;// Offset=0x344 Size=0x4 BitOffset=0xb BitSize=0x1
     unsigned long DbgSpareRequestFlags:20;// Offset=0x344 Size=0x4 BitOffset=0xc BitSize=0x14
+    unsigned char __align5[8];// Offset=0x348 Size=0x8
     struct _ETW_STACK_TRACE_BLOCK StackTraceBlock;// Offset=0x350 Size=0x80
     struct _RTL_BITMAP HookIdMap;// Offset=0x3d0 Size=0x10
     struct _ETW_STACK_CACHE * StackCache;// Offset=0x3e0 Size=0x8
@@ -124,10 +130,12 @@ struct _WMI_LOGGER_CONTEXT// Size=0x510
     struct _PERIODIC_CAPTURE_STATE_GUIDS PeriodicCaptureStateGuids;// Offset=0x430 Size=0x10
     struct _EX_TIMER * PeriodicCaptureStateTimer;// Offset=0x440 Size=0x8
     enum _ETW_PERIODIC_TIMER_STATE PeriodicCaptureStateTimerState;// Offset=0x448 Size=0x4
+    unsigned char __align6[4];// Offset=0x44c Size=0x4
     struct _ETW_SOFT_RESTART_CONTEXT * SoftRestartContext;// Offset=0x450 Size=0x8
     struct _ETW_SILODRIVERSTATE * SiloState;// Offset=0x458 Size=0x8
     struct _WORK_QUEUE_ITEM CompressionWorkItem;// Offset=0x460 Size=0x20
     long CompressionWorkItemState;// Offset=0x480 Size=0x4
+    unsigned char __align7[4];// Offset=0x484 Size=0x4
     struct _EX_PUSH_LOCK CompressionLock;// Offset=0x488 Size=0x8
     struct _WMI_BUFFER_HEADER * CompressionTarget;// Offset=0x490 Size=0x8
     void * CompressionWorkspace;// Offset=0x498 Size=0x8

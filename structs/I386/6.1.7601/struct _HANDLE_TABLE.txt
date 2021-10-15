@@ -1,0 +1,19 @@
+struct _HANDLE_TABLE// Size=0x3c
+{
+    unsigned long TableCode;// Offset=0x0 Size=0x4
+    struct _EPROCESS * QuotaProcess;// Offset=0x4 Size=0x4
+    void * UniqueProcessId;// Offset=0x8 Size=0x4
+    struct _EX_PUSH_LOCK HandleLock;// Offset=0xc Size=0x4
+    struct _LIST_ENTRY HandleTableList;// Offset=0x10 Size=0x8
+    struct _EX_PUSH_LOCK HandleContentionEvent;// Offset=0x18 Size=0x4
+    struct _HANDLE_TRACE_DEBUG_INFO * DebugInfo;// Offset=0x1c Size=0x4
+    long ExtraInfoPages;// Offset=0x20 Size=0x4
+    unsigned long Flags;// Offset=0x24 Size=0x4
+    unsigned char StrictFIFO:1;// Offset=0x24 Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char __align0[3];// Offset=0x25 Size=0x3
+    unsigned long FirstFreeHandle;// Offset=0x28 Size=0x4
+    struct _HANDLE_TABLE_ENTRY * LastFreeHandleEntry;// Offset=0x2c Size=0x4
+    unsigned long HandleCount;// Offset=0x30 Size=0x4
+    unsigned long NextHandleNeedingPool;// Offset=0x34 Size=0x4
+    unsigned long HandleCountHighWatermark;// Offset=0x38 Size=0x4
+};

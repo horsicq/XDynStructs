@@ -117,6 +117,7 @@ struct _EPROCESS// Size=0x380
     long LastThreadExitStatus;// Offset=0x1a8 Size=0x4
     struct _EX_FAST_REF PrefetchTrace;// Offset=0x1ac Size=0x4
     void * LockedPagesList;// Offset=0x1b0 Size=0x4
+    unsigned char __align0[4];// Offset=0x1b4 Size=0x4
     union _LARGE_INTEGER ReadOperationCount;// Offset=0x1b8 Size=0x8
     union _LARGE_INTEGER WriteOperationCount;// Offset=0x1c0 Size=0x8
     union _LARGE_INTEGER OtherOperationCount;// Offset=0x1c8 Size=0x8
@@ -140,6 +141,7 @@ struct _EPROCESS// Size=0x380
     struct _PO_DIAG_STACK_RECORD * TimerResolutionStackRecord;// Offset=0x2b0 Size=0x4
     unsigned long RequestedTimerResolution;// Offset=0x2b4 Size=0x4
     unsigned long SmallestTimerResolution;// Offset=0x2b8 Size=0x4
+    unsigned char __align1[4];// Offset=0x2bc Size=0x4
     union _LARGE_INTEGER ExitTime;// Offset=0x2c0 Size=0x8
     unsigned long ActiveThreadsHighWatermark;// Offset=0x2c8 Size=0x4
     unsigned long LargePrivateVadCount;// Offset=0x2cc Size=0x4
@@ -167,6 +169,7 @@ struct _EPROCESS// Size=0x380
     struct _EX_PUSH_LOCK SvmProcessLock;// Offset=0x2ec Size=0x4
     unsigned long SvmLock;// Offset=0x2f0 Size=0x4
     struct _LIST_ENTRY SvmProcessDeviceListHead;// Offset=0x2f4 Size=0x8
+    unsigned char __align2[4];// Offset=0x2fc Size=0x4
     unsigned long long LastFreezeInterruptTime;// Offset=0x300 Size=0x8
     struct _PROCESS_DISK_COUNTERS * DiskCounters;// Offset=0x308 Size=0x4
     void * PicoContext;// Offset=0x30c Size=0x4
@@ -178,6 +181,7 @@ struct _EPROCESS// Size=0x380
     void * VmContext;// Offset=0x324 Size=0x4
     struct _ESILO * Silo;// Offset=0x328 Size=0x4
     struct _LIST_ENTRY SiloEntry;// Offset=0x32c Size=0x8
+    unsigned char __align3[4];// Offset=0x334 Size=0x4
     unsigned long long SequenceNumber;// Offset=0x338 Size=0x8
     unsigned long long CreateInterruptTime;// Offset=0x340 Size=0x8
     unsigned long long CreateUnbiasedInterruptTime;// Offset=0x348 Size=0x8

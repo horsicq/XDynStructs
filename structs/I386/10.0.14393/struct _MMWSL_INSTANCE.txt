@@ -1,0 +1,10 @@
+struct _MMWSL_INSTANCE// Size=0xd4
+{
+    unsigned long NextSlot;// Offset=0x0 Size=0x4
+    unsigned long NextAgingSlot;// Offset=0x4 Size=0x4
+    unsigned long NextAccessClearingSlot;// Offset=0x8 Size=0x4
+    unsigned long LastAccessClearingRemainder;// Offset=0xc Size=0x4
+    unsigned long LastAgingRemainder;// Offset=0x10 Size=0x4
+    unsigned long ActiveWsleCounts[16];// Offset=0x14 Size=0x40
+    struct _MI_ACTIVE_WSLE_LISTHEAD ActiveWsles[16];// Offset=0x54 Size=0x80
+};

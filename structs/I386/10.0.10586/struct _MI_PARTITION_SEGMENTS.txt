@@ -1,0 +1,19 @@
+struct _MI_PARTITION_SEGMENTS// Size=0x100
+{
+    struct _KEVENT DeleteSubsectionCleanup;// Offset=0x0 Size=0x10
+    struct _KEVENT UnusedSegmentCleanup;// Offset=0x10 Size=0x10
+    unsigned long SubsectionDeletePtes;// Offset=0x20 Size=0x4
+    struct _MMDEREFERENCE_SEGMENT_HEADER DereferenceSegmentHeader;// Offset=0x24 Size=0x1c
+    struct _LIST_ENTRY DeleteOnCloseList;// Offset=0x40 Size=0x8
+    struct _KTIMER DeleteOnCloseTimer;// Offset=0x48 Size=0x28
+    unsigned char DeleteOnCloseTimerActive;// Offset=0x70 Size=0x1
+    unsigned char __align0[3];// Offset=0x71 Size=0x3
+    unsigned long DeleteOnCloseCount;// Offset=0x74 Size=0x4
+    struct _LIST_ENTRY UnusedSegmentList;// Offset=0x78 Size=0x8
+    struct _LIST_ENTRY UnusedSubsectionList;// Offset=0x80 Size=0x8
+    struct _LIST_ENTRY DeleteSubsectionList;// Offset=0x88 Size=0x8
+    struct _KEVENT ControlAreaDeleteEvent;// Offset=0x90 Size=0x10
+    struct _SINGLE_LIST_ENTRY ControlAreaDeleteList;// Offset=0xa0 Size=0x4
+    unsigned char __align1[28];// Offset=0xa4 Size=0x1c
+    long SegmentListLock;// Offset=0xc0 Size=0x4
+};

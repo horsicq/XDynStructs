@@ -1,0 +1,10 @@
+struct wil_details_StagingConfigHeader// Size=0x10
+{
+    unsigned char version;// Offset=0x0 Size=0x1
+    unsigned char versionMinor;// Offset=0x1 Size=0x1
+    unsigned short headerSizeBytes;// Offset=0x2 Size=0x2
+    unsigned short featureCount;// Offset=0x4 Size=0x2
+    unsigned short featureUsageTriggerCount;// Offset=0x6 Size=0x2
+    struct wil_details_StagingConfigHeaderProperties sessionProperties;// Offset=0x8 Size=0x4
+    struct wil_details_StagingConfigHeaderProperties properties;// Offset=0xc Size=0x4
+};

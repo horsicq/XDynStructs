@@ -1,0 +1,5 @@
+struct _PEBS_DS_SAVE_AREA// Size=0xa0
+{
+    struct _PEBS_DS_SAVE_AREA32 As32Bit;// Offset=0x0 Size=0x80
+    struct _PEBS_DS_SAVE_AREA64 As64Bit;// Offset=0x0 Size=0xa0
+};

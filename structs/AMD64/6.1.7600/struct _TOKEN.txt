@@ -25,6 +25,7 @@ struct _TOKEN// Size=0x310
     enum _SECURITY_IMPERSONATION_LEVEL ImpersonationLevel;// Offset=0xbc Size=0x4
     unsigned long TokenFlags;// Offset=0xc0 Size=0x4
     unsigned char TokenInUse;// Offset=0xc4 Size=0x1
+    unsigned char __align0[3];// Offset=0xc5 Size=0x3
     unsigned long IntegrityLevelIndex;// Offset=0xc8 Size=0x4
     unsigned long MandatoryPolicy;// Offset=0xcc Size=0x4
     struct _SEP_LOGON_SESSION_REFERENCES * LogonSession;// Offset=0xd0 Size=0x8

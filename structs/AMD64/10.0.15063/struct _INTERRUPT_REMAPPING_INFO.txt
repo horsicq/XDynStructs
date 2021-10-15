@@ -1,0 +1,7 @@
+struct _INTERRUPT_REMAPPING_INFO// Size=0x10
+{
+    unsigned long IrtIndex:30;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1e
+    unsigned long FlagHalInternal:1;// Offset=0x0 Size=0x4 BitOffset=0x1e BitSize=0x1
+    unsigned long FlagTranslated:1;// Offset=0x0 Size=0x4 BitOffset=0x1f BitSize=0x1
+    union _unnamed_1553 u;// Offset=0x4 Size=0xc
+};

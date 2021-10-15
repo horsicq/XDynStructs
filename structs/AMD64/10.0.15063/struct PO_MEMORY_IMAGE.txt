@@ -1,0 +1,53 @@
+struct PO_MEMORY_IMAGE// Size=0x3d8
+{
+    unsigned long Signature;// Offset=0x0 Size=0x4
+    unsigned long ImageType;// Offset=0x4 Size=0x4
+    unsigned long CheckSum;// Offset=0x8 Size=0x4
+    unsigned long LengthSelf;// Offset=0xc Size=0x4
+    unsigned long long PageSelf;// Offset=0x10 Size=0x8
+    unsigned long PageSize;// Offset=0x18 Size=0x4
+    unsigned char __align0[4];// Offset=0x1c Size=0x4
+    union _LARGE_INTEGER SystemTime;// Offset=0x20 Size=0x8
+    unsigned long long InterruptTime;// Offset=0x28 Size=0x8
+    unsigned long long FeatureFlags;// Offset=0x30 Size=0x8
+    unsigned char HiberFlags;// Offset=0x38 Size=0x1
+    unsigned char spare[3];// Offset=0x39 Size=0x3
+    unsigned long NoHiberPtes;// Offset=0x3c Size=0x4
+    unsigned long long HiberVa;// Offset=0x40 Size=0x8
+    unsigned long NoFreePages;// Offset=0x48 Size=0x4
+    unsigned long FreeMapCheck;// Offset=0x4c Size=0x4
+    unsigned long WakeCheck;// Offset=0x50 Size=0x4
+    unsigned char __align1[4];// Offset=0x54 Size=0x4
+    unsigned long long NumPagesForLoader;// Offset=0x58 Size=0x8
+    unsigned long long FirstSecureRestorePage;// Offset=0x60 Size=0x8
+    unsigned long long FirstBootRestorePage;// Offset=0x68 Size=0x8
+    unsigned long long FirstKernelRestorePage;// Offset=0x70 Size=0x8
+    unsigned long long FirstChecksumRestorePage;// Offset=0x78 Size=0x8
+    unsigned long long NoChecksumEntries;// Offset=0x80 Size=0x8
+    struct _PO_HIBER_PERF PerfInfo;// Offset=0x88 Size=0x1f8
+    unsigned long FirmwareRuntimeInformationPages;// Offset=0x280 Size=0x4
+    unsigned char __align2[4];// Offset=0x284 Size=0x4
+    unsigned long long FirmwareRuntimeInformation[1];// Offset=0x288 Size=0x8
+    unsigned long SiLogOffset;// Offset=0x290 Size=0x4
+    unsigned long NoBootLoaderLogPages;// Offset=0x294 Size=0x4
+    unsigned long long BootLoaderLogPages[24];// Offset=0x298 Size=0xc0
+    unsigned long NotUsed;// Offset=0x358 Size=0x4
+    unsigned long ResumeContextCheck;// Offset=0x35c Size=0x4
+    unsigned long ResumeContextPages;// Offset=0x360 Size=0x4
+    unsigned char Hiberboot;// Offset=0x364 Size=0x1
+    unsigned char __align3[3];// Offset=0x365 Size=0x3
+    unsigned long long HvCr3;// Offset=0x368 Size=0x8
+    unsigned long long HvEntryPoint;// Offset=0x370 Size=0x8
+    unsigned long long HvReservedTransitionAddress;// Offset=0x378 Size=0x8
+    unsigned long long HvReservedTransitionAddressSize;// Offset=0x380 Size=0x8
+    unsigned long long BootFlags;// Offset=0x388 Size=0x8
+    unsigned long long HalEntryPointPhysical;// Offset=0x390 Size=0x8
+    unsigned long long HighestPhysicalPage;// Offset=0x398 Size=0x8
+    unsigned long long BitlockerKeyPfns[4];// Offset=0x3a0 Size=0x20
+    unsigned long HardwareSignature;// Offset=0x3c0 Size=0x4
+    unsigned char __align4[4];// Offset=0x3c4 Size=0x4
+    union _LARGE_INTEGER SMBiosTablePhysicalAddress;// Offset=0x3c8 Size=0x8
+    unsigned long SMBiosTableLength;// Offset=0x3d0 Size=0x4
+    unsigned char SMBiosMajorVersion;// Offset=0x3d4 Size=0x1
+    unsigned char SMBiosMinorVersion;// Offset=0x3d5 Size=0x1
+};

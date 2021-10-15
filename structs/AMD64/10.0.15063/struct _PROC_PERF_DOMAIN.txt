@@ -1,0 +1,54 @@
+struct _PROC_PERF_DOMAIN// Size=0x1e0
+{
+    struct _LIST_ENTRY Link;// Offset=0x0 Size=0x10
+    struct _KPRCB * Master;// Offset=0x10 Size=0x8
+    struct _KAFFINITY_EX Members;// Offset=0x18 Size=0xa8
+    unsigned long long DomainContext;// Offset=0xc0 Size=0x8
+    unsigned long ProcessorCount;// Offset=0xc8 Size=0x4
+    unsigned char EfficiencyClass;// Offset=0xcc Size=0x1
+    unsigned char NominalPerformanceClass;// Offset=0xcd Size=0x1
+    unsigned char HighestPerformanceClass;// Offset=0xce Size=0x1
+    unsigned char Spare;// Offset=0xcf Size=0x1
+    struct _PROC_PERF_CONSTRAINT * Processors;// Offset=0xd0 Size=0x8
+    void  ( * GetFFHThrottleState)(unsigned long long * );// Offset=0xd8 Size=0x8
+    void  ( * TimeWindowHandler)(unsigned long long ,unsigned long );// Offset=0xe0 Size=0x8
+    void  ( * BoostPolicyHandler)(unsigned long long ,unsigned long );// Offset=0xe8 Size=0x8
+    void  ( * BoostModeHandler)(unsigned long long ,unsigned long );// Offset=0xf0 Size=0x8
+    void  ( * EnergyPerfPreferenceHandler)(unsigned long long ,unsigned long );// Offset=0xf8 Size=0x8
+    void  ( * AutonomousActivityWindowHandler)(unsigned long long ,unsigned long );// Offset=0x100 Size=0x8
+    void  ( * AutonomousModeHandler)(unsigned long long ,unsigned long );// Offset=0x108 Size=0x8
+    void  ( * ReinitializeHandler)(unsigned long long );// Offset=0x110 Size=0x8
+    unsigned long  ( * PerfSelectionHandler)(unsigned long long ,unsigned long ,unsigned long ,unsigned long ,unsigned long ,unsigned long ,unsigned long ,unsigned long * ,unsigned long long * );// Offset=0x118 Size=0x8
+    void  ( * PerfControlHandler)(unsigned long long ,struct _PERF_CONTROL_STATE_SELECTION * ,unsigned char ,unsigned char );// Offset=0x120 Size=0x8
+    void  ( * DomainPerfControlHandler)(unsigned long long ,struct _PERF_CONTROL_STATE_SELECTION * ,unsigned char ,unsigned char );// Offset=0x128 Size=0x8
+    unsigned long MaxFrequency;// Offset=0x130 Size=0x4
+    unsigned long NominalFrequency;// Offset=0x134 Size=0x4
+    unsigned long MaxPercent;// Offset=0x138 Size=0x4
+    unsigned long MinPerfPercent;// Offset=0x13c Size=0x4
+    unsigned long MinThrottlePercent;// Offset=0x140 Size=0x4
+    unsigned char __align0[4];// Offset=0x144 Size=0x4
+    unsigned long long MinimumRelativePerformance;// Offset=0x148 Size=0x8
+    unsigned long long NominalRelativePerformance;// Offset=0x150 Size=0x8
+    unsigned char NominalRelativePerformancePercent;// Offset=0x158 Size=0x1
+    unsigned char Coordination;// Offset=0x159 Size=0x1
+    unsigned char HardPlatformCap;// Offset=0x15a Size=0x1
+    unsigned char AffinitizeControl;// Offset=0x15b Size=0x1
+    unsigned char EfficientThrottle;// Offset=0x15c Size=0x1
+    unsigned char AllowVirtualHeterogeneity;// Offset=0x15d Size=0x1
+    unsigned char InitiateAllProcessors;// Offset=0x15e Size=0x1
+    unsigned char AutonomousMode;// Offset=0x15f Size=0x1
+    unsigned long DesiredPercent;// Offset=0x160 Size=0x4
+    unsigned long MaxPolicyPercent;// Offset=0x164 Size=0x4
+    unsigned long MaxEquivalentFrequencyPercent;// Offset=0x168 Size=0x4
+    unsigned long MinPolicyPercent;// Offset=0x16c Size=0x4
+    unsigned long GuaranteedPercent;// Offset=0x170 Size=0x4
+    unsigned long SelectionGeneration;// Offset=0x174 Size=0x4
+    unsigned long BackgroundSelectionGeneration;// Offset=0x178 Size=0x4
+    unsigned char __align1[4];// Offset=0x17c Size=0x4
+    struct _PERF_CONTROL_STATE_SELECTION Selection;// Offset=0x180 Size=0x28
+    struct _PERF_CONTROL_STATE_SELECTION BackgroundSelection;// Offset=0x1a8 Size=0x28
+    unsigned long long PerfChangeTime;// Offset=0x1d0 Size=0x8
+    unsigned long PerfChangeIntervalCount;// Offset=0x1d8 Size=0x4
+    unsigned char Force;// Offset=0x1dc Size=0x1
+    unsigned char ProvideGuidance;// Offset=0x1dd Size=0x1
+};

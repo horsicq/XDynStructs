@@ -1,0 +1,16 @@
+struct _IMAGE_ROM_OPTIONAL_HEADER// Size=0x38
+{
+    unsigned short Magic;// Offset=0x0 Size=0x2
+    unsigned char MajorLinkerVersion;// Offset=0x2 Size=0x1
+    unsigned char MinorLinkerVersion;// Offset=0x3 Size=0x1
+    unsigned long SizeOfCode;// Offset=0x4 Size=0x4
+    unsigned long SizeOfInitializedData;// Offset=0x8 Size=0x4
+    unsigned long SizeOfUninitializedData;// Offset=0xc Size=0x4
+    unsigned long AddressOfEntryPoint;// Offset=0x10 Size=0x4
+    unsigned long BaseOfCode;// Offset=0x14 Size=0x4
+    unsigned long BaseOfData;// Offset=0x18 Size=0x4
+    unsigned long BaseOfBss;// Offset=0x1c Size=0x4
+    unsigned long GprMask;// Offset=0x20 Size=0x4
+    unsigned long CprMask[4];// Offset=0x24 Size=0x10
+    unsigned long GpValue;// Offset=0x34 Size=0x4
+};

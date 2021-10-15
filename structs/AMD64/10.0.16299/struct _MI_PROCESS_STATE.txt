@@ -1,0 +1,10 @@
+struct _MI_PROCESS_STATE// Size=0x38
+{
+    void * SystemDllBase;// Offset=0x0 Size=0x8
+    unsigned long ColorSeed;// Offset=0x8 Size=0x4
+    long RotatingUniprocessorNumber;// Offset=0xc Size=0x4
+    union _LARGE_INTEGER CriticalSectionTimeout;// Offset=0x10 Size=0x8
+    struct _LIST_ENTRY ProcessList;// Offset=0x18 Size=0x10
+    struct _MMPTE * SharedUserDataPte;// Offset=0x28 Size=0x8
+    unsigned long long VadSecureCookie;// Offset=0x30 Size=0x8
+};

@@ -1,0 +1,8 @@
+struct _SEP_LOWBOX_HANDLES_ENTRY// Size=0x1c
+{
+    struct _RTL_DYNAMIC_HASH_TABLE_ENTRY HashEntry;// Offset=0x0 Size=0xc
+    unsigned long ReferenceCount;// Offset=0xc Size=0x4
+    void * PackageSid;// Offset=0x10 Size=0x4
+    unsigned long HandleCount;// Offset=0x14 Size=0x4
+    void ** Handles;// Offset=0x18 Size=0x4
+};

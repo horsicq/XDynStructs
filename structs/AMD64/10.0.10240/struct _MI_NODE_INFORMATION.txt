@@ -11,10 +11,12 @@ struct _MI_NODE_INFORMATION// Size=0x538
     unsigned long Color;// Offset=0x4cc Size=0x4
     unsigned long long ChannelFreeCount[4][2];// Offset=0x4d0 Size=0x40
     struct _unnamed_871 Flags;// Offset=0x510 Size=0x4
+    unsigned char __align0[4];// Offset=0x514 Size=0x4
     struct _EX_PUSH_LOCK NodeLock;// Offset=0x518 Size=0x8
     unsigned char ChannelStatus;// Offset=0x520 Size=0x1
     unsigned char ChannelOrdering[4];// Offset=0x521 Size=0x4
     unsigned char LockedChannelOrdering[4];// Offset=0x525 Size=0x4
     unsigned char PowerAttribute[4];// Offset=0x529 Size=0x4
+    unsigned char __align1[3];// Offset=0x52d Size=0x3
     unsigned long long LargePageLock;// Offset=0x530 Size=0x8
 };

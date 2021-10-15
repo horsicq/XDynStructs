@@ -1,0 +1,43 @@
+struct _RTL_USER_PROCESS_PARAMETERS// Size=0x440
+{
+    unsigned long MaximumLength;// Offset=0x0 Size=0x4
+    unsigned long Length;// Offset=0x4 Size=0x4
+    unsigned long Flags;// Offset=0x8 Size=0x4
+    unsigned long DebugFlags;// Offset=0xc Size=0x4
+    void * ConsoleHandle;// Offset=0x10 Size=0x8
+    unsigned long ConsoleFlags;// Offset=0x18 Size=0x4
+    unsigned char __align0[4];// Offset=0x1c Size=0x4
+    void * StandardInput;// Offset=0x20 Size=0x8
+    void * StandardOutput;// Offset=0x28 Size=0x8
+    void * StandardError;// Offset=0x30 Size=0x8
+    struct _CURDIR CurrentDirectory;// Offset=0x38 Size=0x18
+    struct _UNICODE_STRING DllPath;// Offset=0x50 Size=0x10
+    struct _UNICODE_STRING ImagePathName;// Offset=0x60 Size=0x10
+    struct _UNICODE_STRING CommandLine;// Offset=0x70 Size=0x10
+    void * Environment;// Offset=0x80 Size=0x8
+    unsigned long StartingX;// Offset=0x88 Size=0x4
+    unsigned long StartingY;// Offset=0x8c Size=0x4
+    unsigned long CountX;// Offset=0x90 Size=0x4
+    unsigned long CountY;// Offset=0x94 Size=0x4
+    unsigned long CountCharsX;// Offset=0x98 Size=0x4
+    unsigned long CountCharsY;// Offset=0x9c Size=0x4
+    unsigned long FillAttribute;// Offset=0xa0 Size=0x4
+    unsigned long WindowFlags;// Offset=0xa4 Size=0x4
+    unsigned long ShowWindowFlags;// Offset=0xa8 Size=0x4
+    unsigned char __align1[4];// Offset=0xac Size=0x4
+    struct _UNICODE_STRING WindowTitle;// Offset=0xb0 Size=0x10
+    struct _UNICODE_STRING DesktopInfo;// Offset=0xc0 Size=0x10
+    struct _UNICODE_STRING ShellInfo;// Offset=0xd0 Size=0x10
+    struct _UNICODE_STRING RuntimeData;// Offset=0xe0 Size=0x10
+    struct _RTL_DRIVE_LETTER_CURDIR CurrentDirectores[32];// Offset=0xf0 Size=0x300
+    unsigned long long EnvironmentSize;// Offset=0x3f0 Size=0x8
+    unsigned long long EnvironmentVersion;// Offset=0x3f8 Size=0x8
+    void * PackageDependencyData;// Offset=0x400 Size=0x8
+    unsigned long ProcessGroupId;// Offset=0x408 Size=0x4
+    unsigned long LoaderThreads;// Offset=0x40c Size=0x4
+    struct _UNICODE_STRING RedirectionDllName;// Offset=0x410 Size=0x10
+    struct _UNICODE_STRING HeapPartitionName;// Offset=0x420 Size=0x10
+    unsigned long long * DefaultThreadpoolCpuSetMasks;// Offset=0x430 Size=0x8
+    unsigned long DefaultThreadpoolCpuSetMaskCount;// Offset=0x438 Size=0x4
+    unsigned long DefaultThreadpoolThreadMaximum;// Offset=0x43c Size=0x4
+};

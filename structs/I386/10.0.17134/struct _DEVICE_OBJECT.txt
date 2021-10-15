@@ -14,6 +14,7 @@ struct _DEVICE_OBJECT// Size=0xb8
     void * DeviceExtension;// Offset=0x28 Size=0x4
     unsigned long DeviceType;// Offset=0x2c Size=0x4
     char StackSize;// Offset=0x30 Size=0x1
+    unsigned char __align0[3];// Offset=0x31 Size=0x3
     union _unnamed_155 Queue;// Offset=0x34 Size=0x28
     unsigned long AlignmentRequirement;// Offset=0x5c Size=0x4
     struct _KDEVICE_QUEUE DeviceQueue;// Offset=0x60 Size=0x14

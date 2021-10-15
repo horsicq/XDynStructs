@@ -1,6 +1,7 @@
 struct _KENLISTMENT// Size=0x1e0
 {
     unsigned long cookie;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     struct _KTMOBJECT_NAMESPACE_LINK NamespaceLink;// Offset=0x8 Size=0x28
     struct _GUID EnlistmentId;// Offset=0x30 Size=0x10
     struct _KMUTANT Mutex;// Offset=0x40 Size=0x38
@@ -11,12 +12,16 @@ struct _KENLISTMENT// Size=0x1e0
     enum _KENLISTMENT_STATE State;// Offset=0xa8 Size=0x4
     unsigned long Flags;// Offset=0xac Size=0x4
     unsigned long NotificationMask;// Offset=0xb0 Size=0x4
+    unsigned char __align1[4];// Offset=0xb4 Size=0x4
     void * Key;// Offset=0xb8 Size=0x8
     unsigned long KeyRefCount;// Offset=0xc0 Size=0x4
+    unsigned char __align2[4];// Offset=0xc4 Size=0x4
     void * RecoveryInformation;// Offset=0xc8 Size=0x8
     unsigned long RecoveryInformationLength;// Offset=0xd0 Size=0x4
+    unsigned char __align3[4];// Offset=0xd4 Size=0x4
     void * DynamicNameInformation;// Offset=0xd8 Size=0x8
     unsigned long DynamicNameInformationLength;// Offset=0xe0 Size=0x4
+    unsigned char __align4[4];// Offset=0xe4 Size=0x4
     struct _KTMNOTIFICATION_PACKET * FinalNotification;// Offset=0xe8 Size=0x8
     struct _KENLISTMENT * SupSubEnlistment;// Offset=0xf0 Size=0x8
     void * SupSubEnlHandle;// Offset=0xf8 Size=0x8

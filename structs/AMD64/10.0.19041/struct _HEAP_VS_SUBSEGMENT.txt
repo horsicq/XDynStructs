@@ -1,0 +1,9 @@
+struct _HEAP_VS_SUBSEGMENT// Size=0x28
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x10
+    unsigned long long CommitBitmap;// Offset=0x10 Size=0x8
+    unsigned long long CommitLock;// Offset=0x18 Size=0x8
+    unsigned short Size;// Offset=0x20 Size=0x2
+    unsigned short Signature:15;// Offset=0x22 Size=0x2 BitOffset=0x0 BitSize=0xf
+    unsigned short FullCommit:1;// Offset=0x22 Size=0x2 BitOffset=0xf BitSize=0x1
+};

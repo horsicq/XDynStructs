@@ -17,5 +17,6 @@ struct _AGGREGATED_PAYLOAD_FILTER// Size=0x50
     unsigned short UNICODEStringTableLength;// Offset=0x2e Size=0x2
     unsigned short ANSIStringTableOffset;// Offset=0x30 Size=0x2
     unsigned short ANSIStringTableLength;// Offset=0x32 Size=0x2
+    unsigned char __align0[4];// Offset=0x34 Size=0x4
     struct _EVENT_PAYLOAD_PREDICATE PredicateTable[1];// Offset=0x38 Size=0x18
 };

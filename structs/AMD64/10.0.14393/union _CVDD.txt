@@ -1,0 +1,6 @@
+union _CVDD// Size=0x1c
+{
+    unsigned long Signature;// Offset=0x0 Size=0x4
+    struct _NB10 NB10;// Offset=0x0 Size=0x14
+    struct _RSDS RsDs;// Offset=0x0 Size=0x1c
+};

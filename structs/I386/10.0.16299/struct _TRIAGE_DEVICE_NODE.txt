@@ -1,0 +1,12 @@
+struct _TRIAGE_DEVICE_NODE// Size=0x2c
+{
+    struct _TRIAGE_DEVICE_NODE * Sibling;// Offset=0x0 Size=0x4
+    struct _TRIAGE_DEVICE_NODE * Child;// Offset=0x4 Size=0x4
+    struct _TRIAGE_DEVICE_NODE * Parent;// Offset=0x8 Size=0x4
+    struct _TRIAGE_DEVICE_NODE * LastChild;// Offset=0xc Size=0x4
+    struct _DEVICE_OBJECT * PhysicalDeviceObject;// Offset=0x10 Size=0x4
+    struct _UNICODE_STRING InstancePath;// Offset=0x14 Size=0x8
+    struct _UNICODE_STRING ServiceName;// Offset=0x1c Size=0x8
+    struct _IRP * PendingIrp;// Offset=0x24 Size=0x4
+    struct _TRIAGE_POP_FX_DEVICE * FxDevice;// Offset=0x28 Size=0x4
+};

@@ -141,6 +141,7 @@ struct _EPROCESS// Size=0x400
     struct _PO_DIAG_STACK_RECORD * TimerResolutionStackRecord;// Offset=0x2c8 Size=0x4
     unsigned long RequestedTimerResolution;// Offset=0x2cc Size=0x4
     unsigned long SmallestTimerResolution;// Offset=0x2d0 Size=0x4
+    unsigned char __align0[4];// Offset=0x2d4 Size=0x4
     union _LARGE_INTEGER ExitTime;// Offset=0x2d8 Size=0x8
     unsigned long ActiveThreadsHighWatermark;// Offset=0x2e0 Size=0x4
     unsigned long LargePrivateVadCount;// Offset=0x2e4 Size=0x4
@@ -177,6 +178,7 @@ struct _EPROCESS// Size=0x400
     struct _EX_PUSH_LOCK SvmProcessLock;// Offset=0x304 Size=0x4
     unsigned long SvmLock;// Offset=0x308 Size=0x4
     struct _LIST_ENTRY SvmProcessDeviceListHead;// Offset=0x30c Size=0x8
+    unsigned char __align1[4];// Offset=0x314 Size=0x4
     unsigned long long LastFreezeInterruptTime;// Offset=0x318 Size=0x8
     struct _PROCESS_DISK_COUNTERS * DiskCounters;// Offset=0x320 Size=0x4
     void * PicoContext;// Offset=0x324 Size=0x4
@@ -201,6 +203,7 @@ struct _EPROCESS// Size=0x400
     void * DiskIoAttribution;// Offset=0x380 Size=0x4
     void * DxgProcess;// Offset=0x384 Size=0x4
     unsigned long Win32KFilterSet;// Offset=0x388 Size=0x4
+    unsigned char __align2[4];// Offset=0x38c Size=0x4
     union _PS_INTERLOCKED_TIMER_DELAY_VALUES ProcessTimerDelay;// Offset=0x390 Size=0x8
     unsigned long KTimerSets;// Offset=0x398 Size=0x4
     unsigned long KTimer2Sets;// Offset=0x39c Size=0x4
@@ -214,6 +217,7 @@ struct _EPROCESS// Size=0x400
     unsigned long MitigationFlags2;// Offset=0x3e4 Size=0x4
     struct _unnamed_99 MitigationFlags2Values;// Offset=0x3e4 Size=0x4
     void * PartitionObject;// Offset=0x3e8 Size=0x4
+    unsigned char __align3[4];// Offset=0x3ec Size=0x4
     unsigned long long SecurityDomain;// Offset=0x3f0 Size=0x8
     void * CoverageSamplerContext;// Offset=0x3f8 Size=0x4
 };

@@ -1,0 +1,5 @@
+union _unnamed_1260// Size=0x8
+{
+    union _ULARGE_INTEGER RemappedFormat;// Offset=0x0 Size=0x8
+    struct _unnamed_1259 Msi;// Offset=0x0 Size=0x8
+};

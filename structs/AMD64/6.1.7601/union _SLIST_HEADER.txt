@@ -1,0 +1,8 @@
+union _SLIST_HEADER// Size=0x10
+{
+    unsigned long long Alignment;// Offset=0x0 Size=0x8
+    unsigned long long Region;// Offset=0x8 Size=0x8
+    struct _unnamed_52 Header8;// Offset=0x0 Size=0x10
+    struct _unnamed_53 Header16;// Offset=0x0 Size=0x10
+    struct _unnamed_54 HeaderX64;// Offset=0x0 Size=0x10
+};

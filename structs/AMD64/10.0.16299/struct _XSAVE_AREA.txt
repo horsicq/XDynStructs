@@ -1,0 +1,5 @@
+struct _XSAVE_AREA// Size=0x240
+{
+    struct _XSAVE_FORMAT LegacyState;// Offset=0x0 Size=0x200
+    struct _XSAVE_AREA_HEADER Header;// Offset=0x200 Size=0x40
+};

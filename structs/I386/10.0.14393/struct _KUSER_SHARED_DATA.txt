@@ -1,0 +1,100 @@
+struct _KUSER_SHARED_DATA// Size=0x708
+{
+    unsigned long TickCountLowDeprecated;// Offset=0x0 Size=0x4
+    unsigned long TickCountMultiplier;// Offset=0x4 Size=0x4
+    struct _KSYSTEM_TIME InterruptTime;// Offset=0x8 Size=0xc
+    struct _KSYSTEM_TIME SystemTime;// Offset=0x14 Size=0xc
+    struct _KSYSTEM_TIME TimeZoneBias;// Offset=0x20 Size=0xc
+    unsigned short ImageNumberLow;// Offset=0x2c Size=0x2
+    unsigned short ImageNumberHigh;// Offset=0x2e Size=0x2
+    wchar_t NtSystemRoot[260];// Offset=0x30 Size=0x208
+    unsigned long MaxStackTraceDepth;// Offset=0x238 Size=0x4
+    unsigned long CryptoExponent;// Offset=0x23c Size=0x4
+    unsigned long TimeZoneId;// Offset=0x240 Size=0x4
+    unsigned long LargePageMinimum;// Offset=0x244 Size=0x4
+    unsigned long AitSamplingValue;// Offset=0x248 Size=0x4
+    unsigned long AppCompatFlag;// Offset=0x24c Size=0x4
+    unsigned long long RNGSeedVersion;// Offset=0x250 Size=0x8
+    unsigned long GlobalValidationRunlevel;// Offset=0x258 Size=0x4
+    long TimeZoneBiasStamp;// Offset=0x25c Size=0x4
+    unsigned long NtBuildNumber;// Offset=0x260 Size=0x4
+    enum _NT_PRODUCT_TYPE NtProductType;// Offset=0x264 Size=0x4
+    unsigned char ProductTypeIsValid;// Offset=0x268 Size=0x1
+    unsigned char Reserved0[1];// Offset=0x269 Size=0x1
+    unsigned short NativeProcessorArchitecture;// Offset=0x26a Size=0x2
+    unsigned long NtMajorVersion;// Offset=0x26c Size=0x4
+    unsigned long NtMinorVersion;// Offset=0x270 Size=0x4
+    unsigned char ProcessorFeatures[64];// Offset=0x274 Size=0x40
+    unsigned long Reserved1;// Offset=0x2b4 Size=0x4
+    unsigned long Reserved3;// Offset=0x2b8 Size=0x4
+    unsigned long TimeSlip;// Offset=0x2bc Size=0x4
+    enum _ALTERNATIVE_ARCHITECTURE_TYPE AlternativeArchitecture;// Offset=0x2c0 Size=0x4
+    unsigned long BootId;// Offset=0x2c4 Size=0x4
+    union _LARGE_INTEGER SystemExpirationDate;// Offset=0x2c8 Size=0x8
+    unsigned long SuiteMask;// Offset=0x2d0 Size=0x4
+    unsigned char KdDebuggerEnabled;// Offset=0x2d4 Size=0x1
+    unsigned char MitigationPolicies;// Offset=0x2d5 Size=0x1
+    unsigned char NXSupportPolicy:2;// Offset=0x2d5 Size=0x1 BitOffset=0x0 BitSize=0x2
+    unsigned char SEHValidationPolicy:2;// Offset=0x2d5 Size=0x1 BitOffset=0x2 BitSize=0x2
+    unsigned char CurDirDevicesSkippedForDlls:2;// Offset=0x2d5 Size=0x1 BitOffset=0x4 BitSize=0x2
+    unsigned char Reserved:2;// Offset=0x2d5 Size=0x1 BitOffset=0x6 BitSize=0x2
+    unsigned char Reserved6[2];// Offset=0x2d6 Size=0x2
+    unsigned long ActiveConsoleId;// Offset=0x2d8 Size=0x4
+    unsigned long DismountCount;// Offset=0x2dc Size=0x4
+    unsigned long ComPlusPackage;// Offset=0x2e0 Size=0x4
+    unsigned long LastSystemRITEventTickCount;// Offset=0x2e4 Size=0x4
+    unsigned long NumberOfPhysicalPages;// Offset=0x2e8 Size=0x4
+    unsigned char SafeBootMode;// Offset=0x2ec Size=0x1
+    unsigned char VirtualizationFlags;// Offset=0x2ed Size=0x1
+    unsigned char Reserved12[2];// Offset=0x2ee Size=0x2
+    unsigned long SharedDataFlags;// Offset=0x2f0 Size=0x4
+    unsigned long DbgErrorPortPresent:1;// Offset=0x2f0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long DbgElevationEnabled:1;// Offset=0x2f0 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long DbgVirtEnabled:1;// Offset=0x2f0 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long DbgInstallerDetectEnabled:1;// Offset=0x2f0 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long DbgLkgEnabled:1;// Offset=0x2f0 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long DbgDynProcessorEnabled:1;// Offset=0x2f0 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long DbgConsoleBrokerEnabled:1;// Offset=0x2f0 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long DbgSecureBootEnabled:1;// Offset=0x2f0 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long DbgMultiSessionSku:1;// Offset=0x2f0 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long DbgMultiUsersInSessionSku:1;// Offset=0x2f0 Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long SpareBits:22;// Offset=0x2f0 Size=0x4 BitOffset=0xa BitSize=0x16
+    unsigned long DataFlagsPad[1];// Offset=0x2f4 Size=0x4
+    unsigned long long TestRetInstruction;// Offset=0x2f8 Size=0x8
+    long long QpcFrequency;// Offset=0x300 Size=0x8
+    unsigned long SystemCall;// Offset=0x308 Size=0x4
+    unsigned long SystemCallPad0;// Offset=0x30c Size=0x4
+    unsigned long long SystemCallPad[2];// Offset=0x310 Size=0x10
+    struct _KSYSTEM_TIME TickCount;// Offset=0x320 Size=0xc
+    unsigned long long TickCountQuad;// Offset=0x320 Size=0x8
+    unsigned long ReservedTickCountOverlay[3];// Offset=0x320 Size=0xc
+    unsigned long TickCountPad[1];// Offset=0x32c Size=0x4
+    unsigned long Cookie;// Offset=0x330 Size=0x4
+    unsigned long CookiePad[1];// Offset=0x334 Size=0x4
+    long long ConsoleSessionForegroundProcessId;// Offset=0x338 Size=0x8
+    unsigned long long TimeUpdateLock;// Offset=0x340 Size=0x8
+    unsigned long long BaselineSystemTimeQpc;// Offset=0x348 Size=0x8
+    unsigned long long BaselineInterruptTimeQpc;// Offset=0x350 Size=0x8
+    unsigned long long QpcSystemTimeIncrement;// Offset=0x358 Size=0x8
+    unsigned long long QpcInterruptTimeIncrement;// Offset=0x360 Size=0x8
+    unsigned char QpcSystemTimeIncrementShift;// Offset=0x368 Size=0x1
+    unsigned char QpcInterruptTimeIncrementShift;// Offset=0x369 Size=0x1
+    unsigned short UnparkedProcessorCount;// Offset=0x36a Size=0x2
+    unsigned long EnclaveFeatureMask[4];// Offset=0x36c Size=0x10
+    unsigned long Reserved8;// Offset=0x37c Size=0x4
+    unsigned short UserModeGlobalLogger[16];// Offset=0x380 Size=0x20
+    unsigned long ImageFileExecutionOptions;// Offset=0x3a0 Size=0x4
+    unsigned long LangGenerationCount;// Offset=0x3a4 Size=0x4
+    unsigned long long Reserved4;// Offset=0x3a8 Size=0x8
+    unsigned long long InterruptTimeBias;// Offset=0x3b0 Size=0x8
+    unsigned long long QpcBias;// Offset=0x3b8 Size=0x8
+    unsigned long ActiveProcessorCount;// Offset=0x3c0 Size=0x4
+    unsigned char ActiveGroupCount;// Offset=0x3c4 Size=0x1
+    unsigned char Reserved9;// Offset=0x3c5 Size=0x1
+    unsigned short QpcData;// Offset=0x3c6 Size=0x2
+    unsigned char QpcBypassEnabled;// Offset=0x3c6 Size=0x1
+    unsigned char QpcShift;// Offset=0x3c7 Size=0x1
+    union _LARGE_INTEGER TimeZoneBiasEffectiveStart;// Offset=0x3c8 Size=0x8
+    union _LARGE_INTEGER TimeZoneBiasEffectiveEnd;// Offset=0x3d0 Size=0x8
+    struct _XSTATE_CONFIGURATION XState;// Offset=0x3d8 Size=0x330
+};

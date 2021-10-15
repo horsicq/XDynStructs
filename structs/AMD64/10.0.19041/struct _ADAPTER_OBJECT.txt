@@ -1,0 +1,72 @@
+struct _ADAPTER_OBJECT// Size=0x280
+{
+    struct _HALP_DMA_ADAPTER_OBJECT AdapterObject;// Offset=0x0 Size=0x98
+    struct _HALP_DMA_MASTER_ADAPTER_OBJECT * MasterAdapter;// Offset=0x98 Size=0x8
+    struct _LIST_ENTRY WaitQueueEntry;// Offset=0xa0 Size=0x10
+    struct _KDEVICE_QUEUE ChannelWaitQueue;// Offset=0xb0 Size=0x28
+    unsigned long long ResourceWaitLock;// Offset=0xb0 Size=0x8
+    struct _LIST_ENTRY ResourceWaitQueue;// Offset=0xb8 Size=0x10
+    struct _LIST_ENTRY ChannelResourceWaitQueue;// Offset=0xc8 Size=0x10
+    unsigned char ResourceQueueBusy;// Offset=0xd8 Size=0x1
+    unsigned char __align0[7];// Offset=0xd9 Size=0x7
+    unsigned long MapRegistersPerChannel;// Offset=0xe0 Size=0x4
+    unsigned char __align1[4];// Offset=0xe4 Size=0x4
+    void * MapRegisterBase;// Offset=0xe8 Size=0x8
+    unsigned long NumberOfMapRegisters;// Offset=0xf0 Size=0x4
+    unsigned long MaxTransferLength;// Offset=0xf4 Size=0x4
+    void * CrashDumpRegisterBase[2];// Offset=0xf8 Size=0x10
+    unsigned long NumberOfCrashDumpRegisters[2];// Offset=0x108 Size=0x8
+    unsigned long CrashDumpRegisterRefCount[2];// Offset=0x110 Size=0x8
+    struct _LIST_ENTRY AdapterCrashDumpList;// Offset=0x118 Size=0x10
+    struct _MDL * MapRegisterMdl;// Offset=0x128 Size=0x8
+    unsigned long long MapRegisterMdlLock;// Offset=0x130 Size=0x8
+    struct _EX_PUSH_LOCK ExpiredLock;// Offset=0x138 Size=0x8
+    void * AllocationHandle;// Offset=0x140 Size=0x8
+    void * VirtualAddress;// Offset=0x148 Size=0x8
+    unsigned char IsAllocationMdlBased;// Offset=0x150 Size=0x1
+    unsigned char NoLocalPool;// Offset=0x151 Size=0x1
+    unsigned char ExpiredFlag;// Offset=0x152 Size=0x1
+    unsigned char __align2[5];// Offset=0x153 Size=0x5
+    struct _WAIT_CONTEXT_BLOCK * CurrentWcb;// Offset=0x158 Size=0x8
+    struct _DMA_TRANSFER_CONTEXT * CurrentTransferContext;// Offset=0x160 Size=0x8
+    struct _HALP_DMA_CONTROLLER * DmaController;// Offset=0x168 Size=0x8
+    unsigned long Controller;// Offset=0x170 Size=0x4
+    unsigned long ChannelNumber;// Offset=0x174 Size=0x4
+    unsigned long RequestLine;// Offset=0x178 Size=0x4
+    unsigned long RequestedChannelCount;// Offset=0x17c Size=0x4
+    unsigned long AllocatedChannelCount;// Offset=0x180 Size=0x4
+    unsigned long AllocatedChannels[8];// Offset=0x184 Size=0x20
+    unsigned char __align3[4];// Offset=0x1a4 Size=0x4
+    void * ChannelAdapter;// Offset=0x1a8 Size=0x8
+    unsigned char NeedsMapRegisters;// Offset=0x1b0 Size=0x1
+    unsigned char MasterDevice;// Offset=0x1b1 Size=0x1
+    unsigned char ScatterGather;// Offset=0x1b2 Size=0x1
+    unsigned char AutoInitialize;// Offset=0x1b3 Size=0x1
+    unsigned char IgnoreCount;// Offset=0x1b4 Size=0x1
+    unsigned char CacheCoherent;// Offset=0x1b5 Size=0x1
+    unsigned char __align4[2];// Offset=0x1b6 Size=0x2
+    unsigned char Dma32BitAddresses;// Offset=0x1b8 Size=0x1
+    unsigned char Dma64BitAddresses;// Offset=0x1b9 Size=0x1
+    unsigned long DmaAddressWidth;// Offset=0x1b8 Size=0x4
+    enum _DMA_WIDTH DmaPortWidth;// Offset=0x1bc Size=0x4
+    union _LARGE_INTEGER DeviceAddress;// Offset=0x1c0 Size=0x8
+    struct _LIST_ENTRY AdapterList;// Offset=0x1c8 Size=0x10
+    struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x1d8 Size=0x20
+    struct _HALP_DMA_DOMAIN_OBJECT * DomainPointer;// Offset=0x1f8 Size=0x8
+    enum _EXT_IOMMU_TRANSLATION_TYPE TranslationType;// Offset=0x200 Size=0x4
+    unsigned char AdapterInUse;// Offset=0x204 Size=0x1
+    unsigned char __align5[3];// Offset=0x205 Size=0x3
+    struct _DEVICE_OBJECT * DeviceObject;// Offset=0x208 Size=0x8
+    struct _EXT_IOMMU_DEVICE_ID * DeviceId;// Offset=0x210 Size=0x8
+    void * IommuDevice;// Offset=0x218 Size=0x8
+    struct _MDL * ScatterGatherMdl;// Offset=0x220 Size=0x8
+    unsigned long long LowMemoryLogicalAddressBase;// Offset=0x228 Size=0x8
+    unsigned long long LowMemoryLogicalAddressQueueLock;// Offset=0x230 Size=0x8
+    struct _LIST_ENTRY LowMemoryLogicalAddressQueue;// Offset=0x238 Size=0x10
+    unsigned char LowMemoryLogicalAddressQueueInUse;// Offset=0x248 Size=0x1
+    unsigned char __align6[7];// Offset=0x249 Size=0x7
+    struct _HALP_EMERGENCY_LA_QUEUE_ENTRY LowMemoryLogicalAddressQueueEntry;// Offset=0x250 Size=0x18
+    enum _HALP_DMA_ADAPTER_ALLOCATION_STATE AllocationState;// Offset=0x268 Size=0x4
+    unsigned long ScatterGatherBufferLength;// Offset=0x26c Size=0x4
+    struct _SCATTER_GATHER_LIST ScatterGatherBuffer;// Offset=0x270 Size=0x10
+};

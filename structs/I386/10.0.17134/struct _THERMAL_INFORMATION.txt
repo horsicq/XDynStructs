@@ -9,5 +9,6 @@ struct _THERMAL_INFORMATION// Size=0x4c
     unsigned long PassiveTripPoint;// Offset=0x18 Size=0x4
     unsigned long CriticalTripPoint;// Offset=0x1c Size=0x4
     unsigned char ActiveTripPointCount;// Offset=0x20 Size=0x1
+    unsigned char __align0[3];// Offset=0x21 Size=0x3
     unsigned long ActiveTripPoint[10];// Offset=0x24 Size=0x28
 };

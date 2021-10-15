@@ -1,0 +1,6 @@
+struct _DEVICE_OBJECT_LIST_ENTRY// Size=0xc
+{
+    struct _DEVICE_OBJECT * DeviceObject;// Offset=0x0 Size=0x4
+    enum _DEVICE_RELATION_LEVEL RelationLevel;// Offset=0x4 Size=0x4
+    unsigned long Flags;// Offset=0x8 Size=0x4
+};

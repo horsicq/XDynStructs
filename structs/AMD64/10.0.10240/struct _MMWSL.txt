@@ -10,6 +10,7 @@ struct _MMWSL// Size=0x300
     unsigned long LastAccessClearingRemainder;// Offset=0x38 Size=0x4
     unsigned long LastAgingRemainder;// Offset=0x3c Size=0x4
     unsigned long WsleSize;// Offset=0x40 Size=0x4
+    unsigned char __align0[4];// Offset=0x44 Size=0x4
     unsigned long long NonDirectCount;// Offset=0x48 Size=0x8
     void * LowestPagableAddress;// Offset=0x50 Size=0x8
     struct _MMWSLE_NONDIRECT_HASH * NonDirectHash;// Offset=0x58 Size=0x8

@@ -1,0 +1,7 @@
+struct _MEMORY_ALLOCATION_DESCRIPTOR// Size=0x14
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x8
+    enum _TYPE_OF_MEMORY MemoryType;// Offset=0x8 Size=0x4
+    unsigned long BasePage;// Offset=0xc Size=0x4
+    unsigned long PageCount;// Offset=0x10 Size=0x4
+};

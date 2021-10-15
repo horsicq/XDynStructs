@@ -1,0 +1,5 @@
+struct _ETW_BUFFER_HANDLE// Size=0x8
+{
+    struct _WMI_BUFFER_HEADER * TraceBuffer;// Offset=0x0 Size=0x4
+    struct _EX_FAST_REF * BufferFastRef;// Offset=0x4 Size=0x4
+};

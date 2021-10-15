@@ -1,0 +1,33 @@
+struct _RTL_USER_PROCESS_PARAMETERS// Size=0x298
+{
+    unsigned long MaximumLength;// Offset=0x0 Size=0x4
+    unsigned long Length;// Offset=0x4 Size=0x4
+    unsigned long Flags;// Offset=0x8 Size=0x4
+    unsigned long DebugFlags;// Offset=0xc Size=0x4
+    void * ConsoleHandle;// Offset=0x10 Size=0x4
+    unsigned long ConsoleFlags;// Offset=0x14 Size=0x4
+    void * StandardInput;// Offset=0x18 Size=0x4
+    void * StandardOutput;// Offset=0x1c Size=0x4
+    void * StandardError;// Offset=0x20 Size=0x4
+    struct _CURDIR CurrentDirectory;// Offset=0x24 Size=0xc
+    struct _UNICODE_STRING DllPath;// Offset=0x30 Size=0x8
+    struct _UNICODE_STRING ImagePathName;// Offset=0x38 Size=0x8
+    struct _UNICODE_STRING CommandLine;// Offset=0x40 Size=0x8
+    void * Environment;// Offset=0x48 Size=0x4
+    unsigned long StartingX;// Offset=0x4c Size=0x4
+    unsigned long StartingY;// Offset=0x50 Size=0x4
+    unsigned long CountX;// Offset=0x54 Size=0x4
+    unsigned long CountY;// Offset=0x58 Size=0x4
+    unsigned long CountCharsX;// Offset=0x5c Size=0x4
+    unsigned long CountCharsY;// Offset=0x60 Size=0x4
+    unsigned long FillAttribute;// Offset=0x64 Size=0x4
+    unsigned long WindowFlags;// Offset=0x68 Size=0x4
+    unsigned long ShowWindowFlags;// Offset=0x6c Size=0x4
+    struct _UNICODE_STRING WindowTitle;// Offset=0x70 Size=0x8
+    struct _UNICODE_STRING DesktopInfo;// Offset=0x78 Size=0x8
+    struct _UNICODE_STRING ShellInfo;// Offset=0x80 Size=0x8
+    struct _UNICODE_STRING RuntimeData;// Offset=0x88 Size=0x8
+    struct _RTL_DRIVE_LETTER_CURDIR CurrentDirectores[32];// Offset=0x90 Size=0x200
+    unsigned long EnvironmentSize;// Offset=0x290 Size=0x4
+    unsigned long EnvironmentVersion;// Offset=0x294 Size=0x4
+};

@@ -1,0 +1,5 @@
+struct _PAGED_LOOKASIDE_LIST// Size=0xc0
+{
+    struct _GENERAL_LOOKASIDE L;// Offset=0x0 Size=0x80
+    struct _FAST_MUTEX Lock__ObsoleteButDoNotDelete;// Offset=0x80 Size=0x20
+};

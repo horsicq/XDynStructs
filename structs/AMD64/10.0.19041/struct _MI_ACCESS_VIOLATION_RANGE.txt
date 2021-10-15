@@ -1,0 +1,6 @@
+struct _MI_ACCESS_VIOLATION_RANGE// Size=0x28
+{
+    struct _RTL_BALANCED_NODE Node;// Offset=0x0 Size=0x18
+    void * Va;// Offset=0x18 Size=0x8
+    void * EndVaInclusive;// Offset=0x20 Size=0x8
+};

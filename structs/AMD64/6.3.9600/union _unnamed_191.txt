@@ -1,0 +1,9 @@
+union _unnamed_191// Size=0x8
+{
+    unsigned long long Blink:36;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x24
+    unsigned long long NodeBlinkHigh:20;// Offset=0x0 Size=0x8 BitOffset=0x24 BitSize=0x14
+    unsigned long long TbFlushStamp:4;// Offset=0x0 Size=0x8 BitOffset=0x38 BitSize=0x4
+    unsigned long long SpareBlink:4;// Offset=0x0 Size=0x8 BitOffset=0x3c BitSize=0x4
+    struct _MMPTE * ImageProtoPte;// Offset=0x0 Size=0x8
+    unsigned long long ShareCount;// Offset=0x0 Size=0x8
+};

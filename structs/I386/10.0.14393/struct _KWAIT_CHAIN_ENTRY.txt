@@ -1,0 +1,5 @@
+struct _KWAIT_CHAIN_ENTRY// Size=0x14
+{
+    struct _SINGLE_LIST_ENTRY ListEntry;// Offset=0x0 Size=0x4
+    struct _KEVENT Event;// Offset=0x4 Size=0x10
+};

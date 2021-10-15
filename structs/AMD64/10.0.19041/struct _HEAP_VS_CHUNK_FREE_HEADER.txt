@@ -1,0 +1,6 @@
+struct _HEAP_VS_CHUNK_FREE_HEADER// Size=0x20
+{
+    struct _HEAP_VS_CHUNK_HEADER Header;// Offset=0x0 Size=0x10
+    unsigned long long OverlapsHeader;// Offset=0x0 Size=0x8
+    struct _RTL_BALANCED_NODE Node;// Offset=0x8 Size=0x18
+};

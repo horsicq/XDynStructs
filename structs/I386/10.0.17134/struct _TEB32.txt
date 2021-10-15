@@ -48,6 +48,7 @@ struct _TEB32// Size=0x1000
     unsigned long LastStatusValue;// Offset=0xbf4 Size=0x4
     struct _STRING32 StaticUnicodeString;// Offset=0xbf8 Size=0x8
     wchar_t StaticUnicodeBuffer[261];// Offset=0xc00 Size=0x20a
+    unsigned char __align0[2];// Offset=0xe0a Size=0x2
     unsigned long DeallocationStack;// Offset=0xe0c Size=0x4
     unsigned long TlsSlots[64];// Offset=0xe10 Size=0x100
     struct LIST_ENTRY32 TlsLinks;// Offset=0xf10 Size=0x8

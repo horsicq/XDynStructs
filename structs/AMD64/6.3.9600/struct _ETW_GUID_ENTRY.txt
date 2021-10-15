@@ -1,0 +1,14 @@
+struct _ETW_GUID_ENTRY// Size=0x178
+{
+    struct _LIST_ENTRY GuidList;// Offset=0x0 Size=0x10
+    long long RefCount;// Offset=0x10 Size=0x8
+    struct _GUID Guid;// Offset=0x18 Size=0x10
+    struct _LIST_ENTRY RegListHead;// Offset=0x28 Size=0x10
+    void * SecurityDescriptor;// Offset=0x38 Size=0x8
+    struct _ETW_LAST_ENABLE_INFO LastEnable;// Offset=0x40 Size=0x10
+    unsigned long long MatchId;// Offset=0x40 Size=0x8
+    unsigned char __align0[8];// Offset=0x48 Size=0x8
+    struct _TRACE_ENABLE_INFO ProviderEnableInfo;// Offset=0x50 Size=0x20
+    struct _TRACE_ENABLE_INFO EnableInfo[8];// Offset=0x70 Size=0x100
+    struct _ETW_FILTER_HEADER * FilterData;// Offset=0x170 Size=0x8
+};

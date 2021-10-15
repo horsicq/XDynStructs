@@ -1,0 +1,8 @@
+struct _EX_POOL_HEAP_MANAGER_STATE// Size=0x86940
+{
+    struct _RTLP_HP_HEAP_MANAGER HeapManager;// Offset=0x0 Size=0x38d0
+    unsigned long NumberOfPools;// Offset=0x38d0 Size=0x4
+    unsigned char __align0[44];// Offset=0x38d4 Size=0x2c
+    struct _EX_HEAP_POOL_NODE PoolNode[64];// Offset=0x3900 Size=0x83000
+    struct _SEGMENT_HEAP * SpecialHeaps[4];// Offset=0x86900 Size=0x20
+};

@@ -1,6 +1,7 @@
 struct _BOOT_ENTROPY_LDR_RESULT// Size=0x798
 {
     unsigned long maxEntropySources;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     struct _BOOT_ENTROPY_SOURCE_LDR_RESULT EntropySourceResult[8];// Offset=0x8 Size=0x340
     unsigned char SeedBytesForCng[48];// Offset=0x348 Size=0x30
     unsigned char RngBytesForNtoskrnl[1024];// Offset=0x378 Size=0x400

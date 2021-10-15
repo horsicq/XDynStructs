@@ -1,0 +1,21 @@
+struct _MI_SESSION_STATE// Size=0x10a8
+{
+    struct _MMSESSION SystemSession;// Offset=0x0 Size=0x20
+    unsigned char CodePageEdited;// Offset=0x20 Size=0x1
+    unsigned char __align0[7];// Offset=0x21 Size=0x7
+    unsigned long long * DynamicVaBitBuffer;// Offset=0x28 Size=0x8
+    unsigned long long DynamicVaBitBufferPages;// Offset=0x30 Size=0x8
+    void * DynamicVaStart;// Offset=0x38 Size=0x8
+    void * ImageVaStart;// Offset=0x40 Size=0x8
+    struct _MI_HUGE_SYSTEM_VIEW_HEAD SystemViewBuckets[256];// Offset=0x48 Size=0x1000
+    unsigned long * DynamicPtesBitBuffer;// Offset=0x1048 Size=0x8
+    struct _EX_PUSH_LOCK IdLock;// Offset=0x1050 Size=0x8
+    struct _EPROCESS * LeaderProcess;// Offset=0x1058 Size=0x8
+    struct _EX_PUSH_LOCK InitializeLock;// Offset=0x1060 Size=0x8
+    struct _MMWSL_INSTANCE * WorkingSetList;// Offset=0x1068 Size=0x8
+    void * SessionBase;// Offset=0x1070 Size=0x8
+    void * SessionCore;// Offset=0x1078 Size=0x8
+    struct _RTL_AVL_TREE SessionIdNodes;// Offset=0x1080 Size=0x8
+    struct _KEVENT DeleteInProgressEvent;// Offset=0x1088 Size=0x18
+    unsigned long DeleteInProgressCount;// Offset=0x10a0 Size=0x4
+};

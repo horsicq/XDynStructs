@@ -7,6 +7,7 @@ struct _HEAP_VAMGR_RANGE// Size=0x10
     unsigned char Standalone:1;// Offset=0x0 Size=0x1 BitOffset=0x2 BitSize=0x1
     unsigned char Spare0:5;// Offset=0x0 Size=0x1 BitOffset=0x3 BitSize=0x5
     unsigned char AllocatorIndex;// Offset=0x1 Size=0x1
+    unsigned char __align0[2];// Offset=0x2 Size=0x2
     unsigned long OwnerCtx;// Offset=0x4 Size=0x4
     unsigned long Spare1;// Offset=0x8 Size=0x4
     unsigned long SizeInChunks;// Offset=0xc Size=0x4

@@ -1,0 +1,5 @@
+union _MM_PAGE_ACCESS_INFO_FLAGS// Size=0x4
+{
+    struct _unnamed_538 File;// Offset=0x0 Size=0x4
+    struct _unnamed_539 Private;// Offset=0x0 Size=0x4
+};

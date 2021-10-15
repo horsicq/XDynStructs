@@ -1,0 +1,5 @@
+union _unnamed_61// Size=0x8
+{
+    unsigned long long SecureHandle;// Offset=0x0 Size=0x8
+    struct _unnamed_60 Flags;// Offset=0x0 Size=0x8
+};

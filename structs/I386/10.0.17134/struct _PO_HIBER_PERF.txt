@@ -13,6 +13,7 @@ struct _PO_HIBER_PERF// Size=0x1f8
     unsigned long POSTTime;// Offset=0x50 Size=0x4
     unsigned long ResumeBootMgrTime;// Offset=0x54 Size=0x4
     unsigned long BootmgrUserInputTime;// Offset=0x58 Size=0x4
+    unsigned char __align0[4];// Offset=0x5c Size=0x4
     unsigned long long ResumeAppTicks;// Offset=0x60 Size=0x8
     unsigned long long ResumeAppStartTimestamp;// Offset=0x68 Size=0x8
     unsigned long long ResumeLibraryInitTicks;// Offset=0x70 Size=0x8
@@ -52,6 +53,7 @@ struct _PO_HIBER_PERF// Size=0x1f8
     union _LARGE_INTEGER AnimationStart;// Offset=0x180 Size=0x8
     union _LARGE_INTEGER AnimationStop;// Offset=0x188 Size=0x8
     unsigned long DeviceResumeTime;// Offset=0x190 Size=0x4
+    unsigned char __align1[4];// Offset=0x194 Size=0x4
     unsigned long long SecurePagesProcessed;// Offset=0x198 Size=0x8
     unsigned long long BootPagesProcessed;// Offset=0x1a0 Size=0x8
     unsigned long long KernelPagesProcessed;// Offset=0x1a8 Size=0x8

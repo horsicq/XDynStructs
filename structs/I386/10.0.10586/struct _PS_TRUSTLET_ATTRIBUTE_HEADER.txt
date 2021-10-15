@@ -1,0 +1,6 @@
+struct _PS_TRUSTLET_ATTRIBUTE_HEADER// Size=0x8
+{
+    struct _PS_TRUSTLET_ATTRIBUTE_TYPE AttributeType;// Offset=0x0 Size=0x4
+    unsigned long InstanceNumber:8;// Offset=0x4 Size=0x4 BitOffset=0x0 BitSize=0x8
+    unsigned long Reserved:24;// Offset=0x4 Size=0x4 BitOffset=0x8 BitSize=0x18
+};

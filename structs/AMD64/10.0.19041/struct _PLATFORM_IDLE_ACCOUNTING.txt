@@ -1,0 +1,9 @@
+struct _PLATFORM_IDLE_ACCOUNTING// Size=0x408
+{
+    unsigned long ResetCount;// Offset=0x0 Size=0x4
+    unsigned long StateCount;// Offset=0x4 Size=0x4
+    unsigned long DeepSleepCount;// Offset=0x8 Size=0x4
+    enum PPM_IDLE_BUCKET_TIME_TYPE TimeUnit;// Offset=0xc Size=0x4
+    unsigned long long StartTime;// Offset=0x10 Size=0x8
+    struct _PLATFORM_IDLE_STATE_ACCOUNTING State[1];// Offset=0x18 Size=0x3f0
+};

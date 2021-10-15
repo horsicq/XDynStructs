@@ -1,0 +1,6 @@
+struct _SESSION_LOWBOX_MAP// Size=0x20
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x8
+    unsigned long SessionId;// Offset=0x8 Size=0x4
+    struct _SEP_LOWBOX_NUMBER_MAPPING LowboxMap;// Offset=0xc Size=0x14
+};

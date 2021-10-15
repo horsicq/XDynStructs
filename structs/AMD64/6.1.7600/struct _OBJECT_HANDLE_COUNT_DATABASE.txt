@@ -1,5 +1,6 @@
 struct _OBJECT_HANDLE_COUNT_DATABASE// Size=0x18
 {
     unsigned long CountEntries;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     struct _OBJECT_HANDLE_COUNT_ENTRY HandleCountEntries[1];// Offset=0x8 Size=0x10
 };

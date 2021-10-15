@@ -7,5 +7,6 @@ struct _DIAGNOSTIC_BUFFER// Size=0x18
     unsigned long ServiceTag;// Offset=0x10 Size=0x4
     unsigned long DeviceDescriptionOffset;// Offset=0x8 Size=0x4
     unsigned long DevicePathOffset;// Offset=0xc Size=0x4
+    unsigned char __align0[4];// Offset=0x10 Size=0x4
     unsigned long ReasonOffset;// Offset=0x14 Size=0x4
 };

@@ -1,0 +1,4 @@
+struct _unnamed_121// Size=0x4
+{
+    enum _DEVICE_RELATION_TYPE Type;// Offset=0x0 Size=0x4
+};

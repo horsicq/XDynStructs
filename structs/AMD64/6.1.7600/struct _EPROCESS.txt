@@ -138,5 +138,6 @@ struct _EPROCESS// Size=0x4d0
     unsigned long RequestedTimerResolution;// Offset=0x4b8 Size=0x4
     unsigned long ActiveThreadsHighWatermark;// Offset=0x4bc Size=0x4
     unsigned long SmallestTimerResolution;// Offset=0x4c0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4c4 Size=0x4
     struct _PO_DIAG_STACK_RECORD * TimerResolutionStackRecord;// Offset=0x4c8 Size=0x8
 };

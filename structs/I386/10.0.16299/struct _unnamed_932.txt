@@ -1,0 +1,5 @@
+struct _unnamed_932// Size=0x4
+{
+    unsigned long Tradable:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long NonPagedBuddy:28;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x1c
+};

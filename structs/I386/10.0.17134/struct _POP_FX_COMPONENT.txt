@@ -10,6 +10,7 @@ struct _POP_FX_COMPONENT// Size=0x110
     unsigned long IdleLock;// Offset=0x50 Size=0x4
     long IdleConditionComplete;// Offset=0x54 Size=0x4
     long IdleStateComplete;// Offset=0x58 Size=0x4
+    unsigned char __align0[4];// Offset=0x5c Size=0x4
     unsigned long long IdleStamp;// Offset=0x60 Size=0x8
     unsigned long CurrentIdleState;// Offset=0x68 Size=0x4
     unsigned long IdleStateCount;// Offset=0x6c Size=0x4
@@ -20,6 +21,7 @@ struct _POP_FX_COMPONENT// Size=0x110
     unsigned long IdleProviderCount;// Offset=0x80 Size=0x4
     unsigned long DependentCount;// Offset=0x84 Size=0x4
     struct _POP_FX_DEPENDENT * Dependents;// Offset=0x88 Size=0x4
+    unsigned char __align1[4];// Offset=0x8c Size=0x4
     struct _POP_FX_ACCOUNTING Accounting;// Offset=0x90 Size=0x78
     struct _POP_FX_PERF_INFO * Performance;// Offset=0x108 Size=0x4
 };

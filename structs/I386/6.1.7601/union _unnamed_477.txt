@@ -1,0 +1,5 @@
+union _unnamed_477// Size=0x4
+{
+    struct _MMBANKED_SECTION * Banked;// Offset=0x0 Size=0x4
+    struct _MMEXTEND_INFO * ExtendedInfo;// Offset=0x0 Size=0x4
+};

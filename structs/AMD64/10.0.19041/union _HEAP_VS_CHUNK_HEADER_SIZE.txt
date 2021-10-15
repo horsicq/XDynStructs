@@ -1,0 +1,10 @@
+union _HEAP_VS_CHUNK_HEADER_SIZE// Size=0x8
+{
+    unsigned long MemoryCost:16;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x10
+    unsigned long UnsafeSize:16;// Offset=0x0 Size=0x4 BitOffset=0x10 BitSize=0x10
+    unsigned long UnsafePrevSize:16;// Offset=0x4 Size=0x4 BitOffset=0x0 BitSize=0x10
+    unsigned long Allocated:8;// Offset=0x4 Size=0x4 BitOffset=0x10 BitSize=0x8
+    unsigned short KeyUShort;// Offset=0x0 Size=0x2
+    unsigned long KeyULong;// Offset=0x0 Size=0x4
+    unsigned long long HeaderBits;// Offset=0x0 Size=0x8
+};

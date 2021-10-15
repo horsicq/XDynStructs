@@ -1,0 +1,9 @@
+struct _SEP_SILOSTATE// Size=0x18
+{
+    struct _SEP_LOGON_SESSION_REFERENCES * SystemLogonSession;// Offset=0x0 Size=0x4
+    struct _SEP_LOGON_SESSION_REFERENCES * AnonymousLogonSession;// Offset=0x4 Size=0x4
+    void * AnonymousLogonToken;// Offset=0x8 Size=0x4
+    void * AnonymousLogonTokenNoEveryone;// Offset=0xc Size=0x4
+    struct _UNICODE_STRING * UncSystemPaths;// Offset=0x10 Size=0x4
+    struct _CI_NGEN_PATHS * NgenPaths;// Offset=0x14 Size=0x4
+};

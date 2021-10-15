@@ -1,0 +1,4 @@
+struct _unnamed_348// Size=0x8
+{
+    struct _FILE_OBJECT * FileObject;// Offset=0x0 Size=0x8
+};

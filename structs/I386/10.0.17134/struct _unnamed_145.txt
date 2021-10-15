@@ -1,0 +1,4 @@
+struct _unnamed_145// Size=0x4
+{
+    enum _SYSTEM_POWER_STATE PowerState;// Offset=0x0 Size=0x4
+};

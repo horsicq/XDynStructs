@@ -6,6 +6,7 @@ struct _MI_POOL_STATE// Size=0x4f0
     struct _SINGLE_LIST_ENTRY BadPoolHead;// Offset=0x14 Size=0x4
     unsigned long HighEventSets;// Offset=0x18 Size=0x4
     unsigned char HighEventSetsValid;// Offset=0x1c Size=0x1
+    unsigned char __align0[3];// Offset=0x1d Size=0x3
     unsigned long PoolFailures[3][3];// Offset=0x20 Size=0x24
     struct _MI_POOL_FAILURE_REASONS PoolFailureReasons;// Offset=0x44 Size=0x2c
     unsigned long LowPagedPoolThreshold;// Offset=0x70 Size=0x4

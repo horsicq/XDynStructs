@@ -1,0 +1,7 @@
+struct _OBJECT_REF_STACK_INFO// Size=0xc
+{
+    unsigned long Sequence;// Offset=0x0 Size=0x4
+    unsigned short Index;// Offset=0x4 Size=0x2
+    unsigned short NumTraces;// Offset=0x6 Size=0x2
+    unsigned long Tag;// Offset=0x8 Size=0x4
+};

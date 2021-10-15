@@ -1,0 +1,5 @@
+struct _TP_TASK_CALLBACKS// Size=0x8
+{
+    void  ( * ExecuteCallback)(struct _TP_CALLBACK_INSTANCE * ,struct _TP_TASK * );// Offset=0x0 Size=0x4
+    void  ( * Unposted)(struct _TP_TASK * ,struct _TP_POOL * );// Offset=0x4 Size=0x4
+};

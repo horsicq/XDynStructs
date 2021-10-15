@@ -1,0 +1,47 @@
+struct _SHARED_CACHE_MAP// Size=0x170
+{
+    short NodeTypeCode;// Offset=0x0 Size=0x2
+    short NodeByteSize;// Offset=0x2 Size=0x2
+    unsigned long OpenCount;// Offset=0x4 Size=0x4
+    union _LARGE_INTEGER FileSize;// Offset=0x8 Size=0x8
+    struct _LIST_ENTRY BcbList;// Offset=0x10 Size=0x8
+    union _LARGE_INTEGER SectionSize;// Offset=0x18 Size=0x8
+    union _LARGE_INTEGER ValidDataLength;// Offset=0x20 Size=0x8
+    union _LARGE_INTEGER ValidDataGoal;// Offset=0x28 Size=0x8
+    struct _VACB * InitialVacbs[4];// Offset=0x30 Size=0x10
+    struct _VACB ** Vacbs;// Offset=0x40 Size=0x4
+    struct _EX_FAST_REF FileObjectFastRef;// Offset=0x44 Size=0x4
+    struct _EX_PUSH_LOCK VacbLock;// Offset=0x48 Size=0x4
+    unsigned long DirtyPages;// Offset=0x4c Size=0x4
+    struct _LIST_ENTRY LoggedStreamLinks;// Offset=0x50 Size=0x8
+    struct _LIST_ENTRY SharedCacheMapLinks;// Offset=0x58 Size=0x8
+    unsigned long Flags;// Offset=0x60 Size=0x4
+    long Status;// Offset=0x64 Size=0x4
+    struct _MBCB * Mbcb;// Offset=0x68 Size=0x4
+    void * Section;// Offset=0x6c Size=0x4
+    struct _KEVENT * CreateEvent;// Offset=0x70 Size=0x4
+    struct _KEVENT * WaitOnActiveCount;// Offset=0x74 Size=0x4
+    unsigned long PagesToWrite;// Offset=0x78 Size=0x4
+    unsigned char __align0[4];// Offset=0x7c Size=0x4
+    long long BeyondLastFlush;// Offset=0x80 Size=0x8
+    struct _CACHE_MANAGER_CALLBACKS * Callbacks;// Offset=0x88 Size=0x4
+    void * LazyWriteContext;// Offset=0x8c Size=0x4
+    struct _LIST_ENTRY PrivateList;// Offset=0x90 Size=0x8
+    struct _LOGGED_STREAM_CALLBACK_V1 V1;// Offset=0x98 Size=0x8
+    struct _LOGGED_STREAM_CALLBACK_V2 V2;// Offset=0x98 Size=0x4
+    unsigned char __align1[4];// Offset=0x9c Size=0x4
+    union _LARGE_INTEGER LargestLSN;// Offset=0xa0 Size=0x8
+    unsigned long DirtyPageThreshold;// Offset=0xa8 Size=0x4
+    unsigned long LazyWritePassCount;// Offset=0xac Size=0x4
+    struct _CACHE_UNINITIALIZE_EVENT * UninitializeEvent;// Offset=0xb0 Size=0x4
+    struct _FAST_MUTEX BcbLock;// Offset=0xb4 Size=0x20
+    unsigned char __align2[4];// Offset=0xd4 Size=0x4
+    union _LARGE_INTEGER LastUnmapBehindOffset;// Offset=0xd8 Size=0x8
+    struct _KEVENT Event;// Offset=0xe0 Size=0x10
+    union _LARGE_INTEGER HighWaterMappingOffset;// Offset=0xf0 Size=0x8
+    struct _PRIVATE_CACHE_MAP PrivateCacheMap;// Offset=0xf8 Size=0x68
+    void * WriteBehindWorkQueueEntry;// Offset=0x160 Size=0x4
+    struct _VOLUME_CACHE_MAP * VolumeCacheMap;// Offset=0x164 Size=0x4
+    unsigned long ProcImagePathHash;// Offset=0x168 Size=0x4
+    unsigned long WritesInProgress;// Offset=0x16c Size=0x4
+};

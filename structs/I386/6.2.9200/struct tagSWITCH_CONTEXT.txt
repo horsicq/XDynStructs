@@ -1,0 +1,5 @@
+struct tagSWITCH_CONTEXT// Size=0x58
+{
+    struct tagSWITCH_CONTEXT_ATTRIBUTE Attribute;// Offset=0x0 Size=0x18
+    struct tagSWITCH_CONTEXT_DATA Data;// Offset=0x18 Size=0x40
+};

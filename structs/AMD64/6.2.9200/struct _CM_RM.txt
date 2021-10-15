@@ -15,6 +15,7 @@ struct _CM_RM// Size=0x88
     unsigned long RmFlags;// Offset=0x68 Size=0x4
     long LogStartStatus1;// Offset=0x6c Size=0x4
     long LogStartStatus2;// Offset=0x70 Size=0x4
+    unsigned char __align0[4];// Offset=0x74 Size=0x4
     unsigned long long BaseLsn;// Offset=0x78 Size=0x8
     struct _ERESOURCE * RmLock;// Offset=0x80 Size=0x8
 };

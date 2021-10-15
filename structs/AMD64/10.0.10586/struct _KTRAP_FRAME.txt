@@ -1,0 +1,65 @@
+struct _KTRAP_FRAME// Size=0x190
+{
+    unsigned long long P1Home;// Offset=0x0 Size=0x8
+    unsigned long long P2Home;// Offset=0x8 Size=0x8
+    unsigned long long P3Home;// Offset=0x10 Size=0x8
+    unsigned long long P4Home;// Offset=0x18 Size=0x8
+    unsigned long long P5;// Offset=0x20 Size=0x8
+    char PreviousMode;// Offset=0x28 Size=0x1
+    unsigned char PreviousIrql;// Offset=0x29 Size=0x1
+    unsigned char FaultIndicator;// Offset=0x2a Size=0x1
+    unsigned char ExceptionActive;// Offset=0x2b Size=0x1
+    unsigned long MxCsr;// Offset=0x2c Size=0x4
+    unsigned long long Rax;// Offset=0x30 Size=0x8
+    unsigned long long Rcx;// Offset=0x38 Size=0x8
+    unsigned long long Rdx;// Offset=0x40 Size=0x8
+    unsigned long long R8;// Offset=0x48 Size=0x8
+    unsigned long long R9;// Offset=0x50 Size=0x8
+    unsigned long long R10;// Offset=0x58 Size=0x8
+    unsigned long long R11;// Offset=0x60 Size=0x8
+    unsigned long long GsBase;// Offset=0x68 Size=0x8
+    unsigned long long GsSwap;// Offset=0x68 Size=0x8
+    struct _M128A Xmm0;// Offset=0x70 Size=0x10
+    struct _M128A Xmm1;// Offset=0x80 Size=0x10
+    struct _M128A Xmm2;// Offset=0x90 Size=0x10
+    struct _M128A Xmm3;// Offset=0xa0 Size=0x10
+    struct _M128A Xmm4;// Offset=0xb0 Size=0x10
+    struct _M128A Xmm5;// Offset=0xc0 Size=0x10
+    unsigned long long FaultAddress;// Offset=0xd0 Size=0x8
+    unsigned long long ContextRecord;// Offset=0xd0 Size=0x8
+    unsigned long long TimeStampCKCL;// Offset=0xd0 Size=0x8
+    unsigned long long Dr0;// Offset=0xd8 Size=0x8
+    unsigned long long Dr1;// Offset=0xe0 Size=0x8
+    unsigned long long Dr2;// Offset=0xe8 Size=0x8
+    unsigned long long Dr3;// Offset=0xf0 Size=0x8
+    unsigned long long Dr6;// Offset=0xf8 Size=0x8
+    unsigned long long Dr7;// Offset=0x100 Size=0x8
+    unsigned long long DebugControl;// Offset=0x108 Size=0x8
+    unsigned long long LastBranchToRip;// Offset=0x110 Size=0x8
+    unsigned long long LastBranchFromRip;// Offset=0x118 Size=0x8
+    unsigned long long LastExceptionToRip;// Offset=0x120 Size=0x8
+    unsigned long long LastExceptionFromRip;// Offset=0x128 Size=0x8
+    unsigned short SegDs;// Offset=0x130 Size=0x2
+    unsigned short SegEs;// Offset=0x132 Size=0x2
+    unsigned short SegFs;// Offset=0x134 Size=0x2
+    unsigned short SegGs;// Offset=0x136 Size=0x2
+    unsigned long long TrapFrame;// Offset=0x138 Size=0x8
+    unsigned long long Rbx;// Offset=0x140 Size=0x8
+    unsigned long long Rdi;// Offset=0x148 Size=0x8
+    unsigned long long Rsi;// Offset=0x150 Size=0x8
+    unsigned long long Rbp;// Offset=0x158 Size=0x8
+    unsigned long long ErrorCode;// Offset=0x160 Size=0x8
+    unsigned long long ExceptionFrame;// Offset=0x160 Size=0x8
+    unsigned long long TimeStampKlog;// Offset=0x160 Size=0x8
+    unsigned long long Rip;// Offset=0x168 Size=0x8
+    unsigned short SegCs;// Offset=0x170 Size=0x2
+    unsigned char Fill0;// Offset=0x172 Size=0x1
+    unsigned char Logging;// Offset=0x173 Size=0x1
+    unsigned short Fill1[2];// Offset=0x174 Size=0x4
+    unsigned long EFlags;// Offset=0x178 Size=0x4
+    unsigned long Fill2;// Offset=0x17c Size=0x4
+    unsigned long long Rsp;// Offset=0x180 Size=0x8
+    unsigned short SegSs;// Offset=0x188 Size=0x2
+    unsigned short Fill3;// Offset=0x18a Size=0x2
+    unsigned long Fill4;// Offset=0x18c Size=0x4
+};

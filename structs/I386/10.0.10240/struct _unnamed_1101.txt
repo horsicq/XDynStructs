@@ -1,0 +1,5 @@
+struct _unnamed_1101// Size=0x8
+{
+    void * UserData;// Offset=0x0 Size=0x4
+    void * Owner;// Offset=0x4 Size=0x4
+};

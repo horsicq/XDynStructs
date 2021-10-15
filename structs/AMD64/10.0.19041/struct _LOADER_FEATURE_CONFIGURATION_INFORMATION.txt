@@ -1,0 +1,10 @@
+struct _LOADER_FEATURE_CONFIGURATION_INFORMATION// Size=0x48
+{
+    void * FeatureConfigurationBuffer;// Offset=0x0 Size=0x8
+    unsigned long long FeatureConfigurationBufferSize;// Offset=0x8 Size=0x8
+    void * UsageSubscriptionBuffer;// Offset=0x10 Size=0x8
+    unsigned long long UsageSubscriptionBufferSize;// Offset=0x18 Size=0x8
+    void * DelayedUsageReportBuffer;// Offset=0x20 Size=0x8
+    unsigned long long DelayedUsageReportBufferSize;// Offset=0x28 Size=0x8
+    struct _LOADER_FEATURE_CONFIGURATION_DIAGNOSTIC_INFORMATION DiagnosticInformation;// Offset=0x30 Size=0x18
+};

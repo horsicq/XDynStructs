@@ -1,0 +1,5 @@
+struct _OBJECT_HEADER_HANDLE_INFO// Size=0x8
+{
+    struct _OBJECT_HANDLE_COUNT_DATABASE * HandleCountDataBase;// Offset=0x0 Size=0x4
+    struct _OBJECT_HANDLE_COUNT_ENTRY SingleEntry;// Offset=0x0 Size=0x8
+};

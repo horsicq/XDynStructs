@@ -1,0 +1,16 @@
+union _unnamed_747// Size=0x18
+{
+    struct _unnamed_735 Port;// Offset=0x0 Size=0x18
+    struct _unnamed_735 Memory;// Offset=0x0 Size=0x18
+    struct _unnamed_737 Interrupt;// Offset=0x0 Size=0x14
+    struct _unnamed_738 Dma;// Offset=0x0 Size=0x8
+    struct _unnamed_739 DmaV3;// Offset=0x0 Size=0x10
+    struct _unnamed_735 Generic;// Offset=0x0 Size=0x18
+    struct _unnamed_740 DevicePrivate;// Offset=0x0 Size=0xc
+    struct _unnamed_741 BusNumber;// Offset=0x0 Size=0x10
+    struct _unnamed_742 ConfigData;// Offset=0x0 Size=0xc
+    struct _unnamed_743 Memory40;// Offset=0x0 Size=0x18
+    struct _unnamed_744 Memory48;// Offset=0x0 Size=0x18
+    struct _unnamed_745 Memory64;// Offset=0x0 Size=0x18
+    struct _unnamed_746 Connection;// Offset=0x0 Size=0xc
+};

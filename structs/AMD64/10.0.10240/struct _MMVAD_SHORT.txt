@@ -2,6 +2,7 @@ struct _MMVAD_SHORT// Size=0x40
 {
     struct _RTL_BALANCED_NODE VadNode;// Offset=0x0 Size=0x18
     struct _MMVAD_SHORT * NextVad;// Offset=0x0 Size=0x8
+    unsigned char __align0[16];// Offset=0x8 Size=0x10
     unsigned long StartingVpn;// Offset=0x18 Size=0x4
     unsigned long EndingVpn;// Offset=0x1c Size=0x4
     unsigned char StartingVpnHigh;// Offset=0x20 Size=0x1

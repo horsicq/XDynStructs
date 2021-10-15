@@ -18,6 +18,7 @@ struct _CMHIVE// Size=0xc00
     unsigned long FlushLogEntrySize;// Offset=0x45c Size=0x4
     unsigned long FlushHiveTruncated;// Offset=0x460 Size=0x4
     unsigned char FlushBaseBlockDirty;// Offset=0x464 Size=0x1
+    unsigned char __align0[3];// Offset=0x465 Size=0x3
     struct _RTL_BITMAP CapturedUnreconciledVector;// Offset=0x468 Size=0x8
     unsigned long CapturedUnreconciledVectorSize;// Offset=0x470 Size=0x4
     struct CMP_OFFSET_ARRAY * UnreconciledOffsetArray;// Offset=0x474 Size=0x4
@@ -39,11 +40,13 @@ struct _CMHIVE// Size=0xc00
     struct _KEVENT ** UnloadEventArray;// Offset=0x6cc Size=0x4
     struct _CM_KEY_CONTROL_BLOCK * RootKcb;// Offset=0x6d0 Size=0x4
     unsigned char Frozen;// Offset=0x6d4 Size=0x1
+    unsigned char __align1[3];// Offset=0x6d5 Size=0x3
     struct _CM_WORKITEM * UnloadWorkItem;// Offset=0x6d8 Size=0x4
     struct _CM_WORKITEM UnloadWorkItemHolder;// Offset=0x6dc Size=0x14
     struct _CM_DIRTY_VECTOR_LOG DirtyVectorLog;// Offset=0x6f0 Size=0x288
     unsigned long Flags;// Offset=0x978 Size=0x4
     struct _LIST_ENTRY TrustClassEntry;// Offset=0x97c Size=0x8
+    unsigned char __align2[4];// Offset=0x984 Size=0x4
     unsigned long long DirtyTime;// Offset=0x988 Size=0x8
     unsigned long long UnreconciledTime;// Offset=0x990 Size=0x8
     struct _CM_RM * CmRm;// Offset=0x998 Size=0x4
@@ -51,6 +54,7 @@ struct _CMHIVE// Size=0xc00
     long CmRmInitFailStatus;// Offset=0x9a0 Size=0x4
     struct _KTHREAD * CreatorOwner;// Offset=0x9a4 Size=0x4
     struct _KTHREAD * RundownThread;// Offset=0x9a8 Size=0x4
+    unsigned char __align3[4];// Offset=0x9ac Size=0x4
     union _LARGE_INTEGER LastWriteTime;// Offset=0x9b0 Size=0x8
     struct _HIVE_WRITE_WAIT_QUEUE FlushQueue;// Offset=0x9b8 Size=0xc
     struct _HIVE_WRITE_WAIT_QUEUE ReconcileQueue;// Offset=0x9c4 Size=0xc
@@ -70,5 +74,6 @@ struct _CMHIVE// Size=0xc00
     unsigned long HandleClosePending;// Offset=0xbf0 Size=0x4
     struct _EX_PUSH_LOCK HandleClosePendingEvent;// Offset=0xbf4 Size=0x4
     unsigned char FinalFlushSucceeded;// Offset=0xbf8 Size=0x1
+    unsigned char __align4[3];// Offset=0xbf9 Size=0x3
     struct _CMP_VOLUME_CONTEXT * VolumeContext;// Offset=0xbfc Size=0x4
 };

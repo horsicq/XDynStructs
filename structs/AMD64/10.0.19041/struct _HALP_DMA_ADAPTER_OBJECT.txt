@@ -1,0 +1,20 @@
+struct _HALP_DMA_ADAPTER_OBJECT// Size=0x98
+{
+    struct _DMA_ADAPTER DmaHeader;// Offset=0x0 Size=0x10
+    struct _RTL_BITMAP * ContiguousMapRegisters;// Offset=0x10 Size=0x8
+    struct _HALP_DMA_TRANSLATION_ENTRY * ScatterBufferListHead;// Offset=0x18 Size=0x8
+    unsigned long NumberOfFreeScatterBuffers;// Offset=0x20 Size=0x4
+    unsigned char __align0[4];// Offset=0x24 Size=0x4
+    struct _HALP_DMA_TRANSLATION_BUFFER * ContiguousTranslations;// Offset=0x28 Size=0x8
+    struct _HALP_DMA_TRANSLATION_BUFFER * ScatterTranslations;// Offset=0x30 Size=0x8
+    struct _HALP_DMA_TRANSLATION_BUFFER_POSITION ContiguousTranslationEnd;// Offset=0x38 Size=0x10
+    struct _HALP_DMA_TRANSLATION_BUFFER_POSITION ScatterTranslationEnd;// Offset=0x48 Size=0x10
+    struct <anonymous-tag> CrashDump;// Offset=0x58 Size=0x20
+    unsigned long long SpinLock;// Offset=0x78 Size=0x8
+    unsigned long long GrowLock;// Offset=0x80 Size=0x8
+    union _LARGE_INTEGER MaximumPhysicalAddress;// Offset=0x88 Size=0x8
+    unsigned char IsMasterAdapter;// Offset=0x90 Size=0x1
+    unsigned char DmaCanCross64K;// Offset=0x91 Size=0x1
+    unsigned char __align1[2];// Offset=0x92 Size=0x2
+    unsigned long LibraryVersion;// Offset=0x94 Size=0x4
+};

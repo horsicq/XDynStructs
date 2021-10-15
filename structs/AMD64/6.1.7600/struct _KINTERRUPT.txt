@@ -2,13 +2,16 @@ struct _KINTERRUPT// Size=0xa0
 {
     short Type;// Offset=0x0 Size=0x2
     short Size;// Offset=0x2 Size=0x2
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     struct _LIST_ENTRY InterruptListEntry;// Offset=0x8 Size=0x10
     unsigned char  ( * ServiceRoutine)(struct _KINTERRUPT * ,void * );// Offset=0x18 Size=0x8
     unsigned char  ( * MessageServiceRoutine)(struct _KINTERRUPT * ,void * ,unsigned long );// Offset=0x20 Size=0x8
     unsigned long MessageIndex;// Offset=0x28 Size=0x4
+    unsigned char __align1[4];// Offset=0x2c Size=0x4
     void * ServiceContext;// Offset=0x30 Size=0x8
     unsigned long long SpinLock;// Offset=0x38 Size=0x8
     unsigned long TickCount;// Offset=0x40 Size=0x4
+    unsigned char __align2[4];// Offset=0x44 Size=0x4
     unsigned long long * ActualLock;// Offset=0x48 Size=0x8
     void  ( * DispatchAddress)();// Offset=0x50 Size=0x8
     unsigned long Vector;// Offset=0x58 Size=0x4

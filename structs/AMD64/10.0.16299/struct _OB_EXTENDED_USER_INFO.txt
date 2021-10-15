@@ -1,0 +1,5 @@
+struct _OB_EXTENDED_USER_INFO// Size=0x10
+{
+    void * Context1;// Offset=0x0 Size=0x8
+    void * Context2;// Offset=0x8 Size=0x8
+};

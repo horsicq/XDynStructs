@@ -6,10 +6,12 @@ struct _POP_FX_PERF_INFO// Size=0x60
     union _POP_FX_PERF_FLAGS Flags;// Offset=0x18 Size=0x4
     struct _PO_FX_PERF_STATE_CHANGE * LastChange;// Offset=0x1c Size=0x4
     unsigned long LastChangeCount;// Offset=0x20 Size=0x4
+    unsigned char __align0[4];// Offset=0x24 Size=0x4
     unsigned long long LastChangeStamp;// Offset=0x28 Size=0x8
     unsigned char LastChangeNominal;// Offset=0x30 Size=0x1
     unsigned char PepRegistered;// Offset=0x31 Size=0x1
     unsigned char QueryOnIdleStates;// Offset=0x32 Size=0x1
+    unsigned char __align1[1];// Offset=0x33 Size=0x1
     void * RequestDriverContext;// Offset=0x34 Size=0x4
     struct _POP_FX_WORK_ORDER WorkOrder;// Offset=0x38 Size=0x1c
     unsigned long SetsCount;// Offset=0x54 Size=0x4

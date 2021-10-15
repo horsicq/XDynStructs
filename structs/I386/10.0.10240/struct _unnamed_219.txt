@@ -1,0 +1,6 @@
+struct _unnamed_219// Size=0xc
+{
+    unsigned long Action;// Offset=0x0 Size=0x4
+    void * Handle;// Offset=0x4 Size=0x4
+    long Status;// Offset=0x8 Size=0x4
+};

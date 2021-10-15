@@ -88,6 +88,7 @@ struct _EPROCESS// Size=0x798
     void * SectionObject;// Offset=0x3b8 Size=0x8
     void * SectionBaseAddress;// Offset=0x3c0 Size=0x8
     unsigned long Cookie;// Offset=0x3c8 Size=0x4
+    unsigned char __align0[4];// Offset=0x3cc Size=0x4
     struct _PAGEFAULT_HISTORY * WorkingSetWatch;// Offset=0x3d0 Size=0x8
     void * Win32WindowStation;// Offset=0x3d8 Size=0x8
     void * InheritedFromUniqueProcessId;// Offset=0x3e0 Size=0x8
@@ -164,6 +165,7 @@ struct _EPROCESS// Size=0x798
     unsigned long IndirectCpuSets:1;// Offset=0x6ac Size=0x4 BitOffset=0x9 BitSize=0x1
     unsigned long InPrivate:1;// Offset=0x6ac Size=0x4 BitOffset=0xa BitSize=0x1
     long DeviceAsid;// Offset=0x6b0 Size=0x4
+    unsigned char __align1[4];// Offset=0x6b4 Size=0x4
     void * SvmData;// Offset=0x6b8 Size=0x8
     struct _EX_PUSH_LOCK SvmProcessLock;// Offset=0x6c0 Size=0x8
     unsigned long long SvmLock;// Offset=0x6c8 Size=0x8
@@ -175,6 +177,7 @@ struct _EPROCESS// Size=0x798
     unsigned long KeepAliveCounter;// Offset=0x700 Size=0x4
     unsigned long NoWakeKeepAliveCounter;// Offset=0x704 Size=0x4
     unsigned long HighPriorityFaultsAllowed;// Offset=0x708 Size=0x4
+    unsigned char __align2[4];// Offset=0x70c Size=0x4
     struct _PROCESS_ENERGY_VALUES * EnergyValues;// Offset=0x710 Size=0x8
     void * VmContext;// Offset=0x718 Size=0x8
     struct _ESILO * Silo;// Offset=0x720 Size=0x8

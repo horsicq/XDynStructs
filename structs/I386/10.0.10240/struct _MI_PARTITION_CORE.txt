@@ -1,6 +1,7 @@
 struct _MI_PARTITION_CORE// Size=0xe8
 {
     unsigned short PartitionId;// Offset=0x0 Size=0x2
+    unsigned char __align0[2];// Offset=0x2 Size=0x2
     union _unnamed_862 u;// Offset=0x4 Size=0x4
     unsigned long ReferenceCount;// Offset=0x8 Size=0x4
     struct _MI_PARTITION * ParentPartition;// Offset=0xc Size=0x4

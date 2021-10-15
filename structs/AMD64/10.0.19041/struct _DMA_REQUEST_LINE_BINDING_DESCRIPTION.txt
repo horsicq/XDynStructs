@@ -1,0 +1,5 @@
+struct _DMA_REQUEST_LINE_BINDING_DESCRIPTION// Size=0x8
+{
+    unsigned long RequestLine;// Offset=0x0 Size=0x4
+    unsigned long ChannelNumber;// Offset=0x4 Size=0x4
+};

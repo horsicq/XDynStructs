@@ -1,0 +1,8 @@
+struct _FAST_MUTEX// Size=0x20
+{
+    long Count;// Offset=0x0 Size=0x4
+    struct _KTHREAD * Owner;// Offset=0x4 Size=0x4
+    unsigned long Contention;// Offset=0x8 Size=0x4
+    struct _KEVENT Event;// Offset=0xc Size=0x10
+    unsigned long OldIrql;// Offset=0x1c Size=0x4
+};

@@ -1,0 +1,4 @@
+struct _MI_DECAY_TIMER_LINK// Size=0x8
+{
+    union _unnamed_888 u1;// Offset=0x0 Size=0x8
+};

@@ -1,0 +1,10 @@
+struct _MMVIEW// Size=0x38
+{
+    unsigned long long PteOffset;// Offset=0x0 Size=0x8
+    unsigned long long Entry;// Offset=0x8 Size=0x8
+    union _MMVIEW_CONTROL_AREA u1;// Offset=0x10 Size=0x8
+    struct _LIST_ENTRY ViewLinks;// Offset=0x18 Size=0x10
+    void * SessionViewVa;// Offset=0x28 Size=0x8
+    unsigned long SessionId;// Offset=0x30 Size=0x4
+    unsigned long SessionIdForGlobalSubsections;// Offset=0x34 Size=0x4
+};

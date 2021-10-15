@@ -1,0 +1,18 @@
+struct _DRIVER_OBJECT// Size=0xa8
+{
+    short Type;// Offset=0x0 Size=0x2
+    short Size;// Offset=0x2 Size=0x2
+    struct _DEVICE_OBJECT * DeviceObject;// Offset=0x4 Size=0x4
+    unsigned long Flags;// Offset=0x8 Size=0x4
+    void * DriverStart;// Offset=0xc Size=0x4
+    unsigned long DriverSize;// Offset=0x10 Size=0x4
+    void * DriverSection;// Offset=0x14 Size=0x4
+    struct _DRIVER_EXTENSION * DriverExtension;// Offset=0x18 Size=0x4
+    struct _UNICODE_STRING DriverName;// Offset=0x1c Size=0x8
+    struct _UNICODE_STRING * HardwareDatabase;// Offset=0x24 Size=0x4
+    struct _FAST_IO_DISPATCH * FastIoDispatch;// Offset=0x28 Size=0x4
+    long  ( * DriverInit)(struct _DRIVER_OBJECT * ,struct _UNICODE_STRING * );// Offset=0x2c Size=0x4
+    void  ( * DriverStartIo)(struct _DEVICE_OBJECT * ,struct _IRP * );// Offset=0x30 Size=0x4
+    void  ( * DriverUnload)(struct _DRIVER_OBJECT * );// Offset=0x34 Size=0x4
+    long  ( * MajorFunction)[28];// Offset=0x38 Size=0x70
+};

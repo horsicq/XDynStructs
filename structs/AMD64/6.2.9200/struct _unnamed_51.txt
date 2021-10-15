@@ -1,0 +1,10 @@
+struct _unnamed_51// Size=0x10
+{
+    unsigned long long Depth:16;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x10
+    unsigned long long Sequence:9;// Offset=0x0 Size=0x8 BitOffset=0x10 BitSize=0x9
+    unsigned long long NextEntry:39;// Offset=0x0 Size=0x8 BitOffset=0x19 BitSize=0x27
+    unsigned long long HeaderType:1;// Offset=0x8 Size=0x8 BitOffset=0x0 BitSize=0x1
+    unsigned long long Init:1;// Offset=0x8 Size=0x8 BitOffset=0x1 BitSize=0x1
+    unsigned long long Reserved:59;// Offset=0x8 Size=0x8 BitOffset=0x2 BitSize=0x3b
+    unsigned long long Region:3;// Offset=0x8 Size=0x8 BitOffset=0x3d BitSize=0x3
+};

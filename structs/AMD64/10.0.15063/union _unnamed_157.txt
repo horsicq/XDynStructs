@@ -1,0 +1,41 @@
+union _unnamed_157// Size=0x20
+{
+    struct _unnamed_113 Create;// Offset=0x0 Size=0x20
+    struct _unnamed_114 CreatePipe;// Offset=0x0 Size=0x20
+    struct _unnamed_115 CreateMailslot;// Offset=0x0 Size=0x20
+    struct _unnamed_116 Read;// Offset=0x0 Size=0x18
+    struct _unnamed_116 Write;// Offset=0x0 Size=0x18
+    struct _unnamed_118 QueryDirectory;// Offset=0x0 Size=0x20
+    struct _unnamed_119 NotifyDirectory;// Offset=0x0 Size=0x10
+    struct _unnamed_120 QueryFile;// Offset=0x0 Size=0x10
+    struct _unnamed_121 SetFile;// Offset=0x0 Size=0x20
+    struct _unnamed_122 QueryEa;// Offset=0x0 Size=0x20
+    struct _unnamed_123 SetEa;// Offset=0x0 Size=0x4
+    struct _unnamed_125 QueryVolume;// Offset=0x0 Size=0x10
+    struct _unnamed_125 SetVolume;// Offset=0x0 Size=0x10
+    struct _unnamed_126 FileSystemControl;// Offset=0x0 Size=0x20
+    struct _unnamed_127 LockControl;// Offset=0x0 Size=0x18
+    struct _unnamed_128 DeviceIoControl;// Offset=0x0 Size=0x20
+    struct _unnamed_129 QuerySecurity;// Offset=0x0 Size=0x10
+    struct _unnamed_130 SetSecurity;// Offset=0x0 Size=0x10
+    struct _unnamed_131 MountVolume;// Offset=0x0 Size=0x10
+    struct _unnamed_131 VerifyVolume;// Offset=0x0 Size=0x10
+    struct _unnamed_133 Scsi;// Offset=0x0 Size=0x8
+    struct _unnamed_134 QueryQuota;// Offset=0x0 Size=0x20
+    struct _unnamed_123 SetQuota;// Offset=0x0 Size=0x4
+    struct _unnamed_136 QueryDeviceRelations;// Offset=0x0 Size=0x4
+    struct _unnamed_137 QueryInterface;// Offset=0x0 Size=0x20
+    struct _unnamed_138 DeviceCapabilities;// Offset=0x0 Size=0x8
+    struct _unnamed_139 FilterResourceRequirements;// Offset=0x0 Size=0x8
+    struct _unnamed_140 ReadWriteConfig;// Offset=0x0 Size=0x20
+    struct _unnamed_141 SetLock;// Offset=0x0 Size=0x1
+    struct _unnamed_143 QueryId;// Offset=0x0 Size=0x4
+    struct _unnamed_145 QueryDeviceText;// Offset=0x0 Size=0x10
+    struct _unnamed_147 UsageNotification;// Offset=0x0 Size=0x10
+    struct _unnamed_149 WaitWake;// Offset=0x0 Size=0x4
+    struct _unnamed_150 PowerSequence;// Offset=0x0 Size=0x8
+    struct _unnamed_153 Power;// Offset=0x0 Size=0x20
+    struct _unnamed_154 StartDevice;// Offset=0x0 Size=0x10
+    struct _unnamed_155 WMI;// Offset=0x0 Size=0x20
+    struct _unnamed_156 Others;// Offset=0x0 Size=0x20
+};

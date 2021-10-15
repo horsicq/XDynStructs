@@ -1,0 +1,7 @@
+struct _PO_DEVICE_NOTIFY_ORDER// Size=0x170
+{
+    unsigned char Locked;// Offset=0x0 Size=0x1
+    unsigned char __align0[3];// Offset=0x1 Size=0x3
+    struct _DEVICE_OBJECT ** WarmEjectPdoPointer;// Offset=0x4 Size=0x4
+    struct _PO_NOTIFY_ORDER_LEVEL OrderLevel[9];// Offset=0x8 Size=0x168
+};

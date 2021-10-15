@@ -1,0 +1,8 @@
+union _unnamed_1350// Size=0x18
+{
+    struct _unnamed_1348 Polled;// Offset=0x0 Size=0x4
+    struct _unnamed_1349 Interrupt;// Offset=0x0 Size=0x18
+    struct _unnamed_1349 LocalInterrupt;// Offset=0x0 Size=0x18
+    struct _unnamed_1349 Sci;// Offset=0x0 Size=0x18
+    struct _unnamed_1349 Nmi;// Offset=0x0 Size=0x18
+};

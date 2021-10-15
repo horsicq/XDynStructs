@@ -1,0 +1,12 @@
+struct _THERMAL_POLICY// Size=0x18
+{
+    unsigned long Version;// Offset=0x0 Size=0x4
+    unsigned char WaitForUpdate;// Offset=0x4 Size=0x1
+    unsigned char Hibernate;// Offset=0x5 Size=0x1
+    unsigned char Critical;// Offset=0x6 Size=0x1
+    unsigned char ThermalStandby;// Offset=0x7 Size=0x1
+    unsigned long ActivationReasons;// Offset=0x8 Size=0x4
+    unsigned long PassiveLimit;// Offset=0xc Size=0x4
+    unsigned long ActiveLevel;// Offset=0x10 Size=0x4
+    unsigned char OverThrottled;// Offset=0x14 Size=0x1
+};

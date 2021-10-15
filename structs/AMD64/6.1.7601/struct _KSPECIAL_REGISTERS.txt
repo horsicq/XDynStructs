@@ -1,0 +1,30 @@
+struct _KSPECIAL_REGISTERS// Size=0xd8
+{
+    unsigned long long Cr0;// Offset=0x0 Size=0x8
+    unsigned long long Cr2;// Offset=0x8 Size=0x8
+    unsigned long long Cr3;// Offset=0x10 Size=0x8
+    unsigned long long Cr4;// Offset=0x18 Size=0x8
+    unsigned long long KernelDr0;// Offset=0x20 Size=0x8
+    unsigned long long KernelDr1;// Offset=0x28 Size=0x8
+    unsigned long long KernelDr2;// Offset=0x30 Size=0x8
+    unsigned long long KernelDr3;// Offset=0x38 Size=0x8
+    unsigned long long KernelDr6;// Offset=0x40 Size=0x8
+    unsigned long long KernelDr7;// Offset=0x48 Size=0x8
+    struct _KDESCRIPTOR Gdtr;// Offset=0x50 Size=0x10
+    struct _KDESCRIPTOR Idtr;// Offset=0x60 Size=0x10
+    unsigned short Tr;// Offset=0x70 Size=0x2
+    unsigned short Ldtr;// Offset=0x72 Size=0x2
+    unsigned long MxCsr;// Offset=0x74 Size=0x4
+    unsigned long long DebugControl;// Offset=0x78 Size=0x8
+    unsigned long long LastBranchToRip;// Offset=0x80 Size=0x8
+    unsigned long long LastBranchFromRip;// Offset=0x88 Size=0x8
+    unsigned long long LastExceptionToRip;// Offset=0x90 Size=0x8
+    unsigned long long LastExceptionFromRip;// Offset=0x98 Size=0x8
+    unsigned long long Cr8;// Offset=0xa0 Size=0x8
+    unsigned long long MsrGsBase;// Offset=0xa8 Size=0x8
+    unsigned long long MsrGsSwap;// Offset=0xb0 Size=0x8
+    unsigned long long MsrStar;// Offset=0xb8 Size=0x8
+    unsigned long long MsrLStar;// Offset=0xc0 Size=0x8
+    unsigned long long MsrCStar;// Offset=0xc8 Size=0x8
+    unsigned long long MsrSyscallMask;// Offset=0xd0 Size=0x8
+};

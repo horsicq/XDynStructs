@@ -1,0 +1,5 @@
+union _unnamed_892// Size=0x8
+{
+    unsigned long long ImageCommitment;// Offset=0x0 Size=0x8
+    struct _EPROCESS * CreatingProcess;// Offset=0x0 Size=0x8
+};

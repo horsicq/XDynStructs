@@ -1,0 +1,19 @@
+struct _WHEA_ERROR_PACKET_V2// Size=0x50
+{
+    unsigned long Signature;// Offset=0x0 Size=0x4
+    unsigned long Version;// Offset=0x4 Size=0x4
+    unsigned long Length;// Offset=0x8 Size=0x4
+    union _WHEA_ERROR_PACKET_FLAGS Flags;// Offset=0xc Size=0x4
+    enum _WHEA_ERROR_TYPE ErrorType;// Offset=0x10 Size=0x4
+    enum _WHEA_ERROR_SEVERITY ErrorSeverity;// Offset=0x14 Size=0x4
+    unsigned long ErrorSourceId;// Offset=0x18 Size=0x4
+    enum _WHEA_ERROR_SOURCE_TYPE ErrorSourceType;// Offset=0x1c Size=0x4
+    struct _GUID NotifyType;// Offset=0x20 Size=0x10
+    unsigned long long Context;// Offset=0x30 Size=0x8
+    enum _WHEA_ERROR_PACKET_DATA_FORMAT DataFormat;// Offset=0x38 Size=0x4
+    unsigned long Reserved1;// Offset=0x3c Size=0x4
+    unsigned long DataOffset;// Offset=0x40 Size=0x4
+    unsigned long DataLength;// Offset=0x44 Size=0x4
+    unsigned long PshedDataOffset;// Offset=0x48 Size=0x4
+    unsigned long PshedDataLength;// Offset=0x4c Size=0x4
+};

@@ -1,0 +1,5 @@
+struct _MI_SPECIAL_POOL_PTE_LIST// Size=0x10
+{
+    struct _MMPTE FreePteHead;// Offset=0x0 Size=0x8
+    struct _MMPTE FreePteTail;// Offset=0x8 Size=0x8
+};

@@ -34,13 +34,16 @@ struct _KPRCB// Size=0x4d00
     unsigned long InitialApicId;// Offset=0x650 Size=0x4
     unsigned long Stride;// Offset=0x654 Size=0x4
     unsigned short Group;// Offset=0x658 Size=0x2
+    unsigned char __align0[6];// Offset=0x65a Size=0x6
     unsigned long long GroupSetMember;// Offset=0x660 Size=0x8
     unsigned char GroupIndex;// Offset=0x668 Size=0x1
+    unsigned char __align1[7];// Offset=0x669 Size=0x7
     struct _KSPIN_LOCK_QUEUE LockQueue[17];// Offset=0x670 Size=0x110
     struct _PP_LOOKASIDE_LIST PPLookasideList[16];// Offset=0x780 Size=0x100
     struct _GENERAL_LOOKASIDE_POOL PPNPagedLookasideList[32];// Offset=0x880 Size=0xc00
     struct _GENERAL_LOOKASIDE_POOL PPPagedLookasideList[32];// Offset=0x1480 Size=0xc00
     long PacketBarrier;// Offset=0x2080 Size=0x4
+    unsigned char __align2[4];// Offset=0x2084 Size=0x4
     struct _SINGLE_LIST_ENTRY DeferredReadyListHead;// Offset=0x2088 Size=0x8
     long MmPageFaultCount;// Offset=0x2090 Size=0x4
     long MmCopyOnWriteCount;// Offset=0x2094 Size=0x4
@@ -69,6 +72,7 @@ struct _KPRCB// Size=0x4d00
     union _LARGE_INTEGER IoOtherTransferCount;// Offset=0x20f8 Size=0x8
     long TargetCount;// Offset=0x2100 Size=0x4
     unsigned long IpiFrozen;// Offset=0x2104 Size=0x4
+    unsigned char __align3[120];// Offset=0x2108 Size=0x78
     struct _KDPC_DATA DpcData[2];// Offset=0x2180 Size=0x40
     void * DpcStack;// Offset=0x21c0 Size=0x8
     long MaximumDpcQueueDepth;// Offset=0x21c8 Size=0x4
@@ -167,6 +171,7 @@ struct _KPRCB// Size=0x4d00
     struct _PROCESSOR_POWER_STATE PowerState;// Offset=0x4800 Size=0x100
     unsigned char PrcbPad92[16];// Offset=0x4900 Size=0x10
     unsigned long KeAlignmentFixupCount;// Offset=0x4910 Size=0x4
+    unsigned char __align4[4];// Offset=0x4914 Size=0x4
     struct _KDPC DpcWatchdogDpc;// Offset=0x4918 Size=0x40
     struct _KTIMER DpcWatchdogTimer;// Offset=0x4958 Size=0x40
     struct _CACHE_DESCRIPTOR Cache[5];// Offset=0x4998 Size=0x3c
@@ -176,6 +181,7 @@ struct _KPRCB// Size=0x4d00
     void * HyperPte;// Offset=0x49e0 Size=0x8
     void * WheaInfo;// Offset=0x49e8 Size=0x8
     void * EtwSupport;// Offset=0x49f0 Size=0x8
+    unsigned char __align5[8];// Offset=0x49f8 Size=0x8
     union _SLIST_HEADER InterruptObjectPool;// Offset=0x4a00 Size=0x10
     union _SLIST_HEADER HypercallPageList;// Offset=0x4a10 Size=0x10
     void * HypercallPageVirtual;// Offset=0x4a20 Size=0x8
@@ -236,10 +242,14 @@ struct _KPRCB// Size=0x4d00
     unsigned char VendorString[13];// Offset=0x4bb8 Size=0xd
     unsigned char PrcbPad10[3];// Offset=0x4bc5 Size=0x3
     unsigned long FeatureBits;// Offset=0x4bc8 Size=0x4
+    unsigned char __align6[4];// Offset=0x4bcc Size=0x4
     union _LARGE_INTEGER UpdateSignature;// Offset=0x4bd0 Size=0x8
     struct _CONTEXT * Context;// Offset=0x4bd8 Size=0x8
     unsigned long ContextFlags;// Offset=0x4be0 Size=0x4
+    unsigned char __align7[4];// Offset=0x4be4 Size=0x4
     struct _XSAVE_AREA * ExtendedState;// Offset=0x4be8 Size=0x8
+    unsigned char __align8[16];// Offset=0x4bf0 Size=0x10
     struct _REQUEST_MAILBOX * Mailbox;// Offset=0x4c00 Size=0x8
+    unsigned char __align9[120];// Offset=0x4c08 Size=0x78
     struct _REQUEST_MAILBOX RequestMailbox[1];// Offset=0x4c80 Size=0x40
 };

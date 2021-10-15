@@ -1,0 +1,4 @@
+union _unnamed_817// Size=0x4
+{
+    unsigned long NumberOfChildViews;// Offset=0x0 Size=0x4
+};

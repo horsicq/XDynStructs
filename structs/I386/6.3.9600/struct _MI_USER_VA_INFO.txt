@@ -1,0 +1,26 @@
+struct _MI_USER_VA_INFO// Size=0xd1c
+{
+    unsigned long NumberOfCommittedPageTables;// Offset=0x0 Size=0x4
+    unsigned long PhysicalMappingCount;// Offset=0x4 Size=0x4
+    unsigned long VadBitMapHint;// Offset=0x8 Size=0x4
+    unsigned long LastAllocationSizeHint;// Offset=0xc Size=0x4
+    unsigned long LastAllocationSize;// Offset=0x10 Size=0x4
+    unsigned long LowestBottomUpVadBit;// Offset=0x14 Size=0x4
+    unsigned long VadBitMapSize;// Offset=0x18 Size=0x4
+    unsigned long VadBitMapCommitment;// Offset=0x1c Size=0x4
+    unsigned long MaximumLastVadBit;// Offset=0x20 Size=0x4
+    long VadsBeingDeleted;// Offset=0x24 Size=0x4
+    struct _KEVENT * LastVadDeletionEvent;// Offset=0x28 Size=0x4
+    unsigned long * VadBitBuffer;// Offset=0x2c Size=0x4
+    void * LowestBottomUpAllocationAddress;// Offset=0x30 Size=0x4
+    void * HighestTopDownAllocationAddress;// Offset=0x34 Size=0x4
+    void * FreeTebHint;// Offset=0x38 Size=0x4
+    unsigned char NumaAware;// Offset=0x3c Size=0x1
+    unsigned char SpareFlags[2];// Offset=0x3d Size=0x2
+    unsigned char CheckingShadow;// Offset=0x3f Size=0x1
+    unsigned long PrivateFixupVadCount;// Offset=0x40 Size=0x4
+    struct _MI_CFG_BITMAP_INFO CfgBitMap[1];// Offset=0x44 Size=0x10
+    unsigned long CommittedPageTableBufferForTopLevel[48];// Offset=0x54 Size=0xc0
+    struct _RTL_BITMAP CommittedPageTableBitmaps[1];// Offset=0x114 Size=0x8
+    unsigned short UsedPageTableEntries[1536];// Offset=0x11c Size=0xc00
+};

@@ -1,0 +1,8 @@
+struct _CM_DIRTY_VECTOR_LOG_ENTRY// Size=0x48
+{
+    struct _ETHREAD * Thread;// Offset=0x0 Size=0x8
+    enum _CM_DIRTY_VECTOR_OPERATION Operation;// Offset=0x8 Size=0x4
+    union <anonymous-tag> Data;// Offset=0xc Size=0x8
+    unsigned char __align0[4];// Offset=0x14 Size=0x4
+    void * Stack[6];// Offset=0x18 Size=0x30
+};

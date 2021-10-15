@@ -1,0 +1,5 @@
+struct _KTMOBJECT_NAMESPACE_LINK// Size=0x14
+{
+    struct _RTL_BALANCED_LINKS Links;// Offset=0x0 Size=0x10
+    unsigned char Expired;// Offset=0x10 Size=0x1
+};

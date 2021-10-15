@@ -11,15 +11,20 @@ struct _CM_KEY_CONTROL_BLOCK// Size=0x128
     unsigned long DelayedDeref:1;// Offset=0x8 Size=0x4 BitOffset=0x0 BitSize=0x1
     unsigned long DelayedClose:1;// Offset=0x8 Size=0x4 BitOffset=0x1 BitSize=0x1
     unsigned long Parking:1;// Offset=0x8 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned char __align0[4];// Offset=0xc Size=0x4
     struct _CM_KEY_HASH KeyHash;// Offset=0x10 Size=0x20
     unsigned long ConvKey;// Offset=0x10 Size=0x4
+    unsigned char __align1[4];// Offset=0x14 Size=0x4
     struct _CM_KEY_HASH * NextHash;// Offset=0x18 Size=0x8
     struct _HHIVE * KeyHive;// Offset=0x20 Size=0x8
     unsigned long KeyCell;// Offset=0x28 Size=0x4
+    unsigned char __align2[4];// Offset=0x2c Size=0x4
     struct _EX_PUSH_LOCK KcbPushlock;// Offset=0x30 Size=0x8
     struct _KTHREAD * Owner;// Offset=0x38 Size=0x8
     long SharedCount;// Offset=0x38 Size=0x4
+    unsigned char __align3[4];// Offset=0x3c Size=0x4
     unsigned long SlotHint;// Offset=0x40 Size=0x4
+    unsigned char __align4[4];// Offset=0x44 Size=0x4
     struct _CM_KEY_CONTROL_BLOCK * ParentKcb;// Offset=0x48 Size=0x8
     struct _CM_NAME_CONTROL_BLOCK * NameBlock;// Offset=0x50 Size=0x8
     struct _CM_KEY_SECURITY_CACHE * CachedSecurity;// Offset=0x58 Size=0x8
@@ -27,6 +32,7 @@ struct _CM_KEY_CONTROL_BLOCK// Size=0x128
     struct _CM_INDEX_HINT_BLOCK * IndexHint;// Offset=0x70 Size=0x8
     unsigned long HashKey;// Offset=0x70 Size=0x4
     unsigned long SubKeyCount;// Offset=0x70 Size=0x4
+    unsigned char __align5[4];// Offset=0x74 Size=0x4
     struct _LIST_ENTRY KeyBodyListHead;// Offset=0x78 Size=0x10
     struct _LIST_ENTRY FreeListEntry;// Offset=0x78 Size=0x10
     struct _CM_KEY_BODY * KeyBodyArray[4];// Offset=0x88 Size=0x20
@@ -38,10 +44,12 @@ struct _CM_KEY_CONTROL_BLOCK// Size=0x128
     unsigned long KcbVirtControlFlags:4;// Offset=0xb8 Size=0x4 BitOffset=0x4 BitSize=0x4
     unsigned long KcbDebug:8;// Offset=0xb8 Size=0x4 BitOffset=0x8 BitSize=0x8
     unsigned long Flags:16;// Offset=0xb8 Size=0x4 BitOffset=0x10 BitSize=0x10
+    unsigned char __align6[4];// Offset=0xbc Size=0x4
     char * RealKeyName;// Offset=0xc0 Size=0x8
     struct _LIST_ENTRY KCBUoWListHead;// Offset=0xc8 Size=0x10
     struct _LIST_ENTRY DelayQueueEntry;// Offset=0xd8 Size=0x10
     unsigned char * Stolen;// Offset=0xd8 Size=0x8
+    unsigned char __align7[8];// Offset=0xe0 Size=0x8
     struct _CM_TRANS * TransKCBOwner;// Offset=0xe8 Size=0x8
     struct _CM_INTENT_LOCK KCBLock;// Offset=0xf0 Size=0x10
     struct _CM_INTENT_LOCK KeyLock;// Offset=0x100 Size=0x10

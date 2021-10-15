@@ -1,0 +1,8 @@
+struct _ACTIVATION_CONTEXT_STACK32// Size=0x18
+{
+    unsigned long ActiveFrame;// Offset=0x0 Size=0x4
+    struct LIST_ENTRY32 FrameListCache;// Offset=0x4 Size=0x8
+    unsigned long Flags;// Offset=0xc Size=0x4
+    unsigned long NextCookieSequenceNumber;// Offset=0x10 Size=0x4
+    unsigned long StackId;// Offset=0x14 Size=0x4
+};

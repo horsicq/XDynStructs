@@ -57,6 +57,7 @@ struct _CONTEXT// Size=0x4d0
     struct _M128A Xmm13;// Offset=0x270 Size=0x10
     struct _M128A Xmm14;// Offset=0x280 Size=0x10
     struct _M128A Xmm15;// Offset=0x290 Size=0x10
+    unsigned char __align0[96];// Offset=0x2a0 Size=0x60
     struct _M128A VectorRegister[26];// Offset=0x300 Size=0x1a0
     unsigned long long VectorControl;// Offset=0x4a0 Size=0x8
     unsigned long long DebugControl;// Offset=0x4a8 Size=0x8

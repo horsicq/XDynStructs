@@ -7,8 +7,10 @@ struct _TOKEN// Size=0x298
     union _LARGE_INTEGER ExpirationTime;// Offset=0x28 Size=0x8
     struct _ERESOURCE * TokenLock;// Offset=0x30 Size=0x4
     struct _LUID ModifiedId;// Offset=0x34 Size=0x8
+    unsigned char __align0[4];// Offset=0x3c Size=0x4
     struct _SEP_TOKEN_PRIVILEGES Privileges;// Offset=0x40 Size=0x18
     struct _SEP_AUDIT_POLICY AuditPolicy;// Offset=0x58 Size=0x1f
+    unsigned char __align1[1];// Offset=0x77 Size=0x1
     unsigned long SessionId;// Offset=0x78 Size=0x4
     unsigned long UserAndGroupCount;// Offset=0x7c Size=0x4
     unsigned long RestrictedSidCount;// Offset=0x80 Size=0x4
@@ -25,6 +27,7 @@ struct _TOKEN// Size=0x298
     enum _SECURITY_IMPERSONATION_LEVEL ImpersonationLevel;// Offset=0xac Size=0x4
     unsigned long TokenFlags;// Offset=0xb0 Size=0x4
     unsigned char TokenInUse;// Offset=0xb4 Size=0x1
+    unsigned char __align2[3];// Offset=0xb5 Size=0x3
     unsigned long IntegrityLevelIndex;// Offset=0xb8 Size=0x4
     unsigned long MandatoryPolicy;// Offset=0xbc Size=0x4
     struct _SEP_LOGON_SESSION_REFERENCES * LogonSession;// Offset=0xc0 Size=0x4

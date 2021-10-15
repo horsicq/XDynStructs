@@ -1,6 +1,7 @@
 struct _HHIVE// Size=0x580
 {
     unsigned long Signature;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     struct _CELL_DATA *  ( * GetCellRoutine)(struct _HHIVE * ,unsigned long );// Offset=0x8 Size=0x8
     void *  ( * Allocate)(unsigned long ,unsigned char ,unsigned long );// Offset=0x10 Size=0x8
     void  ( * Free)(void * ,unsigned long );// Offset=0x18 Size=0x8
@@ -16,6 +17,7 @@ struct _HHIVE// Size=0x580
     unsigned char Flat;// Offset=0x60 Size=0x1
     unsigned char ReadOnly;// Offset=0x61 Size=0x1
     unsigned char DirtyFlag;// Offset=0x62 Size=0x1
+    unsigned char __align1[1];// Offset=0x63 Size=0x1
     unsigned long HvBinHeadersUse;// Offset=0x64 Size=0x4
     unsigned long HvFreeCellsUse;// Offset=0x68 Size=0x4
     unsigned long HvUsedCellsUse;// Offset=0x6c Size=0x4

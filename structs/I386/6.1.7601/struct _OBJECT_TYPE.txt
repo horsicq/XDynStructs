@@ -1,0 +1,16 @@
+struct _OBJECT_TYPE// Size=0x88
+{
+    struct _LIST_ENTRY TypeList;// Offset=0x0 Size=0x8
+    struct _UNICODE_STRING Name;// Offset=0x8 Size=0x8
+    void * DefaultObject;// Offset=0x10 Size=0x4
+    unsigned char Index;// Offset=0x14 Size=0x1
+    unsigned char __align0[3];// Offset=0x15 Size=0x3
+    unsigned long TotalNumberOfObjects;// Offset=0x18 Size=0x4
+    unsigned long TotalNumberOfHandles;// Offset=0x1c Size=0x4
+    unsigned long HighWaterNumberOfObjects;// Offset=0x20 Size=0x4
+    unsigned long HighWaterNumberOfHandles;// Offset=0x24 Size=0x4
+    struct _OBJECT_TYPE_INITIALIZER TypeInfo;// Offset=0x28 Size=0x50
+    struct _EX_PUSH_LOCK TypeLock;// Offset=0x78 Size=0x4
+    unsigned long Key;// Offset=0x7c Size=0x4
+    struct _LIST_ENTRY CallbackList;// Offset=0x80 Size=0x8
+};

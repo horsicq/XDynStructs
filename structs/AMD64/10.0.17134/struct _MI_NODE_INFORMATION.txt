@@ -3,6 +3,7 @@ struct _MI_NODE_INFORMATION// Size=0x7c0
     struct _MI_FREE_LARGE_PAGES FreeLargePages[3];// Offset=0x0 Size=0x330
     struct _MI_REBUILD_LARGE_PAGE_TIMER LargePageRebuildTimer;// Offset=0x330 Size=0x28
     struct _MMPFNLIST_SHORT StandbyPageList[4][8];// Offset=0x358 Size=0x300
+    unsigned char __align0[40];// Offset=0x658 Size=0x28
     struct _RTL_BITMAP FreePageListHeadsBitmap[2];// Offset=0x680 Size=0x20
     unsigned long FreePageListHeadsBitmapBuffer[16];// Offset=0x6a0 Size=0x40
     unsigned long long FreeCount[2];// Offset=0x6e0 Size=0x10
@@ -12,6 +13,7 @@ struct _MI_NODE_INFORMATION// Size=0x7c0
     unsigned long Color;// Offset=0x71c Size=0x4
     unsigned long long ChannelFreeCount[4][2];// Offset=0x720 Size=0x40
     struct _unnamed_1545 Flags;// Offset=0x760 Size=0x4
+    unsigned char __align1[4];// Offset=0x764 Size=0x4
     struct _EX_PUSH_LOCK NodeLock;// Offset=0x768 Size=0x8
     unsigned long long ZeroThreadHugeMapLock;// Offset=0x770 Size=0x8
     unsigned char LargeListMoveInProgress;// Offset=0x778 Size=0x1
@@ -19,6 +21,7 @@ struct _MI_NODE_INFORMATION// Size=0x7c0
     unsigned char ChannelOrdering[4];// Offset=0x77a Size=0x4
     unsigned char LockedChannelOrdering[4];// Offset=0x77e Size=0x4
     unsigned char PowerAttribute[4];// Offset=0x782 Size=0x4
+    unsigned char __align2[2];// Offset=0x786 Size=0x2
     unsigned long long LargePageLock;// Offset=0x788 Size=0x8
     struct _MI_PAGE_COLORS PageColorTable;// Offset=0x790 Size=0x10
 };

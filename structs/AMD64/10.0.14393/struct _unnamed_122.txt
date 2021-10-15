@@ -1,0 +1,10 @@
+struct _unnamed_122// Size=0x20
+{
+    unsigned long OutputBufferLength;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
+    unsigned long InputBufferLength;// Offset=0x8 Size=0x4
+    unsigned char __align1[4];// Offset=0xc Size=0x4
+    unsigned long FsControlCode;// Offset=0x10 Size=0x4
+    unsigned char __align2[4];// Offset=0x14 Size=0x4
+    void * Type3InputBuffer;// Offset=0x18 Size=0x8
+};

@@ -1,0 +1,5 @@
+union _unnamed_720// Size=0x8
+{
+    struct _DEVICE_OBJECT * ProviderPdo;// Offset=0x0 Size=0x8
+    struct _PNP_RESERVED_PROVIDER_INFO * ProviderReservation;// Offset=0x0 Size=0x8
+};

@@ -5,6 +5,7 @@ struct _HIVE_LOAD_FAILURE// Size=0x160
     unsigned short RecoverableIndex;// Offset=0xa Size=0x2
     struct _unnamed_267 Locations[8];// Offset=0xc Size=0x60
     struct _unnamed_267 RecoverableLocations[8];// Offset=0x6c Size=0x60
+    unsigned char __align0[4];// Offset=0xcc Size=0x4
     struct _unnamed_268 RegistryIO;// Offset=0xd0 Size=0x18
     struct _unnamed_269 CheckRegistry2;// Offset=0xe8 Size=0x8
     struct _unnamed_270 CheckKey;// Offset=0xf0 Size=0x20

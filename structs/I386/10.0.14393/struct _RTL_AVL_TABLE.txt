@@ -1,0 +1,14 @@
+struct _RTL_AVL_TABLE// Size=0x38
+{
+    struct _RTL_BALANCED_LINKS BalancedRoot;// Offset=0x0 Size=0x10
+    void * OrderedPointer;// Offset=0x10 Size=0x4
+    unsigned long WhichOrderedElement;// Offset=0x14 Size=0x4
+    unsigned long NumberGenericTableElements;// Offset=0x18 Size=0x4
+    unsigned long DepthOfTree;// Offset=0x1c Size=0x4
+    struct _RTL_BALANCED_LINKS * RestartKey;// Offset=0x20 Size=0x4
+    unsigned long DeleteCount;// Offset=0x24 Size=0x4
+    enum _RTL_GENERIC_COMPARE_RESULTS  ( * CompareRoutine)(struct _RTL_AVL_TABLE * ,void * ,void * );// Offset=0x28 Size=0x4
+    void *  ( * AllocateRoutine)(struct _RTL_AVL_TABLE * ,unsigned long );// Offset=0x2c Size=0x4
+    void  ( * FreeRoutine)(struct _RTL_AVL_TABLE * ,void * );// Offset=0x30 Size=0x4
+    void * TableContext;// Offset=0x34 Size=0x4
+};

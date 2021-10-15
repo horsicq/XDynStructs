@@ -1,0 +1,12 @@
+struct _unnamed_91// Size=0x2c
+{
+    struct _KDEVICE_QUEUE_ENTRY DeviceQueueEntry;// Offset=0x0 Size=0x10
+    void * DriverContext[4];// Offset=0x0 Size=0x10
+    struct _ETHREAD * Thread;// Offset=0x10 Size=0x4
+    char * AuxiliaryBuffer;// Offset=0x14 Size=0x4
+    struct _LIST_ENTRY ListEntry;// Offset=0x18 Size=0x8
+    struct _IO_STACK_LOCATION * CurrentStackLocation;// Offset=0x20 Size=0x4
+    unsigned long PacketType;// Offset=0x20 Size=0x4
+    struct _FILE_OBJECT * OriginalFileObject;// Offset=0x24 Size=0x4
+    void * IrpExtension;// Offset=0x28 Size=0x4
+};

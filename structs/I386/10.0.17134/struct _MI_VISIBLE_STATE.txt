@@ -16,7 +16,9 @@ struct _MI_VISIBLE_STATE// Size=0xa80
     unsigned long ProcessCommit;// Offset=0xbc Size=0x4
     long DriverCommit;// Offset=0xc0 Size=0x4
     unsigned long PfnDatabaseCommit;// Offset=0xc4 Size=0x4
+    unsigned char __align0[56];// Offset=0xc8 Size=0x38
     struct _MMSUPPORT_FULL SystemWs[6];// Offset=0x100 Size=0x360
+    unsigned char __align1[32];// Offset=0x460 Size=0x20
     struct _MMSUPPORT_SHARED SystemCacheShared;// Offset=0x480 Size=0x2c
     unsigned long MapCacheFailures;// Offset=0x4ac Size=0x4
     unsigned long PagefileHashPages;// Offset=0x4b0 Size=0x4

@@ -1,0 +1,5 @@
+struct _EXCEPTION_POINTERS// Size=0x8
+{
+    struct _EXCEPTION_RECORD * ExceptionRecord;// Offset=0x0 Size=0x4
+    struct _CONTEXT * ContextRecord;// Offset=0x4 Size=0x4
+};

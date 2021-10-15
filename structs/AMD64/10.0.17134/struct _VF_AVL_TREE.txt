@@ -5,5 +5,6 @@ struct _VF_AVL_TREE// Size=0x28
     struct _VF_AVL_TABLE * Tables;// Offset=0x10 Size=0x8
     unsigned long TablesNo;// Offset=0x18 Size=0x4
     unsigned char UseSessionId;// Offset=0x1c Size=0x1
+    unsigned char __align0[3];// Offset=0x1d Size=0x3
     union _unnamed_788 u1;// Offset=0x20 Size=0x4
 };

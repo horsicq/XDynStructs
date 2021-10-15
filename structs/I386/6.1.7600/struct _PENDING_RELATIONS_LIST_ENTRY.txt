@@ -1,0 +1,16 @@
+struct _PENDING_RELATIONS_LIST_ENTRY// Size=0x3c
+{
+    struct _LIST_ENTRY Link;// Offset=0x0 Size=0x8
+    struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x8 Size=0x10
+    struct _PNP_DEVICE_EVENT_ENTRY * DeviceEvent;// Offset=0x18 Size=0x4
+    struct _DEVICE_OBJECT * DeviceObject;// Offset=0x1c Size=0x4
+    struct _RELATION_LIST * RelationsList;// Offset=0x20 Size=0x4
+    struct _IRP * EjectIrp;// Offset=0x24 Size=0x4
+    enum IRPLOCK Lock;// Offset=0x28 Size=0x4
+    unsigned long Problem;// Offset=0x2c Size=0x4
+    unsigned char ProfileChangingEject;// Offset=0x30 Size=0x1
+    unsigned char DisplaySafeRemovalDialog;// Offset=0x31 Size=0x1
+    unsigned char __align0[2];// Offset=0x32 Size=0x2
+    enum _SYSTEM_POWER_STATE LightestSleepState;// Offset=0x34 Size=0x4
+    struct DOCK_INTERFACE * DockInterface;// Offset=0x38 Size=0x4
+};

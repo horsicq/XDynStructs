@@ -1,0 +1,13 @@
+struct _HALP_DMA_MASTER_ADAPTER_OBJECT// Size=0xd8
+{
+    struct _HALP_DMA_ADAPTER_OBJECT AdapterObject;// Offset=0x0 Size=0x98
+    struct _LIST_ENTRY ContiguousAdapterQueue;// Offset=0x98 Size=0x10
+    struct _LIST_ENTRY ScatterAdapterQueue;// Offset=0xa8 Size=0x10
+    unsigned long MapBufferSize;// Offset=0xb8 Size=0x4
+    unsigned char __align0[4];// Offset=0xbc Size=0x4
+    union _LARGE_INTEGER MapBufferPhysicalAddress;// Offset=0xc0 Size=0x8
+    unsigned long ContiguousPageCount;// Offset=0xc8 Size=0x4
+    unsigned long ContiguousPageLimit;// Offset=0xcc Size=0x4
+    unsigned long ScatterPageCount;// Offset=0xd0 Size=0x4
+    unsigned long ScatterPageLimit;// Offset=0xd4 Size=0x4
+};

@@ -1,0 +1,11 @@
+union _unnamed_987// Size=0x18
+{
+    struct _unnamed_985 Polled;// Offset=0x0 Size=0x4
+    struct _unnamed_986 Interrupt;// Offset=0x0 Size=0x18
+    struct _unnamed_986 LocalInterrupt;// Offset=0x0 Size=0x18
+    struct _unnamed_986 Sci;// Offset=0x0 Size=0x18
+    struct _unnamed_986 Nmi;// Offset=0x0 Size=0x18
+    struct _unnamed_986 Sea;// Offset=0x0 Size=0x18
+    struct _unnamed_986 Sei;// Offset=0x0 Size=0x18
+    struct _unnamed_986 Gsiv;// Offset=0x0 Size=0x18
+};

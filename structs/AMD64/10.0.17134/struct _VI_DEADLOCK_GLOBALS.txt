@@ -25,8 +25,10 @@ struct _VI_DEADLOCK_GLOBALS// Size=0x8180
     unsigned long TotalReleases;// Offset=0x8048 Size=0x4
     unsigned long RootNodesDeleted;// Offset=0x804c Size=0x4
     unsigned long ForgetHistoryCounter;// Offset=0x8050 Size=0x4
+    unsigned char __align0[4];// Offset=0x8054 Size=0x4
     void * Instigator;// Offset=0x8058 Size=0x8
     unsigned long NumberOfParticipants;// Offset=0x8060 Size=0x4
+    unsigned char __align1[4];// Offset=0x8064 Size=0x4
     struct _VI_DEADLOCK_NODE * Participant[32];// Offset=0x8068 Size=0x100
     long ChildrenCountWatermark;// Offset=0x8168 Size=0x4
     enum _KERNEL_STACK_LIMITS StackType;// Offset=0x816c Size=0x4

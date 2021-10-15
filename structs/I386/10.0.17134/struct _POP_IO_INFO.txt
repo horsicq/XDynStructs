@@ -10,8 +10,10 @@ struct _POP_IO_INFO// Size=0x60
     unsigned long long FileOffset;// Offset=0x30 Size=0x8
     void * Buffer;// Offset=0x38 Size=0x4
     unsigned char AsyncCapable;// Offset=0x3c Size=0x1
+    unsigned char __align0[3];// Offset=0x3d Size=0x3
     unsigned long long BytesToRead;// Offset=0x40 Size=0x8
     unsigned long Pages;// Offset=0x48 Size=0x4
+    unsigned char __align1[4];// Offset=0x4c Size=0x4
     unsigned long long HighestChecksumIndex;// Offset=0x50 Size=0x8
     unsigned short PreviousChecksum;// Offset=0x58 Size=0x2
 };

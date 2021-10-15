@@ -1,0 +1,21 @@
+struct _POOL_DESCRIPTOR// Size=0x1140
+{
+    enum _POOL_TYPE PoolType;// Offset=0x0 Size=0x4
+    struct _KGUARDED_MUTEX PagedLock;// Offset=0x4 Size=0x20
+    unsigned long NonPagedLock;// Offset=0x4 Size=0x4
+    unsigned char __align0[56];// Offset=0x8 Size=0x38
+    long RunningAllocs;// Offset=0x40 Size=0x4
+    long RunningDeAllocs;// Offset=0x44 Size=0x4
+    long TotalBigPages;// Offset=0x48 Size=0x4
+    long ThreadsProcessingDeferrals;// Offset=0x4c Size=0x4
+    unsigned long TotalBytes;// Offset=0x50 Size=0x4
+    unsigned char __align1[44];// Offset=0x54 Size=0x2c
+    unsigned long PoolIndex;// Offset=0x80 Size=0x4
+    unsigned char __align2[60];// Offset=0x84 Size=0x3c
+    long TotalPages;// Offset=0xc0 Size=0x4
+    unsigned char __align3[60];// Offset=0xc4 Size=0x3c
+    void ** PendingFrees;// Offset=0x100 Size=0x4
+    long PendingFreeDepth;// Offset=0x104 Size=0x4
+    unsigned char __align4[56];// Offset=0x108 Size=0x38
+    struct _LIST_ENTRY ListHeads[512];// Offset=0x140 Size=0x1000
+};

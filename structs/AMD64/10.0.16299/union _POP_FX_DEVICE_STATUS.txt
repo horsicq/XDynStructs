@@ -1,0 +1,17 @@
+union _POP_FX_DEVICE_STATUS// Size=0x4
+{
+    long Value;// Offset=0x0 Size=0x4
+    unsigned long SystemTransition:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long PepD0Notify:1;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long IdleTimerOn:1;// Offset=0x0 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long IgnoreIdleTimeout:1;// Offset=0x0 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long IrpInUse:1;// Offset=0x0 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long IrpPending:1;// Offset=0x0 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long DPNRDeviceNotified:1;// Offset=0x0 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long DPNRReceivedFromPep:1;// Offset=0x0 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long IrpFirstPendingIndex:1;// Offset=0x0 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long IrpLastPendingIndex:1;// Offset=0x0 Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long SIrpBlocked:1;// Offset=0x0 Size=0x4 BitOffset=0xa BitSize=0x1
+    unsigned long BlockFastResume:1;// Offset=0x0 Size=0x4 BitOffset=0xb BitSize=0x1
+    unsigned long Reserved:20;// Offset=0x0 Size=0x4 BitOffset=0xc BitSize=0x14
+};

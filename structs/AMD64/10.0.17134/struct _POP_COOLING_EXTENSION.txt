@@ -9,6 +9,7 @@ struct _POP_COOLING_EXTENSION// Size=0x90
     unsigned char ActiveEngaged;// Offset=0x41 Size=0x1
     unsigned char ThrottleLimit;// Offset=0x42 Size=0x1
     unsigned char UpdatingToCurrent;// Offset=0x43 Size=0x1
+    unsigned char __align0[4];// Offset=0x44 Size=0x4
     struct _KEVENT * RemovalFlushEvent;// Offset=0x48 Size=0x8
     struct _KEVENT * PnpFlushEvent;// Offset=0x50 Size=0x8
     struct _THERMAL_COOLING_INTERFACE Interface;// Offset=0x58 Size=0x38

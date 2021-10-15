@@ -1,0 +1,39 @@
+struct _MI_SYSTEM_INFORMATION// Size=0x1bc0
+{
+    struct _MI_POOL_STATE Pools;// Offset=0x0 Size=0xf8
+    unsigned char __align0[8];// Offset=0xf8 Size=0x8
+    struct _MI_SECTION_STATE Sections;// Offset=0x100 Size=0x280
+    struct _MI_SYSTEM_IMAGE_STATE SystemImages;// Offset=0x380 Size=0xc0
+    struct _MI_SESSION_STATE Sessions;// Offset=0x440 Size=0xa0
+    struct _MI_PROCESS_STATE Processes;// Offset=0x4e0 Size=0x60
+    struct _MI_HARDWARE_STATE Hardware;// Offset=0x540 Size=0x108
+    unsigned char __align1[56];// Offset=0x648 Size=0x38
+    struct _MI_SYSTEM_VA_STATE SystemVa;// Offset=0x680 Size=0x340
+    struct _MI_COMBINE_STATE PageCombines;// Offset=0x9c0 Size=0x1a0
+    struct _MI_PAGELIST_STATE PageLists;// Offset=0xb60 Size=0x10
+    struct _MI_PARTITION_STATE Partitions;// Offset=0xb70 Size=0x60
+    struct _MI_SHUTDOWN_STATE Shutdowns;// Offset=0xbd0 Size=0x80
+    struct _MI_ERROR_STATE Errors;// Offset=0xc50 Size=0xb8
+    unsigned char __align2[56];// Offset=0xd08 Size=0x38
+    struct _MI_ACCESS_LOG_STATE AccessLog;// Offset=0xd40 Size=0x80
+    struct _MI_DEBUGGER_STATE Debugger;// Offset=0xdc0 Size=0x118
+    unsigned char __align3[40];// Offset=0xed8 Size=0x28
+    struct _MI_STANDBY_STATE Standby;// Offset=0xf00 Size=0xc0
+    struct _MI_SYSTEM_PTE_STATE SystemPtes;// Offset=0xfc0 Size=0x1c0
+    struct _MI_IO_PAGE_STATE IoPages;// Offset=0x1180 Size=0x68
+    unsigned char __align4[8];// Offset=0x11e8 Size=0x8
+    struct _MI_PAGING_IO_STATE PagingIo;// Offset=0x11f0 Size=0x50
+    struct _MI_COMMON_PAGE_STATE CommonPages;// Offset=0x1240 Size=0xa8
+    unsigned char __align5[24];// Offset=0x12e8 Size=0x18
+    struct _MI_SYSTEM_TRIM_STATE Trims;// Offset=0x1300 Size=0x40
+    unsigned long long Cookie;// Offset=0x1340 Size=0x8
+    long ZeroingDisabled;// Offset=0x1348 Size=0x4
+    unsigned char __align6[4];// Offset=0x134c Size=0x4
+    void ** BootRegistryRuns;// Offset=0x1350 Size=0x8
+    unsigned char FullyInitialized;// Offset=0x1358 Size=0x1
+    unsigned char SafeBooted;// Offset=0x1359 Size=0x1
+    unsigned char __align7[6];// Offset=0x135a Size=0x6
+    struct _TlgProvider_t * TraceLogging;// Offset=0x1360 Size=0x8
+    unsigned char __align8[24];// Offset=0x1368 Size=0x18
+    struct _MI_VISIBLE_STATE Vs;// Offset=0x1380 Size=0x840
+};

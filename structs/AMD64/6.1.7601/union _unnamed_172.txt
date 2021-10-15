@@ -1,0 +1,13 @@
+union _unnamed_172// Size=0x8
+{
+    unsigned long long Long;// Offset=0x0 Size=0x8
+    unsigned long long VolatileLong;// Offset=0x0 Size=0x8
+    struct _MMPTE_HARDWARE Hard;// Offset=0x0 Size=0x8
+    struct _HARDWARE_PTE Flush;// Offset=0x0 Size=0x8
+    struct _MMPTE_PROTOTYPE Proto;// Offset=0x0 Size=0x8
+    struct _MMPTE_SOFTWARE Soft;// Offset=0x0 Size=0x8
+    struct _MMPTE_TIMESTAMP TimeStamp;// Offset=0x0 Size=0x8
+    struct _MMPTE_TRANSITION Trans;// Offset=0x0 Size=0x8
+    struct _MMPTE_SUBSECTION Subsect;// Offset=0x0 Size=0x8
+    struct _MMPTE_LIST List;// Offset=0x0 Size=0x8
+};

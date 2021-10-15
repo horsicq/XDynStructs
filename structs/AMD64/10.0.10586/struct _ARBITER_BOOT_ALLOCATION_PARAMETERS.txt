@@ -1,0 +1,4 @@
+struct _ARBITER_BOOT_ALLOCATION_PARAMETERS// Size=0x8
+{
+    struct _LIST_ENTRY * ArbitrationList;// Offset=0x0 Size=0x8
+};

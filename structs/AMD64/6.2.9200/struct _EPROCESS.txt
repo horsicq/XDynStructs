@@ -88,6 +88,7 @@ struct _EPROCESS// Size=0x660
     void * SectionObject;// Offset=0x3a8 Size=0x8
     void * SectionBaseAddress;// Offset=0x3b0 Size=0x8
     unsigned long Cookie;// Offset=0x3b8 Size=0x4
+    unsigned char __align0[4];// Offset=0x3bc Size=0x4
     struct _PAGEFAULT_HISTORY * WorkingSetWatch;// Offset=0x3c0 Size=0x8
     void * Win32WindowStation;// Offset=0x3c8 Size=0x8
     void * InheritedFromUniqueProcessId;// Offset=0x3d0 Size=0x8

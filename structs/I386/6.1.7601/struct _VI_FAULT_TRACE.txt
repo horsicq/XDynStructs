@@ -1,0 +1,5 @@
+struct _VI_FAULT_TRACE// Size=0x24
+{
+    struct _ETHREAD * Thread;// Offset=0x0 Size=0x4
+    void * StackTrace[8];// Offset=0x4 Size=0x20
+};

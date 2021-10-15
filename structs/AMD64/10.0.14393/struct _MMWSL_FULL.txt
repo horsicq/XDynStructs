@@ -1,0 +1,5 @@
+struct _MMWSL_FULL// Size=0x200
+{
+    struct _MMWSL_INSTANCE Instance;// Offset=0x0 Size=0x1a0
+    struct _MMWSL_SHARED Shared;// Offset=0x1a0 Size=0x60
+};

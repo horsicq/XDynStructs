@@ -1,0 +1,22 @@
+struct _FSRTL_ADVANCED_FCB_HEADER// Size=0x48
+{
+    short NodeTypeCode;// Offset=0x0 Size=0x2
+    short NodeByteSize;// Offset=0x2 Size=0x2
+    unsigned char Flags;// Offset=0x4 Size=0x1
+    unsigned char IsFastIoPossible;// Offset=0x5 Size=0x1
+    unsigned char Flags2;// Offset=0x6 Size=0x1
+    unsigned char Reserved:4;// Offset=0x7 Size=0x1 BitOffset=0x0 BitSize=0x4
+    unsigned char Version:4;// Offset=0x7 Size=0x1 BitOffset=0x4 BitSize=0x4
+    struct _ERESOURCE * Resource;// Offset=0x8 Size=0x4
+    struct _ERESOURCE * PagingIoResource;// Offset=0xc Size=0x4
+    union _LARGE_INTEGER AllocationSize;// Offset=0x10 Size=0x8
+    union _LARGE_INTEGER FileSize;// Offset=0x18 Size=0x8
+    union _LARGE_INTEGER ValidDataLength;// Offset=0x20 Size=0x8
+    struct _FAST_MUTEX * FastMutex;// Offset=0x28 Size=0x4
+    struct _LIST_ENTRY FilterContexts;// Offset=0x2c Size=0x8
+    struct _EX_PUSH_LOCK PushLock;// Offset=0x34 Size=0x4
+    void ** FileContextSupportPointer;// Offset=0x38 Size=0x4
+    void * Oplock;// Offset=0x3c Size=0x4
+    void * ReservedForRemote;// Offset=0x3c Size=0x4
+    void * ReservedContext;// Offset=0x40 Size=0x4
+};

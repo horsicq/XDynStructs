@@ -1,0 +1,5 @@
+struct _KiIoAccessMap// Size=0x2024
+{
+    unsigned char DirectionMap[32];// Offset=0x0 Size=0x20
+    unsigned char IoMap[8196];// Offset=0x20 Size=0x2004
+};

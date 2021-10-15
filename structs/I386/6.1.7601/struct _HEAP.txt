@@ -1,0 +1,58 @@
+struct _HEAP// Size=0x138
+{
+    struct _HEAP_ENTRY Entry;// Offset=0x0 Size=0x8
+    unsigned long SegmentSignature;// Offset=0x8 Size=0x4
+    unsigned long SegmentFlags;// Offset=0xc Size=0x4
+    struct _LIST_ENTRY SegmentListEntry;// Offset=0x10 Size=0x8
+    struct _HEAP * Heap;// Offset=0x18 Size=0x4
+    void * BaseAddress;// Offset=0x1c Size=0x4
+    unsigned long NumberOfPages;// Offset=0x20 Size=0x4
+    struct _HEAP_ENTRY * FirstEntry;// Offset=0x24 Size=0x4
+    struct _HEAP_ENTRY * LastValidEntry;// Offset=0x28 Size=0x4
+    unsigned long NumberOfUnCommittedPages;// Offset=0x2c Size=0x4
+    unsigned long NumberOfUnCommittedRanges;// Offset=0x30 Size=0x4
+    unsigned short SegmentAllocatorBackTraceIndex;// Offset=0x34 Size=0x2
+    unsigned short Reserved;// Offset=0x36 Size=0x2
+    struct _LIST_ENTRY UCRSegmentList;// Offset=0x38 Size=0x8
+    unsigned long Flags;// Offset=0x40 Size=0x4
+    unsigned long ForceFlags;// Offset=0x44 Size=0x4
+    unsigned long CompatibilityFlags;// Offset=0x48 Size=0x4
+    unsigned long EncodeFlagMask;// Offset=0x4c Size=0x4
+    struct _HEAP_ENTRY Encoding;// Offset=0x50 Size=0x8
+    unsigned long PointerKey;// Offset=0x58 Size=0x4
+    unsigned long Interceptor;// Offset=0x5c Size=0x4
+    unsigned long VirtualMemoryThreshold;// Offset=0x60 Size=0x4
+    unsigned long Signature;// Offset=0x64 Size=0x4
+    unsigned long SegmentReserve;// Offset=0x68 Size=0x4
+    unsigned long SegmentCommit;// Offset=0x6c Size=0x4
+    unsigned long DeCommitFreeBlockThreshold;// Offset=0x70 Size=0x4
+    unsigned long DeCommitTotalFreeThreshold;// Offset=0x74 Size=0x4
+    unsigned long TotalFreeSize;// Offset=0x78 Size=0x4
+    unsigned long MaximumAllocationSize;// Offset=0x7c Size=0x4
+    unsigned short ProcessHeapsListIndex;// Offset=0x80 Size=0x2
+    unsigned short HeaderValidateLength;// Offset=0x82 Size=0x2
+    void * HeaderValidateCopy;// Offset=0x84 Size=0x4
+    unsigned short NextAvailableTagIndex;// Offset=0x88 Size=0x2
+    unsigned short MaximumTagIndex;// Offset=0x8a Size=0x2
+    struct _HEAP_TAG_ENTRY * TagEntries;// Offset=0x8c Size=0x4
+    struct _LIST_ENTRY UCRList;// Offset=0x90 Size=0x8
+    unsigned long AlignRound;// Offset=0x98 Size=0x4
+    unsigned long AlignMask;// Offset=0x9c Size=0x4
+    struct _LIST_ENTRY VirtualAllocdBlocks;// Offset=0xa0 Size=0x8
+    struct _LIST_ENTRY SegmentList;// Offset=0xa8 Size=0x8
+    unsigned short AllocatorBackTraceIndex;// Offset=0xb0 Size=0x2
+    unsigned char __align0[2];// Offset=0xb2 Size=0x2
+    unsigned long NonDedicatedListLength;// Offset=0xb4 Size=0x4
+    void * BlocksIndex;// Offset=0xb8 Size=0x4
+    void * UCRIndex;// Offset=0xbc Size=0x4
+    struct _HEAP_PSEUDO_TAG_ENTRY * PseudoTagEntries;// Offset=0xc0 Size=0x4
+    struct _LIST_ENTRY FreeLists;// Offset=0xc4 Size=0x8
+    struct _HEAP_LOCK * LockVariable;// Offset=0xcc Size=0x4
+    long  ( * CommitRoutine)(void * ,void ** ,unsigned long * );// Offset=0xd0 Size=0x4
+    void * FrontEndHeap;// Offset=0xd4 Size=0x4
+    unsigned short FrontHeapLockCount;// Offset=0xd8 Size=0x2
+    unsigned char FrontEndHeapType;// Offset=0xda Size=0x1
+    unsigned char __align1[1];// Offset=0xdb Size=0x1
+    struct _HEAP_COUNTERS Counters;// Offset=0xdc Size=0x54
+    struct _HEAP_TUNING_PARAMETERS TuningParameters;// Offset=0x130 Size=0x8
+};

@@ -1,0 +1,18 @@
+struct _MI_PARTITION// Size=0x2d00
+{
+    struct _MI_PARTITION_CORE Core;// Offset=0x0 Size=0x1b8
+    struct _MI_PARTITION_MODWRITES Modwriter;// Offset=0x1b8 Size=0x2c0
+    unsigned char __align0[8];// Offset=0x478 Size=0x8
+    struct _MI_PARTITION_STORES Store;// Offset=0x480 Size=0x90
+    unsigned char __align1[48];// Offset=0x510 Size=0x30
+    struct _MI_PARTITION_SEGMENTS Segments;// Offset=0x540 Size=0x340
+    struct _MI_PARTITION_PAGE_LISTS PageLists;// Offset=0x880 Size=0xfc0
+    struct _MI_PARTITION_COMMIT Commit;// Offset=0x1840 Size=0x40
+    struct _MI_PARTITION_ZEROING Zeroing;// Offset=0x1880 Size=0xb0
+    struct _MI_PAGE_COMBINING_SUPPORT PageCombine;// Offset=0x1930 Size=0x190
+    void * WorkingSetControl;// Offset=0x1ac0 Size=0x8
+    struct _MMWORKING_SET_EXPANSION_HEAD WorkingSetExpansionHead;// Offset=0x1ac8 Size=0x10
+    unsigned long SessionDetachTimeStamp;// Offset=0x1ad8 Size=0x4
+    unsigned char __align2[36];// Offset=0x1adc Size=0x24
+    struct _MI_VISIBLE_PARTITION Vp;// Offset=0x1b00 Size=0x1200
+};

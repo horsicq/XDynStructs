@@ -1,0 +1,7 @@
+struct _EX_RUNDOWN_REF_CACHE_AWARE// Size=0x10
+{
+    struct _EX_RUNDOWN_REF * RunRefs;// Offset=0x0 Size=0x4
+    void * PoolToFree;// Offset=0x4 Size=0x4
+    unsigned long RunRefSize;// Offset=0x8 Size=0x4
+    unsigned long Number;// Offset=0xc Size=0x4
+};

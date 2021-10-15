@@ -1,0 +1,6 @@
+struct _DMA_TRANSFER_INFO// Size=0x14
+{
+    unsigned long Version;// Offset=0x0 Size=0x4
+    struct _DMA_TRANSFER_INFO_V1 V1;// Offset=0x4 Size=0xc
+    struct _DMA_TRANSFER_INFO_V2 V2;// Offset=0x4 Size=0x10
+};

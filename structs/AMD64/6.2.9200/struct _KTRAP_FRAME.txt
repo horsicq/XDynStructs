@@ -41,6 +41,7 @@ struct _KTRAP_FRAME// Size=0x190
     unsigned long long LastExceptionFromRip;// Offset=0x128 Size=0x8
     unsigned long long LastBranchControl;// Offset=0x108 Size=0x8
     unsigned long LastBranchMSR;// Offset=0x110 Size=0x4
+    unsigned char __align0[28];// Offset=0x114 Size=0x1c
     unsigned short SegDs;// Offset=0x130 Size=0x2
     unsigned short SegEs;// Offset=0x132 Size=0x2
     unsigned short SegFs;// Offset=0x134 Size=0x2

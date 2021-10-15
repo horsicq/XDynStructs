@@ -5,5 +5,6 @@ struct _PEP_ACPI_SPB_SPI_RESOURCE// Size=0x38
     unsigned char DataBitLength;// Offset=0x2c Size=0x1
     unsigned char Phase;// Offset=0x2d Size=0x1
     unsigned char Polarity;// Offset=0x2e Size=0x1
+    unsigned char __align0[1];// Offset=0x2f Size=0x1
     unsigned short DeviceSelection;// Offset=0x30 Size=0x2
 };

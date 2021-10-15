@@ -1,0 +1,6 @@
+union _JOBOBJECT_ENERGY_TRACKING_STATE// Size=0x8
+{
+    unsigned long long Value;// Offset=0x0 Size=0x8
+    unsigned long UpdateMask;// Offset=0x0 Size=0x4
+    unsigned long DesiredState;// Offset=0x4 Size=0x4
+};

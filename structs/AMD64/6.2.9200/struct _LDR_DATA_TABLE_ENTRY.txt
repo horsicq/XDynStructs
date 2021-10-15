@@ -7,6 +7,7 @@ struct _LDR_DATA_TABLE_ENTRY// Size=0x110
     void * DllBase;// Offset=0x30 Size=0x8
     void * EntryPoint;// Offset=0x38 Size=0x8
     unsigned long SizeOfImage;// Offset=0x40 Size=0x4
+    unsigned char __align0[4];// Offset=0x44 Size=0x4
     struct _UNICODE_STRING FullDllName;// Offset=0x48 Size=0x10
     struct _UNICODE_STRING BaseDllName;// Offset=0x58 Size=0x10
     unsigned char FlagGroup[4];// Offset=0x68 Size=0x4
@@ -41,6 +42,7 @@ struct _LDR_DATA_TABLE_ENTRY// Size=0x110
     unsigned short TlsIndex;// Offset=0x6e Size=0x2
     struct _LIST_ENTRY HashLinks;// Offset=0x70 Size=0x10
     unsigned long TimeDateStamp;// Offset=0x80 Size=0x4
+    unsigned char __align1[4];// Offset=0x84 Size=0x4
     struct _ACTIVATION_CONTEXT * EntryPointActivationContext;// Offset=0x88 Size=0x8
     void * PatchInformation;// Offset=0x90 Size=0x8
     struct _LDR_DDAG_NODE * DdagNode;// Offset=0x98 Size=0x8

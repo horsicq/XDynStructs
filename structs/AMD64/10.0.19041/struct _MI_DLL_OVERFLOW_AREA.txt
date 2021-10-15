@@ -1,0 +1,7 @@
+struct _MI_DLL_OVERFLOW_AREA// Size=0x20
+{
+    void * RangeStart;// Offset=0x0 Size=0x8
+    void * NextVa;// Offset=0x8 Size=0x8
+    void * RangeStartAbove2gb;// Offset=0x10 Size=0x8
+    void * NextVaAbove2gb;// Offset=0x18 Size=0x8
+};

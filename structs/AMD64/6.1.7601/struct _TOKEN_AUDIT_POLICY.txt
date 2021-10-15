@@ -1,0 +1,4 @@
+struct _TOKEN_AUDIT_POLICY// Size=0x1b
+{
+    unsigned char PerUserPolicy[27];// Offset=0x0 Size=0x1b
+};

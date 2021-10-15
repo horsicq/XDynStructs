@@ -1,0 +1,9 @@
+struct _POP_POLICY_DEVICE// Size=0x20
+{
+    struct _LIST_ENTRY Link;// Offset=0x0 Size=0x8
+    enum POWER_POLICY_DEVICE_TYPE DeviceType;// Offset=0x8 Size=0x4
+    void * Notification;// Offset=0xc Size=0x4
+    struct _UNICODE_STRING Name;// Offset=0x10 Size=0x8
+    struct _DEVICE_OBJECT * Device;// Offset=0x18 Size=0x4
+    struct _IRP * Irp;// Offset=0x1c Size=0x4
+};

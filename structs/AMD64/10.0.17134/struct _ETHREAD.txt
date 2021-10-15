@@ -73,6 +73,7 @@ struct _ETHREAD// Size=0x818
     unsigned char SystemPagePriorityActive:1;// Offset=0x6d9 Size=0x1 BitOffset=0x0 BitSize=0x1
     unsigned char SystemPagePriority:3;// Offset=0x6d9 Size=0x1 BitOffset=0x1 BitSize=0x3
     unsigned char AllowWritesToExecutableMemory:1;// Offset=0x6d9 Size=0x1 BitOffset=0x4 BitSize=0x1
+    unsigned char __align0[2];// Offset=0x6da Size=0x2
     unsigned char CacheManagerActive;// Offset=0x6dc Size=0x1
     unsigned char DisablePageFaultClustering;// Offset=0x6dd Size=0x1
     unsigned char ActiveFaultCount;// Offset=0x6de Size=0x1
@@ -80,12 +81,14 @@ struct _ETHREAD// Size=0x818
     unsigned long long AlpcMessageId;// Offset=0x6e0 Size=0x8
     void * AlpcMessage;// Offset=0x6e8 Size=0x8
     unsigned long AlpcReceiveAttributeSet;// Offset=0x6e8 Size=0x4
+    unsigned char __align1[4];// Offset=0x6ec Size=0x4
     struct _LIST_ENTRY AlpcWaitListEntry;// Offset=0x6f0 Size=0x10
     long ExitStatus;// Offset=0x700 Size=0x4
     unsigned long CacheManagerCount;// Offset=0x704 Size=0x4
     unsigned long IoBoostCount;// Offset=0x708 Size=0x4
     unsigned long IoQoSBoostCount;// Offset=0x70c Size=0x4
     unsigned long IoQoSThrottleCount;// Offset=0x710 Size=0x4
+    unsigned char __align2[4];// Offset=0x714 Size=0x4
     struct _LIST_ENTRY BoostList;// Offset=0x718 Size=0x10
     struct _LIST_ENTRY DeboostList;// Offset=0x728 Size=0x10
     unsigned long long BoostListLock;// Offset=0x738 Size=0x8
@@ -96,6 +99,7 @@ struct _ETHREAD// Size=0x818
     struct _SINGLE_LIST_ENTRY SeLearningModeListHead;// Offset=0x760 Size=0x8
     void * VerifierContext;// Offset=0x768 Size=0x8
     unsigned long KernelStackReference;// Offset=0x770 Size=0x4
+    unsigned char __align3[4];// Offset=0x774 Size=0x4
     void * AdjustedClientToken;// Offset=0x778 Size=0x8
     void * WorkOnBehalfThread;// Offset=0x780 Size=0x8
     struct _PS_PROPERTY_SET PropertySet;// Offset=0x788 Size=0x18
@@ -110,6 +114,7 @@ struct _ETHREAD// Size=0x818
     struct _UNICODE_STRING * ThreadName;// Offset=0x7d8 Size=0x8
     struct _CONTEXT * SetContextState;// Offset=0x7e0 Size=0x8
     unsigned long LastExpectedRunTime;// Offset=0x7e8 Size=0x4
+    unsigned char __align4[4];// Offset=0x7ec Size=0x4
     struct _LIST_ENTRY OwnerEntryListHead;// Offset=0x7f0 Size=0x10
     unsigned long long DisownedOwnerEntryListLock;// Offset=0x800 Size=0x8
     struct _LIST_ENTRY DisownedOwnerEntryListHead;// Offset=0x808 Size=0x10

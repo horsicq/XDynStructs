@@ -11,6 +11,7 @@ struct _KALPC_MESSAGE// Size=0x108
     struct _ALPC_PORT * CancelSequencePort;// Offset=0x38 Size=0x8
     struct _ALPC_PORT * CancelQueuePort;// Offset=0x40 Size=0x8
     long CancelSequenceNo;// Offset=0x48 Size=0x4
+    unsigned char __align0[4];// Offset=0x4c Size=0x4
     struct _LIST_ENTRY CancelListEntry;// Offset=0x50 Size=0x10
     struct _KALPC_RESERVE * Reserve;// Offset=0x60 Size=0x8
     struct _KALPC_MESSAGE_ATTRIBUTES MessageAttributes;// Offset=0x68 Size=0x40

@@ -1,0 +1,8 @@
+struct _IO_WORKITEM// Size=0x20
+{
+    struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x0 Size=0x10
+    void  ( * Routine)(void * ,void * ,struct _IO_WORKITEM * );// Offset=0x10 Size=0x4
+    void * IoObject;// Offset=0x14 Size=0x4
+    void * Context;// Offset=0x18 Size=0x4
+    unsigned long Type;// Offset=0x1c Size=0x4
+};

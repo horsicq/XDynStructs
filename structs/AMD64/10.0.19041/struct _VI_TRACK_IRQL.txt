@@ -1,0 +1,9 @@
+struct _VI_TRACK_IRQL// Size=0x38
+{
+    void * Thread;// Offset=0x0 Size=0x8
+    unsigned char OldIrql;// Offset=0x8 Size=0x1
+    unsigned char NewIrql;// Offset=0x9 Size=0x1
+    unsigned short Processor;// Offset=0xa Size=0x2
+    unsigned long TickCount;// Offset=0xc Size=0x4
+    void * StackTrace[5];// Offset=0x10 Size=0x28
+};

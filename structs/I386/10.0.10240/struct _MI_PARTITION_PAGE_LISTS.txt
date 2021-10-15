@@ -2,11 +2,17 @@ struct _MI_PARTITION_PAGE_LISTS// Size=0x6c0
 {
     struct _MMPFNLIST * FreePagesByColor[2];// Offset=0x0 Size=0x8
     union _SLIST_HEADER * FreePageSlist[2];// Offset=0x8 Size=0x8
+    unsigned char __align0[48];// Offset=0x10 Size=0x30
     struct _MMPFNLIST ZeroedPageListHead;// Offset=0x40 Size=0x14
+    unsigned char __align1[44];// Offset=0x54 Size=0x2c
     struct _MMPFNLIST FreePageListHead;// Offset=0x80 Size=0x14
+    unsigned char __align2[44];// Offset=0x94 Size=0x2c
     struct _MMPFNLIST StandbyPageListHead;// Offset=0xc0 Size=0x14
+    unsigned char __align3[44];// Offset=0xd4 Size=0x2c
     struct _MMPFNLIST StandbyPageListByPriority[8];// Offset=0x100 Size=0xa0
+    unsigned char __align4[32];// Offset=0x1a0 Size=0x20
     struct _MMPFNLIST ModifiedPageListNoReservation;// Offset=0x1c0 Size=0x14
+    unsigned char __align5[44];// Offset=0x1d4 Size=0x2c
     struct _MMPFNLIST ModifiedPageListByReservation[16];// Offset=0x200 Size=0x140
     struct _MMPFNLIST MappedPageListHead[16];// Offset=0x340 Size=0x140
     struct _MMPFNLIST BadPageListHead;// Offset=0x480 Size=0x14
@@ -17,11 +23,14 @@ struct _MI_PARTITION_PAGE_LISTS// Size=0x6c0
     unsigned long DecayHand;// Offset=0x5e4 Size=0x4
     unsigned long long LastDecayHandUpdateTime;// Offset=0x5e8 Size=0x8
     struct _MI_LDW_WORK_CONTEXT LastChanceLdwContext;// Offset=0x5f0 Size=0x20
+    unsigned char __align6[48];// Offset=0x610 Size=0x30
     unsigned long AvailableEventsLock;// Offset=0x640 Size=0x4
     struct _MI_AVAILABLE_PAGE_WAIT_STATES AvailablePageWaitStates[2];// Offset=0x644 Size=0x28
     unsigned long LowMemoryThreshold;// Offset=0x66c Size=0x4
     unsigned long HighMemoryThreshold;// Offset=0x670 Size=0x4
+    unsigned char __align7[12];// Offset=0x674 Size=0xc
     unsigned long TransitionPrivatePages;// Offset=0x680 Size=0x4
     unsigned char RebuildLargePagesInitialized;// Offset=0x684 Size=0x1
+    unsigned char __align8[3];// Offset=0x685 Size=0x3
     struct _MI_REBUILD_LARGE_PAGES RebuildLargePagesItem;// Offset=0x688 Size=0x34
 };

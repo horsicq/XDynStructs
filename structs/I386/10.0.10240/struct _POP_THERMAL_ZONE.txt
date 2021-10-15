@@ -17,10 +17,12 @@ struct _POP_THERMAL_ZONE// Size=0x2b8
     unsigned char Critical;// Offset=0x27 Size=0x1
     unsigned char ThermalStandby;// Offset=0x28 Size=0x1
     unsigned char OverThrottled;// Offset=0x29 Size=0x1
+    unsigned char __align0[2];// Offset=0x2a Size=0x2
     long HighPrecisionThrottle;// Offset=0x2c Size=0x4
     long Throttle;// Offset=0x30 Size=0x4
     long PendingThrottle;// Offset=0x34 Size=0x4
     unsigned long ThrottleReasons;// Offset=0x38 Size=0x4
+    unsigned char __align1[4];// Offset=0x3c Size=0x4
     unsigned long long LastTime;// Offset=0x40 Size=0x8
     unsigned long SampleRate;// Offset=0x48 Size=0x4
     unsigned long LastTemp;// Offset=0x4c Size=0x4
@@ -30,6 +32,7 @@ struct _POP_THERMAL_ZONE// Size=0x2b8
     union _LARGE_INTEGER InfoLastUpdateTime;// Offset=0xf0 Size=0x8
     struct _THERMAL_POLICY Policy;// Offset=0xf8 Size=0x18
     unsigned char PolicyDriver;// Offset=0x110 Size=0x1
+    unsigned char __align2[7];// Offset=0x111 Size=0x7
     unsigned long long LastActiveStartTime;// Offset=0x118 Size=0x8
     unsigned long long LastPassiveStartTime;// Offset=0x120 Size=0x8
     struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x128 Size=0x10
@@ -37,5 +40,6 @@ struct _POP_THERMAL_ZONE// Size=0x2b8
     struct _KEVENT ZoneStopped;// Offset=0x140 Size=0x10
     struct _KEVENT TemperatureUpdated;// Offset=0x150 Size=0x10
     unsigned long InstanceId;// Offset=0x160 Size=0x4
+    unsigned char __align3[4];// Offset=0x164 Size=0x4
     struct _POP_THERMAL_TELEMETRY_TRACKER TelemetryTracker;// Offset=0x168 Size=0x150
 };

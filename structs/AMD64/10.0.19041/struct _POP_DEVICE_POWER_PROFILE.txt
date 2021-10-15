@@ -1,0 +1,11 @@
+struct _POP_DEVICE_POWER_PROFILE// Size=0x58
+{
+    struct _UNICODE_STRING DeviceId;// Offset=0x0 Size=0x10
+    struct _POP_POWER_PLANE * PowerPlane;// Offset=0x10 Size=0x8
+    struct _POP_FX_DEVICE * FxDevice;// Offset=0x18 Size=0x8
+    long PowerDrawMw;// Offset=0x20 Size=0x4
+    struct _PO_POWER_PLANE_PROFILE DxPower[4];// Offset=0x24 Size=0x20
+    unsigned char __align0[4];// Offset=0x44 Size=0x4
+    unsigned long long ComponentCount;// Offset=0x48 Size=0x8
+    struct _POP_COMPONENT_POWER_PROFILE ** Components;// Offset=0x50 Size=0x8
+};

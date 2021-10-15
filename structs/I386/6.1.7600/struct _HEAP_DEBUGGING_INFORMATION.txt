@@ -1,0 +1,11 @@
+struct _HEAP_DEBUGGING_INFORMATION// Size=0x1c
+{
+    void * InterceptorFunction;// Offset=0x0 Size=0x4
+    unsigned short InterceptorValue;// Offset=0x4 Size=0x2
+    unsigned char __align0[2];// Offset=0x6 Size=0x2
+    unsigned long ExtendedOptions;// Offset=0x8 Size=0x4
+    unsigned long StackTraceDepth;// Offset=0xc Size=0x4
+    unsigned long MinTotalBlockSize;// Offset=0x10 Size=0x4
+    unsigned long MaxTotalBlockSize;// Offset=0x14 Size=0x4
+    long  ( * HeapLeakEnumerationRoutine)(long ,void * ,void * ,unsigned long ,unsigned long ,void * );// Offset=0x18 Size=0x4
+};

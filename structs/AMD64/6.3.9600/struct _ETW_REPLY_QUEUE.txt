@@ -1,0 +1,5 @@
+struct _ETW_REPLY_QUEUE// Size=0x48
+{
+    struct _KQUEUE Queue;// Offset=0x0 Size=0x40
+    long EventsLost;// Offset=0x40 Size=0x4
+};

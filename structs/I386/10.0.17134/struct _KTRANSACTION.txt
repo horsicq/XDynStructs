@@ -17,6 +17,7 @@ struct _KTRANSACTION// Size=0x1e0
     unsigned long OutcomeRequiredEnlistmentCount;// Offset=0x90 Size=0x4
     unsigned long PendingResponses;// Offset=0x94 Size=0x4
     struct _KENLISTMENT * SuperiorEnlistment;// Offset=0x98 Size=0x4
+    unsigned char __align0[4];// Offset=0x9c Size=0x4
     union _CLS_LSN LastLsn;// Offset=0xa0 Size=0x8
     struct _LIST_ENTRY PromotedEntry;// Offset=0xa8 Size=0x8
     struct _KTRANSACTION * PromoterTransaction;// Offset=0xb0 Size=0x4
@@ -28,6 +29,7 @@ struct _KTRANSACTION// Size=0x1e0
     struct _KTHREAD * RollbackThread;// Offset=0xd0 Size=0x4
     struct _WORK_QUEUE_ITEM RollbackWorkItem;// Offset=0xd4 Size=0x10
     struct _KDPC RollbackDpc;// Offset=0xe4 Size=0x20
+    unsigned char __align1[4];// Offset=0x104 Size=0x4
     struct _KTIMER RollbackTimer;// Offset=0x108 Size=0x28
     struct _LIST_ENTRY LsnOrderedEntry;// Offset=0x130 Size=0x8
     enum _KTRANSACTION_OUTCOME Outcome;// Offset=0x138 Size=0x4

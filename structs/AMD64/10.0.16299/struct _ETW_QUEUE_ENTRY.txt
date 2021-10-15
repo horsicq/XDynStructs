@@ -1,0 +1,11 @@
+struct _ETW_QUEUE_ENTRY// Size=0x38
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x10
+    struct _ETWP_NOTIFICATION_HEADER * DataBlock;// Offset=0x10 Size=0x8
+    struct _ETW_REG_ENTRY * RegEntry;// Offset=0x18 Size=0x8
+    struct _ETW_REG_ENTRY * ReplyObject;// Offset=0x20 Size=0x8
+    void * WakeReference;// Offset=0x28 Size=0x8
+    unsigned short RegIndex;// Offset=0x30 Size=0x2
+    unsigned short ReplyIndex;// Offset=0x32 Size=0x2
+    unsigned long Flags;// Offset=0x34 Size=0x4
+};

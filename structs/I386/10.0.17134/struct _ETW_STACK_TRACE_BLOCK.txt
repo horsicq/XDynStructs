@@ -3,6 +3,7 @@ struct _ETW_STACK_TRACE_BLOCK// Size=0x50
     union _LARGE_INTEGER RelatedTimestamp;// Offset=0x0 Size=0x8
     struct _ETHREAD * Thread;// Offset=0x8 Size=0x4
     struct _KDPC StackWalkDpc;// Offset=0xc Size=0x20
+    unsigned char __align0[4];// Offset=0x2c Size=0x4
     union _SLIST_HEADER ApcListHead;// Offset=0x30 Size=0x8
     struct _ETW_APC_ENTRY * ApcEntry;// Offset=0x38 Size=0x4
     unsigned long ApcEntryCount;// Offset=0x3c Size=0x4

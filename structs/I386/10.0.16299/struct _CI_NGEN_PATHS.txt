@@ -1,0 +1,3 @@
+struct _CI_NGEN_PATHS// Size=0x0
+{
+};

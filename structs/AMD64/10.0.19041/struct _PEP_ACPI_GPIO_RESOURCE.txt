@@ -1,0 +1,19 @@
+struct _PEP_ACPI_GPIO_RESOURCE// Size=0x48
+{
+    enum _PEP_ACPI_RESOURCE_TYPE Type;// Offset=0x0 Size=0x4
+    union _PEP_ACPI_RESOURCE_FLAGS Flags;// Offset=0x4 Size=0x4
+    enum _KINTERRUPT_MODE InterruptType;// Offset=0x8 Size=0x4
+    enum _KINTERRUPT_POLARITY InterruptPolarity;// Offset=0xc Size=0x4
+    enum _GPIO_PIN_CONFIG_TYPE PinConfig;// Offset=0x10 Size=0x4
+    enum _GPIO_PIN_IORESTRICTION_TYPE IoRestrictionType;// Offset=0x14 Size=0x4
+    unsigned short DriveStrength;// Offset=0x18 Size=0x2
+    unsigned short DebounceTimeout;// Offset=0x1a Size=0x2
+    unsigned char __align0[4];// Offset=0x1c Size=0x4
+    wchar_t * PinTable;// Offset=0x20 Size=0x8
+    unsigned short PinCount;// Offset=0x28 Size=0x2
+    unsigned char ResourceSourceIndex;// Offset=0x2a Size=0x1
+    unsigned char __align1[5];// Offset=0x2b Size=0x5
+    struct _UNICODE_STRING * ResourceSourceName;// Offset=0x30 Size=0x8
+    unsigned char * VendorData;// Offset=0x38 Size=0x8
+    unsigned short VendorDataLength;// Offset=0x40 Size=0x2
+};

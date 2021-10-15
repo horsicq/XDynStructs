@@ -1,0 +1,38 @@
+struct _MI_SYSTEM_INFORMATION// Size=0x3c00
+{
+    struct _MI_POOL_STATE Pools;// Offset=0x0 Size=0x4e8
+    unsigned char __align0[24];// Offset=0x4e8 Size=0x18
+    struct _MI_SECTION_STATE Sections;// Offset=0x500 Size=0x140
+    struct _MI_SYSTEM_IMAGE_STATE SystemImages;// Offset=0x640 Size=0x6c
+    struct _MI_SESSION_STATE Sessions;// Offset=0x6ac Size=0x1044
+    struct _MI_PROCESS_STATE Processes;// Offset=0x16f0 Size=0x80
+    struct _MI_HARDWARE_STATE Hardware;// Offset=0x1770 Size=0xc8
+    unsigned char __align1[8];// Offset=0x1838 Size=0x8
+    struct _MI_SYSTEM_VA_STATE SystemVa;// Offset=0x1840 Size=0x1540
+    struct _MI_COMBINE_STATE PageCombines;// Offset=0x2d80 Size=0x18
+    struct _MI_PAGELIST_STATE PageLists;// Offset=0x2d98 Size=0x8
+    struct _MI_PARTITION_STATE Partitions;// Offset=0x2da0 Size=0x38
+    struct _MI_SHUTDOWN_STATE Shutdowns;// Offset=0x2dd8 Size=0x48
+    struct _MI_ERROR_STATE Errors;// Offset=0x2e20 Size=0xa8
+    unsigned char __align2[56];// Offset=0x2ec8 Size=0x38
+    struct _MI_ACCESS_LOG_STATE AccessLog;// Offset=0x2f00 Size=0x80
+    struct _MI_DEBUGGER_STATE Debugger;// Offset=0x2f80 Size=0x90
+    unsigned char __align3[48];// Offset=0x3010 Size=0x30
+    struct _MI_STANDBY_STATE Standby;// Offset=0x3040 Size=0x80
+    struct _MI_SYSTEM_PTE_STATE SystemPtes;// Offset=0x30c0 Size=0x180
+    struct _MI_IO_PAGE_STATE IoPages;// Offset=0x3240 Size=0x40
+    struct _MI_PAGING_IO_STATE PagingIo;// Offset=0x3280 Size=0x38
+    struct _MI_COMMON_PAGE_STATE CommonPages;// Offset=0x32b8 Size=0x40
+    unsigned char __align4[8];// Offset=0x32f8 Size=0x8
+    struct _MI_SYSTEM_TRIM_STATE Trims;// Offset=0x3300 Size=0x40
+    unsigned long Cookie;// Offset=0x3340 Size=0x4
+    long ZeroingDisabled;// Offset=0x3344 Size=0x4
+    void ** BootRegistryRuns;// Offset=0x3348 Size=0x4
+    unsigned char FullyInitialized;// Offset=0x334c Size=0x1
+    unsigned char SafeBooted;// Offset=0x334d Size=0x1
+    unsigned char __align5[2];// Offset=0x334e Size=0x2
+    struct _RTL_BITMAP PfnBitMap;// Offset=0x3350 Size=0x8
+    struct _TlgProvider_t * TraceLogging;// Offset=0x3358 Size=0x4
+    unsigned char __align6[36];// Offset=0x335c Size=0x24
+    struct _MI_VISIBLE_STATE Vs;// Offset=0x3380 Size=0x880
+};

@@ -1,0 +1,4 @@
+struct _HEAP_VS_DELAY_FREE_CONTEXT// Size=0x10
+{
+    union _SLIST_HEADER ListHead;// Offset=0x0 Size=0x10
+};

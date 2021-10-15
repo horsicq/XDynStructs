@@ -4,6 +4,7 @@ struct _DUMP_INITIALIZATION_CONTEXT// Size=0xc0
     unsigned long Reserved;// Offset=0x4 Size=0x4
     void * MemoryBlock;// Offset=0x8 Size=0x4
     void * CommonBuffer[2];// Offset=0xc Size=0x8
+    unsigned char __align0[4];// Offset=0x14 Size=0x4
     union _LARGE_INTEGER PhysicalAddress[2];// Offset=0x18 Size=0x10
     void  ( * StallRoutine)(unsigned long );// Offset=0x28 Size=0x4
     unsigned char  ( * OpenRoutine)(union _LARGE_INTEGER );// Offset=0x2c Size=0x4

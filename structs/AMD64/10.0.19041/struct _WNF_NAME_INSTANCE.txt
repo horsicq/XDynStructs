@@ -1,0 +1,21 @@
+struct _WNF_NAME_INSTANCE// Size=0xa8
+{
+    struct _WNF_NODE_HEADER Header;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
+    struct _EX_RUNDOWN_REF RunRef;// Offset=0x8 Size=0x8
+    struct _RTL_BALANCED_NODE TreeLinks;// Offset=0x10 Size=0x18
+    struct _WNF_STATE_NAME_STRUCT StateName;// Offset=0x28 Size=0x8
+    struct _WNF_SCOPE_INSTANCE * ScopeInstance;// Offset=0x30 Size=0x8
+    struct _WNF_STATE_NAME_REGISTRATION StateNameInfo;// Offset=0x38 Size=0x18
+    struct _WNF_LOCK StateDataLock;// Offset=0x50 Size=0x8
+    struct _WNF_STATE_DATA * StateData;// Offset=0x58 Size=0x8
+    unsigned long CurrentChangeStamp;// Offset=0x60 Size=0x4
+    unsigned char __align1[4];// Offset=0x64 Size=0x4
+    void * PermanentDataStore;// Offset=0x68 Size=0x8
+    struct _WNF_LOCK StateSubscriptionListLock;// Offset=0x70 Size=0x8
+    struct _LIST_ENTRY StateSubscriptionListHead;// Offset=0x78 Size=0x10
+    struct _LIST_ENTRY TemporaryNameListEntry;// Offset=0x88 Size=0x10
+    struct _EPROCESS * CreatorProcess;// Offset=0x98 Size=0x8
+    long DataSubscribersCount;// Offset=0xa0 Size=0x4
+    long CurrentDeliveryCount;// Offset=0xa4 Size=0x4
+};

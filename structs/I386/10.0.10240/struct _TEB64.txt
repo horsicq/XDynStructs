@@ -12,6 +12,7 @@ struct _TEB64// Size=0x1838
     unsigned long long Win32ThreadInfo;// Offset=0x78 Size=0x8
     unsigned long User32Reserved[26];// Offset=0x80 Size=0x68
     unsigned long UserReserved[5];// Offset=0xe8 Size=0x14
+    unsigned char __align0[4];// Offset=0xfc Size=0x4
     unsigned long long WOW32Reserved;// Offset=0x100 Size=0x8
     unsigned long CurrentLocale;// Offset=0x108 Size=0x4
     unsigned long FpSoftwareStatusRegister;// Offset=0x10c Size=0x4

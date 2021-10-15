@@ -1,0 +1,4 @@
+struct _HMAP_TABLE// Size=0x2800
+{
+    struct _HMAP_ENTRY Table[512];// Offset=0x0 Size=0x2800
+};

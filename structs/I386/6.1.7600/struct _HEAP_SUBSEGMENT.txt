@@ -1,0 +1,14 @@
+struct _HEAP_SUBSEGMENT// Size=0x20
+{
+    struct _HEAP_LOCAL_SEGMENT_INFO * LocalInfo;// Offset=0x0 Size=0x4
+    struct _HEAP_USERDATA_HEADER * UserBlocks;// Offset=0x4 Size=0x4
+    struct _INTERLOCK_SEQ AggregateExchg;// Offset=0x8 Size=0x8
+    unsigned short BlockSize;// Offset=0x10 Size=0x2
+    unsigned short Flags;// Offset=0x12 Size=0x2
+    unsigned short BlockCount;// Offset=0x14 Size=0x2
+    unsigned char SizeIndex;// Offset=0x16 Size=0x1
+    unsigned char AffinityIndex;// Offset=0x17 Size=0x1
+    unsigned long Alignment[2];// Offset=0x10 Size=0x8
+    struct _SINGLE_LIST_ENTRY SFreeListEntry;// Offset=0x18 Size=0x4
+    unsigned long Lock;// Offset=0x1c Size=0x4
+};

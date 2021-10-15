@@ -1,0 +1,26 @@
+struct _SECTION_IMAGE_INFORMATION// Size=0x30
+{
+    void * TransferAddress;// Offset=0x0 Size=0x4
+    unsigned long ZeroBits;// Offset=0x4 Size=0x4
+    unsigned long MaximumStackSize;// Offset=0x8 Size=0x4
+    unsigned long CommittedStackSize;// Offset=0xc Size=0x4
+    unsigned long SubSystemType;// Offset=0x10 Size=0x4
+    unsigned short SubSystemMinorVersion;// Offset=0x14 Size=0x2
+    unsigned short SubSystemMajorVersion;// Offset=0x16 Size=0x2
+    unsigned long SubSystemVersion;// Offset=0x14 Size=0x4
+    unsigned long GpValue;// Offset=0x18 Size=0x4
+    unsigned short ImageCharacteristics;// Offset=0x1c Size=0x2
+    unsigned short DllCharacteristics;// Offset=0x1e Size=0x2
+    unsigned short Machine;// Offset=0x20 Size=0x2
+    unsigned char ImageContainsCode;// Offset=0x22 Size=0x1
+    unsigned char ImageFlags;// Offset=0x23 Size=0x1
+    unsigned char ComPlusNativeReady:1;// Offset=0x23 Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char ComPlusILOnly:1;// Offset=0x23 Size=0x1 BitOffset=0x1 BitSize=0x1
+    unsigned char ImageDynamicallyRelocated:1;// Offset=0x23 Size=0x1 BitOffset=0x2 BitSize=0x1
+    unsigned char ImageMappedFlat:1;// Offset=0x23 Size=0x1 BitOffset=0x3 BitSize=0x1
+    unsigned char BaseBelow4gb:1;// Offset=0x23 Size=0x1 BitOffset=0x4 BitSize=0x1
+    unsigned char Reserved:3;// Offset=0x23 Size=0x1 BitOffset=0x5 BitSize=0x3
+    unsigned long LoaderFlags;// Offset=0x24 Size=0x4
+    unsigned long ImageFileSize;// Offset=0x28 Size=0x4
+    unsigned long CheckSum;// Offset=0x2c Size=0x4
+};

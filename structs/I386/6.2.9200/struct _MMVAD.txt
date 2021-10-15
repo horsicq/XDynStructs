@@ -1,0 +1,12 @@
+struct _MMVAD// Size=0x48
+{
+    struct _MMVAD_SHORT Core;// Offset=0x0 Size=0x28
+    union _unnamed_859 u2;// Offset=0x28 Size=0x4
+    struct _SUBSECTION * Subsection;// Offset=0x2c Size=0x4
+    struct _MSUBSECTION * MappedSubsection;// Offset=0x2c Size=0x4
+    struct _MMPTE * FirstPrototypePte;// Offset=0x30 Size=0x4
+    struct _MMPTE * LastContiguousPte;// Offset=0x34 Size=0x4
+    struct _LIST_ENTRY ViewLinks;// Offset=0x38 Size=0x8
+    struct _EPROCESS * VadsProcess;// Offset=0x40 Size=0x4
+    union _unnamed_860 u4;// Offset=0x44 Size=0x4
+};

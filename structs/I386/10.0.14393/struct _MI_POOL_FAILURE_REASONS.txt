@@ -1,0 +1,14 @@
+struct _MI_POOL_FAILURE_REASONS// Size=0x2c
+{
+    unsigned long NonPagedNoPtes;// Offset=0x0 Size=0x4
+    unsigned long PriorityTooLow;// Offset=0x4 Size=0x4
+    unsigned long NonPagedNoPagesAvailable;// Offset=0x8 Size=0x4
+    unsigned long PagedNoPtes;// Offset=0xc Size=0x4
+    unsigned long SessionPagedNoPtes;// Offset=0x10 Size=0x4
+    unsigned long PagedNoPagesAvailable;// Offset=0x14 Size=0x4
+    unsigned long SessionPagedNoPagesAvailable;// Offset=0x18 Size=0x4
+    unsigned long PagedNoCommit;// Offset=0x1c Size=0x4
+    unsigned long SessionPagedNoCommit;// Offset=0x20 Size=0x4
+    unsigned long NonPagedNoResidentAvailable;// Offset=0x24 Size=0x4
+    unsigned long NonPagedNoCommit;// Offset=0x28 Size=0x4
+};

@@ -1,0 +1,11 @@
+struct _IMAGE_DEBUG_DIRECTORY// Size=0x1c
+{
+    unsigned long Characteristics;// Offset=0x0 Size=0x4
+    unsigned long TimeDateStamp;// Offset=0x4 Size=0x4
+    unsigned short MajorVersion;// Offset=0x8 Size=0x2
+    unsigned short MinorVersion;// Offset=0xa Size=0x2
+    unsigned long Type;// Offset=0xc Size=0x4
+    unsigned long SizeOfData;// Offset=0x10 Size=0x4
+    unsigned long AddressOfRawData;// Offset=0x14 Size=0x4
+    unsigned long PointerToRawData;// Offset=0x18 Size=0x4
+};

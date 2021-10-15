@@ -1,0 +1,31 @@
+struct _FAST_IO_DISPATCH// Size=0x70
+{
+    unsigned long SizeOfFastIoDispatch;// Offset=0x0 Size=0x4
+    unsigned char  ( * FastIoCheckIfPossible)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,unsigned long ,unsigned char ,unsigned long ,unsigned char ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * );// Offset=0x4 Size=0x4
+    unsigned char  ( * FastIoRead)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,unsigned long ,unsigned char ,unsigned long ,void * ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * );// Offset=0x8 Size=0x4
+    unsigned char  ( * FastIoWrite)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,unsigned long ,unsigned char ,unsigned long ,void * ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * );// Offset=0xc Size=0x4
+    unsigned char  ( * FastIoQueryBasicInfo)(struct _FILE_OBJECT * ,unsigned char ,struct _FILE_BASIC_INFORMATION * ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * );// Offset=0x10 Size=0x4
+    unsigned char  ( * FastIoQueryStandardInfo)(struct _FILE_OBJECT * ,unsigned char ,struct _FILE_STANDARD_INFORMATION * ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * );// Offset=0x14 Size=0x4
+    unsigned char  ( * FastIoLock)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,union _LARGE_INTEGER * ,struct _EPROCESS * ,unsigned long ,unsigned char ,unsigned char ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * );// Offset=0x18 Size=0x4
+    unsigned char  ( * FastIoUnlockSingle)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,union _LARGE_INTEGER * ,struct _EPROCESS * ,unsigned long ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * );// Offset=0x1c Size=0x4
+    unsigned char  ( * FastIoUnlockAll)(struct _FILE_OBJECT * ,struct _EPROCESS * ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * );// Offset=0x20 Size=0x4
+    unsigned char  ( * FastIoUnlockAllByKey)(struct _FILE_OBJECT * ,void * ,unsigned long ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * );// Offset=0x24 Size=0x4
+    unsigned char  ( * FastIoDeviceControl)(struct _FILE_OBJECT * ,unsigned char ,void * ,unsigned long ,void * ,unsigned long ,unsigned long ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * );// Offset=0x28 Size=0x4
+    void  ( * AcquireFileForNtCreateSection)(struct _FILE_OBJECT * );// Offset=0x2c Size=0x4
+    void  ( * ReleaseFileForNtCreateSection)(struct _FILE_OBJECT * );// Offset=0x30 Size=0x4
+    void  ( * FastIoDetachDevice)(struct _DEVICE_OBJECT * ,struct _DEVICE_OBJECT * );// Offset=0x34 Size=0x4
+    unsigned char  ( * FastIoQueryNetworkOpenInfo)(struct _FILE_OBJECT * ,unsigned char ,struct _FILE_NETWORK_OPEN_INFORMATION * ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * );// Offset=0x38 Size=0x4
+    long  ( * AcquireForModWrite)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,struct _ERESOURCE ** ,struct _DEVICE_OBJECT * );// Offset=0x3c Size=0x4
+    unsigned char  ( * MdlRead)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,unsigned long ,unsigned long ,struct _MDL ** ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * );// Offset=0x40 Size=0x4
+    unsigned char  ( * MdlReadComplete)(struct _FILE_OBJECT * ,struct _MDL * ,struct _DEVICE_OBJECT * );// Offset=0x44 Size=0x4
+    unsigned char  ( * PrepareMdlWrite)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,unsigned long ,unsigned long ,struct _MDL ** ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * );// Offset=0x48 Size=0x4
+    unsigned char  ( * MdlWriteComplete)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,struct _MDL * ,struct _DEVICE_OBJECT * );// Offset=0x4c Size=0x4
+    unsigned char  ( * FastIoReadCompressed)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,unsigned long ,unsigned long ,void * ,struct _MDL ** ,struct _IO_STATUS_BLOCK * ,struct _COMPRESSED_DATA_INFO * ,unsigned long ,struct _DEVICE_OBJECT * );// Offset=0x50 Size=0x4
+    unsigned char  ( * FastIoWriteCompressed)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,unsigned long ,unsigned long ,void * ,struct _MDL ** ,struct _IO_STATUS_BLOCK * ,struct _COMPRESSED_DATA_INFO * ,unsigned long ,struct _DEVICE_OBJECT * );// Offset=0x54 Size=0x4
+    unsigned char  ( * MdlReadCompleteCompressed)(struct _FILE_OBJECT * ,struct _MDL * ,struct _DEVICE_OBJECT * );// Offset=0x58 Size=0x4
+    unsigned char  ( * MdlWriteCompleteCompressed)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,struct _MDL * ,struct _DEVICE_OBJECT * );// Offset=0x5c Size=0x4
+    unsigned char  ( * FastIoQueryOpen)(struct _IRP * ,struct _FILE_NETWORK_OPEN_INFORMATION * ,struct _DEVICE_OBJECT * );// Offset=0x60 Size=0x4
+    long  ( * ReleaseForModWrite)(struct _FILE_OBJECT * ,struct _ERESOURCE * ,struct _DEVICE_OBJECT * );// Offset=0x64 Size=0x4
+    long  ( * AcquireForCcFlush)(struct _FILE_OBJECT * ,struct _DEVICE_OBJECT * );// Offset=0x68 Size=0x4
+    long  ( * ReleaseForCcFlush)(struct _FILE_OBJECT * ,struct _DEVICE_OBJECT * );// Offset=0x6c Size=0x4
+};

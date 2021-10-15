@@ -1,0 +1,5 @@
+struct _MI_REBUILD_LARGE_PAGE_COUNTDOWN// Size=0x2
+{
+    unsigned char SecondsLeft;// Offset=0x0 Size=0x1
+    unsigned char SecondsAssigned;// Offset=0x1 Size=0x1
+};

@@ -1,0 +1,13 @@
+struct _PNP_DEVICE_COMPLETION_REQUEST// Size=0x38
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x8
+    struct _DEVICE_NODE * DeviceNode;// Offset=0x8 Size=0x4
+    void * Context;// Offset=0xc Size=0x4
+    enum _PNP_DEVNODE_STATE CompletionState;// Offset=0x10 Size=0x4
+    unsigned long IrpPended;// Offset=0x14 Size=0x4
+    long Status;// Offset=0x18 Size=0x4
+    void * Information;// Offset=0x1c Size=0x4
+    struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x20 Size=0x10
+    struct _DRIVER_OBJECT * FailingDriver;// Offset=0x30 Size=0x4
+    long ReferenceCount;// Offset=0x34 Size=0x4
+};

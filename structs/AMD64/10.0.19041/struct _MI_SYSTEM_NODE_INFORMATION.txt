@@ -1,0 +1,10 @@
+struct _MI_SYSTEM_NODE_INFORMATION// Size=0xb0
+{
+    struct _CACHED_KSTACK_LIST CachedKernelStacks[2];// Offset=0x0 Size=0x40
+    struct _MI_DYNAMIC_BITMAP DynamicBitMapNonPagedPool;// Offset=0x40 Size=0x48
+    unsigned long long CachedNonPagedPoolCount;// Offset=0x88 Size=0x8
+    unsigned long long NonPagedPoolSpinLock;// Offset=0x90 Size=0x8
+    struct _MMPFN * CachedNonPagedPool;// Offset=0x98 Size=0x8
+    void * NonPagedPoolFirstVa;// Offset=0xa0 Size=0x8
+    void * NonPagedPoolLastVa;// Offset=0xa8 Size=0x8
+};

@@ -1,0 +1,6 @@
+struct _PROC_HISTORY_ENTRY// Size=0x4
+{
+    unsigned short Utility;// Offset=0x0 Size=0x2
+    unsigned char Frequency;// Offset=0x2 Size=0x1
+    unsigned char Reserved;// Offset=0x3 Size=0x1
+};

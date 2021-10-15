@@ -1,0 +1,9 @@
+struct _ALPC_MESSAGE_ZONE// Size=0x18
+{
+    struct _MDL * Mdl;// Offset=0x0 Size=0x4
+    void * UserVa;// Offset=0x4 Size=0x4
+    void * UserLimit;// Offset=0x8 Size=0x4
+    void * SystemVa;// Offset=0xc Size=0x4
+    void * SystemLimit;// Offset=0x10 Size=0x4
+    unsigned long Size;// Offset=0x14 Size=0x4
+};

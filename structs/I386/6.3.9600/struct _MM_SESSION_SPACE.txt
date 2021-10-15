@@ -1,0 +1,48 @@
+struct _MM_SESSION_SPACE// Size=0x2040
+{
+    long ReferenceCount;// Offset=0x0 Size=0x4
+    union _unnamed_919 u;// Offset=0x4 Size=0x4
+    unsigned long SessionId;// Offset=0x8 Size=0x4
+    long ProcessReferenceToSession;// Offset=0xc Size=0x4
+    struct _LIST_ENTRY ProcessList;// Offset=0x10 Size=0x8
+    unsigned long SessionPageDirectoryIndex;// Offset=0x18 Size=0x4
+    unsigned long NonPagablePages;// Offset=0x1c Size=0x4
+    unsigned long CommittedPages;// Offset=0x20 Size=0x4
+    void * PagedPoolStart;// Offset=0x24 Size=0x4
+    void * PagedPoolEnd;// Offset=0x28 Size=0x4
+    void * SessionObject;// Offset=0x2c Size=0x4
+    void * SessionObjectHandle;// Offset=0x30 Size=0x4
+    unsigned long SessionPoolAllocationFailures[4];// Offset=0x34 Size=0x10
+    struct _LIST_ENTRY ImageList;// Offset=0x44 Size=0x8
+    unsigned long LocaleId;// Offset=0x4c Size=0x4
+    unsigned long AttachCount;// Offset=0x50 Size=0x4
+    struct _KGATE AttachGate;// Offset=0x54 Size=0x10
+    struct _LIST_ENTRY WsListEntry;// Offset=0x64 Size=0x8
+    unsigned char __align0[20];// Offset=0x6c Size=0x14
+    struct _GENERAL_LOOKASIDE Lookaside[24];// Offset=0x80 Size=0xc00
+    struct _MMSESSION Session;// Offset=0xc80 Size=0x38
+    struct _MM_PAGED_POOL_INFO PagedPoolInfo;// Offset=0xcb8 Size=0x38
+    struct _MMSUPPORT Vm;// Offset=0xcf0 Size=0x7c
+    struct _MMWSLE * Wsle;// Offset=0xd6c Size=0x4
+    struct _MI_SESSION_DRIVER_UNLOAD DriverUnload;// Offset=0xd70 Size=0x4
+    unsigned char __align1[12];// Offset=0xd74 Size=0xc
+    struct _POOL_DESCRIPTOR PagedPool;// Offset=0xd80 Size=0x1140
+    struct _MMPTE * PageTables;// Offset=0x1ec0 Size=0x4
+    unsigned long PagedPoolBitBuffer[32];// Offset=0x1ec4 Size=0x80
+    unsigned char __align2[4];// Offset=0x1f44 Size=0x4
+    struct _MI_SPECIAL_POOL SpecialPool;// Offset=0x1f48 Size=0x48
+    struct _FAST_MUTEX SessionPteLock;// Offset=0x1f90 Size=0x20
+    long PoolBigEntriesInUse;// Offset=0x1fb0 Size=0x4
+    unsigned long PagedPoolPdeCount;// Offset=0x1fb4 Size=0x4
+    unsigned long SpecialPoolPdeCount;// Offset=0x1fb8 Size=0x4
+    unsigned long DynamicSessionPdeCount;// Offset=0x1fbc Size=0x4
+    struct _MI_SYSTEM_PTE_TYPE SystemPteInfo;// Offset=0x1fc0 Size=0x38
+    void * PoolTrackTableExpansion;// Offset=0x1ff8 Size=0x4
+    unsigned long PoolTrackTableExpansionSize;// Offset=0x1ffc Size=0x4
+    void * PoolTrackBigPages;// Offset=0x2000 Size=0x4
+    unsigned long PoolTrackBigPagesSize;// Offset=0x2004 Size=0x4
+    enum _IO_SESSION_STATE IoState;// Offset=0x2008 Size=0x4
+    unsigned long IoStateSequence;// Offset=0x200c Size=0x4
+    struct _KEVENT IoNotificationEvent;// Offset=0x2010 Size=0x10
+    unsigned long long CreateTime;// Offset=0x2020 Size=0x8
+};

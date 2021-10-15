@@ -5,5 +5,6 @@ struct _BITMAP_RANGE// Size=0x30
     unsigned long FirstDirtyPage;// Offset=0x18 Size=0x4
     unsigned long LastDirtyPage;// Offset=0x1c Size=0x4
     unsigned long DirtyPages;// Offset=0x20 Size=0x4
+    unsigned char __align0[4];// Offset=0x24 Size=0x4
     unsigned long * Bitmap;// Offset=0x28 Size=0x8
 };

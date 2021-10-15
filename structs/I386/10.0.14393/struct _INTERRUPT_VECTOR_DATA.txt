@@ -1,0 +1,17 @@
+struct _INTERRUPT_VECTOR_DATA// Size=0x50
+{
+    enum INTERRUPT_CONNECTION_TYPE Type;// Offset=0x0 Size=0x4
+    unsigned long Vector;// Offset=0x4 Size=0x4
+    unsigned char Irql;// Offset=0x8 Size=0x1
+    unsigned char __align0[3];// Offset=0x9 Size=0x3
+    enum _KINTERRUPT_POLARITY Polarity;// Offset=0xc Size=0x4
+    enum _KINTERRUPT_MODE Mode;// Offset=0x10 Size=0x4
+    struct _GROUP_AFFINITY TargetProcessors;// Offset=0x14 Size=0xc
+    struct _INTERRUPT_REMAPPING_INFO IntRemapInfo;// Offset=0x20 Size=0x10
+    struct _unnamed_1371 ControllerInput;// Offset=0x30 Size=0x8
+    unsigned long long HvDeviceId;// Offset=0x38 Size=0x8
+    struct _unnamed_1372 XapicMessage;// Offset=0x40 Size=0x10
+    struct _unnamed_1373 Hypertransport;// Offset=0x40 Size=0x8
+    struct _unnamed_1372 GenericMessage;// Offset=0x40 Size=0x10
+    struct _unnamed_1375 MessageRequest;// Offset=0x40 Size=0x4
+};

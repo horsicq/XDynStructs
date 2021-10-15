@@ -14,6 +14,7 @@ struct _DEVICE_NODE// Size=0x2c8
     struct _PO_IRP_MANAGER PoIrpManager;// Offset=0xc0 Size=0x20
     struct _POP_FX_DEVICE * FxDevice;// Offset=0xe0 Size=0x8
     long FxDeviceLock;// Offset=0xe8 Size=0x4
+    unsigned char __align0[4];// Offset=0xec Size=0x4
     struct _KEVENT FxRemoveEvent;// Offset=0xf0 Size=0x18
     long FxActivationCount;// Offset=0x108 Size=0x4
     long FxSleepCount;// Offset=0x10c Size=0x4
@@ -29,6 +30,7 @@ struct _DEVICE_NODE// Size=0x2c8
     unsigned long UserFlags;// Offset=0x190 Size=0x4
     unsigned long Problem;// Offset=0x194 Size=0x4
     long ProblemStatus;// Offset=0x198 Size=0x4
+    unsigned char __align1[4];// Offset=0x19c Size=0x4
     struct _CM_RESOURCE_LIST * ResourceList;// Offset=0x1a0 Size=0x8
     struct _CM_RESOURCE_LIST * ResourceListTranslated;// Offset=0x1a8 Size=0x8
     struct _DEVICE_OBJECT * DuplicatePDO;// Offset=0x1b0 Size=0x8
@@ -40,6 +42,7 @@ struct _DEVICE_NODE// Size=0x2c8
     unsigned short ChildBusTypeIndex;// Offset=0x1d0 Size=0x2
     unsigned char RemovalPolicy;// Offset=0x1d2 Size=0x1
     unsigned char HardwareRemovalPolicy;// Offset=0x1d3 Size=0x1
+    unsigned char __align2[4];// Offset=0x1d4 Size=0x4
     struct _LIST_ENTRY TargetDeviceNotify;// Offset=0x1d8 Size=0x10
     struct _LIST_ENTRY DeviceArbiterList;// Offset=0x1e8 Size=0x10
     struct _LIST_ENTRY DeviceTranslatorList;// Offset=0x1f8 Size=0x10
@@ -52,18 +55,23 @@ struct _DEVICE_NODE// Size=0x2c8
     struct _CM_RESOURCE_LIST * BootResources;// Offset=0x220 Size=0x8
     struct _CM_RESOURCE_LIST * BootResourcesTranslated;// Offset=0x228 Size=0x8
     unsigned long CapabilityFlags;// Offset=0x230 Size=0x4
+    unsigned char __align3[4];// Offset=0x234 Size=0x4
     struct _unnamed_256 DockInfo;// Offset=0x238 Size=0x20
     unsigned long DisableableDepends;// Offset=0x258 Size=0x4
+    unsigned char __align4[4];// Offset=0x25c Size=0x4
     struct _LIST_ENTRY PendedSetInterfaceState;// Offset=0x260 Size=0x10
     struct _LIST_ENTRY LegacyBusListEntry;// Offset=0x270 Size=0x10
     unsigned long DriverUnloadRetryCount;// Offset=0x280 Size=0x4
+    unsigned char __align5[4];// Offset=0x284 Size=0x4
     struct _DEVICE_NODE * PreviousParent;// Offset=0x288 Size=0x8
     unsigned long DeletedChildren;// Offset=0x290 Size=0x4
     unsigned long NumaNodeIndex;// Offset=0x294 Size=0x4
     struct _GUID ContainerID;// Offset=0x298 Size=0x10
     unsigned char OverrideFlags;// Offset=0x2a8 Size=0x1
+    unsigned char __align6[3];// Offset=0x2a9 Size=0x3
     unsigned long DeviceIdsHash;// Offset=0x2ac Size=0x4
     unsigned char RequiresUnloadedDriver;// Offset=0x2b0 Size=0x1
+    unsigned char __align7[7];// Offset=0x2b1 Size=0x7
     struct _PENDING_RELATIONS_LIST_ENTRY * PendingEjectRelations;// Offset=0x2b8 Size=0x8
     unsigned long StateFlags;// Offset=0x2c0 Size=0x4
 };

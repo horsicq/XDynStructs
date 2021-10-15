@@ -8,9 +8,11 @@ struct _PEP_ACPI_GPIO_RESOURCE// Size=0x48
     enum _GPIO_PIN_IORESTRICTION_TYPE IoRestrictionType;// Offset=0x14 Size=0x4
     unsigned short DriveStrength;// Offset=0x18 Size=0x2
     unsigned short DebounceTimeout;// Offset=0x1a Size=0x2
+    unsigned char __align0[4];// Offset=0x1c Size=0x4
     unsigned short * PinTable;// Offset=0x20 Size=0x8
     unsigned short PinCount;// Offset=0x28 Size=0x2
     unsigned char ResourceSourceIndex;// Offset=0x2a Size=0x1
+    unsigned char __align1[5];// Offset=0x2b Size=0x5
     struct _UNICODE_STRING * ResourceSourceName;// Offset=0x30 Size=0x8
     unsigned char * VendorData;// Offset=0x38 Size=0x8
     unsigned short VendorDataLength;// Offset=0x40 Size=0x2

@@ -1,0 +1,4 @@
+struct _unnamed_364// Size=0x8
+{
+    struct _KEVENT * Event;// Offset=0x0 Size=0x8
+};

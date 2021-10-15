@@ -1,0 +1,12 @@
+struct _LAZY_WRITER// Size=0x50
+{
+    struct _KDPC ScanDpc;// Offset=0x0 Size=0x20
+    struct _KTIMER ScanTimer;// Offset=0x20 Size=0x28
+    unsigned char ScanActive;// Offset=0x48 Size=0x1
+    unsigned char OtherWork;// Offset=0x49 Size=0x1
+    unsigned char PendingTeardownScan;// Offset=0x4a Size=0x1
+    unsigned char PendingPeriodicScan;// Offset=0x4b Size=0x1
+    unsigned char PendingLowMemoryScan;// Offset=0x4c Size=0x1
+    unsigned char PendingPowerScan;// Offset=0x4d Size=0x1
+    unsigned char PendingCoalescingFlushScan;// Offset=0x4e Size=0x1
+};

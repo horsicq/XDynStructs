@@ -1,0 +1,6 @@
+struct _KTIMER_TABLE// Size=0x4218
+{
+    struct _KTIMER * TimerExpiry[64];// Offset=0x0 Size=0x200
+    struct _KTIMER_TABLE_ENTRY TimerEntries[2][256];// Offset=0x200 Size=0x4000
+    struct _KTIMER_TABLE_STATE TableState;// Offset=0x4200 Size=0x18
+};

@@ -2,13 +2,16 @@ struct _LOADER_PARAMETER_EXTENSION// Size=0xc40
 {
     unsigned long Size;// Offset=0x0 Size=0x4
     struct _PROFILE_PARAMETER_BLOCK Profile;// Offset=0x4 Size=0x10
+    unsigned char __align0[4];// Offset=0x14 Size=0x4
     void * EmInfFileImage;// Offset=0x18 Size=0x8
     unsigned long EmInfFileSize;// Offset=0x20 Size=0x4
+    unsigned char __align1[4];// Offset=0x24 Size=0x4
     void * TriageDumpBlock;// Offset=0x28 Size=0x8
     struct _HEADLESS_LOADER_BLOCK * HeadlessLoaderBlock;// Offset=0x30 Size=0x8
     struct _SMBIOS3_TABLE_HEADER * SMBiosEPSHeader;// Offset=0x38 Size=0x8
     void * DrvDBImage;// Offset=0x40 Size=0x8
     unsigned long DrvDBSize;// Offset=0x48 Size=0x4
+    unsigned char __align2[4];// Offset=0x4c Size=0x4
     struct _NETWORK_LOADER_BLOCK * NetworkLoaderBlock;// Offset=0x50 Size=0x8
     struct _LIST_ENTRY FirmwareDescriptorListHead;// Offset=0x58 Size=0x10
     void * AcpiTable;// Offset=0x68 Size=0x8
@@ -35,12 +38,14 @@ struct _LOADER_PARAMETER_EXTENSION// Size=0xc40
     void * WmdTestResult;// Offset=0x90 Size=0x8
     struct _GUID BootIdentifier;// Offset=0x98 Size=0x10
     unsigned long ResumePages;// Offset=0xa8 Size=0x4
+    unsigned char __align3[4];// Offset=0xac Size=0x4
     void * DumpHeader;// Offset=0xb0 Size=0x8
     void * BgContext;// Offset=0xb8 Size=0x8
     void * NumaLocalityInfo;// Offset=0xc0 Size=0x8
     void * NumaGroupAssignment;// Offset=0xc8 Size=0x8
     struct _LIST_ENTRY AttachedHives;// Offset=0xd0 Size=0x10
     unsigned long MemoryCachingRequirementsCount;// Offset=0xe0 Size=0x4
+    unsigned char __align4[4];// Offset=0xe4 Size=0x4
     void * MemoryCachingRequirements;// Offset=0xe8 Size=0x8
     struct _BOOT_ENTROPY_LDR_RESULT BootEntropyResult;// Offset=0xf0 Size=0x798
     unsigned long long ProcessorCounterFrequency;// Offset=0x888 Size=0x8
@@ -59,9 +64,11 @@ struct _LOADER_PARAMETER_EXTENSION// Size=0xc40
     unsigned long long DbgNoLegacyServices:1;// Offset=0x900 Size=0x8 BitOffset=0x2 BitSize=0x1
     void * WfsFPData;// Offset=0x908 Size=0x8
     unsigned long WfsFPDataSize;// Offset=0x910 Size=0x4
+    unsigned char __align5[4];// Offset=0x914 Size=0x4
     struct _LOADER_BUGCHECK_PARAMETERS BugcheckParameters;// Offset=0x918 Size=0x28
     void * ApiSetSchema;// Offset=0x940 Size=0x8
     unsigned long ApiSetSchemaSize;// Offset=0x948 Size=0x4
+    unsigned char __align6[4];// Offset=0x94c Size=0x4
     struct _LIST_ENTRY ApiSetSchemaExtensions;// Offset=0x950 Size=0x10
     struct _UNICODE_STRING AcpiBiosVersion;// Offset=0x960 Size=0x10
     struct _UNICODE_STRING SmbiosVersion;// Offset=0x970 Size=0x10
@@ -72,6 +79,7 @@ struct _LOADER_PARAMETER_EXTENSION// Size=0xc40
     void * BbtBuffer;// Offset=0x9c8 Size=0x8
     unsigned long long XsaveAllowedFeatures;// Offset=0x9d0 Size=0x8
     unsigned long XsaveFlags;// Offset=0x9d8 Size=0x4
+    unsigned char __align7[4];// Offset=0x9dc Size=0x4
     void * BootOptions;// Offset=0x9e0 Size=0x8
     unsigned long IumEnablement;// Offset=0x9e8 Size=0x4
     unsigned long IumPolicy;// Offset=0x9ec Size=0x4
@@ -81,6 +89,7 @@ struct _LOADER_PARAMETER_EXTENSION// Size=0xc40
     unsigned long CodeIntegrityDataSize;// Offset=0xa00 Size=0x4
     struct _LOADER_HIVE_RECOVERY_INFO SystemHiveRecoveryInfo;// Offset=0xa04 Size=0x14
     unsigned long SoftRestartCount;// Offset=0xa18 Size=0x4
+    unsigned char __align8[4];// Offset=0xa1c Size=0x4
     long long SoftRestartTime;// Offset=0xa20 Size=0x8
     void * HypercallCodeVa;// Offset=0xa28 Size=0x8
     void * HalVirtualAddress;// Offset=0xa30 Size=0x8

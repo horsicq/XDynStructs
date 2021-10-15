@@ -2,6 +2,7 @@ struct _POP_FX_PLUGIN// Size=0x70
 {
     struct _LIST_ENTRY Link;// Offset=0x0 Size=0x8
     unsigned long Version;// Offset=0x8 Size=0x4
+    unsigned char __align0[4];// Offset=0xc Size=0x4
     unsigned long long Flags;// Offset=0x10 Size=0x8
     struct _KQUEUE WorkQueue;// Offset=0x18 Size=0x28
     unsigned char  ( * AcceptDeviceNotification)(unsigned long ,void * );// Offset=0x40 Size=0x4

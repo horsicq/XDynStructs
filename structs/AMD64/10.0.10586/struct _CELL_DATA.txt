@@ -1,0 +1,4 @@
+struct _CELL_DATA// Size=0x50
+{
+    union _u u;// Offset=0x0 Size=0x50
+};

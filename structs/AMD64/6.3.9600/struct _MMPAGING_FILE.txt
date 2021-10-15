@@ -1,0 +1,40 @@
+struct _MMPAGING_FILE// Size=0xe0
+{
+    unsigned long long Size;// Offset=0x0 Size=0x8
+    unsigned long long MaximumSize;// Offset=0x8 Size=0x8
+    unsigned long long MinimumSize;// Offset=0x10 Size=0x8
+    unsigned long long FreeSpace;// Offset=0x18 Size=0x8
+    unsigned long long PeakUsage;// Offset=0x20 Size=0x8
+    unsigned long long HighestPage;// Offset=0x28 Size=0x8
+    unsigned long long FreeReservationSpace;// Offset=0x30 Size=0x8
+    unsigned long long LargestReserveCluster;// Offset=0x38 Size=0x8
+    struct _FILE_OBJECT * File;// Offset=0x40 Size=0x8
+    struct _MMMOD_WRITER_MDL_ENTRY * Entry[2];// Offset=0x48 Size=0x10
+    unsigned char __align0[8];// Offset=0x58 Size=0x8
+    union _SLIST_HEADER PfnsToFree;// Offset=0x60 Size=0x10
+    struct _UNICODE_STRING PageFileName;// Offset=0x70 Size=0x10
+    struct _MI_PAGING_FILE_SPACE_BITMAPS * Bitmaps;// Offset=0x80 Size=0x8
+    unsigned long AllocationBitmapHint;// Offset=0x88 Size=0x4
+    unsigned long ReservationBitmapHint;// Offset=0x8c Size=0x4
+    unsigned long LargestNonReservedClusterSize;// Offset=0x90 Size=0x4
+    unsigned long RefreshClusterSize;// Offset=0x94 Size=0x4
+    unsigned long LastRefreshClusterSize;// Offset=0x98 Size=0x4
+    unsigned long ReservedClusterSizeAggregate;// Offset=0x9c Size=0x4
+    unsigned long ToBeEvictedCount;// Offset=0xa0 Size=0x4
+    unsigned long HybridPriority;// Offset=0xa4 Size=0x4
+    unsigned short PageFileNumber:4;// Offset=0xa8 Size=0x2 BitOffset=0x0 BitSize=0x4
+    unsigned short BootPartition:1;// Offset=0xa8 Size=0x2 BitOffset=0x4 BitSize=0x1
+    unsigned short WsSwapPagefile:1;// Offset=0xa8 Size=0x2 BitOffset=0x5 BitSize=0x1
+    unsigned short NoReservations:1;// Offset=0xa8 Size=0x2 BitOffset=0x6 BitSize=0x1
+    unsigned short Spare0:9;// Offset=0xa8 Size=0x2 BitOffset=0x7 BitSize=0x9
+    unsigned char AdriftMdls:1;// Offset=0xaa Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char Spare1:7;// Offset=0xaa Size=0x1 BitOffset=0x1 BitSize=0x7
+    unsigned char Spare2:8;// Offset=0xab Size=0x1 BitOffset=0x0 BitSize=0x8
+    unsigned long PageHashPages;// Offset=0xac Size=0x4
+    unsigned long PageHashPagesPeak;// Offset=0xb0 Size=0x4
+    unsigned char __align1[4];// Offset=0xb4 Size=0x4
+    unsigned long * PageHash;// Offset=0xb8 Size=0x8
+    void * FileHandle;// Offset=0xc0 Size=0x8
+    unsigned long long Lock;// Offset=0xc8 Size=0x8
+    struct _ETHREAD * LockOwner;// Offset=0xd0 Size=0x8
+};

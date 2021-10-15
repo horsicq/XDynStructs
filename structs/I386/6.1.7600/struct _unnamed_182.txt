@@ -1,0 +1,12 @@
+struct _unnamed_182// Size=0xc
+{
+    unsigned long NumberOfSystemCacheViews;// Offset=0x0 Size=0x4
+    unsigned long ImageRelocationStartBit;// Offset=0x0 Size=0x4
+    long WritableUserReferences;// Offset=0x4 Size=0x4
+    unsigned long ImageRelocationSizeIn64k:16;// Offset=0x4 Size=0x4 BitOffset=0x0 BitSize=0x10
+    unsigned long Unused:14;// Offset=0x4 Size=0x4 BitOffset=0x10 BitSize=0xe
+    unsigned long BitMap64:1;// Offset=0x4 Size=0x4 BitOffset=0x1e BitSize=0x1
+    unsigned long ImageActive:1;// Offset=0x4 Size=0x4 BitOffset=0x1f BitSize=0x1
+    struct _MM_SUBSECTION_AVL_TABLE * SubsectionRoot;// Offset=0x8 Size=0x4
+    struct _MI_IMAGE_SECURITY_REFERENCE * SeImageStub;// Offset=0x8 Size=0x4
+};

@@ -18,6 +18,7 @@ struct _ETW_REALTIME_CONSUMER// Size=0x88
     unsigned char Disconnected:1;// Offset=0x5a Size=0x1 BitOffset=0x2 BitSize=0x1
     unsigned char Notified:1;// Offset=0x5a Size=0x1 BitOffset=0x3 BitSize=0x1
     unsigned char Wow:1;// Offset=0x5a Size=0x1 BitOffset=0x4 BitSize=0x1
+    unsigned char __align0[5];// Offset=0x5b Size=0x5
     struct _RTL_BITMAP ReservedBufferSpaceBitMap;// Offset=0x60 Size=0x10
     unsigned char * ReservedBufferSpace;// Offset=0x70 Size=0x8
     unsigned long ReservedBufferSpaceSize;// Offset=0x78 Size=0x4

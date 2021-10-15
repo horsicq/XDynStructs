@@ -1,0 +1,8 @@
+struct _MI_PAGING_FILE_SPACE_BITMAPS// Size=0x18
+{
+    unsigned long RefCount;// Offset=0x0 Size=0x4
+    struct _MI_PAGING_FILE_SPACE_BITMAPS * Anchor;// Offset=0x0 Size=0x4
+    struct _RTL_BITMAP AllocationBitmap;// Offset=0x4 Size=0x8
+    struct _RTL_BITMAP ReservationBitmap;// Offset=0xc Size=0x8
+    struct _RTL_BITMAP * EvictStoreBitmap;// Offset=0x14 Size=0x4
+};

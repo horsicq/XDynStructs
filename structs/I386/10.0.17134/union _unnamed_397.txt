@@ -1,0 +1,9 @@
+union _unnamed_397// Size=0x40
+{
+    struct _unnamed_391 Read;// Offset=0x0 Size=0x8
+    struct _unnamed_392 Write;// Offset=0x0 Size=0x4
+    struct _unnamed_393 Event;// Offset=0x0 Size=0x4
+    struct _unnamed_394 Notification;// Offset=0x0 Size=0x4
+    struct _unnamed_395 LowPriWrite;// Offset=0x0 Size=0x1c
+    struct _unnamed_396 AsyncRead;// Offset=0x0 Size=0x40
+};

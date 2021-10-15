@@ -1,0 +1,4 @@
+struct _unnamed_1428// Size=0x8
+{
+    void * Notification;// Offset=0x0 Size=0x8
+};

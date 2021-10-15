@@ -8,6 +8,7 @@ struct _WHEAP_ERROR_SOURCE// Size=0x428
     unsigned long RecordLength;// Offset=0x20 Size=0x4
     unsigned long PoolTag;// Offset=0x24 Size=0x4
     enum _WHEA_ERROR_SOURCE_TYPE Type;// Offset=0x28 Size=0x4
+    unsigned char __align0[4];// Offset=0x2c Size=0x4
     struct _WHEAP_ERROR_RECORD_WRAPPER * Records;// Offset=0x30 Size=0x8
     void * Context;// Offset=0x38 Size=0x8
     unsigned long SectionCount;// Offset=0x40 Size=0x4

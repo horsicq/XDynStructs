@@ -1,0 +1,8 @@
+union _HEAP_PAGE_SEGMENT// Size=0x2000
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x10
+    unsigned long long Signature;// Offset=0x10 Size=0x8
+    union _HEAP_SEGMENT_MGR_COMMIT_STATE * SegmentCommitState;// Offset=0x18 Size=0x8
+    unsigned char UnusedWatermark;// Offset=0x20 Size=0x1
+    struct _HEAP_PAGE_RANGE_DESCRIPTOR DescArray[256];// Offset=0x0 Size=0x2000
+};

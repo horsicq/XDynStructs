@@ -1,10 +1,12 @@
 struct _MI_SECTION_STATE// Size=0x280
 {
     long SectionObjectPointersLock;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     struct _RTL_AVL_TREE SectionBasedRoot;// Offset=0x8 Size=0x8
     struct _EX_PUSH_LOCK SectionBasedLock;// Offset=0x10 Size=0x8
     unsigned long long UnusedSegmentPagedPool;// Offset=0x18 Size=0x8
     unsigned long DataSectionProtectionMask;// Offset=0x20 Size=0x4
+    unsigned char __align1[4];// Offset=0x24 Size=0x4
     void * HighSectionBase;// Offset=0x28 Size=0x8
     struct _MSUBSECTION PhysicalSubsection;// Offset=0x30 Size=0x90
     struct _CONTROL_AREA PhysicalControlArea;// Offset=0xc0 Size=0x80
@@ -13,6 +15,7 @@ struct _MI_SECTION_STATE// Size=0x280
     struct _WORK_QUEUE_ITEM DanglingExtentsWorkItem;// Offset=0x170 Size=0x20
     unsigned char DanglingExtentsWorkerActive;// Offset=0x190 Size=0x1
     unsigned char PurgingExtentsNeedWatchdog;// Offset=0x191 Size=0x1
+    unsigned char __align2[6];// Offset=0x192 Size=0x6
     struct _RTL_AVL_TREE PrototypePtesTree;// Offset=0x198 Size=0x8
     long PrototypePtesTreeSpinLock;// Offset=0x1a0 Size=0x4
     unsigned long ImageBias;// Offset=0x1a4 Size=0x4
@@ -29,6 +32,7 @@ struct _MI_SECTION_STATE// Size=0x280
     unsigned long LostDataFiles;// Offset=0x210 Size=0x4
     unsigned long LostDataPages;// Offset=0x214 Size=0x4
     unsigned long ImageFailureReason;// Offset=0x218 Size=0x4
+    unsigned char __align3[4];// Offset=0x21c Size=0x4
     struct _SECTION * CfgBitMapSection32;// Offset=0x220 Size=0x8
     struct _CONTROL_AREA * CfgBitMapControlArea32;// Offset=0x228 Size=0x8
     struct _SECTION * CfgBitMapSection64;// Offset=0x230 Size=0x8

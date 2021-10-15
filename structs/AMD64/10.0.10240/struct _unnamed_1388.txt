@@ -1,0 +1,5 @@
+struct _unnamed_1388// Size=0x10
+{
+    union _LARGE_INTEGER Address;// Offset=0x0 Size=0x8
+    unsigned long DataPayload;// Offset=0x8 Size=0x4
+};

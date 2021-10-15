@@ -1,0 +1,3 @@
+struct _LDRP_DLL_SNAP_CONTEXT// Size=0x0
+{
+};

@@ -1,0 +1,19 @@
+struct _PROCESS_ENERGY_VALUES// Size=0x90
+{
+    unsigned long long Cycles[4][2];// Offset=0x0 Size=0x40
+    unsigned long long DiskEnergy;// Offset=0x40 Size=0x8
+    unsigned long long NetworkTailEnergy;// Offset=0x48 Size=0x8
+    unsigned long long MBBTailEnergy;// Offset=0x50 Size=0x8
+    unsigned long long NetworkTxRxBytes;// Offset=0x58 Size=0x8
+    unsigned long long MBBTxRxBytes;// Offset=0x60 Size=0x8
+    unsigned short Foreground:1;// Offset=0x68 Size=0x2 BitOffset=0x0 BitSize=0x1
+    unsigned short DesktopVisible:1;// Offset=0x68 Size=0x2 BitOffset=0x1 BitSize=0x1
+    unsigned short WindowInformation;// Offset=0x68 Size=0x2
+    unsigned short CompositorRendered;// Offset=0x6a Size=0x2
+    unsigned short DirtyGenerated;// Offset=0x6c Size=0x2
+    unsigned short DirtyPropagated;// Offset=0x6e Size=0x2
+    long long DesktopVisibilityReportTimestamp;// Offset=0x70 Size=0x8
+    unsigned long long DesktopVisibleTime;// Offset=0x78 Size=0x8
+    long long ForegroundReportTimestamp;// Offset=0x80 Size=0x8
+    unsigned long long ForegroundTime;// Offset=0x88 Size=0x8
+};

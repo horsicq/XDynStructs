@@ -1,0 +1,6 @@
+struct _IMAGE_NT_HEADERS64// Size=0x108
+{
+    unsigned long Signature;// Offset=0x0 Size=0x4
+    struct _IMAGE_FILE_HEADER FileHeader;// Offset=0x4 Size=0x14
+    struct _IMAGE_OPTIONAL_HEADER64 OptionalHeader;// Offset=0x18 Size=0xf0
+};

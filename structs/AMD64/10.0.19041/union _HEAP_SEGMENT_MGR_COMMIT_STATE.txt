@@ -1,0 +1,9 @@
+union _HEAP_SEGMENT_MGR_COMMIT_STATE// Size=0x2
+{
+    unsigned short CommittedPageCount:11;// Offset=0x0 Size=0x2 BitOffset=0x0 BitSize=0xb
+    unsigned short Spare:3;// Offset=0x0 Size=0x2 BitOffset=0xb BitSize=0x3
+    unsigned short LargePageOperationInProgress:1;// Offset=0x0 Size=0x2 BitOffset=0xe BitSize=0x1
+    unsigned short LargePageCommit:1;// Offset=0x0 Size=0x2 BitOffset=0xf BitSize=0x1
+    unsigned short EntireUShortV;// Offset=0x0 Size=0x2
+    unsigned short EntireUShort;// Offset=0x0 Size=0x2
+};

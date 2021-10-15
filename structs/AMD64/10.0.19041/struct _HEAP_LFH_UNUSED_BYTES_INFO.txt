@@ -1,0 +1,7 @@
+struct _HEAP_LFH_UNUSED_BYTES_INFO// Size=0x2
+{
+    unsigned short UnusedBytes:14;// Offset=0x0 Size=0x2 BitOffset=0x0 BitSize=0xe
+    unsigned short ExtraPresent:1;// Offset=0x0 Size=0x2 BitOffset=0xe BitSize=0x1
+    unsigned short OneByteUnused:1;// Offset=0x0 Size=0x2 BitOffset=0xf BitSize=0x1
+    unsigned char Bytes[2];// Offset=0x0 Size=0x2
+};

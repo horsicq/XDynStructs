@@ -1,0 +1,5 @@
+struct _unnamed_791// Size=0x8
+{
+    enum _PNP_VETO_TYPE VetoType;// Offset=0x0 Size=0x4
+    wchar_t DeviceIdVetoNameBuffer[1];// Offset=0x4 Size=0x2
+};

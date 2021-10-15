@@ -1,8 +1,10 @@
 struct _ETW_SILODRIVERSTATE// Size=0x1b0
 {
     unsigned long EtwpSecurityProviderPID;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     struct _ETW_GUID_ENTRY EtwpSecurityProviderGuidEntry;// Offset=0x8 Size=0x180
     unsigned long AuditLoggerId;// Offset=0x188 Size=0x4
+    unsigned char __align1[4];// Offset=0x18c Size=0x4
     unsigned long long EtwPsProvRegHandle;// Offset=0x190 Size=0x8
     unsigned short EtwpSecurityLoggers[8];// Offset=0x198 Size=0x10
     unsigned char EtwpSecurityProviderEnableMask;// Offset=0x1a8 Size=0x1

@@ -18,17 +18,20 @@ struct _MM_SESSION_SPACE// Size=0x1f80
     unsigned long AttachCount;// Offset=0x7c Size=0x4
     struct _KGATE AttachGate;// Offset=0x80 Size=0x18
     struct _LIST_ENTRY WsListEntry;// Offset=0x98 Size=0x10
+    unsigned char __align0[24];// Offset=0xa8 Size=0x18
     struct _GENERAL_LOOKASIDE Lookaside[21];// Offset=0xc0 Size=0xa80
     struct _MMSESSION Session;// Offset=0xb40 Size=0x58
     struct _MM_PAGED_POOL_INFO PagedPoolInfo;// Offset=0xb98 Size=0x60
     struct _MMSUPPORT Vm;// Offset=0xbf8 Size=0x90
     struct _MMWSLE * Wsle;// Offset=0xc88 Size=0x8
     struct _MI_SESSION_DRIVER_UNLOAD DriverUnload;// Offset=0xc90 Size=0x8
+    unsigned char __align1[40];// Offset=0xc98 Size=0x28
     struct _POOL_DESCRIPTOR PagedPool;// Offset=0xcc0 Size=0x1140
     struct _MMPTE PageDirectory;// Offset=0x1e00 Size=0x8
     struct _FAST_MUTEX SessionVaLock;// Offset=0x1e08 Size=0x38
     struct _RTL_BITMAP DynamicVaBitMap;// Offset=0x1e40 Size=0x10
     unsigned long DynamicVaHint;// Offset=0x1e50 Size=0x4
+    unsigned char __align2[4];// Offset=0x1e54 Size=0x4
     struct _MI_SPECIAL_POOL SpecialPool;// Offset=0x1e58 Size=0x50
     struct _FAST_MUTEX SessionPteLock;// Offset=0x1ea8 Size=0x38
     long PoolBigEntriesInUse;// Offset=0x1ee0 Size=0x4

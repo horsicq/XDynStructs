@@ -1,0 +1,8 @@
+union _FS_FILTER_PARAMETERS// Size=0x14
+{
+    struct _unnamed_1130 AcquireForModifiedPageWriter;// Offset=0x0 Size=0x8
+    struct _unnamed_1131 ReleaseForModifiedPageWriter;// Offset=0x0 Size=0x4
+    struct _unnamed_1133 AcquireForSectionSynchronization;// Offset=0x0 Size=0x8
+    struct _unnamed_1135 NotifyStreamFileObject;// Offset=0x0 Size=0x8
+    struct _unnamed_1136 Others;// Offset=0x0 Size=0x14
+};

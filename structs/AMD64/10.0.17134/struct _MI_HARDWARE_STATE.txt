@@ -5,6 +5,7 @@ struct _MI_HARDWARE_STATE// Size=0x138
     unsigned char NumaTableCaptured;// Offset=0x8 Size=0x1
     unsigned char NodeShift;// Offset=0x9 Size=0x1
     unsigned char ChannelShift;// Offset=0xa Size=0x1
+    unsigned char __align0[5];// Offset=0xb Size=0x5
     unsigned short * NodeGraph;// Offset=0x10 Size=0x8
     struct _MI_SYSTEM_NODE_INFORMATION * SystemNodeInformation;// Offset=0x18 Size=0x8
     struct _HAL_NODE_RANGE * NumaMemoryRanges;// Offset=0x20 Size=0x8
@@ -12,6 +13,7 @@ struct _MI_HARDWARE_STATE// Size=0x138
     unsigned long SecondLevelCacheSize;// Offset=0x30 Size=0x4
     unsigned long FirstLevelCacheSize;// Offset=0x34 Size=0x4
     unsigned long PhysicalAddressBits;// Offset=0x38 Size=0x4
+    unsigned char __align1[4];// Offset=0x3c Size=0x4
     unsigned long long TotalPagesAllowed;// Offset=0x40 Size=0x8
     unsigned long SecondaryColorMask;// Offset=0x48 Size=0x4
     unsigned long SecondaryColors;// Offset=0x4c Size=0x4
@@ -20,9 +22,11 @@ struct _MI_HARDWARE_STATE// Size=0x138
     unsigned long FlushCacheForAttributeChange;// Offset=0x60 Size=0x4
     unsigned long FlushCacheForPageAttributeChange;// Offset=0x64 Size=0x4
     unsigned long CacheFlushPromoteThreshold;// Offset=0x68 Size=0x4
+    unsigned char __align2[4];// Offset=0x6c Size=0x4
     unsigned long long FlushTbThreshold;// Offset=0x70 Size=0x8
     enum _MI_PFN_CACHE_ATTRIBUTE OptimalZeroingAttribute[4][4];// Offset=0x78 Size=0x40
     unsigned char AttributeChangeRequiresReZero;// Offset=0xb8 Size=0x1
+    unsigned char __align3[7];// Offset=0xb9 Size=0x7
     struct _MI_ZERO_COST_COUNTS ZeroCostCounts[2];// Offset=0xc0 Size=0x20
     unsigned long long PrimaryPfns;// Offset=0xe0 Size=0x8
     unsigned long long HighestPossiblePhysicalPage;// Offset=0xe8 Size=0x8
@@ -31,6 +35,7 @@ struct _MI_HARDWARE_STATE// Size=0x138
     struct _RTL_BITMAP * EnclaveMetadataBitMap;// Offset=0x100 Size=0x8
     struct _EX_PUSH_LOCK EnclaveMetadataEntryLock;// Offset=0x108 Size=0x8
     long EnclaveMetadataPageLock;// Offset=0x110 Size=0x4
+    unsigned char __align4[4];// Offset=0x114 Size=0x4
     unsigned long long VsmKernelPageCount;// Offset=0x118 Size=0x8
     unsigned long long ColorCount[3];// Offset=0x120 Size=0x18
 };

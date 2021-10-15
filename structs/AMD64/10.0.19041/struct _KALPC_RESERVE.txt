@@ -1,0 +1,9 @@
+struct _KALPC_RESERVE// Size=0x30
+{
+    struct _ALPC_PORT * OwnerPort;// Offset=0x0 Size=0x8
+    struct _ALPC_HANDLE_TABLE * HandleTable;// Offset=0x8 Size=0x8
+    void * Handle;// Offset=0x10 Size=0x8
+    struct _KALPC_MESSAGE * Message;// Offset=0x18 Size=0x8
+    unsigned long long Size;// Offset=0x20 Size=0x8
+    long Active;// Offset=0x28 Size=0x4
+};

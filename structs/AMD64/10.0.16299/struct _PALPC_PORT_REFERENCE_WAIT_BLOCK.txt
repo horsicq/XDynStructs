@@ -1,0 +1,5 @@
+struct _PALPC_PORT_REFERENCE_WAIT_BLOCK// Size=0x20
+{
+    struct _KEVENT DesiredReferenceNoEvent;// Offset=0x0 Size=0x18
+    long DesiredReferenceNo;// Offset=0x18 Size=0x4
+};

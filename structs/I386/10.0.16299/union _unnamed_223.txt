@@ -1,0 +1,5 @@
+union _unnamed_223// Size=0x4
+{
+    unsigned long ImageCommitment;// Offset=0x0 Size=0x4
+    unsigned long CreatingProcessId;// Offset=0x0 Size=0x4
+};

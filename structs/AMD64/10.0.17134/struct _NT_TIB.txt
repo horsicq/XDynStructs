@@ -6,6 +6,7 @@ struct _NT_TIB// Size=0x38
     void * SubSystemTib;// Offset=0x18 Size=0x8
     void * FiberData;// Offset=0x20 Size=0x8
     unsigned long Version;// Offset=0x20 Size=0x4
+    unsigned char __align0[4];// Offset=0x24 Size=0x4
     void * ArbitraryUserPointer;// Offset=0x28 Size=0x8
     struct _NT_TIB * Self;// Offset=0x30 Size=0x8
 };

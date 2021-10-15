@@ -6,6 +6,7 @@ struct _RTL_USER_PROCESS_PARAMETERS// Size=0x410
     unsigned long DebugFlags;// Offset=0xc Size=0x4
     void * ConsoleHandle;// Offset=0x10 Size=0x8
     unsigned long ConsoleFlags;// Offset=0x18 Size=0x4
+    unsigned char __align0[4];// Offset=0x1c Size=0x4
     void * StandardInput;// Offset=0x20 Size=0x8
     void * StandardOutput;// Offset=0x28 Size=0x8
     void * StandardError;// Offset=0x30 Size=0x8
@@ -23,6 +24,7 @@ struct _RTL_USER_PROCESS_PARAMETERS// Size=0x410
     unsigned long FillAttribute;// Offset=0xa0 Size=0x4
     unsigned long WindowFlags;// Offset=0xa4 Size=0x4
     unsigned long ShowWindowFlags;// Offset=0xa8 Size=0x4
+    unsigned char __align1[4];// Offset=0xac Size=0x4
     struct _UNICODE_STRING WindowTitle;// Offset=0xb0 Size=0x10
     struct _UNICODE_STRING DesktopInfo;// Offset=0xc0 Size=0x10
     struct _UNICODE_STRING ShellInfo;// Offset=0xd0 Size=0x10

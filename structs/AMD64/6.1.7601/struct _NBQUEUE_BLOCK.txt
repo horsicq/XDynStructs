@@ -1,0 +1,6 @@
+struct _NBQUEUE_BLOCK// Size=0x20
+{
+    struct _SLIST_ENTRY SListEntry;// Offset=0x0 Size=0x10
+    unsigned long long Next;// Offset=0x10 Size=0x8
+    unsigned long long Data;// Offset=0x18 Size=0x8
+};

@@ -1,0 +1,35 @@
+struct _VI_DEADLOCK_GLOBALS// Size=0x40f0
+{
+    long long TimeAcquire;// Offset=0x0 Size=0x8
+    long long TimeRelease;// Offset=0x8 Size=0x8
+    struct _LIST_ENTRY * ResourceDatabase;// Offset=0x10 Size=0x4
+    unsigned long ResourceDatabaseCount;// Offset=0x14 Size=0x4
+    struct _VF_ADDRESS_RANGE ResourceAddressRange[1023];// Offset=0x18 Size=0x1ff8
+    struct _LIST_ENTRY * ThreadDatabase;// Offset=0x2010 Size=0x4
+    unsigned long ThreadDatabaseCount;// Offset=0x2014 Size=0x4
+    struct _VF_ADDRESS_RANGE ThreadAddressRange[1023];// Offset=0x2018 Size=0x1ff8
+    unsigned long AllocationFailures;// Offset=0x4010 Size=0x4
+    unsigned long NodesTrimmedBasedOnAge;// Offset=0x4014 Size=0x4
+    unsigned long NodesTrimmedBasedOnCount;// Offset=0x4018 Size=0x4
+    unsigned long NodesSearched;// Offset=0x401c Size=0x4
+    unsigned long MaxNodesSearched;// Offset=0x4020 Size=0x4
+    unsigned long SequenceNumber;// Offset=0x4024 Size=0x4
+    unsigned long RecursionDepthLimit;// Offset=0x4028 Size=0x4
+    unsigned long SearchedNodesLimit;// Offset=0x402c Size=0x4
+    unsigned long DepthLimitHits;// Offset=0x4030 Size=0x4
+    unsigned long SearchLimitHits;// Offset=0x4034 Size=0x4
+    unsigned long StackLimitHits;// Offset=0x4038 Size=0x4
+    unsigned long ABC_ACB_Skipped;// Offset=0x403c Size=0x4
+    unsigned long OutOfOrderReleases;// Offset=0x4040 Size=0x4
+    unsigned long NodesReleasedOutOfOrder;// Offset=0x4044 Size=0x4
+    unsigned long TotalReleases;// Offset=0x4048 Size=0x4
+    unsigned long RootNodesDeleted;// Offset=0x404c Size=0x4
+    unsigned long ForgetHistoryCounter;// Offset=0x4050 Size=0x4
+    void * Instigator;// Offset=0x4054 Size=0x4
+    unsigned long NumberOfParticipants;// Offset=0x4058 Size=0x4
+    struct _VI_DEADLOCK_NODE * Participant[32];// Offset=0x405c Size=0x80
+    long ChildrenCountWatermark;// Offset=0x40dc Size=0x4
+    enum _KERNEL_STACK_LIMITS StackType;// Offset=0x40e0 Size=0x4
+    unsigned long StackLowLimit;// Offset=0x40e4 Size=0x4
+    unsigned long StackHighLimit;// Offset=0x40e8 Size=0x4
+};

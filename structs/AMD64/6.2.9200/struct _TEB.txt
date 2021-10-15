@@ -12,14 +12,17 @@ struct _TEB// Size=0x1820
     void * Win32ThreadInfo;// Offset=0x78 Size=0x8
     unsigned long User32Reserved[26];// Offset=0x80 Size=0x68
     unsigned long UserReserved[5];// Offset=0xe8 Size=0x14
+    unsigned char __align0[4];// Offset=0xfc Size=0x4
     void * WOW32Reserved;// Offset=0x100 Size=0x8
     unsigned long CurrentLocale;// Offset=0x108 Size=0x4
     unsigned long FpSoftwareStatusRegister;// Offset=0x10c Size=0x4
     void * SystemReserved1[54];// Offset=0x110 Size=0x1b0
     long ExceptionCode;// Offset=0x2c0 Size=0x4
+    unsigned char __align1[4];// Offset=0x2c4 Size=0x4
     struct _ACTIVATION_CONTEXT_STACK * ActivationContextStackPointer;// Offset=0x2c8 Size=0x8
     unsigned char SpareBytes[24];// Offset=0x2d0 Size=0x18
     unsigned long TxFsContext;// Offset=0x2e8 Size=0x4
+    unsigned char __align2[4];// Offset=0x2ec Size=0x4
     struct _GDI_TEB_BATCH GdiTebBatch;// Offset=0x2f0 Size=0x4e8
     struct _CLIENT_ID RealClientId;// Offset=0x7d8 Size=0x10
     void * GdiCachedProcessHandle;// Offset=0x7e8 Size=0x8
@@ -36,8 +39,10 @@ struct _TEB// Size=0x1820
     void * glCurrentRC;// Offset=0x1240 Size=0x8
     void * glContext;// Offset=0x1248 Size=0x8
     unsigned long LastStatusValue;// Offset=0x1250 Size=0x4
+    unsigned char __align3[4];// Offset=0x1254 Size=0x4
     struct _UNICODE_STRING StaticUnicodeString;// Offset=0x1258 Size=0x10
     wchar_t StaticUnicodeBuffer[261];// Offset=0x1268 Size=0x20a
+    unsigned char __align4[6];// Offset=0x1472 Size=0x6
     void * DeallocationStack;// Offset=0x1478 Size=0x8
     void * TlsSlots[64];// Offset=0x1480 Size=0x200
     struct _LIST_ENTRY TlsLinks;// Offset=0x1680 Size=0x10
@@ -45,6 +50,7 @@ struct _TEB// Size=0x1820
     void * ReservedForNtRpc;// Offset=0x1698 Size=0x8
     void * DbgSsReserved[2];// Offset=0x16a0 Size=0x10
     unsigned long HardErrorMode;// Offset=0x16b0 Size=0x4
+    unsigned char __align5[4];// Offset=0x16b4 Size=0x4
     void * Instrumentation[11];// Offset=0x16b8 Size=0x58
     struct _GUID ActivityId;// Offset=0x1710 Size=0x10
     void * SubProcessTag;// Offset=0x1720 Size=0x8
@@ -59,9 +65,11 @@ struct _TEB// Size=0x1820
     unsigned char ReservedPad2;// Offset=0x1746 Size=0x1
     unsigned char IdealProcessor;// Offset=0x1747 Size=0x1
     unsigned long GuaranteedStackBytes;// Offset=0x1748 Size=0x4
+    unsigned char __align6[4];// Offset=0x174c Size=0x4
     void * ReservedForPerf;// Offset=0x1750 Size=0x8
     void * ReservedForOle;// Offset=0x1758 Size=0x8
     unsigned long WaitingOnLoaderLock;// Offset=0x1760 Size=0x4
+    unsigned char __align7[4];// Offset=0x1764 Size=0x4
     void * SavedPriorityState;// Offset=0x1768 Size=0x8
     unsigned long long ReservedForCodeCoverage;// Offset=0x1770 Size=0x8
     void * ThreadPoolData;// Offset=0x1778 Size=0x8
@@ -74,6 +82,7 @@ struct _TEB// Size=0x1820
     void * pShimData;// Offset=0x17a8 Size=0x8
     unsigned short HeapVirtualAffinity;// Offset=0x17b0 Size=0x2
     unsigned short LowFragHeapDataSlot;// Offset=0x17b2 Size=0x2
+    unsigned char __align8[4];// Offset=0x17b4 Size=0x4
     void * CurrentTransactionHandle;// Offset=0x17b8 Size=0x8
     struct _TEB_ACTIVE_FRAME * ActiveFrame;// Offset=0x17c0 Size=0x8
     void * FlsData;// Offset=0x17c8 Size=0x8

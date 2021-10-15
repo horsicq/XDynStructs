@@ -1,0 +1,7 @@
+struct _MI_PHYSICAL_VIEW// Size=0x30
+{
+    struct _RTL_BALANCED_NODE PhysicalNode;// Offset=0x0 Size=0x18
+    struct _MMVAD_SHORT * Vad;// Offset=0x18 Size=0x8
+    struct _AWEINFO * AweInfo;// Offset=0x20 Size=0x8
+    union <anonymous-tag> u1;// Offset=0x28 Size=0x8
+};

@@ -1,5 +1,6 @@
 struct _INTERRUPT_CONNECTION_DATA// Size=0x58
 {
     unsigned long Count;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     struct _INTERRUPT_VECTOR_DATA Vectors[1];// Offset=0x8 Size=0x50
 };

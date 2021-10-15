@@ -1,0 +1,13 @@
+struct _PPM_IDLE_STATES// Size=0x68
+{
+    unsigned long Count;// Offset=0x0 Size=0x4
+    union _unnamed_470 Flags;// Offset=0x4 Size=0x4
+    unsigned long TargetState;// Offset=0x8 Size=0x4
+    unsigned long ActualState;// Offset=0xc Size=0x4
+    unsigned long OldState;// Offset=0x10 Size=0x4
+    unsigned char NewlyUnparked;// Offset=0x14 Size=0x1
+    unsigned char __align0[3];// Offset=0x15 Size=0x3
+    struct _KAFFINITY_EX TargetProcessors;// Offset=0x18 Size=0xc
+    unsigned char __align1[4];// Offset=0x24 Size=0x4
+    struct _PPM_IDLE_STATE State[1];// Offset=0x28 Size=0x40
+};

@@ -9,6 +9,7 @@ struct _MMVAD// Size=0x78
     struct _EX_PUSH_LOCK PushLock;// Offset=0x30 Size=0x8
     union _unnamed_200 u5;// Offset=0x38 Size=0x8
     union _unnamed_204 u2;// Offset=0x40 Size=0x4
+    unsigned char __align0[4];// Offset=0x44 Size=0x4
     struct _SUBSECTION * Subsection;// Offset=0x48 Size=0x8
     struct _MSUBSECTION * MappedSubsection;// Offset=0x48 Size=0x8
     struct _MMPTE * FirstPrototypePte;// Offset=0x50 Size=0x8

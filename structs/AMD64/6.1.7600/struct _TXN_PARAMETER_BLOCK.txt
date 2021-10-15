@@ -2,5 +2,6 @@ struct _TXN_PARAMETER_BLOCK// Size=0x10
 {
     unsigned short Length;// Offset=0x0 Size=0x2
     unsigned short TxFsContext;// Offset=0x2 Size=0x2
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     void * TransactionObject;// Offset=0x8 Size=0x8
 };

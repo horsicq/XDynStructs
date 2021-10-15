@@ -1,0 +1,5 @@
+union _unnamed_788// Size=0x4
+{
+    unsigned long NodeSize;// Offset=0x0 Size=0x4
+    unsigned long UseLookaside;// Offset=0x0 Size=0x4
+};

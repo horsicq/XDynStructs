@@ -1,0 +1,4 @@
+struct _unnamed_218// Size=0x2
+{
+    unsigned short ReferenceCount;// Offset=0x0 Size=0x2
+};

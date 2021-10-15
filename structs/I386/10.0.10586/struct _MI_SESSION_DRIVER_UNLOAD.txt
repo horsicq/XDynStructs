@@ -1,0 +1,5 @@
+struct _MI_SESSION_DRIVER_UNLOAD// Size=0x4
+{
+    void  ( * Function)(struct _DRIVER_OBJECT * );// Offset=0x0 Size=0x4
+    unsigned long FunctionValue;// Offset=0x0 Size=0x4
+};

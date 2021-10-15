@@ -1,0 +1,5 @@
+struct _FREE_DISPLAY// Size=0xc
+{
+    unsigned long RealVectorSize;// Offset=0x0 Size=0x4
+    struct _RTL_BITMAP Display;// Offset=0x4 Size=0x8
+};

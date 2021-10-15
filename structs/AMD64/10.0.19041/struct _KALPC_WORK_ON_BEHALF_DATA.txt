@@ -1,0 +1,4 @@
+struct _KALPC_WORK_ON_BEHALF_DATA// Size=0x8
+{
+    struct _ALPC_WORK_ON_BEHALF_TICKET Ticket;// Offset=0x0 Size=0x8
+};

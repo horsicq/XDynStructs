@@ -1,0 +1,6 @@
+struct _IOP_FILE_OBJECT_EXTENSION// Size=0x24
+{
+    unsigned long FoExtFlags;// Offset=0x0 Size=0x4
+    void * FoExtPerTypeExtension[7];// Offset=0x4 Size=0x1c
+    enum _IOP_PRIORITY_HINT FoIoPriorityHint;// Offset=0x20 Size=0x4
+};

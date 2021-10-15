@@ -1,0 +1,5 @@
+struct _LPCP_NONPAGED_PORT_QUEUE// Size=0x28
+{
+    struct _KSEMAPHORE Semaphore;// Offset=0x0 Size=0x20
+    struct _LPCP_PORT_OBJECT * BackPointer;// Offset=0x20 Size=0x8
+};

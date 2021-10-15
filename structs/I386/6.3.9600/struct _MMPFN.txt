@@ -1,0 +1,12 @@
+struct _MMPFN// Size=0x1c
+{
+    union _unnamed_183 u1;// Offset=0x0 Size=0x4
+    union _unnamed_184 u2;// Offset=0x4 Size=0x4
+    struct _MMPTE * PteAddress;// Offset=0x8 Size=0x4
+    void * VolatilePteAddress;// Offset=0x8 Size=0x4
+    long Lock;// Offset=0x8 Size=0x4
+    unsigned long PteLong;// Offset=0x8 Size=0x4
+    union _unnamed_186 u3;// Offset=0xc Size=0x4
+    struct _MMPTE OriginalPte;// Offset=0x10 Size=0x8
+    union _unnamed_187 u4;// Offset=0x18 Size=0x4
+};

@@ -1,0 +1,5 @@
+struct _LDR_SERVICE_TAG_RECORD// Size=0x10
+{
+    struct _LDR_SERVICE_TAG_RECORD * Next;// Offset=0x0 Size=0x8
+    unsigned long ServiceTag;// Offset=0x8 Size=0x4
+};

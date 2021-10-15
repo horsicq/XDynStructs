@@ -1,0 +1,11 @@
+struct _POP_THERMAL_ZONE_METRICS// Size=0x98
+{
+    struct _ERESOURCE MetricsResource;// Offset=0x0 Size=0x68
+    unsigned long ActiveCount;// Offset=0x68 Size=0x4
+    unsigned long PassiveCount;// Offset=0x6c Size=0x4
+    union _LARGE_INTEGER LastActiveStartTick;// Offset=0x70 Size=0x8
+    union _LARGE_INTEGER AverageActiveTime;// Offset=0x78 Size=0x8
+    union _LARGE_INTEGER LastPassiveStartTick;// Offset=0x80 Size=0x8
+    union _LARGE_INTEGER AveragePassiveTime;// Offset=0x88 Size=0x8
+    union _LARGE_INTEGER StartTickSinceLastReset;// Offset=0x90 Size=0x8
+};

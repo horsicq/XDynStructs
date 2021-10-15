@@ -1,0 +1,15 @@
+union _unnamed_198// Size=0x8
+{
+    unsigned long long PteFrame:36;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x24
+    unsigned long long Channel:2;// Offset=0x0 Size=0x8 BitOffset=0x24 BitSize=0x2
+    unsigned long long Unused1:1;// Offset=0x0 Size=0x8 BitOffset=0x26 BitSize=0x1
+    unsigned long long Unused2:1;// Offset=0x0 Size=0x8 BitOffset=0x27 BitSize=0x1
+    unsigned long long Partition:10;// Offset=0x0 Size=0x8 BitOffset=0x28 BitSize=0xa
+    unsigned long long Spare:2;// Offset=0x0 Size=0x8 BitOffset=0x32 BitSize=0x2
+    unsigned long long FileOnly:1;// Offset=0x0 Size=0x8 BitOffset=0x34 BitSize=0x1
+    unsigned long long PfnExists:1;// Offset=0x0 Size=0x8 BitOffset=0x35 BitSize=0x1
+    unsigned long long PageIdentity:3;// Offset=0x0 Size=0x8 BitOffset=0x36 BitSize=0x3
+    unsigned long long PrototypePte:1;// Offset=0x0 Size=0x8 BitOffset=0x39 BitSize=0x1
+    unsigned long long PageColor:6;// Offset=0x0 Size=0x8 BitOffset=0x3a BitSize=0x6
+    unsigned long long EntireField;// Offset=0x0 Size=0x8
+};

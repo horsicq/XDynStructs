@@ -1,0 +1,5 @@
+struct _WNF_SCOPE_MAP_ENTRY// Size=0x18
+{
+    struct _WNF_LOCK MapEntryLock;// Offset=0x0 Size=0x8
+    struct _LIST_ENTRY MapEntryHead;// Offset=0x8 Size=0x10
+};

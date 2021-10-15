@@ -1,0 +1,43 @@
+struct _ALPC_PORT// Size=0x11c
+{
+    struct _LIST_ENTRY PortListEntry;// Offset=0x0 Size=0x8
+    struct _ALPC_COMMUNICATION_INFO * CommunicationInfo;// Offset=0x8 Size=0x4
+    struct _EPROCESS * OwnerProcess;// Offset=0xc Size=0x4
+    void * CompletionPort;// Offset=0x10 Size=0x4
+    void * CompletionKey;// Offset=0x14 Size=0x4
+    struct _ALPC_COMPLETION_PACKET_LOOKASIDE * CompletionPacketLookaside;// Offset=0x18 Size=0x4
+    void * PortContext;// Offset=0x1c Size=0x4
+    struct _SECURITY_CLIENT_CONTEXT StaticSecurity;// Offset=0x20 Size=0x3c
+    struct _EX_PUSH_LOCK IncomingQueueLock;// Offset=0x5c Size=0x4
+    struct _LIST_ENTRY MainQueue;// Offset=0x60 Size=0x8
+    struct _LIST_ENTRY LargeMessageQueue;// Offset=0x68 Size=0x8
+    struct _EX_PUSH_LOCK PendingQueueLock;// Offset=0x70 Size=0x4
+    struct _LIST_ENTRY PendingQueue;// Offset=0x74 Size=0x8
+    struct _EX_PUSH_LOCK DirectQueueLock;// Offset=0x7c Size=0x4
+    struct _LIST_ENTRY DirectQueue;// Offset=0x80 Size=0x8
+    struct _EX_PUSH_LOCK WaitQueueLock;// Offset=0x88 Size=0x4
+    struct _LIST_ENTRY WaitQueue;// Offset=0x8c Size=0x8
+    struct _KSEMAPHORE * Semaphore;// Offset=0x94 Size=0x4
+    struct _KEVENT * DummyEvent;// Offset=0x94 Size=0x4
+    struct _ALPC_PORT_ATTRIBUTES PortAttributes;// Offset=0x98 Size=0x2c
+    struct _EX_PUSH_LOCK ResourceListLock;// Offset=0xc4 Size=0x4
+    struct _LIST_ENTRY ResourceListHead;// Offset=0xc8 Size=0x8
+    struct _EX_PUSH_LOCK PortObjectLock;// Offset=0xd0 Size=0x4
+    struct _ALPC_COMPLETION_LIST * CompletionList;// Offset=0xd4 Size=0x4
+    struct _CALLBACK_OBJECT * CallbackObject;// Offset=0xd8 Size=0x4
+    void * CallbackContext;// Offset=0xdc Size=0x4
+    struct _LIST_ENTRY CanceledQueue;// Offset=0xe0 Size=0x8
+    long SequenceNo;// Offset=0xe8 Size=0x4
+    long ReferenceNo;// Offset=0xec Size=0x4
+    struct _PALPC_PORT_REFERENCE_WAIT_BLOCK * ReferenceNoWait;// Offset=0xf0 Size=0x4
+    union _unnamed_404 u1;// Offset=0xf4 Size=0x4
+    struct _ALPC_PORT * TargetQueuePort;// Offset=0xf8 Size=0x4
+    struct _ALPC_PORT * TargetSequencePort;// Offset=0xfc Size=0x4
+    struct _KALPC_MESSAGE * CachedMessage;// Offset=0x100 Size=0x4
+    unsigned long MainQueueLength;// Offset=0x104 Size=0x4
+    unsigned long LargeMessageQueueLength;// Offset=0x108 Size=0x4
+    unsigned long PendingQueueLength;// Offset=0x10c Size=0x4
+    unsigned long DirectQueueLength;// Offset=0x110 Size=0x4
+    unsigned long CanceledQueueLength;// Offset=0x114 Size=0x4
+    unsigned long WaitQueueLength;// Offset=0x118 Size=0x4
+};

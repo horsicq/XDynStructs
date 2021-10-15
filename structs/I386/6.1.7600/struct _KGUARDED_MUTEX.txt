@@ -1,0 +1,10 @@
+struct _KGUARDED_MUTEX// Size=0x20
+{
+    long Count;// Offset=0x0 Size=0x4
+    struct _KTHREAD * Owner;// Offset=0x4 Size=0x4
+    unsigned long Contention;// Offset=0x8 Size=0x4
+    struct _KGATE Gate;// Offset=0xc Size=0x10
+    short KernelApcDisable;// Offset=0x1c Size=0x2
+    short SpecialApcDisable;// Offset=0x1e Size=0x2
+    unsigned long CombinedApcDisable;// Offset=0x1c Size=0x4
+};

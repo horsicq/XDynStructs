@@ -1,6 +1,7 @@
 struct _POP_DEVICE_SYS_STATE// Size=0x1d0
 {
     unsigned char IrpMinor;// Offset=0x0 Size=0x1
+    unsigned char __align0[3];// Offset=0x1 Size=0x3
     enum _SYSTEM_POWER_STATE SystemState;// Offset=0x4 Size=0x4
     unsigned long long SpinLock;// Offset=0x8 Size=0x8
     struct _KTHREAD * Thread;// Offset=0x10 Size=0x8
@@ -10,6 +11,7 @@ struct _POP_DEVICE_SYS_STATE// Size=0x1d0
     struct _PO_DEVICE_NOTIFY_ORDER Order;// Offset=0x30 Size=0x178
     struct _LIST_ENTRY Pending;// Offset=0x1a8 Size=0x10
     long Status;// Offset=0x1b8 Size=0x4
+    unsigned char __align1[4];// Offset=0x1bc Size=0x4
     struct _DEVICE_OBJECT * FailedDevice;// Offset=0x1c0 Size=0x8
     unsigned char Waking;// Offset=0x1c8 Size=0x1
     unsigned char Cancelled;// Offset=0x1c9 Size=0x1

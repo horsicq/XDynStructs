@@ -1,0 +1,14 @@
+struct _KPROCESSOR_DESCRIPTOR_AREA// Size=0x5000
+{
+    union _KIDTENTRY64 Idt[256];// Offset=0x0 Size=0x1000
+    struct _KTSS64 Tss;// Offset=0x1000 Size=0x68
+    unsigned long long TssSpare;// Offset=0x1068 Size=0x8
+    struct _KPCR * KernelGsBase;// Offset=0x1070 Size=0x8
+    void * IdleStack;// Offset=0x1078 Size=0x8
+    unsigned char TssPad[3888];// Offset=0x1080 Size=0xf30
+    unsigned char GdtPadTemp[4096];// Offset=0x1fb0 Size=0x1000
+    union _KGDTENTRY64 Gdt[5];// Offset=0x2fb0 Size=0x50
+    struct _KLDTENTRY GdtCmTebDescriptor;// Offset=0x3000 Size=0x8
+    unsigned char GdtEndPadding[4088];// Offset=0x3008 Size=0xff8
+    struct _KTRANSITION_STACK TransitionStack[8];// Offset=0x4000 Size=0x1000
+};

@@ -1,0 +1,10 @@
+struct _OBJECT_DIRECTORY// Size=0xac
+{
+    struct _OBJECT_DIRECTORY_ENTRY * HashBuckets[37];// Offset=0x0 Size=0x94
+    struct _EX_PUSH_LOCK Lock;// Offset=0x94 Size=0x4
+    struct _DEVICE_MAP * DeviceMap;// Offset=0x98 Size=0x4
+    unsigned long SessionId;// Offset=0x9c Size=0x4
+    void * NamespaceEntry;// Offset=0xa0 Size=0x4
+    void * SessionObject;// Offset=0xa4 Size=0x4
+    unsigned long Flags;// Offset=0xa8 Size=0x4
+};

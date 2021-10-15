@@ -2,6 +2,7 @@ struct _PPM_ENGINE_SETTINGS// Size=0xa80
 {
     union _PPM_POLICY_SETTINGS_MASK ExplicitSetting[2];// Offset=0x0 Size=0x10
     unsigned char ThrottlingPolicy;// Offset=0x10 Size=0x1
+    unsigned char __align0[3];// Offset=0x11 Size=0x3
     unsigned long PerfTimeCheck;// Offset=0x14 Size=0x4
     unsigned char PerfHistoryCount[2];// Offset=0x18 Size=0x2
     unsigned char PerfMinPolicy[2];// Offset=0x1a Size=0x2
@@ -12,6 +13,7 @@ struct _PPM_ENGINE_SETTINGS// Size=0xa80
     unsigned char PerfIncreasePolicy[2];// Offset=0x24 Size=0x2
     unsigned char PerfDecreaseThreshold[2];// Offset=0x26 Size=0x2
     unsigned char PerfIncreaseThreshold[2];// Offset=0x28 Size=0x2
+    unsigned char __align1[2];// Offset=0x2a Size=0x2
     unsigned long PerfFrequencyCap[2];// Offset=0x2c Size=0x8
     unsigned long PerfBoostPolicy;// Offset=0x34 Size=0x4
     unsigned long PerfBoostMode;// Offset=0x38 Size=0x4
@@ -30,12 +32,14 @@ struct _PPM_ENGINE_SETTINGS// Size=0xa80
     unsigned char CoreParkingDistributionThreshold;// Offset=0x54 Size=0x1
     unsigned char CoreParkingDecreasePolicy;// Offset=0x55 Size=0x1
     unsigned char CoreParkingIncreasePolicy;// Offset=0x56 Size=0x1
+    unsigned char __align2[1];// Offset=0x57 Size=0x1
     unsigned long CoreParkingDecreaseTime;// Offset=0x58 Size=0x4
     unsigned long CoreParkingIncreaseTime;// Offset=0x5c Size=0x4
     unsigned char CoreParkingMinCores[2];// Offset=0x60 Size=0x2
     unsigned char CoreParkingMaxCores[2];// Offset=0x62 Size=0x2
     unsigned char AllowScaling;// Offset=0x64 Size=0x1
     unsigned char IdleDisabled;// Offset=0x65 Size=0x1
+    unsigned char __align3[2];// Offset=0x66 Size=0x2
     unsigned long IdleTimeCheck;// Offset=0x68 Size=0x4
     unsigned char IdleDemotePercent;// Offset=0x6c Size=0x1
     unsigned char IdlePromotePercent;// Offset=0x6d Size=0x1
@@ -46,5 +50,6 @@ struct _PPM_ENGINE_SETTINGS// Size=0xa80
     unsigned char HeteroIncreaseThreshold[1280];// Offset=0x571 Size=0x500
     unsigned char Class0FloorPerformance;// Offset=0xa71 Size=0x1
     unsigned char Class1InitialPerformance;// Offset=0xa72 Size=0x1
+    unsigned char __align4[1];// Offset=0xa73 Size=0x1
     enum _KHETERO_CPU_POLICY ThreadPolicies[2];// Offset=0xa74 Size=0x8
 };

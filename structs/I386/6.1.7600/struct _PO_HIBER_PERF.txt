@@ -1,0 +1,15 @@
+struct _PO_HIBER_PERF// Size=0x58
+{
+    unsigned long long IoTicks;// Offset=0x0 Size=0x8
+    unsigned long long InitTicks;// Offset=0x8 Size=0x8
+    unsigned long long CopyTicks;// Offset=0x10 Size=0x8
+    unsigned long long ElapsedTicks;// Offset=0x18 Size=0x8
+    unsigned long long CompressTicks;// Offset=0x20 Size=0x8
+    unsigned long long ResumeAppTime;// Offset=0x28 Size=0x8
+    unsigned long long HiberFileResumeTime;// Offset=0x30 Size=0x8
+    unsigned long long BytesCopied;// Offset=0x38 Size=0x8
+    unsigned long long PagesProcessed;// Offset=0x40 Size=0x8
+    unsigned long PagesWritten;// Offset=0x48 Size=0x4
+    unsigned long DumpCount;// Offset=0x4c Size=0x4
+    unsigned long FileRuns;// Offset=0x50 Size=0x4
+};

@@ -12,6 +12,7 @@ struct _WHEAP_ERROR_SOURCE// Size=0x418
     void * Context;// Offset=0x28 Size=0x4
     unsigned long SectionCount;// Offset=0x2c Size=0x4
     unsigned long SectionLength;// Offset=0x30 Size=0x4
+    unsigned char __align0[4];// Offset=0x34 Size=0x4
     union _LARGE_INTEGER TickCountAtLastError;// Offset=0x38 Size=0x8
     unsigned long AccumulatedErrors;// Offset=0x40 Size=0x4
     unsigned long TotalErrors;// Offset=0x44 Size=0x4

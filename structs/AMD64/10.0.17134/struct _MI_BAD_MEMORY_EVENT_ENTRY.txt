@@ -3,6 +3,7 @@ struct _MI_BAD_MEMORY_EVENT_ENTRY// Size=0x38
     unsigned long BugCheckCode;// Offset=0x0 Size=0x4
     long Active;// Offset=0x4 Size=0x4
     unsigned long Data;// Offset=0x8 Size=0x4
+    unsigned char __align0[4];// Offset=0xc Size=0x4
     union _LARGE_INTEGER PhysicalAddress;// Offset=0x10 Size=0x8
     struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x18 Size=0x20
 };

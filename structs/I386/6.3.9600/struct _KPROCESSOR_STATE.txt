@@ -1,0 +1,5 @@
+struct _KPROCESSOR_STATE// Size=0x320
+{
+    struct _CONTEXT ContextFrame;// Offset=0x0 Size=0x2cc
+    struct _KSPECIAL_REGISTERS SpecialRegisters;// Offset=0x2cc Size=0x54
+};

@@ -1,0 +1,5 @@
+struct _unnamed_379// Size=0x10
+{
+    struct _FILE_OBJECT * FileObject;// Offset=0x0 Size=0x8
+    void * DiskIoAttribution;// Offset=0x8 Size=0x8
+};

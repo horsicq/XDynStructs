@@ -7,6 +7,7 @@ struct _PEP_ACPI_EXTENDED_ADDRESS// Size=0x48
     unsigned char TypeSpecificFlags;// Offset=0xa Size=0x1
     unsigned char RevisionId;// Offset=0xb Size=0x1
     unsigned char Reserved;// Offset=0xc Size=0x1
+    unsigned char __align0[3];// Offset=0xd Size=0x3
     unsigned long long Granularity;// Offset=0x10 Size=0x8
     unsigned long long MinimumAddress;// Offset=0x18 Size=0x8
     unsigned long long MaximumAddress;// Offset=0x20 Size=0x8

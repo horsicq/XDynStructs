@@ -1,0 +1,7 @@
+struct _PNP_DEVICE_EVENT_LIST// Size=0x4c
+{
+    long Status;// Offset=0x0 Size=0x4
+    struct _KMUTANT EventQueueMutex;// Offset=0x4 Size=0x20
+    struct _FAST_MUTEX Lock;// Offset=0x24 Size=0x20
+    struct _LIST_ENTRY List;// Offset=0x44 Size=0x8
+};

@@ -1,0 +1,8 @@
+struct _SEGMENT_HEAP_EXTRA// Size=0x8
+{
+    unsigned short AllocationTag;// Offset=0x0 Size=0x2
+    unsigned char InterceptorIndex:4;// Offset=0x2 Size=0x1 BitOffset=0x0 BitSize=0x4
+    unsigned char UserFlags:4;// Offset=0x2 Size=0x1 BitOffset=0x4 BitSize=0x4
+    unsigned char ExtraSizeInUnits;// Offset=0x3 Size=0x1
+    void * Settable;// Offset=0x4 Size=0x4
+};

@@ -1,0 +1,29 @@
+struct PO_MEMORY_IMAGE// Size=0xe0
+{
+    unsigned long Signature;// Offset=0x0 Size=0x4
+    unsigned long ImageType;// Offset=0x4 Size=0x4
+    unsigned long CheckSum;// Offset=0x8 Size=0x4
+    unsigned long LengthSelf;// Offset=0xc Size=0x4
+    unsigned long PageSelf;// Offset=0x10 Size=0x4
+    unsigned long PageSize;// Offset=0x14 Size=0x4
+    union _LARGE_INTEGER SystemTime;// Offset=0x18 Size=0x8
+    unsigned long long InterruptTime;// Offset=0x20 Size=0x8
+    unsigned long FeatureFlags;// Offset=0x28 Size=0x4
+    unsigned char HiberFlags;// Offset=0x2c Size=0x1
+    unsigned char spare[3];// Offset=0x2d Size=0x3
+    unsigned long NoHiberPtes;// Offset=0x30 Size=0x4
+    unsigned long HiberVa;// Offset=0x34 Size=0x4
+    union _LARGE_INTEGER HiberPte;// Offset=0x38 Size=0x8
+    unsigned long NoFreePages;// Offset=0x40 Size=0x4
+    unsigned long FreeMapCheck;// Offset=0x44 Size=0x4
+    unsigned long WakeCheck;// Offset=0x48 Size=0x4
+    unsigned long FirstTablePage;// Offset=0x4c Size=0x4
+    struct _PO_HIBER_PERF PerfInfo;// Offset=0x50 Size=0x58
+    unsigned long FirmwareRuntimeInformationPages;// Offset=0xa8 Size=0x4
+    unsigned long FirmwareRuntimeInformation[1];// Offset=0xac Size=0x4
+    unsigned long NoBootLoaderLogPages;// Offset=0xb0 Size=0x4
+    unsigned long BootLoaderLogPages[8];// Offset=0xb4 Size=0x20
+    unsigned long NotUsed;// Offset=0xd4 Size=0x4
+    unsigned long ResumeContextCheck;// Offset=0xd8 Size=0x4
+    unsigned long ResumeContextPages;// Offset=0xdc Size=0x4
+};

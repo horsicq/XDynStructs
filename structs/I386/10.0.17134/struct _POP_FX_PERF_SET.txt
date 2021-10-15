@@ -1,6 +1,7 @@
 struct _POP_FX_PERF_SET// Size=0x20
 {
     struct _PO_FX_COMPONENT_PERF_SET * PerfSet;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     unsigned long long CurrentPerf;// Offset=0x8 Size=0x8
     unsigned long long CurrentPerfStamp;// Offset=0x10 Size=0x8
     unsigned char CurrentPerfNominal;// Offset=0x18 Size=0x1

@@ -6,6 +6,7 @@ struct _ALPC_COMPLETION_PACKET_LOOKASIDE// Size=0x50
     unsigned long PendingNullCount;// Offset=0x10 Size=0x4
     unsigned long PendingCheckCompletionListCount;// Offset=0x14 Size=0x4
     unsigned long PendingDelete;// Offset=0x18 Size=0x4
+    unsigned char __align0[4];// Offset=0x1c Size=0x4
     struct _SINGLE_LIST_ENTRY FreeListHead;// Offset=0x20 Size=0x8
     void * CompletionPort;// Offset=0x28 Size=0x8
     void * CompletionKey;// Offset=0x30 Size=0x8

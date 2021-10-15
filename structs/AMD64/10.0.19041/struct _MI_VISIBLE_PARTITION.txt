@@ -1,0 +1,32 @@
+struct _MI_VISIBLE_PARTITION// Size=0x1200
+{
+    unsigned long long LowestPhysicalPage;// Offset=0x0 Size=0x8
+    unsigned long long HighestPhysicalPage;// Offset=0x8 Size=0x8
+    unsigned long long NumberOfPhysicalPages;// Offset=0x10 Size=0x8
+    unsigned long NumberOfPagingFiles;// Offset=0x18 Size=0x4
+    unsigned char SystemCacheInitialized;// Offset=0x1c Size=0x1
+    unsigned char __align0[3];// Offset=0x1d Size=0x3
+    struct _MMPAGING_FILE * PagingFile[16];// Offset=0x20 Size=0x80
+    unsigned char __align1[32];// Offset=0xa0 Size=0x20
+    unsigned long long AvailablePages;// Offset=0xc0 Size=0x8
+    unsigned char __align2[56];// Offset=0xc8 Size=0x38
+    unsigned long long ResidentAvailablePages;// Offset=0x100 Size=0x8
+    unsigned char __align3[56];// Offset=0x108 Size=0x38
+    struct _MMSUPPORT_INSTANCE PartitionWs[1];// Offset=0x140 Size=0xc0
+    struct _MMWSL_INSTANCE PartitionWorkingSetLists[1];// Offset=0x200 Size=0x28
+    unsigned long long TotalCommittedPages;// Offset=0x228 Size=0x8
+    unsigned char __align4[16];// Offset=0x230 Size=0x10
+    struct _MMPFNLIST ModifiedPageListHead;// Offset=0x240 Size=0x28
+    unsigned char __align5[24];// Offset=0x268 Size=0x18
+    struct _MMPFNLIST ModifiedNoWritePageListHead;// Offset=0x280 Size=0x28
+    unsigned long long TotalCommitLimit;// Offset=0x2a8 Size=0x8
+    unsigned long long TotalPagesForPagingFile;// Offset=0x2b0 Size=0x8
+    unsigned long long VadPhysicalPages;// Offset=0x2b8 Size=0x8
+    unsigned long long ProcessLockedFilePages;// Offset=0x2c0 Size=0x8
+    unsigned long long SharedCommit;// Offset=0x2c8 Size=0x8
+    unsigned long long SlabAllocatorPages;// Offset=0x2d0 Size=0x8
+    unsigned long ChargeCommitmentFailures[4];// Offset=0x2d8 Size=0x10
+    long PageFileTraceIndex;// Offset=0x2e8 Size=0x4
+    unsigned char __align6[4];// Offset=0x2ec Size=0x4
+    struct _MI_PAGEFILE_TRACES PageFileTraces[32];// Offset=0x2f0 Size=0xf00
+};

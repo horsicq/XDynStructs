@@ -1,0 +1,5 @@
+struct _ETW_FILTER_PID// Size=0x24
+{
+    unsigned long Count;// Offset=0x0 Size=0x4
+    unsigned long Pids[8];// Offset=0x4 Size=0x20
+};

@@ -16,6 +16,7 @@ struct _MI_USER_VA_INFO// Size=0xd20
     void * HighestTopDownAllocationAddress;// Offset=0x34 Size=0x4
     void * FreeTebHint;// Offset=0x38 Size=0x4
     unsigned char NumaAware;// Offset=0x3c Size=0x1
+    unsigned char __align0[3];// Offset=0x3d Size=0x3
     unsigned long long CloneNestingLevel;// Offset=0x40 Size=0x8
     unsigned long PrivateFixupVadCount;// Offset=0x48 Size=0x4
     struct _MI_CFG_BITMAP_INFO CfgBitMap[1];// Offset=0x4c Size=0xc

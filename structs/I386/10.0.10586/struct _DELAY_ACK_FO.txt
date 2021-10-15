@@ -1,0 +1,5 @@
+struct _DELAY_ACK_FO// Size=0xc
+{
+    struct _LIST_ENTRY Links;// Offset=0x0 Size=0x8
+    struct _FILE_OBJECT * OriginalFileObject;// Offset=0x8 Size=0x4
+};

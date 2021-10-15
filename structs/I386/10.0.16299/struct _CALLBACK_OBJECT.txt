@@ -1,0 +1,3 @@
+struct _CALLBACK_OBJECT// Size=0x0
+{
+};

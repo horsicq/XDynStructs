@@ -19,12 +19,17 @@ struct _MM_SESSION_SPACE// Size=0x5000
     struct _KGATE AttachGate;// Offset=0x78 Size=0x18
     struct _LIST_ENTRY WsListEntry;// Offset=0x90 Size=0x10
     struct _MM_PAGED_POOL_INFO PagedPoolInfo;// Offset=0xa0 Size=0x38
+    unsigned char __align0[40];// Offset=0xd8 Size=0x28
     struct _GENERAL_LOOKASIDE Lookaside[21];// Offset=0x100 Size=0xa80
     struct _MMSESSION Session;// Offset=0xb80 Size=0x20
+    unsigned char __align1[32];// Offset=0xba0 Size=0x20
     struct _MMSUPPORT_FULL Vm;// Offset=0xbc0 Size=0x110
+    unsigned char __align2[48];// Offset=0xcd0 Size=0x30
     struct _MMWSL_INSTANCE WorkingSetList;// Offset=0xd00 Size=0x28
+    unsigned char __align3[24];// Offset=0xd28 Size=0x18
     struct _MMSUPPORT_AGGREGATION AggregateSessionWs;// Offset=0xd40 Size=0x20
     void * HeapState;// Offset=0xd60 Size=0x8
+    unsigned char __align4[24];// Offset=0xd68 Size=0x18
     struct _POOL_DESCRIPTOR PagedPool;// Offset=0xd80 Size=0x1140
     struct _MI_SESSION_DRIVER_UNLOAD DriverUnload;// Offset=0x1ec0 Size=0x8
     unsigned long TopLevelPteLockBits[32];// Offset=0x1ec8 Size=0x80
@@ -49,5 +54,6 @@ struct _MM_SESSION_SPACE// Size=0x5000
     struct _KEVENT IoNotificationEvent;// Offset=0x2058 Size=0x18
     struct _EJOB * ServerSilo;// Offset=0x2070 Size=0x8
     unsigned long long CreateTime;// Offset=0x2078 Size=0x8
+    unsigned char __align5[3968];// Offset=0x2080 Size=0xf80
     unsigned char PoolTags[8192];// Offset=0x3000 Size=0x2000
 };

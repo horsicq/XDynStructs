@@ -1,0 +1,20 @@
+struct _MI_SYSTEM_IMAGE_STATE// Size=0xc0
+{
+    long FixupLock;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
+    struct _LIST_ENTRY FixupList;// Offset=0x8 Size=0x10
+    struct _KMUTANT LoadLock;// Offset=0x18 Size=0x38
+    unsigned char FirstLoadEver;// Offset=0x50 Size=0x1
+    unsigned char LargePageAll;// Offset=0x51 Size=0x1
+    unsigned char __align1[6];// Offset=0x52 Size=0x6
+    unsigned long long LastPage;// Offset=0x58 Size=0x8
+    struct _LIST_ENTRY LargePageList;// Offset=0x60 Size=0x10
+    struct _KLDR_DATA_TABLE_ENTRY * BeingDeleted;// Offset=0x70 Size=0x8
+    struct _EX_PUSH_LOCK MappingRangesPushLock;// Offset=0x78 Size=0x8
+    struct _MI_DRIVER_VA * MappingRanges[2];// Offset=0x80 Size=0x10
+    unsigned long long PageCount;// Offset=0x90 Size=0x8
+    struct _MM_SYSTEM_PAGE_COUNTS PageCounts;// Offset=0x98 Size=0x10
+    struct _EX_PUSH_LOCK CollidedLock;// Offset=0xa8 Size=0x8
+    struct _MMPTE * ErrataPte;// Offset=0xb0 Size=0x8
+    unsigned long ErrataPteMapped;// Offset=0xb8 Size=0x4
+};

@@ -1,0 +1,5 @@
+struct _MI_ACTIVE_WSLE_LISTHEAD// Size=0x10
+{
+    unsigned long long Flink;// Offset=0x0 Size=0x8
+    unsigned long long Blink;// Offset=0x8 Size=0x8
+};

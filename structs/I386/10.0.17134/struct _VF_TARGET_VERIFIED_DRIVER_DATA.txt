@@ -6,6 +6,7 @@ struct _VF_TARGET_VERIFIED_DRIVER_DATA// Size=0xb0
     union _unnamed_709 u1;// Offset=0x10 Size=0x4
     unsigned long Signature;// Offset=0x14 Size=0x4
     unsigned char SeSigningLevel;// Offset=0x18 Size=0x1
+    unsigned char __align0[7];// Offset=0x19 Size=0x7
     union _SLIST_HEADER PoolPageHeaders;// Offset=0x20 Size=0x8
     union _SLIST_HEADER PoolTrackers;// Offset=0x28 Size=0x8
     unsigned long CurrentPagedPoolAllocations;// Offset=0x30 Size=0x4

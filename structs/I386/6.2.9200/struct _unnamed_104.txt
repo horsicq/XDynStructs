@@ -1,0 +1,5 @@
+struct _unnamed_104// Size=0x8
+{
+    unsigned long Length;// Offset=0x0 Size=0x4
+    enum _FSINFOCLASS FsInformationClass;// Offset=0x4 Size=0x4
+};

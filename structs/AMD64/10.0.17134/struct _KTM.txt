@@ -1,8 +1,10 @@
 struct _KTM// Size=0x3c0
 {
     unsigned long cookie;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     struct _KMUTANT Mutex;// Offset=0x8 Size=0x38
     enum KTM_STATE State;// Offset=0x40 Size=0x4
+    unsigned char __align1[4];// Offset=0x44 Size=0x4
     struct _KTMOBJECT_NAMESPACE_LINK NamespaceLink;// Offset=0x48 Size=0x28
     struct _GUID TmIdentity;// Offset=0x70 Size=0x10
     unsigned long Flags;// Offset=0x80 Size=0x4
@@ -30,6 +32,7 @@ struct _KTM// Size=0x3c0
     unsigned long LogFlags;// Offset=0x378 Size=0x4
     long LogFullStatus;// Offset=0x37c Size=0x4
     long RecoveryStatus;// Offset=0x380 Size=0x4
+    unsigned char __align2[4];// Offset=0x384 Size=0x4
     union _CLS_LSN LastCheckBaseLsn;// Offset=0x388 Size=0x8
     struct _LIST_ENTRY RestartOrderedList;// Offset=0x390 Size=0x10
     struct _WORK_QUEUE_ITEM OfflineWorkItem;// Offset=0x3a0 Size=0x20

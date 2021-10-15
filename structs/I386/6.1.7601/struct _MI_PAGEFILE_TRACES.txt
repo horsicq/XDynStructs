@@ -1,0 +1,13 @@
+struct _MI_PAGEFILE_TRACES// Size=0x40
+{
+    long Status;// Offset=0x0 Size=0x4
+    unsigned char Priority;// Offset=0x4 Size=0x1
+    unsigned char IrpPriority;// Offset=0x5 Size=0x1
+    unsigned char __align0[2];// Offset=0x6 Size=0x2
+    union _LARGE_INTEGER CurrentTime;// Offset=0x8 Size=0x8
+    unsigned long AvailablePages;// Offset=0x10 Size=0x4
+    unsigned long ModifiedPagesTotal;// Offset=0x14 Size=0x4
+    unsigned long ModifiedPagefilePages;// Offset=0x18 Size=0x4
+    unsigned long ModifiedNoWritePages;// Offset=0x1c Size=0x4
+    struct _unnamed_199 MdlHack;// Offset=0x20 Size=0x20
+};

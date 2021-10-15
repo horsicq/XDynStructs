@@ -1,0 +1,24 @@
+struct _ALPC_COMPLETION_LIST// Size=0x58
+{
+    struct _LIST_ENTRY Entry;// Offset=0x0 Size=0x8
+    struct _EPROCESS * OwnerProcess;// Offset=0x8 Size=0x4
+    struct _EX_PUSH_LOCK CompletionListLock;// Offset=0xc Size=0x4
+    struct _MDL * Mdl;// Offset=0x10 Size=0x4
+    void * UserVa;// Offset=0x14 Size=0x4
+    void * UserLimit;// Offset=0x18 Size=0x4
+    void * DataUserVa;// Offset=0x1c Size=0x4
+    void * SystemVa;// Offset=0x20 Size=0x4
+    unsigned long TotalSize;// Offset=0x24 Size=0x4
+    struct _ALPC_COMPLETION_LIST_HEADER * Header;// Offset=0x28 Size=0x4
+    void * List;// Offset=0x2c Size=0x4
+    unsigned long ListSize;// Offset=0x30 Size=0x4
+    void * Bitmap;// Offset=0x34 Size=0x4
+    unsigned long BitmapSize;// Offset=0x38 Size=0x4
+    void * Data;// Offset=0x3c Size=0x4
+    unsigned long DataSize;// Offset=0x40 Size=0x4
+    unsigned long BitmapLimit;// Offset=0x44 Size=0x4
+    unsigned long BitmapNextHint;// Offset=0x48 Size=0x4
+    unsigned long ConcurrencyCount;// Offset=0x4c Size=0x4
+    unsigned long AttributeFlags;// Offset=0x50 Size=0x4
+    unsigned long AttributeSize;// Offset=0x54 Size=0x4
+};

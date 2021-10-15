@@ -1,0 +1,7 @@
+struct _KDPC_DATA// Size=0x20
+{
+    struct _LIST_ENTRY DpcListHead;// Offset=0x0 Size=0x10
+    unsigned long long DpcLock;// Offset=0x10 Size=0x8
+    long DpcQueueDepth;// Offset=0x18 Size=0x4
+    unsigned long DpcCount;// Offset=0x1c Size=0x4
+};

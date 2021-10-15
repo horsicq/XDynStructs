@@ -1,0 +1,8 @@
+struct _HMAP_ENTRY// Size=0x14
+{
+    unsigned long BlockOffset;// Offset=0x0 Size=0x4
+    unsigned long PermanentBinAddress;// Offset=0x4 Size=0x4
+    unsigned long TemporaryBinAddress;// Offset=0x8 Size=0x4
+    struct _EX_RUNDOWN_REF TemporaryBinRundown;// Offset=0xc Size=0x4
+    unsigned long MemAlloc;// Offset=0x10 Size=0x4
+};

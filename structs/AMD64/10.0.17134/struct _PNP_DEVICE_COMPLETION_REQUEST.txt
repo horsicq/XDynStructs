@@ -6,8 +6,10 @@ struct _PNP_DEVICE_COMPLETION_REQUEST// Size=0x80
     enum _PNP_DEVNODE_STATE CompletionState;// Offset=0x20 Size=0x4
     unsigned long IrpPended;// Offset=0x24 Size=0x4
     long Status;// Offset=0x28 Size=0x4
+    unsigned char __align0[4];// Offset=0x2c Size=0x4
     void * Information;// Offset=0x30 Size=0x8
     long ReferenceCount;// Offset=0x38 Size=0x4
+    unsigned char __align1[4];// Offset=0x3c Size=0x4
     struct _FAST_MUTEX PnpDeviceCompletionQueueWatchdogLock;// Offset=0x40 Size=0x38
     struct _PNP_WATCHDOG * Watchdog;// Offset=0x78 Size=0x8
 };

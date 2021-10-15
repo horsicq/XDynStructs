@@ -1,0 +1,10 @@
+struct _MI_SUB64K_FREE_RANGES// Size=0x20
+{
+    struct _RTL_BITMAP BitMap;// Offset=0x0 Size=0x8
+    struct _LIST_ENTRY ListEntry;// Offset=0x8 Size=0x8
+    struct _MMVAD_SHORT * Vad;// Offset=0x10 Size=0x4
+    unsigned long SetBits;// Offset=0x14 Size=0x4
+    unsigned long FullSetBits;// Offset=0x18 Size=0x4
+    unsigned long SubListIndex:2;// Offset=0x1c Size=0x4 BitOffset=0x0 BitSize=0x2
+    unsigned long Hint:30;// Offset=0x1c Size=0x4 BitOffset=0x2 BitSize=0x1e
+};

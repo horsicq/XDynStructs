@@ -1,0 +1,5 @@
+union _unnamed_932// Size=0x4
+{
+    struct _unnamed_930 e1;// Offset=0x0 Size=0x4
+    struct _unnamed_931 e2;// Offset=0x0 Size=0x4
+};

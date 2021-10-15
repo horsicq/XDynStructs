@@ -11,15 +11,18 @@ struct _MI_PARTITION_SEGMENTS// Size=0x200
     struct _MMPAGE_FILE_EXPANSION AttemptForCantExtend;// Offset=0x44 Size=0x34
     struct _MMDEREFERENCE_SEGMENT_HEADER DereferenceSegmentHeader;// Offset=0x78 Size=0x2c
     struct _LIST_ENTRY DeleteOnCloseList;// Offset=0xa4 Size=0x8
+    unsigned char __align0[4];// Offset=0xac Size=0x4
     struct _KTIMER DeleteOnCloseTimer;// Offset=0xb0 Size=0x28
     unsigned char DeleteOnCloseTimerActive;// Offset=0xd8 Size=0x1
     unsigned char SegmentDereferenceThreadExists;// Offset=0xd9 Size=0x1
+    unsigned char __align1[2];// Offset=0xda Size=0x2
     unsigned long UnusedSegmentPagedPool;// Offset=0xdc Size=0x4
     struct _LIST_ENTRY UnusedSegmentList;// Offset=0xe0 Size=0x8
     struct _LIST_ENTRY UnusedSubsectionList;// Offset=0xe8 Size=0x8
     struct _LIST_ENTRY DeleteSubsectionList;// Offset=0xf0 Size=0x8
     struct _KEVENT ControlAreaDeleteEvent;// Offset=0xf8 Size=0x10
     struct _SINGLE_LIST_ENTRY ControlAreaDeleteList;// Offset=0x108 Size=0x4
+    unsigned char __align2[4];// Offset=0x10c Size=0x4
     struct _MI_PTE_CHAIN_HEAD FreeSystemCache;// Offset=0x110 Size=0x18
     struct _KEVENT CloneDereferenceEvent;// Offset=0x128 Size=0x10
     union _SLIST_HEADER CloneProtosSListHead;// Offset=0x138 Size=0x8

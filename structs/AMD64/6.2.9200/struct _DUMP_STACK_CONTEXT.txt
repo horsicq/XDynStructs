@@ -4,6 +4,7 @@ struct _DUMP_STACK_CONTEXT// Size=0x178
     union _LARGE_INTEGER PartitionOffset;// Offset=0x108 Size=0x8
     void * DumpPointers;// Offset=0x110 Size=0x8
     unsigned long PointersLength;// Offset=0x118 Size=0x4
+    unsigned char __align0[4];// Offset=0x11c Size=0x4
     unsigned short * ModulePrefix;// Offset=0x120 Size=0x8
     struct _LIST_ENTRY DriverList;// Offset=0x128 Size=0x10
     struct _STRING InitMsg;// Offset=0x138 Size=0x10

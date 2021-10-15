@@ -3,6 +3,7 @@ struct _PPM_SELECTION_MENU_ENTRY// Size=0x10
     unsigned char StrictDependency;// Offset=0x0 Size=0x1
     unsigned char InitiatingState;// Offset=0x1 Size=0x1
     unsigned char DependentState;// Offset=0x2 Size=0x1
+    unsigned char __align0[1];// Offset=0x3 Size=0x1
     unsigned long StateIndex;// Offset=0x4 Size=0x4
     unsigned long Dependencies;// Offset=0x8 Size=0x4
     struct _PPM_SELECTION_DEPENDENCY * DependencyList;// Offset=0xc Size=0x4

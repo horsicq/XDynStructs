@@ -1,0 +1,10 @@
+struct _EVENT_DESCRIPTOR// Size=0x10
+{
+    unsigned short Id;// Offset=0x0 Size=0x2
+    unsigned char Version;// Offset=0x2 Size=0x1
+    unsigned char Channel;// Offset=0x3 Size=0x1
+    unsigned char Level;// Offset=0x4 Size=0x1
+    unsigned char Opcode;// Offset=0x5 Size=0x1
+    unsigned short Task;// Offset=0x6 Size=0x2
+    unsigned long long Keyword;// Offset=0x8 Size=0x8
+};

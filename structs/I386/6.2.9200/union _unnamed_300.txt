@@ -1,0 +1,6 @@
+union _unnamed_300// Size=0x8
+{
+    union _LARGE_INTEGER FileOffset;// Offset=0x0 Size=0x8
+    unsigned short ActiveCount;// Offset=0x0 Size=0x2
+    struct _LIST_ENTRY Links;// Offset=0x0 Size=0x8
+};

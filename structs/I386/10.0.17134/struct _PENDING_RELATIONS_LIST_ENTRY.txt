@@ -10,8 +10,10 @@ struct _PENDING_RELATIONS_LIST_ENTRY// Size=0x44
     unsigned long Problem;// Offset=0x2c Size=0x4
     unsigned char ProfileChangingEject;// Offset=0x30 Size=0x1
     unsigned char DisplaySafeRemovalDialog;// Offset=0x31 Size=0x1
+    unsigned char __align0[2];// Offset=0x32 Size=0x2
     enum _SYSTEM_POWER_STATE LightestSleepState;// Offset=0x34 Size=0x4
     struct DOCK_INTERFACE * DockInterface;// Offset=0x38 Size=0x4
     unsigned char DequeuePending;// Offset=0x3c Size=0x1
+    unsigned char __align1[3];// Offset=0x3d Size=0x3
     enum _PNP_DEVICE_DELETE_TYPE DeleteType;// Offset=0x40 Size=0x4
 };

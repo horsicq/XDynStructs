@@ -1,0 +1,10 @@
+struct _MMVAD_FLAGS// Size=0x4
+{
+    unsigned long CommitCharge:19;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x13
+    unsigned long NoChange:1;// Offset=0x0 Size=0x4 BitOffset=0x13 BitSize=0x1
+    unsigned long VadType:3;// Offset=0x0 Size=0x4 BitOffset=0x14 BitSize=0x3
+    unsigned long MemCommit:1;// Offset=0x0 Size=0x4 BitOffset=0x17 BitSize=0x1
+    unsigned long Protection:5;// Offset=0x0 Size=0x4 BitOffset=0x18 BitSize=0x5
+    unsigned long Spare:2;// Offset=0x0 Size=0x4 BitOffset=0x1d BitSize=0x2
+    unsigned long PrivateMemory:1;// Offset=0x0 Size=0x4 BitOffset=0x1f BitSize=0x1
+};

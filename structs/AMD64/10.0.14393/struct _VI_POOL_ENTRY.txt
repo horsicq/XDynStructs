@@ -1,0 +1,6 @@
+struct _VI_POOL_ENTRY// Size=0x20
+{
+    struct _VI_POOL_PAGE_HEADER PageHeader;// Offset=0x0 Size=0x18
+    struct _VI_POOL_ENTRY_INUSE InUse;// Offset=0x0 Size=0x20
+    struct _SLIST_ENTRY * NextFree;// Offset=0x0 Size=0x8
+};

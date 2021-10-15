@@ -1,6 +1,7 @@
 struct _GDI_TEB_BATCH64// Size=0x4e8
 {
     unsigned long Offset;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     unsigned long long HDC;// Offset=0x8 Size=0x8
     unsigned long Buffer[310];// Offset=0x10 Size=0x4d8
 };

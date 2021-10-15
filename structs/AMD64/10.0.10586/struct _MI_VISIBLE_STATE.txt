@@ -1,0 +1,28 @@
+struct _MI_VISIBLE_STATE// Size=0x640
+{
+    struct _MI_SPECIAL_POOL SpecialPool;// Offset=0x0 Size=0x50
+    struct _LIST_ENTRY SessionWsList;// Offset=0x50 Size=0x10
+    struct _RTL_BITMAP * SessionIdBitmap;// Offset=0x60 Size=0x8
+    struct _MM_PAGED_POOL_INFO PagedPoolInfo;// Offset=0x68 Size=0x38
+    unsigned long long MaximumNonPagedPoolInPages;// Offset=0xa0 Size=0x8
+    unsigned long long SizeOfPagedPoolInPages;// Offset=0xa8 Size=0x8
+    struct _MI_SYSTEM_PTE_TYPE SystemPteInfo;// Offset=0xb0 Size=0x60
+    unsigned long long NonPagedPoolCommit;// Offset=0x110 Size=0x8
+    unsigned long long BootCommit;// Offset=0x118 Size=0x8
+    unsigned long long MdlPagesAllocated;// Offset=0x120 Size=0x8
+    unsigned long long SystemPageTableCommit;// Offset=0x128 Size=0x8
+    unsigned long long SpecialPagesInUse;// Offset=0x130 Size=0x8
+    unsigned long long WsOverheadPages;// Offset=0x138 Size=0x8
+    unsigned long long VadBitmapPages;// Offset=0x140 Size=0x8
+    unsigned long long ProcessCommit;// Offset=0x148 Size=0x8
+    unsigned long long SharedCommit;// Offset=0x150 Size=0x8
+    long DriverCommit;// Offset=0x158 Size=0x4
+    unsigned char __align0[36];// Offset=0x15c Size=0x24
+    struct _MMSUPPORT SystemWs[3];// Offset=0x180 Size=0x2e8
+    unsigned long MapCacheFailures;// Offset=0x468 Size=0x4
+    unsigned char __align1[4];// Offset=0x46c Size=0x4
+    unsigned long long PagefileHashPages;// Offset=0x470 Size=0x8
+    struct _SYSPTES_HEADER PteHeader;// Offset=0x478 Size=0x118
+    struct _MI_SPECIAL_POOL * SessionSpecialPool;// Offset=0x590 Size=0x8
+    unsigned long long SystemVaTypeCount[14];// Offset=0x598 Size=0x70
+};

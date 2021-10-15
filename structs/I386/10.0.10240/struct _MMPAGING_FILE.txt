@@ -10,6 +10,7 @@ struct _MMPAGING_FILE// Size=0x90
     unsigned long LargestReserveCluster;// Offset=0x1c Size=0x4
     struct _FILE_OBJECT * File;// Offset=0x20 Size=0x4
     struct _MMMOD_WRITER_MDL_ENTRY * Entry[2];// Offset=0x24 Size=0x8
+    unsigned char __align0[4];// Offset=0x2c Size=0x4
     union _SLIST_HEADER PfnsToFree;// Offset=0x30 Size=0x8
     struct _UNICODE_STRING PageFileName;// Offset=0x38 Size=0x8
     struct _MI_PAGING_FILE_SPACE_BITMAPS * Bitmaps;// Offset=0x40 Size=0x4

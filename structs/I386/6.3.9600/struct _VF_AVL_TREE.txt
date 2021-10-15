@@ -1,0 +1,8 @@
+struct _VF_AVL_TREE// Size=0x14
+{
+    unsigned long NodeRangeSize;// Offset=0x0 Size=0x4
+    unsigned long NodeCount;// Offset=0x4 Size=0x4
+    struct _VF_AVL_TABLE * Tables;// Offset=0x8 Size=0x4
+    unsigned long TablesNo;// Offset=0xc Size=0x4
+    union _unnamed_1044 u1;// Offset=0x10 Size=0x4
+};

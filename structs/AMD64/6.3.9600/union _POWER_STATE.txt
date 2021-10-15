@@ -1,0 +1,5 @@
+union _POWER_STATE// Size=0x4
+{
+    enum _SYSTEM_POWER_STATE SystemState;// Offset=0x0 Size=0x4
+    enum _DEVICE_POWER_STATE DeviceState;// Offset=0x0 Size=0x4
+};

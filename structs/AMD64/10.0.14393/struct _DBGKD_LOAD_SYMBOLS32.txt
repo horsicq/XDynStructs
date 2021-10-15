@@ -1,0 +1,9 @@
+struct _DBGKD_LOAD_SYMBOLS32// Size=0x18
+{
+    unsigned long PathNameLength;// Offset=0x0 Size=0x4
+    unsigned long BaseOfDll;// Offset=0x4 Size=0x4
+    unsigned long ProcessId;// Offset=0x8 Size=0x4
+    unsigned long CheckSum;// Offset=0xc Size=0x4
+    unsigned long SizeOfImage;// Offset=0x10 Size=0x4
+    unsigned char UnloadSymbols;// Offset=0x14 Size=0x1
+};

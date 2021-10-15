@@ -1,0 +1,16 @@
+struct _EPROCESS_VALUES// Size=0x68
+{
+    unsigned long long KernelTime;// Offset=0x0 Size=0x8
+    unsigned long long UserTime;// Offset=0x8 Size=0x8
+    unsigned long long ReadyTime;// Offset=0x10 Size=0x8
+    unsigned long long CycleTime;// Offset=0x18 Size=0x8
+    unsigned long long ContextSwitches;// Offset=0x20 Size=0x8
+    long long ReadOperationCount;// Offset=0x28 Size=0x8
+    long long WriteOperationCount;// Offset=0x30 Size=0x8
+    long long OtherOperationCount;// Offset=0x38 Size=0x8
+    long long ReadTransferCount;// Offset=0x40 Size=0x8
+    long long WriteTransferCount;// Offset=0x48 Size=0x8
+    long long OtherTransferCount;// Offset=0x50 Size=0x8
+    unsigned long long KernelWaitTime;// Offset=0x58 Size=0x8
+    unsigned long long UserWaitTime;// Offset=0x60 Size=0x8
+};

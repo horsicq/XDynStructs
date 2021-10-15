@@ -10,6 +10,7 @@ struct _OBJECT_TYPE_INITIALIZER// Size=0x78
     unsigned char MaintainTypeList:1;// Offset=0x2 Size=0x1 BitOffset=0x5 BitSize=0x1
     unsigned char SupportsObjectCallbacks:1;// Offset=0x2 Size=0x1 BitOffset=0x6 BitSize=0x1
     unsigned char CacheAligned:1;// Offset=0x2 Size=0x1 BitOffset=0x7 BitSize=0x1
+    unsigned char __align0[1];// Offset=0x3 Size=0x1
     unsigned long ObjectTypeCode;// Offset=0x4 Size=0x4
     unsigned long InvalidAttributes;// Offset=0x8 Size=0x4
     struct _GENERIC_MAPPING GenericMapping;// Offset=0xc Size=0x10

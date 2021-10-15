@@ -1,0 +1,26 @@
+struct _KALPC_MESSAGE// Size=0x100
+{
+    struct _LIST_ENTRY Entry;// Offset=0x0 Size=0x10
+    void * ExtensionBuffer;// Offset=0x10 Size=0x8
+    unsigned long long ExtensionBufferSize;// Offset=0x18 Size=0x8
+    struct _EPROCESS * QuotaProcess;// Offset=0x20 Size=0x8
+    void * QuotaBlock;// Offset=0x20 Size=0x8
+    long SequenceNo;// Offset=0x28 Size=0x4
+    union _unnamed_371 u1;// Offset=0x2c Size=0x4
+    struct _ALPC_PORT * CancelSequencePort;// Offset=0x30 Size=0x8
+    struct _ALPC_PORT * CancelQueuePort;// Offset=0x38 Size=0x8
+    long CancelSequenceNo;// Offset=0x40 Size=0x4
+    unsigned char __align0[4];// Offset=0x44 Size=0x4
+    struct _LIST_ENTRY CancelListEntry;// Offset=0x48 Size=0x10
+    struct _ETHREAD * WaitingThread;// Offset=0x58 Size=0x8
+    struct _KALPC_RESERVE * Reserve;// Offset=0x60 Size=0x8
+    struct _ALPC_PORT * PortQueue;// Offset=0x68 Size=0x8
+    struct _ALPC_PORT * OwnerPort;// Offset=0x70 Size=0x8
+    struct _KALPC_MESSAGE_ATTRIBUTES MessageAttributes;// Offset=0x78 Size=0x38
+    void * DataUserVa;// Offset=0xb0 Size=0x8
+    void * DataSystemVa;// Offset=0xb8 Size=0x8
+    struct _ALPC_COMMUNICATION_INFO * CommunicationInfo;// Offset=0xc0 Size=0x8
+    struct _ALPC_PORT * ConnectionPort;// Offset=0xc8 Size=0x8
+    struct _ETHREAD * ServerThread;// Offset=0xd0 Size=0x8
+    struct _PORT_MESSAGE PortMessage;// Offset=0xd8 Size=0x28
+};

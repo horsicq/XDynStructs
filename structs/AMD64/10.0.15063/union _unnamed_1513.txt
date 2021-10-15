@@ -1,0 +1,5 @@
+union _unnamed_1513// Size=0x4
+{
+    struct _unnamed_1512 bits;// Offset=0x0 Size=0x4
+    unsigned long AsULONG;// Offset=0x0 Size=0x4
+};

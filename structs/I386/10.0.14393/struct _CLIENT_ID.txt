@@ -1,0 +1,5 @@
+struct _CLIENT_ID// Size=0x8
+{
+    void * UniqueProcess;// Offset=0x0 Size=0x4
+    void * UniqueThread;// Offset=0x4 Size=0x4
+};

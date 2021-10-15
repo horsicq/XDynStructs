@@ -1,0 +1,6 @@
+union _unnamed_1248// Size=0x4
+{
+    struct _MMSECURE_FLAGS Flags;// Offset=0x0 Size=0x4
+    unsigned long FlagsLong;// Offset=0x0 Size=0x4
+    void * StartVa;// Offset=0x0 Size=0x4
+};

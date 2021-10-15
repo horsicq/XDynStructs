@@ -2,6 +2,7 @@ struct _KTHREAD// Size=0x350
 {
     struct _DISPATCHER_HEADER Header;// Offset=0x0 Size=0x10
     void * SListFaultAddress;// Offset=0x10 Size=0x4
+    unsigned char __align0[4];// Offset=0x14 Size=0x4
     unsigned long long QuantumTarget;// Offset=0x18 Size=0x8
     void * InitialStack;// Offset=0x20 Size=0x4
     void * StackLimit;// Offset=0x24 Size=0x4
@@ -85,8 +86,10 @@ struct _KTHREAD// Size=0x350
     struct _KWAIT_BLOCK * WaitBlockList;// Offset=0x98 Size=0x4
     struct _LIST_ENTRY WaitListEntry;// Offset=0x9c Size=0x8
     struct _SINGLE_LIST_ENTRY SwapListEntry;// Offset=0x9c Size=0x4
+    unsigned char __align1[4];// Offset=0xa0 Size=0x4
     struct _DISPATCHER_HEADER * Queue;// Offset=0xa4 Size=0x4
     void * Teb;// Offset=0xa8 Size=0x4
+    unsigned char __align2[4];// Offset=0xac Size=0x4
     unsigned long long RelativeTimerBias;// Offset=0xb0 Size=0x8
     struct _KTIMER Timer;// Offset=0xb8 Size=0x28
     struct _KWAIT_BLOCK WaitBlock[4];// Offset=0xe0 Size=0x60

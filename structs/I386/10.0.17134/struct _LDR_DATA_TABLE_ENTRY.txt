@@ -52,6 +52,7 @@ struct _LDR_DATA_TABLE_ENTRY// Size=0xa8
     struct _RTL_BALANCED_NODE BaseAddressIndexNode;// Offset=0x68 Size=0xc
     struct _RTL_BALANCED_NODE MappingInfoIndexNode;// Offset=0x74 Size=0xc
     unsigned long OriginalBase;// Offset=0x80 Size=0x4
+    unsigned char __align0[4];// Offset=0x84 Size=0x4
     union _LARGE_INTEGER LoadTime;// Offset=0x88 Size=0x8
     unsigned long BaseNameHashValue;// Offset=0x90 Size=0x4
     enum _LDR_DLL_LOAD_REASON LoadReason;// Offset=0x94 Size=0x4

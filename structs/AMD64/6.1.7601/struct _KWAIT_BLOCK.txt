@@ -1,0 +1,11 @@
+struct _KWAIT_BLOCK// Size=0x30
+{
+    struct _LIST_ENTRY WaitListEntry;// Offset=0x0 Size=0x10
+    struct _KTHREAD * Thread;// Offset=0x10 Size=0x8
+    void * Object;// Offset=0x18 Size=0x8
+    struct _KWAIT_BLOCK * NextWaitBlock;// Offset=0x20 Size=0x8
+    unsigned short WaitKey;// Offset=0x28 Size=0x2
+    unsigned char WaitType;// Offset=0x2a Size=0x1
+    unsigned char BlockState;// Offset=0x2b Size=0x1
+    long SpareLong;// Offset=0x2c Size=0x4
+};

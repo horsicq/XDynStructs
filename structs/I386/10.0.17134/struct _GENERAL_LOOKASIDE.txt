@@ -2,6 +2,7 @@ struct _GENERAL_LOOKASIDE// Size=0x80
 {
     union _SLIST_HEADER ListHead;// Offset=0x0 Size=0x8
     struct _SINGLE_LIST_ENTRY SingleListHead;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     unsigned short Depth;// Offset=0x8 Size=0x2
     unsigned short MaximumDepth;// Offset=0xa Size=0x2
     unsigned long TotalAllocates;// Offset=0xc Size=0x4

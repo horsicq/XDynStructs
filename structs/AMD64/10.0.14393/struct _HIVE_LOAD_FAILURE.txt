@@ -1,0 +1,16 @@
+struct _HIVE_LOAD_FAILURE// Size=0x160
+{
+    struct _HHIVE * Hive;// Offset=0x0 Size=0x8
+    unsigned long Index;// Offset=0x8 Size=0x4
+    unsigned long RecoverableIndex;// Offset=0xc Size=0x4
+    struct _unnamed_243 Locations[8];// Offset=0x10 Size=0x60
+    struct _unnamed_243 RecoverableLocations[8];// Offset=0x70 Size=0x60
+    struct _unnamed_244 RegistryIO;// Offset=0xd0 Size=0x18
+    struct _unnamed_245 CheckRegistry2;// Offset=0xe8 Size=0x8
+    struct _unnamed_246 CheckKey;// Offset=0xf0 Size=0x20
+    struct _unnamed_247 CheckValueList;// Offset=0x110 Size=0x18
+    struct _unnamed_248 CheckHive;// Offset=0x128 Size=0x10
+    struct _unnamed_248 CheckHive1;// Offset=0x138 Size=0x10
+    struct _unnamed_249 CheckBin;// Offset=0x148 Size=0x10
+    struct _unnamed_250 RecoverData;// Offset=0x158 Size=0x4
+};

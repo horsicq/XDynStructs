@@ -1,0 +1,7 @@
+struct _WNF_STATE_DATA// Size=0x10
+{
+    struct _WNF_NODE_HEADER Header;// Offset=0x0 Size=0x4
+    unsigned long AllocatedSize;// Offset=0x4 Size=0x4
+    unsigned long DataSize;// Offset=0x8 Size=0x4
+    unsigned long ChangeStamp;// Offset=0xc Size=0x4
+};

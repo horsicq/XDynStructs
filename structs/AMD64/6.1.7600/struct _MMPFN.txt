@@ -12,5 +12,6 @@ struct _MMPFN// Size=0x30
     unsigned char ViewCount;// Offset=0x1f Size=0x1
     struct _MMPTE OriginalPte;// Offset=0x20 Size=0x8
     long AweReferenceCount;// Offset=0x20 Size=0x4
+    unsigned char __align0[4];// Offset=0x24 Size=0x4
     union _unnamed_182 u4;// Offset=0x28 Size=0x8
 };

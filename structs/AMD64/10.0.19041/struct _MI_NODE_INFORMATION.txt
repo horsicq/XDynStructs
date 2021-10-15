@@ -1,0 +1,49 @@
+struct _MI_NODE_INFORMATION// Size=0x11c0
+{
+    struct _MI_FREE_LARGE_PAGES FreeLargePages[3];// Offset=0x0 Size=0xc90
+    struct _MI_REBUILD_LARGE_PAGE_TIMER LargePageRebuildTimer;// Offset=0xc90 Size=0x28
+    struct _MMPFNLIST_SHORT StandbyPageList[4][8];// Offset=0xcb8 Size=0x300
+    unsigned char __align0[8];// Offset=0xfb8 Size=0x8
+    struct _RTL_BITMAP FreePageListHeadsBitmap[2];// Offset=0xfc0 Size=0x20
+    unsigned long FreePageListHeadsBitmapBuffer[16];// Offset=0xfe0 Size=0x40
+    unsigned long long FreeCount[2];// Offset=0x1020 Size=0x10
+    unsigned long long TotalPages[4];// Offset=0x1030 Size=0x20
+    unsigned long long TotalPagesEntireNode;// Offset=0x1050 Size=0x8
+    unsigned long CurrentHugeRangeColor;// Offset=0x1058 Size=0x4
+    unsigned char __align1[4];// Offset=0x105c Size=0x4
+    unsigned long long HugeIoRangeFreeCount[2];// Offset=0x1060 Size=0x10
+    unsigned long MmShiftedColor;// Offset=0x1070 Size=0x4
+    unsigned long Color;// Offset=0x1074 Size=0x4
+    unsigned long long ChannelFreeCount[4][2];// Offset=0x1078 Size=0x40
+    struct <anonymous-tag> Flags;// Offset=0x10b8 Size=0x4
+    unsigned long LargeListMoveInProgress;// Offset=0x10bc Size=0x4
+    struct _MI_LARGE_PAGE_LISTS_CHANGING * LargeListWaiters;// Offset=0x10c0 Size=0x8
+    struct _EX_PUSH_LOCK NodeLock;// Offset=0x10c8 Size=0x8
+    unsigned long long ZeroThreadHugeMapLock;// Offset=0x10d0 Size=0x8
+    unsigned char ChannelStatus;// Offset=0x10d8 Size=0x1
+    unsigned char ChannelOrdering[4];// Offset=0x10d9 Size=0x4
+    unsigned char LockedChannelOrdering[4];// Offset=0x10dd Size=0x4
+    unsigned char PowerAttribute[4];// Offset=0x10e1 Size=0x4
+    unsigned char __align2[3];// Offset=0x10e5 Size=0x3
+    unsigned long long LargePageLock;// Offset=0x10e8 Size=0x8
+    struct _MI_PAGE_COLORS PageColorTable;// Offset=0x10f0 Size=0x10
+    unsigned long long NumberOfPagesGoingBad;// Offset=0x1100 Size=0x8
+    struct _MI_WRITE_CALIBRATION WriteCalibration;// Offset=0x1108 Size=0x20
+    void * BootZeroContext;// Offset=0x1128 Size=0x8
+    void * BootZeroPageTimesPerProcessor;// Offset=0x1130 Size=0x8
+    void * ZeroingVaBase;// Offset=0x1138 Size=0x8
+    unsigned long long TotalBytesToZero;// Offset=0x1140 Size=0x8
+    unsigned long long PerProcessorNumberOfBytesToZero;// Offset=0x1148 Size=0x8
+    void * ZeroingContext;// Offset=0x1150 Size=0x8
+    unsigned long ZeroingProcessorCount;// Offset=0x1158 Size=0x4
+    long ZeroHand;// Offset=0x115c Size=0x4
+    long FinishedProcessors;// Offset=0x1160 Size=0x4
+    unsigned char __align3[4];// Offset=0x1164 Size=0x4
+    unsigned long long CyclesToZeroOneLargePage;// Offset=0x1168 Size=0x8
+    unsigned long long * ScaledCyclesToZeroOneLargePage;// Offset=0x1170 Size=0x8
+    struct _GROUP_AFFINITY GroupAffinity;// Offset=0x1178 Size=0x10
+    unsigned short ProcessorCount;// Offset=0x1188 Size=0x2
+    unsigned char BackgroundZeroingActive;// Offset=0x118a Size=0x1
+    unsigned char __align4[5];// Offset=0x118b Size=0x5
+    struct _PHYSICAL_MEMORY_DESCRIPTOR * ZeroingPhysicalMemoryBlock;// Offset=0x1190 Size=0x8
+};

@@ -1,0 +1,42 @@
+union _HV_PARTITION_PRIVILEGE_MASK// Size=0x8
+{
+    unsigned long long AsUINT64;// Offset=0x0 Size=0x8
+    unsigned long long AccessVpRunTimeReg:1;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x1
+    unsigned long long AccessPartitionReferenceCounter:1;// Offset=0x0 Size=0x8 BitOffset=0x1 BitSize=0x1
+    unsigned long long AccessSynicRegs:1;// Offset=0x0 Size=0x8 BitOffset=0x2 BitSize=0x1
+    unsigned long long AccessSyntheticTimerRegs:1;// Offset=0x0 Size=0x8 BitOffset=0x3 BitSize=0x1
+    unsigned long long AccessIntrCtrlRegs:1;// Offset=0x0 Size=0x8 BitOffset=0x4 BitSize=0x1
+    unsigned long long AccessHypercallMsrs:1;// Offset=0x0 Size=0x8 BitOffset=0x5 BitSize=0x1
+    unsigned long long AccessVpIndex:1;// Offset=0x0 Size=0x8 BitOffset=0x6 BitSize=0x1
+    unsigned long long AccessResetReg:1;// Offset=0x0 Size=0x8 BitOffset=0x7 BitSize=0x1
+    unsigned long long AccessStatsReg:1;// Offset=0x0 Size=0x8 BitOffset=0x8 BitSize=0x1
+    unsigned long long AccessPartitionReferenceTsc:1;// Offset=0x0 Size=0x8 BitOffset=0x9 BitSize=0x1
+    unsigned long long AccessGuestIdleReg:1;// Offset=0x0 Size=0x8 BitOffset=0xa BitSize=0x1
+    unsigned long long AccessFrequencyRegs:1;// Offset=0x0 Size=0x8 BitOffset=0xb BitSize=0x1
+    unsigned long long AccessDebugRegs:1;// Offset=0x0 Size=0x8 BitOffset=0xc BitSize=0x1
+    unsigned long long AccessReenlightenmentControls:1;// Offset=0x0 Size=0x8 BitOffset=0xd BitSize=0x1
+    unsigned long long AccessRootSchedulerReg:1;// Offset=0x0 Size=0x8 BitOffset=0xe BitSize=0x1
+    unsigned long long Reserved1:17;// Offset=0x0 Size=0x8 BitOffset=0xf BitSize=0x11
+    unsigned long long CreatePartitions:1;// Offset=0x0 Size=0x8 BitOffset=0x20 BitSize=0x1
+    unsigned long long AccessPartitionId:1;// Offset=0x0 Size=0x8 BitOffset=0x21 BitSize=0x1
+    unsigned long long AccessMemoryPool:1;// Offset=0x0 Size=0x8 BitOffset=0x22 BitSize=0x1
+    unsigned long long AdjustMessageBuffers:1;// Offset=0x0 Size=0x8 BitOffset=0x23 BitSize=0x1
+    unsigned long long PostMessages:1;// Offset=0x0 Size=0x8 BitOffset=0x24 BitSize=0x1
+    unsigned long long SignalEvents:1;// Offset=0x0 Size=0x8 BitOffset=0x25 BitSize=0x1
+    unsigned long long CreatePort:1;// Offset=0x0 Size=0x8 BitOffset=0x26 BitSize=0x1
+    unsigned long long ConnectPort:1;// Offset=0x0 Size=0x8 BitOffset=0x27 BitSize=0x1
+    unsigned long long AccessStats:1;// Offset=0x0 Size=0x8 BitOffset=0x28 BitSize=0x1
+    unsigned long long Reserved2:2;// Offset=0x0 Size=0x8 BitOffset=0x29 BitSize=0x2
+    unsigned long long Debugging:1;// Offset=0x0 Size=0x8 BitOffset=0x2b BitSize=0x1
+    unsigned long long CpuManagement:1;// Offset=0x0 Size=0x8 BitOffset=0x2c BitSize=0x1
+    unsigned long long ConfigureProfiler:1;// Offset=0x0 Size=0x8 BitOffset=0x2d BitSize=0x1
+    unsigned long long AccessVpExitTracing:1;// Offset=0x0 Size=0x8 BitOffset=0x2e BitSize=0x1
+    unsigned long long EnableExtendedGvaRangesForFlushVirtualAddressList:1;// Offset=0x0 Size=0x8 BitOffset=0x2f BitSize=0x1
+    unsigned long long AccessVsm:1;// Offset=0x0 Size=0x8 BitOffset=0x30 BitSize=0x1
+    unsigned long long AccessVpRegisters:1;// Offset=0x0 Size=0x8 BitOffset=0x31 BitSize=0x1
+    unsigned long long UnusedBit:1;// Offset=0x0 Size=0x8 BitOffset=0x32 BitSize=0x1
+    unsigned long long FastHypercallOutput:1;// Offset=0x0 Size=0x8 BitOffset=0x33 BitSize=0x1
+    unsigned long long EnableExtendedHypercalls:1;// Offset=0x0 Size=0x8 BitOffset=0x34 BitSize=0x1
+    unsigned long long StartVirtualProcessor:1;// Offset=0x0 Size=0x8 BitOffset=0x35 BitSize=0x1
+    unsigned long long Reserved3:10;// Offset=0x0 Size=0x8 BitOffset=0x36 BitSize=0xa
+};

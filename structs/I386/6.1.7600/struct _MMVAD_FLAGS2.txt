@@ -1,0 +1,12 @@
+struct _MMVAD_FLAGS2// Size=0x4
+{
+    unsigned int FileOffset:24;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x18
+    unsigned int SecNoChange:1;// Offset=0x0 Size=0x4 BitOffset=0x18 BitSize=0x1
+    unsigned int OneSecured:1;// Offset=0x0 Size=0x4 BitOffset=0x19 BitSize=0x1
+    unsigned int MultipleSecured:1;// Offset=0x0 Size=0x4 BitOffset=0x1a BitSize=0x1
+    unsigned int Spare:1;// Offset=0x0 Size=0x4 BitOffset=0x1b BitSize=0x1
+    unsigned int LongVad:1;// Offset=0x0 Size=0x4 BitOffset=0x1c BitSize=0x1
+    unsigned int ExtendableFile:1;// Offset=0x0 Size=0x4 BitOffset=0x1d BitSize=0x1
+    unsigned int Inherit:1;// Offset=0x0 Size=0x4 BitOffset=0x1e BitSize=0x1
+    unsigned int CopyOnWrite:1;// Offset=0x0 Size=0x4 BitOffset=0x1f BitSize=0x1
+};

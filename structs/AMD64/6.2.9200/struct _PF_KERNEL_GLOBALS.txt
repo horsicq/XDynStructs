@@ -4,6 +4,7 @@ struct _PF_KERNEL_GLOBALS// Size=0x60
     struct _EX_RUNDOWN_REF AccessBufferRef;// Offset=0x8 Size=0x8
     struct _KEVENT AccessBufferExistsEvent;// Offset=0x10 Size=0x18
     unsigned long AccessBufferMax;// Offset=0x28 Size=0x4
+    unsigned char __align0[20];// Offset=0x2c Size=0x14
     union _SLIST_HEADER AccessBufferList;// Offset=0x40 Size=0x10
     long StreamSequenceNumber;// Offset=0x50 Size=0x4
     unsigned long Flags;// Offset=0x54 Size=0x4

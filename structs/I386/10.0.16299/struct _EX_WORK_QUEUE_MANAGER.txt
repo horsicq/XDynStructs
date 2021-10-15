@@ -1,0 +1,12 @@
+struct _EX_WORK_QUEUE_MANAGER// Size=0xb8
+{
+    struct _EX_PARTITION * Partition;// Offset=0x0 Size=0x4
+    struct _ENODE * Node;// Offset=0x4 Size=0x4
+    struct _KEVENT Event;// Offset=0x8 Size=0x10
+    struct _KTIMER DeadlockTimer;// Offset=0x18 Size=0x28
+    struct _KEVENT ReaperEvent;// Offset=0x40 Size=0x10
+    struct _KTIMER2 ReaperTimer;// Offset=0x50 Size=0x58
+    void * ThreadHandle;// Offset=0xa8 Size=0x4
+    unsigned long ExitThread;// Offset=0xac Size=0x4
+    unsigned long ThreadSeed;// Offset=0xb0 Size=0x4
+};

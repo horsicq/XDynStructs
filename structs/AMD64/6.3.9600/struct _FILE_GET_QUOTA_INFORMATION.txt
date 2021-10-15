@@ -1,0 +1,6 @@
+struct _FILE_GET_QUOTA_INFORMATION// Size=0x14
+{
+    unsigned long NextEntryOffset;// Offset=0x0 Size=0x4
+    unsigned long SidLength;// Offset=0x4 Size=0x4
+    struct _SID Sid;// Offset=0x8 Size=0xc
+};

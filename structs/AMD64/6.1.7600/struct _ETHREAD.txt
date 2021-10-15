@@ -5,6 +5,7 @@ struct _ETHREAD// Size=0x4a0
     union _LARGE_INTEGER ExitTime;// Offset=0x368 Size=0x8
     struct _LIST_ENTRY KeyedWaitChain;// Offset=0x368 Size=0x10
     long ExitStatus;// Offset=0x378 Size=0x4
+    unsigned char __align0[4];// Offset=0x37c Size=0x4
     struct _LIST_ENTRY PostBlockList;// Offset=0x380 Size=0x10
     void * ForwardLinkShadow;// Offset=0x380 Size=0x8
     void * StartAddress;// Offset=0x388 Size=0x8
@@ -82,6 +83,7 @@ struct _ETHREAD// Size=0x4a0
     unsigned long long AlpcMessageId;// Offset=0x458 Size=0x8
     void * AlpcMessage;// Offset=0x460 Size=0x8
     unsigned long AlpcReceiveAttributeSet;// Offset=0x460 Size=0x4
+    unsigned char __align1[4];// Offset=0x464 Size=0x4
     struct _LIST_ENTRY AlpcWaitListEntry;// Offset=0x468 Size=0x10
     unsigned long CacheManagerCount;// Offset=0x478 Size=0x4
     unsigned long IoBoostCount;// Offset=0x47c Size=0x4

@@ -170,6 +170,7 @@ struct _KPRCB// Size=0x5f00
     unsigned char GroupSchedulingOverQuota;// Offset=0x2258 Size=0x1
     unsigned char ThreadDpcEnable;// Offset=0x2259 Size=0x1
     unsigned char PrcbPad41[2];// Offset=0x225a Size=0x2
+    unsigned char __align0[4];// Offset=0x225c Size=0x4
     struct _KTIMER_TABLE TimerTable;// Offset=0x2260 Size=0x1840
     struct _KDPC CallDpc;// Offset=0x3aa0 Size=0x20
     long ClockKeepAlive;// Offset=0x3ac0 Size=0x4
@@ -186,6 +187,7 @@ struct _KPRCB// Size=0x5f00
     struct _LIST_ENTRY WaitListHead;// Offset=0x3aec Size=0x8
     unsigned long ScbOffset;// Offset=0x3af4 Size=0x4
     unsigned long ReadyThreadCount;// Offset=0x3af8 Size=0x4
+    unsigned char __align1[4];// Offset=0x3afc Size=0x4
     unsigned long long StartCycles;// Offset=0x3b00 Size=0x8
     unsigned long long TaggedCyclesStart;// Offset=0x3b08 Size=0x8
     unsigned long long TaggedCycles[2];// Offset=0x3b10 Size=0x10
@@ -196,6 +198,7 @@ struct _KPRCB// Size=0x5f00
     unsigned long long UnimportantCycles;// Offset=0x3b40 Size=0x8
     unsigned long long ReadyQueueExpectedRunTime;// Offset=0x3b48 Size=0x8
     unsigned long HighCycleTime;// Offset=0x3b50 Size=0x4
+    unsigned char __align2[4];// Offset=0x3b54 Size=0x4
     unsigned long long Cycles[4][2];// Offset=0x3b58 Size=0x40
     unsigned long PrcbPad71[2];// Offset=0x3b98 Size=0x8
     struct _LIST_ENTRY DispatcherReadyListHead[32];// Offset=0x3ba0 Size=0x100
@@ -224,6 +227,7 @@ struct _KPRCB// Size=0x5f00
     unsigned char InitialApicId;// Offset=0x3d09 Size=0x1
     unsigned char LogicalProcessorsPerPhysicalProcessor;// Offset=0x3d0a Size=0x1
     unsigned char PrcbPad9[1];// Offset=0x3d0b Size=0x1
+    unsigned char __align3[4];// Offset=0x3d0c Size=0x4
     unsigned long long FeatureBits;// Offset=0x3d10 Size=0x8
     union _LARGE_INTEGER UpdateSignature;// Offset=0x3d18 Size=0x8
     unsigned long long IsrTime;// Offset=0x3d20 Size=0x8
@@ -233,6 +237,7 @@ struct _KPRCB// Size=0x5f00
     unsigned long PrcbPad91[14];// Offset=0x3ef8 Size=0x38
     unsigned long DpcWatchdogProfileSingleDpcThreshold;// Offset=0x3f30 Size=0x4
     struct _KDPC DpcWatchdogDpc;// Offset=0x3f34 Size=0x20
+    unsigned char __align4[4];// Offset=0x3f54 Size=0x4
     struct _KTIMER DpcWatchdogTimer;// Offset=0x3f58 Size=0x28
     union _SLIST_HEADER HypercallPageList;// Offset=0x3f80 Size=0x8
     void * HypercallCachedPages;// Offset=0x3f88 Size=0x4

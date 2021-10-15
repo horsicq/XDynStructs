@@ -1,0 +1,4 @@
+struct _unnamed_1101// Size=0x4
+{
+    unsigned long Type;// Offset=0x0 Size=0x4
+};

@@ -1,0 +1,139 @@
+struct _WMI_LOGGER_CONTEXT// Size=0x2f0
+{
+    unsigned long LoggerId;// Offset=0x0 Size=0x4
+    unsigned long BufferSize;// Offset=0x4 Size=0x4
+    unsigned long MaximumEventSize;// Offset=0x8 Size=0x4
+    unsigned long LoggerMode;// Offset=0xc Size=0x4
+    long AcceptNewEvents;// Offset=0x10 Size=0x4
+    unsigned long EventMarker[1];// Offset=0x14 Size=0x4
+    unsigned long ErrorMarker;// Offset=0x18 Size=0x4
+    unsigned long SizeMask;// Offset=0x1c Size=0x4
+    long long  ( * GetCpuClock)();// Offset=0x20 Size=0x4
+    struct _ETHREAD * LoggerThread;// Offset=0x24 Size=0x4
+    long LoggerStatus;// Offset=0x28 Size=0x4
+    unsigned long FailureReason;// Offset=0x2c Size=0x4
+    struct _ETW_BUFFER_QUEUE BufferQueue;// Offset=0x30 Size=0x8
+    struct _ETW_BUFFER_QUEUE OverflowQueue;// Offset=0x38 Size=0x8
+    struct _LIST_ENTRY GlobalList;// Offset=0x40 Size=0x8
+    struct _LIST_ENTRY ProviderBinaryList;// Offset=0x48 Size=0x8
+    struct _WMI_BUFFER_HEADER * BatchedBufferList;// Offset=0x50 Size=0x4
+    struct _EX_FAST_REF CurrentBuffer;// Offset=0x50 Size=0x4
+    struct _UNICODE_STRING LoggerName;// Offset=0x54 Size=0x8
+    struct _UNICODE_STRING LogFileName;// Offset=0x5c Size=0x8
+    struct _UNICODE_STRING LogFilePattern;// Offset=0x64 Size=0x8
+    struct _UNICODE_STRING NewLogFileName;// Offset=0x6c Size=0x8
+    unsigned long ClockType;// Offset=0x74 Size=0x4
+    unsigned long LastFlushedBuffer;// Offset=0x78 Size=0x4
+    unsigned long FlushTimer;// Offset=0x7c Size=0x4
+    unsigned long FlushThreshold;// Offset=0x80 Size=0x4
+    unsigned char __align0[4];// Offset=0x84 Size=0x4
+    union _LARGE_INTEGER ByteOffset;// Offset=0x88 Size=0x8
+    unsigned long MinimumBuffers;// Offset=0x90 Size=0x4
+    long BuffersAvailable;// Offset=0x94 Size=0x4
+    long NumberOfBuffers;// Offset=0x98 Size=0x4
+    unsigned long MaximumBuffers;// Offset=0x9c Size=0x4
+    unsigned long EventsLost;// Offset=0xa0 Size=0x4
+    long PeakBuffersCount;// Offset=0xa4 Size=0x4
+    unsigned long BuffersWritten;// Offset=0xa8 Size=0x4
+    unsigned long LogBuffersLost;// Offset=0xac Size=0x4
+    unsigned long RealTimeBuffersDelivered;// Offset=0xb0 Size=0x4
+    unsigned long RealTimeBuffersLost;// Offset=0xb4 Size=0x4
+    long * SequencePtr;// Offset=0xb8 Size=0x4
+    unsigned long LocalSequence;// Offset=0xbc Size=0x4
+    struct _GUID InstanceGuid;// Offset=0xc0 Size=0x10
+    unsigned long MaximumFileSize;// Offset=0xd0 Size=0x4
+    long FileCounter;// Offset=0xd4 Size=0x4
+    enum _POOL_TYPE PoolType;// Offset=0xd8 Size=0x4
+    unsigned char __align1[4];// Offset=0xdc Size=0x4
+    struct _ETW_REF_CLOCK ReferenceTime;// Offset=0xe0 Size=0x10
+    long CollectionOn;// Offset=0xf0 Size=0x4
+    unsigned long ProviderInfoSize;// Offset=0xf4 Size=0x4
+    struct _LIST_ENTRY Consumers;// Offset=0xf8 Size=0x8
+    unsigned long NumConsumers;// Offset=0x100 Size=0x4
+    struct _ETW_REALTIME_CONSUMER * TransitionConsumer;// Offset=0x104 Size=0x4
+    void * RealtimeLogfileHandle;// Offset=0x108 Size=0x4
+    struct _UNICODE_STRING RealtimeLogfileName;// Offset=0x10c Size=0x8
+    unsigned char __align2[4];// Offset=0x114 Size=0x4
+    union _LARGE_INTEGER RealtimeWriteOffset;// Offset=0x118 Size=0x8
+    union _LARGE_INTEGER RealtimeReadOffset;// Offset=0x120 Size=0x8
+    union _LARGE_INTEGER RealtimeLogfileSize;// Offset=0x128 Size=0x8
+    unsigned long long RealtimeLogfileUsage;// Offset=0x130 Size=0x8
+    unsigned long long RealtimeMaximumFileSize;// Offset=0x138 Size=0x8
+    unsigned long RealtimeBuffersSaved;// Offset=0x140 Size=0x4
+    unsigned char __align3[4];// Offset=0x144 Size=0x4
+    struct _ETW_REF_CLOCK RealtimeReferenceTime;// Offset=0x148 Size=0x10
+    enum _ETW_RT_EVENT_LOSS NewRTEventsLost;// Offset=0x158 Size=0x4
+    struct _KEVENT LoggerEvent;// Offset=0x15c Size=0x10
+    struct _KEVENT FlushEvent;// Offset=0x16c Size=0x10
+    unsigned char __align4[4];// Offset=0x17c Size=0x4
+    struct _KTIMER FlushTimeOutTimer;// Offset=0x180 Size=0x28
+    struct _KDPC LoggerDpc;// Offset=0x1a8 Size=0x20
+    struct _KMUTANT LoggerMutex;// Offset=0x1c8 Size=0x20
+    struct _EX_PUSH_LOCK LoggerLock;// Offset=0x1e8 Size=0x4
+    unsigned long BufferListSpinLock;// Offset=0x1ec Size=0x4
+    struct _EX_PUSH_LOCK BufferListPushLock;// Offset=0x1ec Size=0x4
+    struct _SECURITY_CLIENT_CONTEXT ClientSecurityContext;// Offset=0x1f0 Size=0x3c
+    struct _TOKEN_ACCESS_INFORMATION * TokenAccessInformation;// Offset=0x22c Size=0x4
+    struct _EX_FAST_REF SecurityDescriptor;// Offset=0x230 Size=0x4
+    unsigned char __align5[4];// Offset=0x234 Size=0x4
+    union _LARGE_INTEGER StartTime;// Offset=0x238 Size=0x8
+    void * LogFileHandle;// Offset=0x240 Size=0x4
+    unsigned char __align6[4];// Offset=0x244 Size=0x4
+    long long BufferSequenceNumber;// Offset=0x248 Size=0x8
+    unsigned long Flags;// Offset=0x250 Size=0x4
+    unsigned long Persistent:1;// Offset=0x250 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long AutoLogger:1;// Offset=0x250 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long FsReady:1;// Offset=0x250 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long RealTime:1;// Offset=0x250 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long Wow:1;// Offset=0x250 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long KernelTrace:1;// Offset=0x250 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long NoMoreEnable:1;// Offset=0x250 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long StackTracing:1;// Offset=0x250 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long ErrorLogged:1;// Offset=0x250 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long RealtimeLoggerContextFreed:1;// Offset=0x250 Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long PebsTracing:1;// Offset=0x250 Size=0x4 BitOffset=0xa BitSize=0x1
+    unsigned long PmcCounters:1;// Offset=0x250 Size=0x4 BitOffset=0xb BitSize=0x1
+    unsigned long PageAlignBuffers:1;// Offset=0x250 Size=0x4 BitOffset=0xc BitSize=0x1
+    unsigned long StackLookasideListAllocated:1;// Offset=0x250 Size=0x4 BitOffset=0xd BitSize=0x1
+    unsigned long SecurityTrace:1;// Offset=0x250 Size=0x4 BitOffset=0xe BitSize=0x1
+    unsigned long SpareFlags1:1;// Offset=0x250 Size=0x4 BitOffset=0xf BitSize=0x1
+    unsigned long SystemLoggerIndex:8;// Offset=0x250 Size=0x4 BitOffset=0x10 BitSize=0x8
+    unsigned long StackCaching:1;// Offset=0x250 Size=0x4 BitOffset=0x18 BitSize=0x1
+    unsigned long SpareFlags2:7;// Offset=0x250 Size=0x4 BitOffset=0x19 BitSize=0x7
+    unsigned long RequestFlag;// Offset=0x254 Size=0x4
+    unsigned long DbgRequestNewFile:1;// Offset=0x254 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long DbgRequestUpdateFile:1;// Offset=0x254 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long DbgRequestFlush:1;// Offset=0x254 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long DbgRequestDisableRealtime:1;// Offset=0x254 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long DbgRequestDisconnectConsumer:1;// Offset=0x254 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long DbgRequestConnectConsumer:1;// Offset=0x254 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long DbgRequestNotifyConsumer:1;// Offset=0x254 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long DbgRequestUpdateHeader:1;// Offset=0x254 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long DbgRequestDeferredFlush:1;// Offset=0x254 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long DbgRequestDeferredFlushTimer:1;// Offset=0x254 Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long DbgRequestFlushTimer:1;// Offset=0x254 Size=0x4 BitOffset=0xa BitSize=0x1
+    unsigned long DbgRequestUpdateDebugger:1;// Offset=0x254 Size=0x4 BitOffset=0xb BitSize=0x1
+    unsigned long DbgSpareRequestFlags:20;// Offset=0x254 Size=0x4 BitOffset=0xc BitSize=0x14
+    struct _RTL_BITMAP HookIdMap;// Offset=0x258 Size=0x8
+    struct _ETW_STACK_CACHE * StackCache;// Offset=0x260 Size=0x4
+    struct _ETW_PMC_SUPPORT * PmcData;// Offset=0x264 Size=0x4
+    struct _LIST_ENTRY WinRtProviderBinaryList;// Offset=0x268 Size=0x8
+    struct _WMI_BUFFER_HEADER ** ScratchArray;// Offset=0x270 Size=0x4
+    struct _DISALLOWED_GUIDS DisallowedGuids;// Offset=0x274 Size=0x8
+    struct _ETW_SOFT_RESTART_CONTEXT * SoftRestartContext;// Offset=0x27c Size=0x4
+    struct _ETW_SILODRIVERSTATE * SiloState;// Offset=0x280 Size=0x4
+    struct _WORK_QUEUE_ITEM CompressionWorkItem;// Offset=0x284 Size=0x10
+    long CompressionWorkItemState;// Offset=0x294 Size=0x4
+    struct _EX_PUSH_LOCK CompressionLock;// Offset=0x298 Size=0x4
+    struct _WMI_BUFFER_HEADER * CompressionTarget;// Offset=0x29c Size=0x4
+    void * CompressionWorkspace;// Offset=0x2a0 Size=0x4
+    long CompressionOn;// Offset=0x2a4 Size=0x4
+    unsigned long CompressionRatioGuess;// Offset=0x2a8 Size=0x4
+    unsigned long PartialBufferCompressionLevel;// Offset=0x2ac Size=0x4
+    enum ETW_COMPRESSION_RESUMPTION_MODE CompressionResumptionMode;// Offset=0x2b0 Size=0x4
+    struct _SINGLE_LIST_ENTRY PlaceholderList;// Offset=0x2b4 Size=0x4
+    struct _KDPC CompressionDpc;// Offset=0x2b8 Size=0x20
+    union _LARGE_INTEGER LastBufferSwitchTime;// Offset=0x2d8 Size=0x8
+    union _LARGE_INTEGER BufferWriteDuration;// Offset=0x2e0 Size=0x8
+    union _LARGE_INTEGER BufferCompressDuration;// Offset=0x2e8 Size=0x8
+};

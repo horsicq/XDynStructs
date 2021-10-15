@@ -36,8 +36,10 @@ struct _KPRCB// Size=0x5b80
     unsigned long InitialApicId;// Offset=0x650 Size=0x4
     unsigned long Stride;// Offset=0x654 Size=0x4
     unsigned short Group;// Offset=0x658 Size=0x2
+    unsigned char __align0[6];// Offset=0x65a Size=0x6
     unsigned long long GroupSetMember;// Offset=0x660 Size=0x8
     unsigned char GroupIndex;// Offset=0x668 Size=0x1
+    unsigned char __align1[7];// Offset=0x669 Size=0x7
     struct _KSPIN_LOCK_QUEUE LockQueue[17];// Offset=0x670 Size=0x110
     struct _PP_LOOKASIDE_LIST PPLookasideList[16];// Offset=0x780 Size=0x100
     struct _GENERAL_LOOKASIDE_POOL PPNxPagedLookasideList[32];// Offset=0x880 Size=0xc00
@@ -191,6 +193,7 @@ struct _KPRCB// Size=0x5b80
     struct _LIST_ENTRY ScbList;// Offset=0x55c8 Size=0x10
     unsigned long PrcbPad92[22];// Offset=0x55d8 Size=0x58
     unsigned long KeAlignmentFixupCount;// Offset=0x5630 Size=0x4
+    unsigned char __align2[4];// Offset=0x5634 Size=0x4
     struct _KDPC DpcWatchdogDpc;// Offset=0x5638 Size=0x40
     struct _KTIMER DpcWatchdogTimer;// Offset=0x5678 Size=0x40
     struct _CACHE_DESCRIPTOR Cache[5];// Offset=0x56b8 Size=0x3c
@@ -200,6 +203,7 @@ struct _KPRCB// Size=0x5b80
     void * HyperPte;// Offset=0x5700 Size=0x8
     void * WheaInfo;// Offset=0x5708 Size=0x8
     void * EtwSupport;// Offset=0x5710 Size=0x8
+    unsigned char __align3[8];// Offset=0x5718 Size=0x8
     union _SLIST_HEADER InterruptObjectPool;// Offset=0x5720 Size=0x10
     union _SLIST_HEADER HypercallPageList;// Offset=0x5730 Size=0x10
     void * HypercallPageVirtual;// Offset=0x5740 Size=0x8
@@ -219,11 +223,15 @@ struct _KPRCB// Size=0x5b80
     unsigned char VendorString[13];// Offset=0x5948 Size=0xd
     unsigned char PrcbPad10[3];// Offset=0x5955 Size=0x3
     unsigned long FeatureBits;// Offset=0x5958 Size=0x4
+    unsigned char __align4[4];// Offset=0x595c Size=0x4
     union _LARGE_INTEGER UpdateSignature;// Offset=0x5960 Size=0x8
     struct _CONTEXT * Context;// Offset=0x5968 Size=0x8
     unsigned long ContextFlagsInit;// Offset=0x5970 Size=0x4
+    unsigned char __align5[4];// Offset=0x5974 Size=0x4
     struct _XSAVE_AREA * ExtendedState;// Offset=0x5978 Size=0x8
     struct _KENTROPY_TIMING_STATE EntropyTimingState;// Offset=0x5980 Size=0x150
+    unsigned char __align6[48];// Offset=0x5ad0 Size=0x30
     struct _REQUEST_MAILBOX * Mailbox;// Offset=0x5b00 Size=0x8
+    unsigned char __align7[56];// Offset=0x5b08 Size=0x38
     struct _REQUEST_MAILBOX RequestMailbox[1];// Offset=0x5b40 Size=0x40
 };

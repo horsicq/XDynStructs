@@ -1,0 +1,16 @@
+struct _MMMOD_WRITER_MDL_ENTRY// Size=0x60
+{
+    struct _LIST_ENTRY Links;// Offset=0x0 Size=0x8
+    union _unnamed_202 u;// Offset=0x8 Size=0x8
+    struct _IRP * Irp;// Offset=0x10 Size=0x4
+    union _unnamed_203 u1;// Offset=0x14 Size=0x4
+    struct _MMPAGING_FILE * PagingFile;// Offset=0x18 Size=0x4
+    struct _FILE_OBJECT * File;// Offset=0x1c Size=0x4
+    struct _CONTROL_AREA * ControlArea;// Offset=0x20 Size=0x4
+    struct _ERESOURCE * FileResource;// Offset=0x24 Size=0x4
+    union _LARGE_INTEGER WriteOffset;// Offset=0x28 Size=0x8
+    union _LARGE_INTEGER IssueTime;// Offset=0x30 Size=0x8
+    struct _MDL * PointerMdl;// Offset=0x38 Size=0x4
+    struct _MDL Mdl;// Offset=0x3c Size=0x1c
+    unsigned long Page[1];// Offset=0x58 Size=0x4
+};

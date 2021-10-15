@@ -1,0 +1,6 @@
+struct _POWER_SEQUENCE// Size=0xc
+{
+    unsigned long SequenceD1;// Offset=0x0 Size=0x4
+    unsigned long SequenceD2;// Offset=0x4 Size=0x4
+    unsigned long SequenceD3;// Offset=0x8 Size=0x4
+};

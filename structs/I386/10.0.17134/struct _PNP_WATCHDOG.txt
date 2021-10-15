@@ -5,6 +5,7 @@ struct _PNP_WATCHDOG// Size=0x80
     struct _KDPC WatchdogDpc;// Offset=0x30 Size=0x20
     unsigned char WatchdogEnabled;// Offset=0x50 Size=0x1
     unsigned char WatchdogSecondChance;// Offset=0x51 Size=0x1
+    unsigned char __align0[2];// Offset=0x52 Size=0x2
     struct _KEVENT WatchdogComplete;// Offset=0x54 Size=0x10
     struct _WORK_QUEUE_ITEM WatchdogWorkItem;// Offset=0x64 Size=0x10
     enum _PNP_WATCHDOG_TYPE WatchdogContextType;// Offset=0x74 Size=0x4

@@ -4,6 +4,7 @@ struct _UMS_CONTROL_BLOCK// Size=0x90
     struct _SINGLE_LIST_ENTRY * CompletionListEntry;// Offset=0x8 Size=0x8
     struct _KEVENT * CompletionListEvent;// Offset=0x10 Size=0x8
     unsigned long ServiceSequenceNumber;// Offset=0x18 Size=0x4
+    unsigned char __align0[4];// Offset=0x1c Size=0x4
     struct _KQUEUE UmsQueue;// Offset=0x20 Size=0x40
     struct _LIST_ENTRY QueueEntry;// Offset=0x60 Size=0x10
     struct _RTL_UMS_CONTEXT * YieldingUmsContext;// Offset=0x70 Size=0x8
@@ -17,5 +18,6 @@ struct _UMS_CONTROL_BLOCK// Size=0x90
     unsigned long UmsAssociatedQueueUsed:1;// Offset=0x50 Size=0x4 BitOffset=0x1 BitSize=0x1
     unsigned long UmsThreadParked:1;// Offset=0x50 Size=0x4 BitOffset=0x2 BitSize=0x1
     unsigned long UmsFlags;// Offset=0x50 Size=0x4
+    unsigned char __align1[52];// Offset=0x54 Size=0x34
     unsigned short TebSelector;// Offset=0x88 Size=0x2
 };

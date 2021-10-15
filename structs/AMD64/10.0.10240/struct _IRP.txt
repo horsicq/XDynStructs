@@ -6,6 +6,7 @@ struct _IRP// Size=0xd0
     unsigned short Reserved;// Offset=0x6 Size=0x2
     struct _MDL * MdlAddress;// Offset=0x8 Size=0x8
     unsigned long Flags;// Offset=0x10 Size=0x4
+    unsigned char __align0[4];// Offset=0x14 Size=0x4
     union _unnamed_93 AssociatedIrp;// Offset=0x18 Size=0x8
     struct _LIST_ENTRY ThreadListEntry;// Offset=0x20 Size=0x10
     struct _IO_STATUS_BLOCK IoStatus;// Offset=0x30 Size=0x10

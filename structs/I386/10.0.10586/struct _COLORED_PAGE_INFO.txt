@@ -1,0 +1,7 @@
+struct _COLORED_PAGE_INFO// Size=0x10
+{
+    long BeingZeroed;// Offset=0x0 Size=0x4
+    unsigned long Processor;// Offset=0x4 Size=0x4
+    unsigned long PagesQueued;// Offset=0x8 Size=0x4
+    struct _MMPFN * PfnAllocation;// Offset=0xc Size=0x4
+};

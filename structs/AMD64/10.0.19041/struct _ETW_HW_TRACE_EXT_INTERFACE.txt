@@ -1,0 +1,6 @@
+struct _ETW_HW_TRACE_EXT_INTERFACE// Size=0x18
+{
+    long  ( * StartProcessorTraceOnEachCore)(unsigned long long ,void ** );// Offset=0x0 Size=0x8
+    long  ( * StopProcessorTraceOnEachCore)(void * );// Offset=0x8 Size=0x8
+    long  ( * LogProcessorTraceOnCurrentCore)(void * ,void * );// Offset=0x10 Size=0x8
+};

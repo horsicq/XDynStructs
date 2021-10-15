@@ -1,0 +1,5 @@
+struct _MI_CACHED_PTES// Size=0x48
+{
+    struct _MI_CACHED_PTE Bins[8];// Offset=0x0 Size=0x40
+    long CachedPteCount;// Offset=0x40 Size=0x4
+};

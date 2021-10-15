@@ -1,0 +1,6 @@
+struct _HIVE_WRITE_WAIT_QUEUE// Size=0x18
+{
+    struct _ETHREAD * ActiveThread;// Offset=0x0 Size=0x8
+    struct _HIVE_WAIT_PACKET * WaitList;// Offset=0x8 Size=0x8
+    unsigned long OwnerBoosted;// Offset=0x10 Size=0x4
+};

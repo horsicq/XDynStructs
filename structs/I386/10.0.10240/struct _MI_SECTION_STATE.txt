@@ -1,6 +1,7 @@
 struct _MI_SECTION_STATE// Size=0x140
 {
     long SegmentListLock;// Offset=0x0 Size=0x4
+    unsigned char __align0[60];// Offset=0x4 Size=0x3c
     long SectionObjectPointersLock;// Offset=0x40 Size=0x4
     struct _EX_PUSH_LOCK SectionExtendLock;// Offset=0x44 Size=0x4
     struct _EX_PUSH_LOCK SectionExtendSetLock;// Offset=0x48 Size=0x4

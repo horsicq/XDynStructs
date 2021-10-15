@@ -1,0 +1,6 @@
+struct _MI_HYPER_SPACE// Size=0x10804000
+{
+    unsigned char VadBitmap[268435456];// Offset=0x0 Size=0x10000000
+    unsigned char PageDirectoryCommitmentBitmap[16384];// Offset=0x10000000 Size=0x4000
+    unsigned char PageTableCommitmentBitmap[8388608];// Offset=0x10004000 Size=0x800000
+};

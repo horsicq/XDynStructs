@@ -77,10 +77,13 @@ struct _ETHREAD// Size=0x4c8
     unsigned char DisablePageFaultClustering;// Offset=0x439 Size=0x1
     unsigned char ActiveFaultCount;// Offset=0x43a Size=0x1
     unsigned char LockOrderState;// Offset=0x43b Size=0x1
+    unsigned char __align0[4];// Offset=0x43c Size=0x4
     unsigned long long AlpcMessageId;// Offset=0x440 Size=0x8
     void * AlpcMessage;// Offset=0x448 Size=0x8
     unsigned long AlpcReceiveAttributeSet;// Offset=0x448 Size=0x4
+    unsigned char __align1[4];// Offset=0x44c Size=0x4
     long ExitStatus;// Offset=0x450 Size=0x4
+    unsigned char __align2[4];// Offset=0x454 Size=0x4
     struct _LIST_ENTRY AlpcWaitListEntry;// Offset=0x458 Size=0x10
     unsigned long CacheManagerCount;// Offset=0x468 Size=0x4
     unsigned long IoBoostCount;// Offset=0x46c Size=0x4

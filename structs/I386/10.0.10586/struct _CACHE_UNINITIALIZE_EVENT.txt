@@ -1,0 +1,5 @@
+struct _CACHE_UNINITIALIZE_EVENT// Size=0x14
+{
+    struct _CACHE_UNINITIALIZE_EVENT * Next;// Offset=0x0 Size=0x4
+    struct _KEVENT Event;// Offset=0x4 Size=0x10
+};

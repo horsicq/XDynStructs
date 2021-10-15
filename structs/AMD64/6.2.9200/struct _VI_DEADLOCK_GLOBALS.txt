@@ -26,6 +26,7 @@ struct _VI_DEADLOCK_GLOBALS// Size=0x8168
     unsigned long ForgetHistoryCounter;// Offset=0x804c Size=0x4
     void * Instigator;// Offset=0x8050 Size=0x8
     unsigned long NumberOfParticipants;// Offset=0x8058 Size=0x4
+    unsigned char __align0[4];// Offset=0x805c Size=0x4
     struct _VI_DEADLOCK_NODE * Participant[32];// Offset=0x8060 Size=0x100
     long ChildrenCountWatermark;// Offset=0x8160 Size=0x4
 };

@@ -1,0 +1,4 @@
+struct _LOGGED_STREAM_CALLBACK_V2// Size=0x8
+{
+    struct _LOG_HANDLE_CONTEXT * LogHandleContext;// Offset=0x0 Size=0x8
+};

@@ -9,8 +9,10 @@ struct _MI_PARTITION_STORES// Size=0x90
     unsigned long WriteIssueFailures;// Offset=0x18 Size=0x4
     unsigned long WritesOutstanding;// Offset=0x1c Size=0x4
     long EvictFlushLock;// Offset=0x20 Size=0x4
+    unsigned char __align0[4];// Offset=0x24 Size=0x4
     struct _ETHREAD * EvictionThread;// Offset=0x28 Size=0x8
     struct _KEVENT EvictEvent;// Offset=0x30 Size=0x18
+    unsigned char __align1[8];// Offset=0x48 Size=0x8
     union _SLIST_HEADER WriteSupportSListHead;// Offset=0x50 Size=0x10
     struct _KEVENT EvictFlushCompleteEvent;// Offset=0x60 Size=0x18
     struct _RTL_BITMAP * ModifiedWriteFailedBitmap;// Offset=0x78 Size=0x8

@@ -1,0 +1,6 @@
+struct _ARBITER_CONFLICT_INFO// Size=0x18
+{
+    struct _DEVICE_OBJECT * OwningObject;// Offset=0x0 Size=0x8
+    unsigned long long Start;// Offset=0x8 Size=0x8
+    unsigned long long End;// Offset=0x10 Size=0x8
+};

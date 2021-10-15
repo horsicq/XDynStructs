@@ -1,0 +1,4 @@
+struct _KTB_FLUSH_VA// Size=0x8
+{
+    union <anonymous-tag> u1;// Offset=0x0 Size=0x8
+};

@@ -19,5 +19,6 @@ struct _DEVICE_DESCRIPTION// Size=0x40
     unsigned long DmaAddressWidth;// Offset=0x28 Size=0x4
     unsigned long DmaControllerInstance;// Offset=0x2c Size=0x4
     unsigned long DmaRequestLine;// Offset=0x30 Size=0x4
+    unsigned char __align0[4];// Offset=0x34 Size=0x4
     union _LARGE_INTEGER DeviceAddress;// Offset=0x38 Size=0x8
 };

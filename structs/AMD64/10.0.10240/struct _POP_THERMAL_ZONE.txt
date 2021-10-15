@@ -3,6 +3,7 @@ struct _POP_THERMAL_ZONE// Size=0x338
     struct _POP_POLICY_DEVICE PolicyDevice;// Offset=0x0 Size=0x40
     struct _LIST_ENTRY Link;// Offset=0x0 Size=0x10
     enum POWER_POLICY_DEVICE_TYPE DeviceType;// Offset=0x10 Size=0x4
+    unsigned char __align0[4];// Offset=0x14 Size=0x4
     void * Notification;// Offset=0x18 Size=0x8
     struct _UNICODE_STRING Name;// Offset=0x20 Size=0x10
     struct _DEVICE_OBJECT * Device;// Offset=0x30 Size=0x8
@@ -17,10 +18,12 @@ struct _POP_THERMAL_ZONE// Size=0x338
     unsigned char Critical;// Offset=0x47 Size=0x1
     unsigned char ThermalStandby;// Offset=0x48 Size=0x1
     unsigned char OverThrottled;// Offset=0x49 Size=0x1
+    unsigned char __align1[2];// Offset=0x4a Size=0x2
     long HighPrecisionThrottle;// Offset=0x4c Size=0x4
     long Throttle;// Offset=0x50 Size=0x4
     long PendingThrottle;// Offset=0x54 Size=0x4
     unsigned long ThrottleReasons;// Offset=0x58 Size=0x4
+    unsigned char __align2[4];// Offset=0x5c Size=0x4
     unsigned long long LastTime;// Offset=0x60 Size=0x8
     unsigned long SampleRate;// Offset=0x68 Size=0x4
     unsigned long LastTemp;// Offset=0x6c Size=0x4
@@ -30,6 +33,7 @@ struct _POP_THERMAL_ZONE// Size=0x338
     union _LARGE_INTEGER InfoLastUpdateTime;// Offset=0x148 Size=0x8
     struct _THERMAL_POLICY Policy;// Offset=0x150 Size=0x18
     unsigned char PolicyDriver;// Offset=0x168 Size=0x1
+    unsigned char __align3[7];// Offset=0x169 Size=0x7
     unsigned long long LastActiveStartTime;// Offset=0x170 Size=0x8
     unsigned long long LastPassiveStartTime;// Offset=0x178 Size=0x8
     struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x180 Size=0x20
@@ -37,5 +41,6 @@ struct _POP_THERMAL_ZONE// Size=0x338
     struct _KEVENT ZoneStopped;// Offset=0x1b0 Size=0x18
     struct _KEVENT TemperatureUpdated;// Offset=0x1c8 Size=0x18
     unsigned long InstanceId;// Offset=0x1e0 Size=0x4
+    unsigned char __align4[4];// Offset=0x1e4 Size=0x4
     struct _POP_THERMAL_TELEMETRY_TRACKER TelemetryTracker;// Offset=0x1e8 Size=0x150
 };

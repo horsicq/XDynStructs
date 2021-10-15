@@ -1,0 +1,5 @@
+struct _DBGKM_EXCEPTION64// Size=0xa0
+{
+    struct _EXCEPTION_RECORD64 ExceptionRecord;// Offset=0x0 Size=0x98
+    unsigned long FirstChance;// Offset=0x98 Size=0x4
+};

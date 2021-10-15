@@ -9,12 +9,15 @@ struct _POP_IRP_DATA// Size=0xf8
     struct _KTIMER WatchdogTimer;// Offset=0x38 Size=0x40
     struct _KDPC WatchdogDpc;// Offset=0x78 Size=0x40
     unsigned char MinorFunction;// Offset=0xb8 Size=0x1
+    unsigned char __align0[3];// Offset=0xb9 Size=0x3
     enum _POWER_STATE_TYPE PowerStateType;// Offset=0xbc Size=0x4
     union _POWER_STATE PowerState;// Offset=0xc0 Size=0x4
     unsigned char WatchdogEnabled;// Offset=0xc4 Size=0x1
+    unsigned char __align1[3];// Offset=0xc5 Size=0x3
     struct _POP_FX_DEVICE * FxDevice;// Offset=0xc8 Size=0x8
     unsigned char SystemTransition;// Offset=0xd0 Size=0x1
     unsigned char NotifyPEP;// Offset=0xd1 Size=0x1
+    unsigned char __align2[2];// Offset=0xd2 Size=0x2
     long IrpSequenceID;// Offset=0xd4 Size=0x4
     struct _unnamed_588 Device;// Offset=0xd8 Size=0x20
     struct _unnamed_589 System;// Offset=0xd8 Size=0x10

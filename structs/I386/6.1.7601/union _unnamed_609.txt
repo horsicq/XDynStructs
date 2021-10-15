@@ -1,0 +1,5 @@
+union _unnamed_609// Size=0x8
+{
+    struct _unnamed_607 OldCell;// Offset=0x0 Size=0x8
+    struct _unnamed_608 NewCell;// Offset=0x0 Size=0x4
+};

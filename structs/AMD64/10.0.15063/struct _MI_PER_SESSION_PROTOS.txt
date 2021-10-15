@@ -1,0 +1,11 @@
+struct _MI_PER_SESSION_PROTOS// Size=0x30
+{
+    struct _RTL_BALANCED_NODE SessionProtoNode;// Offset=0x0 Size=0x18
+    struct _SINGLE_LIST_ENTRY FreeList;// Offset=0x0 Size=0x8
+    void * DriverAddress;// Offset=0x0 Size=0x8
+    unsigned char __align0[16];// Offset=0x8 Size=0x10
+    unsigned long SessionId;// Offset=0x18 Size=0x4
+    struct _SUBSECTION * Subsection;// Offset=0x18 Size=0x8
+    struct _MMPTE * SubsectionBase;// Offset=0x20 Size=0x8
+    union _unnamed_1421 u2;// Offset=0x28 Size=0x4
+};

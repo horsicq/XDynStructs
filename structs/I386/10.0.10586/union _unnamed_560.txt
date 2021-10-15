@@ -1,0 +1,5 @@
+union _unnamed_560// Size=0x4
+{
+    struct _unnamed_558 Bytes;// Offset=0x0 Size=0x4
+    struct _unnamed_559 Bits;// Offset=0x0 Size=0x4
+};

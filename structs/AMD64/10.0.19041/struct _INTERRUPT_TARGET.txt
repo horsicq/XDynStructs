@@ -1,0 +1,11 @@
+struct _INTERRUPT_TARGET// Size=0x18
+{
+    enum _INTERRUPT_TARGET_TYPE Target;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
+    unsigned long PhysicalTarget;// Offset=0x8 Size=0x4
+    unsigned long LogicalFlatTarget;// Offset=0x8 Size=0x4
+    unsigned long RemapIndex;// Offset=0x8 Size=0x4
+    unsigned long ClusterId;// Offset=0x8 Size=0x4
+    unsigned long ClusterMask;// Offset=0xc Size=0x4
+    struct <anonymous-tag> HypervisorTarget;// Offset=0x8 Size=0x10
+};

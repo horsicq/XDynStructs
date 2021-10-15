@@ -1,0 +1,15 @@
+struct _ENODE// Size=0x340
+{
+    struct _KNODE Ncb;// Offset=0x0 Size=0xc0
+    struct _EX_WORK_QUEUE * ExWorkQueues[8];// Offset=0xc0 Size=0x20
+    struct _EX_WORK_QUEUE ExWorkQueue;// Offset=0xe0 Size=0x1b8
+    struct _KEVENT ExpThreadSetManagerEvent;// Offset=0x298 Size=0x10
+    struct _KTIMER ExpDeadlockTimer;// Offset=0x2a8 Size=0x28
+    struct _KEVENT ExpThreadReaperEvent;// Offset=0x2d0 Size=0x10
+    struct _KWAIT_BLOCK WaitBlocks[3];// Offset=0x2e0 Size=0x48
+    struct _ETHREAD * ExpWorkerThreadBalanceManagerPtr;// Offset=0x328 Size=0x4
+    unsigned long ExpWorkerSeed;// Offset=0x32c Size=0x4
+    unsigned long ExWorkerFullInit:1;// Offset=0x330 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long ExWorkerStructInit:1;// Offset=0x330 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long ExWorkerFlags;// Offset=0x330 Size=0x4
+};

@@ -23,8 +23,10 @@ struct _KPCR// Size=0x5d00
     unsigned long SecondLevelCacheSize;// Offset=0xbc Size=0x4
     unsigned long HalReserved[16];// Offset=0xc0 Size=0x40
     unsigned long Unused2;// Offset=0x100 Size=0x4
+    unsigned char __align0[4];// Offset=0x104 Size=0x4
     void * KdVersionBlock;// Offset=0x108 Size=0x8
     void * Unused3;// Offset=0x110 Size=0x8
     unsigned long PcrAlign1[24];// Offset=0x118 Size=0x60
+    unsigned char __align1[8];// Offset=0x178 Size=0x8
     struct _KPRCB Prcb;// Offset=0x180 Size=0x5b80
 };

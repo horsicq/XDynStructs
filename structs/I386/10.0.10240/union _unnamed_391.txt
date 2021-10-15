@@ -1,0 +1,5 @@
+union _unnamed_391// Size=0x4
+{
+    struct _unnamed_390 s1;// Offset=0x0 Size=0x4
+    unsigned long State;// Offset=0x0 Size=0x4
+};

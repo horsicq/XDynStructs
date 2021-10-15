@@ -1,0 +1,281 @@
+struct _KPRCB// Size=0x4ee0
+{
+    unsigned short MinorVersion;// Offset=0x0 Size=0x2
+    unsigned short MajorVersion;// Offset=0x2 Size=0x2
+    struct _KTHREAD * CurrentThread;// Offset=0x4 Size=0x4
+    struct _KTHREAD * NextThread;// Offset=0x8 Size=0x4
+    struct _KTHREAD * IdleThread;// Offset=0xc Size=0x4
+    unsigned char LegacyNumber;// Offset=0x10 Size=0x1
+    unsigned char NestingLevel;// Offset=0x11 Size=0x1
+    unsigned short BuildType;// Offset=0x12 Size=0x2
+    char CpuType;// Offset=0x14 Size=0x1
+    char CpuID;// Offset=0x15 Size=0x1
+    unsigned short CpuStep;// Offset=0x16 Size=0x2
+    unsigned char CpuStepping;// Offset=0x16 Size=0x1
+    unsigned char CpuModel;// Offset=0x17 Size=0x1
+    struct _KPROCESSOR_STATE ProcessorState;// Offset=0x18 Size=0x320
+    unsigned long KernelReserved[16];// Offset=0x338 Size=0x40
+    unsigned long HalReserved[16];// Offset=0x378 Size=0x40
+    unsigned long CFlushSize;// Offset=0x3b8 Size=0x4
+    unsigned char CoresPerPhysicalProcessor;// Offset=0x3bc Size=0x1
+    unsigned char LogicalProcessorsPerCore;// Offset=0x3bd Size=0x1
+    unsigned char PrcbPad0[2];// Offset=0x3be Size=0x2
+    unsigned long MHz;// Offset=0x3c0 Size=0x4
+    unsigned char CpuVendor;// Offset=0x3c4 Size=0x1
+    unsigned char GroupIndex;// Offset=0x3c5 Size=0x1
+    unsigned short Group;// Offset=0x3c6 Size=0x2
+    unsigned long GroupSetMember;// Offset=0x3c8 Size=0x4
+    unsigned long Number;// Offset=0x3cc Size=0x4
+    unsigned char PrcbPad1[72];// Offset=0x3d0 Size=0x48
+    struct _KSPIN_LOCK_QUEUE LockQueue[17];// Offset=0x418 Size=0x88
+    struct _KTHREAD * NpxThread;// Offset=0x4a0 Size=0x4
+    unsigned long InterruptCount;// Offset=0x4a4 Size=0x4
+    unsigned long KernelTime;// Offset=0x4a8 Size=0x4
+    unsigned long UserTime;// Offset=0x4ac Size=0x4
+    unsigned long DpcTime;// Offset=0x4b0 Size=0x4
+    unsigned long DpcTimeCount;// Offset=0x4b4 Size=0x4
+    unsigned long InterruptTime;// Offset=0x4b8 Size=0x4
+    unsigned long AdjustDpcThreshold;// Offset=0x4bc Size=0x4
+    unsigned long PageColor;// Offset=0x4c0 Size=0x4
+    unsigned char DebuggerSavedIRQL;// Offset=0x4c4 Size=0x1
+    unsigned char NodeColor;// Offset=0x4c5 Size=0x1
+    unsigned char PrcbPad20[2];// Offset=0x4c6 Size=0x2
+    unsigned long NodeShiftedColor;// Offset=0x4c8 Size=0x4
+    struct _KNODE * ParentNode;// Offset=0x4cc Size=0x4
+    unsigned long SecondaryColorMask;// Offset=0x4d0 Size=0x4
+    unsigned long DpcTimeLimit;// Offset=0x4d4 Size=0x4
+    unsigned long PrcbPad21[2];// Offset=0x4d8 Size=0x8
+    unsigned long CcFastReadNoWait;// Offset=0x4e0 Size=0x4
+    unsigned long CcFastReadWait;// Offset=0x4e4 Size=0x4
+    unsigned long CcFastReadNotPossible;// Offset=0x4e8 Size=0x4
+    unsigned long CcCopyReadNoWait;// Offset=0x4ec Size=0x4
+    unsigned long CcCopyReadWait;// Offset=0x4f0 Size=0x4
+    unsigned long CcCopyReadNoWaitMiss;// Offset=0x4f4 Size=0x4
+    long MmSpinLockOrdering;// Offset=0x4f8 Size=0x4
+    long IoReadOperationCount;// Offset=0x4fc Size=0x4
+    long IoWriteOperationCount;// Offset=0x500 Size=0x4
+    long IoOtherOperationCount;// Offset=0x504 Size=0x4
+    union _LARGE_INTEGER IoReadTransferCount;// Offset=0x508 Size=0x8
+    union _LARGE_INTEGER IoWriteTransferCount;// Offset=0x510 Size=0x8
+    union _LARGE_INTEGER IoOtherTransferCount;// Offset=0x518 Size=0x8
+    unsigned long CcFastMdlReadNoWait;// Offset=0x520 Size=0x4
+    unsigned long CcFastMdlReadWait;// Offset=0x524 Size=0x4
+    unsigned long CcFastMdlReadNotPossible;// Offset=0x528 Size=0x4
+    unsigned long CcMapDataNoWait;// Offset=0x52c Size=0x4
+    unsigned long CcMapDataWait;// Offset=0x530 Size=0x4
+    unsigned long CcPinMappedDataCount;// Offset=0x534 Size=0x4
+    unsigned long CcPinReadNoWait;// Offset=0x538 Size=0x4
+    unsigned long CcPinReadWait;// Offset=0x53c Size=0x4
+    unsigned long CcMdlReadNoWait;// Offset=0x540 Size=0x4
+    unsigned long CcMdlReadWait;// Offset=0x544 Size=0x4
+    unsigned long CcLazyWriteHotSpots;// Offset=0x548 Size=0x4
+    unsigned long CcLazyWriteIos;// Offset=0x54c Size=0x4
+    unsigned long CcLazyWritePages;// Offset=0x550 Size=0x4
+    unsigned long CcDataFlushes;// Offset=0x554 Size=0x4
+    unsigned long CcDataPages;// Offset=0x558 Size=0x4
+    unsigned long CcLostDelayedWrites;// Offset=0x55c Size=0x4
+    unsigned long CcFastReadResourceMiss;// Offset=0x560 Size=0x4
+    unsigned long CcCopyReadWaitMiss;// Offset=0x564 Size=0x4
+    unsigned long CcFastMdlReadResourceMiss;// Offset=0x568 Size=0x4
+    unsigned long CcMapDataNoWaitMiss;// Offset=0x56c Size=0x4
+    unsigned long CcMapDataWaitMiss;// Offset=0x570 Size=0x4
+    unsigned long CcPinReadNoWaitMiss;// Offset=0x574 Size=0x4
+    unsigned long CcPinReadWaitMiss;// Offset=0x578 Size=0x4
+    unsigned long CcMdlReadNoWaitMiss;// Offset=0x57c Size=0x4
+    unsigned long CcMdlReadWaitMiss;// Offset=0x580 Size=0x4
+    unsigned long CcReadAheadIos;// Offset=0x584 Size=0x4
+    unsigned long KeAlignmentFixupCount;// Offset=0x588 Size=0x4
+    unsigned long KeExceptionDispatchCount;// Offset=0x58c Size=0x4
+    unsigned long KeSystemCalls;// Offset=0x590 Size=0x4
+    unsigned long AvailableTime;// Offset=0x594 Size=0x4
+    unsigned long PrcbPad22[2];// Offset=0x598 Size=0x8
+    struct _PP_LOOKASIDE_LIST PPLookasideList[16];// Offset=0x5a0 Size=0x80
+    struct _GENERAL_LOOKASIDE_POOL PPNPagedLookasideList[32];// Offset=0x620 Size=0x900
+    struct _GENERAL_LOOKASIDE_POOL PPPagedLookasideList[32];// Offset=0xf20 Size=0x900
+    unsigned long PacketBarrier;// Offset=0x1820 Size=0x4
+    long ReverseStall;// Offset=0x1824 Size=0x4
+    void * IpiFrame;// Offset=0x1828 Size=0x4
+    unsigned char PrcbPad3[52];// Offset=0x182c Size=0x34
+    void * CurrentPacket[3];// Offset=0x1860 Size=0xc
+    unsigned long TargetSet;// Offset=0x186c Size=0x4
+    void  ( * WorkerRoutine)(void * ,void * ,void * ,void * );// Offset=0x1870 Size=0x4
+    unsigned long IpiFrozen;// Offset=0x1874 Size=0x4
+    unsigned char PrcbPad4[40];// Offset=0x1878 Size=0x28
+    unsigned long RequestSummary;// Offset=0x18a0 Size=0x4
+    struct _KPRCB * SignalDone;// Offset=0x18a4 Size=0x4
+    unsigned long long TrappedSecurityDomain;// Offset=0x18a8 Size=0x8
+    unsigned char BpbFeatures;// Offset=0x18b0 Size=0x1
+    unsigned char BpbClearOnIdle:1;// Offset=0x18b0 Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char BpbEnabled:1;// Offset=0x18b0 Size=0x1 BitOffset=0x1 BitSize=0x1
+    unsigned char BpbSmep:1;// Offset=0x18b0 Size=0x1 BitOffset=0x2 BitSize=0x1
+    unsigned char BpbFeaturesReserved:5;// Offset=0x18b0 Size=0x1 BitOffset=0x3 BitSize=0x5
+    unsigned char BpbState;// Offset=0x18b1 Size=0x1
+    unsigned char BpbCpuIdle:1;// Offset=0x18b1 Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char BpbFlushRsbOnTrap:1;// Offset=0x18b1 Size=0x1 BitOffset=0x1 BitSize=0x1
+    unsigned char BpbIbpbOnReturn:1;// Offset=0x18b1 Size=0x1 BitOffset=0x2 BitSize=0x1
+    unsigned char BpbIbpbOnTrap:1;// Offset=0x18b1 Size=0x1 BitOffset=0x3 BitSize=0x1
+    unsigned char BpbReserved:4;// Offset=0x18b1 Size=0x1 BitOffset=0x4 BitSize=0x4
+    unsigned char BpbCurrentSpecCtrl;// Offset=0x18b2 Size=0x1
+    unsigned char BpbKernelSpecCtrl;// Offset=0x18b3 Size=0x1
+    unsigned char BpbNmiSpecCtrl;// Offset=0x18b4 Size=0x1
+    unsigned char BpbUserSpecCtrl;// Offset=0x18b5 Size=0x1
+    unsigned char PrcbPad50[42];// Offset=0x18b6 Size=0x2a
+    struct _KDPC_DATA DpcData[2];// Offset=0x18e0 Size=0x28
+    void * DpcStack;// Offset=0x1908 Size=0x4
+    long MaximumDpcQueueDepth;// Offset=0x190c Size=0x4
+    unsigned long DpcRequestRate;// Offset=0x1910 Size=0x4
+    unsigned long MinimumDpcRate;// Offset=0x1914 Size=0x4
+    unsigned long DpcLastCount;// Offset=0x1918 Size=0x4
+    unsigned long PrcbLock;// Offset=0x191c Size=0x4
+    struct _KGATE DpcGate;// Offset=0x1920 Size=0x10
+    unsigned char ThreadDpcEnable;// Offset=0x1930 Size=0x1
+    unsigned char QuantumEnd;// Offset=0x1931 Size=0x1
+    unsigned char DpcRoutineActive;// Offset=0x1932 Size=0x1
+    unsigned char IdleSchedule;// Offset=0x1933 Size=0x1
+    long DpcRequestSummary;// Offset=0x1934 Size=0x4
+    short DpcRequestSlot[2];// Offset=0x1934 Size=0x4
+    short NormalDpcState;// Offset=0x1934 Size=0x2
+    unsigned short DpcThreadActive:1;// Offset=0x1936 Size=0x2 BitOffset=0x0 BitSize=0x1
+    short ThreadDpcState;// Offset=0x1936 Size=0x2
+    unsigned long TimerHand;// Offset=0x1938 Size=0x4
+    unsigned long LastTick;// Offset=0x193c Size=0x4
+    long MasterOffset;// Offset=0x1940 Size=0x4
+    unsigned long PrcbPad41[2];// Offset=0x1944 Size=0x8
+    unsigned long PeriodicCount;// Offset=0x194c Size=0x4
+    unsigned long PeriodicBias;// Offset=0x1950 Size=0x4
+    unsigned char __align0[4];// Offset=0x1954 Size=0x4
+    unsigned long long TickOffset;// Offset=0x1958 Size=0x8
+    struct _KTIMER_TABLE TimerTable;// Offset=0x1960 Size=0x1840
+    struct _KDPC CallDpc;// Offset=0x31a0 Size=0x20
+    long ClockKeepAlive;// Offset=0x31c0 Size=0x4
+    unsigned char ClockCheckSlot;// Offset=0x31c4 Size=0x1
+    unsigned char ClockPollCycle;// Offset=0x31c5 Size=0x1
+    unsigned char PrcbPad6[2];// Offset=0x31c6 Size=0x2
+    long DpcWatchdogPeriod;// Offset=0x31c8 Size=0x4
+    long DpcWatchdogCount;// Offset=0x31cc Size=0x4
+    long ThreadWatchdogPeriod;// Offset=0x31d0 Size=0x4
+    long ThreadWatchdogCount;// Offset=0x31d4 Size=0x4
+    long KeSpinLockOrdering;// Offset=0x31d8 Size=0x4
+    unsigned long PrcbPad70[1];// Offset=0x31dc Size=0x4
+    struct _LIST_ENTRY WaitListHead;// Offset=0x31e0 Size=0x8
+    unsigned long WaitLock;// Offset=0x31e8 Size=0x4
+    unsigned long ReadySummary;// Offset=0x31ec Size=0x4
+    unsigned long QueueIndex;// Offset=0x31f0 Size=0x4
+    struct _SINGLE_LIST_ENTRY DeferredReadyListHead;// Offset=0x31f4 Size=0x4
+    unsigned long long StartCycles;// Offset=0x31f8 Size=0x8
+    unsigned long long CycleTime;// Offset=0x3200 Size=0x8
+    unsigned long HighCycleTime;// Offset=0x3208 Size=0x4
+    unsigned long PrcbPad71;// Offset=0x320c Size=0x4
+    unsigned long long PrcbPad72[2];// Offset=0x3210 Size=0x10
+    struct _LIST_ENTRY DispatcherReadyListHead[32];// Offset=0x3220 Size=0x100
+    void * ChainedInterruptList;// Offset=0x3320 Size=0x4
+    long LookasideIrpFloat;// Offset=0x3324 Size=0x4
+    long MmPageFaultCount;// Offset=0x3328 Size=0x4
+    long MmCopyOnWriteCount;// Offset=0x332c Size=0x4
+    long MmTransitionCount;// Offset=0x3330 Size=0x4
+    long MmCacheTransitionCount;// Offset=0x3334 Size=0x4
+    long MmDemandZeroCount;// Offset=0x3338 Size=0x4
+    long MmPageReadCount;// Offset=0x333c Size=0x4
+    long MmPageReadIoCount;// Offset=0x3340 Size=0x4
+    long MmCacheReadCount;// Offset=0x3344 Size=0x4
+    long MmCacheIoCount;// Offset=0x3348 Size=0x4
+    long MmDirtyPagesWriteCount;// Offset=0x334c Size=0x4
+    long MmDirtyWriteIoCount;// Offset=0x3350 Size=0x4
+    long MmMappedPagesWriteCount;// Offset=0x3354 Size=0x4
+    long MmMappedWriteIoCount;// Offset=0x3358 Size=0x4
+    unsigned long CachedCommit;// Offset=0x335c Size=0x4
+    unsigned long CachedResidentAvailable;// Offset=0x3360 Size=0x4
+    void * HyperPte;// Offset=0x3364 Size=0x4
+    unsigned char PrcbPad8[4];// Offset=0x3368 Size=0x4
+    unsigned char VendorString[13];// Offset=0x336c Size=0xd
+    unsigned char InitialApicId;// Offset=0x3379 Size=0x1
+    unsigned char LogicalProcessorsPerPhysicalProcessor;// Offset=0x337a Size=0x1
+    unsigned char PrcbPad9[5];// Offset=0x337b Size=0x5
+    unsigned long FeatureBits;// Offset=0x3380 Size=0x4
+    unsigned char __align1[4];// Offset=0x3384 Size=0x4
+    union _LARGE_INTEGER UpdateSignature;// Offset=0x3388 Size=0x8
+    unsigned long long IsrTime;// Offset=0x3390 Size=0x8
+    unsigned long long RuntimeAccumulation;// Offset=0x3398 Size=0x8
+    struct _PROCESSOR_POWER_STATE PowerState;// Offset=0x33a0 Size=0xc8
+    struct _KDPC DpcWatchdogDpc;// Offset=0x3468 Size=0x20
+    struct _KTIMER DpcWatchdogTimer;// Offset=0x3488 Size=0x28
+    void * WheaInfo;// Offset=0x34b0 Size=0x4
+    void * EtwSupport;// Offset=0x34b4 Size=0x4
+    union _SLIST_HEADER InterruptObjectPool;// Offset=0x34b8 Size=0x8
+    union _SLIST_HEADER HypercallPageList;// Offset=0x34c0 Size=0x8
+    void * HypercallPageVirtual;// Offset=0x34c8 Size=0x4
+    void * VirtualApicAssist;// Offset=0x34cc Size=0x4
+    unsigned long long * StatisticsPage;// Offset=0x34d0 Size=0x4
+    void * RateControl;// Offset=0x34d4 Size=0x4
+    struct _CACHE_DESCRIPTOR Cache[5];// Offset=0x34d8 Size=0x3c
+    unsigned long CacheCount;// Offset=0x3514 Size=0x4
+    unsigned long CacheProcessorMask[5];// Offset=0x3518 Size=0x14
+    struct _KAFFINITY_EX PackageProcessorSet;// Offset=0x352c Size=0xc
+    unsigned long PrcbPad91[1];// Offset=0x3538 Size=0x4
+    unsigned long CoreProcessorSet;// Offset=0x353c Size=0x4
+    struct _KDPC TimerExpirationDpc;// Offset=0x3540 Size=0x20
+    unsigned long SpinLockAcquireCount;// Offset=0x3560 Size=0x4
+    unsigned long SpinLockContentionCount;// Offset=0x3564 Size=0x4
+    unsigned long SpinLockSpinCount;// Offset=0x3568 Size=0x4
+    unsigned long IpiSendRequestBroadcastCount;// Offset=0x356c Size=0x4
+    unsigned long IpiSendRequestRoutineCount;// Offset=0x3570 Size=0x4
+    unsigned long IpiSendSoftwareInterruptCount;// Offset=0x3574 Size=0x4
+    unsigned long ExInitializeResourceCount;// Offset=0x3578 Size=0x4
+    unsigned long ExReInitializeResourceCount;// Offset=0x357c Size=0x4
+    unsigned long ExDeleteResourceCount;// Offset=0x3580 Size=0x4
+    unsigned long ExecutiveResourceAcquiresCount;// Offset=0x3584 Size=0x4
+    unsigned long ExecutiveResourceContentionsCount;// Offset=0x3588 Size=0x4
+    unsigned long ExecutiveResourceReleaseExclusiveCount;// Offset=0x358c Size=0x4
+    unsigned long ExecutiveResourceReleaseSharedCount;// Offset=0x3590 Size=0x4
+    unsigned long ExecutiveResourceConvertsCount;// Offset=0x3594 Size=0x4
+    unsigned long ExAcqResExclusiveAttempts;// Offset=0x3598 Size=0x4
+    unsigned long ExAcqResExclusiveAcquiresExclusive;// Offset=0x359c Size=0x4
+    unsigned long ExAcqResExclusiveAcquiresExclusiveRecursive;// Offset=0x35a0 Size=0x4
+    unsigned long ExAcqResExclusiveWaits;// Offset=0x35a4 Size=0x4
+    unsigned long ExAcqResExclusiveNotAcquires;// Offset=0x35a8 Size=0x4
+    unsigned long ExAcqResSharedAttempts;// Offset=0x35ac Size=0x4
+    unsigned long ExAcqResSharedAcquiresExclusive;// Offset=0x35b0 Size=0x4
+    unsigned long ExAcqResSharedAcquiresShared;// Offset=0x35b4 Size=0x4
+    unsigned long ExAcqResSharedAcquiresSharedRecursive;// Offset=0x35b8 Size=0x4
+    unsigned long ExAcqResSharedWaits;// Offset=0x35bc Size=0x4
+    unsigned long ExAcqResSharedNotAcquires;// Offset=0x35c0 Size=0x4
+    unsigned long ExAcqResSharedStarveExclusiveAttempts;// Offset=0x35c4 Size=0x4
+    unsigned long ExAcqResSharedStarveExclusiveAcquiresExclusive;// Offset=0x35c8 Size=0x4
+    unsigned long ExAcqResSharedStarveExclusiveAcquiresShared;// Offset=0x35cc Size=0x4
+    unsigned long ExAcqResSharedStarveExclusiveAcquiresSharedRecursive;// Offset=0x35d0 Size=0x4
+    unsigned long ExAcqResSharedStarveExclusiveWaits;// Offset=0x35d4 Size=0x4
+    unsigned long ExAcqResSharedStarveExclusiveNotAcquires;// Offset=0x35d8 Size=0x4
+    unsigned long ExAcqResSharedWaitForExclusiveAttempts;// Offset=0x35dc Size=0x4
+    unsigned long ExAcqResSharedWaitForExclusiveAcquiresExclusive;// Offset=0x35e0 Size=0x4
+    unsigned long ExAcqResSharedWaitForExclusiveAcquiresShared;// Offset=0x35e4 Size=0x4
+    unsigned long ExAcqResSharedWaitForExclusiveAcquiresSharedRecursive;// Offset=0x35e8 Size=0x4
+    unsigned long ExAcqResSharedWaitForExclusiveWaits;// Offset=0x35ec Size=0x4
+    unsigned long ExAcqResSharedWaitForExclusiveNotAcquires;// Offset=0x35f0 Size=0x4
+    unsigned long ExSetResOwnerPointerExclusive;// Offset=0x35f4 Size=0x4
+    unsigned long ExSetResOwnerPointerSharedNew;// Offset=0x35f8 Size=0x4
+    unsigned long ExSetResOwnerPointerSharedOld;// Offset=0x35fc Size=0x4
+    unsigned long ExTryToAcqExclusiveAttempts;// Offset=0x3600 Size=0x4
+    unsigned long ExTryToAcqExclusiveAcquires;// Offset=0x3604 Size=0x4
+    unsigned long ExBoostExclusiveOwner;// Offset=0x3608 Size=0x4
+    unsigned long ExBoostSharedOwners;// Offset=0x360c Size=0x4
+    unsigned long ExEtwSynchTrackingNotificationsCount;// Offset=0x3610 Size=0x4
+    unsigned long ExEtwSynchTrackingNotificationsAccountedCount;// Offset=0x3614 Size=0x4
+    struct _CONTEXT * Context;// Offset=0x3618 Size=0x4
+    unsigned long ContextFlags;// Offset=0x361c Size=0x4
+    struct _XSAVE_AREA * ExtendedState;// Offset=0x3620 Size=0x4
+    struct _KINTERRUPT * VectorToInterruptObject[208];// Offset=0x3624 Size=0x340
+    unsigned long PrcbShadowMappedPagePad1[351];// Offset=0x3964 Size=0x57c
+    unsigned long KernelDirectoryTableBase;// Offset=0x3ee0 Size=0x4
+    unsigned long EspBaseShadow;// Offset=0x3ee4 Size=0x4
+    unsigned long UserEspShadow;// Offset=0x3ee8 Size=0x4
+    unsigned long ShadowFlags;// Offset=0x3eec Size=0x4
+    unsigned long UserDS;// Offset=0x3ef0 Size=0x4
+    unsigned long UserES;// Offset=0x3ef4 Size=0x4
+    unsigned long UserFS;// Offset=0x3ef8 Size=0x4
+    void * EspIretd;// Offset=0x3efc Size=0x4
+    unsigned long RestoreSegOption;// Offset=0x3f00 Size=0x4
+    unsigned long SavedEsi;// Offset=0x3f04 Size=0x4
+    unsigned long DbgLogs[512];// Offset=0x3f08 Size=0x800
+    unsigned long DbgCount;// Offset=0x4708 Size=0x4
+    unsigned long PrcbShadowMappedPagePad2[501];// Offset=0x470c Size=0x7d4
+};

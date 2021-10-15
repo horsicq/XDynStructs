@@ -2,5 +2,6 @@ struct _EVENT_PAYLOAD_PREDICATE// Size=0x18
 {
     unsigned short FieldIndex;// Offset=0x0 Size=0x2
     unsigned short CompareOp;// Offset=0x2 Size=0x2
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     unsigned long long Value[2];// Offset=0x8 Size=0x10
 };

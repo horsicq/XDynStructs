@@ -1,0 +1,8 @@
+union _unnamed_221// Size=0x4
+{
+    unsigned long PteFrame:24;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x18
+    unsigned long PageIdentity:3;// Offset=0x0 Size=0x4 BitOffset=0x18 BitSize=0x3
+    unsigned long PrototypePte:1;// Offset=0x0 Size=0x4 BitOffset=0x1b BitSize=0x1
+    unsigned long PageColor:4;// Offset=0x0 Size=0x4 BitOffset=0x1c BitSize=0x4
+    unsigned long EntireField;// Offset=0x0 Size=0x4
+};

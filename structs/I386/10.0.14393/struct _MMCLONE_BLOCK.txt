@@ -1,0 +1,7 @@
+struct _MMCLONE_BLOCK// Size=0x10
+{
+    struct _MMPTE ProtoPte;// Offset=0x0 Size=0x8
+    unsigned long CloneCommitCount;// Offset=0x8 Size=0x4
+    struct _MI_CLONE_BLOCK_FLAGS u1;// Offset=0x8 Size=0x4
+    unsigned long CloneRefCount;// Offset=0xc Size=0x4
+};

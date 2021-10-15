@@ -1,0 +1,5 @@
+union _unnamed_1422// Size=0x10
+{
+    struct _unnamed_1420 Mbr;// Offset=0x0 Size=0x8
+    struct _unnamed_1421 Gpt;// Offset=0x0 Size=0x10
+};

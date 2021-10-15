@@ -1,0 +1,5 @@
+struct _HEAP_LFH_AFFINITY_SLOT// Size=0x40
+{
+    struct _HEAP_LFH_SUBSEGMENT_OWNER State;// Offset=0x0 Size=0x38
+    struct _HEAP_LFH_FAST_REF ActiveSubsegment;// Offset=0x38 Size=0x8
+};

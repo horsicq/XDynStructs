@@ -79,6 +79,7 @@ struct _KTHREAD// Size=0x5f0
     struct _KWAIT_BLOCK * WaitBlockList;// Offset=0xd0 Size=0x8
     struct _LIST_ENTRY WaitListEntry;// Offset=0xd8 Size=0x10
     struct _SINGLE_LIST_ENTRY SwapListEntry;// Offset=0xd8 Size=0x8
+    unsigned char __align0[8];// Offset=0xe0 Size=0x8
     struct _DISPATCHER_HEADER * Queue;// Offset=0xe8 Size=0x8
     void * Teb;// Offset=0xf0 Size=0x8
     unsigned long long RelativeTimerBias;// Offset=0xf8 Size=0x8
@@ -169,6 +170,7 @@ struct _KTHREAD// Size=0x5f0
     unsigned char AbOrphanedEntrySummary;// Offset=0x58e Size=0x1
     unsigned char AbOwnedEntryCount;// Offset=0x58f Size=0x1
     unsigned long ForegroundLossTime;// Offset=0x590 Size=0x4
+    unsigned char __align1[4];// Offset=0x594 Size=0x4
     struct _LIST_ENTRY GlobalForegroundListEntry;// Offset=0x598 Size=0x10
     struct _SINGLE_LIST_ENTRY ForegroundDpcStackListEntry;// Offset=0x598 Size=0x8
     unsigned long long InGlobalForegroundList;// Offset=0x5a0 Size=0x8

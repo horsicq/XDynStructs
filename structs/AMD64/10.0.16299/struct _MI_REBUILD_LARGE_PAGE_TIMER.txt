@@ -1,0 +1,8 @@
+struct _MI_REBUILD_LARGE_PAGE_TIMER// Size=0x28
+{
+    struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x0 Size=0x20
+    unsigned char SecondsLeft;// Offset=0x20 Size=0x1
+    unsigned char RebuildActive;// Offset=0x21 Size=0x1
+    unsigned char NextPassDelta;// Offset=0x22 Size=0x1
+    unsigned char LargeSubPagesActive;// Offset=0x23 Size=0x1
+};

@@ -6,6 +6,7 @@ struct _HEAP_LIST_LOOKUP// Size=0x38
     unsigned long ItemCount;// Offset=0x10 Size=0x4
     unsigned long OutOfRangeItems;// Offset=0x14 Size=0x4
     unsigned long BaseIndex;// Offset=0x18 Size=0x4
+    unsigned char __align0[4];// Offset=0x1c Size=0x4
     struct _LIST_ENTRY * ListHead;// Offset=0x20 Size=0x8
     unsigned long * ListsInUseUlong;// Offset=0x28 Size=0x8
     struct _LIST_ENTRY ** ListHints;// Offset=0x30 Size=0x8

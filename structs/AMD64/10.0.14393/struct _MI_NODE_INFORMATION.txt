@@ -1,0 +1,24 @@
+struct _MI_NODE_INFORMATION// Size=0x888
+{
+    unsigned long long LargePageFreeCount[3][2];// Offset=0x0 Size=0x30
+    struct _LIST_ENTRY LargePages[3][2][2][4];// Offset=0x30 Size=0x300
+    unsigned long long LargePagesCount[3][2][2][4];// Offset=0x330 Size=0x180
+    struct _MI_REBUILD_LARGE_PAGE_TIMER LargePageRebuildTimer;// Offset=0x4b0 Size=0x28
+    struct _MMPFNLIST_SHORT StandbyPageList[4][8];// Offset=0x4d8 Size=0x300
+    unsigned long long FreeCount[2];// Offset=0x7d8 Size=0x10
+    unsigned long long TotalPages[4];// Offset=0x7e8 Size=0x20
+    unsigned long long TotalPagesEntireNode;// Offset=0x808 Size=0x8
+    unsigned long MmShiftedColor;// Offset=0x810 Size=0x4
+    unsigned long Color;// Offset=0x814 Size=0x4
+    unsigned long long ChannelFreeCount[4][2];// Offset=0x818 Size=0x40
+    struct _unnamed_1365 Flags;// Offset=0x858 Size=0x4
+    unsigned char __align0[4];// Offset=0x85c Size=0x4
+    struct _EX_PUSH_LOCK NodeLock;// Offset=0x860 Size=0x8
+    unsigned long long ZeroThreadHugeMapLock;// Offset=0x868 Size=0x8
+    unsigned char ChannelStatus;// Offset=0x870 Size=0x1
+    unsigned char ChannelOrdering[4];// Offset=0x871 Size=0x4
+    unsigned char LockedChannelOrdering[4];// Offset=0x875 Size=0x4
+    unsigned char PowerAttribute[4];// Offset=0x879 Size=0x4
+    unsigned char __align1[3];// Offset=0x87d Size=0x3
+    unsigned long long LargePageLock;// Offset=0x880 Size=0x8
+};

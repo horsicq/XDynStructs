@@ -30,11 +30,13 @@ struct _KTHREAD// Size=0x360
     char Priority;// Offset=0x7b Size=0x1
     unsigned long NextProcessor;// Offset=0x7c Size=0x4
     unsigned long DeferredProcessor;// Offset=0x80 Size=0x4
+    unsigned char __align0[4];// Offset=0x84 Size=0x4
     unsigned long long ApcQueueLock;// Offset=0x88 Size=0x8
     long long WaitStatus;// Offset=0x90 Size=0x8
     struct _KWAIT_BLOCK * WaitBlockList;// Offset=0x98 Size=0x8
     struct _LIST_ENTRY WaitListEntry;// Offset=0xa0 Size=0x10
     struct _SINGLE_LIST_ENTRY SwapListEntry;// Offset=0xa0 Size=0x8
+    unsigned char __align1[8];// Offset=0xa8 Size=0x8
     struct _KQUEUE * Queue;// Offset=0xb0 Size=0x8
     void * Teb;// Offset=0xb8 Size=0x8
     struct _KTIMER Timer;// Offset=0xc0 Size=0x40
@@ -97,6 +99,7 @@ struct _KTHREAD// Size=0x360
     char SuspendCount;// Offset=0x26c Size=0x1
     char Spare1;// Offset=0x26d Size=0x1
     unsigned char CodePatchInProgress;// Offset=0x26e Size=0x1
+    unsigned char __align2[1];// Offset=0x26f Size=0x1
     void * Win32Thread;// Offset=0x270 Size=0x8
     void * StackBase;// Offset=0x278 Size=0x8
     struct _KAPC SuspendApc;// Offset=0x280 Size=0x58

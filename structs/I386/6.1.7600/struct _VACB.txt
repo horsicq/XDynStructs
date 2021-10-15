@@ -1,0 +1,8 @@
+struct _VACB// Size=0x20
+{
+    void * BaseAddress;// Offset=0x0 Size=0x4
+    struct _SHARED_CACHE_MAP * SharedCacheMap;// Offset=0x4 Size=0x4
+    union _unnamed_298 Overlay;// Offset=0x8 Size=0x8
+    struct _LIST_ENTRY Links;// Offset=0x10 Size=0x8
+    struct _VACB_ARRAY_HEADER * ArrayHead;// Offset=0x18 Size=0x4
+};

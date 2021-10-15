@@ -1,0 +1,6 @@
+struct _DMA_TRANSFER_CONTEXT// Size=0x60
+{
+    unsigned long Version;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
+    struct _DMA_TRANSFER_CONTEXT_V1 V1;// Offset=0x8 Size=0x58
+};

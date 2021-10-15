@@ -1,0 +1,15 @@
+union _unnamed_804// Size=0x20
+{
+    struct _unnamed_795 DeviceClass;// Offset=0x0 Size=0x14
+    struct _unnamed_796 TargetDevice;// Offset=0x0 Size=0x2
+    struct _unnamed_796 InstallDevice;// Offset=0x0 Size=0x2
+    struct _unnamed_797 CustomNotification;// Offset=0x0 Size=0x10
+    struct _unnamed_798 ProfileNotification;// Offset=0x0 Size=0x8
+    struct _unnamed_799 PowerNotification;// Offset=0x0 Size=0x8
+    struct _unnamed_800 VetoNotification;// Offset=0x0 Size=0x8
+    struct _unnamed_801 BlockedDriverNotification;// Offset=0x0 Size=0x10
+    struct _unnamed_802 InvalidIDNotification;// Offset=0x0 Size=0x2
+    struct _unnamed_803 PowerSettingNotification;// Offset=0x0 Size=0x20
+    struct _unnamed_796 PropertyChangeNotification;// Offset=0x0 Size=0x2
+    struct _unnamed_796 DeviceInstanceNotification;// Offset=0x0 Size=0x2
+};

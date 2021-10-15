@@ -2,6 +2,7 @@ struct _BLOB// Size=0x18
 {
     struct _LIST_ENTRY ResourceList;// Offset=0x0 Size=0x8
     struct _SINGLE_LIST_ENTRY FreeListEntry;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     union _unnamed_442 u1;// Offset=0x8 Size=0x1
     unsigned char ResourceId;// Offset=0x9 Size=0x1
     short CachedReferences;// Offset=0xa Size=0x2

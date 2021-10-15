@@ -93,6 +93,7 @@ struct _PEB// Size=0x7b8
     void * FlsBitmap;// Offset=0x338 Size=0x8
     unsigned long FlsBitmapBits[4];// Offset=0x340 Size=0x10
     unsigned long FlsHighIndex;// Offset=0x350 Size=0x4
+    unsigned char __align0[4];// Offset=0x354 Size=0x4
     void * WerRegistrationData;// Offset=0x358 Size=0x8
     void * WerShipAssertPtr;// Offset=0x360 Size=0x8
     void * pUnused;// Offset=0x368 Size=0x8

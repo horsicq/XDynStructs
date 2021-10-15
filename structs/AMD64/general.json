@@ -2,6 +2,186 @@
     "name": "general",
     "structs": [
         {
+            "name": "unsigned char",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 1,
+                    "type": "unsigned char"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "name": "signed char",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 1,
+                    "type": "signed char"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "name": "char",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 1,
+                    "type": "char"
+                }
+            ],
+            "size": 1
+        },
+        {
+            "name": "unsigned short",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 2,
+                    "type": "unsigned short"
+                }
+            ],
+            "size": 2
+        },
+        {
+            "name": "signed short",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 2,
+                    "type": "signed short"
+                }
+            ],
+            "size": 2
+        },
+        {
+            "name": "short",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 2,
+                    "type": "short"
+                }
+            ],
+            "size": 2
+        },
+        {
+            "name": "unsigned int",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 4,
+                    "type": "unsigned int"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "name": "signed int",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 4,
+                    "type": "signed int"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "name": "int",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 4,
+                    "type": "int"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "name": "unsigned long",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 4,
+                    "type": "unsigned long"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "name": "signed long",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 4,
+                    "type": "signed long"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "name": "long",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 4,
+                    "type": "long"
+                }
+            ],
+            "size": 4
+        },
+        {
+            "name": "unsigned long long",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 8,
+                    "type": "unsigned long long"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "name": "signed long long",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 8,
+                    "type": "signed long long"
+                }
+            ],
+            "size": 8
+        },
+        {
+            "name": "long long",
+            "positions": [
+                {
+                    "name": "Value",
+                    "offset": 0,
+                    "size": 8,
+                    "type": "long long"
+                }
+            ],
+            "size": 8
+        },
+        {
             "name": "struct GUID",
             "positions": [
                 {
@@ -28,7 +208,8 @@
                     "size": 8,
                     "type": "unsigned char"
                 }
-            ]
+            ],
+            "size": 16
         }
     ]
 }

@@ -1,0 +1,4 @@
+struct _unnamed_1385// Size=0x4
+{
+    enum HAL_APIC_DESTINATION_MODE DestinationMode;// Offset=0x0 Size=0x4
+};

@@ -31,6 +31,7 @@ struct _ALPC_PORT// Size=0x1d8
     long ReferenceNo;// Offset=0x194 Size=0x4
     struct _PALPC_PORT_REFERENCE_WAIT_BLOCK * ReferenceNoWait;// Offset=0x198 Size=0x8
     union _unnamed_396 u1;// Offset=0x1a0 Size=0x4
+    unsigned char __align0[4];// Offset=0x1a4 Size=0x4
     struct _ALPC_PORT * TargetQueuePort;// Offset=0x1a8 Size=0x8
     struct _ALPC_PORT * TargetSequencePort;// Offset=0x1b0 Size=0x8
     struct _KALPC_MESSAGE * CachedMessage;// Offset=0x1b8 Size=0x8

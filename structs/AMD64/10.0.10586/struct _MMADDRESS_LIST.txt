@@ -1,0 +1,5 @@
+struct _MMADDRESS_LIST// Size=0x10
+{
+    union _unnamed_720 u1;// Offset=0x0 Size=0x8
+    void * EndVa;// Offset=0x8 Size=0x8
+};

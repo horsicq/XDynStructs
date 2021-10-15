@@ -1,0 +1,6 @@
+struct _MM_AVL_NODE// Size=0xc
+{
+    union _unnamed_885 u1;// Offset=0x0 Size=0x4
+    struct _MM_AVL_NODE * LeftChild;// Offset=0x4 Size=0x4
+    struct _MM_AVL_NODE * RightChild;// Offset=0x8 Size=0x4
+};

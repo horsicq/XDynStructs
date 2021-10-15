@@ -13,6 +13,7 @@ struct _SHARED_CACHE_MAP// Size=0x1f0
     struct _EX_FAST_REF FileObjectFastRef;// Offset=0x60 Size=0x8
     struct _EX_PUSH_LOCK VacbLock;// Offset=0x68 Size=0x8
     unsigned long DirtyPages;// Offset=0x70 Size=0x4
+    unsigned char __align0[4];// Offset=0x74 Size=0x4
     struct _LIST_ENTRY LoggedStreamLinks;// Offset=0x78 Size=0x10
     struct _LIST_ENTRY SharedCacheMapLinks;// Offset=0x88 Size=0x10
     unsigned long Flags;// Offset=0x98 Size=0x4
@@ -22,6 +23,7 @@ struct _SHARED_CACHE_MAP// Size=0x1f0
     struct _KEVENT * CreateEvent;// Offset=0xb0 Size=0x8
     struct _KEVENT * WaitOnActiveCount;// Offset=0xb8 Size=0x8
     unsigned long PagesToWrite;// Offset=0xc0 Size=0x4
+    unsigned char __align1[4];// Offset=0xc4 Size=0x4
     long long BeyondLastFlush;// Offset=0xc8 Size=0x8
     struct _CACHE_MANAGER_CALLBACKS * Callbacks;// Offset=0xd0 Size=0x8
     void * LazyWriteContext;// Offset=0xd8 Size=0x8

@@ -1,6 +1,7 @@
 struct _TlgProvider_t// Size=0x40
 {
     unsigned int LevelPlus1;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     unsigned short * ProviderMetadataPtr;// Offset=0x8 Size=0x8
     unsigned long long KeywordAny;// Offset=0x10 Size=0x8
     unsigned long long KeywordAll;// Offset=0x18 Size=0x8

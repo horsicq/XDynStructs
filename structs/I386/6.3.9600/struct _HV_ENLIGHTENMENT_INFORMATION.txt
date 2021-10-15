@@ -1,0 +1,17 @@
+struct _HV_ENLIGHTENMENT_INFORMATION// Size=0x10
+{
+    unsigned int UseHypercallForAddressSpaceSwitch:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned int UseHypercallForLocalFlush:1;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned int UseHypercallForRemoteFlush:1;// Offset=0x0 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned int UseApicMsrs:1;// Offset=0x0 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned int UseMsrForReset:1;// Offset=0x0 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned int UseRelaxedTiming:1;// Offset=0x0 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned int UseDmaRemapping:1;// Offset=0x0 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned int UseInterruptRemapping:1;// Offset=0x0 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned int UseX2ApicMsrs:1;// Offset=0x0 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned int DeprecateAutoEoi:1;// Offset=0x0 Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned int Reserved:22;// Offset=0x0 Size=0x4 BitOffset=0xa BitSize=0x16
+    unsigned int LongSpinWaitCount;// Offset=0x4 Size=0x4
+    unsigned int ReservedEcx;// Offset=0x8 Size=0x4
+    unsigned int ReservedEdx;// Offset=0xc Size=0x4
+};

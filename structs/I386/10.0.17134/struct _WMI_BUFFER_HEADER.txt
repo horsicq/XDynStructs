@@ -10,6 +10,7 @@ struct _WMI_BUFFER_HEADER// Size=0x48
     unsigned long long Frequency:61;// Offset=0x20 Size=0x8 BitOffset=0x3 BitSize=0x3d
     struct _SINGLE_LIST_ENTRY SlistEntry;// Offset=0x20 Size=0x4
     struct _WMI_BUFFER_HEADER * NextBuffer;// Offset=0x20 Size=0x4
+    unsigned char __align0[4];// Offset=0x24 Size=0x4
     struct _ETW_BUFFER_CONTEXT ClientContext;// Offset=0x28 Size=0x4
     enum _ETW_BUFFER_STATE State;// Offset=0x2c Size=0x4
     unsigned long Offset;// Offset=0x30 Size=0x4

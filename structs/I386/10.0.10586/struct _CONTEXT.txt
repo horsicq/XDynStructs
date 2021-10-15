@@ -1,0 +1,28 @@
+struct _CONTEXT// Size=0x2cc
+{
+    unsigned long ContextFlags;// Offset=0x0 Size=0x4
+    unsigned long Dr0;// Offset=0x4 Size=0x4
+    unsigned long Dr1;// Offset=0x8 Size=0x4
+    unsigned long Dr2;// Offset=0xc Size=0x4
+    unsigned long Dr3;// Offset=0x10 Size=0x4
+    unsigned long Dr6;// Offset=0x14 Size=0x4
+    unsigned long Dr7;// Offset=0x18 Size=0x4
+    struct _FLOATING_SAVE_AREA FloatSave;// Offset=0x1c Size=0x70
+    unsigned long SegGs;// Offset=0x8c Size=0x4
+    unsigned long SegFs;// Offset=0x90 Size=0x4
+    unsigned long SegEs;// Offset=0x94 Size=0x4
+    unsigned long SegDs;// Offset=0x98 Size=0x4
+    unsigned long Edi;// Offset=0x9c Size=0x4
+    unsigned long Esi;// Offset=0xa0 Size=0x4
+    unsigned long Ebx;// Offset=0xa4 Size=0x4
+    unsigned long Edx;// Offset=0xa8 Size=0x4
+    unsigned long Ecx;// Offset=0xac Size=0x4
+    unsigned long Eax;// Offset=0xb0 Size=0x4
+    unsigned long Ebp;// Offset=0xb4 Size=0x4
+    unsigned long Eip;// Offset=0xb8 Size=0x4
+    unsigned long SegCs;// Offset=0xbc Size=0x4
+    unsigned long EFlags;// Offset=0xc0 Size=0x4
+    unsigned long Esp;// Offset=0xc4 Size=0x4
+    unsigned long SegSs;// Offset=0xc8 Size=0x4
+    unsigned char ExtendedRegisters[512];// Offset=0xcc Size=0x200
+};

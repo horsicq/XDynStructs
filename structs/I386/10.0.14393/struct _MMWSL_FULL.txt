@@ -1,0 +1,6 @@
+struct _MMWSL_FULL// Size=0x120
+{
+    struct _MMWSL_INSTANCE Instance;// Offset=0x0 Size=0xd4
+    unsigned char __align0[12];// Offset=0xd4 Size=0xc
+    struct _MMWSL_SHARED Shared;// Offset=0xe0 Size=0x40
+};

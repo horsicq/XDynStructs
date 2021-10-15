@@ -1,0 +1,5 @@
+union _unnamed_1084// Size=0x8
+{
+    struct _unnamed_1083 s1;// Offset=0x0 Size=0x8
+    long long Value;// Offset=0x0 Size=0x8
+};

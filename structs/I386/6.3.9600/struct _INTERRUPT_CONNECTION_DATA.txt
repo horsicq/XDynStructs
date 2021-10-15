@@ -1,0 +1,18 @@
+struct _INTERRUPT_CONNECTION_DATA// Size=0x88
+{
+    unsigned long Count;// Offset=0x0 Size=0x4
+    struct _GROUP_AFFINITY OriginalAffinity;// Offset=0x4 Size=0xc
+    struct _LIST_ENTRY SteeringListEntry;// Offset=0x10 Size=0x8
+    void * SteeringListRoot;// Offset=0x18 Size=0x4
+    unsigned char __align0[4];// Offset=0x1c Size=0x4
+    unsigned long long IsrTime;// Offset=0x20 Size=0x8
+    unsigned long long DpcTime;// Offset=0x28 Size=0x8
+    unsigned long IsrLoad;// Offset=0x30 Size=0x4
+    unsigned long DpcLoad;// Offset=0x34 Size=0x4
+    unsigned char IsPrimaryInterrupt;// Offset=0x38 Size=0x1
+    unsigned char __align1[3];// Offset=0x39 Size=0x3
+    struct _KINTERRUPT ** InterruptObjectArray;// Offset=0x3c Size=0x4
+    unsigned long InterruptObjectCount;// Offset=0x40 Size=0x4
+    unsigned char __align2[4];// Offset=0x44 Size=0x4
+    struct _INTERRUPT_VECTOR_DATA Vectors[1];// Offset=0x48 Size=0x40
+};

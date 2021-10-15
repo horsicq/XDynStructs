@@ -1,0 +1,4 @@
+struct _unnamed_1125// Size=0x10
+{
+    struct _LIST_ENTRY ListHead;// Offset=0x0 Size=0x10
+};

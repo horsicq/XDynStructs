@@ -1,0 +1,10 @@
+struct _PLUGPLAY_EVENT_BLOCK// Size=0x44
+{
+    struct _GUID EventGuid;// Offset=0x0 Size=0x10
+    enum _PLUGPLAY_EVENT_CATEGORY EventCategory;// Offset=0x10 Size=0x4
+    unsigned long * Result;// Offset=0x14 Size=0x4
+    unsigned long Flags;// Offset=0x18 Size=0x4
+    unsigned long TotalSize;// Offset=0x1c Size=0x4
+    void * DeviceObject;// Offset=0x20 Size=0x4
+    union _unnamed_1467 u;// Offset=0x24 Size=0x20
+};

@@ -14,6 +14,7 @@ struct _MI_PARTITION_SEGMENTS// Size=0x340
     struct _KTIMER DeleteOnCloseTimer;// Offset=0x110 Size=0x40
     unsigned char DeleteOnCloseTimerActive;// Offset=0x150 Size=0x1
     unsigned char SegmentDereferenceThreadExists;// Offset=0x151 Size=0x1
+    unsigned char __align0[6];// Offset=0x152 Size=0x6
     unsigned long long UnusedSegmentPagedPool;// Offset=0x158 Size=0x8
     struct _LIST_ENTRY UnusedSegmentList;// Offset=0x160 Size=0x10
     struct _LIST_ENTRY UnusedSubsectionList;// Offset=0x170 Size=0x10

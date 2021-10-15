@@ -6,6 +6,7 @@ struct _POP_FX_DEVICE// Size=0x318
     union _POP_FX_DEVICE_STATUS Status;// Offset=0x20 Size=0x4
     long PowerReqCall;// Offset=0x24 Size=0x4
     long PowerNotReqCall;// Offset=0x28 Size=0x4
+    unsigned char __align0[4];// Offset=0x2c Size=0x4
     struct _DEVICE_NODE * DevNode;// Offset=0x30 Size=0x8
     struct PEPHANDLE__ * DpmContext;// Offset=0x38 Size=0x8
     struct _POP_FX_PLUGIN * Plugin;// Offset=0x40 Size=0x8
@@ -37,8 +38,10 @@ struct _POP_FX_DEVICE// Size=0x318
     unsigned long ComponentCount;// Offset=0x2c4 Size=0x4
     struct _POP_FX_COMPONENT ** Components;// Offset=0x2c8 Size=0x8
     unsigned long LogEntries;// Offset=0x2d0 Size=0x4
+    unsigned char __align1[4];// Offset=0x2d4 Size=0x4
     struct _POP_FX_LOG_ENTRY * Log;// Offset=0x2d8 Size=0x8
     long LogIndex;// Offset=0x2e0 Size=0x4
+    unsigned char __align2[4];// Offset=0x2e4 Size=0x4
     struct _DRIVER_OBJECT * DripsWatchdogDriverObject;// Offset=0x2e8 Size=0x8
     struct _POP_FX_DRIPS_WATCHDOG_CONTEXT DripsWatchdogContext;// Offset=0x2f0 Size=0x28
 };

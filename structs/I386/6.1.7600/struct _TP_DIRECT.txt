@@ -1,0 +1,6 @@
+struct _TP_DIRECT// Size=0xc
+{
+    void  ( * Callback)(struct _TP_CALLBACK_INSTANCE * ,struct _TP_DIRECT * ,void * ,struct _IO_STATUS_BLOCK * );// Offset=0x0 Size=0x4
+    unsigned long NumaNode;// Offset=0x4 Size=0x4
+    unsigned char IdealProcessor;// Offset=0x8 Size=0x1
+};

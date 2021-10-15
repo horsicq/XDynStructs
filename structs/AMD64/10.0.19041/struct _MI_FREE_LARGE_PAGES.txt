@@ -1,0 +1,7 @@
+struct _MI_FREE_LARGE_PAGES// Size=0x430
+{
+    unsigned long long LargePageFreeCount[2];// Offset=0x0 Size=0x10
+    unsigned long long LargePageFreeCountHiLow[2][2];// Offset=0x10 Size=0x20
+    unsigned long long LargePagesCount[2][2][4][4];// Offset=0x30 Size=0x200
+    struct _MI_FREE_LARGE_PAGE_LIST * LargePageEntries[2][2][4][4];// Offset=0x230 Size=0x200
+};

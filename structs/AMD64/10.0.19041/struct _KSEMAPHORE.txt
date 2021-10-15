@@ -1,0 +1,5 @@
+struct _KSEMAPHORE// Size=0x20
+{
+    struct _DISPATCHER_HEADER Header;// Offset=0x0 Size=0x18
+    long Limit;// Offset=0x18 Size=0x4
+};

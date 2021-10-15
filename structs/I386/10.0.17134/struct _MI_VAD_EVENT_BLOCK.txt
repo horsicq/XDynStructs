@@ -10,5 +10,6 @@ struct _MI_VAD_EVENT_BLOCK// Size=0x28
     struct _MI_SUB64K_FREE_RANGES PebTebRfg;// Offset=0x4 Size=0x20
     struct _MI_RFG_PROTECTED_STACK RfgProtectedStack;// Offset=0x4 Size=0xc
     struct _MMVAD_SHORT * PlaceholderVad;// Offset=0x4 Size=0x4
+    unsigned char __align0[28];// Offset=0x8 Size=0x1c
     unsigned long WaitReason;// Offset=0x24 Size=0x4
 };

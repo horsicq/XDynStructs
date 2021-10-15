@@ -1,0 +1,40 @@
+struct _PROCESSOR_POWER_STATE// Size=0x180
+{
+    struct _PPM_IDLE_STATES * IdleStates;// Offset=0x0 Size=0x4
+    struct _PROC_IDLE_ACCOUNTING * IdleAccounting;// Offset=0x4 Size=0x4
+    struct _PLATFORM_IDLE_ACCOUNTING * PlatformIdleAccounting;// Offset=0x8 Size=0x4
+    unsigned char __align0[4];// Offset=0xc Size=0x4
+    unsigned long long IdleTimeLast;// Offset=0x10 Size=0x8
+    unsigned long long IdleTimeTotal;// Offset=0x18 Size=0x8
+    unsigned long long IdleTimeEntry;// Offset=0x20 Size=0x8
+    unsigned long long Reserved;// Offset=0x28 Size=0x8
+    struct _PROC_IDLE_POLICY IdlePolicy;// Offset=0x30 Size=0x5
+    unsigned char __align1[3];// Offset=0x35 Size=0x3
+    union _PPM_IDLE_SYNCHRONIZATION_STATE Synchronization;// Offset=0x38 Size=0x4
+    unsigned char __align2[4];// Offset=0x3c Size=0x4
+    struct _PROC_FEEDBACK PerfFeedback;// Offset=0x40 Size=0x68
+    enum _PROC_HYPERVISOR_STATE Hypervisor;// Offset=0xa8 Size=0x4
+    unsigned long LastSysTime;// Offset=0xac Size=0x4
+    unsigned long WmiDispatchPtr;// Offset=0xb0 Size=0x4
+    long WmiInterfaceEnabled;// Offset=0xb4 Size=0x4
+    struct _PPM_FFH_THROTTLE_STATE_INFO FFHThrottleStateInfo;// Offset=0xb8 Size=0x20
+    struct _KDPC PerfActionDpc;// Offset=0xd8 Size=0x20
+    long PerfActionMask;// Offset=0xf8 Size=0x4
+    unsigned char __align3[4];// Offset=0xfc Size=0x4
+    struct _PROC_IDLE_SNAP HvIdleCheck;// Offset=0x100 Size=0x10
+    struct _PROC_PERF_SNAP PerfCheck;// Offset=0x110 Size=0x40
+    struct _PROC_PERF_DOMAIN * Domain;// Offset=0x150 Size=0x4
+    struct _PROC_PERF_CONSTRAINT * PerfConstraint;// Offset=0x154 Size=0x4
+    struct _PPM_CONCURRENCY_ACCOUNTING * Concurrency;// Offset=0x158 Size=0x4
+    struct _PROC_PERF_LOAD * Load;// Offset=0x15c Size=0x4
+    struct _PROC_PERF_HISTORY * PerfHistory;// Offset=0x160 Size=0x4
+    unsigned char GuaranteedPerformancePercent;// Offset=0x164 Size=0x1
+    unsigned char HvTargetState;// Offset=0x165 Size=0x1
+    unsigned char Parked;// Offset=0x166 Size=0x1
+    unsigned char OverUtilized;// Offset=0x167 Size=0x1
+    unsigned long LatestPerformancePercent;// Offset=0x168 Size=0x4
+    unsigned long AveragePerformancePercent;// Offset=0x16c Size=0x4
+    unsigned long LatestAffinitizedPercent;// Offset=0x170 Size=0x4
+    unsigned long Utility;// Offset=0x174 Size=0x4
+    unsigned long AffinitizedUtility;// Offset=0x178 Size=0x4
+};

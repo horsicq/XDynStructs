@@ -6,5 +6,6 @@ struct _TRIAGE_POP_FX_DEVICE// Size=0x38
     long Status;// Offset=0x20 Size=0x4
     long PowerReqCall;// Offset=0x24 Size=0x4
     long PowerNotReqCall;// Offset=0x28 Size=0x4
+    unsigned char __align0[4];// Offset=0x2c Size=0x4
     struct _TRIAGE_DEVICE_NODE * DeviceNode;// Offset=0x30 Size=0x8
 };

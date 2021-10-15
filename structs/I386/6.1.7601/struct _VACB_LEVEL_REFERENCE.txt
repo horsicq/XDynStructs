@@ -1,0 +1,5 @@
+struct _VACB_LEVEL_REFERENCE// Size=0x8
+{
+    long Reference;// Offset=0x0 Size=0x4
+    long SpecialReference;// Offset=0x4 Size=0x4
+};

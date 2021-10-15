@@ -1,0 +1,6 @@
+struct _MI_COLOR_BASE// Size=0x8
+{
+    unsigned short * ColorPointer;// Offset=0x0 Size=0x4
+    unsigned short ColorMask;// Offset=0x4 Size=0x2
+    unsigned short ColorNode;// Offset=0x6 Size=0x2
+};

@@ -5,11 +5,13 @@ struct _PCW_PROCESSOR_INFO// Size=0xc0
     unsigned long long UserTime;// Offset=0x10 Size=0x8
     unsigned long long KernelTime;// Offset=0x18 Size=0x8
     unsigned long Interrupts;// Offset=0x20 Size=0x4
+    unsigned char __align0[4];// Offset=0x24 Size=0x4
     unsigned long long DpcTime;// Offset=0x28 Size=0x8
     unsigned long long InterruptTime;// Offset=0x30 Size=0x8
     unsigned long ClockInterrupts;// Offset=0x38 Size=0x4
     unsigned long DpcCount;// Offset=0x3c Size=0x4
     unsigned long DpcRate;// Offset=0x40 Size=0x4
+    unsigned char __align1[4];// Offset=0x44 Size=0x4
     unsigned long long C1Time;// Offset=0x48 Size=0x8
     unsigned long long C2Time;// Offset=0x50 Size=0x8
     unsigned long long C3Time;// Offset=0x58 Size=0x8

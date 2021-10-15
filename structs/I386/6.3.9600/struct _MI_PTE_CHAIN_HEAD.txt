@@ -1,0 +1,6 @@
+struct _MI_PTE_CHAIN_HEAD// Size=0x18
+{
+    struct _MMPTE Flink;// Offset=0x0 Size=0x8
+    struct _MMPTE Blink;// Offset=0x8 Size=0x8
+    struct _MMPTE * PteBase;// Offset=0x10 Size=0x4
+};

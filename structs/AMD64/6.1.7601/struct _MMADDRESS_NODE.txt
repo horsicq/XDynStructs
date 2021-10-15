@@ -1,0 +1,8 @@
+struct _MMADDRESS_NODE// Size=0x28
+{
+    union _unnamed_205 u1;// Offset=0x0 Size=0x8
+    struct _MMADDRESS_NODE * LeftChild;// Offset=0x8 Size=0x8
+    struct _MMADDRESS_NODE * RightChild;// Offset=0x10 Size=0x8
+    unsigned long long StartingVpn;// Offset=0x18 Size=0x8
+    unsigned long long EndingVpn;// Offset=0x20 Size=0x8
+};

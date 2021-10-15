@@ -1,0 +1,6 @@
+struct _DBGKD_READ_WRITE_IO64// Size=0x10
+{
+    unsigned long long IoAddress;// Offset=0x0 Size=0x8
+    unsigned long DataSize;// Offset=0x8 Size=0x4
+    unsigned long DataValue;// Offset=0xc Size=0x4
+};

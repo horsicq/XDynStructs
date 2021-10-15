@@ -1,0 +1,32 @@
+struct _MI_PARTITION_CORE// Size=0x1b8
+{
+    unsigned short PartitionId;// Offset=0x0 Size=0x2
+    unsigned char __align0[2];// Offset=0x2 Size=0x2
+    union <anonymous-tag> u;// Offset=0x4 Size=0x4
+    unsigned long Signature;// Offset=0x8 Size=0x4
+    unsigned char MemoryConfigurationChanged;// Offset=0xc Size=0x1
+    unsigned char __align1[3];// Offset=0xd Size=0x3
+    struct _MI_NODE_INFORMATION * NodeInformation;// Offset=0x10 Size=0x8
+    struct _RTL_AVL_TREE PageRoot;// Offset=0x18 Size=0x8
+    struct _PHYSICAL_MEMORY_DESCRIPTOR * MemoryNodeRuns;// Offset=0x20 Size=0x8
+    unsigned long long MemoryBlockReferences;// Offset=0x28 Size=0x8
+    struct _WORK_QUEUE_ITEM PfnUnmapWorkItem;// Offset=0x30 Size=0x20
+    unsigned long long PfnUnmapCount;// Offset=0x50 Size=0x8
+    void * PfnUnmapWaitList;// Offset=0x58 Size=0x8
+    struct _PHYSICAL_MEMORY_DESCRIPTOR * MemoryRuns;// Offset=0x60 Size=0x8
+    struct _KEVENT ExitEvent;// Offset=0x68 Size=0x18
+    void * SystemThreadHandles[6];// Offset=0x80 Size=0x30
+    struct _EPARTITION * PartitionObject;// Offset=0xb0 Size=0x8
+    struct _EX_PUSH_LOCK PartitionSystemThreadsLock;// Offset=0xb8 Size=0x8
+    struct _EX_PUSH_LOCK DynamicMemoryPushLock;// Offset=0xc0 Size=0x8
+    long DynamicMemoryLock;// Offset=0xc8 Size=0x4
+    unsigned char PfnUnmapActive;// Offset=0xcc Size=0x1
+    unsigned char __align2[3];// Offset=0xcd Size=0x3
+    struct _KEVENT TemporaryMemoryEvent;// Offset=0xd0 Size=0x18
+    void * RootDirectory;// Offset=0xe8 Size=0x8
+    void * KernelObjectsDirectory;// Offset=0xf0 Size=0x8
+    struct _KEVENT * MemoryEvents[11];// Offset=0xf8 Size=0x58
+    void * MemoryEventHandles[11];// Offset=0x150 Size=0x58
+    unsigned long long TotalHugeIoRanges;// Offset=0x1a8 Size=0x8
+    unsigned long long NonChargedSecurePages;// Offset=0x1b0 Size=0x8
+};

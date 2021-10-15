@@ -7,6 +7,7 @@ struct _MMSUPPORT_SHARED// Size=0x50
     void * WsSwapSupport;// Offset=0x18 Size=0x8
     void * CommitReleaseContext;// Offset=0x20 Size=0x8
     long WorkingSetCoreLock;// Offset=0x28 Size=0x4
+    unsigned char __align0[4];// Offset=0x2c Size=0x4
     void * AccessLog;// Offset=0x30 Size=0x8
     unsigned long long ChargedWslePages;// Offset=0x38 Size=0x8
     unsigned long long ActualWslePages;// Offset=0x40 Size=0x8

@@ -1,0 +1,12 @@
+struct _PROCLOCALSAPIC// Size=0x11
+{
+    unsigned char Type;// Offset=0x0 Size=0x1
+    unsigned char Length;// Offset=0x1 Size=0x1
+    unsigned char ACPIProcessorID;// Offset=0x2 Size=0x1
+    unsigned char APICID;// Offset=0x3 Size=0x1
+    unsigned char APICEID;// Offset=0x4 Size=0x1
+    unsigned char Reserved[3];// Offset=0x5 Size=0x3
+    unsigned long Flags;// Offset=0x8 Size=0x4
+    unsigned long ACPIProcessorUIDInteger;// Offset=0xc Size=0x4
+    char ACPIProcessorUIDString[1];// Offset=0x10 Size=0x1
+};

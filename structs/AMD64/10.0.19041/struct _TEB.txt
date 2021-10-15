@@ -1,0 +1,131 @@
+struct _TEB// Size=0x1838
+{
+    struct _NT_TIB NtTib;// Offset=0x0 Size=0x38
+    void * EnvironmentPointer;// Offset=0x38 Size=0x8
+    struct _CLIENT_ID ClientId;// Offset=0x40 Size=0x10
+    void * ActiveRpcHandle;// Offset=0x50 Size=0x8
+    void * ThreadLocalStoragePointer;// Offset=0x58 Size=0x8
+    struct _PEB * ProcessEnvironmentBlock;// Offset=0x60 Size=0x8
+    unsigned long LastErrorValue;// Offset=0x68 Size=0x4
+    unsigned long CountOfOwnedCriticalSections;// Offset=0x6c Size=0x4
+    void * CsrClientThread;// Offset=0x70 Size=0x8
+    void * Win32ThreadInfo;// Offset=0x78 Size=0x8
+    unsigned long User32Reserved[26];// Offset=0x80 Size=0x68
+    unsigned long UserReserved[5];// Offset=0xe8 Size=0x14
+    unsigned char __align0[4];// Offset=0xfc Size=0x4
+    void * WOW32Reserved;// Offset=0x100 Size=0x8
+    unsigned long CurrentLocale;// Offset=0x108 Size=0x4
+    unsigned long FpSoftwareStatusRegister;// Offset=0x10c Size=0x4
+    void * ReservedForDebuggerInstrumentation[16];// Offset=0x110 Size=0x80
+    void * SystemReserved1[30];// Offset=0x190 Size=0xf0
+    char PlaceholderCompatibilityMode;// Offset=0x280 Size=0x1
+    unsigned char PlaceholderHydrationAlwaysExplicit;// Offset=0x281 Size=0x1
+    char PlaceholderReserved[10];// Offset=0x282 Size=0xa
+    unsigned long ProxiedProcessId;// Offset=0x28c Size=0x4
+    struct _ACTIVATION_CONTEXT_STACK _ActivationStack;// Offset=0x290 Size=0x28
+    unsigned char WorkingOnBehalfTicket[8];// Offset=0x2b8 Size=0x8
+    long ExceptionCode;// Offset=0x2c0 Size=0x4
+    unsigned char Padding0[4];// Offset=0x2c4 Size=0x4
+    struct _ACTIVATION_CONTEXT_STACK * ActivationContextStackPointer;// Offset=0x2c8 Size=0x8
+    unsigned long long InstrumentationCallbackSp;// Offset=0x2d0 Size=0x8
+    unsigned long long InstrumentationCallbackPreviousPc;// Offset=0x2d8 Size=0x8
+    unsigned long long InstrumentationCallbackPreviousSp;// Offset=0x2e0 Size=0x8
+    unsigned long TxFsContext;// Offset=0x2e8 Size=0x4
+    unsigned char InstrumentationCallbackDisabled;// Offset=0x2ec Size=0x1
+    unsigned char UnalignedLoadStoreExceptions;// Offset=0x2ed Size=0x1
+    unsigned char Padding1[2];// Offset=0x2ee Size=0x2
+    struct _GDI_TEB_BATCH GdiTebBatch;// Offset=0x2f0 Size=0x4e8
+    struct _CLIENT_ID RealClientId;// Offset=0x7d8 Size=0x10
+    void * GdiCachedProcessHandle;// Offset=0x7e8 Size=0x8
+    unsigned long GdiClientPID;// Offset=0x7f0 Size=0x4
+    unsigned long GdiClientTID;// Offset=0x7f4 Size=0x4
+    void * GdiThreadLocalInfo;// Offset=0x7f8 Size=0x8
+    unsigned long long Win32ClientInfo[62];// Offset=0x800 Size=0x1f0
+    void * glDispatchTable[233];// Offset=0x9f0 Size=0x748
+    unsigned long long glReserved1[29];// Offset=0x1138 Size=0xe8
+    void * glReserved2;// Offset=0x1220 Size=0x8
+    void * glSectionInfo;// Offset=0x1228 Size=0x8
+    void * glSection;// Offset=0x1230 Size=0x8
+    void * glTable;// Offset=0x1238 Size=0x8
+    void * glCurrentRC;// Offset=0x1240 Size=0x8
+    void * glContext;// Offset=0x1248 Size=0x8
+    unsigned long LastStatusValue;// Offset=0x1250 Size=0x4
+    unsigned char Padding2[4];// Offset=0x1254 Size=0x4
+    struct _UNICODE_STRING StaticUnicodeString;// Offset=0x1258 Size=0x10
+    wchar_t StaticUnicodeBuffer[261];// Offset=0x1268 Size=0x20a
+    unsigned char Padding3[6];// Offset=0x1472 Size=0x6
+    void * DeallocationStack;// Offset=0x1478 Size=0x8
+    void * TlsSlots[64];// Offset=0x1480 Size=0x200
+    struct _LIST_ENTRY TlsLinks;// Offset=0x1680 Size=0x10
+    void * Vdm;// Offset=0x1690 Size=0x8
+    void * ReservedForNtRpc;// Offset=0x1698 Size=0x8
+    void * DbgSsReserved[2];// Offset=0x16a0 Size=0x10
+    unsigned long HardErrorMode;// Offset=0x16b0 Size=0x4
+    unsigned char Padding4[4];// Offset=0x16b4 Size=0x4
+    void * Instrumentation[11];// Offset=0x16b8 Size=0x58
+    struct _GUID ActivityId;// Offset=0x1710 Size=0x10
+    void * SubProcessTag;// Offset=0x1720 Size=0x8
+    void * PerflibData;// Offset=0x1728 Size=0x8
+    void * EtwTraceData;// Offset=0x1730 Size=0x8
+    void * WinSockData;// Offset=0x1738 Size=0x8
+    unsigned long GdiBatchCount;// Offset=0x1740 Size=0x4
+    struct _PROCESSOR_NUMBER CurrentIdealProcessor;// Offset=0x1744 Size=0x4
+    unsigned long IdealProcessorValue;// Offset=0x1744 Size=0x4
+    unsigned char ReservedPad0;// Offset=0x1744 Size=0x1
+    unsigned char ReservedPad1;// Offset=0x1745 Size=0x1
+    unsigned char ReservedPad2;// Offset=0x1746 Size=0x1
+    unsigned char IdealProcessor;// Offset=0x1747 Size=0x1
+    unsigned long GuaranteedStackBytes;// Offset=0x1748 Size=0x4
+    unsigned char Padding5[4];// Offset=0x174c Size=0x4
+    void * ReservedForPerf;// Offset=0x1750 Size=0x8
+    void * ReservedForOle;// Offset=0x1758 Size=0x8
+    unsigned long WaitingOnLoaderLock;// Offset=0x1760 Size=0x4
+    unsigned char Padding6[4];// Offset=0x1764 Size=0x4
+    void * SavedPriorityState;// Offset=0x1768 Size=0x8
+    unsigned long long ReservedForCodeCoverage;// Offset=0x1770 Size=0x8
+    void * ThreadPoolData;// Offset=0x1778 Size=0x8
+    void ** TlsExpansionSlots;// Offset=0x1780 Size=0x8
+    void * DeallocationBStore;// Offset=0x1788 Size=0x8
+    void * BStoreLimit;// Offset=0x1790 Size=0x8
+    unsigned long MuiGeneration;// Offset=0x1798 Size=0x4
+    unsigned long IsImpersonating;// Offset=0x179c Size=0x4
+    void * NlsCache;// Offset=0x17a0 Size=0x8
+    void * pShimData;// Offset=0x17a8 Size=0x8
+    unsigned long HeapData;// Offset=0x17b0 Size=0x4
+    unsigned char Padding7[4];// Offset=0x17b4 Size=0x4
+    void * CurrentTransactionHandle;// Offset=0x17b8 Size=0x8
+    struct _TEB_ACTIVE_FRAME * ActiveFrame;// Offset=0x17c0 Size=0x8
+    void * FlsData;// Offset=0x17c8 Size=0x8
+    void * PreferredLanguages;// Offset=0x17d0 Size=0x8
+    void * UserPrefLanguages;// Offset=0x17d8 Size=0x8
+    void * MergedPrefLanguages;// Offset=0x17e0 Size=0x8
+    unsigned long MuiImpersonation;// Offset=0x17e8 Size=0x4
+    unsigned short CrossTebFlags;// Offset=0x17ec Size=0x2
+    unsigned short SpareCrossTebBits:16;// Offset=0x17ec Size=0x2 BitOffset=0x0 BitSize=0x10
+    unsigned short SameTebFlags;// Offset=0x17ee Size=0x2
+    unsigned short SafeThunkCall:1;// Offset=0x17ee Size=0x2 BitOffset=0x0 BitSize=0x1
+    unsigned short InDebugPrint:1;// Offset=0x17ee Size=0x2 BitOffset=0x1 BitSize=0x1
+    unsigned short HasFiberData:1;// Offset=0x17ee Size=0x2 BitOffset=0x2 BitSize=0x1
+    unsigned short SkipThreadAttach:1;// Offset=0x17ee Size=0x2 BitOffset=0x3 BitSize=0x1
+    unsigned short WerInShipAssertCode:1;// Offset=0x17ee Size=0x2 BitOffset=0x4 BitSize=0x1
+    unsigned short RanProcessInit:1;// Offset=0x17ee Size=0x2 BitOffset=0x5 BitSize=0x1
+    unsigned short ClonedThread:1;// Offset=0x17ee Size=0x2 BitOffset=0x6 BitSize=0x1
+    unsigned short SuppressDebugMsg:1;// Offset=0x17ee Size=0x2 BitOffset=0x7 BitSize=0x1
+    unsigned short DisableUserStackWalk:1;// Offset=0x17ee Size=0x2 BitOffset=0x8 BitSize=0x1
+    unsigned short RtlExceptionAttached:1;// Offset=0x17ee Size=0x2 BitOffset=0x9 BitSize=0x1
+    unsigned short InitialThread:1;// Offset=0x17ee Size=0x2 BitOffset=0xa BitSize=0x1
+    unsigned short SessionAware:1;// Offset=0x17ee Size=0x2 BitOffset=0xb BitSize=0x1
+    unsigned short LoadOwner:1;// Offset=0x17ee Size=0x2 BitOffset=0xc BitSize=0x1
+    unsigned short LoaderWorker:1;// Offset=0x17ee Size=0x2 BitOffset=0xd BitSize=0x1
+    unsigned short SkipLoaderInit:1;// Offset=0x17ee Size=0x2 BitOffset=0xe BitSize=0x1
+    unsigned short SpareSameTebBits:1;// Offset=0x17ee Size=0x2 BitOffset=0xf BitSize=0x1
+    void * TxnScopeEnterCallback;// Offset=0x17f0 Size=0x8
+    void * TxnScopeExitCallback;// Offset=0x17f8 Size=0x8
+    void * TxnScopeContext;// Offset=0x1800 Size=0x8
+    unsigned long LockCount;// Offset=0x1808 Size=0x4
+    long WowTebOffset;// Offset=0x180c Size=0x4
+    void * ResourceRetValue;// Offset=0x1810 Size=0x8
+    void * ReservedForWdf;// Offset=0x1818 Size=0x8
+    unsigned long long ReservedForCrt;// Offset=0x1820 Size=0x8
+    struct _GUID EffectiveContainerId;// Offset=0x1828 Size=0x10
+};

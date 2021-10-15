@@ -1,0 +1,15 @@
+struct _SEGMENT_FLAGS// Size=0x4
+{
+    unsigned long TotalNumberOfPtes4132:10;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0xa
+    unsigned long ExtraSharedWowSubsections:1;// Offset=0x0 Size=0x4 BitOffset=0xa BitSize=0x1
+    unsigned long LargePages:1;// Offset=0x0 Size=0x4 BitOffset=0xb BitSize=0x1
+    unsigned long WatchProto:1;// Offset=0x0 Size=0x4 BitOffset=0xc BitSize=0x1
+    unsigned long DebugSymbolsLoaded:1;// Offset=0x0 Size=0x4 BitOffset=0xd BitSize=0x1
+    unsigned long WriteCombined:1;// Offset=0x0 Size=0x4 BitOffset=0xe BitSize=0x1
+    unsigned long NoCache:1;// Offset=0x0 Size=0x4 BitOffset=0xf BitSize=0x1
+    unsigned long FloppyMedia:1;// Offset=0x0 Size=0x4 BitOffset=0x10 BitSize=0x1
+    unsigned long DefaultProtectionMask:5;// Offset=0x0 Size=0x4 BitOffset=0x11 BitSize=0x5
+    unsigned long Binary32:1;// Offset=0x0 Size=0x4 BitOffset=0x16 BitSize=0x1
+    unsigned long ContainsDebug:1;// Offset=0x0 Size=0x4 BitOffset=0x17 BitSize=0x1
+    unsigned long Spare:8;// Offset=0x0 Size=0x4 BitOffset=0x18 BitSize=0x8
+};

@@ -1,0 +1,4 @@
+struct _IO_CACHE_INFO// Size=0x1
+{
+    unsigned char CacheAttribute;// Offset=0x0 Size=0x1
+};

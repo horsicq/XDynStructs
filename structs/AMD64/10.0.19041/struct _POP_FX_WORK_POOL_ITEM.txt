@@ -1,0 +1,5 @@
+struct _POP_FX_WORK_POOL_ITEM// Size=0x28
+{
+    struct _POP_FX_WORK_POOL * WorkPool;// Offset=0x0 Size=0x8
+    struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x8 Size=0x20
+};

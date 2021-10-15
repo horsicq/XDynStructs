@@ -1,0 +1,6 @@
+struct _POP_FX_WORK_ORDER_WATCHDOG_INFO// Size=0x50
+{
+    struct _KTIMER Timer;// Offset=0x0 Size=0x28
+    struct _KDPC Dpc;// Offset=0x28 Size=0x20
+    struct _POP_FX_WORK_ORDER * WorkOrder;// Offset=0x48 Size=0x4
+};

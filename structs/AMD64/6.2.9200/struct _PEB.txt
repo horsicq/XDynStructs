@@ -12,6 +12,7 @@ struct _PEB// Size=0x388
     unsigned char IsPackagedProcess:1;// Offset=0x3 Size=0x1 BitOffset=0x5 BitSize=0x1
     unsigned char IsAppContainer:1;// Offset=0x3 Size=0x1 BitOffset=0x6 BitSize=0x1
     unsigned char SpareBits:1;// Offset=0x3 Size=0x1 BitOffset=0x7 BitSize=0x1
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     void * Mutant;// Offset=0x8 Size=0x8
     void * ImageBaseAddress;// Offset=0x10 Size=0x8
     struct _PEB_LDR_DATA * Ldr;// Offset=0x18 Size=0x8
@@ -28,12 +29,14 @@ struct _PEB// Size=0x388
     unsigned long ProcessUsingVCH:1;// Offset=0x50 Size=0x4 BitOffset=0x3 BitSize=0x1
     unsigned long ProcessUsingFTH:1;// Offset=0x50 Size=0x4 BitOffset=0x4 BitSize=0x1
     unsigned long ReservedBits0:27;// Offset=0x50 Size=0x4 BitOffset=0x5 BitSize=0x1b
+    unsigned char __align1[4];// Offset=0x54 Size=0x4
     void * KernelCallbackTable;// Offset=0x58 Size=0x8
     void * UserSharedInfoPtr;// Offset=0x58 Size=0x8
     unsigned long SystemReserved[1];// Offset=0x60 Size=0x4
     unsigned long AtlThunkSListPtr32;// Offset=0x64 Size=0x4
     void * ApiSetMap;// Offset=0x68 Size=0x8
     unsigned long TlsExpansionCounter;// Offset=0x70 Size=0x4
+    unsigned char __align2[4];// Offset=0x74 Size=0x4
     void * TlsBitmap;// Offset=0x78 Size=0x8
     unsigned long TlsBitmapBits[2];// Offset=0x80 Size=0x8
     void * ReadOnlySharedMemoryBase;// Offset=0x88 Size=0x8
@@ -55,6 +58,7 @@ struct _PEB// Size=0x388
     void * GdiSharedHandleTable;// Offset=0xf8 Size=0x8
     void * ProcessStarterHelper;// Offset=0x100 Size=0x8
     unsigned long GdiDCAttributeList;// Offset=0x108 Size=0x4
+    unsigned char __align3[4];// Offset=0x10c Size=0x4
     struct _RTL_CRITICAL_SECTION * LoaderLock;// Offset=0x110 Size=0x8
     unsigned long OSMajorVersion;// Offset=0x118 Size=0x4
     unsigned long OSMinorVersion;// Offset=0x11c Size=0x4
@@ -64,12 +68,14 @@ struct _PEB// Size=0x388
     unsigned long ImageSubsystem;// Offset=0x128 Size=0x4
     unsigned long ImageSubsystemMajorVersion;// Offset=0x12c Size=0x4
     unsigned long ImageSubsystemMinorVersion;// Offset=0x130 Size=0x4
+    unsigned char __align4[4];// Offset=0x134 Size=0x4
     unsigned long long ActiveProcessAffinityMask;// Offset=0x138 Size=0x8
     unsigned long GdiHandleBuffer[60];// Offset=0x140 Size=0xf0
     void  ( * PostProcessInitRoutine)();// Offset=0x230 Size=0x8
     void * TlsExpansionBitmap;// Offset=0x238 Size=0x8
     unsigned long TlsExpansionBitmapBits[32];// Offset=0x240 Size=0x80
     unsigned long SessionId;// Offset=0x2c0 Size=0x4
+    unsigned char __align5[4];// Offset=0x2c4 Size=0x4
     union _ULARGE_INTEGER AppCompatFlags;// Offset=0x2c8 Size=0x8
     union _ULARGE_INTEGER AppCompatFlagsUser;// Offset=0x2d0 Size=0x8
     void * pShimData;// Offset=0x2d8 Size=0x8
@@ -85,6 +91,7 @@ struct _PEB// Size=0x388
     void * FlsBitmap;// Offset=0x338 Size=0x8
     unsigned long FlsBitmapBits[4];// Offset=0x340 Size=0x10
     unsigned long FlsHighIndex;// Offset=0x350 Size=0x4
+    unsigned char __align6[4];// Offset=0x354 Size=0x4
     void * WerRegistrationData;// Offset=0x358 Size=0x8
     void * WerShipAssertPtr;// Offset=0x360 Size=0x8
     void * pUnused;// Offset=0x368 Size=0x8
@@ -94,5 +101,6 @@ struct _PEB// Size=0x388
     unsigned long CritSecTracingEnabled:1;// Offset=0x378 Size=0x4 BitOffset=0x1 BitSize=0x1
     unsigned long LibLoaderTracingEnabled:1;// Offset=0x378 Size=0x4 BitOffset=0x2 BitSize=0x1
     unsigned long SpareTracingBits:29;// Offset=0x378 Size=0x4 BitOffset=0x3 BitSize=0x1d
+    unsigned char __align7[4];// Offset=0x37c Size=0x4
     unsigned long long CsrServerReadOnlySharedMemoryBase;// Offset=0x380 Size=0x8
 };

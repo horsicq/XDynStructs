@@ -1,0 +1,69 @@
+struct _PO_HIBER_PERF// Size=0x1e8
+{
+    unsigned long long HiberIoTicks;// Offset=0x0 Size=0x8
+    unsigned long long HiberIoCpuTicks;// Offset=0x8 Size=0x8
+    unsigned long long HiberInitTicks;// Offset=0x10 Size=0x8
+    unsigned long long HiberHiberFileTicks;// Offset=0x18 Size=0x8
+    unsigned long long HiberCompressTicks;// Offset=0x20 Size=0x8
+    unsigned long long HiberSharedBufferTicks;// Offset=0x28 Size=0x8
+    unsigned long long HiberChecksumTicks;// Offset=0x30 Size=0x8
+    unsigned long long HiberChecksumIoTicks;// Offset=0x38 Size=0x8
+    union _LARGE_INTEGER TotalHibernateTime;// Offset=0x40 Size=0x8
+    union _LARGE_INTEGER HibernateCompleteTimestamp;// Offset=0x48 Size=0x8
+    unsigned long POSTTime;// Offset=0x50 Size=0x4
+    unsigned long ResumeBootMgrTime;// Offset=0x54 Size=0x4
+    unsigned long BootmgrUserInputTime;// Offset=0x58 Size=0x4
+    unsigned char __align0[4];// Offset=0x5c Size=0x4
+    unsigned long long ResumeAppTicks;// Offset=0x60 Size=0x8
+    unsigned long long ResumeAppStartTimestamp;// Offset=0x68 Size=0x8
+    unsigned long long ResumeLibraryInitTicks;// Offset=0x70 Size=0x8
+    unsigned long long ResumeInitTicks;// Offset=0x78 Size=0x8
+    unsigned long long ResumeRestoreImageStartTimestamp;// Offset=0x80 Size=0x8
+    unsigned long long ResumeHiberFileTicks;// Offset=0x88 Size=0x8
+    unsigned long long ResumeIoTicks;// Offset=0x90 Size=0x8
+    unsigned long long ResumeDecompressTicks;// Offset=0x98 Size=0x8
+    unsigned long long ResumeAllocateTicks;// Offset=0xa0 Size=0x8
+    unsigned long long ResumeUserInOutTicks;// Offset=0xa8 Size=0x8
+    unsigned long long ResumeMapTicks;// Offset=0xb0 Size=0x8
+    unsigned long long ResumeUnmapTicks;// Offset=0xb8 Size=0x8
+    unsigned long long ResumeChecksumTicks;// Offset=0xc0 Size=0x8
+    unsigned long long ResumeChecksumIoTicks;// Offset=0xc8 Size=0x8
+    unsigned long long ResumeKernelSwitchTimestamp;// Offset=0xd0 Size=0x8
+    unsigned long long WriteLogDataTimestamp;// Offset=0xd8 Size=0x8
+    unsigned long long KernelReturnFromHandler;// Offset=0xe0 Size=0x8
+    unsigned long long TimeStampCounterAtSwitchTime;// Offset=0xe8 Size=0x8
+    unsigned long long HalTscOffset;// Offset=0xf0 Size=0x8
+    unsigned long long HvlTscOffset;// Offset=0xf8 Size=0x8
+    unsigned long long SleeperThreadEnd;// Offset=0x100 Size=0x8
+    unsigned long long KernelReturnSystemPowerStateTimestamp;// Offset=0x108 Size=0x8
+    unsigned long long IoBoundedness;// Offset=0x110 Size=0x8
+    unsigned long long KernelDecompressTicks;// Offset=0x118 Size=0x8
+    unsigned long long KernelIoTicks;// Offset=0x120 Size=0x8
+    unsigned long long KernelCopyTicks;// Offset=0x128 Size=0x8
+    unsigned long long ReadCheckCount;// Offset=0x130 Size=0x8
+    unsigned long long KernelInitTicks;// Offset=0x138 Size=0x8
+    unsigned long long KernelResumeHiberFileTicks;// Offset=0x140 Size=0x8
+    unsigned long long KernelIoCpuTicks;// Offset=0x148 Size=0x8
+    unsigned long long KernelSharedBufferTicks;// Offset=0x150 Size=0x8
+    unsigned long long KernelAnimationTicks;// Offset=0x158 Size=0x8
+    unsigned long long KernelChecksumTicks;// Offset=0x160 Size=0x8
+    unsigned long long KernelChecksumIoTicks;// Offset=0x168 Size=0x8
+    union _LARGE_INTEGER AnimationStart;// Offset=0x170 Size=0x8
+    union _LARGE_INTEGER AnimationStop;// Offset=0x178 Size=0x8
+    unsigned long DeviceResumeTime;// Offset=0x180 Size=0x4
+    unsigned char __align1[4];// Offset=0x184 Size=0x4
+    unsigned long long SecurePagesProcessed;// Offset=0x188 Size=0x8
+    unsigned long long BootPagesProcessed;// Offset=0x190 Size=0x8
+    unsigned long long KernelPagesProcessed;// Offset=0x198 Size=0x8
+    unsigned long long BootBytesWritten;// Offset=0x1a0 Size=0x8
+    unsigned long long KernelBytesWritten;// Offset=0x1a8 Size=0x8
+    unsigned long long BootPagesWritten;// Offset=0x1b0 Size=0x8
+    unsigned long long KernelPagesWritten;// Offset=0x1b8 Size=0x8
+    unsigned long long BytesWritten;// Offset=0x1c0 Size=0x8
+    unsigned long PagesWritten;// Offset=0x1c8 Size=0x4
+    unsigned long FileRuns;// Offset=0x1cc Size=0x4
+    unsigned long NoMultiStageResumeReason;// Offset=0x1d0 Size=0x4
+    unsigned long MaxHuffRatio;// Offset=0x1d4 Size=0x4
+    unsigned long long AdjustedTotalResumeTime;// Offset=0x1d8 Size=0x8
+    unsigned long long ResumeCompleteTimestamp;// Offset=0x1e0 Size=0x8
+};

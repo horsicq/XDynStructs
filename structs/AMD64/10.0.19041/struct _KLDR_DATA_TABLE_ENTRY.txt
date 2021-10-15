@@ -1,0 +1,26 @@
+struct _KLDR_DATA_TABLE_ENTRY// Size=0xa0
+{
+    struct _LIST_ENTRY InLoadOrderLinks;// Offset=0x0 Size=0x10
+    void * ExceptionTable;// Offset=0x10 Size=0x8
+    unsigned long ExceptionTableSize;// Offset=0x18 Size=0x4
+    unsigned char __align0[4];// Offset=0x1c Size=0x4
+    void * GpValue;// Offset=0x20 Size=0x8
+    struct _NON_PAGED_DEBUG_INFO * NonPagedDebugInfo;// Offset=0x28 Size=0x8
+    void * DllBase;// Offset=0x30 Size=0x8
+    void * EntryPoint;// Offset=0x38 Size=0x8
+    unsigned long SizeOfImage;// Offset=0x40 Size=0x4
+    unsigned char __align1[4];// Offset=0x44 Size=0x4
+    struct _UNICODE_STRING FullDllName;// Offset=0x48 Size=0x10
+    struct _UNICODE_STRING BaseDllName;// Offset=0x58 Size=0x10
+    unsigned long Flags;// Offset=0x68 Size=0x4
+    unsigned short LoadCount;// Offset=0x6c Size=0x2
+    union <anonymous-tag> u1;// Offset=0x6e Size=0x2
+    void * SectionPointer;// Offset=0x70 Size=0x8
+    unsigned long CheckSum;// Offset=0x78 Size=0x4
+    unsigned long CoverageSectionSize;// Offset=0x7c Size=0x4
+    void * CoverageSection;// Offset=0x80 Size=0x8
+    void * LoadedImports;// Offset=0x88 Size=0x8
+    void * Spare;// Offset=0x90 Size=0x8
+    unsigned long SizeOfImageNotRounded;// Offset=0x98 Size=0x4
+    unsigned long TimeDateStamp;// Offset=0x9c Size=0x4
+};

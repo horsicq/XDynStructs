@@ -1,0 +1,5 @@
+struct _OBJECT_DUMP_CONTROL// Size=0x8
+{
+    void * Stream;// Offset=0x0 Size=0x4
+    unsigned long Detail;// Offset=0x4 Size=0x4
+};

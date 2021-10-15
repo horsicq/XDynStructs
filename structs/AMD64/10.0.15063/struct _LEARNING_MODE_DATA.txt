@@ -1,0 +1,6 @@
+struct _LEARNING_MODE_DATA// Size=0x8
+{
+    unsigned long Settings;// Offset=0x0 Size=0x4
+    unsigned char Enabled;// Offset=0x4 Size=0x1
+    unsigned char PermissiveModeEnabled;// Offset=0x5 Size=0x1
+};

@@ -1,0 +1,11 @@
+struct _WHEA_EVENT_LOG_ENTRY_HEADER// Size=0x20
+{
+    unsigned long Signature;// Offset=0x0 Size=0x4
+    unsigned long Version;// Offset=0x4 Size=0x4
+    unsigned long Length;// Offset=0x8 Size=0x4
+    enum _WHEA_EVENT_LOG_ENTRY_TYPE Type;// Offset=0xc Size=0x4
+    unsigned long OwnerTag;// Offset=0x10 Size=0x4
+    enum _WHEA_EVENT_LOG_ENTRY_ID Id;// Offset=0x14 Size=0x4
+    union _WHEA_EVENT_LOG_ENTRY_FLAGS Flags;// Offset=0x18 Size=0x4
+    unsigned long PayloadLength;// Offset=0x1c Size=0x4
+};

@@ -1,0 +1,20 @@
+struct _HIVE_LIST_ENTRY// Size=0x58
+{
+    unsigned short * FileName;// Offset=0x0 Size=0x4
+    unsigned short * BaseName;// Offset=0x4 Size=0x4
+    unsigned short * RegRootName;// Offset=0x8 Size=0x4
+    struct _CMHIVE * CmHive;// Offset=0xc Size=0x4
+    unsigned long HHiveFlags;// Offset=0x10 Size=0x4
+    unsigned long CmHiveFlags;// Offset=0x14 Size=0x4
+    unsigned long CmKcbCacheSize;// Offset=0x18 Size=0x4
+    struct _CMHIVE * CmHive2;// Offset=0x1c Size=0x4
+    unsigned char HiveMounted;// Offset=0x20 Size=0x1
+    unsigned char ThreadFinished;// Offset=0x21 Size=0x1
+    unsigned char ThreadStarted;// Offset=0x22 Size=0x1
+    unsigned char Allocate;// Offset=0x23 Size=0x1
+    unsigned char WinPERequired;// Offset=0x24 Size=0x1
+    unsigned char __align0[3];// Offset=0x25 Size=0x3
+    struct _KEVENT StartEvent;// Offset=0x28 Size=0x10
+    struct _KEVENT FinishedEvent;// Offset=0x38 Size=0x10
+    struct _KEVENT MountLock;// Offset=0x48 Size=0x10
+};

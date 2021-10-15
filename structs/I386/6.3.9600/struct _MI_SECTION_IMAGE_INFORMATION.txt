@@ -1,0 +1,5 @@
+struct _MI_SECTION_IMAGE_INFORMATION// Size=0x38
+{
+    struct _SECTION_IMAGE_INFORMATION ExportedImageInformation;// Offset=0x0 Size=0x30
+    struct _MI_EXTRA_IMAGE_INFORMATION InternalImageInformation;// Offset=0x30 Size=0x8
+};

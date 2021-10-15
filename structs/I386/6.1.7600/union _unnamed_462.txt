@@ -1,0 +1,5 @@
+union _unnamed_462// Size=0x8
+{
+    struct _LIST_ENTRY List;// Offset=0x0 Size=0x8
+    struct _MMADDRESS_LIST Secured;// Offset=0x0 Size=0x8
+};

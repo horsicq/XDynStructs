@@ -1,0 +1,24 @@
+struct _ETW_REG_ENTRY// Size=0x28
+{
+    struct _LIST_ENTRY RegList;// Offset=0x0 Size=0x8
+    struct _ETW_GUID_ENTRY * GuidEntry;// Offset=0x8 Size=0x4
+    struct _ETW_REPLY_QUEUE * ReplyQueue;// Offset=0xc Size=0x4
+    struct _ETW_QUEUE_ENTRY * ReplySlot[4];// Offset=0xc Size=0x10
+    void * Caller;// Offset=0xc Size=0x4
+    unsigned long SessionId;// Offset=0x10 Size=0x4
+    unsigned char __align0[8];// Offset=0x14 Size=0x8
+    struct _EPROCESS * Process;// Offset=0x1c Size=0x4
+    void * CallbackContext;// Offset=0x1c Size=0x4
+    void * Callback;// Offset=0x20 Size=0x4
+    unsigned short Index;// Offset=0x24 Size=0x2
+    unsigned char Flags;// Offset=0x26 Size=0x1
+    unsigned char DbgKernelRegistration:1;// Offset=0x26 Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char DbgUserRegistration:1;// Offset=0x26 Size=0x1 BitOffset=0x1 BitSize=0x1
+    unsigned char DbgReplyRegistration:1;// Offset=0x26 Size=0x1 BitOffset=0x2 BitSize=0x1
+    unsigned char DbgClassicRegistration:1;// Offset=0x26 Size=0x1 BitOffset=0x3 BitSize=0x1
+    unsigned char DbgSessionSpaceRegistration:1;// Offset=0x26 Size=0x1 BitOffset=0x4 BitSize=0x1
+    unsigned char DbgModernRegistration:1;// Offset=0x26 Size=0x1 BitOffset=0x5 BitSize=0x1
+    unsigned char DbgClosed:1;// Offset=0x26 Size=0x1 BitOffset=0x6 BitSize=0x1
+    unsigned char DbgInserted:1;// Offset=0x26 Size=0x1 BitOffset=0x7 BitSize=0x1
+    unsigned char EnableMask;// Offset=0x27 Size=0x1
+};

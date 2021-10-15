@@ -1,0 +1,4 @@
+struct _unnamed_125// Size=0x8
+{
+    struct _DEVICE_CAPABILITIES * Capabilities;// Offset=0x0 Size=0x8
+};

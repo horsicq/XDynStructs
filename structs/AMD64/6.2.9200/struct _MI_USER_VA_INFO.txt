@@ -9,6 +9,7 @@ struct _MI_USER_VA_INFO// Size=0x478
     unsigned long VadBitMapSize;// Offset=0x18 Size=0x4
     unsigned long MaximumLastVadBit;// Offset=0x1c Size=0x4
     long VadsBeingDeleted;// Offset=0x20 Size=0x4
+    unsigned char __align0[4];// Offset=0x24 Size=0x4
     struct _KEVENT * LastVadDeletionEvent;// Offset=0x28 Size=0x8
     unsigned long * VadBitBuffer;// Offset=0x30 Size=0x8
     void * LowestBottomUpAllocationAddress;// Offset=0x38 Size=0x8
@@ -18,6 +19,7 @@ struct _MI_USER_VA_INFO// Size=0x478
     void * FreeUmsTebHint;// Offset=0x58 Size=0x8
     unsigned long * CommittedPageTables;// Offset=0x60 Size=0x8
     unsigned long PageTableBitmapPages;// Offset=0x68 Size=0x4
+    unsigned char __align1[4];// Offset=0x6c Size=0x4
     unsigned long long CommittedPageDirectories[128];// Offset=0x70 Size=0x400
     unsigned long long CommittedPageDirectoryParents[1];// Offset=0x470 Size=0x8
 };

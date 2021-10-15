@@ -1,0 +1,10 @@
+struct _POP_FX_LOG_ENTRY// Size=0x18
+{
+    unsigned long long Timestamp;// Offset=0x0 Size=0x8
+    unsigned char Operation;// Offset=0x8 Size=0x1
+    unsigned char Component;// Offset=0x9 Size=0x1
+    unsigned short Processor;// Offset=0xa Size=0x2
+    unsigned short Process;// Offset=0xc Size=0x2
+    unsigned short Thread;// Offset=0xe Size=0x2
+    unsigned long long Information;// Offset=0x10 Size=0x8
+};

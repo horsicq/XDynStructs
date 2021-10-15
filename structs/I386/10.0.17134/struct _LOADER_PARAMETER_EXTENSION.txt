@@ -44,6 +44,7 @@ struct _LOADER_PARAMETER_EXTENSION// Size=0xb68
     struct _LIST_ENTRY AttachedHives;// Offset=0x84 Size=0x8
     unsigned long MemoryCachingRequirementsCount;// Offset=0x8c Size=0x4
     void * MemoryCachingRequirements;// Offset=0x90 Size=0x4
+    unsigned char __align0[4];// Offset=0x94 Size=0x4
     struct _BOOT_ENTROPY_LDR_RESULT BootEntropyResult;// Offset=0x98 Size=0x798
     unsigned long long ProcessorCounterFrequency;// Offset=0x830 Size=0x8
     struct _LOADER_PARAMETER_HYPERVISOR_EXTENSION HypervisorExtension;// Offset=0x838 Size=0x38
@@ -72,6 +73,7 @@ struct _LOADER_PARAMETER_EXTENSION// Size=0xb68
     struct _OFFLINE_CRASHDUMP_CONFIGURATION_TABLE_V2 OfflineCrashdumpConfigurationTable;// Offset=0x8f0 Size=0x20
     struct _UNICODE_STRING ManufacturingProfile;// Offset=0x910 Size=0x8
     void * BbtBuffer;// Offset=0x918 Size=0x4
+    unsigned char __align1[4];// Offset=0x91c Size=0x4
     unsigned long long XsaveAllowedFeatures;// Offset=0x920 Size=0x8
     unsigned long XsaveFlags;// Offset=0x928 Size=0x4
     void * BootOptions;// Offset=0x92c Size=0x4

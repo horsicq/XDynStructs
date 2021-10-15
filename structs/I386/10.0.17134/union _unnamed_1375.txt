@@ -1,0 +1,5 @@
+union _unnamed_1375// Size=0xc
+{
+    struct _I386_LOADER_BLOCK I386;// Offset=0x0 Size=0xc
+    struct _ARM_LOADER_BLOCK Arm;// Offset=0x0 Size=0x4
+};

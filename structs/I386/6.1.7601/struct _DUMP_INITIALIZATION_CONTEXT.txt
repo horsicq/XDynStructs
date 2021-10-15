@@ -1,0 +1,24 @@
+struct _DUMP_INITIALIZATION_CONTEXT// Size=0x70
+{
+    unsigned long Length;// Offset=0x0 Size=0x4
+    unsigned long Reserved;// Offset=0x4 Size=0x4
+    void * MemoryBlock;// Offset=0x8 Size=0x4
+    void * CommonBuffer[2];// Offset=0xc Size=0x8
+    unsigned char __align0[4];// Offset=0x14 Size=0x4
+    union _LARGE_INTEGER PhysicalAddress[2];// Offset=0x18 Size=0x10
+    void  ( * StallRoutine)(unsigned long );// Offset=0x28 Size=0x4
+    unsigned char  ( * OpenRoutine)(union _LARGE_INTEGER );// Offset=0x2c Size=0x4
+    long  ( * WriteRoutine)(union _LARGE_INTEGER * ,struct _MDL * );// Offset=0x30 Size=0x4
+    void  ( * FinishRoutine)();// Offset=0x34 Size=0x4
+    struct _ADAPTER_OBJECT * AdapterObject;// Offset=0x38 Size=0x4
+    void * MappedRegisterBase;// Offset=0x3c Size=0x4
+    void * PortConfiguration;// Offset=0x40 Size=0x4
+    unsigned char CrashDump;// Offset=0x44 Size=0x1
+    unsigned char __align1[3];// Offset=0x45 Size=0x3
+    unsigned long MaximumTransferSize;// Offset=0x48 Size=0x4
+    unsigned long CommonBufferSize;// Offset=0x4c Size=0x4
+    void * TargetAddress;// Offset=0x50 Size=0x4
+    long  ( * WritePendingRoutine)(long ,union _LARGE_INTEGER * ,struct _MDL * ,void * );// Offset=0x54 Size=0x4
+    unsigned long PartitionStyle;// Offset=0x58 Size=0x4
+    union _unnamed_1023 DiskInfo;// Offset=0x5c Size=0x10
+};

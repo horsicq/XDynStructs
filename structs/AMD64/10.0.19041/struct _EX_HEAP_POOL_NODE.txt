@@ -1,0 +1,6 @@
+struct _EX_HEAP_POOL_NODE// Size=0x20c0
+{
+    struct _SEGMENT_HEAP * Heaps[4];// Offset=0x0 Size=0x20
+    unsigned char __align0[32];// Offset=0x20 Size=0x20
+    struct _RTL_DYNAMIC_LOOKASIDE Lookasides[2];// Offset=0x40 Size=0x2080
+};

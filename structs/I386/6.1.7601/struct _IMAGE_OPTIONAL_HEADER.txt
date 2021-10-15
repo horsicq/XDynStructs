@@ -1,0 +1,34 @@
+struct _IMAGE_OPTIONAL_HEADER// Size=0xe0
+{
+    unsigned short Magic;// Offset=0x0 Size=0x2
+    unsigned char MajorLinkerVersion;// Offset=0x2 Size=0x1
+    unsigned char MinorLinkerVersion;// Offset=0x3 Size=0x1
+    unsigned long SizeOfCode;// Offset=0x4 Size=0x4
+    unsigned long SizeOfInitializedData;// Offset=0x8 Size=0x4
+    unsigned long SizeOfUninitializedData;// Offset=0xc Size=0x4
+    unsigned long AddressOfEntryPoint;// Offset=0x10 Size=0x4
+    unsigned long BaseOfCode;// Offset=0x14 Size=0x4
+    unsigned long BaseOfData;// Offset=0x18 Size=0x4
+    unsigned long ImageBase;// Offset=0x1c Size=0x4
+    unsigned long SectionAlignment;// Offset=0x20 Size=0x4
+    unsigned long FileAlignment;// Offset=0x24 Size=0x4
+    unsigned short MajorOperatingSystemVersion;// Offset=0x28 Size=0x2
+    unsigned short MinorOperatingSystemVersion;// Offset=0x2a Size=0x2
+    unsigned short MajorImageVersion;// Offset=0x2c Size=0x2
+    unsigned short MinorImageVersion;// Offset=0x2e Size=0x2
+    unsigned short MajorSubsystemVersion;// Offset=0x30 Size=0x2
+    unsigned short MinorSubsystemVersion;// Offset=0x32 Size=0x2
+    unsigned long Win32VersionValue;// Offset=0x34 Size=0x4
+    unsigned long SizeOfImage;// Offset=0x38 Size=0x4
+    unsigned long SizeOfHeaders;// Offset=0x3c Size=0x4
+    unsigned long CheckSum;// Offset=0x40 Size=0x4
+    unsigned short Subsystem;// Offset=0x44 Size=0x2
+    unsigned short DllCharacteristics;// Offset=0x46 Size=0x2
+    unsigned long SizeOfStackReserve;// Offset=0x48 Size=0x4
+    unsigned long SizeOfStackCommit;// Offset=0x4c Size=0x4
+    unsigned long SizeOfHeapReserve;// Offset=0x50 Size=0x4
+    unsigned long SizeOfHeapCommit;// Offset=0x54 Size=0x4
+    unsigned long LoaderFlags;// Offset=0x58 Size=0x4
+    unsigned long NumberOfRvaAndSizes;// Offset=0x5c Size=0x4
+    struct _IMAGE_DATA_DIRECTORY DataDirectory[16];// Offset=0x60 Size=0x80
+};

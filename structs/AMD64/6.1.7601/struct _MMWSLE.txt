@@ -1,0 +1,4 @@
+struct _MMWSLE// Size=0x8
+{
+    union _unnamed_191 u1;// Offset=0x0 Size=0x8
+};

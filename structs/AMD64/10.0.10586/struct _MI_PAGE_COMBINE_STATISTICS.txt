@@ -1,0 +1,9 @@
+struct _MI_PAGE_COMBINE_STATISTICS// Size=0x28
+{
+    unsigned long long PagesScannedActive;// Offset=0x0 Size=0x8
+    unsigned long long PagesScannedStandby;// Offset=0x8 Size=0x8
+    unsigned long long PagesCombined;// Offset=0x10 Size=0x8
+    unsigned long CombineScanCount;// Offset=0x18 Size=0x4
+    long CombinedBlocksInUse;// Offset=0x1c Size=0x4
+    long SumCombinedBlocksReferenceCount;// Offset=0x20 Size=0x4
+};

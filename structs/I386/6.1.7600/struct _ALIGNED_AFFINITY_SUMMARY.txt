@@ -1,0 +1,5 @@
+struct _ALIGNED_AFFINITY_SUMMARY// Size=0x40
+{
+    struct _KAFFINITY_EX CpuSet;// Offset=0x0 Size=0xc
+    struct _KAFFINITY_EX SMTSet;// Offset=0xc Size=0xc
+};

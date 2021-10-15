@@ -15,6 +15,7 @@ struct _POP_FX_DEVICE// Size=0x1d0
     union _POP_FX_DEVICE_STATUS Status;// Offset=0xd0 Size=0x4
     long PowerReqCall;// Offset=0xd4 Size=0x4
     long PowerNotReqCall;// Offset=0xd8 Size=0x4
+    unsigned char __align0[4];// Offset=0xdc Size=0x4
     unsigned long long IdleLock;// Offset=0xe0 Size=0x8
     struct _KTIMER IdleTimer;// Offset=0xe8 Size=0x40
     struct _KDPC IdleDpc;// Offset=0x128 Size=0x40
@@ -24,9 +25,11 @@ struct _POP_FX_DEVICE// Size=0x1d0
     struct _POP_IRP_DATA * IrpData;// Offset=0x180 Size=0x8
     struct _DEVICE_OBJECT * NextIrpDeviceObject;// Offset=0x188 Size=0x8
     union _POWER_STATE NextIrpPowerState;// Offset=0x190 Size=0x4
+    unsigned char __align1[4];// Offset=0x194 Size=0x4
     void  ( * NextIrpCallerCompletion)(struct _DEVICE_OBJECT * ,unsigned char ,union _POWER_STATE ,void * ,struct _IO_STATUS_BLOCK * );// Offset=0x198 Size=0x8
     void * NextIrpCallerContext;// Offset=0x1a0 Size=0x8
     struct _KEVENT IrpCompleteEvent;// Offset=0x1a8 Size=0x18
     unsigned long ComponentCount;// Offset=0x1c0 Size=0x4
+    unsigned char __align2[4];// Offset=0x1c4 Size=0x4
     struct _POP_FX_COMPONENT * Components[1];// Offset=0x1c8 Size=0x8
 };

@@ -1,0 +1,20 @@
+struct _KSPECIAL_REGISTERS// Size=0x54
+{
+    unsigned long Cr0;// Offset=0x0 Size=0x4
+    unsigned long Cr2;// Offset=0x4 Size=0x4
+    unsigned long Cr3;// Offset=0x8 Size=0x4
+    unsigned long Cr4;// Offset=0xc Size=0x4
+    unsigned long KernelDr0;// Offset=0x10 Size=0x4
+    unsigned long KernelDr1;// Offset=0x14 Size=0x4
+    unsigned long KernelDr2;// Offset=0x18 Size=0x4
+    unsigned long KernelDr3;// Offset=0x1c Size=0x4
+    unsigned long KernelDr6;// Offset=0x20 Size=0x4
+    unsigned long KernelDr7;// Offset=0x24 Size=0x4
+    struct _DESCRIPTOR Gdtr;// Offset=0x28 Size=0x8
+    struct _DESCRIPTOR Idtr;// Offset=0x30 Size=0x8
+    unsigned short Tr;// Offset=0x38 Size=0x2
+    unsigned short Ldtr;// Offset=0x3a Size=0x2
+    unsigned long long Xcr0;// Offset=0x3c Size=0x8
+    unsigned long ExceptionList;// Offset=0x44 Size=0x4
+    unsigned long Reserved[3];// Offset=0x48 Size=0xc
+};

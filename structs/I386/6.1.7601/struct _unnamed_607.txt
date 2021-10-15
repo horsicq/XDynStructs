@@ -1,0 +1,5 @@
+struct _unnamed_607// Size=0x8
+{
+    unsigned long Last;// Offset=0x0 Size=0x4
+    union _unnamed_606 u;// Offset=0x4 Size=0x4
+};

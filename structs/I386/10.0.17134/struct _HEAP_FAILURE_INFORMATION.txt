@@ -14,6 +14,7 @@ struct _HEAP_FAILURE_INFORMATION// Size=0x3d0
     void * StackTrace[32];// Offset=0x30 Size=0x80
     unsigned char HeapMajorVersion;// Offset=0xb0 Size=0x1
     unsigned char HeapMinorVersion;// Offset=0xb1 Size=0x1
+    unsigned char __align0[2];// Offset=0xb2 Size=0x2
     struct _EXCEPTION_RECORD ExceptionRecord;// Offset=0xb4 Size=0x50
     struct _CONTEXT ContextRecord;// Offset=0x104 Size=0x2cc
 };

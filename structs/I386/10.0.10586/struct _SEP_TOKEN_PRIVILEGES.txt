@@ -1,0 +1,6 @@
+struct _SEP_TOKEN_PRIVILEGES// Size=0x18
+{
+    unsigned long long Present;// Offset=0x0 Size=0x8
+    unsigned long long Enabled;// Offset=0x8 Size=0x8
+    unsigned long long EnabledByDefault;// Offset=0x10 Size=0x8
+};

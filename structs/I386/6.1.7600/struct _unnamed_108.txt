@@ -1,0 +1,7 @@
+struct _unnamed_108// Size=0x10
+{
+    unsigned long Length;// Offset=0x0 Size=0x4
+    void * StartSid;// Offset=0x4 Size=0x4
+    struct _FILE_GET_QUOTA_INFORMATION * SidList;// Offset=0x8 Size=0x4
+    unsigned long SidListLength;// Offset=0xc Size=0x4
+};

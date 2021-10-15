@@ -1,0 +1,34 @@
+struct _MI_VISIBLE_STATE// Size=0x900
+{
+    struct _MI_SPECIAL_POOL SpecialPool;// Offset=0x0 Size=0x40
+    struct _LIST_ENTRY SessionWsList;// Offset=0x40 Size=0x10
+    struct _RTL_BITMAP * SessionIdBitmap;// Offset=0x50 Size=0x8
+    struct _MM_PAGED_POOL_INFO PagedPoolInfo;// Offset=0x58 Size=0x38
+    unsigned long long MaximumNonPagedPoolInPages;// Offset=0x90 Size=0x8
+    unsigned long long SizeOfPagedPoolInPages;// Offset=0x98 Size=0x8
+    struct _MI_SYSTEM_PTE_TYPE SystemPteInfo;// Offset=0xa0 Size=0x68
+    unsigned long long NonPagedPoolCommit;// Offset=0x108 Size=0x8
+    unsigned long long SmallNonPagedPtesCommit;// Offset=0x110 Size=0x8
+    unsigned long long BootCommit;// Offset=0x118 Size=0x8
+    unsigned long long MdlPagesAllocated;// Offset=0x120 Size=0x8
+    unsigned long long SystemPageTableCommit;// Offset=0x128 Size=0x8
+    unsigned long long SpecialPagesInUse;// Offset=0x130 Size=0x8
+    unsigned long long ProcessCommit;// Offset=0x138 Size=0x8
+    long DriverCommit;// Offset=0x140 Size=0x4
+    unsigned char __align0[4];// Offset=0x144 Size=0x4
+    unsigned long long PfnDatabaseCommit;// Offset=0x148 Size=0x8
+    unsigned char __align1[48];// Offset=0x150 Size=0x30
+    struct _MMSUPPORT_FULL SystemWs[3];// Offset=0x180 Size=0x330
+    unsigned char __align2[16];// Offset=0x4b0 Size=0x10
+    struct _MMSUPPORT_SHARED SystemCacheShared;// Offset=0x4c0 Size=0x48
+    unsigned char __align3[56];// Offset=0x508 Size=0x38
+    struct _MMSUPPORT_AGGREGATION AggregateSystemWs[1];// Offset=0x540 Size=0x20
+    unsigned long MapCacheFailures;// Offset=0x560 Size=0x4
+    unsigned char __align4[4];// Offset=0x564 Size=0x4
+    unsigned long long PagefileHashPages;// Offset=0x568 Size=0x8
+    struct _SYSPTES_HEADER PteHeader;// Offset=0x570 Size=0x118
+    struct _MI_SPECIAL_POOL * SessionSpecialPool;// Offset=0x688 Size=0x8
+    unsigned long long SystemVaTypeCount[16];// Offset=0x690 Size=0x80
+    unsigned char SystemVaType[256];// Offset=0x710 Size=0x100
+    struct _MI_SYSTEM_VA_ASSIGNMENT SystemVaRegions[14];// Offset=0x810 Size=0xe0
+};

@@ -1,0 +1,9 @@
+struct _RTL_RANGE// Size=0x28
+{
+    unsigned long long Start;// Offset=0x0 Size=0x8
+    unsigned long long End;// Offset=0x8 Size=0x8
+    void * UserData;// Offset=0x10 Size=0x8
+    void * Owner;// Offset=0x18 Size=0x8
+    unsigned char Attributes;// Offset=0x20 Size=0x1
+    unsigned char Flags;// Offset=0x21 Size=0x1
+};

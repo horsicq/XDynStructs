@@ -1,0 +1,4 @@
+struct _unnamed_1329// Size=0x4
+{
+    unsigned long PollInterval;// Offset=0x0 Size=0x4
+};

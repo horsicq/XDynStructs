@@ -1,0 +1,5 @@
+union _unnamed_891// Size=0x8
+{
+    long long Balance:2;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x2
+    struct _MM_AVL_NODE * Parent;// Offset=0x0 Size=0x8
+};

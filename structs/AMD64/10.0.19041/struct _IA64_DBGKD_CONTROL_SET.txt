@@ -1,0 +1,6 @@
+struct _IA64_DBGKD_CONTROL_SET// Size=0x14
+{
+    unsigned long Continue;// Offset=0x0 Size=0x4
+    unsigned long long CurrentSymbolStart;// Offset=0x4 Size=0x8
+    unsigned long long CurrentSymbolEnd;// Offset=0xc Size=0x8
+};

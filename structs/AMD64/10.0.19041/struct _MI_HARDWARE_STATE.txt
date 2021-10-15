@@ -1,0 +1,41 @@
+struct _MI_HARDWARE_STATE// Size=0x1c0
+{
+    unsigned long NodeMask;// Offset=0x0 Size=0x4
+    unsigned long NumaHintIndex;// Offset=0x4 Size=0x4
+    unsigned long NumaLastRangeIndexInclusive;// Offset=0x8 Size=0x4
+    unsigned char NodeShift;// Offset=0xc Size=0x1
+    unsigned char ChannelShift;// Offset=0xd Size=0x1
+    unsigned char __align0[2];// Offset=0xe Size=0x2
+    unsigned long ChannelHintIndex;// Offset=0x10 Size=0x4
+    unsigned long ChannelLastRangeIndexInclusive;// Offset=0x14 Size=0x4
+    struct _MI_NODE_NUMBER_ZERO_BASED * NodeGraph;// Offset=0x18 Size=0x8
+    struct _MI_SYSTEM_NODE_INFORMATION * SystemNodeInformation;// Offset=0x20 Size=0x8
+    struct _HAL_NODE_RANGE TemporaryNumaRanges[2];// Offset=0x28 Size=0x20
+    struct _HAL_NODE_RANGE * NumaMemoryRanges;// Offset=0x48 Size=0x8
+    struct _HAL_CHANNEL_MEMORY_RANGES * ChannelMemoryRanges;// Offset=0x50 Size=0x8
+    unsigned long SecondLevelCacheSize;// Offset=0x58 Size=0x4
+    unsigned long FirstLevelCacheSize;// Offset=0x5c Size=0x4
+    unsigned long PhysicalAddressBits;// Offset=0x60 Size=0x4
+    unsigned long LogicalProcessorsPerCore;// Offset=0x64 Size=0x4
+    unsigned char ProcessorCachesFlushedOnPowerLoss;// Offset=0x68 Size=0x1
+    unsigned char __align1[7];// Offset=0x69 Size=0x7
+    unsigned long long TotalPagesAllowed;// Offset=0x70 Size=0x8
+    unsigned long SecondaryColorMask;// Offset=0x78 Size=0x4
+    unsigned long SecondaryColors;// Offset=0x7c Size=0x4
+    unsigned long FlushTbForAttributeChange;// Offset=0x80 Size=0x4
+    unsigned long FlushCacheForAttributeChange;// Offset=0x84 Size=0x4
+    unsigned long FlushCacheForPageAttributeChange;// Offset=0x88 Size=0x4
+    unsigned long CacheFlushPromoteThreshold;// Offset=0x8c Size=0x4
+    union _LARGE_INTEGER PerformanceCounterFrequency;// Offset=0x90 Size=0x8
+    unsigned char __align2[40];// Offset=0x98 Size=0x28
+    unsigned long long InvalidPteMask;// Offset=0xc0 Size=0x8
+    unsigned char __align3[56];// Offset=0xc8 Size=0x38
+    unsigned long LargePageColors[3];// Offset=0x100 Size=0xc
+    unsigned char __align4[4];// Offset=0x10c Size=0x4
+    unsigned long long FlushTbThreshold;// Offset=0x110 Size=0x8
+    enum _MI_PFN_CACHE_ATTRIBUTE OptimalZeroingAttribute[4][4];// Offset=0x118 Size=0x40
+    unsigned char AttributeChangeRequiresReZero;// Offset=0x158 Size=0x1
+    unsigned char __align5[7];// Offset=0x159 Size=0x7
+    struct _MI_ZERO_COST_COUNTS ZeroCostCounts[2];// Offset=0x160 Size=0x20
+    unsigned long long VsmKernelPageCount;// Offset=0x180 Size=0x8
+};

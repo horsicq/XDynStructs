@@ -21,5 +21,6 @@ struct _KALPC_MESSAGE// Size=0x90
     void * WakeReference;// Offset=0x68 Size=0x4
     void * ExtensionBuffer;// Offset=0x6c Size=0x4
     unsigned long ExtensionBufferSize;// Offset=0x70 Size=0x4
+    unsigned char __align0[4];// Offset=0x74 Size=0x4
     struct _PORT_MESSAGE PortMessage;// Offset=0x78 Size=0x18
 };

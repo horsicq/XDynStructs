@@ -1,0 +1,11 @@
+struct _iobuf// Size=0x20
+{
+    char * _ptr;// Offset=0x0 Size=0x4
+    int _cnt;// Offset=0x4 Size=0x4
+    char * _base;// Offset=0x8 Size=0x4
+    int _flag;// Offset=0xc Size=0x4
+    int _file;// Offset=0x10 Size=0x4
+    int _charbuf;// Offset=0x14 Size=0x4
+    int _bufsiz;// Offset=0x18 Size=0x4
+    char * _tmpfname;// Offset=0x1c Size=0x4
+};

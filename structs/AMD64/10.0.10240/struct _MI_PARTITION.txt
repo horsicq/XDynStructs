@@ -2,13 +2,16 @@ struct _MI_PARTITION// Size=0x25c0
 {
     struct _MI_PARTITION_CORE Core;// Offset=0x0 Size=0x168
     struct _MI_PARTITION_MODWRITES Modwriter;// Offset=0x168 Size=0x2a0
+    unsigned char __align0[8];// Offset=0x408 Size=0x8
     struct _MI_PARTITION_STORES Store;// Offset=0x410 Size=0x80
     struct _MI_PARTITION_SEGMENTS Segments;// Offset=0x490 Size=0x110
+    unsigned char __align1[32];// Offset=0x5a0 Size=0x20
     struct _MI_PARTITION_PAGE_LISTS PageLists;// Offset=0x5c0 Size=0xcc0
     struct _MI_PARTITION_COMMIT Commit;// Offset=0x1280 Size=0x38
     struct _MI_PARTITION_ZEROING Zeroing;// Offset=0x12b8 Size=0x48
     struct _MI_PAGE_COMBINING_SUPPORT PageCombine;// Offset=0x1300 Size=0x188
     void * WorkingSetControl;// Offset=0x1488 Size=0x8
     struct _MMWORKING_SET_EXPANSION_HEAD WorkingSetExpansionHead;// Offset=0x1490 Size=0x10
+    unsigned char __align2[32];// Offset=0x14a0 Size=0x20
     struct _MI_VISIBLE_PARTITION Vp;// Offset=0x14c0 Size=0x1100
 };

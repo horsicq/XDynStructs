@@ -1,0 +1,242 @@
+struct _EPROCESS// Size=0xa40
+{
+    struct _KPROCESS Pcb;// Offset=0x0 Size=0x438
+    struct _EX_PUSH_LOCK ProcessLock;// Offset=0x438 Size=0x8
+    void * UniqueProcessId;// Offset=0x440 Size=0x8
+    struct _LIST_ENTRY ActiveProcessLinks;// Offset=0x448 Size=0x10
+    struct _EX_RUNDOWN_REF RundownProtect;// Offset=0x458 Size=0x8
+    unsigned long Flags2;// Offset=0x460 Size=0x4
+    unsigned long JobNotReallyActive:1;// Offset=0x460 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long AccountingFolded:1;// Offset=0x460 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long NewProcessReported:1;// Offset=0x460 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long ExitProcessReported:1;// Offset=0x460 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long ReportCommitChanges:1;// Offset=0x460 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long LastReportMemory:1;// Offset=0x460 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long ForceWakeCharge:1;// Offset=0x460 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long CrossSessionCreate:1;// Offset=0x460 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long NeedsHandleRundown:1;// Offset=0x460 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long RefTraceEnabled:1;// Offset=0x460 Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long PicoCreated:1;// Offset=0x460 Size=0x4 BitOffset=0xa BitSize=0x1
+    unsigned long EmptyJobEvaluated:1;// Offset=0x460 Size=0x4 BitOffset=0xb BitSize=0x1
+    unsigned long DefaultPagePriority:3;// Offset=0x460 Size=0x4 BitOffset=0xc BitSize=0x3
+    unsigned long PrimaryTokenFrozen:1;// Offset=0x460 Size=0x4 BitOffset=0xf BitSize=0x1
+    unsigned long ProcessVerifierTarget:1;// Offset=0x460 Size=0x4 BitOffset=0x10 BitSize=0x1
+    unsigned long RestrictSetThreadContext:1;// Offset=0x460 Size=0x4 BitOffset=0x11 BitSize=0x1
+    unsigned long AffinityPermanent:1;// Offset=0x460 Size=0x4 BitOffset=0x12 BitSize=0x1
+    unsigned long AffinityUpdateEnable:1;// Offset=0x460 Size=0x4 BitOffset=0x13 BitSize=0x1
+    unsigned long PropagateNode:1;// Offset=0x460 Size=0x4 BitOffset=0x14 BitSize=0x1
+    unsigned long ExplicitAffinity:1;// Offset=0x460 Size=0x4 BitOffset=0x15 BitSize=0x1
+    unsigned long ProcessExecutionState:2;// Offset=0x460 Size=0x4 BitOffset=0x16 BitSize=0x2
+    unsigned long EnableReadVmLogging:1;// Offset=0x460 Size=0x4 BitOffset=0x18 BitSize=0x1
+    unsigned long EnableWriteVmLogging:1;// Offset=0x460 Size=0x4 BitOffset=0x19 BitSize=0x1
+    unsigned long FatalAccessTerminationRequested:1;// Offset=0x460 Size=0x4 BitOffset=0x1a BitSize=0x1
+    unsigned long DisableSystemAllowedCpuSet:1;// Offset=0x460 Size=0x4 BitOffset=0x1b BitSize=0x1
+    unsigned long ProcessStateChangeRequest:2;// Offset=0x460 Size=0x4 BitOffset=0x1c BitSize=0x2
+    unsigned long ProcessStateChangeInProgress:1;// Offset=0x460 Size=0x4 BitOffset=0x1e BitSize=0x1
+    unsigned long InPrivate:1;// Offset=0x460 Size=0x4 BitOffset=0x1f BitSize=0x1
+    unsigned long Flags;// Offset=0x464 Size=0x4
+    unsigned long CreateReported:1;// Offset=0x464 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long NoDebugInherit:1;// Offset=0x464 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long ProcessExiting:1;// Offset=0x464 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long ProcessDelete:1;// Offset=0x464 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long ManageExecutableMemoryWrites:1;// Offset=0x464 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long VmDeleted:1;// Offset=0x464 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long OutswapEnabled:1;// Offset=0x464 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long Outswapped:1;// Offset=0x464 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long FailFastOnCommitFail:1;// Offset=0x464 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long Wow64VaSpace4Gb:1;// Offset=0x464 Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long AddressSpaceInitialized:2;// Offset=0x464 Size=0x4 BitOffset=0xa BitSize=0x2
+    unsigned long SetTimerResolution:1;// Offset=0x464 Size=0x4 BitOffset=0xc BitSize=0x1
+    unsigned long BreakOnTermination:1;// Offset=0x464 Size=0x4 BitOffset=0xd BitSize=0x1
+    unsigned long DeprioritizeViews:1;// Offset=0x464 Size=0x4 BitOffset=0xe BitSize=0x1
+    unsigned long WriteWatch:1;// Offset=0x464 Size=0x4 BitOffset=0xf BitSize=0x1
+    unsigned long ProcessInSession:1;// Offset=0x464 Size=0x4 BitOffset=0x10 BitSize=0x1
+    unsigned long OverrideAddressSpace:1;// Offset=0x464 Size=0x4 BitOffset=0x11 BitSize=0x1
+    unsigned long HasAddressSpace:1;// Offset=0x464 Size=0x4 BitOffset=0x12 BitSize=0x1
+    unsigned long LaunchPrefetched:1;// Offset=0x464 Size=0x4 BitOffset=0x13 BitSize=0x1
+    unsigned long Background:1;// Offset=0x464 Size=0x4 BitOffset=0x14 BitSize=0x1
+    unsigned long VmTopDown:1;// Offset=0x464 Size=0x4 BitOffset=0x15 BitSize=0x1
+    unsigned long ImageNotifyDone:1;// Offset=0x464 Size=0x4 BitOffset=0x16 BitSize=0x1
+    unsigned long PdeUpdateNeeded:1;// Offset=0x464 Size=0x4 BitOffset=0x17 BitSize=0x1
+    unsigned long VdmAllowed:1;// Offset=0x464 Size=0x4 BitOffset=0x18 BitSize=0x1
+    unsigned long ProcessRundown:1;// Offset=0x464 Size=0x4 BitOffset=0x19 BitSize=0x1
+    unsigned long ProcessInserted:1;// Offset=0x464 Size=0x4 BitOffset=0x1a BitSize=0x1
+    unsigned long DefaultIoPriority:3;// Offset=0x464 Size=0x4 BitOffset=0x1b BitSize=0x3
+    unsigned long ProcessSelfDelete:1;// Offset=0x464 Size=0x4 BitOffset=0x1e BitSize=0x1
+    unsigned long SetTimerResolutionLink:1;// Offset=0x464 Size=0x4 BitOffset=0x1f BitSize=0x1
+    union _LARGE_INTEGER CreateTime;// Offset=0x468 Size=0x8
+    unsigned long long ProcessQuotaUsage[2];// Offset=0x470 Size=0x10
+    unsigned long long ProcessQuotaPeak[2];// Offset=0x480 Size=0x10
+    unsigned long long PeakVirtualSize;// Offset=0x490 Size=0x8
+    unsigned long long VirtualSize;// Offset=0x498 Size=0x8
+    struct _LIST_ENTRY SessionProcessLinks;// Offset=0x4a0 Size=0x10
+    void * ExceptionPortData;// Offset=0x4b0 Size=0x8
+    unsigned long long ExceptionPortValue;// Offset=0x4b0 Size=0x8
+    unsigned long long ExceptionPortState:3;// Offset=0x4b0 Size=0x8 BitOffset=0x0 BitSize=0x3
+    struct _EX_FAST_REF Token;// Offset=0x4b8 Size=0x8
+    unsigned long long MmReserved;// Offset=0x4c0 Size=0x8
+    struct _EX_PUSH_LOCK AddressCreationLock;// Offset=0x4c8 Size=0x8
+    struct _EX_PUSH_LOCK PageTableCommitmentLock;// Offset=0x4d0 Size=0x8
+    struct _ETHREAD * RotateInProgress;// Offset=0x4d8 Size=0x8
+    struct _ETHREAD * ForkInProgress;// Offset=0x4e0 Size=0x8
+    struct _EJOB * CommitChargeJob;// Offset=0x4e8 Size=0x8
+    struct _RTL_AVL_TREE CloneRoot;// Offset=0x4f0 Size=0x8
+    unsigned long long NumberOfPrivatePages;// Offset=0x4f8 Size=0x8
+    unsigned long long NumberOfLockedPages;// Offset=0x500 Size=0x8
+    void * Win32Process;// Offset=0x508 Size=0x8
+    struct _EJOB * Job;// Offset=0x510 Size=0x8
+    void * SectionObject;// Offset=0x518 Size=0x8
+    void * SectionBaseAddress;// Offset=0x520 Size=0x8
+    unsigned long Cookie;// Offset=0x528 Size=0x4
+    unsigned char __align0[4];// Offset=0x52c Size=0x4
+    struct _PAGEFAULT_HISTORY * WorkingSetWatch;// Offset=0x530 Size=0x8
+    void * Win32WindowStation;// Offset=0x538 Size=0x8
+    void * InheritedFromUniqueProcessId;// Offset=0x540 Size=0x8
+    unsigned long long OwnerProcessId;// Offset=0x548 Size=0x8
+    struct _PEB * Peb;// Offset=0x550 Size=0x8
+    struct _MM_SESSION_SPACE * Session;// Offset=0x558 Size=0x8
+    void * Spare1;// Offset=0x560 Size=0x8
+    struct _EPROCESS_QUOTA_BLOCK * QuotaBlock;// Offset=0x568 Size=0x8
+    struct _HANDLE_TABLE * ObjectTable;// Offset=0x570 Size=0x8
+    void * DebugPort;// Offset=0x578 Size=0x8
+    struct _EWOW64PROCESS * WoW64Process;// Offset=0x580 Size=0x8
+    void * DeviceMap;// Offset=0x588 Size=0x8
+    void * EtwDataSource;// Offset=0x590 Size=0x8
+    unsigned long long PageDirectoryPte;// Offset=0x598 Size=0x8
+    struct _FILE_OBJECT * ImageFilePointer;// Offset=0x5a0 Size=0x8
+    unsigned char ImageFileName[15];// Offset=0x5a8 Size=0xf
+    unsigned char PriorityClass;// Offset=0x5b7 Size=0x1
+    void * SecurityPort;// Offset=0x5b8 Size=0x8
+    struct _SE_AUDIT_PROCESS_CREATION_INFO SeAuditProcessCreationInfo;// Offset=0x5c0 Size=0x8
+    struct _LIST_ENTRY JobLinks;// Offset=0x5c8 Size=0x10
+    void * HighestUserAddress;// Offset=0x5d8 Size=0x8
+    struct _LIST_ENTRY ThreadListHead;// Offset=0x5e0 Size=0x10
+    unsigned long ActiveThreads;// Offset=0x5f0 Size=0x4
+    unsigned long ImagePathHash;// Offset=0x5f4 Size=0x4
+    unsigned long DefaultHardErrorProcessing;// Offset=0x5f8 Size=0x4
+    long LastThreadExitStatus;// Offset=0x5fc Size=0x4
+    struct _EX_FAST_REF PrefetchTrace;// Offset=0x600 Size=0x8
+    void * LockedPagesList;// Offset=0x608 Size=0x8
+    union _LARGE_INTEGER ReadOperationCount;// Offset=0x610 Size=0x8
+    union _LARGE_INTEGER WriteOperationCount;// Offset=0x618 Size=0x8
+    union _LARGE_INTEGER OtherOperationCount;// Offset=0x620 Size=0x8
+    union _LARGE_INTEGER ReadTransferCount;// Offset=0x628 Size=0x8
+    union _LARGE_INTEGER WriteTransferCount;// Offset=0x630 Size=0x8
+    union _LARGE_INTEGER OtherTransferCount;// Offset=0x638 Size=0x8
+    unsigned long long CommitChargeLimit;// Offset=0x640 Size=0x8
+    unsigned long long CommitCharge;// Offset=0x648 Size=0x8
+    unsigned long long CommitChargePeak;// Offset=0x650 Size=0x8
+    unsigned char __align1[40];// Offset=0x658 Size=0x28
+    struct _MMSUPPORT_FULL Vm;// Offset=0x680 Size=0x140
+    struct _LIST_ENTRY MmProcessLinks;// Offset=0x7c0 Size=0x10
+    unsigned long ModifiedPageCount;// Offset=0x7d0 Size=0x4
+    long ExitStatus;// Offset=0x7d4 Size=0x4
+    struct _RTL_AVL_TREE VadRoot;// Offset=0x7d8 Size=0x8
+    void * VadHint;// Offset=0x7e0 Size=0x8
+    unsigned long long VadCount;// Offset=0x7e8 Size=0x8
+    unsigned long long VadPhysicalPages;// Offset=0x7f0 Size=0x8
+    unsigned long long VadPhysicalPagesLimit;// Offset=0x7f8 Size=0x8
+    struct _ALPC_PROCESS_CONTEXT AlpcContext;// Offset=0x800 Size=0x20
+    struct _LIST_ENTRY TimerResolutionLink;// Offset=0x820 Size=0x10
+    struct _PO_DIAG_STACK_RECORD * TimerResolutionStackRecord;// Offset=0x830 Size=0x8
+    unsigned long RequestedTimerResolution;// Offset=0x838 Size=0x4
+    unsigned long SmallestTimerResolution;// Offset=0x83c Size=0x4
+    union _LARGE_INTEGER ExitTime;// Offset=0x840 Size=0x8
+    struct _INVERTED_FUNCTION_TABLE * InvertedFunctionTable;// Offset=0x848 Size=0x8
+    struct _EX_PUSH_LOCK InvertedFunctionTableLock;// Offset=0x850 Size=0x8
+    unsigned long ActiveThreadsHighWatermark;// Offset=0x858 Size=0x4
+    unsigned long LargePrivateVadCount;// Offset=0x85c Size=0x4
+    struct _EX_PUSH_LOCK ThreadListLock;// Offset=0x860 Size=0x8
+    void * WnfContext;// Offset=0x868 Size=0x8
+    struct _EJOB * ServerSilo;// Offset=0x870 Size=0x8
+    unsigned char SignatureLevel;// Offset=0x878 Size=0x1
+    unsigned char SectionSignatureLevel;// Offset=0x879 Size=0x1
+    struct _PS_PROTECTION Protection;// Offset=0x87a Size=0x1
+    unsigned char HangCount:3;// Offset=0x87b Size=0x1 BitOffset=0x0 BitSize=0x3
+    unsigned char GhostCount:3;// Offset=0x87b Size=0x1 BitOffset=0x3 BitSize=0x3
+    unsigned char PrefilterException:1;// Offset=0x87b Size=0x1 BitOffset=0x6 BitSize=0x1
+    unsigned long Flags3;// Offset=0x87c Size=0x4
+    unsigned long Minimal:1;// Offset=0x87c Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long ReplacingPageRoot:1;// Offset=0x87c Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long Crashed:1;// Offset=0x87c Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long JobVadsAreTracked:1;// Offset=0x87c Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long VadTrackingDisabled:1;// Offset=0x87c Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long AuxiliaryProcess:1;// Offset=0x87c Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long SubsystemProcess:1;// Offset=0x87c Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long IndirectCpuSets:1;// Offset=0x87c Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long RelinquishedCommit:1;// Offset=0x87c Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long HighGraphicsPriority:1;// Offset=0x87c Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long CommitFailLogged:1;// Offset=0x87c Size=0x4 BitOffset=0xa BitSize=0x1
+    unsigned long ReserveFailLogged:1;// Offset=0x87c Size=0x4 BitOffset=0xb BitSize=0x1
+    unsigned long SystemProcess:1;// Offset=0x87c Size=0x4 BitOffset=0xc BitSize=0x1
+    unsigned long HideImageBaseAddresses:1;// Offset=0x87c Size=0x4 BitOffset=0xd BitSize=0x1
+    unsigned long AddressPolicyFrozen:1;// Offset=0x87c Size=0x4 BitOffset=0xe BitSize=0x1
+    unsigned long ProcessFirstResume:1;// Offset=0x87c Size=0x4 BitOffset=0xf BitSize=0x1
+    unsigned long ForegroundExternal:1;// Offset=0x87c Size=0x4 BitOffset=0x10 BitSize=0x1
+    unsigned long ForegroundSystem:1;// Offset=0x87c Size=0x4 BitOffset=0x11 BitSize=0x1
+    unsigned long HighMemoryPriority:1;// Offset=0x87c Size=0x4 BitOffset=0x12 BitSize=0x1
+    unsigned long EnableProcessSuspendResumeLogging:1;// Offset=0x87c Size=0x4 BitOffset=0x13 BitSize=0x1
+    unsigned long EnableThreadSuspendResumeLogging:1;// Offset=0x87c Size=0x4 BitOffset=0x14 BitSize=0x1
+    unsigned long SecurityDomainChanged:1;// Offset=0x87c Size=0x4 BitOffset=0x15 BitSize=0x1
+    unsigned long SecurityFreezeComplete:1;// Offset=0x87c Size=0x4 BitOffset=0x16 BitSize=0x1
+    unsigned long VmProcessorHost:1;// Offset=0x87c Size=0x4 BitOffset=0x17 BitSize=0x1
+    unsigned long VmProcessorHostTransition:1;// Offset=0x87c Size=0x4 BitOffset=0x18 BitSize=0x1
+    unsigned long AltSyscall:1;// Offset=0x87c Size=0x4 BitOffset=0x19 BitSize=0x1
+    unsigned long TimerResolutionIgnore:1;// Offset=0x87c Size=0x4 BitOffset=0x1a BitSize=0x1
+    unsigned long DisallowUserTerminate:1;// Offset=0x87c Size=0x4 BitOffset=0x1b BitSize=0x1
+    long DeviceAsid;// Offset=0x880 Size=0x4
+    unsigned char __align2[4];// Offset=0x884 Size=0x4
+    void * SvmData;// Offset=0x888 Size=0x8
+    struct _EX_PUSH_LOCK SvmProcessLock;// Offset=0x890 Size=0x8
+    unsigned long long SvmLock;// Offset=0x898 Size=0x8
+    struct _LIST_ENTRY SvmProcessDeviceListHead;// Offset=0x8a0 Size=0x10
+    unsigned long long LastFreezeInterruptTime;// Offset=0x8b0 Size=0x8
+    struct _PROCESS_DISK_COUNTERS * DiskCounters;// Offset=0x8b8 Size=0x8
+    void * PicoContext;// Offset=0x8c0 Size=0x8
+    void * EnclaveTable;// Offset=0x8c8 Size=0x8
+    unsigned long long EnclaveNumber;// Offset=0x8d0 Size=0x8
+    struct _EX_PUSH_LOCK EnclaveLock;// Offset=0x8d8 Size=0x8
+    unsigned long HighPriorityFaultsAllowed;// Offset=0x8e0 Size=0x4
+    unsigned char __align3[4];// Offset=0x8e4 Size=0x4
+    struct _PO_PROCESS_ENERGY_CONTEXT * EnergyContext;// Offset=0x8e8 Size=0x8
+    void * VmContext;// Offset=0x8f0 Size=0x8
+    unsigned long long SequenceNumber;// Offset=0x8f8 Size=0x8
+    unsigned long long CreateInterruptTime;// Offset=0x900 Size=0x8
+    unsigned long long CreateUnbiasedInterruptTime;// Offset=0x908 Size=0x8
+    unsigned long long TotalUnbiasedFrozenTime;// Offset=0x910 Size=0x8
+    unsigned long long LastAppStateUpdateTime;// Offset=0x918 Size=0x8
+    unsigned long long LastAppStateUptime:61;// Offset=0x920 Size=0x8 BitOffset=0x0 BitSize=0x3d
+    unsigned long long LastAppState:3;// Offset=0x920 Size=0x8 BitOffset=0x3d BitSize=0x3
+    unsigned long long SharedCommitCharge;// Offset=0x928 Size=0x8
+    struct _EX_PUSH_LOCK SharedCommitLock;// Offset=0x930 Size=0x8
+    struct _LIST_ENTRY SharedCommitLinks;// Offset=0x938 Size=0x10
+    unsigned long long AllowedCpuSets;// Offset=0x948 Size=0x8
+    unsigned long long DefaultCpuSets;// Offset=0x950 Size=0x8
+    unsigned long long * AllowedCpuSetsIndirect;// Offset=0x948 Size=0x8
+    unsigned long long * DefaultCpuSetsIndirect;// Offset=0x950 Size=0x8
+    void * DiskIoAttribution;// Offset=0x958 Size=0x8
+    void * DxgProcess;// Offset=0x960 Size=0x8
+    unsigned long Win32KFilterSet;// Offset=0x968 Size=0x4
+    unsigned char __align4[4];// Offset=0x96c Size=0x4
+    union _PS_INTERLOCKED_TIMER_DELAY_VALUES ProcessTimerDelay;// Offset=0x970 Size=0x8
+    unsigned long KTimerSets;// Offset=0x978 Size=0x4
+    unsigned long KTimer2Sets;// Offset=0x97c Size=0x4
+    unsigned long ThreadTimerSets;// Offset=0x980 Size=0x4
+    unsigned char __align5[4];// Offset=0x984 Size=0x4
+    unsigned long long VirtualTimerListLock;// Offset=0x988 Size=0x8
+    struct _LIST_ENTRY VirtualTimerListHead;// Offset=0x990 Size=0x10
+    struct _WNF_STATE_NAME WakeChannel;// Offset=0x9a0 Size=0x8
+    struct _PS_PROCESS_WAKE_INFORMATION WakeInfo;// Offset=0x9a0 Size=0x30
+    unsigned long MitigationFlags;// Offset=0x9d0 Size=0x4
+    struct <anonymous-tag> MitigationFlagsValues;// Offset=0x9d0 Size=0x4
+    unsigned long MitigationFlags2;// Offset=0x9d4 Size=0x4
+    struct <anonymous-tag> MitigationFlags2Values;// Offset=0x9d4 Size=0x4
+    void * PartitionObject;// Offset=0x9d8 Size=0x8
+    unsigned long long SecurityDomain;// Offset=0x9e0 Size=0x8
+    unsigned long long ParentSecurityDomain;// Offset=0x9e8 Size=0x8
+    void * CoverageSamplerContext;// Offset=0x9f0 Size=0x8
+    void * MmHotPatchContext;// Offset=0x9f8 Size=0x8
+    struct _RTL_AVL_TREE DynamicEHContinuationTargetsTree;// Offset=0xa00 Size=0x8
+    struct _EX_PUSH_LOCK DynamicEHContinuationTargetsLock;// Offset=0xa08 Size=0x8
+    struct _PS_DYNAMIC_ENFORCED_ADDRESS_RANGES DynamicEnforcedCetCompatibleRanges;// Offset=0xa10 Size=0x10
+};

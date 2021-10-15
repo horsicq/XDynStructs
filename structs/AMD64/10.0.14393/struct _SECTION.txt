@@ -1,0 +1,12 @@
+struct _SECTION// Size=0x40
+{
+    struct _RTL_BALANCED_NODE SectionNode;// Offset=0x0 Size=0x18
+    unsigned long long StartingVpn;// Offset=0x18 Size=0x8
+    unsigned long long EndingVpn;// Offset=0x20 Size=0x8
+    union _unnamed_976 u1;// Offset=0x28 Size=0x8
+    unsigned long long SizeOfSection;// Offset=0x30 Size=0x8
+    union _unnamed_224 u;// Offset=0x38 Size=0x4
+    unsigned long InitialPageProtection:12;// Offset=0x3c Size=0x4 BitOffset=0x0 BitSize=0xc
+    unsigned long SessionId:19;// Offset=0x3c Size=0x4 BitOffset=0xc BitSize=0x13
+    unsigned long NoValidationNeeded:1;// Offset=0x3c Size=0x4 BitOffset=0x1f BitSize=0x1
+};

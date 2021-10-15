@@ -1,0 +1,6 @@
+struct _KHETERO_PROCESSOR_SET// Size=0x18
+{
+    unsigned long long IdealMask;// Offset=0x0 Size=0x8
+    unsigned long long PreferredMask;// Offset=0x8 Size=0x8
+    unsigned long long AvailableMask;// Offset=0x10 Size=0x8
+};

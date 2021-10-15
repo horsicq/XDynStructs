@@ -1,6 +1,7 @@
 struct _DMA_IOMMU_INTERFACE// Size=0x68
 {
     unsigned long Version;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     long  ( * CreateDomain)(unsigned char ,struct _IOMMU_DMA_DOMAIN ** );// Offset=0x8 Size=0x8
     long  ( * DeleteDomain)(struct _IOMMU_DMA_DOMAIN * );// Offset=0x10 Size=0x8
     long  ( * AttachDevice)(struct _IOMMU_DMA_DOMAIN * ,struct _DEVICE_OBJECT * ,unsigned long ,unsigned long );// Offset=0x18 Size=0x8

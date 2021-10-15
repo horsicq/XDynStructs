@@ -3,6 +3,7 @@ struct _PPM_IDLE_STATES// Size=0x2d8
     unsigned char ForceIdle;// Offset=0x0 Size=0x1
     unsigned char EstimateIdleDuration;// Offset=0x1 Size=0x1
     unsigned char ExitLatencyTraceEnabled;// Offset=0x2 Size=0x1
+    unsigned char __align0[1];// Offset=0x3 Size=0x1
     unsigned long ExitLatencyCountdown;// Offset=0x4 Size=0x4
     unsigned long TargetState;// Offset=0x8 Size=0x4
     unsigned long ActualState;// Offset=0xc Size=0x4
@@ -13,8 +14,10 @@ struct _PPM_IDLE_STATES// Size=0x2d8
     unsigned long ProcessorIdleCount;// Offset=0x20 Size=0x4
     unsigned long Type;// Offset=0x24 Size=0x4
     unsigned long ReasonFlags;// Offset=0x28 Size=0x4
+    unsigned char __align1[4];// Offset=0x2c Size=0x4
     long long InitiateWakeStamp;// Offset=0x30 Size=0x8
     long PreviousStatus;// Offset=0x38 Size=0x4
+    unsigned char __align2[4];// Offset=0x3c Size=0x4
     struct _KAFFINITY_EX PrimaryProcessorMask;// Offset=0x40 Size=0xa8
     struct _KAFFINITY_EX SecondaryProcessorMask;// Offset=0xe8 Size=0xa8
     void  ( * IdlePrepare)(struct _PROCESSOR_IDLE_PREPARE_INFO * );// Offset=0x190 Size=0x8

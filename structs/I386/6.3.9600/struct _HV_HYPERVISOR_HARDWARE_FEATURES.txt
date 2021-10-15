@@ -1,0 +1,14 @@
+struct _HV_HYPERVISOR_HARDWARE_FEATURES// Size=0x10
+{
+    unsigned int ApicOverlayAssistInUse:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned int MsrBitmapsInUse:1;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned int ArchitecturalPerformanceCountersInUse:1;// Offset=0x0 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned int SecondLevelAddressTranslationInUse:1;// Offset=0x0 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned int DmaRemappingInUse:1;// Offset=0x0 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned int InterruptRemappingInUse:1;// Offset=0x0 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned int MemoryPatrolScrubberPresent:1;// Offset=0x0 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned int Reserved:25;// Offset=0x0 Size=0x4 BitOffset=0x7 BitSize=0x19
+    unsigned int ReservedEbx;// Offset=0x4 Size=0x4
+    unsigned int ReservedEcx;// Offset=0x8 Size=0x4
+    unsigned int ReservedEdx;// Offset=0xc Size=0x4
+};

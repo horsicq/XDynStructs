@@ -1,0 +1,9 @@
+struct _HV_HYPERVISOR_VERSION_INFO// Size=0x10
+{
+    unsigned int BuildNumber;// Offset=0x0 Size=0x4
+    unsigned int MinorVersion:16;// Offset=0x4 Size=0x4 BitOffset=0x0 BitSize=0x10
+    unsigned int MajorVersion:16;// Offset=0x4 Size=0x4 BitOffset=0x10 BitSize=0x10
+    unsigned int ServicePack;// Offset=0x8 Size=0x4
+    unsigned int ServiceNumber:24;// Offset=0xc Size=0x4 BitOffset=0x0 BitSize=0x18
+    unsigned int ServiceBranch:8;// Offset=0xc Size=0x4 BitOffset=0x18 BitSize=0x8
+};

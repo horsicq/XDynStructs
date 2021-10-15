@@ -1,6 +1,7 @@
 struct _SID_AND_ATTRIBUTES_HASH// Size=0x110
 {
     unsigned long SidCount;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     struct _SID_AND_ATTRIBUTES * SidAttr;// Offset=0x8 Size=0x8
     unsigned long long Hash[32];// Offset=0x10 Size=0x100
 };

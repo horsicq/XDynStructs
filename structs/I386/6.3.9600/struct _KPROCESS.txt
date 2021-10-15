@@ -1,0 +1,43 @@
+struct _KPROCESS// Size=0xa0
+{
+    struct _DISPATCHER_HEADER Header;// Offset=0x0 Size=0x10
+    struct _LIST_ENTRY ProfileListHead;// Offset=0x10 Size=0x8
+    unsigned long DirectoryTableBase;// Offset=0x18 Size=0x4
+    struct _KGDTENTRY LdtDescriptor;// Offset=0x1c Size=0x8
+    struct _KIDTENTRY Int21Descriptor;// Offset=0x24 Size=0x8
+    struct _LIST_ENTRY ThreadListHead;// Offset=0x2c Size=0x8
+    unsigned long ProcessLock;// Offset=0x34 Size=0x4
+    struct _KAFFINITY_EX Affinity;// Offset=0x38 Size=0xc
+    struct _LIST_ENTRY ReadyListHead;// Offset=0x44 Size=0x8
+    struct _SINGLE_LIST_ENTRY SwapListEntry;// Offset=0x4c Size=0x4
+    struct _KAFFINITY_EX ActiveProcessors;// Offset=0x50 Size=0xc
+    long AutoAlignment:1;// Offset=0x5c Size=0x4 BitOffset=0x0 BitSize=0x1
+    long DisableBoost:1;// Offset=0x5c Size=0x4 BitOffset=0x1 BitSize=0x1
+    long DisableQuantum:1;// Offset=0x5c Size=0x4 BitOffset=0x2 BitSize=0x1
+    long AffinitySet:1;// Offset=0x5c Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long DeepFreeze:1;// Offset=0x5c Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long TimerVirtualization:1;// Offset=0x5c Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long CheckStackExtents:1;// Offset=0x5c Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long ActiveGroupsMask:1;// Offset=0x5c Size=0x4 BitOffset=0x7 BitSize=0x1
+    long ReservedFlags:24;// Offset=0x5c Size=0x4 BitOffset=0x8 BitSize=0x18
+    long ProcessFlags;// Offset=0x5c Size=0x4
+    char BasePriority;// Offset=0x60 Size=0x1
+    char QuantumReset;// Offset=0x61 Size=0x1
+    unsigned char Visited;// Offset=0x62 Size=0x1
+    union _KEXECUTE_OPTIONS Flags;// Offset=0x63 Size=0x1
+    unsigned long ThreadSeed[1];// Offset=0x64 Size=0x4
+    unsigned short IdealNode[1];// Offset=0x68 Size=0x2
+    unsigned short IdealGlobalNode;// Offset=0x6a Size=0x2
+    unsigned char AddressPolicy;// Offset=0x6c Size=0x1
+    unsigned char Spare1;// Offset=0x6d Size=0x1
+    unsigned short IopmOffset;// Offset=0x6e Size=0x2
+    struct _KSCHEDULING_GROUP * SchedulingGroup;// Offset=0x70 Size=0x4
+    union _KSTACK_COUNT StackCount;// Offset=0x74 Size=0x4
+    struct _LIST_ENTRY ProcessListEntry;// Offset=0x78 Size=0x8
+    unsigned long long CycleTime;// Offset=0x80 Size=0x8
+    unsigned long long ContextSwitches;// Offset=0x88 Size=0x8
+    unsigned long FreezeCount;// Offset=0x90 Size=0x4
+    unsigned long KernelTime;// Offset=0x94 Size=0x4
+    unsigned long UserTime;// Offset=0x98 Size=0x4
+    void * VdmTrapcHandler;// Offset=0x9c Size=0x4
+};

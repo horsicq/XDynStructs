@@ -1,0 +1,7 @@
+struct PROCESSOR_IDLESTATE_POLICY// Size=0x20
+{
+    unsigned short Revision;// Offset=0x0 Size=0x2
+    union <anonymous-tag> Flags;// Offset=0x2 Size=0x2
+    unsigned long PolicyCount;// Offset=0x4 Size=0x4
+    struct PROCESSOR_IDLESTATE_INFO Policy[3];// Offset=0x8 Size=0x18
+};

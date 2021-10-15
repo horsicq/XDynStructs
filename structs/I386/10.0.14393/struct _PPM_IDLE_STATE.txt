@@ -1,0 +1,18 @@
+struct _PPM_IDLE_STATE// Size=0x44
+{
+    struct _KAFFINITY_EX DomainMembers;// Offset=0x0 Size=0xc
+    struct _UNICODE_STRING Name;// Offset=0xc Size=0x8
+    unsigned long Latency;// Offset=0x14 Size=0x4
+    unsigned long BreakEvenDuration;// Offset=0x18 Size=0x4
+    unsigned long Power;// Offset=0x1c Size=0x4
+    unsigned long StateFlags;// Offset=0x20 Size=0x4
+    struct _PPM_VETO_ACCOUNTING VetoAccounting;// Offset=0x24 Size=0x18
+    unsigned char StateType;// Offset=0x3c Size=0x1
+    unsigned char InterruptsEnabled;// Offset=0x3d Size=0x1
+    unsigned char Interruptible;// Offset=0x3e Size=0x1
+    unsigned char ContextRetained;// Offset=0x3f Size=0x1
+    unsigned char CacheCoherent;// Offset=0x40 Size=0x1
+    unsigned char WakesSpuriously;// Offset=0x41 Size=0x1
+    unsigned char PlatformOnly;// Offset=0x42 Size=0x1
+    unsigned char NoCState;// Offset=0x43 Size=0x1
+};

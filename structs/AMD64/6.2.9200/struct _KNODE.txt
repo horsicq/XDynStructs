@@ -1,6 +1,7 @@
 struct _KNODE// Size=0xc0
 {
     unsigned long long DeepIdleSet;// Offset=0x0 Size=0x8
+    unsigned char __align0[56];// Offset=0x8 Size=0x38
     unsigned long ProximityId;// Offset=0x40 Size=0x4
     unsigned short NodeNumber;// Offset=0x44 Size=0x2
     unsigned short PrimaryNodeNumber;// Offset=0x46 Size=0x2
@@ -8,9 +9,11 @@ struct _KNODE// Size=0xc0
     struct _flags Flags;// Offset=0x49 Size=0x1
     unsigned char Stride;// Offset=0x4a Size=0x1
     unsigned char NodePad0;// Offset=0x4b Size=0x1
+    unsigned char __align1[4];// Offset=0x4c Size=0x4
     struct _GROUP_AFFINITY Affinity;// Offset=0x50 Size=0x10
     unsigned long long IdleCpuSet;// Offset=0x60 Size=0x8
     unsigned long long IdleSmtSet;// Offset=0x68 Size=0x8
+    unsigned char __align2[16];// Offset=0x70 Size=0x10
     unsigned long Seed;// Offset=0x80 Size=0x4
     unsigned long Lowest;// Offset=0x84 Size=0x4
     unsigned long Highest;// Offset=0x88 Size=0x4

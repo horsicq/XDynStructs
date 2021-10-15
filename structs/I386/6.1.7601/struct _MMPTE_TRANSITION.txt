@@ -1,0 +1,12 @@
+struct _MMPTE_TRANSITION// Size=0x4
+{
+    unsigned long Valid:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long Write:1;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long Owner:1;// Offset=0x0 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long WriteThrough:1;// Offset=0x0 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long CacheDisable:1;// Offset=0x0 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long Protection:5;// Offset=0x0 Size=0x4 BitOffset=0x5 BitSize=0x5
+    unsigned long Prototype:1;// Offset=0x0 Size=0x4 BitOffset=0xa BitSize=0x1
+    unsigned long Transition:1;// Offset=0x0 Size=0x4 BitOffset=0xb BitSize=0x1
+    unsigned long PageFrameNumber:20;// Offset=0x0 Size=0x4 BitOffset=0xc BitSize=0x14
+};

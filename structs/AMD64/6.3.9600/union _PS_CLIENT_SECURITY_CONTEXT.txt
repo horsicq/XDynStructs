@@ -1,0 +1,7 @@
+union _PS_CLIENT_SECURITY_CONTEXT// Size=0x8
+{
+    unsigned long long ImpersonationData;// Offset=0x0 Size=0x8
+    void * ImpersonationToken;// Offset=0x0 Size=0x8
+    unsigned long long ImpersonationLevel:2;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x2
+    unsigned long long EffectiveOnly:1;// Offset=0x0 Size=0x8 BitOffset=0x2 BitSize=0x1
+};

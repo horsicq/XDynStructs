@@ -1,0 +1,8 @@
+struct _NB10// Size=0x14
+{
+    unsigned long Signature;// Offset=0x0 Size=0x4
+    unsigned long Offset;// Offset=0x4 Size=0x4
+    unsigned long TimeStamp;// Offset=0x8 Size=0x4
+    unsigned long Age;// Offset=0xc Size=0x4
+    char PdbName[1];// Offset=0x10 Size=0x1
+};

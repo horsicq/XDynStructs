@@ -1,0 +1,12 @@
+struct _MI_ENCLAVE_STATE// Size=0x48
+{
+    struct _RTL_AVL_TREE EnclaveRegions;// Offset=0x0 Size=0x8
+    void * EnclaveMetadataPage;// Offset=0x8 Size=0x8
+    struct _RTL_BITMAP * EnclaveMetadataBitMap;// Offset=0x10 Size=0x8
+    struct _EX_PUSH_LOCK EnclaveMetadataEntryLock;// Offset=0x18 Size=0x8
+    long EnclaveMetadataPageLock;// Offset=0x20 Size=0x4
+    unsigned char __align0[4];// Offset=0x24 Size=0x4
+    struct _LIST_ENTRY EnclaveList;// Offset=0x28 Size=0x10
+    struct _EX_PUSH_LOCK EnclaveListLock;// Offset=0x38 Size=0x8
+    struct _EX_RUNDOWN_REF ShutdownRundown;// Offset=0x40 Size=0x8
+};

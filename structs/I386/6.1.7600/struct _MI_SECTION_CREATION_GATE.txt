@@ -1,0 +1,5 @@
+struct _MI_SECTION_CREATION_GATE// Size=0x14
+{
+    struct _MI_SECTION_CREATION_GATE * Next;// Offset=0x0 Size=0x4
+    struct _KGATE Gate;// Offset=0x4 Size=0x10
+};

@@ -1,0 +1,26 @@
+struct _MI_POOL_STATE// Size=0x4dc
+{
+    unsigned long MaximumNonPagedPoolThreshold;// Offset=0x0 Size=0x4
+    unsigned long NonPagedPoolSListMaximum[3];// Offset=0x4 Size=0xc
+    unsigned long AllocatedNonPagedPool;// Offset=0x10 Size=0x4
+    struct _SINGLE_LIST_ENTRY BadPoolHead;// Offset=0x14 Size=0x4
+    unsigned long HighEventSets;// Offset=0x18 Size=0x4
+    unsigned char HighEventSetsValid;// Offset=0x1c Size=0x1
+    unsigned char __align0[3];// Offset=0x1d Size=0x3
+    unsigned long PoolFailures[3][3];// Offset=0x20 Size=0x24
+    struct _MI_POOL_FAILURE_REASONS PoolFailureReasons;// Offset=0x44 Size=0x2c
+    unsigned long LowPagedPoolThreshold;// Offset=0x70 Size=0x4
+    unsigned long HighPagedPoolThreshold;// Offset=0x74 Size=0x4
+    long SpecialPoolPdesMax;// Offset=0x78 Size=0x4
+    unsigned char NonPagedPoolNodes[1024];// Offset=0x7c Size=0x400
+    struct _MM_PAGED_POOL_INFO PagedProtoPoolInfo;// Offset=0x47c Size=0x1c
+    unsigned long PagedPoolSListMaximum;// Offset=0x498 Size=0x4
+    unsigned long PreemptiveTrims[4];// Offset=0x49c Size=0x10
+    unsigned long SpecialPagesInUsePeak;// Offset=0x4ac Size=0x4
+    unsigned long SpecialPoolRejected[6];// Offset=0x4b0 Size=0x18
+    unsigned long SpecialPagesNonPaged;// Offset=0x4c8 Size=0x4
+    long SpecialPoolPdes;// Offset=0x4cc Size=0x4
+    unsigned long SessionSpecialPoolPdesMax;// Offset=0x4d0 Size=0x4
+    unsigned long TotalPagedPoolQuota;// Offset=0x4d4 Size=0x4
+    unsigned long TotalNonPagedPoolQuota;// Offset=0x4d8 Size=0x4
+};

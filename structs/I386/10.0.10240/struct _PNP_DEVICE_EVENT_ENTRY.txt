@@ -10,6 +10,7 @@ struct _PNP_DEVICE_EVENT_ENTRY// Size=0x84
     unsigned long RefCount;// Offset=0x20 Size=0x4
     unsigned long Lock;// Offset=0x24 Size=0x4
     unsigned char Cancel;// Offset=0x28 Size=0x1
+    unsigned char __align0[3];// Offset=0x29 Size=0x3
     struct _PNP_DEVICE_EVENT_ENTRY * Parent;// Offset=0x2c Size=0x4
     struct _GUID ActivityId;// Offset=0x30 Size=0x10
     struct _PLUGPLAY_EVENT_BLOCK Data;// Offset=0x40 Size=0x44

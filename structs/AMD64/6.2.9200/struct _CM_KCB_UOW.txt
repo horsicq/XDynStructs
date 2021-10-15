@@ -9,6 +9,7 @@ struct _CM_KCB_UOW// Size=0x60
     unsigned long UoWState;// Offset=0x40 Size=0x4
     enum UoWActionType ActionType;// Offset=0x44 Size=0x4
     enum HSTORAGE_TYPE StorageType;// Offset=0x48 Size=0x4
+    unsigned char __align0[4];// Offset=0x4c Size=0x4
     struct _CM_KEY_CONTROL_BLOCK * ChildKCB;// Offset=0x50 Size=0x8
     unsigned long VolatileKeyCell;// Offset=0x50 Size=0x4
     unsigned long OldValueCell;// Offset=0x50 Size=0x4

@@ -1,0 +1,4 @@
+struct _WHEA_EVENT_LOG_ENTRY// Size=0x20
+{
+    struct _WHEA_EVENT_LOG_ENTRY_HEADER Header;// Offset=0x0 Size=0x20
+};

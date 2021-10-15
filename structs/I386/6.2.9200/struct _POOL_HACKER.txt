@@ -1,0 +1,5 @@
+struct _POOL_HACKER// Size=0x28
+{
+    struct _POOL_HEADER Header;// Offset=0x0 Size=0x8
+    unsigned long Contents[8];// Offset=0x8 Size=0x20
+};

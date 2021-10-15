@@ -1,0 +1,5 @@
+union _unnamed_435// Size=0x4
+{
+    struct _unnamed_434 s2;// Offset=0x0 Size=0x4
+    unsigned long ZeroInit;// Offset=0x0 Size=0x4
+};

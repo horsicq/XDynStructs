@@ -9,6 +9,7 @@ struct _TOKEN_ACCESS_INFORMATION// Size=0x58
     struct _TOKEN_MANDATORY_POLICY MandatoryPolicy;// Offset=0x28 Size=0x4
     unsigned long Flags;// Offset=0x2c Size=0x4
     unsigned long AppContainerNumber;// Offset=0x30 Size=0x4
+    unsigned char __align0[4];// Offset=0x34 Size=0x4
     void * PackageSid;// Offset=0x38 Size=0x8
     struct _SID_AND_ATTRIBUTES_HASH * CapabilitiesHash;// Offset=0x40 Size=0x8
     void * TrustLevelSid;// Offset=0x48 Size=0x8

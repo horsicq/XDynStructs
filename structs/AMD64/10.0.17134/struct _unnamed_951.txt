@@ -1,0 +1,4 @@
+struct _unnamed_951// Size=0x8
+{
+    unsigned long long PrototypePtesFlags;// Offset=0x0 Size=0x8
+};

@@ -17,6 +17,7 @@ struct _ETIMER// Size=0xb8
     struct _LIST_ENTRY WakeTimerListEntry;// Offset=0x90 Size=0x8
     void * VirtualizedTimerCookie;// Offset=0x98 Size=0x4
     struct _LIST_ENTRY VirtualizedTimerLinks;// Offset=0x9c Size=0x8
+    unsigned char __align0[4];// Offset=0xa4 Size=0x4
     unsigned long long DueTime;// Offset=0xa8 Size=0x8
     unsigned long CoalescingWindow;// Offset=0xb0 Size=0x4
 };

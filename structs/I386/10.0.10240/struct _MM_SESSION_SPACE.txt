@@ -18,15 +18,18 @@ struct _MM_SESSION_SPACE// Size=0x2000
     unsigned long AttachCount;// Offset=0x4c Size=0x4
     struct _KGATE AttachGate;// Offset=0x50 Size=0x10
     struct _LIST_ENTRY WsListEntry;// Offset=0x60 Size=0x8
+    unsigned char __align0[24];// Offset=0x68 Size=0x18
     struct _GENERAL_LOOKASIDE Lookaside[24];// Offset=0x80 Size=0xc00
     struct _MMSESSION Session;// Offset=0xc80 Size=0x14
     struct _MM_PAGED_POOL_INFO PagedPoolInfo;// Offset=0xc94 Size=0x1c
     struct _MMSUPPORT Vm;// Offset=0xcb0 Size=0x80
     struct _MMWSLE * Wsle;// Offset=0xd30 Size=0x4
     struct _MI_SESSION_DRIVER_UNLOAD DriverUnload;// Offset=0xd34 Size=0x4
+    unsigned char __align1[8];// Offset=0xd38 Size=0x8
     struct _POOL_DESCRIPTOR PagedPool;// Offset=0xd40 Size=0x1140
     struct _MMPTE * PageTables;// Offset=0x1e80 Size=0x4
     unsigned long PagedPoolBitBuffer[32];// Offset=0x1e84 Size=0x80
+    unsigned char __align2[4];// Offset=0x1f04 Size=0x4
     struct _MI_SPECIAL_POOL SpecialPool;// Offset=0x1f08 Size=0x48
     struct _EX_PUSH_LOCK SessionPteLock;// Offset=0x1f50 Size=0x4
     long PoolBigEntriesInUse;// Offset=0x1f54 Size=0x4
@@ -42,5 +45,6 @@ struct _MM_SESSION_SPACE// Size=0x2000
     unsigned long IoStateSequence;// Offset=0x1fac Size=0x4
     struct _KEVENT IoNotificationEvent;// Offset=0x1fb0 Size=0x10
     struct _ESILO * ServerSilo;// Offset=0x1fc0 Size=0x4
+    unsigned char __align3[4];// Offset=0x1fc4 Size=0x4
     unsigned long long CreateTime;// Offset=0x1fc8 Size=0x8
 };

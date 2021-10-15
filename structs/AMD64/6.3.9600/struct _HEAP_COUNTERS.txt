@@ -1,0 +1,26 @@
+struct _HEAP_COUNTERS// Size=0x78
+{
+    unsigned long long TotalMemoryReserved;// Offset=0x0 Size=0x8
+    unsigned long long TotalMemoryCommitted;// Offset=0x8 Size=0x8
+    unsigned long long TotalMemoryLargeUCR;// Offset=0x10 Size=0x8
+    unsigned long long TotalSizeInVirtualBlocks;// Offset=0x18 Size=0x8
+    unsigned long TotalSegments;// Offset=0x20 Size=0x4
+    unsigned long TotalUCRs;// Offset=0x24 Size=0x4
+    unsigned long CommittOps;// Offset=0x28 Size=0x4
+    unsigned long DeCommitOps;// Offset=0x2c Size=0x4
+    unsigned long LockAcquires;// Offset=0x30 Size=0x4
+    unsigned long LockCollisions;// Offset=0x34 Size=0x4
+    unsigned long CommitRate;// Offset=0x38 Size=0x4
+    unsigned long DecommittRate;// Offset=0x3c Size=0x4
+    unsigned long CommitFailures;// Offset=0x40 Size=0x4
+    unsigned long InBlockCommitFailures;// Offset=0x44 Size=0x4
+    unsigned long PollIntervalCounter;// Offset=0x48 Size=0x4
+    unsigned long DecommitsSinceLastCheck;// Offset=0x4c Size=0x4
+    unsigned long HeapPollInterval;// Offset=0x50 Size=0x4
+    unsigned long AllocAndFreeOps;// Offset=0x54 Size=0x4
+    unsigned long AllocationIndicesActive;// Offset=0x58 Size=0x4
+    unsigned long InBlockDeccommits;// Offset=0x5c Size=0x4
+    unsigned long long InBlockDeccomitSize;// Offset=0x60 Size=0x8
+    unsigned long long HighWatermarkSize;// Offset=0x68 Size=0x8
+    unsigned long long LastPolledSize;// Offset=0x70 Size=0x8
+};

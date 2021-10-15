@@ -1,0 +1,9 @@
+struct _MI_SPECIAL_POOL// Size=0x24
+{
+    struct _MMPTE * PteBase;// Offset=0x0 Size=0x4
+    unsigned long Lock;// Offset=0x4 Size=0x4
+    struct _MI_SPECIAL_POOL_PTE_LIST Paged;// Offset=0x8 Size=0x8
+    struct _MI_SPECIAL_POOL_PTE_LIST NonPaged;// Offset=0x10 Size=0x8
+    long PagesInUse;// Offset=0x18 Size=0x4
+    struct _RTL_BITMAP SpecialPoolPdes;// Offset=0x1c Size=0x8
+};

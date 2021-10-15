@@ -1,0 +1,9 @@
+struct _unnamed_1356// Size=0xc
+{
+    unsigned long Channel;// Offset=0x0 Size=0x4
+    unsigned long RequestLine;// Offset=0x4 Size=0x4
+    unsigned char TransferWidth;// Offset=0x8 Size=0x1
+    unsigned char Reserved1;// Offset=0x9 Size=0x1
+    unsigned char Reserved2;// Offset=0xa Size=0x1
+    unsigned char Reserved3;// Offset=0xb Size=0x1
+};

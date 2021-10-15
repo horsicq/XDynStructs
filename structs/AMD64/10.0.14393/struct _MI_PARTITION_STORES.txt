@@ -1,0 +1,20 @@
+struct _MI_PARTITION_STORES// Size=0x90
+{
+    union _unnamed_1228 WriteAllStoreHintedPages;// Offset=0x0 Size=0x4
+    unsigned long VirtualPageFileNumber;// Offset=0x4 Size=0x4
+    unsigned long Registered;// Offset=0x8 Size=0x4
+    unsigned long ReadClusterSizeMax;// Offset=0xc Size=0x4
+    unsigned long EvictFlushRequestCount;// Offset=0x10 Size=0x4
+    unsigned long ModifiedWriteDisableCount;// Offset=0x14 Size=0x4
+    unsigned long WriteIssueFailures;// Offset=0x18 Size=0x4
+    unsigned char __align0[4];// Offset=0x1c Size=0x4
+    struct _ETHREAD * EvictionThread;// Offset=0x20 Size=0x8
+    struct _KEVENT EvictEvent;// Offset=0x28 Size=0x18
+    struct _KEVENT EvictFlushCompleteEvent;// Offset=0x40 Size=0x18
+    unsigned char __align1[8];// Offset=0x58 Size=0x8
+    union _SLIST_HEADER WriteSupportSListHead;// Offset=0x60 Size=0x10
+    long EvictFlushLock;// Offset=0x70 Size=0x4
+    unsigned char __align2[4];// Offset=0x74 Size=0x4
+    struct _RTL_BITMAP * ModifiedWriteFailedBitmap;// Offset=0x78 Size=0x8
+    struct _EPROCESS * StoreProcess;// Offset=0x80 Size=0x8
+};

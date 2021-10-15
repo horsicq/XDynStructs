@@ -1,0 +1,5 @@
+struct _KTRANSACTION_HISTORY// Size=0x8
+{
+    enum _unnamed_1065 RecordType;// Offset=0x0 Size=0x4
+    unsigned long Payload;// Offset=0x4 Size=0x4
+};

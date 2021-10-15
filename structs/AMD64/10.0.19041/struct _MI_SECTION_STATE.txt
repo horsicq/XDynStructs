@@ -1,0 +1,60 @@
+struct _MI_SECTION_STATE// Size=0x340
+{
+    long SectionObjectPointersLock;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
+    struct _RTL_AVL_TREE SectionBasedRoot;// Offset=0x8 Size=0x8
+    struct _EX_PUSH_LOCK SectionBasedLock;// Offset=0x10 Size=0x8
+    unsigned long long UnusedSegmentPagedPool;// Offset=0x18 Size=0x8
+    unsigned long DataSectionProtectionMask;// Offset=0x20 Size=0x4
+    unsigned char __align1[4];// Offset=0x24 Size=0x4
+    void * HighSectionBase;// Offset=0x28 Size=0x8
+    struct _MSUBSECTION PhysicalSubsection;// Offset=0x30 Size=0x90
+    struct _CONTROL_AREA PhysicalControlArea;// Offset=0xc0 Size=0x80
+    struct _MMPFNLIST PurgingExtentPages;// Offset=0x140 Size=0x28
+    struct _MMPFN * DanglingExtentPages;// Offset=0x168 Size=0x8
+    struct _WORK_QUEUE_ITEM DanglingExtentsWorkItem;// Offset=0x170 Size=0x20
+    struct _MI_EXTENT_DELETION_WAIT_BLOCK DanglingExtentsDeletionWaitList;// Offset=0x190 Size=0x20
+    unsigned char FileOnlyMemoryPfnsCreated;// Offset=0x1b0 Size=0x1
+    unsigned char DanglingExtentsWorkerActive;// Offset=0x1b1 Size=0x1
+    unsigned char PurgingExtentsNeedWatchdog;// Offset=0x1b2 Size=0x1
+    unsigned char __align2[5];// Offset=0x1b3 Size=0x5
+    struct _RTL_AVL_TREE PrototypePtesTree;// Offset=0x1b8 Size=0x8
+    long PrototypePtesTreeSpinLock;// Offset=0x1c0 Size=0x4
+    unsigned char __align3[4];// Offset=0x1c4 Size=0x4
+    struct _EX_PUSH_LOCK RelocateBitmapsLock;// Offset=0x1c8 Size=0x8
+    struct _RTL_BITMAP_EX ImageBitMapNative;// Offset=0x1d0 Size=0x10
+    unsigned long long ImageBiasNative;// Offset=0x1e0 Size=0x8
+    struct _MI_DLL_OVERFLOW_AREA OverflowArea;// Offset=0x1e8 Size=0x20
+    struct _MI_SECTION_WOW_STATE Wow[1];// Offset=0x208 Size=0x40
+    unsigned long long ImageBiasWow;// Offset=0x248 Size=0x8
+    struct _RTL_BITMAP_EX ImageBitMapWowScratch;// Offset=0x250 Size=0x10
+    struct _RTL_BITMAP_EX ImageBitMap64Low;// Offset=0x260 Size=0x10
+    unsigned long long ImageBias64Low;// Offset=0x270 Size=0x8
+    void * ApiSetSection;// Offset=0x278 Size=0x8
+    void * ApiSetSchema;// Offset=0x280 Size=0x8
+    unsigned long long ApiSetSchemaSize;// Offset=0x288 Size=0x8
+    unsigned long LostDataFiles;// Offset=0x290 Size=0x4
+    unsigned long LostDataPages;// Offset=0x294 Size=0x4
+    unsigned long ImageFailureReason;// Offset=0x298 Size=0x4
+    unsigned char __align4[4];// Offset=0x29c Size=0x4
+    struct _SECTION * CfgBitMapSection;// Offset=0x2a0 Size=0x8
+    struct _CONTROL_AREA * CfgBitMapControlArea;// Offset=0x2a8 Size=0x8
+    struct _RTL_BITMAP_EX KernelCfgBitMap;// Offset=0x2b0 Size=0x10
+    struct _EX_PUSH_LOCK KernelCfgBitMapLock;// Offset=0x2c0 Size=0x8
+    unsigned long ImageCfgFailure;// Offset=0x2c8 Size=0x4
+    unsigned long RetpolineReservePages;// Offset=0x2cc Size=0x4
+    struct _MDL * RetpolineStubMdl;// Offset=0x2d0 Size=0x8
+    struct _RTL_BITMAP_EX KernelRetpolineBitMap;// Offset=0x2d8 Size=0x10
+    struct _RTL_RETPOLINE_ROUTINES * RetpolineRoutines;// Offset=0x2e8 Size=0x8
+    struct _MMPTE * RetpolineRevertPte;// Offset=0x2f0 Size=0x8
+    struct _LIST_ENTRY NonRetpolineImageLoadList;// Offset=0x2f8 Size=0x10
+    unsigned long RetpolineStubPages;// Offset=0x308 Size=0x4
+    long RetpolineBootStatus;// Offset=0x30c Size=0x4
+    unsigned long ImageBreakpointEnabled;// Offset=0x310 Size=0x4
+    unsigned long ImageBreakpointChecksum;// Offset=0x314 Size=0x4
+    unsigned long ImageBreakpointSize;// Offset=0x318 Size=0x4
+    long ImageValidationFailed;// Offset=0x31c Size=0x4
+    struct _RTL_AVL_TREE ImageExtentTree;// Offset=0x320 Size=0x8
+    struct _EX_PUSH_LOCK ImageExtentTreeLock;// Offset=0x328 Size=0x8
+    unsigned long HotPatchReserveSize;// Offset=0x330 Size=0x4
+};

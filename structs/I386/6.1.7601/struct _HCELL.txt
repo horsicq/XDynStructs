@@ -1,0 +1,5 @@
+struct _HCELL// Size=0xc
+{
+    long Size;// Offset=0x0 Size=0x4
+    union _unnamed_609 u;// Offset=0x4 Size=0x8
+};

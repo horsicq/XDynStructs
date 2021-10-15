@@ -1,0 +1,66 @@
+struct _CMHIVE// Size=0x638
+{
+    struct _HHIVE Hive;// Offset=0x0 Size=0x2ec
+    void * FileHandles[6];// Offset=0x2ec Size=0x18
+    struct _LIST_ENTRY NotifyList;// Offset=0x304 Size=0x8
+    struct _LIST_ENTRY HiveList;// Offset=0x30c Size=0x8
+    struct _LIST_ENTRY PreloadedHiveList;// Offset=0x314 Size=0x8
+    struct _EX_RUNDOWN_REF HiveRundown;// Offset=0x31c Size=0x4
+    struct _LIST_ENTRY ParseCacheEntries;// Offset=0x320 Size=0x8
+    struct _CM_KEY_HASH_TABLE_ENTRY * KcbCacheTable;// Offset=0x328 Size=0x4
+    unsigned long KcbCacheTableSize;// Offset=0x32c Size=0x4
+    unsigned long Identity;// Offset=0x330 Size=0x4
+    struct _FAST_MUTEX * HiveLock;// Offset=0x334 Size=0x4
+    struct _EX_PUSH_LOCK ViewLock;// Offset=0x338 Size=0x4
+    struct _KTHREAD * ViewLockOwner;// Offset=0x33c Size=0x4
+    unsigned long ViewLockLast;// Offset=0x340 Size=0x4
+    unsigned long ViewUnLockLast;// Offset=0x344 Size=0x4
+    struct _FAST_MUTEX * WriterLock;// Offset=0x348 Size=0x4
+    struct _ERESOURCE * FlusherLock;// Offset=0x34c Size=0x4
+    struct _RTL_BITMAP FlushDirtyVector;// Offset=0x350 Size=0x8
+    struct CMP_OFFSET_ARRAY * FlushOffsetArray;// Offset=0x358 Size=0x4
+    unsigned long FlushOffsetArrayCount;// Offset=0x35c Size=0x4
+    unsigned long FlushHiveTruncated;// Offset=0x360 Size=0x4
+    struct _FAST_MUTEX * FlushLock2;// Offset=0x364 Size=0x4
+    struct _EX_PUSH_LOCK SecurityLock;// Offset=0x368 Size=0x4
+    struct _LIST_ENTRY MappedViewList;// Offset=0x36c Size=0x8
+    struct _LIST_ENTRY PinnedViewList;// Offset=0x374 Size=0x8
+    struct _LIST_ENTRY FlushedViewList;// Offset=0x37c Size=0x8
+    unsigned short MappedViewCount;// Offset=0x384 Size=0x2
+    unsigned short PinnedViewCount;// Offset=0x386 Size=0x2
+    unsigned long UseCount;// Offset=0x388 Size=0x4
+    unsigned long ViewsPerHive;// Offset=0x38c Size=0x4
+    struct _FILE_OBJECT * FileObject;// Offset=0x390 Size=0x4
+    unsigned long LastShrinkHiveSize;// Offset=0x394 Size=0x4
+    union _LARGE_INTEGER ActualFileSize;// Offset=0x398 Size=0x8
+    struct _UNICODE_STRING FileFullPath;// Offset=0x3a0 Size=0x8
+    struct _UNICODE_STRING FileUserName;// Offset=0x3a8 Size=0x8
+    struct _UNICODE_STRING HiveRootPath;// Offset=0x3b0 Size=0x8
+    unsigned long SecurityCount;// Offset=0x3b8 Size=0x4
+    unsigned long SecurityCacheSize;// Offset=0x3bc Size=0x4
+    long SecurityHitHint;// Offset=0x3c0 Size=0x4
+    struct _CM_KEY_SECURITY_CACHE_ENTRY * SecurityCache;// Offset=0x3c4 Size=0x4
+    struct _LIST_ENTRY SecurityHash[64];// Offset=0x3c8 Size=0x200
+    unsigned long UnloadEventCount;// Offset=0x5c8 Size=0x4
+    struct _KEVENT ** UnloadEventArray;// Offset=0x5cc Size=0x4
+    struct _CM_KEY_CONTROL_BLOCK * RootKcb;// Offset=0x5d0 Size=0x4
+    unsigned char Frozen;// Offset=0x5d4 Size=0x1
+    unsigned char __align0[3];// Offset=0x5d5 Size=0x3
+    struct _CM_WORKITEM * UnloadWorkItem;// Offset=0x5d8 Size=0x4
+    struct _CM_WORKITEM UnloadWorkItemHolder;// Offset=0x5dc Size=0x14
+    unsigned char GrowOnlyMode;// Offset=0x5f0 Size=0x1
+    unsigned char __align1[3];// Offset=0x5f1 Size=0x3
+    unsigned long GrowOffset;// Offset=0x5f4 Size=0x4
+    struct _LIST_ENTRY KcbConvertListHead;// Offset=0x5f8 Size=0x8
+    struct _LIST_ENTRY KnodeConvertListHead;// Offset=0x600 Size=0x8
+    struct _CM_CELL_REMAP_BLOCK * CellRemapArray;// Offset=0x608 Size=0x4
+    unsigned long Flags;// Offset=0x60c Size=0x4
+    struct _LIST_ENTRY TrustClassEntry;// Offset=0x610 Size=0x8
+    unsigned long FlushCount;// Offset=0x618 Size=0x4
+    struct _CM_RM * CmRm;// Offset=0x61c Size=0x4
+    unsigned long CmRmInitFailPoint;// Offset=0x620 Size=0x4
+    long CmRmInitFailStatus;// Offset=0x624 Size=0x4
+    struct _KTHREAD * CreatorOwner;// Offset=0x628 Size=0x4
+    struct _KTHREAD * RundownThread;// Offset=0x62c Size=0x4
+    union _LARGE_INTEGER LastWriteTime;// Offset=0x630 Size=0x8
+};

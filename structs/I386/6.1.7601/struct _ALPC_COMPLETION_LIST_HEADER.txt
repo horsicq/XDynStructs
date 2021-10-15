@@ -1,0 +1,27 @@
+struct _ALPC_COMPLETION_LIST_HEADER// Size=0x300
+{
+    unsigned long long StartMagic;// Offset=0x0 Size=0x8
+    unsigned long TotalSize;// Offset=0x8 Size=0x4
+    unsigned long ListOffset;// Offset=0xc Size=0x4
+    unsigned long ListSize;// Offset=0x10 Size=0x4
+    unsigned long BitmapOffset;// Offset=0x14 Size=0x4
+    unsigned long BitmapSize;// Offset=0x18 Size=0x4
+    unsigned long DataOffset;// Offset=0x1c Size=0x4
+    unsigned long DataSize;// Offset=0x20 Size=0x4
+    unsigned long AttributeFlags;// Offset=0x24 Size=0x4
+    unsigned long AttributeSize;// Offset=0x28 Size=0x4
+    unsigned char __align0[84];// Offset=0x2c Size=0x54
+    struct _ALPC_COMPLETION_LIST_STATE State;// Offset=0x80 Size=0x8
+    unsigned long LastMessageId;// Offset=0x88 Size=0x4
+    unsigned long LastCallbackId;// Offset=0x8c Size=0x4
+    unsigned char __align1[112];// Offset=0x90 Size=0x70
+    unsigned long PostCount;// Offset=0x100 Size=0x4
+    unsigned char __align2[124];// Offset=0x104 Size=0x7c
+    unsigned long ReturnCount;// Offset=0x180 Size=0x4
+    unsigned char __align3[124];// Offset=0x184 Size=0x7c
+    unsigned long LogSequenceNumber;// Offset=0x200 Size=0x4
+    unsigned char __align4[124];// Offset=0x204 Size=0x7c
+    struct _RTL_SRWLOCK UserLock;// Offset=0x280 Size=0x4
+    unsigned char __align5[4];// Offset=0x284 Size=0x4
+    unsigned long long EndMagic;// Offset=0x288 Size=0x8
+};

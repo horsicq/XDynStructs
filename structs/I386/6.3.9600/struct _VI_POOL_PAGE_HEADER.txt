@@ -1,0 +1,6 @@
+struct _VI_POOL_PAGE_HEADER// Size=0xc
+{
+    struct _SINGLE_LIST_ENTRY * NextPage;// Offset=0x0 Size=0x4
+    void * VerifierEntry;// Offset=0x4 Size=0x4
+    unsigned long Signature;// Offset=0x8 Size=0x4
+};

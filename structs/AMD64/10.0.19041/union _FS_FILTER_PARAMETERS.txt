@@ -1,0 +1,8 @@
+union _FS_FILTER_PARAMETERS// Size=0x28
+{
+    struct <anonymous-tag> AcquireForModifiedPageWriter;// Offset=0x0 Size=0x10
+    struct <anonymous-tag> ReleaseForModifiedPageWriter;// Offset=0x0 Size=0x8
+    struct <anonymous-tag> AcquireForSectionSynchronization;// Offset=0x0 Size=0x18
+    struct <anonymous-tag> QueryOpen;// Offset=0x0 Size=0x20
+    struct <anonymous-tag> Others;// Offset=0x0 Size=0x28
+};

@@ -37,13 +37,16 @@ struct _PROC_PERF_DOMAIN// Size=0x1d8
     unsigned char InitiateAllProcessors;// Offset=0x7e Size=0x1
     unsigned char AutonomousMode;// Offset=0x7f Size=0x1
     unsigned char ProvideGuidance;// Offset=0x80 Size=0x1
+    unsigned char __align0[3];// Offset=0x81 Size=0x3
     unsigned long DesiredPercent;// Offset=0x84 Size=0x4
     unsigned long GuaranteedPercent;// Offset=0x88 Size=0x4
     struct _PROC_PERF_QOS_CLASS_POLICY QosPolicies[4];// Offset=0x8c Size=0x70
     unsigned long QosDisableReasons[4];// Offset=0xfc Size=0x10
     unsigned long QosEquivalencyMasks[4];// Offset=0x10c Size=0x10
     unsigned char QosSupported;// Offset=0x11c Size=0x1
+    unsigned char __align1[3];// Offset=0x11d Size=0x3
     unsigned long SelectionGeneration;// Offset=0x120 Size=0x4
+    unsigned char __align2[4];// Offset=0x124 Size=0x4
     struct _PERF_CONTROL_STATE_SELECTION QosSelection[4];// Offset=0x128 Size=0xa0
     unsigned long long PerfChangeTime;// Offset=0x1c8 Size=0x8
     unsigned long PerfChangeIntervalCount;// Offset=0x1d0 Size=0x4

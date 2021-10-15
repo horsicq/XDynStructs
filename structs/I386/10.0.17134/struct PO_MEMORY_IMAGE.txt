@@ -20,6 +20,7 @@ struct PO_MEMORY_IMAGE// Size=0x338
     unsigned long FirstBootRestorePage;// Offset=0x50 Size=0x4
     unsigned long FirstKernelRestorePage;// Offset=0x54 Size=0x4
     unsigned long FirstChecksumRestorePage;// Offset=0x58 Size=0x4
+    unsigned char __align0[4];// Offset=0x5c Size=0x4
     unsigned long long NoChecksumEntries;// Offset=0x60 Size=0x8
     struct _PO_HIBER_PERF PerfInfo;// Offset=0x68 Size=0x1f8
     unsigned long FirmwareRuntimeInformationPages;// Offset=0x260 Size=0x4
@@ -33,6 +34,7 @@ struct PO_MEMORY_IMAGE// Size=0x338
     unsigned char Hiberboot;// Offset=0x2dc Size=0x1
     unsigned char SecureLaunched;// Offset=0x2dd Size=0x1
     unsigned char SecureBoot;// Offset=0x2de Size=0x1
+    unsigned char __align1[1];// Offset=0x2df Size=0x1
     unsigned long long HvCr3;// Offset=0x2e0 Size=0x8
     unsigned long long HvEntryPoint;// Offset=0x2e8 Size=0x8
     unsigned long long HvReservedTransitionAddress;// Offset=0x2f0 Size=0x8

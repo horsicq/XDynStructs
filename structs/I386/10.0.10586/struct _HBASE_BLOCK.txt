@@ -1,0 +1,29 @@
+struct _HBASE_BLOCK// Size=0x1000
+{
+    unsigned long Signature;// Offset=0x0 Size=0x4
+    unsigned long Sequence1;// Offset=0x4 Size=0x4
+    unsigned long Sequence2;// Offset=0x8 Size=0x4
+    union _LARGE_INTEGER TimeStamp;// Offset=0xc Size=0x8
+    unsigned long Major;// Offset=0x14 Size=0x4
+    unsigned long Minor;// Offset=0x18 Size=0x4
+    unsigned long Type;// Offset=0x1c Size=0x4
+    unsigned long Format;// Offset=0x20 Size=0x4
+    unsigned long RootCell;// Offset=0x24 Size=0x4
+    unsigned long Length;// Offset=0x28 Size=0x4
+    unsigned long Cluster;// Offset=0x2c Size=0x4
+    unsigned char FileName[64];// Offset=0x30 Size=0x40
+    struct _GUID RmId;// Offset=0x70 Size=0x10
+    struct _GUID LogId;// Offset=0x80 Size=0x10
+    unsigned long Flags;// Offset=0x90 Size=0x4
+    struct _GUID TmId;// Offset=0x94 Size=0x10
+    unsigned long GuidSignature;// Offset=0xa4 Size=0x4
+    unsigned long long LastReorganizeTime;// Offset=0xa8 Size=0x8
+    unsigned long Reserved1[83];// Offset=0xb0 Size=0x14c
+    unsigned long CheckSum;// Offset=0x1fc Size=0x4
+    unsigned long Reserved2[882];// Offset=0x200 Size=0xdc8
+    struct _GUID ThawTmId;// Offset=0xfc8 Size=0x10
+    struct _GUID ThawRmId;// Offset=0xfd8 Size=0x10
+    struct _GUID ThawLogId;// Offset=0xfe8 Size=0x10
+    unsigned long BootType;// Offset=0xff8 Size=0x4
+    unsigned long BootRecover;// Offset=0xffc Size=0x4
+};

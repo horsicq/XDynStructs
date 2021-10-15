@@ -1,0 +1,42 @@
+struct _LOADER_PARAMETER_EXTENSION// Size=0x148
+{
+    unsigned long Size;// Offset=0x0 Size=0x4
+    struct _PROFILE_PARAMETER_BLOCK Profile;// Offset=0x4 Size=0x10
+    unsigned char __align0[4];// Offset=0x14 Size=0x4
+    void * EmInfFileImage;// Offset=0x18 Size=0x8
+    unsigned long EmInfFileSize;// Offset=0x20 Size=0x4
+    unsigned char __align1[4];// Offset=0x24 Size=0x4
+    void * TriageDumpBlock;// Offset=0x28 Size=0x8
+    unsigned long long LoaderPagesSpanned;// Offset=0x30 Size=0x8
+    struct _HEADLESS_LOADER_BLOCK * HeadlessLoaderBlock;// Offset=0x38 Size=0x8
+    struct _SMBIOS_TABLE_HEADER * SMBiosEPSHeader;// Offset=0x40 Size=0x8
+    void * DrvDBImage;// Offset=0x48 Size=0x8
+    unsigned long DrvDBSize;// Offset=0x50 Size=0x4
+    unsigned char __align2[4];// Offset=0x54 Size=0x4
+    struct _NETWORK_LOADER_BLOCK * NetworkLoaderBlock;// Offset=0x58 Size=0x8
+    struct _LIST_ENTRY FirmwareDescriptorListHead;// Offset=0x60 Size=0x10
+    void * AcpiTable;// Offset=0x70 Size=0x8
+    unsigned long AcpiTableSize;// Offset=0x78 Size=0x4
+    unsigned long LastBootSucceeded:1;// Offset=0x7c Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long LastBootShutdown:1;// Offset=0x7c Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long IoPortAccessSupported:1;// Offset=0x7c Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long FeatureSettings:7;// Offset=0x7c Size=0x4 BitOffset=0x3 BitSize=0x7
+    unsigned long FeatureSimulations:6;// Offset=0x7c Size=0x4 BitOffset=0xa BitSize=0x6
+    unsigned long Reserved:16;// Offset=0x7c Size=0x4 BitOffset=0x10 BitSize=0x10
+    struct _LOADER_PERFORMANCE_DATA * LoaderPerformanceData;// Offset=0x80 Size=0x8
+    struct _LIST_ENTRY BootApplicationPersistentData;// Offset=0x88 Size=0x10
+    void * WmdTestResult;// Offset=0x98 Size=0x8
+    struct _GUID BootIdentifier;// Offset=0xa0 Size=0x10
+    unsigned long ResumePages;// Offset=0xb0 Size=0x4
+    unsigned char __align3[4];// Offset=0xb4 Size=0x4
+    void * DumpHeader;// Offset=0xb8 Size=0x8
+    void * BgContext;// Offset=0xc0 Size=0x8
+    void * NumaLocalityInfo;// Offset=0xc8 Size=0x8
+    void * NumaGroupAssignment;// Offset=0xd0 Size=0x8
+    struct _LIST_ENTRY AttachedHives;// Offset=0xd8 Size=0x10
+    unsigned long MemoryCachingRequirementsCount;// Offset=0xe8 Size=0x4
+    unsigned char __align4[4];// Offset=0xec Size=0x4
+    void * MemoryCachingRequirements;// Offset=0xf0 Size=0x8
+    struct _TPM_BOOT_ENTROPY_LDR_RESULT TpmBootEntropyResult;// Offset=0xf8 Size=0x48
+    unsigned long long ProcessorCounterFrequency;// Offset=0x140 Size=0x8
+};

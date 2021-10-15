@@ -1,0 +1,9 @@
+struct _EVENT_DATA_DESCRIPTOR// Size=0x10
+{
+    unsigned long long Ptr;// Offset=0x0 Size=0x8
+    unsigned long Size;// Offset=0x8 Size=0x4
+    unsigned long Reserved;// Offset=0xc Size=0x4
+    unsigned char Type;// Offset=0xc Size=0x1
+    unsigned char Reserved1;// Offset=0xd Size=0x1
+    unsigned short Reserved2;// Offset=0xe Size=0x2
+};

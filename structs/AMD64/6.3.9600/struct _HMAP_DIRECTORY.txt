@@ -1,0 +1,4 @@
+struct _HMAP_DIRECTORY// Size=0x2000
+{
+    struct _HMAP_TABLE * Directory[1024];// Offset=0x0 Size=0x2000
+};

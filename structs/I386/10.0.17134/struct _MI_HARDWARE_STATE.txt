@@ -5,6 +5,7 @@ struct _MI_HARDWARE_STATE// Size=0xe0
     unsigned char NumaTableCaptured;// Offset=0x8 Size=0x1
     unsigned char NodeShift;// Offset=0x9 Size=0x1
     unsigned char ChannelShift;// Offset=0xa Size=0x1
+    unsigned char __align0[1];// Offset=0xb Size=0x1
     unsigned short * NodeGraph;// Offset=0xc Size=0x4
     struct _MI_SYSTEM_NODE_INFORMATION * SystemNodeInformation;// Offset=0x10 Size=0x4
     struct _HAL_NODE_RANGE * NumaMemoryRanges;// Offset=0x14 Size=0x4
@@ -23,6 +24,7 @@ struct _MI_HARDWARE_STATE// Size=0xe0
     unsigned long FlushTbThreshold;// Offset=0x4c Size=0x4
     enum _MI_PFN_CACHE_ATTRIBUTE OptimalZeroingAttribute[4][4];// Offset=0x50 Size=0x40
     unsigned char AttributeChangeRequiresReZero;// Offset=0x90 Size=0x1
+    unsigned char __align1[7];// Offset=0x91 Size=0x7
     struct _MI_ZERO_COST_COUNTS ZeroCostCounts[2];// Offset=0x98 Size=0x20
     unsigned long HighestPossiblePhysicalPage;// Offset=0xb8 Size=0x4
     struct _RTL_AVL_TREE EnclaveRegions;// Offset=0xbc Size=0x4

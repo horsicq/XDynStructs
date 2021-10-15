@@ -1,0 +1,5 @@
+union _unnamed_228// Size=0x4
+{
+    unsigned long LongFlags;// Offset=0x0 Size=0x4
+    struct _MMSECTION_FLAGS2 Flags;// Offset=0x0 Size=0x4
+};

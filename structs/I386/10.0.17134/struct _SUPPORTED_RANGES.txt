@@ -6,9 +6,12 @@ struct _SUPPORTED_RANGES// Size=0xa0
     unsigned long NoIO;// Offset=0x4 Size=0x4
     struct _SUPPORTED_RANGE IO;// Offset=0x8 Size=0x20
     unsigned long NoMemory;// Offset=0x28 Size=0x4
+    unsigned char __align0[4];// Offset=0x2c Size=0x4
     struct _SUPPORTED_RANGE Memory;// Offset=0x30 Size=0x20
     unsigned long NoPrefetchMemory;// Offset=0x50 Size=0x4
+    unsigned char __align1[4];// Offset=0x54 Size=0x4
     struct _SUPPORTED_RANGE PrefetchMemory;// Offset=0x58 Size=0x20
     unsigned long NoDma;// Offset=0x78 Size=0x4
+    unsigned char __align2[4];// Offset=0x7c Size=0x4
     struct _SUPPORTED_RANGE Dma;// Offset=0x80 Size=0x20
 };

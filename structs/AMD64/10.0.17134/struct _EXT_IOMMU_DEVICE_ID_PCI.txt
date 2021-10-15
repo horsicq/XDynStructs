@@ -9,5 +9,6 @@ struct _EXT_IOMMU_DEVICE_ID_PCI// Size=0x10
     unsigned short Bdf;// Offset=0x4 Size=0x2
     unsigned char SubordinateBus;// Offset=0x4 Size=0x1
     unsigned char SecondaryBus;// Offset=0x5 Size=0x1
+    unsigned char __align0[2];// Offset=0x6 Size=0x2
     unsigned short * DevicePath;// Offset=0x8 Size=0x8
 };

@@ -1,0 +1,13 @@
+struct _KSHARED_READY_QUEUE// Size=0x268
+{
+    unsigned long long Lock;// Offset=0x0 Size=0x8
+    unsigned long ReadySummary;// Offset=0x8 Size=0x4
+    unsigned char __align0[4];// Offset=0xc Size=0x4
+    struct _LIST_ENTRY ReadyListHead[32];// Offset=0x10 Size=0x200
+    char RunningSummary[64];// Offset=0x210 Size=0x40
+    unsigned long Span;// Offset=0x250 Size=0x4
+    unsigned long LowProcIndex;// Offset=0x254 Size=0x4
+    unsigned long QueueIndex;// Offset=0x258 Size=0x4
+    unsigned long ProcCount;// Offset=0x25c Size=0x4
+    unsigned long long Affinity;// Offset=0x260 Size=0x8
+};

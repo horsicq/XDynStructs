@@ -2,6 +2,7 @@ struct _PNP_DEVICE_COMPLETION_QUEUE// Size=0x50
 {
     struct _LIST_ENTRY DispatchedList;// Offset=0x0 Size=0x10
     unsigned long DispatchedCount;// Offset=0x10 Size=0x4
+    unsigned char __align0[4];// Offset=0x14 Size=0x4
     struct _LIST_ENTRY CompletedList;// Offset=0x18 Size=0x10
     struct _KSEMAPHORE CompletedSemaphore;// Offset=0x28 Size=0x20
     unsigned long long SpinLock;// Offset=0x48 Size=0x8

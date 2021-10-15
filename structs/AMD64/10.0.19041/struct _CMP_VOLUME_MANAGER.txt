@@ -1,0 +1,5 @@
+struct _CMP_VOLUME_MANAGER// Size=0x18
+{
+    struct _CMSI_RW_LOCK VolumeContextListLock;// Offset=0x0 Size=0x8
+    struct _LIST_ENTRY VolumeContextListHead;// Offset=0x8 Size=0x10
+};

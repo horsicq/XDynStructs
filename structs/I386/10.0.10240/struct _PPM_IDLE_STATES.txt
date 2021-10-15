@@ -7,6 +7,7 @@ struct _PPM_IDLE_STATES// Size=0x140
     unsigned char NonInterruptibleTransition;// Offset=0x4 Size=0x1
     unsigned char UnaccountedTransition;// Offset=0x5 Size=0x1
     unsigned char IdleDurationLimited;// Offset=0x6 Size=0x1
+    unsigned char __align0[1];// Offset=0x7 Size=0x1
     unsigned long ExitLatencyCountdown;// Offset=0x8 Size=0x4
     unsigned long TargetState;// Offset=0xc Size=0x4
     unsigned long ActualState;// Offset=0x10 Size=0x4
@@ -15,6 +16,7 @@ struct _PPM_IDLE_STATES// Size=0x140
     unsigned long ProcessorIdleCount;// Offset=0x1c Size=0x4
     unsigned long Type;// Offset=0x20 Size=0x4
     unsigned short ReasonFlags;// Offset=0x24 Size=0x2
+    unsigned char __align1[2];// Offset=0x26 Size=0x2
     unsigned long long InitiateWakeStamp;// Offset=0x28 Size=0x8
     long PreviousStatus;// Offset=0x30 Size=0x4
     unsigned long PreviousCancelReason;// Offset=0x34 Size=0x4

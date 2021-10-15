@@ -5,9 +5,11 @@ struct _LDR_DDAG_NODE// Size=0x50
     unsigned long LoadCount;// Offset=0x18 Size=0x4
     unsigned long LoadWhileUnloadingCount;// Offset=0x1c Size=0x4
     unsigned long LowestLink;// Offset=0x20 Size=0x4
+    unsigned char __align0[4];// Offset=0x24 Size=0x4
     struct _LDRP_CSLIST Dependencies;// Offset=0x28 Size=0x8
     struct _LDRP_CSLIST IncomingDependencies;// Offset=0x30 Size=0x8
     enum _LDR_DDAG_STATE State;// Offset=0x38 Size=0x4
+    unsigned char __align1[4];// Offset=0x3c Size=0x4
     struct _SINGLE_LIST_ENTRY CondenseLink;// Offset=0x40 Size=0x8
     unsigned long PreorderNumber;// Offset=0x48 Size=0x4
 };

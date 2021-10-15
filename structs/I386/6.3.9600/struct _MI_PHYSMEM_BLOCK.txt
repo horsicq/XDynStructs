@@ -1,0 +1,4 @@
+struct _MI_PHYSMEM_BLOCK// Size=0x4
+{
+    struct _MMIO_TRACKER * IoTracker;// Offset=0x0 Size=0x4
+};

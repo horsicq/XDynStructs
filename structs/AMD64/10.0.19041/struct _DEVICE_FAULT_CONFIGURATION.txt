@@ -1,0 +1,5 @@
+struct _DEVICE_FAULT_CONFIGURATION// Size=0x10
+{
+    void  ( * FaultHandler)(void * ,struct _FAULT_INFORMATION * );// Offset=0x0 Size=0x8
+    void * FaultContext;// Offset=0x8 Size=0x8
+};

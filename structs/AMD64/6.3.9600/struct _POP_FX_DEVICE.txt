@@ -1,0 +1,37 @@
+struct _POP_FX_DEVICE// Size=0x218
+{
+    struct _LIST_ENTRY Link;// Offset=0x0 Size=0x10
+    struct _IRP * Irp;// Offset=0x10 Size=0x8
+    struct _POP_IRP_DATA * IrpData;// Offset=0x18 Size=0x8
+    union _POP_FX_DEVICE_STATUS Status;// Offset=0x20 Size=0x4
+    long PowerReqCall;// Offset=0x24 Size=0x4
+    long PowerNotReqCall;// Offset=0x28 Size=0x4
+    unsigned char __align0[4];// Offset=0x2c Size=0x4
+    struct _POP_FX_PLUGIN * Plugin;// Offset=0x30 Size=0x8
+    struct PEPHANDLE__ * PluginHandle;// Offset=0x38 Size=0x8
+    struct _POP_FX_PLUGIN * MiniPlugin;// Offset=0x40 Size=0x8
+    struct PEPHANDLE__ * MiniPluginHandle;// Offset=0x48 Size=0x8
+    struct _DEVICE_NODE * DevNode;// Offset=0x50 Size=0x8
+    struct _DEVICE_OBJECT * DeviceObject;// Offset=0x58 Size=0x8
+    struct _DEVICE_OBJECT * TargetDevice;// Offset=0x60 Size=0x8
+    struct _POP_FX_DRIVER_CALLBACKS Callbacks;// Offset=0x68 Size=0x38
+    void * DriverContext;// Offset=0xa0 Size=0x8
+    struct _IO_REMOVE_LOCK RemoveLock;// Offset=0xa8 Size=0x20
+    struct _POP_FX_WORK_ORDER WorkOrder;// Offset=0xc8 Size=0x38
+    unsigned long long IdleLock;// Offset=0x100 Size=0x8
+    struct _KTIMER IdleTimer;// Offset=0x108 Size=0x40
+    struct _KDPC IdleDpc;// Offset=0x148 Size=0x40
+    unsigned long long IdleTimeout;// Offset=0x188 Size=0x8
+    unsigned long long IdleStamp;// Offset=0x190 Size=0x8
+    struct _DEVICE_OBJECT * NextIrpDeviceObject;// Offset=0x198 Size=0x8
+    union _POWER_STATE NextIrpPowerState;// Offset=0x1a0 Size=0x4
+    unsigned char __align1[4];// Offset=0x1a4 Size=0x4
+    void  ( * NextIrpCallerCompletion)(struct _DEVICE_OBJECT * ,unsigned char ,union _POWER_STATE ,void * ,struct _IO_STATUS_BLOCK * );// Offset=0x1a8 Size=0x8
+    void * NextIrpCallerContext;// Offset=0x1b0 Size=0x8
+    struct _KEVENT IrpCompleteEvent;// Offset=0x1b8 Size=0x18
+    unsigned char  ( * PowerOnDumpDeviceCallback)(struct _PEP_CRASHDUMP_INFORMATION * );// Offset=0x1d0 Size=0x8
+    struct _POP_FX_ACCOUNTING Accounting;// Offset=0x1d8 Size=0x30
+    unsigned long ComponentCount;// Offset=0x208 Size=0x4
+    unsigned char __align2[4];// Offset=0x20c Size=0x4
+    struct _POP_FX_COMPONENT * Components[1];// Offset=0x210 Size=0x8
+};

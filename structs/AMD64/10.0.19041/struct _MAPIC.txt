@@ -1,0 +1,7 @@
+struct _MAPIC// Size=0x30
+{
+    struct _DESCRIPTION_HEADER Header;// Offset=0x0 Size=0x24
+    unsigned long LocalAPICAddress;// Offset=0x24 Size=0x4
+    unsigned long Flags;// Offset=0x28 Size=0x4
+    unsigned long APICTables[1];// Offset=0x2c Size=0x4
+};

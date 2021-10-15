@@ -1,0 +1,5 @@
+union _unnamed_98// Size=0x2c
+{
+    struct _INITIAL_PRIVILEGE_SET InitialPrivilegeSet;// Offset=0x0 Size=0x2c
+    struct _PRIVILEGE_SET PrivilegeSet;// Offset=0x0 Size=0x14
+};

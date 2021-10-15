@@ -5,6 +5,7 @@ struct _PO_DEVICE_NOTIFY// Size=0x68
     struct _LIST_ENTRY PowerParents;// Offset=0x20 Size=0x10
     struct _DEVICE_OBJECT * TargetDevice;// Offset=0x30 Size=0x8
     unsigned char OrderLevel;// Offset=0x38 Size=0x1
+    unsigned char __align0[7];// Offset=0x39 Size=0x7
     struct _DEVICE_OBJECT * DeviceObject;// Offset=0x40 Size=0x8
     unsigned short * DeviceName;// Offset=0x48 Size=0x8
     unsigned short * DriverName;// Offset=0x50 Size=0x8

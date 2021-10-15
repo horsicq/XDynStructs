@@ -1,0 +1,7 @@
+struct PROCESSOR_IDLESTATE_INFO// Size=0x8
+{
+    unsigned long TimeCheck;// Offset=0x0 Size=0x4
+    unsigned char DemotePercent;// Offset=0x4 Size=0x1
+    unsigned char PromotePercent;// Offset=0x5 Size=0x1
+    unsigned char Spare[2];// Offset=0x6 Size=0x2
+};

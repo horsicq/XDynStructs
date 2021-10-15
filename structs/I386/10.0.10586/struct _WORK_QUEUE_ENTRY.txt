@@ -1,0 +1,6 @@
+struct _WORK_QUEUE_ENTRY// Size=0x48
+{
+    struct _LIST_ENTRY WorkQueueLinks;// Offset=0x0 Size=0x8
+    union _unnamed_362 Parameters;// Offset=0x8 Size=0x38
+    unsigned char Function;// Offset=0x40 Size=0x1
+};

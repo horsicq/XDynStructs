@@ -1,0 +1,3 @@
+struct _PSP_STORAGE// Size=0x0
+{
+};

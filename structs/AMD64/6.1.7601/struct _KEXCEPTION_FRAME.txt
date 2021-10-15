@@ -1,0 +1,33 @@
+struct _KEXCEPTION_FRAME// Size=0x140
+{
+    unsigned long long P1Home;// Offset=0x0 Size=0x8
+    unsigned long long P2Home;// Offset=0x8 Size=0x8
+    unsigned long long P3Home;// Offset=0x10 Size=0x8
+    unsigned long long P4Home;// Offset=0x18 Size=0x8
+    unsigned long long P5;// Offset=0x20 Size=0x8
+    unsigned long long InitialStack;// Offset=0x28 Size=0x8
+    struct _M128A Xmm6;// Offset=0x30 Size=0x10
+    struct _M128A Xmm7;// Offset=0x40 Size=0x10
+    struct _M128A Xmm8;// Offset=0x50 Size=0x10
+    struct _M128A Xmm9;// Offset=0x60 Size=0x10
+    struct _M128A Xmm10;// Offset=0x70 Size=0x10
+    struct _M128A Xmm11;// Offset=0x80 Size=0x10
+    struct _M128A Xmm12;// Offset=0x90 Size=0x10
+    struct _M128A Xmm13;// Offset=0xa0 Size=0x10
+    struct _M128A Xmm14;// Offset=0xb0 Size=0x10
+    struct _M128A Xmm15;// Offset=0xc0 Size=0x10
+    unsigned long long TrapFrame;// Offset=0xd0 Size=0x8
+    unsigned long long CallbackStack;// Offset=0xd8 Size=0x8
+    unsigned long long OutputBuffer;// Offset=0xe0 Size=0x8
+    unsigned long long OutputLength;// Offset=0xe8 Size=0x8
+    unsigned long long MxCsr;// Offset=0xf0 Size=0x8
+    unsigned long long Rbp;// Offset=0xf8 Size=0x8
+    unsigned long long Rbx;// Offset=0x100 Size=0x8
+    unsigned long long Rdi;// Offset=0x108 Size=0x8
+    unsigned long long Rsi;// Offset=0x110 Size=0x8
+    unsigned long long R12;// Offset=0x118 Size=0x8
+    unsigned long long R13;// Offset=0x120 Size=0x8
+    unsigned long long R14;// Offset=0x128 Size=0x8
+    unsigned long long R15;// Offset=0x130 Size=0x8
+    unsigned long long Return;// Offset=0x138 Size=0x8
+};

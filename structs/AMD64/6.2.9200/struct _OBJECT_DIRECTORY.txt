@@ -5,6 +5,7 @@ struct _OBJECT_DIRECTORY// Size=0x150
     struct _DEVICE_MAP * DeviceMap;// Offset=0x130 Size=0x8
     struct _OBJECT_DIRECTORY * ShadowDirectory;// Offset=0x130 Size=0x8
     unsigned long SessionId;// Offset=0x138 Size=0x4
+    unsigned char __align0[4];// Offset=0x13c Size=0x4
     void * NamespaceEntry;// Offset=0x140 Size=0x8
     unsigned long Flags;// Offset=0x148 Size=0x4
 };

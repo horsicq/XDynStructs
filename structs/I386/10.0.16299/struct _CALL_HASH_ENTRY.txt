@@ -1,0 +1,7 @@
+struct _CALL_HASH_ENTRY// Size=0x14
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x8
+    void * CallersAddress;// Offset=0x8 Size=0x4
+    void * CallersCaller;// Offset=0xc Size=0x4
+    unsigned long CallCount;// Offset=0x10 Size=0x4
+};

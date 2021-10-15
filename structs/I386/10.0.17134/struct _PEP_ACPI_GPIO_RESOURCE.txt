@@ -11,6 +11,7 @@ struct _PEP_ACPI_GPIO_RESOURCE// Size=0x30
     unsigned short * PinTable;// Offset=0x1c Size=0x4
     unsigned short PinCount;// Offset=0x20 Size=0x2
     unsigned char ResourceSourceIndex;// Offset=0x22 Size=0x1
+    unsigned char __align0[1];// Offset=0x23 Size=0x1
     struct _UNICODE_STRING * ResourceSourceName;// Offset=0x24 Size=0x4
     unsigned char * VendorData;// Offset=0x28 Size=0x4
     unsigned short VendorDataLength;// Offset=0x2c Size=0x2

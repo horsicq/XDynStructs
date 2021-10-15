@@ -10,9 +10,11 @@ struct _HEADLESS_LOADER_BLOCK// Size=0x38
     unsigned short PciDeviceId;// Offset=0x10 Size=0x2
     unsigned short PciVendorId;// Offset=0x12 Size=0x2
     unsigned char PciBusNumber;// Offset=0x14 Size=0x1
+    unsigned char __align0[1];// Offset=0x15 Size=0x1
     unsigned short PciBusSegment;// Offset=0x16 Size=0x2
     unsigned char PciSlotNumber;// Offset=0x18 Size=0x1
     unsigned char PciFunctionNumber;// Offset=0x19 Size=0x1
+    unsigned char __align1[2];// Offset=0x1a Size=0x2
     unsigned long PciFlags;// Offset=0x1c Size=0x4
     struct _GUID SystemGUID;// Offset=0x20 Size=0x10
     unsigned char IsMMIODevice;// Offset=0x30 Size=0x1

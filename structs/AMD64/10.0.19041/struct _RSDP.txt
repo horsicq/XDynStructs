@@ -1,0 +1,12 @@
+struct _RSDP// Size=0x24
+{
+    unsigned long long Signature;// Offset=0x0 Size=0x8
+    unsigned char Checksum;// Offset=0x8 Size=0x1
+    unsigned char OEMID[6];// Offset=0x9 Size=0x6
+    unsigned char Revision;// Offset=0xf Size=0x1
+    unsigned long RsdtAddress;// Offset=0x10 Size=0x4
+    unsigned long Length;// Offset=0x14 Size=0x4
+    union _LARGE_INTEGER XsdtAddress;// Offset=0x18 Size=0x8
+    unsigned char XChecksum;// Offset=0x20 Size=0x1
+    unsigned char Reserved[3];// Offset=0x21 Size=0x3
+};

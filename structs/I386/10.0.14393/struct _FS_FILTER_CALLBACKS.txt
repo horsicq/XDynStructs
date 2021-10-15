@@ -1,0 +1,17 @@
+struct _FS_FILTER_CALLBACKS// Size=0x38
+{
+    unsigned long SizeOfFsFilterCallbacks;// Offset=0x0 Size=0x4
+    unsigned long Reserved;// Offset=0x4 Size=0x4
+    long  ( * PreAcquireForSectionSynchronization)(struct _FS_FILTER_CALLBACK_DATA * ,void ** );// Offset=0x8 Size=0x4
+    void  ( * PostAcquireForSectionSynchronization)(struct _FS_FILTER_CALLBACK_DATA * ,long ,void * );// Offset=0xc Size=0x4
+    long  ( * PreReleaseForSectionSynchronization)(struct _FS_FILTER_CALLBACK_DATA * ,void ** );// Offset=0x10 Size=0x4
+    void  ( * PostReleaseForSectionSynchronization)(struct _FS_FILTER_CALLBACK_DATA * ,long ,void * );// Offset=0x14 Size=0x4
+    long  ( * PreAcquireForCcFlush)(struct _FS_FILTER_CALLBACK_DATA * ,void ** );// Offset=0x18 Size=0x4
+    void  ( * PostAcquireForCcFlush)(struct _FS_FILTER_CALLBACK_DATA * ,long ,void * );// Offset=0x1c Size=0x4
+    long  ( * PreReleaseForCcFlush)(struct _FS_FILTER_CALLBACK_DATA * ,void ** );// Offset=0x20 Size=0x4
+    void  ( * PostReleaseForCcFlush)(struct _FS_FILTER_CALLBACK_DATA * ,long ,void * );// Offset=0x24 Size=0x4
+    long  ( * PreAcquireForModifiedPageWriter)(struct _FS_FILTER_CALLBACK_DATA * ,void ** );// Offset=0x28 Size=0x4
+    void  ( * PostAcquireForModifiedPageWriter)(struct _FS_FILTER_CALLBACK_DATA * ,long ,void * );// Offset=0x2c Size=0x4
+    long  ( * PreReleaseForModifiedPageWriter)(struct _FS_FILTER_CALLBACK_DATA * ,void ** );// Offset=0x30 Size=0x4
+    void  ( * PostReleaseForModifiedPageWriter)(struct _FS_FILTER_CALLBACK_DATA * ,long ,void * );// Offset=0x34 Size=0x4
+};

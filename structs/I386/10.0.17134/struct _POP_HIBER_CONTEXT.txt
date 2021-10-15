@@ -5,23 +5,27 @@ struct _POP_HIBER_CONTEXT// Size=0x138
     unsigned char WroteHiberFile;// Offset=0x2 Size=0x1
     unsigned char KernelPhaseVerificationActive;// Offset=0x3 Size=0x1
     unsigned char InitializationFinished;// Offset=0x4 Size=0x1
+    unsigned char __align0[3];// Offset=0x5 Size=0x3
     long NextTableLockHeld;// Offset=0x8 Size=0x4
     long BootPhaseFinishedBarrier;// Offset=0xc Size=0x4
     long KernelResumeFinishedBarrier;// Offset=0x10 Size=0x4
     long HvCaptureReadyBarrier;// Offset=0x14 Size=0x4
     long HvCaptureCompletedBarrier;// Offset=0x18 Size=0x4
     unsigned char MapFrozen;// Offset=0x1c Size=0x1
+    unsigned char __align1[3];// Offset=0x1d Size=0x3
     struct _RTL_BITMAP DiscardMap;// Offset=0x20 Size=0x8
     struct _RTL_BITMAP KernelPhaseMap;// Offset=0x20 Size=0x8
     struct _RTL_BITMAP BootPhaseMap;// Offset=0x28 Size=0x8
     struct _LIST_ENTRY ClonedRanges;// Offset=0x30 Size=0x8
     unsigned long ClonedRangeCount;// Offset=0x38 Size=0x4
+    unsigned char __align2[4];// Offset=0x3c Size=0x4
     unsigned long long ClonedPageCount;// Offset=0x40 Size=0x8
     struct _RTL_BITMAP * CurrentMap;// Offset=0x48 Size=0x4
     struct _LIST_ENTRY * NextCloneRange;// Offset=0x4c Size=0x4
     unsigned long NextPreserve;// Offset=0x50 Size=0x4
     struct _MDL * LoaderMdl;// Offset=0x54 Size=0x4
     struct _MDL * AllocatedMdl;// Offset=0x58 Size=0x4
+    unsigned char __align3[4];// Offset=0x5c Size=0x4
     unsigned long long PagesOut;// Offset=0x60 Size=0x8
     void * IoPages;// Offset=0x68 Size=0x4
     unsigned long IoPagesCount;// Offset=0x6c Size=0x4

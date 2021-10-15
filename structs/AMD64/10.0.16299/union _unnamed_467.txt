@@ -1,0 +1,4 @@
+union _unnamed_467// Size=0x4
+{
+    struct _unnamed_466 s1;// Offset=0x0 Size=0x4
+};

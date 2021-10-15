@@ -1,0 +1,23 @@
+struct _WHEAP_ERROR_SOURCE// Size=0x430
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x10
+    unsigned long FailedAllocations;// Offset=0x10 Size=0x4
+    unsigned long PlatformErrorSourceId;// Offset=0x14 Size=0x4
+    long ErrorCount;// Offset=0x18 Size=0x4
+    unsigned long RecordCount;// Offset=0x1c Size=0x4
+    unsigned long RecordLength;// Offset=0x20 Size=0x4
+    unsigned long PoolTag;// Offset=0x24 Size=0x4
+    enum _WHEA_ERROR_SOURCE_TYPE Type;// Offset=0x28 Size=0x4
+    unsigned char __align0[4];// Offset=0x2c Size=0x4
+    struct _WHEAP_ERROR_RECORD_WRAPPER * Records;// Offset=0x30 Size=0x8
+    void * Context;// Offset=0x38 Size=0x8
+    unsigned long SectionCount;// Offset=0x40 Size=0x4
+    unsigned long SectionLength;// Offset=0x44 Size=0x4
+    union _LARGE_INTEGER TickCountAtLastError;// Offset=0x48 Size=0x8
+    unsigned long AccumulatedErrors;// Offset=0x50 Size=0x4
+    unsigned long TotalErrors;// Offset=0x54 Size=0x4
+    unsigned char Deferred;// Offset=0x58 Size=0x1
+    unsigned char __align1[3];// Offset=0x59 Size=0x3
+    long Busy;// Offset=0x5c Size=0x4
+    struct _WHEA_ERROR_SOURCE_DESCRIPTOR Descriptor;// Offset=0x60 Size=0x3cc
+};

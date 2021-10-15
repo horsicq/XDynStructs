@@ -1,0 +1,9 @@
+struct _MM_PAGED_POOL_INFO// Size=0x1c
+{
+    struct _EX_PUSH_LOCK Lock;// Offset=0x0 Size=0x4
+    struct _RTL_BITMAP PagedPoolAllocationMap;// Offset=0x4 Size=0x8
+    struct _MMPTE * FirstPteForPagedPool;// Offset=0xc Size=0x4
+    unsigned long MaximumSize;// Offset=0x10 Size=0x4
+    unsigned long PagedPoolHint;// Offset=0x14 Size=0x4
+    unsigned long AllocatedPagedPool;// Offset=0x18 Size=0x4
+};

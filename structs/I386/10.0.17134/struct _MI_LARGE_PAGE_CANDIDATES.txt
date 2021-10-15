@@ -3,5 +3,6 @@ struct _MI_LARGE_PAGE_CANDIDATES// Size=0x108
     unsigned short Hand;// Offset=0x0 Size=0x2
     unsigned short ActiveEntryCount;// Offset=0x2 Size=0x2
     unsigned char Overflowed;// Offset=0x4 Size=0x1
+    unsigned char __align0[3];// Offset=0x5 Size=0x3
     unsigned long PageFrames[64];// Offset=0x8 Size=0x100
 };

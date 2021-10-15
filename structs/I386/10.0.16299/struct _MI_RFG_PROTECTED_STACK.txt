@@ -1,0 +1,6 @@
+struct _MI_RFG_PROTECTED_STACK// Size=0xc
+{
+    void * ControlStackBase;// Offset=0x0 Size=0x4
+    struct _MMVAD_SHORT * ControlStackVad;// Offset=0x4 Size=0x4
+    void * OwnerThread;// Offset=0x8 Size=0x4
+};

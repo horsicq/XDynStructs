@@ -8,6 +8,7 @@ struct _WMI_LOGGER_CONTEXT// Size=0x398
     unsigned long EventMarker[2];// Offset=0x14 Size=0x8
     unsigned long ErrorMarker;// Offset=0x1c Size=0x4
     unsigned long SizeMask;// Offset=0x20 Size=0x4
+    unsigned char __align0[4];// Offset=0x24 Size=0x4
     long long  ( * GetCpuClock)();// Offset=0x28 Size=0x8
     struct _ETHREAD * LoggerThread;// Offset=0x30 Size=0x8
     long LoggerStatus;// Offset=0x38 Size=0x4
@@ -48,6 +49,7 @@ struct _WMI_LOGGER_CONTEXT// Size=0x398
     unsigned long ProviderInfoSize;// Offset=0x154 Size=0x4
     struct _LIST_ENTRY Consumers;// Offset=0x158 Size=0x10
     unsigned long NumConsumers;// Offset=0x168 Size=0x4
+    unsigned char __align1[4];// Offset=0x16c Size=0x4
     struct _ETW_REALTIME_CONSUMER * TransitionConsumer;// Offset=0x170 Size=0x8
     void * RealtimeLogfileHandle;// Offset=0x178 Size=0x8
     struct _UNICODE_STRING RealtimeLogfileName;// Offset=0x180 Size=0x10
@@ -57,8 +59,10 @@ struct _WMI_LOGGER_CONTEXT// Size=0x398
     unsigned long long RealtimeLogfileUsage;// Offset=0x1a8 Size=0x8
     unsigned long long RealtimeMaximumFileSize;// Offset=0x1b0 Size=0x8
     unsigned long RealtimeBuffersSaved;// Offset=0x1b8 Size=0x4
+    unsigned char __align2[4];// Offset=0x1bc Size=0x4
     struct _ETW_REF_CLOCK RealtimeReferenceTime;// Offset=0x1c0 Size=0x10
     enum _ETW_RT_EVENT_LOSS NewRTEventsLost;// Offset=0x1d0 Size=0x4
+    unsigned char __align3[4];// Offset=0x1d4 Size=0x4
     struct _KEVENT LoggerEvent;// Offset=0x1d8 Size=0x18
     struct _KEVENT FlushEvent;// Offset=0x1f0 Size=0x18
     struct _KTIMER FlushTimeOutTimer;// Offset=0x208 Size=0x40

@@ -1,0 +1,56 @@
+struct _CM_KEY_CONTROL_BLOCK// Size=0xa8
+{
+    unsigned long RefCount;// Offset=0x0 Size=0x4
+    unsigned long ExtFlags:16;// Offset=0x4 Size=0x4 BitOffset=0x0 BitSize=0x10
+    unsigned long PrivateAlloc:1;// Offset=0x4 Size=0x4 BitOffset=0x10 BitSize=0x1
+    unsigned long Discarded:1;// Offset=0x4 Size=0x4 BitOffset=0x11 BitSize=0x1
+    unsigned long HiveUnloaded:1;// Offset=0x4 Size=0x4 BitOffset=0x12 BitSize=0x1
+    unsigned long Decommissioned:1;// Offset=0x4 Size=0x4 BitOffset=0x13 BitSize=0x1
+    unsigned long LockTablePresent:1;// Offset=0x4 Size=0x4 BitOffset=0x14 BitSize=0x1
+    unsigned long TotalLevels:10;// Offset=0x4 Size=0x4 BitOffset=0x15 BitSize=0xa
+    struct _CM_KEY_HASH KeyHash;// Offset=0x8 Size=0x10
+    struct _CM_PATH_HASH ConvKey;// Offset=0x8 Size=0x4
+    struct _CM_KEY_HASH * NextHash;// Offset=0xc Size=0x4
+    struct _HHIVE * KeyHive;// Offset=0x10 Size=0x4
+    unsigned long KeyCell;// Offset=0x14 Size=0x4
+    struct _EX_PUSH_LOCK KcbPushlock;// Offset=0x18 Size=0x4
+    struct _KTHREAD * Owner;// Offset=0x1c Size=0x4
+    long SharedCount;// Offset=0x1c Size=0x4
+    unsigned char DelayedDeref:1;// Offset=0x20 Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char DelayedClose:1;// Offset=0x20 Size=0x1 BitOffset=0x1 BitSize=0x1
+    unsigned char Parking:1;// Offset=0x20 Size=0x1 BitOffset=0x2 BitSize=0x1
+    unsigned char LayerSemantics;// Offset=0x21 Size=0x1
+    short LayerHeight;// Offset=0x22 Size=0x2
+    unsigned long SlotHint;// Offset=0x24 Size=0x4
+    struct _CM_KEY_CONTROL_BLOCK * ParentKcb;// Offset=0x28 Size=0x4
+    struct _CM_NAME_CONTROL_BLOCK * NameBlock;// Offset=0x2c Size=0x4
+    struct _CM_KEY_SECURITY_CACHE * CachedSecurity;// Offset=0x30 Size=0x4
+    struct _CACHED_CHILD_LIST ValueCache;// Offset=0x34 Size=0x8
+    struct _CM_INDEX_HINT_BLOCK * IndexHint;// Offset=0x3c Size=0x4
+    unsigned long HashKey;// Offset=0x3c Size=0x4
+    unsigned long SubKeyCount;// Offset=0x3c Size=0x4
+    struct _LIST_ENTRY KeyBodyListHead;// Offset=0x40 Size=0x8
+    struct _LIST_ENTRY FreeListEntry;// Offset=0x40 Size=0x8
+    struct _CM_KEY_BODY * KeyBodyArray[4];// Offset=0x48 Size=0x10
+    union _LARGE_INTEGER KcbLastWriteTime;// Offset=0x58 Size=0x8
+    unsigned short KcbMaxNameLen;// Offset=0x60 Size=0x2
+    unsigned short KcbMaxValueNameLen;// Offset=0x62 Size=0x2
+    unsigned long KcbMaxValueDataLen;// Offset=0x64 Size=0x4
+    unsigned long KcbUserFlags:4;// Offset=0x68 Size=0x4 BitOffset=0x0 BitSize=0x4
+    unsigned long KcbVirtControlFlags:4;// Offset=0x68 Size=0x4 BitOffset=0x4 BitSize=0x4
+    unsigned long KcbDebug:8;// Offset=0x68 Size=0x4 BitOffset=0x8 BitSize=0x8
+    unsigned long Flags:16;// Offset=0x68 Size=0x4 BitOffset=0x10 BitSize=0x10
+    struct _CM_KCB_LAYER_INFO * LayerInfo;// Offset=0x6c Size=0x4
+    struct _LIST_ENTRY KCBUoWListHead;// Offset=0x70 Size=0x8
+    struct _LIST_ENTRY DelayQueueEntry;// Offset=0x78 Size=0x8
+    unsigned char * Stolen;// Offset=0x78 Size=0x4
+    unsigned char __align0[4];// Offset=0x7c Size=0x4
+    struct _CM_TRANS * TransKCBOwner;// Offset=0x80 Size=0x4
+    struct _CM_INTENT_LOCK KCBLock;// Offset=0x84 Size=0x8
+    struct _CM_INTENT_LOCK KeyLock;// Offset=0x8c Size=0x8
+    struct _CHILD_LIST TransValueCache;// Offset=0x94 Size=0x8
+    struct _CM_TRANS * TransValueListOwner;// Offset=0x9c Size=0x4
+    struct _UNICODE_STRING * FullKCBName;// Offset=0xa0 Size=0x4
+    unsigned long FullKCBNameStale:1;// Offset=0xa0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long Reserved:31;// Offset=0xa0 Size=0x4 BitOffset=0x1 BitSize=0x1f
+};

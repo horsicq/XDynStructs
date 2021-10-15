@@ -1,0 +1,6 @@
+struct _unnamed_128// Size=0x10
+{
+    unsigned long Length;// Offset=0x0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
+    enum _FILE_INFORMATION_CLASS FileInformationClass;// Offset=0x8 Size=0x4
+};

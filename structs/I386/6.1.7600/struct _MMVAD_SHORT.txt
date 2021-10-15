@@ -1,0 +1,11 @@
+struct _MMVAD_SHORT// Size=0x20
+{
+    union _unnamed_190 u1;// Offset=0x0 Size=0x4
+    struct _MMVAD * LeftChild;// Offset=0x4 Size=0x4
+    struct _MMVAD * RightChild;// Offset=0x8 Size=0x4
+    unsigned long StartingVpn;// Offset=0xc Size=0x4
+    unsigned long EndingVpn;// Offset=0x10 Size=0x4
+    union _unnamed_191 u;// Offset=0x14 Size=0x4
+    struct _EX_PUSH_LOCK PushLock;// Offset=0x18 Size=0x4
+    union _unnamed_192 u5;// Offset=0x1c Size=0x4
+};

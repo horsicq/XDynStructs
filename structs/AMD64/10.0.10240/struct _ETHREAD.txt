@@ -63,14 +63,18 @@ struct _ETHREAD// Size=0x7c0
     unsigned char OwnsVadExclusive:1;// Offset=0x6c4 Size=0x1 BitOffset=0x7 BitSize=0x1
     unsigned char SystemPagePriorityActive:1;// Offset=0x6c5 Size=0x1 BitOffset=0x0 BitSize=0x1
     unsigned char SystemPagePriority:3;// Offset=0x6c5 Size=0x1 BitOffset=0x1 BitSize=0x3
+    unsigned char __align0[2];// Offset=0x6c6 Size=0x2
     unsigned char CacheManagerActive;// Offset=0x6c8 Size=0x1
     unsigned char DisablePageFaultClustering;// Offset=0x6c9 Size=0x1
     unsigned char ActiveFaultCount;// Offset=0x6ca Size=0x1
     unsigned char LockOrderState;// Offset=0x6cb Size=0x1
+    unsigned char __align1[4];// Offset=0x6cc Size=0x4
     unsigned long long AlpcMessageId;// Offset=0x6d0 Size=0x8
     void * AlpcMessage;// Offset=0x6d8 Size=0x8
     unsigned long AlpcReceiveAttributeSet;// Offset=0x6d8 Size=0x4
+    unsigned char __align2[4];// Offset=0x6dc Size=0x4
     long ExitStatus;// Offset=0x6e0 Size=0x4
+    unsigned char __align3[4];// Offset=0x6e4 Size=0x4
     struct _LIST_ENTRY AlpcWaitListEntry;// Offset=0x6e8 Size=0x10
     unsigned long CacheManagerCount;// Offset=0x6f8 Size=0x4
     unsigned long IoBoostCount;// Offset=0x6fc Size=0x4
@@ -84,14 +88,17 @@ struct _ETHREAD// Size=0x7c0
     struct _SINGLE_LIST_ENTRY SeLearningModeListHead;// Offset=0x748 Size=0x8
     void * VerifierContext;// Offset=0x750 Size=0x8
     unsigned long KernelStackReference;// Offset=0x758 Size=0x4
+    unsigned char __align4[4];// Offset=0x75c Size=0x4
     void * AdjustedClientToken;// Offset=0x760 Size=0x8
     void * WorkingOnBehalfClient;// Offset=0x768 Size=0x8
     struct _PS_PROPERTY_SET PropertySet;// Offset=0x770 Size=0x18
     void * PicoContext;// Offset=0x788 Size=0x8
     unsigned long UserFsBase;// Offset=0x790 Size=0x4
+    unsigned char __align5[4];// Offset=0x794 Size=0x4
     unsigned long long UserGsBase;// Offset=0x798 Size=0x8
     struct _THREAD_ENERGY_VALUES * EnergyValues;// Offset=0x7a0 Size=0x8
     unsigned long CmCellReferences;// Offset=0x7a8 Size=0x4
+    unsigned char __align6[4];// Offset=0x7ac Size=0x4
     unsigned long long SelectedCpuSets;// Offset=0x7b0 Size=0x8
     unsigned long long * SelectedCpuSetsIndirect;// Offset=0x7b0 Size=0x8
     struct _ESILO * Silo;// Offset=0x7b8 Size=0x8

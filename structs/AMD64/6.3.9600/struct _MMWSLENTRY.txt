@@ -1,0 +1,13 @@
+struct _MMWSLENTRY// Size=0x8
+{
+    unsigned long long Valid:1;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x1
+    unsigned long long Spare:1;// Offset=0x0 Size=0x8 BitOffset=0x1 BitSize=0x1
+    unsigned long long Hashed:1;// Offset=0x0 Size=0x8 BitOffset=0x2 BitSize=0x1
+    unsigned long long Direct:1;// Offset=0x0 Size=0x8 BitOffset=0x3 BitSize=0x1
+    unsigned long long Protection:5;// Offset=0x0 Size=0x8 BitOffset=0x4 BitSize=0x5
+    unsigned long long Age:3;// Offset=0x0 Size=0x8 BitOffset=0x9 BitSize=0x3
+    unsigned long long VirtualPageNumber:36;// Offset=0x0 Size=0x8 BitOffset=0xc BitSize=0x24
+    unsigned long long HighActiveFlink:4;// Offset=0x0 Size=0x8 BitOffset=0x30 BitSize=0x4
+    unsigned long long HighActiveBlink:4;// Offset=0x0 Size=0x8 BitOffset=0x34 BitSize=0x4
+    unsigned long long Unused:8;// Offset=0x0 Size=0x8 BitOffset=0x38 BitSize=0x8
+};

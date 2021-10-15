@@ -1,0 +1,5 @@
+struct _OBJECT_FOOTER// Size=0x30
+{
+    struct _HANDLE_REVOCATION_INFO HandleRevocationInfo;// Offset=0x0 Size=0x20
+    struct _OB_EXTENDED_USER_INFO ExtendedUserInfo;// Offset=0x20 Size=0x10
+};

@@ -1,0 +1,5 @@
+struct _MI_RESAVAIL_FAILURES// Size=0x8
+{
+    unsigned long Wrap;// Offset=0x0 Size=0x4
+    unsigned long NoCharge;// Offset=0x4 Size=0x4
+};

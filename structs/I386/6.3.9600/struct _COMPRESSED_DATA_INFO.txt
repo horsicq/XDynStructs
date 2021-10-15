@@ -1,0 +1,10 @@
+struct _COMPRESSED_DATA_INFO// Size=0xc
+{
+    unsigned short CompressionFormatAndEngine;// Offset=0x0 Size=0x2
+    unsigned char CompressionUnitShift;// Offset=0x2 Size=0x1
+    unsigned char ChunkShift;// Offset=0x3 Size=0x1
+    unsigned char ClusterShift;// Offset=0x4 Size=0x1
+    unsigned char Reserved;// Offset=0x5 Size=0x1
+    unsigned short NumberOfChunks;// Offset=0x6 Size=0x2
+    unsigned long CompressedChunkSizes[1];// Offset=0x8 Size=0x4
+};

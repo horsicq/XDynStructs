@@ -1,0 +1,34 @@
+struct _DUMP_INITIALIZATION_CONTEXT// Size=0x108
+{
+    unsigned long Length;// Offset=0x0 Size=0x4
+    unsigned long Reserved;// Offset=0x4 Size=0x4
+    void * MemoryBlock;// Offset=0x8 Size=0x8
+    void * CommonBuffer[2];// Offset=0x10 Size=0x10
+    union _LARGE_INTEGER PhysicalAddress[2];// Offset=0x20 Size=0x10
+    void  ( * StallRoutine)(unsigned long );// Offset=0x30 Size=0x8
+    unsigned char  ( * OpenRoutine)(union _LARGE_INTEGER );// Offset=0x38 Size=0x8
+    long  ( * WriteRoutine)(union _LARGE_INTEGER * ,struct _MDL * );// Offset=0x40 Size=0x8
+    void  ( * FinishRoutine)();// Offset=0x48 Size=0x8
+    struct _ADAPTER_OBJECT * AdapterObject;// Offset=0x50 Size=0x8
+    void * MappedRegisterBase;// Offset=0x58 Size=0x8
+    void * PortConfiguration;// Offset=0x60 Size=0x8
+    unsigned char CrashDump;// Offset=0x68 Size=0x1
+    unsigned char MarkMemoryOnly;// Offset=0x69 Size=0x1
+    unsigned char HiberResume;// Offset=0x6a Size=0x1
+    unsigned char Reserved1;// Offset=0x6b Size=0x1
+    unsigned long MaximumTransferSize;// Offset=0x6c Size=0x4
+    unsigned long CommonBufferSize;// Offset=0x70 Size=0x4
+    unsigned char __align0[4];// Offset=0x74 Size=0x4
+    void * TargetAddress;// Offset=0x78 Size=0x8
+    long  ( * WritePendingRoutine)(long ,union _LARGE_INTEGER * ,struct _MDL * ,void * );// Offset=0x80 Size=0x8
+    unsigned long PartitionStyle;// Offset=0x88 Size=0x4
+    union <anonymous-tag> DiskInfo;// Offset=0x8c Size=0x10
+    unsigned char __align1[4];// Offset=0x9c Size=0x4
+    long  ( * ReadRoutine)(long ,union _LARGE_INTEGER * ,struct _MDL * );// Offset=0xa0 Size=0x8
+    long  ( * GetDriveTelemetryRoutine)(unsigned long ,unsigned long ,void * ,unsigned long );// Offset=0xa8 Size=0x8
+    unsigned long LogSectionTruncateSize;// Offset=0xb0 Size=0x4
+    unsigned long Parameters[16];// Offset=0xb4 Size=0x40
+    unsigned char __align2[4];// Offset=0xf4 Size=0x4
+    void  ( * GetTransferSizesRoutine)(unsigned long * ,unsigned long * );// Offset=0xf8 Size=0x8
+    void  ( * DumpNotifyRoutine)(enum _DUMP_EVENTS ,void * ,unsigned long );// Offset=0x100 Size=0x8
+};

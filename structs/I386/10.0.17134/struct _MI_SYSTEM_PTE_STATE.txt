@@ -12,6 +12,7 @@ struct _MI_SYSTEM_PTE_STATE// Size=0x180
     unsigned char KernelStackPages;// Offset=0x148 Size=0x1
     unsigned char TrackPtesAborted;// Offset=0x149 Size=0x1
     unsigned char AdjustCounter;// Offset=0x14a Size=0x1
+    unsigned char __align0[1];// Offset=0x14b Size=0x1
     long ReservedMappingLock;// Offset=0x14c Size=0x4
     struct _RTL_AVL_TREE ReservedMappingTree;// Offset=0x150 Size=0x4
     struct _MMPFN * ReservedMappingPageTablePfns;// Offset=0x154 Size=0x4

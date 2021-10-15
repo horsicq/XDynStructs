@@ -1,0 +1,13 @@
+struct _IO_STACK_LOCATION// Size=0x48
+{
+    unsigned char MajorFunction;// Offset=0x0 Size=0x1
+    unsigned char MinorFunction;// Offset=0x1 Size=0x1
+    unsigned char Flags;// Offset=0x2 Size=0x1
+    unsigned char Control;// Offset=0x3 Size=0x1
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
+    union _unnamed_153 Parameters;// Offset=0x8 Size=0x20
+    struct _DEVICE_OBJECT * DeviceObject;// Offset=0x28 Size=0x8
+    struct _FILE_OBJECT * FileObject;// Offset=0x30 Size=0x8
+    long  ( * CompletionRoutine)(struct _DEVICE_OBJECT * ,struct _IRP * ,void * );// Offset=0x38 Size=0x8
+    void * Context;// Offset=0x40 Size=0x8
+};

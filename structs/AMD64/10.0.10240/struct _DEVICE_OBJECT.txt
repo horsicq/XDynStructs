@@ -14,15 +14,19 @@ struct _DEVICE_OBJECT// Size=0x150
     void * DeviceExtension;// Offset=0x40 Size=0x8
     unsigned long DeviceType;// Offset=0x48 Size=0x4
     char StackSize;// Offset=0x4c Size=0x1
+    unsigned char __align0[3];// Offset=0x4d Size=0x3
     union _unnamed_145 Queue;// Offset=0x50 Size=0x48
     unsigned long AlignmentRequirement;// Offset=0x98 Size=0x4
+    unsigned char __align1[4];// Offset=0x9c Size=0x4
     struct _KDEVICE_QUEUE DeviceQueue;// Offset=0xa0 Size=0x28
     struct _KDPC Dpc;// Offset=0xc8 Size=0x40
     unsigned long ActiveThreadCount;// Offset=0x108 Size=0x4
+    unsigned char __align2[4];// Offset=0x10c Size=0x4
     void * SecurityDescriptor;// Offset=0x110 Size=0x8
     struct _KEVENT DeviceLock;// Offset=0x118 Size=0x18
     unsigned short SectorSize;// Offset=0x130 Size=0x2
     unsigned short Spare1;// Offset=0x132 Size=0x2
+    unsigned char __align3[4];// Offset=0x134 Size=0x4
     struct _DEVOBJ_EXTENSION * DeviceObjectExtension;// Offset=0x138 Size=0x8
     void * Reserved;// Offset=0x140 Size=0x8
 };

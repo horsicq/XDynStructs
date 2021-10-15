@@ -91,7 +91,9 @@ struct _MI_RESAVAIL_TRACKER// Size=0x3c0
     unsigned long long FreeFaultCharges;// Offset=0x2c0 Size=0x8
     unsigned long long AllocateStoreCharges;// Offset=0x2c8 Size=0x8
     unsigned long long FreeStoreCharges;// Offset=0x2d0 Size=0x8
+    unsigned char __align0[40];// Offset=0x2d8 Size=0x28
     unsigned long long ObtainLockedPageCharge;// Offset=0x300 Size=0x8
+    unsigned char __align1[56];// Offset=0x308 Size=0x38
     unsigned long long FreeLockedPageCharge;// Offset=0x340 Size=0x8
     unsigned long long AllocateStore;// Offset=0x348 Size=0x8
     unsigned long long FreeStore;// Offset=0x350 Size=0x8

@@ -1,0 +1,5 @@
+struct _VF_AVL_TREE_NODE_EX// Size=0xc
+{
+    struct _VF_AVL_TREE_NODE Base;// Offset=0x0 Size=0x8
+    unsigned long SessionId;// Offset=0x8 Size=0x4
+};

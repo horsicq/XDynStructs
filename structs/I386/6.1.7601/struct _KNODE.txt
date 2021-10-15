@@ -1,0 +1,19 @@
+struct _KNODE// Size=0x80
+{
+    union _SLIST_HEADER PagedPoolSListHead;// Offset=0x0 Size=0x8
+    union _SLIST_HEADER NonPagedPoolSListHead[3];// Offset=0x8 Size=0x18
+    struct _GROUP_AFFINITY Affinity;// Offset=0x20 Size=0xc
+    unsigned long ProximityId;// Offset=0x2c Size=0x4
+    unsigned short NodeNumber;// Offset=0x30 Size=0x2
+    unsigned short PrimaryNodeNumber;// Offset=0x32 Size=0x2
+    unsigned char MaximumProcessors;// Offset=0x34 Size=0x1
+    unsigned char Color;// Offset=0x35 Size=0x1
+    struct _flags Flags;// Offset=0x36 Size=0x1
+    unsigned char NodePad0;// Offset=0x37 Size=0x1
+    unsigned long Seed;// Offset=0x38 Size=0x4
+    unsigned long MmShiftedColor;// Offset=0x3c Size=0x4
+    unsigned long FreeCount[2];// Offset=0x40 Size=0x8
+    struct _CACHED_KSTACK_LIST CachedKernelStacks;// Offset=0x48 Size=0x18
+    long ParkLock;// Offset=0x60 Size=0x4
+    unsigned long NodePad1;// Offset=0x64 Size=0x4
+};

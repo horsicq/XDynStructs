@@ -2,6 +2,7 @@ struct _MI_PARTITION// Size=0x2cc0
 {
     struct _MI_PARTITION_CORE Core;// Offset=0x0 Size=0x1a8
     struct _MI_PARTITION_MODWRITES Modwriter;// Offset=0x1a8 Size=0x2c0
+    unsigned char __align0[8];// Offset=0x468 Size=0x8
     struct _MI_PARTITION_STORES Store;// Offset=0x470 Size=0x90
     struct _MI_PARTITION_SEGMENTS Segments;// Offset=0x500 Size=0x340
     struct _MI_PARTITION_PAGE_LISTS PageLists;// Offset=0x840 Size=0xfc0
@@ -10,5 +11,6 @@ struct _MI_PARTITION// Size=0x2cc0
     struct _MI_PAGE_COMBINING_SUPPORT PageCombine;// Offset=0x18e8 Size=0x188
     void * WorkingSetControl;// Offset=0x1a70 Size=0x8
     struct _MMWORKING_SET_EXPANSION_HEAD WorkingSetExpansionHead;// Offset=0x1a78 Size=0x10
+    unsigned char __align1[56];// Offset=0x1a88 Size=0x38
     struct _MI_VISIBLE_PARTITION Vp;// Offset=0x1ac0 Size=0x1200
 };

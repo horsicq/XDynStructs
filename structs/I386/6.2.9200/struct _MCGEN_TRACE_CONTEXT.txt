@@ -1,0 +1,15 @@
+struct _MCGEN_TRACE_CONTEXT// Size=0x38
+{
+    unsigned long long RegistrationHandle;// Offset=0x0 Size=0x8
+    unsigned long long Logger;// Offset=0x8 Size=0x8
+    unsigned long long MatchAnyKeyword;// Offset=0x10 Size=0x8
+    unsigned long long MatchAllKeyword;// Offset=0x18 Size=0x8
+    unsigned long Flags;// Offset=0x20 Size=0x4
+    unsigned long IsEnabled;// Offset=0x24 Size=0x4
+    unsigned char Level;// Offset=0x28 Size=0x1
+    unsigned char Reserve;// Offset=0x29 Size=0x1
+    unsigned short EnableBitsCount;// Offset=0x2a Size=0x2
+    unsigned long * EnableBitMask;// Offset=0x2c Size=0x4
+    unsigned long long * EnableKeyWords;// Offset=0x30 Size=0x4
+    unsigned char * EnableLevel;// Offset=0x34 Size=0x4
+};

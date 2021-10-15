@@ -1,0 +1,10 @@
+union _unnamed_201// Size=0x4
+{
+    unsigned long Flink;// Offset=0x0 Size=0x4
+    unsigned long WsIndex;// Offset=0x0 Size=0x4
+    struct _KEVENT * Event;// Offset=0x0 Size=0x4
+    void * Next;// Offset=0x0 Size=0x4
+    void * VolatileNext;// Offset=0x0 Size=0x4
+    struct _KTHREAD * KernelStackOwner;// Offset=0x0 Size=0x4
+    struct _SINGLE_LIST_ENTRY NextStackPfn;// Offset=0x0 Size=0x4
+};

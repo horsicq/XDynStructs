@@ -1,0 +1,9 @@
+struct _FAULT_INFORMATION_X64// Size=0x28
+{
+    void * DomainHandle;// Offset=0x0 Size=0x8
+    void * FaultAddress;// Offset=0x8 Size=0x8
+    struct _FAULT_INFORMATION_X64_FLAGS Flags;// Offset=0x10 Size=0x4
+    enum _FAULT_INFORMATION_ARM64_TYPE Type;// Offset=0x14 Size=0x4
+    unsigned long long IommuBaseAddress;// Offset=0x18 Size=0x8
+    unsigned long PciSegment;// Offset=0x20 Size=0x4
+};

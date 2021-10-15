@@ -1,0 +1,24 @@
+struct _MMSUPPORT// Size=0x6c
+{
+    struct _EX_PUSH_LOCK WorkingSetMutex;// Offset=0x0 Size=0x4
+    struct _KGATE * ExitGate;// Offset=0x4 Size=0x4
+    void * AccessLog;// Offset=0x8 Size=0x4
+    struct _LIST_ENTRY WorkingSetExpansionLinks;// Offset=0xc Size=0x8
+    unsigned long AgeDistribution[7];// Offset=0x14 Size=0x1c
+    unsigned long MinimumWorkingSetSize;// Offset=0x30 Size=0x4
+    unsigned long WorkingSetSize;// Offset=0x34 Size=0x4
+    unsigned long WorkingSetPrivateSize;// Offset=0x38 Size=0x4
+    unsigned long MaximumWorkingSetSize;// Offset=0x3c Size=0x4
+    unsigned long ChargedWslePages;// Offset=0x40 Size=0x4
+    unsigned long ActualWslePages;// Offset=0x44 Size=0x4
+    unsigned long WorkingSetSizeOverhead;// Offset=0x48 Size=0x4
+    unsigned long PeakWorkingSetSize;// Offset=0x4c Size=0x4
+    unsigned long HardFaultCount;// Offset=0x50 Size=0x4
+    struct _MMWSL * VmWorkingSetList;// Offset=0x54 Size=0x4
+    unsigned short NextPageColor;// Offset=0x58 Size=0x2
+    unsigned short LastTrimStamp;// Offset=0x5a Size=0x2
+    unsigned long PageFaultCount;// Offset=0x5c Size=0x4
+    unsigned long RepurposeCount;// Offset=0x60 Size=0x4
+    unsigned long Spare[1];// Offset=0x64 Size=0x4
+    struct _MMSUPPORT_FLAGS Flags;// Offset=0x68 Size=0x4
+};

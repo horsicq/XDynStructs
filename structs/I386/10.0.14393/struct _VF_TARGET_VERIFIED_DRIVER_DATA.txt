@@ -1,0 +1,42 @@
+struct _VF_TARGET_VERIFIED_DRIVER_DATA// Size=0xb0
+{
+    struct _VF_SUSPECT_DRIVER_ENTRY * SuspectDriverEntry;// Offset=0x0 Size=0x4
+    void * WMICallback;// Offset=0x4 Size=0x4
+    struct _LIST_ENTRY EtwHandlesListHead;// Offset=0x8 Size=0x8
+    union _unnamed_649 u1;// Offset=0x10 Size=0x4
+    unsigned long Signature;// Offset=0x14 Size=0x4
+    union _SLIST_HEADER PoolPageHeaders;// Offset=0x18 Size=0x8
+    union _SLIST_HEADER PoolTrackers;// Offset=0x20 Size=0x8
+    unsigned long CurrentPagedPoolAllocations;// Offset=0x28 Size=0x4
+    unsigned long CurrentNonPagedPoolAllocations;// Offset=0x2c Size=0x4
+    unsigned long PeakPagedPoolAllocations;// Offset=0x30 Size=0x4
+    unsigned long PeakNonPagedPoolAllocations;// Offset=0x34 Size=0x4
+    unsigned long PagedBytes;// Offset=0x38 Size=0x4
+    unsigned long NonPagedBytes;// Offset=0x3c Size=0x4
+    unsigned long PeakPagedBytes;// Offset=0x40 Size=0x4
+    unsigned long PeakNonPagedBytes;// Offset=0x44 Size=0x4
+    unsigned long RaiseIrqls;// Offset=0x48 Size=0x4
+    unsigned long AcquireSpinLocks;// Offset=0x4c Size=0x4
+    unsigned long SynchronizeExecutions;// Offset=0x50 Size=0x4
+    unsigned long AllocationsWithNoTag;// Offset=0x54 Size=0x4
+    unsigned long AllocationsFailed;// Offset=0x58 Size=0x4
+    unsigned long AllocationsFailedDeliberately;// Offset=0x5c Size=0x4
+    unsigned long LockedBytes;// Offset=0x60 Size=0x4
+    unsigned long PeakLockedBytes;// Offset=0x64 Size=0x4
+    unsigned long MappedLockedBytes;// Offset=0x68 Size=0x4
+    unsigned long PeakMappedLockedBytes;// Offset=0x6c Size=0x4
+    unsigned long MappedIoSpaceBytes;// Offset=0x70 Size=0x4
+    unsigned long PeakMappedIoSpaceBytes;// Offset=0x74 Size=0x4
+    unsigned long PagesForMdlBytes;// Offset=0x78 Size=0x4
+    unsigned long PeakPagesForMdlBytes;// Offset=0x7c Size=0x4
+    unsigned long ContiguousMemoryBytes;// Offset=0x80 Size=0x4
+    unsigned long PeakContiguousMemoryBytes;// Offset=0x84 Size=0x4
+    struct _LIST_ENTRY ContiguousMemoryListHead;// Offset=0x88 Size=0x8
+    unsigned long ExecutePoolTypes;// Offset=0x90 Size=0x4
+    unsigned long ExecutePageProtections;// Offset=0x94 Size=0x4
+    unsigned long ExecutePageMappings;// Offset=0x98 Size=0x4
+    unsigned long ExecuteWriteSections;// Offset=0x9c Size=0x4
+    unsigned long SectionAlignmentFailures;// Offset=0xa0 Size=0x4
+    unsigned long UnsupportedRelocs;// Offset=0xa4 Size=0x4
+    unsigned long IATInExecutableSection;// Offset=0xa8 Size=0x4
+};

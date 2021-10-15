@@ -3,6 +3,7 @@ struct _SECURITY_DESCRIPTOR// Size=0x28
     unsigned char Revision;// Offset=0x0 Size=0x1
     unsigned char Sbz1;// Offset=0x1 Size=0x1
     unsigned short Control;// Offset=0x2 Size=0x2
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     void * Owner;// Offset=0x8 Size=0x8
     void * Group;// Offset=0x10 Size=0x8
     struct _ACL * Sacl;// Offset=0x18 Size=0x8

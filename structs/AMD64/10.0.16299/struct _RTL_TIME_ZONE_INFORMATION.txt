@@ -1,0 +1,10 @@
+struct _RTL_TIME_ZONE_INFORMATION// Size=0xac
+{
+    long Bias;// Offset=0x0 Size=0x4
+    wchar_t StandardName[32];// Offset=0x4 Size=0x40
+    struct _TIME_FIELDS StandardStart;// Offset=0x44 Size=0x10
+    long StandardBias;// Offset=0x54 Size=0x4
+    wchar_t DaylightName[32];// Offset=0x58 Size=0x40
+    struct _TIME_FIELDS DaylightStart;// Offset=0x98 Size=0x10
+    long DaylightBias;// Offset=0xa8 Size=0x4
+};

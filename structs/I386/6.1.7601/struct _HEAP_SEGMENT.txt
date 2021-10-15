@@ -1,0 +1,17 @@
+struct _HEAP_SEGMENT// Size=0x40
+{
+    struct _HEAP_ENTRY Entry;// Offset=0x0 Size=0x8
+    unsigned long SegmentSignature;// Offset=0x8 Size=0x4
+    unsigned long SegmentFlags;// Offset=0xc Size=0x4
+    struct _LIST_ENTRY SegmentListEntry;// Offset=0x10 Size=0x8
+    struct _HEAP * Heap;// Offset=0x18 Size=0x4
+    void * BaseAddress;// Offset=0x1c Size=0x4
+    unsigned long NumberOfPages;// Offset=0x20 Size=0x4
+    struct _HEAP_ENTRY * FirstEntry;// Offset=0x24 Size=0x4
+    struct _HEAP_ENTRY * LastValidEntry;// Offset=0x28 Size=0x4
+    unsigned long NumberOfUnCommittedPages;// Offset=0x2c Size=0x4
+    unsigned long NumberOfUnCommittedRanges;// Offset=0x30 Size=0x4
+    unsigned short SegmentAllocatorBackTraceIndex;// Offset=0x34 Size=0x2
+    unsigned short Reserved;// Offset=0x36 Size=0x2
+    struct _LIST_ENTRY UCRSegmentList;// Offset=0x38 Size=0x8
+};

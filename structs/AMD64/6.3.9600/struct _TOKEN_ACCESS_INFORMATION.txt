@@ -1,0 +1,16 @@
+struct _TOKEN_ACCESS_INFORMATION// Size=0x50
+{
+    struct _SID_AND_ATTRIBUTES_HASH * SidHash;// Offset=0x0 Size=0x8
+    struct _SID_AND_ATTRIBUTES_HASH * RestrictedSidHash;// Offset=0x8 Size=0x8
+    struct _TOKEN_PRIVILEGES * Privileges;// Offset=0x10 Size=0x8
+    struct _LUID AuthenticationId;// Offset=0x18 Size=0x8
+    enum _TOKEN_TYPE TokenType;// Offset=0x20 Size=0x4
+    enum _SECURITY_IMPERSONATION_LEVEL ImpersonationLevel;// Offset=0x24 Size=0x4
+    struct _TOKEN_MANDATORY_POLICY MandatoryPolicy;// Offset=0x28 Size=0x4
+    unsigned long Flags;// Offset=0x2c Size=0x4
+    unsigned long AppContainerNumber;// Offset=0x30 Size=0x4
+    unsigned char __align0[4];// Offset=0x34 Size=0x4
+    void * PackageSid;// Offset=0x38 Size=0x8
+    struct _SID_AND_ATTRIBUTES_HASH * CapabilitiesHash;// Offset=0x40 Size=0x8
+    void * TrustLevelSid;// Offset=0x48 Size=0x8
+};

@@ -1,0 +1,125 @@
+struct _ETHREAD// Size=0x898
+{
+    struct _KTHREAD Tcb;// Offset=0x0 Size=0x430
+    union _LARGE_INTEGER CreateTime;// Offset=0x430 Size=0x8
+    union _LARGE_INTEGER ExitTime;// Offset=0x438 Size=0x8
+    struct _LIST_ENTRY KeyedWaitChain;// Offset=0x438 Size=0x10
+    struct _LIST_ENTRY PostBlockList;// Offset=0x448 Size=0x10
+    void * ForwardLinkShadow;// Offset=0x448 Size=0x8
+    void * StartAddress;// Offset=0x450 Size=0x8
+    struct _TERMINATION_PORT * TerminationPort;// Offset=0x458 Size=0x8
+    struct _ETHREAD * ReaperLink;// Offset=0x458 Size=0x8
+    void * KeyedWaitValue;// Offset=0x458 Size=0x8
+    unsigned long long ActiveTimerListLock;// Offset=0x460 Size=0x8
+    struct _LIST_ENTRY ActiveTimerListHead;// Offset=0x468 Size=0x10
+    struct _CLIENT_ID Cid;// Offset=0x478 Size=0x10
+    struct _KSEMAPHORE KeyedWaitSemaphore;// Offset=0x488 Size=0x20
+    struct _KSEMAPHORE AlpcWaitSemaphore;// Offset=0x488 Size=0x20
+    union _PS_CLIENT_SECURITY_CONTEXT ClientSecurity;// Offset=0x4a8 Size=0x8
+    struct _LIST_ENTRY IrpList;// Offset=0x4b0 Size=0x10
+    unsigned long long TopLevelIrp;// Offset=0x4c0 Size=0x8
+    struct _DEVICE_OBJECT * DeviceToVerify;// Offset=0x4c8 Size=0x8
+    void * Win32StartAddress;// Offset=0x4d0 Size=0x8
+    void * ChargeOnlySession;// Offset=0x4d8 Size=0x8
+    void * LegacyPowerObject;// Offset=0x4e0 Size=0x8
+    struct _LIST_ENTRY ThreadListEntry;// Offset=0x4e8 Size=0x10
+    struct _EX_RUNDOWN_REF RundownProtect;// Offset=0x4f8 Size=0x8
+    struct _EX_PUSH_LOCK ThreadLock;// Offset=0x500 Size=0x8
+    unsigned long ReadClusterSize;// Offset=0x508 Size=0x4
+    long MmLockOrdering;// Offset=0x50c Size=0x4
+    unsigned long CrossThreadFlags;// Offset=0x510 Size=0x4
+    unsigned long Terminated:1;// Offset=0x510 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long ThreadInserted:1;// Offset=0x510 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long HideFromDebugger:1;// Offset=0x510 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long ActiveImpersonationInfo:1;// Offset=0x510 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long HardErrorsAreDisabled:1;// Offset=0x510 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long BreakOnTermination:1;// Offset=0x510 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long SkipCreationMsg:1;// Offset=0x510 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long SkipTerminationMsg:1;// Offset=0x510 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long CopyTokenOnOpen:1;// Offset=0x510 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long ThreadIoPriority:3;// Offset=0x510 Size=0x4 BitOffset=0x9 BitSize=0x3
+    unsigned long ThreadPagePriority:3;// Offset=0x510 Size=0x4 BitOffset=0xc BitSize=0x3
+    unsigned long RundownFail:1;// Offset=0x510 Size=0x4 BitOffset=0xf BitSize=0x1
+    unsigned long UmsForceQueueTermination:1;// Offset=0x510 Size=0x4 BitOffset=0x10 BitSize=0x1
+    unsigned long IndirectCpuSets:1;// Offset=0x510 Size=0x4 BitOffset=0x11 BitSize=0x1
+    unsigned long DisableDynamicCodeOptOut:1;// Offset=0x510 Size=0x4 BitOffset=0x12 BitSize=0x1
+    unsigned long ExplicitCaseSensitivity:1;// Offset=0x510 Size=0x4 BitOffset=0x13 BitSize=0x1
+    unsigned long PicoNotifyExit:1;// Offset=0x510 Size=0x4 BitOffset=0x14 BitSize=0x1
+    unsigned long DbgWerUserReportActive:1;// Offset=0x510 Size=0x4 BitOffset=0x15 BitSize=0x1
+    unsigned long ForcedSelfTrimActive:1;// Offset=0x510 Size=0x4 BitOffset=0x16 BitSize=0x1
+    unsigned long SamplingCoverage:1;// Offset=0x510 Size=0x4 BitOffset=0x17 BitSize=0x1
+    unsigned long ReservedCrossThreadFlags:8;// Offset=0x510 Size=0x4 BitOffset=0x18 BitSize=0x8
+    unsigned long SameThreadPassiveFlags;// Offset=0x514 Size=0x4
+    unsigned long ActiveExWorker:1;// Offset=0x514 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long MemoryMaker:1;// Offset=0x514 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long StoreLockThread:2;// Offset=0x514 Size=0x4 BitOffset=0x2 BitSize=0x2
+    unsigned long ClonedThread:1;// Offset=0x514 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long KeyedEventInUse:1;// Offset=0x514 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long SelfTerminate:1;// Offset=0x514 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long RespectIoPriority:1;// Offset=0x514 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long ActivePageLists:1;// Offset=0x514 Size=0x4 BitOffset=0x8 BitSize=0x1
+    unsigned long SecureContext:1;// Offset=0x514 Size=0x4 BitOffset=0x9 BitSize=0x1
+    unsigned long ZeroPageThread:1;// Offset=0x514 Size=0x4 BitOffset=0xa BitSize=0x1
+    unsigned long WorkloadClass:1;// Offset=0x514 Size=0x4 BitOffset=0xb BitSize=0x1
+    unsigned long ReservedSameThreadPassiveFlags:20;// Offset=0x514 Size=0x4 BitOffset=0xc BitSize=0x14
+    unsigned long SameThreadApcFlags;// Offset=0x518 Size=0x4
+    unsigned char OwnsProcessAddressSpaceExclusive:1;// Offset=0x518 Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char OwnsProcessAddressSpaceShared:1;// Offset=0x518 Size=0x1 BitOffset=0x1 BitSize=0x1
+    unsigned char HardFaultBehavior:1;// Offset=0x518 Size=0x1 BitOffset=0x2 BitSize=0x1
+    unsigned char StartAddressInvalid:1;// Offset=0x518 Size=0x1 BitOffset=0x3 BitSize=0x1
+    unsigned char EtwCalloutActive:1;// Offset=0x518 Size=0x1 BitOffset=0x4 BitSize=0x1
+    unsigned char SuppressSymbolLoad:1;// Offset=0x518 Size=0x1 BitOffset=0x5 BitSize=0x1
+    unsigned char Prefetching:1;// Offset=0x518 Size=0x1 BitOffset=0x6 BitSize=0x1
+    unsigned char OwnsVadExclusive:1;// Offset=0x518 Size=0x1 BitOffset=0x7 BitSize=0x1
+    unsigned char SystemPagePriorityActive:1;// Offset=0x519 Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char SystemPagePriority:3;// Offset=0x519 Size=0x1 BitOffset=0x1 BitSize=0x3
+    unsigned char AllowUserWritesToExecutableMemory:1;// Offset=0x519 Size=0x1 BitOffset=0x4 BitSize=0x1
+    unsigned char AllowKernelWritesToExecutableMemory:1;// Offset=0x519 Size=0x1 BitOffset=0x5 BitSize=0x1
+    unsigned char OwnsVadShared:1;// Offset=0x519 Size=0x1 BitOffset=0x6 BitSize=0x1
+    unsigned char __align0[2];// Offset=0x51a Size=0x2
+    unsigned char CacheManagerActive;// Offset=0x51c Size=0x1
+    unsigned char DisablePageFaultClustering;// Offset=0x51d Size=0x1
+    unsigned char ActiveFaultCount;// Offset=0x51e Size=0x1
+    unsigned char LockOrderState;// Offset=0x51f Size=0x1
+    unsigned long PerformanceCountLowReserved;// Offset=0x520 Size=0x4
+    long PerformanceCountHighReserved;// Offset=0x524 Size=0x4
+    unsigned long long AlpcMessageId;// Offset=0x528 Size=0x8
+    void * AlpcMessage;// Offset=0x530 Size=0x8
+    unsigned long AlpcReceiveAttributeSet;// Offset=0x530 Size=0x4
+    unsigned char __align1[4];// Offset=0x534 Size=0x4
+    struct _LIST_ENTRY AlpcWaitListEntry;// Offset=0x538 Size=0x10
+    long ExitStatus;// Offset=0x548 Size=0x4
+    unsigned long CacheManagerCount;// Offset=0x54c Size=0x4
+    unsigned long IoBoostCount;// Offset=0x550 Size=0x4
+    unsigned long IoQoSBoostCount;// Offset=0x554 Size=0x4
+    unsigned long IoQoSThrottleCount;// Offset=0x558 Size=0x4
+    unsigned long KernelStackReference;// Offset=0x55c Size=0x4
+    struct _LIST_ENTRY BoostList;// Offset=0x560 Size=0x10
+    struct _LIST_ENTRY DeboostList;// Offset=0x570 Size=0x10
+    unsigned long long BoostListLock;// Offset=0x580 Size=0x8
+    unsigned long long IrpListLock;// Offset=0x588 Size=0x8
+    void * ReservedForSynchTracking;// Offset=0x590 Size=0x8
+    struct _SINGLE_LIST_ENTRY CmCallbackListHead;// Offset=0x598 Size=0x8
+    struct _GUID * ActivityId;// Offset=0x5a0 Size=0x8
+    struct _SINGLE_LIST_ENTRY SeLearningModeListHead;// Offset=0x5a8 Size=0x8
+    void * VerifierContext;// Offset=0x5b0 Size=0x8
+    void * AdjustedClientToken;// Offset=0x5b8 Size=0x8
+    void * WorkOnBehalfThread;// Offset=0x5c0 Size=0x8
+    struct _PS_PROPERTY_SET PropertySet;// Offset=0x5c8 Size=0x18
+    void * PicoContext;// Offset=0x5e0 Size=0x8
+    unsigned long long UserFsBase;// Offset=0x5e8 Size=0x8
+    unsigned long long UserGsBase;// Offset=0x5f0 Size=0x8
+    struct _THREAD_ENERGY_VALUES * EnergyValues;// Offset=0x5f8 Size=0x8
+    unsigned long long SelectedCpuSets;// Offset=0x600 Size=0x8
+    unsigned long long * SelectedCpuSetsIndirect;// Offset=0x600 Size=0x8
+    struct _EJOB * Silo;// Offset=0x608 Size=0x8
+    struct _UNICODE_STRING * ThreadName;// Offset=0x610 Size=0x8
+    struct _CONTEXT * SetContextState;// Offset=0x618 Size=0x8
+    unsigned long LastExpectedRunTime;// Offset=0x620 Size=0x4
+    unsigned long HeapData;// Offset=0x624 Size=0x4
+    struct _LIST_ENTRY OwnerEntryListHead;// Offset=0x628 Size=0x10
+    unsigned long long DisownedOwnerEntryListLock;// Offset=0x638 Size=0x8
+    struct _LIST_ENTRY DisownedOwnerEntryListHead;// Offset=0x640 Size=0x10
+    struct _KLOCK_ENTRY LockEntries[6];// Offset=0x650 Size=0x240
+    void * CmDbgInfo;// Offset=0x890 Size=0x8
+};

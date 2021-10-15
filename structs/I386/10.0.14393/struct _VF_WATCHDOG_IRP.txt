@@ -1,0 +1,9 @@
+struct _VF_WATCHDOG_IRP// Size=0x14
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x8
+    struct _IRP * Irp;// Offset=0x8 Size=0x4
+    unsigned long DueTickCount;// Offset=0xc Size=0x4
+    unsigned char Inserted;// Offset=0x10 Size=0x1
+    char TrackedStackLocation;// Offset=0x11 Size=0x1
+    unsigned short CancelTimeoutTicks;// Offset=0x12 Size=0x2
+};

@@ -1,0 +1,5 @@
+union _unnamed_700// Size=0x4
+{
+    struct _MI_SUBSECTION_ENTRY1 e1;// Offset=0x0 Size=0x4
+    unsigned long EntireField;// Offset=0x0 Size=0x4
+};

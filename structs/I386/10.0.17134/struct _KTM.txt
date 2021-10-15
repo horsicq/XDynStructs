@@ -30,6 +30,7 @@ struct _KTM// Size=0x238
     unsigned long LogFlags;// Offset=0x208 Size=0x4
     long LogFullStatus;// Offset=0x20c Size=0x4
     long RecoveryStatus;// Offset=0x210 Size=0x4
+    unsigned char __align0[4];// Offset=0x214 Size=0x4
     union _CLS_LSN LastCheckBaseLsn;// Offset=0x218 Size=0x8
     struct _LIST_ENTRY RestartOrderedList;// Offset=0x220 Size=0x8
     struct _WORK_QUEUE_ITEM OfflineWorkItem;// Offset=0x228 Size=0x10

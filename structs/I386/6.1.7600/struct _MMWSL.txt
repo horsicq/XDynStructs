@@ -1,0 +1,23 @@
+struct _MMWSL// Size=0x6a8
+{
+    unsigned long FirstFree;// Offset=0x0 Size=0x4
+    unsigned long FirstDynamic;// Offset=0x4 Size=0x4
+    unsigned long LastEntry;// Offset=0x8 Size=0x4
+    unsigned long NextSlot;// Offset=0xc Size=0x4
+    struct _MMWSLE * Wsle;// Offset=0x10 Size=0x4
+    void * LowestPagableAddress;// Offset=0x14 Size=0x4
+    unsigned long LastInitializedWsle;// Offset=0x18 Size=0x4
+    unsigned long NextAgingSlot;// Offset=0x1c Size=0x4
+    unsigned long NumberOfCommittedPageTables;// Offset=0x20 Size=0x4
+    unsigned long VadBitMapHint;// Offset=0x24 Size=0x4
+    unsigned long NonDirectCount;// Offset=0x28 Size=0x4
+    unsigned long LastVadBit;// Offset=0x2c Size=0x4
+    unsigned long MaximumLastVadBit;// Offset=0x30 Size=0x4
+    unsigned long LastAllocationSizeHint;// Offset=0x34 Size=0x4
+    unsigned long LastAllocationSize;// Offset=0x38 Size=0x4
+    struct _MMWSLE_NONDIRECT_HASH * NonDirectHash;// Offset=0x3c Size=0x4
+    struct _MMWSLE_HASH * HashTableStart;// Offset=0x40 Size=0x4
+    struct _MMWSLE_HASH * HighestPermittedHashAddress;// Offset=0x44 Size=0x4
+    unsigned short UsedPageTableEntries[768];// Offset=0x48 Size=0x600
+    unsigned long CommittedPageTables[24];// Offset=0x648 Size=0x60
+};

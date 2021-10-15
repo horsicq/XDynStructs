@@ -1,0 +1,8 @@
+struct _MI_COMBINE_STATE// Size=0x1a0
+{
+    long ActiveSpinLock;// Offset=0x0 Size=0x4
+    unsigned long CombiningThreadCount;// Offset=0x4 Size=0x4
+    struct _RTL_AVL_TREE ActiveThreadTree;// Offset=0x8 Size=0x8
+    unsigned long long ZeroPageHashValue;// Offset=0x10 Size=0x8
+    struct _MI_PAGE_COMBINING_SUPPORT CrossPartition;// Offset=0x18 Size=0x188
+};

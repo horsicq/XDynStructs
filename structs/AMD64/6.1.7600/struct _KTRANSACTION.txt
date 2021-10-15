@@ -2,6 +2,7 @@ struct _KTRANSACTION// Size=0x2d8
 {
     struct _KEVENT OutcomeEvent;// Offset=0x0 Size=0x18
     unsigned long cookie;// Offset=0x18 Size=0x4
+    unsigned char __align0[4];// Offset=0x1c Size=0x4
     struct _KMUTANT Mutex;// Offset=0x20 Size=0x38
     struct _KTRANSACTION * TreeTx;// Offset=0x58 Size=0x8
     struct _KTMOBJECT_NAMESPACE_LINK GlobalNamespaceLink;// Offset=0x60 Size=0x28
@@ -31,14 +32,18 @@ struct _KTRANSACTION// Size=0x2d8
     struct _KTIMER RollbackTimer;// Offset=0x1a8 Size=0x40
     struct _LIST_ENTRY LsnOrderedEntry;// Offset=0x1e8 Size=0x10
     enum _KTRANSACTION_OUTCOME Outcome;// Offset=0x1f8 Size=0x4
+    unsigned char __align1[4];// Offset=0x1fc Size=0x4
     struct _KTM * Tm;// Offset=0x200 Size=0x8
     long long CommitReservation;// Offset=0x208 Size=0x8
     struct _KTRANSACTION_HISTORY TransactionHistory[10];// Offset=0x210 Size=0x50
     unsigned long TransactionHistoryCount;// Offset=0x260 Size=0x4
+    unsigned char __align2[4];// Offset=0x264 Size=0x4
     void * DTCPrivateInformation;// Offset=0x268 Size=0x8
     unsigned long DTCPrivateInformationLength;// Offset=0x270 Size=0x4
+    unsigned char __align3[4];// Offset=0x274 Size=0x4
     struct _KMUTANT DTCPrivateInformationMutex;// Offset=0x278 Size=0x38
     void * PromotedTxSelfHandle;// Offset=0x2b0 Size=0x8
     unsigned long PendingPromotionCount;// Offset=0x2b8 Size=0x4
+    unsigned char __align4[4];// Offset=0x2bc Size=0x4
     struct _KEVENT PromotionCompletedEvent;// Offset=0x2c0 Size=0x18
 };

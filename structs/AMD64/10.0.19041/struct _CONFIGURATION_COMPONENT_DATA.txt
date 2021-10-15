@@ -1,0 +1,8 @@
+struct _CONFIGURATION_COMPONENT_DATA// Size=0x48
+{
+    struct _CONFIGURATION_COMPONENT_DATA * Parent;// Offset=0x0 Size=0x8
+    struct _CONFIGURATION_COMPONENT_DATA * Child;// Offset=0x8 Size=0x8
+    struct _CONFIGURATION_COMPONENT_DATA * Sibling;// Offset=0x10 Size=0x8
+    struct _CONFIGURATION_COMPONENT ComponentEntry;// Offset=0x18 Size=0x28
+    void * ConfigurationData;// Offset=0x40 Size=0x8
+};

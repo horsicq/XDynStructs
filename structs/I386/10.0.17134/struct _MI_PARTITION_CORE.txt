@@ -1,9 +1,11 @@
 struct _MI_PARTITION_CORE// Size=0xe4
 {
     unsigned short PartitionId;// Offset=0x0 Size=0x2
+    unsigned char __align0[2];// Offset=0x2 Size=0x2
     union _unnamed_1030 u;// Offset=0x4 Size=0x4
     unsigned long Signature;// Offset=0x8 Size=0x4
     unsigned char MemoryConfigurationChanged;// Offset=0xc Size=0x1
+    unsigned char __align1[3];// Offset=0xd Size=0x3
     struct _MI_NODE_INFORMATION * NodeInformation;// Offset=0x10 Size=0x4
     struct _RTL_AVL_TREE PageRoot;// Offset=0x14 Size=0x4
     struct _PHYSICAL_MEMORY_DESCRIPTOR * MemoryNodeRuns;// Offset=0x18 Size=0x4
@@ -19,6 +21,7 @@ struct _MI_PARTITION_CORE// Size=0xe4
     struct _EX_PUSH_LOCK DynamicMemoryPushLock;// Offset=0x68 Size=0x4
     long DynamicMemoryLock;// Offset=0x6c Size=0x4
     unsigned char PfnUnmapActive;// Offset=0x70 Size=0x1
+    unsigned char __align2[3];// Offset=0x71 Size=0x3
     struct _KEVENT TemporaryMemoryEvent;// Offset=0x74 Size=0x10
     void * RootDirectory;// Offset=0x84 Size=0x4
     void * KernelObjectsDirectory;// Offset=0x88 Size=0x4

@@ -1,0 +1,8 @@
+struct _VF_DRIVER_IO_CALLBACKS// Size=0x100
+{
+    long  ( * DriverInit)(struct _DRIVER_OBJECT * ,struct _UNICODE_STRING * );// Offset=0x0 Size=0x8
+    void  ( * DriverStartIo)(struct _DEVICE_OBJECT * ,struct _IRP * );// Offset=0x8 Size=0x8
+    void  ( * DriverUnload)(struct _DRIVER_OBJECT * );// Offset=0x10 Size=0x8
+    long  ( * AddDevice)(struct _DRIVER_OBJECT * ,struct _DEVICE_OBJECT * );// Offset=0x18 Size=0x8
+    long  ( * MajorFunction)[28];// Offset=0x20 Size=0xe0
+};

@@ -1,0 +1,9 @@
+struct _OWNER_ENTRY// Size=0x10
+{
+    unsigned long long OwnerThread;// Offset=0x0 Size=0x8
+    unsigned long IoPriorityBoosted:1;// Offset=0x8 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long OwnerReferenced:1;// Offset=0x8 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long IoQoSPriorityBoosted:1;// Offset=0x8 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long OwnerCount:29;// Offset=0x8 Size=0x4 BitOffset=0x3 BitSize=0x1d
+    unsigned long TableSize;// Offset=0x8 Size=0x4
+};

@@ -6,5 +6,6 @@ struct _IOV_IRP_TRACE// Size=0x80
     short SpecialApcDisable;// Offset=0x12 Size=0x2
     unsigned long CombinedApcDisable;// Offset=0x10 Size=0x4
     unsigned char Irql;// Offset=0x14 Size=0x1
+    unsigned char __align0[3];// Offset=0x15 Size=0x3
     void * StackTrace[13];// Offset=0x18 Size=0x68
 };

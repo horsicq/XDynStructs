@@ -1,0 +1,19 @@
+struct wil_details_StagingConfig// Size=0x58
+{
+    enum wil_FeatureStore store;// Offset=0x0 Size=0x4
+    int forUpdate;// Offset=0x4 Size=0x4
+    unsigned long readChangeStamp;// Offset=0x8 Size=0x4
+    unsigned char readVersion;// Offset=0xc Size=0x1
+    unsigned char __align0[3];// Offset=0xd Size=0x3
+    int modified;// Offset=0x10 Size=0x4
+    unsigned char __align1[4];// Offset=0x14 Size=0x4
+    struct wil_details_StagingConfigHeader * header;// Offset=0x18 Size=0x8
+    struct wil_details_StagingConfigFeature * features;// Offset=0x20 Size=0x8
+    struct wil_details_StagingConfigUsageTrigger * triggers;// Offset=0x28 Size=0x8
+    int changedInSession;// Offset=0x30 Size=0x4
+    unsigned char __align2[4];// Offset=0x34 Size=0x4
+    void * buffer;// Offset=0x38 Size=0x8
+    unsigned long long bufferSize;// Offset=0x40 Size=0x8
+    unsigned long long bufferAlloc;// Offset=0x48 Size=0x8
+    int bufferOwned;// Offset=0x50 Size=0x4
+};

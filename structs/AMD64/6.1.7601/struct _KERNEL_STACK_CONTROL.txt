@@ -1,0 +1,5 @@
+struct _KERNEL_STACK_CONTROL// Size=0x50
+{
+    struct _KERNEL_STACK_SEGMENT Current;// Offset=0x0 Size=0x28
+    struct _KERNEL_STACK_SEGMENT Previous;// Offset=0x28 Size=0x28
+};

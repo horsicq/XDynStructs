@@ -1,0 +1,5 @@
+struct _VF_KE_CRITICAL_REGION_TRACE// Size=0x20
+{
+    struct _ETHREAD * Thread;// Offset=0x0 Size=0x4
+    void * StackTrace[7];// Offset=0x4 Size=0x1c
+};

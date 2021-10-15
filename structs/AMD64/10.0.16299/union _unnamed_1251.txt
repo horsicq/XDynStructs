@@ -1,0 +1,8 @@
+union _unnamed_1251// Size=0x1
+{
+    unsigned char AsUCHAR;// Offset=0x0 Size=0x1
+    unsigned char NoDomainAccounting:1;// Offset=0x0 Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char IncreasePolicy:2;// Offset=0x0 Size=0x1 BitOffset=0x1 BitSize=0x2
+    unsigned char DecreasePolicy:2;// Offset=0x0 Size=0x1 BitOffset=0x3 BitSize=0x2
+    unsigned char Reserved:3;// Offset=0x0 Size=0x1 BitOffset=0x5 BitSize=0x3
+};

@@ -1,0 +1,5 @@
+struct _MI_RESUME_WORKITEM// Size=0x38
+{
+    struct _KEVENT ResumeCompleteEvent;// Offset=0x0 Size=0x18
+    struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x18 Size=0x20
+};

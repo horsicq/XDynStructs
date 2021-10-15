@@ -2,15 +2,18 @@ struct _CC_PARTITION// Size=0x400
 {
     short NodeTypeCode;// Offset=0x0 Size=0x2
     short NodeByteSize;// Offset=0x2 Size=0x2
+    unsigned char __align0[4];// Offset=0x4 Size=0x4
     struct _EPARTITION * PartitionObject;// Offset=0x8 Size=0x8
     struct _LIST_ENTRY CleanSharedCacheMapList;// Offset=0x10 Size=0x10
     struct _LIST_ENTRY CleanSharedCacheMapWithLogHandleList;// Offset=0x20 Size=0x10
     struct _SHARED_CACHE_MAP_LIST_CURSOR DirtySharedCacheMapList;// Offset=0x30 Size=0x18
     struct _SHARED_CACHE_MAP_LIST_CURSOR LazyWriteCursor;// Offset=0x48 Size=0x18
     struct _LIST_ENTRY DirtySharedCacheMapWithLogHandleList;// Offset=0x60 Size=0x10
+    unsigned char __align1[16];// Offset=0x70 Size=0x10
     unsigned long long PrivateLock;// Offset=0x80 Size=0x8
     unsigned long ConsecutiveWorklessLazyScanCount;// Offset=0x88 Size=0x4
     unsigned char ForcedDisableLazywriteScan;// Offset=0x8c Size=0x1
+    unsigned char __align2[51];// Offset=0x8d Size=0x33
     unsigned long long WorkQueueLock;// Offset=0xc0 Size=0x8
     unsigned long NumberWorkerThreads;// Offset=0xc8 Size=0x4
     unsigned long NumberActiveWorkerThreads;// Offset=0xcc Size=0x4
@@ -23,6 +26,7 @@ struct _CC_PARTITION// Size=0x400
     unsigned long ActiveExtraWriteBehindThreads;// Offset=0x130 Size=0x4
     unsigned long MaxExtraWriteBehindThreads;// Offset=0x134 Size=0x4
     unsigned char QueueThrottle;// Offset=0x138 Size=0x1
+    unsigned char __align3[3];// Offset=0x139 Size=0x3
     unsigned long PostTickWorkItemCount;// Offset=0x13c Size=0x4
     unsigned long ThreadsActiveBeforeThrottle;// Offset=0x140 Size=0x4
     unsigned long ExtraWBThreadsActiveBeforeThrottle;// Offset=0x144 Size=0x4
@@ -34,11 +38,13 @@ struct _CC_PARTITION// Size=0x400
     struct _KEVENT WaitingForTeardownEvent;// Offset=0x198 Size=0x18
     struct _KEVENT CoalescingFlushEvent;// Offset=0x1b0 Size=0x18
     unsigned long PagesYetToWrite;// Offset=0x1c8 Size=0x4
+    unsigned char __align4[4];// Offset=0x1cc Size=0x4
     struct _LAZY_WRITER LazyWriter;// Offset=0x1d0 Size=0x88
     struct _DIRTY_PAGE_STATISTICS DirtyPageStatistics;// Offset=0x258 Size=0x18
     struct _DIRTY_PAGE_THRESHOLDS DirtyPageThresholds;// Offset=0x270 Size=0x38
     struct _WRITE_BEHIND_THROUGHPUT * ThroughputStats;// Offset=0x2a8 Size=0x8
     long ThroughputTrend;// Offset=0x2b0 Size=0x4
+    unsigned char __align5[4];// Offset=0x2b4 Size=0x4
     unsigned long long AverageAvailablePages;// Offset=0x2b8 Size=0x8
     unsigned long long AverageDirtyPages;// Offset=0x2c0 Size=0x8
     unsigned long long PagesSkippedDueToHotSpot;// Offset=0x2c8 Size=0x8
@@ -46,7 +52,9 @@ struct _CC_PARTITION// Size=0x400
     union _LARGE_INTEGER PrevExtraWBThreadCheckTime;// Offset=0x2d8 Size=0x8
     unsigned char AddExtraWriteBehindThreads;// Offset=0x2e0 Size=0x1
     unsigned char RemoveExtraThreadPending;// Offset=0x2e1 Size=0x1
+    unsigned char __align6[6];// Offset=0x2e2 Size=0x6
     struct _LIST_ENTRY DeferredWrites;// Offset=0x2e8 Size=0x10
+    unsigned char __align7[8];// Offset=0x2f8 Size=0x8
     unsigned long long DeferredWriteSpinLock;// Offset=0x300 Size=0x8
     struct _LIST_ENTRY * IdleAsyncReadWorkerThreadList;// Offset=0x308 Size=0x8
     unsigned long * NumberActiveAsyncReadWorkerThreads;// Offset=0x310 Size=0x8
@@ -58,6 +66,7 @@ struct _CC_PARTITION// Size=0x400
     struct _EX_PUSH_LOCK AsyncReadWorkQueueLock;// Offset=0x340 Size=0x8
     struct _LIST_ENTRY VacbFreeHighPriorityList;// Offset=0x348 Size=0x10
     unsigned long NumberOfFreeHighPriorityVacbs;// Offset=0x358 Size=0x4
+    unsigned char __align8[4];// Offset=0x35c Size=0x4
     struct _ETHREAD * LowPriWorkerThread;// Offset=0x360 Size=0x8
     struct _SHARED_CACHE_MAP * LowPriSharedCacheMap;// Offset=0x368 Size=0x8
     long LowPriOldCpuPriority;// Offset=0x370 Size=0x4
@@ -67,6 +76,7 @@ struct _CC_PARTITION// Size=0x400
     unsigned char CoalescingState;// Offset=0x384 Size=0x1
     unsigned char ActivePartition;// Offset=0x385 Size=0x1
     unsigned char RundownPhase;// Offset=0x386 Size=0x1
+    unsigned char __align9[1];// Offset=0x387 Size=0x1
     long long RefCount;// Offset=0x388 Size=0x8
     struct _KEVENT ExitEvent;// Offset=0x390 Size=0x18
     struct _KEVENT FinalDereferenceEvent;// Offset=0x3a8 Size=0x18

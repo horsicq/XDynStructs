@@ -9,6 +9,7 @@ struct _PPM_IDLE_STATES// Size=0x150
     unsigned char IdleDurationLimited;// Offset=0x6 Size=0x1
     unsigned char IdleCheckLimited;// Offset=0x7 Size=0x1
     unsigned char StrictVetoBias;// Offset=0x8 Size=0x1
+    unsigned char __align0[3];// Offset=0x9 Size=0x3
     unsigned long ExitLatencyCountdown;// Offset=0xc Size=0x4
     unsigned long TargetState;// Offset=0x10 Size=0x4
     unsigned long ActualState;// Offset=0x14 Size=0x4
@@ -18,6 +19,7 @@ struct _PPM_IDLE_STATES// Size=0x150
     unsigned long Type;// Offset=0x24 Size=0x4
     unsigned long long LevelId;// Offset=0x28 Size=0x8
     unsigned short ReasonFlags;// Offset=0x30 Size=0x2
+    unsigned char __align1[6];// Offset=0x32 Size=0x6
     unsigned long long InitiateWakeStamp;// Offset=0x38 Size=0x8
     long PreviousStatus;// Offset=0x40 Size=0x4
     unsigned long PreviousCancelReason;// Offset=0x44 Size=0x4

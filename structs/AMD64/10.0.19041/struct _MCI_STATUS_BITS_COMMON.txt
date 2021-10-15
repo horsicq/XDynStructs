@@ -1,0 +1,13 @@
+struct _MCI_STATUS_BITS_COMMON// Size=0x8
+{
+    unsigned long long McaErrorCode:16;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x10
+    unsigned long long ModelErrorCode:16;// Offset=0x0 Size=0x8 BitOffset=0x10 BitSize=0x10
+    unsigned long long Reserved:25;// Offset=0x0 Size=0x8 BitOffset=0x20 BitSize=0x19
+    unsigned long long ContextCorrupt:1;// Offset=0x0 Size=0x8 BitOffset=0x39 BitSize=0x1
+    unsigned long long AddressValid:1;// Offset=0x0 Size=0x8 BitOffset=0x3a BitSize=0x1
+    unsigned long long MiscValid:1;// Offset=0x0 Size=0x8 BitOffset=0x3b BitSize=0x1
+    unsigned long long ErrorEnabled:1;// Offset=0x0 Size=0x8 BitOffset=0x3c BitSize=0x1
+    unsigned long long UncorrectedError:1;// Offset=0x0 Size=0x8 BitOffset=0x3d BitSize=0x1
+    unsigned long long StatusOverFlow:1;// Offset=0x0 Size=0x8 BitOffset=0x3e BitSize=0x1
+    unsigned long long Valid:1;// Offset=0x0 Size=0x8 BitOffset=0x3f BitSize=0x1
+};

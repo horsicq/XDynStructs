@@ -1,0 +1,10 @@
+union _KWAIT_STATUS_REGISTER// Size=0x1
+{
+    unsigned char Flags;// Offset=0x0 Size=0x1
+    unsigned char State:3;// Offset=0x0 Size=0x1 BitOffset=0x0 BitSize=0x3
+    unsigned char Affinity:1;// Offset=0x0 Size=0x1 BitOffset=0x3 BitSize=0x1
+    unsigned char Priority:1;// Offset=0x0 Size=0x1 BitOffset=0x4 BitSize=0x1
+    unsigned char Apc:1;// Offset=0x0 Size=0x1 BitOffset=0x5 BitSize=0x1
+    unsigned char UserApc:1;// Offset=0x0 Size=0x1 BitOffset=0x6 BitSize=0x1
+    unsigned char Alert:1;// Offset=0x0 Size=0x1 BitOffset=0x7 BitSize=0x1
+};

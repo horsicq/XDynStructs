@@ -89,6 +89,7 @@ struct _EJOB// Size=0x528
     unsigned long ShadowActiveProcessCount;// Offset=0x4a8 Size=0x4
     unsigned long ActiveAuxiliaryProcessCount;// Offset=0x4ac Size=0x4
     unsigned long SequenceNumber;// Offset=0x4b0 Size=0x4
+    unsigned char __align0[4];// Offset=0x4b4 Size=0x4
     unsigned long long TimerListLock;// Offset=0x4b8 Size=0x8
     struct _LIST_ENTRY TimerListHead;// Offset=0x4c0 Size=0x10
     struct _GUID ContainerId;// Offset=0x4d0 Size=0x10

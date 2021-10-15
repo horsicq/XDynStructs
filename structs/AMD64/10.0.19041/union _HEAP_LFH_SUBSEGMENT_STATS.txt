@@ -1,0 +1,5 @@
+union _HEAP_LFH_SUBSEGMENT_STATS// Size=0x8
+{
+    struct _HEAP_LFH_SUBSEGMENT_STAT Buckets[4];// Offset=0x0 Size=0x8
+    void * AllStats;// Offset=0x0 Size=0x8
+};

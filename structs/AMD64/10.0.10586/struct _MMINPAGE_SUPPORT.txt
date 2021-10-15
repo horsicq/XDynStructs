@@ -1,0 +1,29 @@
+struct _MMINPAGE_SUPPORT// Size=0x1b0
+{
+    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x10
+    struct _LIST_ENTRY ListHead;// Offset=0x10 Size=0x10
+    struct _KEVENT Event;// Offset=0x20 Size=0x18
+    struct _KEVENT CollidedEvent;// Offset=0x38 Size=0x18
+    struct _IO_STATUS_BLOCK IoStatus;// Offset=0x50 Size=0x10
+    union _LARGE_INTEGER ReadOffset;// Offset=0x60 Size=0x8
+    struct _KAPC_STATE ApcState;// Offset=0x68 Size=0x30
+    struct _ETHREAD * Thread;// Offset=0x98 Size=0x8
+    struct _MMPFN * LockedProtoPfn;// Offset=0xa0 Size=0x8
+    struct _MMPTE PteContents;// Offset=0xa8 Size=0x8
+    long WaitCount;// Offset=0xb0 Size=0x4
+    unsigned long ByteCount;// Offset=0xb4 Size=0x4
+    union _unnamed_1168 u3;// Offset=0xb8 Size=0x4
+    union _unnamed_1169 u1;// Offset=0xbc Size=0x4
+    struct _FILE_OBJECT * FilePointer;// Offset=0xc0 Size=0x8
+    struct _CONTROL_AREA * ControlArea;// Offset=0xc8 Size=0x8
+    struct _SUBSECTION * Subsection;// Offset=0xc8 Size=0x8
+    void * Autoboost;// Offset=0xd0 Size=0x8
+    void * FaultingAddress;// Offset=0xd8 Size=0x8
+    struct _MMPTE * PointerPte;// Offset=0xe0 Size=0x8
+    struct _MMPTE * BasePte;// Offset=0xe8 Size=0x8
+    struct _MMPFN * Pfn;// Offset=0xf0 Size=0x8
+    struct _MDL * PrefetchMdl;// Offset=0xf8 Size=0x8
+    struct _MDL Mdl;// Offset=0x100 Size=0x30
+    unsigned long long Page[16];// Offset=0x130 Size=0x80
+    struct _MMINPAGE_SUPPORT_FLOW_THROUGH FlowThrough;// Offset=0x130 Size=0x38
+};

@@ -1,0 +1,4 @@
+struct _PROCESSOR_PROFILE_CONTROL_AREA// Size=0xa0
+{
+    struct _PEBS_DS_SAVE_AREA PebsDsSaveArea;// Offset=0x0 Size=0xa0
+};

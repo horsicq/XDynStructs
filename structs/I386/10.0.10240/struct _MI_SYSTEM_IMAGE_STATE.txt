@@ -5,6 +5,7 @@ struct _MI_SYSTEM_IMAGE_STATE// Size=0x64
     struct _KMUTANT LoadLock;// Offset=0xc Size=0x20
     unsigned char FirstLoadEver;// Offset=0x2c Size=0x1
     unsigned char LargePageAll;// Offset=0x2d Size=0x1
+    unsigned char __align0[2];// Offset=0x2e Size=0x2
     unsigned long LastPage;// Offset=0x30 Size=0x4
     struct _LIST_ENTRY LargePageList;// Offset=0x34 Size=0x8
     struct _KLDR_DATA_TABLE_ENTRY * BeingDeleted;// Offset=0x3c Size=0x4

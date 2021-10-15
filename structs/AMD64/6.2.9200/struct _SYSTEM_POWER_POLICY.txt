@@ -21,6 +21,7 @@ struct _SYSTEM_POWER_POLICY// Size=0xe8
     struct SYSTEM_POWER_LEVEL DischargePolicy[4];// Offset=0x60 Size=0x60
     unsigned long VideoTimeout;// Offset=0xc0 Size=0x4
     unsigned char VideoDimDisplay;// Offset=0xc4 Size=0x1
+    unsigned char __align0[3];// Offset=0xc5 Size=0x3
     unsigned long VideoReserved[3];// Offset=0xc8 Size=0xc
     unsigned long SpindownTimeout;// Offset=0xd4 Size=0x4
     unsigned char OptimizeForPower;// Offset=0xd8 Size=0x1

@@ -73,6 +73,7 @@ struct _ETHREAD// Size=0x480
     unsigned char SystemPagePriorityActive:1;// Offset=0x3d5 Size=0x1 BitOffset=0x0 BitSize=0x1
     unsigned char SystemPagePriority:3;// Offset=0x3d5 Size=0x1 BitOffset=0x1 BitSize=0x3
     unsigned char AllowWritesToExecutableMemory:1;// Offset=0x3d5 Size=0x1 BitOffset=0x4 BitSize=0x1
+    unsigned char __align0[2];// Offset=0x3d6 Size=0x2
     unsigned char CacheManagerActive;// Offset=0x3d8 Size=0x1
     unsigned char DisablePageFaultClustering;// Offset=0x3d9 Size=0x1
     unsigned char ActiveFaultCount;// Offset=0x3da Size=0x1

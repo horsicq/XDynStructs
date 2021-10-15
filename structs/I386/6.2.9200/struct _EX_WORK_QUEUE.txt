@@ -1,0 +1,8 @@
+struct _EX_WORK_QUEUE// Size=0x38
+{
+    struct _KQUEUE WorkerQueue;// Offset=0x0 Size=0x28
+    unsigned long WorkItemsProcessed;// Offset=0x28 Size=0x4
+    unsigned long WorkItemsProcessedLastPass;// Offset=0x2c Size=0x4
+    long ThreadCount;// Offset=0x30 Size=0x4
+    unsigned char TryFailed;// Offset=0x34 Size=0x1
+};

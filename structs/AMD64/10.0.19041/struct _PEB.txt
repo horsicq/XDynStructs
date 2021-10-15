@@ -1,0 +1,119 @@
+struct _PEB// Size=0x7c8
+{
+    unsigned char InheritedAddressSpace;// Offset=0x0 Size=0x1
+    unsigned char ReadImageFileExecOptions;// Offset=0x1 Size=0x1
+    unsigned char BeingDebugged;// Offset=0x2 Size=0x1
+    unsigned char BitField;// Offset=0x3 Size=0x1
+    unsigned char ImageUsesLargePages:1;// Offset=0x3 Size=0x1 BitOffset=0x0 BitSize=0x1
+    unsigned char IsProtectedProcess:1;// Offset=0x3 Size=0x1 BitOffset=0x1 BitSize=0x1
+    unsigned char IsImageDynamicallyRelocated:1;// Offset=0x3 Size=0x1 BitOffset=0x2 BitSize=0x1
+    unsigned char SkipPatchingUser32Forwarders:1;// Offset=0x3 Size=0x1 BitOffset=0x3 BitSize=0x1
+    unsigned char IsPackagedProcess:1;// Offset=0x3 Size=0x1 BitOffset=0x4 BitSize=0x1
+    unsigned char IsAppContainer:1;// Offset=0x3 Size=0x1 BitOffset=0x5 BitSize=0x1
+    unsigned char IsProtectedProcessLight:1;// Offset=0x3 Size=0x1 BitOffset=0x6 BitSize=0x1
+    unsigned char IsLongPathAwareProcess:1;// Offset=0x3 Size=0x1 BitOffset=0x7 BitSize=0x1
+    unsigned char Padding0[4];// Offset=0x4 Size=0x4
+    void * Mutant;// Offset=0x8 Size=0x8
+    void * ImageBaseAddress;// Offset=0x10 Size=0x8
+    struct _PEB_LDR_DATA * Ldr;// Offset=0x18 Size=0x8
+    struct _RTL_USER_PROCESS_PARAMETERS * ProcessParameters;// Offset=0x20 Size=0x8
+    void * SubSystemData;// Offset=0x28 Size=0x8
+    void * ProcessHeap;// Offset=0x30 Size=0x8
+    struct _RTL_CRITICAL_SECTION * FastPebLock;// Offset=0x38 Size=0x8
+    union _SLIST_HEADER * AtlThunkSListPtr;// Offset=0x40 Size=0x8
+    void * IFEOKey;// Offset=0x48 Size=0x8
+    unsigned long CrossProcessFlags;// Offset=0x50 Size=0x4
+    unsigned long ProcessInJob:1;// Offset=0x50 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long ProcessInitializing:1;// Offset=0x50 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long ProcessUsingVEH:1;// Offset=0x50 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long ProcessUsingVCH:1;// Offset=0x50 Size=0x4 BitOffset=0x3 BitSize=0x1
+    unsigned long ProcessUsingFTH:1;// Offset=0x50 Size=0x4 BitOffset=0x4 BitSize=0x1
+    unsigned long ProcessPreviouslyThrottled:1;// Offset=0x50 Size=0x4 BitOffset=0x5 BitSize=0x1
+    unsigned long ProcessCurrentlyThrottled:1;// Offset=0x50 Size=0x4 BitOffset=0x6 BitSize=0x1
+    unsigned long ProcessImagesHotPatched:1;// Offset=0x50 Size=0x4 BitOffset=0x7 BitSize=0x1
+    unsigned long ReservedBits0:24;// Offset=0x50 Size=0x4 BitOffset=0x8 BitSize=0x18
+    unsigned char Padding1[4];// Offset=0x54 Size=0x4
+    void * KernelCallbackTable;// Offset=0x58 Size=0x8
+    void * UserSharedInfoPtr;// Offset=0x58 Size=0x8
+    unsigned long SystemReserved;// Offset=0x60 Size=0x4
+    unsigned long AtlThunkSListPtr32;// Offset=0x64 Size=0x4
+    void * ApiSetMap;// Offset=0x68 Size=0x8
+    unsigned long TlsExpansionCounter;// Offset=0x70 Size=0x4
+    unsigned char Padding2[4];// Offset=0x74 Size=0x4
+    void * TlsBitmap;// Offset=0x78 Size=0x8
+    unsigned long TlsBitmapBits[2];// Offset=0x80 Size=0x8
+    void * ReadOnlySharedMemoryBase;// Offset=0x88 Size=0x8
+    void * SharedData;// Offset=0x90 Size=0x8
+    void ** ReadOnlyStaticServerData;// Offset=0x98 Size=0x8
+    void * AnsiCodePageData;// Offset=0xa0 Size=0x8
+    void * OemCodePageData;// Offset=0xa8 Size=0x8
+    void * UnicodeCaseTableData;// Offset=0xb0 Size=0x8
+    unsigned long NumberOfProcessors;// Offset=0xb8 Size=0x4
+    unsigned long NtGlobalFlag;// Offset=0xbc Size=0x4
+    union _LARGE_INTEGER CriticalSectionTimeout;// Offset=0xc0 Size=0x8
+    unsigned long long HeapSegmentReserve;// Offset=0xc8 Size=0x8
+    unsigned long long HeapSegmentCommit;// Offset=0xd0 Size=0x8
+    unsigned long long HeapDeCommitTotalFreeThreshold;// Offset=0xd8 Size=0x8
+    unsigned long long HeapDeCommitFreeBlockThreshold;// Offset=0xe0 Size=0x8
+    unsigned long NumberOfHeaps;// Offset=0xe8 Size=0x4
+    unsigned long MaximumNumberOfHeaps;// Offset=0xec Size=0x4
+    void ** ProcessHeaps;// Offset=0xf0 Size=0x8
+    void * GdiSharedHandleTable;// Offset=0xf8 Size=0x8
+    void * ProcessStarterHelper;// Offset=0x100 Size=0x8
+    unsigned long GdiDCAttributeList;// Offset=0x108 Size=0x4
+    unsigned char Padding3[4];// Offset=0x10c Size=0x4
+    struct _RTL_CRITICAL_SECTION * LoaderLock;// Offset=0x110 Size=0x8
+    unsigned long OSMajorVersion;// Offset=0x118 Size=0x4
+    unsigned long OSMinorVersion;// Offset=0x11c Size=0x4
+    unsigned short OSBuildNumber;// Offset=0x120 Size=0x2
+    unsigned short OSCSDVersion;// Offset=0x122 Size=0x2
+    unsigned long OSPlatformId;// Offset=0x124 Size=0x4
+    unsigned long ImageSubsystem;// Offset=0x128 Size=0x4
+    unsigned long ImageSubsystemMajorVersion;// Offset=0x12c Size=0x4
+    unsigned long ImageSubsystemMinorVersion;// Offset=0x130 Size=0x4
+    unsigned char Padding4[4];// Offset=0x134 Size=0x4
+    unsigned long long ActiveProcessAffinityMask;// Offset=0x138 Size=0x8
+    unsigned long GdiHandleBuffer[60];// Offset=0x140 Size=0xf0
+    void  ( * PostProcessInitRoutine)();// Offset=0x230 Size=0x8
+    void * TlsExpansionBitmap;// Offset=0x238 Size=0x8
+    unsigned long TlsExpansionBitmapBits[32];// Offset=0x240 Size=0x80
+    unsigned long SessionId;// Offset=0x2c0 Size=0x4
+    unsigned char Padding5[4];// Offset=0x2c4 Size=0x4
+    union _ULARGE_INTEGER AppCompatFlags;// Offset=0x2c8 Size=0x8
+    union _ULARGE_INTEGER AppCompatFlagsUser;// Offset=0x2d0 Size=0x8
+    void * pShimData;// Offset=0x2d8 Size=0x8
+    void * AppCompatInfo;// Offset=0x2e0 Size=0x8
+    struct _UNICODE_STRING CSDVersion;// Offset=0x2e8 Size=0x10
+    struct _ACTIVATION_CONTEXT_DATA * ActivationContextData;// Offset=0x2f8 Size=0x8
+    struct _ASSEMBLY_STORAGE_MAP * ProcessAssemblyStorageMap;// Offset=0x300 Size=0x8
+    struct _ACTIVATION_CONTEXT_DATA * SystemDefaultActivationContextData;// Offset=0x308 Size=0x8
+    struct _ASSEMBLY_STORAGE_MAP * SystemAssemblyStorageMap;// Offset=0x310 Size=0x8
+    unsigned long long MinimumStackCommit;// Offset=0x318 Size=0x8
+    void * SparePointers[4];// Offset=0x320 Size=0x20
+    unsigned long SpareUlongs[5];// Offset=0x340 Size=0x14
+    unsigned char __align0[4];// Offset=0x354 Size=0x4
+    void * WerRegistrationData;// Offset=0x358 Size=0x8
+    void * WerShipAssertPtr;// Offset=0x360 Size=0x8
+    void * pUnused;// Offset=0x368 Size=0x8
+    void * pImageHeaderHash;// Offset=0x370 Size=0x8
+    unsigned long TracingFlags;// Offset=0x378 Size=0x4
+    unsigned long HeapTracingEnabled:1;// Offset=0x378 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long CritSecTracingEnabled:1;// Offset=0x378 Size=0x4 BitOffset=0x1 BitSize=0x1
+    unsigned long LibLoaderTracingEnabled:1;// Offset=0x378 Size=0x4 BitOffset=0x2 BitSize=0x1
+    unsigned long SpareTracingBits:29;// Offset=0x378 Size=0x4 BitOffset=0x3 BitSize=0x1d
+    unsigned char Padding6[4];// Offset=0x37c Size=0x4
+    unsigned long long CsrServerReadOnlySharedMemoryBase;// Offset=0x380 Size=0x8
+    unsigned long long TppWorkerpListLock;// Offset=0x388 Size=0x8
+    struct _LIST_ENTRY TppWorkerpList;// Offset=0x390 Size=0x10
+    void * WaitOnAddressHashTable[128];// Offset=0x3a0 Size=0x400
+    void * TelemetryCoverageHeader;// Offset=0x7a0 Size=0x8
+    unsigned long CloudFileFlags;// Offset=0x7a8 Size=0x4
+    unsigned long CloudFileDiagFlags;// Offset=0x7ac Size=0x4
+    char PlaceholderCompatibilityMode;// Offset=0x7b0 Size=0x1
+    char PlaceholderCompatibilityModeReserved[7];// Offset=0x7b1 Size=0x7
+    struct _LEAP_SECOND_DATA * LeapSecondData;// Offset=0x7b8 Size=0x8
+    unsigned long LeapSecondFlags;// Offset=0x7c0 Size=0x4
+    unsigned long SixtySecondEnabled:1;// Offset=0x7c0 Size=0x4 BitOffset=0x0 BitSize=0x1
+    unsigned long Reserved:31;// Offset=0x7c0 Size=0x4 BitOffset=0x1 BitSize=0x1f
+    unsigned long NtGlobalFlag2;// Offset=0x7c4 Size=0x4
+};

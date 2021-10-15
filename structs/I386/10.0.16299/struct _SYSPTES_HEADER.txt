@@ -1,0 +1,7 @@
+struct _SYSPTES_HEADER// Size=0x8c
+{
+    struct _LIST_ENTRY ListHead[16];// Offset=0x0 Size=0x80
+    unsigned long Count;// Offset=0x80 Size=0x4
+    unsigned long NumberOfEntries;// Offset=0x84 Size=0x4
+    unsigned long NumberOfEntriesPeak;// Offset=0x88 Size=0x4
+};

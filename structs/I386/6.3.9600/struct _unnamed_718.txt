@@ -1,0 +1,4 @@
+struct _unnamed_718// Size=0x2
+{
+    wchar_t DeviceId[1];// Offset=0x0 Size=0x2
+};

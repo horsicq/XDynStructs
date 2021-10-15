@@ -1,0 +1,6 @@
+struct _ACPI_CACHED_TABLE// Size=0x40
+{
+    struct _LIST_ENTRY Links;// Offset=0x0 Size=0x10
+    union _LARGE_INTEGER PhysicalAddress;// Offset=0x10 Size=0x8
+    struct _DESCRIPTION_HEADER Header;// Offset=0x18 Size=0x24
+};

@@ -1,0 +1,9 @@
+struct _unnamed_243// Size=0x10
+{
+    unsigned int ReservedEax;// Offset=0x0 Size=0x4
+    unsigned int ReservedEbx:24;// Offset=0x4 Size=0x4 BitOffset=0x0 BitSize=0x18
+    unsigned int InitialApicId:8;// Offset=0x4 Size=0x4 BitOffset=0x18 BitSize=0x8
+    unsigned int ReservedEcx:31;// Offset=0x8 Size=0x4 BitOffset=0x0 BitSize=0x1f
+    unsigned int HypervisorPresent:1;// Offset=0x8 Size=0x4 BitOffset=0x1f BitSize=0x1
+    unsigned int ReservedEdx;// Offset=0xc Size=0x4
+};

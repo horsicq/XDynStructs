@@ -9,6 +9,7 @@ struct _MCGEN_TRACE_CONTEXT// Size=0x48
     unsigned char Level;// Offset=0x28 Size=0x1
     unsigned char Reserve;// Offset=0x29 Size=0x1
     unsigned short EnableBitsCount;// Offset=0x2a Size=0x2
+    unsigned char __align0[4];// Offset=0x2c Size=0x4
     unsigned long * EnableBitMask;// Offset=0x30 Size=0x8
     unsigned long long * EnableKeyWords;// Offset=0x38 Size=0x8
     unsigned char * EnableLevel;// Offset=0x40 Size=0x8

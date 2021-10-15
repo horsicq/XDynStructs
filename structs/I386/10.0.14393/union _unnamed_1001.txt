@@ -1,0 +1,4 @@
+union _unnamed_1001// Size=0x8
+{
+    struct _unnamed_1000 Disk;// Offset=0x0 Size=0x8
+};

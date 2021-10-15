@@ -1,0 +1,15 @@
+struct _MMWSL_SHARED// Size=0x40
+{
+    unsigned long FirstFree;// Offset=0x0 Size=0x4
+    unsigned long FirstDynamic;// Offset=0x4 Size=0x4
+    unsigned long LastEntry;// Offset=0x8 Size=0x4
+    unsigned long LastInitializedWsle;// Offset=0xc Size=0x4
+    unsigned long WsleSize;// Offset=0x10 Size=0x4
+    unsigned long NonDirectCount;// Offset=0x14 Size=0x4
+    void * LowestPagableAddress;// Offset=0x18 Size=0x4
+    struct _MMWSLE_NONDIRECT_HASH * NonDirectHash;// Offset=0x1c Size=0x4
+    struct _MMWSLE_HASH * HashTableStart;// Offset=0x20 Size=0x4
+    struct _MMWSLE_HASH * HighestPermittedHashAddress;// Offset=0x24 Size=0x4
+    unsigned char __align0[8];// Offset=0x28 Size=0x8
+    struct _MMWSLE * Wsle;// Offset=0x30 Size=0x4
+};

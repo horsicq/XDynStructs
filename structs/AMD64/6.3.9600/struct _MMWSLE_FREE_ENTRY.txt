@@ -1,0 +1,6 @@
+struct _MMWSLE_FREE_ENTRY// Size=0x8
+{
+    unsigned long long MustBeZero:1;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x1
+    unsigned long long PreviousFree:27;// Offset=0x0 Size=0x8 BitOffset=0x1 BitSize=0x1b
+    unsigned long long NextFree:36;// Offset=0x0 Size=0x8 BitOffset=0x1c BitSize=0x24
+};
