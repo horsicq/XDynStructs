@@ -103,12 +103,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 97,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "ObjectName",
                     "offset": 100,
                     "size": 8,
@@ -466,12 +460,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[84]",
-                    "offset": 44,
-                    "size": 84,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "State",
                     "offset": 128,
                     "size": 8,
@@ -490,22 +478,10 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align1[112]",
-                    "offset": 144,
-                    "size": 112,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "PostCount",
                     "offset": 256,
                     "size": 4,
                     "type": "unsigned long"
-                },
-                {
-                    "name": "__align2[124]",
-                    "offset": 260,
-                    "size": 124,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "ReturnCount",
@@ -514,34 +490,16 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align3[124]",
-                    "offset": 388,
-                    "size": 124,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "LogSequenceNumber",
                     "offset": 512,
                     "size": 4,
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align4[124]",
-                    "offset": 516,
-                    "size": 124,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "UserLock",
                     "offset": 640,
                     "size": 4,
                     "type": "struct _RTL_SRWLOCK"
-                },
-                {
-                    "name": "__align5[4]",
-                    "offset": 644,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "EndMagic",
@@ -1319,12 +1277,6 @@
                     "type": "struct _DEVICE_OBJECT *"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 4,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "Start",
                     "offset": 8,
                     "size": 8,
@@ -1551,12 +1503,6 @@
                     "name": "TransactionInProgress",
                     "offset": 144,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align0[3]",
-                    "offset": 145,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -2115,12 +2061,6 @@
                     "offset": 0,
                     "size": 4,
                     "type": "struct _SINGLE_LIST_ENTRY"
-                },
-                {
-                    "name": "__align0[4]",
-                    "offset": 4,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "u1",
@@ -2740,12 +2680,6 @@
                     "type": "enum HSTORAGE_TYPE"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 44,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "ChildKCB",
                     "offset": 48,
                     "size": 4,
@@ -3164,12 +3098,6 @@
                     "type": "unsigned char *"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 120,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "TransKCBOwner",
                     "offset": 124,
                     "size": 4,
@@ -3346,12 +3274,6 @@
                     "offset": 28,
                     "size": 8,
                     "type": "struct _CM_KEY_REFERENCE"
-                },
-                {
-                    "name": "__align0[8]",
-                    "offset": 36,
-                    "size": 8,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "Security",
@@ -4408,12 +4330,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 1493,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "UnloadWorkItem",
                     "offset": 1496,
                     "size": 4,
@@ -4429,12 +4345,6 @@
                     "name": "GrowOnlyMode",
                     "offset": 1520,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align1[3]",
-                    "offset": 1521,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -5508,12 +5418,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 4,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "BaseOfDll",
                     "offset": 8,
                     "size": 8,
@@ -5610,12 +5514,6 @@
                     "offset": 8,
                     "size": 4,
                     "type": "long"
-                },
-                {
-                    "name": "__align0[4]",
-                    "offset": 12,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "u",
@@ -6883,12 +6781,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[2]",
-                    "offset": 386,
-                    "size": 2,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "PendingEjectRelations",
                     "offset": 388,
                     "size": 4,
@@ -6984,12 +6876,6 @@
                     "offset": 48,
                     "size": 1,
                     "type": "char"
-                },
-                {
-                    "name": "__align0[3]",
-                    "offset": 49,
-                    "size": 3,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "Queue",
@@ -7302,12 +7188,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 16,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "ReasonOffset",
                     "offset": 20,
                     "size": 4,
@@ -7345,12 +7225,6 @@
                     "type": "struct _DEVICE_OBJECT *"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 8,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "ReasonSize",
                     "offset": 12,
                     "size": 4,
@@ -7368,12 +7242,6 @@
                     "offset": 0,
                     "size": 2,
                     "type": "unsigned short"
-                },
-                {
-                    "name": "__align0[2]",
-                    "offset": 2,
-                    "size": 2,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "Guids",
@@ -7842,12 +7710,6 @@
                     "type": "void *"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 20,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "PhysicalAddress[2]",
                     "offset": 24,
                     "size": 16,
@@ -7899,12 +7761,6 @@
                     "name": "CrashDump",
                     "offset": 68,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align1[3]",
-                    "offset": 69,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -8200,12 +8056,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 181,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "AccessState",
                     "offset": 184,
                     "size": 4,
@@ -8246,12 +8096,6 @@
                     "offset": 208,
                     "size": 4,
                     "type": "unsigned long"
-                },
-                {
-                    "name": "__align1[4]",
-                    "offset": 212,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "ReadOperationCount",
@@ -8361,12 +8205,6 @@
                     "offset": 152,
                     "size": 4,
                     "type": "struct _EX_PUSH_LOCK"
-                },
-                {
-                    "name": "__align0[4]",
-                    "offset": 156,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "CreateTime",
@@ -8627,12 +8465,6 @@
                     "offset": 344,
                     "size": 4,
                     "type": "void *"
-                },
-                {
-                    "name": "__align1[4]",
-                    "offset": 348,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "PageDirectoryPte",
@@ -10121,12 +9953,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 137,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "WakeReason",
                     "offset": 140,
                     "size": 4,
@@ -10236,12 +10062,6 @@
                     "offset": 40,
                     "size": 8,
                     "type": "unsigned long long"
-                },
-                {
-                    "name": "__align0[8]",
-                    "offset": 48,
-                    "size": 8,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "ProviderEnableInfo",
@@ -10512,12 +10332,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[1]",
-                    "offset": 55,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "ReservedBufferSpaceBitMap",
                     "offset": 56,
                     "size": 8,
@@ -10624,12 +10438,6 @@
                 {
                     "name": "UseDescriptorType",
                     "offset": 30,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align0[1]",
-                    "offset": 31,
                     "size": 1,
                     "type": "unsigned char"
                 },
@@ -10800,12 +10608,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 4,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "LoggerName[65]",
                     "offset": 8,
                     "size": 65,
@@ -10816,12 +10618,6 @@
                     "offset": 73,
                     "size": 129,
                     "type": "char"
-                },
-                {
-                    "name": "__align1[2]",
-                    "offset": 202,
-                    "size": 2,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "MaximumFileSize",
@@ -10887,12 +10683,6 @@
                     "name": "Level",
                     "offset": 44,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align2[187]",
-                    "offset": 45,
-                    "size": 187,
                     "type": "unsigned char"
                 },
                 {
@@ -12248,12 +12038,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[2]",
-                    "offset": 6,
-                    "size": 2,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "DeviceObject",
                     "offset": 8,
                     "size": 4,
@@ -12655,12 +12439,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 4,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "HDC",
                     "offset": 8,
                     "size": 8,
@@ -12690,12 +12468,6 @@
                     "offset": 0,
                     "size": 4,
                     "type": "struct _SINGLE_LIST_ENTRY"
-                },
-                {
-                    "name": "__align0[4]",
-                    "offset": 4,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "Depth",
@@ -12835,12 +12607,6 @@
                     "offset": 0,
                     "size": 4,
                     "type": "struct _SINGLE_LIST_ENTRY"
-                },
-                {
-                    "name": "__align0[4]",
-                    "offset": 4,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "Depth",
@@ -13116,12 +12882,6 @@
                     "name": "StrictFIFO:1",
                     "offset": 36,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align0[3]",
-                    "offset": 37,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -13694,12 +13454,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[1]",
-                    "offset": 21,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "PciBusSegment",
                     "offset": 22,
                     "size": 2,
@@ -13715,12 +13469,6 @@
                     "name": "PciFunctionNumber",
                     "offset": 25,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align1[2]",
-                    "offset": 26,
-                    "size": 2,
                     "type": "unsigned char"
                 },
                 {
@@ -14001,12 +13749,6 @@
                     "type": "unsigned short"
                 },
                 {
-                    "name": "__align0[2]",
-                    "offset": 178,
-                    "size": 2,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "NonDedicatedListLength",
                     "offset": 180,
                     "size": 4,
@@ -14063,12 +13805,6 @@
                 {
                     "name": "FrontEndHeapType",
                     "offset": 218,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align1[1]",
-                    "offset": 219,
                     "size": 1,
                     "type": "unsigned char"
                 },
@@ -14235,12 +13971,6 @@
                     "offset": 4,
                     "size": 2,
                     "type": "unsigned short"
-                },
-                {
-                    "name": "__align0[2]",
-                    "offset": 6,
-                    "size": 2,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "ExtendedOptions",
@@ -15264,12 +14994,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[1]",
-                    "offset": 71,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "HvBinHeadersUse",
                     "offset": 72,
                     "size": 4,
@@ -15418,12 +15142,6 @@
                     "name": "WinPERequired",
                     "offset": 36,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align0[3]",
-                    "offset": 37,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -16463,12 +16181,6 @@
                     "offset": 0,
                     "size": 2,
                     "type": "short"
-                },
-                {
-                    "name": "__align0[2]",
-                    "offset": 2,
-                    "size": 2,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "ExtraCreateParameter",
@@ -18642,12 +18354,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 76,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "Rsvd1",
                     "offset": 80,
                     "size": 8,
@@ -18886,12 +18592,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 37,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "IRR",
                     "offset": 40,
                     "size": 4,
@@ -19015,12 +18715,6 @@
                     "name": "Spare1",
                     "offset": 216,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align1[3]",
-                    "offset": 217,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -19921,12 +19615,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 6484,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "TickOffset",
                     "offset": 6488,
                     "size": 8,
@@ -20213,12 +19901,6 @@
                     "offset": 13184,
                     "size": 4,
                     "type": "unsigned long"
-                },
-                {
-                    "name": "__align1[4]",
-                    "offset": 13188,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "UpdateSignature",
@@ -21417,12 +21099,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 28,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "QuantumTarget",
                     "offset": 32,
                     "size": 8,
@@ -21687,12 +21363,6 @@
                     "type": "struct _SINGLE_LIST_ENTRY"
                 },
                 {
-                    "name": "__align1[4]",
-                    "offset": 120,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "Queue",
                     "offset": 124,
                     "size": 4,
@@ -21727,12 +21397,6 @@
                     "offset": 136,
                     "size": 4,
                     "type": "void *"
-                },
-                {
-                    "name": "__align2[4]",
-                    "offset": 140,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "Timer",
@@ -22033,12 +21697,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align3[1]",
-                    "offset": 395,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "Win32Thread",
                     "offset": 396,
                     "size": 4,
@@ -22214,12 +21872,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 20,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "CycleTimeBias",
                     "offset": 24,
                     "size": 8,
@@ -22311,12 +21963,6 @@
                     "offset": 4,
                     "size": 8,
                     "type": "struct _LIST_ENTRY"
-                },
-                {
-                    "name": "__align0[4]",
-                    "offset": 12,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "Time",
@@ -22512,12 +22158,6 @@
                     "type": "long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 532,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "LastCheckBaseLsn",
                     "offset": 536,
                     "size": 8,
@@ -22708,12 +22348,6 @@
                     "type": "struct _KENLISTMENT *"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 156,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "LastLsn",
                     "offset": 160,
                     "size": 8,
@@ -22778,12 +22412,6 @@
                     "offset": 228,
                     "size": 32,
                     "type": "struct _KDPC"
-                },
-                {
-                    "name": "__align1[4]",
-                    "offset": 260,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "RollbackTimer",
@@ -23432,12 +23060,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 617,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "NtMajorVersion",
                     "offset": 620,
                     "size": 4,
@@ -23507,12 +23129,6 @@
                     "name": "NXSupportPolicy",
                     "offset": 725,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align1[2]",
-                    "offset": 726,
-                    "size": 2,
                     "type": "unsigned char"
                 },
                 {
@@ -24667,12 +24283,6 @@
                     "type": "void *"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 20,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "Request",
                     "offset": 24,
                     "size": 24,
@@ -25265,12 +24875,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[2]",
-                    "offset": 6,
-                    "size": 2,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "CurrentTime",
                     "offset": 8,
                     "size": 8,
@@ -25825,12 +25429,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 12,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "CreateTime",
                     "offset": 16,
                     "size": 8,
@@ -25847,12 +25445,6 @@
                     "offset": 24,
                     "size": 4,
                     "type": "struct _MM_PAGE_ACCESS_INFO *"
-                },
-                {
-                    "name": "__align1[4]",
-                    "offset": 28,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "PageEntry",
@@ -26067,12 +25659,6 @@
                     "type": "struct _LIST_ENTRY"
                 },
                 {
-                    "name": "__align0[8]",
-                    "offset": 120,
-                    "size": 8,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "Lookaside[25]",
                     "offset": 128,
                     "size": 3200,
@@ -26107,12 +25693,6 @@
                     "offset": 3552,
                     "size": 4,
                     "type": "void  ( *"
-                },
-                {
-                    "name": "__align1[28]",
-                    "offset": 3556,
-                    "size": 28,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "PagedPool",
@@ -29000,12 +28580,6 @@
                     "type": "struct _SINGLE_LIST_ENTRY"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 4,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "Next",
                     "offset": 8,
                     "size": 8,
@@ -29246,12 +28820,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 36,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "ArbitraryUserPointer",
                     "offset": 40,
                     "size": 8,
@@ -29373,12 +28941,6 @@
                     "offset": 8,
                     "size": 1,
                     "type": "char"
-                },
-                {
-                    "name": "__align0[3]",
-                    "offset": 9,
-                    "size": 3,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "PagedPoolCharge",
@@ -29943,12 +29505,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 21,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "TotalNumberOfObjects",
                     "offset": 24,
                     "size": 4,
@@ -30076,12 +29632,6 @@
                     "bitsize": 1,
                     "name": "CacheAligned:1",
                     "offset": 2,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align0[1]",
-                    "offset": 3,
                     "size": 1,
                     "type": "unsigned char"
                 },
@@ -30284,12 +29834,6 @@
                     "offset": 24,
                     "size": 4,
                     "type": "struct _OBJECT_ATTRIBUTES *"
-                },
-                {
-                    "name": "__align0[4]",
-                    "offset": 28,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "AllocationSize",
@@ -30633,12 +30177,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 17,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "Buffer",
                     "offset": 20,
                     "size": 4,
@@ -30686,12 +30224,6 @@
                     "offset": 32,
                     "size": 4,
                     "type": "unsigned long"
-                },
-                {
-                    "name": "__align0[4]",
-                    "offset": 36,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "DpcTime",
@@ -31111,12 +30643,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 108,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "CriticalSectionTimeout",
                     "offset": 112,
                     "size": 8,
@@ -31436,12 +30962,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 5,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "SsHandle",
                     "offset": 8,
                     "size": 4,
@@ -31475,12 +30995,6 @@
                     "name": "ShutdownInProgress",
                     "offset": 40,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align1[3]",
-                    "offset": 41,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -31554,12 +31068,6 @@
                     "name": "DisplaySafeRemovalDialog",
                     "offset": 49,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align0[2]",
-                    "offset": 50,
-                    "size": 2,
                     "type": "unsigned char"
                 },
                 {
@@ -31767,12 +31275,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 5,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "ReadDataPort",
                     "offset": 8,
                     "size": 4,
@@ -31782,12 +31284,6 @@
                     "name": "DataPortMapped",
                     "offset": 12,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align1[3]",
-                    "offset": 13,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -31803,12 +31299,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align2[3]",
-                    "offset": 21,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "CommandPort",
                     "offset": 24,
                     "size": 4,
@@ -31818,12 +31308,6 @@
                     "name": "CmdPortMapped",
                     "offset": 28,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align3[3]",
-                    "offset": 29,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -31897,12 +31381,6 @@
                     "name": "ResourceType",
                     "offset": 8,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align0[3]",
-                    "offset": 9,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -32056,12 +31534,6 @@
                     "name": "ReorderingBarrier",
                     "offset": 16,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align0[3]",
-                    "offset": 17,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -32377,12 +31849,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 29,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "DeviceObject",
                     "offset": 32,
                     "size": 4,
@@ -32435,12 +31901,6 @@
                     "name": "Locked",
                     "offset": 0,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align0[3]",
-                    "offset": 1,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -32679,12 +32139,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[56]",
-                    "offset": 8,
-                    "size": 56,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "RunningAllocs",
                     "offset": 64,
                     "size": 4,
@@ -32715,34 +32169,16 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align1[44]",
-                    "offset": 84,
-                    "size": 44,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "PoolIndex",
                     "offset": 128,
                     "size": 4,
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align2[60]",
-                    "offset": 132,
-                    "size": 60,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "TotalPages",
                     "offset": 192,
                     "size": 4,
                     "type": "long"
-                },
-                {
-                    "name": "__align3[60]",
-                    "offset": 196,
-                    "size": 60,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "PendingFrees",
@@ -32755,12 +32191,6 @@
                     "offset": 260,
                     "size": 4,
                     "type": "long"
-                },
-                {
-                    "name": "__align4[56]",
-                    "offset": 264,
-                    "size": 56,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "ListHeads[512]",
@@ -33012,12 +32442,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 1,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "SystemState",
                     "offset": 4,
                     "size": 4,
@@ -33057,12 +32481,6 @@
                     "name": "GetNewDeviceList",
                     "offset": 28,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align1[3]",
-                    "offset": 29,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -33169,12 +32587,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[1]",
-                    "offset": 7,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "MemoryMap",
                     "offset": 8,
                     "size": 8,
@@ -33221,12 +32633,6 @@
                     "offset": 48,
                     "size": 4,
                     "type": "struct _MDL *"
-                },
-                {
-                    "name": "__align1[4]",
-                    "offset": 52,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "PagesOut",
@@ -33398,12 +32804,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[1]",
-                    "offset": 3,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "Action",
                     "offset": 4,
                     "size": 4,
@@ -33452,12 +32852,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align1[2]",
-                    "offset": 30,
-                    "size": 2,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "SystemState",
                     "offset": 32,
                     "size": 4,
@@ -33500,12 +32894,6 @@
                     "type": "struct _POP_HIBER_CONTEXT *"
                 },
                 {
-                    "name": "__align2[4]",
-                    "offset": 60,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "WakeTime",
                     "offset": 64,
                     "size": 8,
@@ -33527,12 +32915,6 @@
                     "name": "WakeOnRTC",
                     "offset": 88,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align3[3]",
-                    "offset": 89,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -33670,12 +33052,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[1]",
-                    "offset": 39,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "LastTick",
                     "offset": 40,
                     "size": 8,
@@ -33737,22 +33113,10 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[2]",
-                    "offset": 14,
-                    "size": 2,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "Throttle",
                     "offset": 16,
                     "size": 4,
                     "type": "long"
-                },
-                {
-                    "name": "__align1[4]",
-                    "offset": 20,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "LastTime",
@@ -33801,12 +33165,6 @@
                     "offset": 132,
                     "size": 88,
                     "type": "struct _THERMAL_INFORMATION_EX"
-                },
-                {
-                    "name": "__align2[4]",
-                    "offset": 220,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "InfoLastUpdateTime",
@@ -34057,12 +33415,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 1,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "MismatchCount",
                     "offset": 4,
                     "size": 4,
@@ -34072,12 +33424,6 @@
                     "name": "Initialized",
                     "offset": 8,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align1[7]",
-                    "offset": 9,
-                    "size": 7,
                     "type": "unsigned char"
                 },
                 {
@@ -34116,12 +33462,6 @@
                     "offset": 16,
                     "size": 4,
                     "type": "void  ( *"
-                },
-                {
-                    "name": "__align0[4]",
-                    "offset": 20,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "HvConfig",
@@ -34279,12 +33619,6 @@
                     "name": "Type",
                     "offset": 11,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align0[4]",
-                    "offset": 12,
-                    "size": 4,
                     "type": "unsigned char"
                 },
                 {
@@ -34451,12 +33785,6 @@
                     "type": "void  ( *"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 84,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "State[1]",
                     "offset": 88,
                     "size": 40,
@@ -34498,12 +33826,6 @@
                     "offset": 8,
                     "size": 4,
                     "type": "struct _FILE_OBJECT *"
-                },
-                {
-                    "name": "__align0[4]",
-                    "offset": 12,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "FileOffset1",
@@ -34694,12 +34016,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 12,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "StartTime",
                     "offset": 16,
                     "size": 8,
@@ -34766,12 +34082,6 @@
                     "offset": 16,
                     "size": 4,
                     "type": "unsigned long"
-                },
-                {
-                    "name": "__align0[4]",
-                    "offset": 20,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "MinTime",
@@ -35041,12 +34351,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 113,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "PerfChangeIntervalCount",
                     "offset": 116,
                     "size": 4,
@@ -35108,12 +34412,6 @@
                     "offset": 0,
                     "size": 4,
                     "type": "struct _PPM_IDLE_STATES *"
-                },
-                {
-                    "name": "__align0[4]",
-                    "offset": 4,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "IdleTimeLast",
@@ -35194,12 +34492,6 @@
                     "type": "long"
                 },
                 {
-                    "name": "__align1[4]",
-                    "offset": 60,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "FFHThrottleStateInfo",
                     "offset": 64,
                     "size": 32,
@@ -35216,12 +34508,6 @@
                     "offset": 128,
                     "size": 4,
                     "type": "long"
-                },
-                {
-                    "name": "__align2[4]",
-                    "offset": 132,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "IdleCheck",
@@ -35421,22 +34707,10 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 4,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "CyclesAccumulated",
                     "offset": 8,
                     "size": 8,
                     "type": "unsigned long long"
-                },
-                {
-                    "name": "__align1[48]",
-                    "offset": 16,
-                    "size": 48,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "CycleCredit",
@@ -35460,12 +34734,6 @@
                     "name": "CyclesFinishedForCurrentGeneration",
                     "offset": 80,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align2[47]",
-                    "offset": 81,
-                    "size": 47,
                     "type": "unsigned char"
                 },
                 {
@@ -37093,12 +36361,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[1]",
-                    "offset": 19,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "ClientTokenControl",
                     "offset": 20,
                     "size": 40,
@@ -37752,12 +37014,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 124,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "BeyondLastFlush",
                     "offset": 128,
                     "size": 8,
@@ -37816,12 +37072,6 @@
                     "offset": 172,
                     "size": 32,
                     "type": "struct _KGUARDED_MUTEX"
-                },
-                {
-                    "name": "__align1[4]",
-                    "offset": 204,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "LastUnmapBehindOffset",
@@ -38136,12 +37386,6 @@
                     "type": "unsigned short"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 4,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "Buffer",
                     "offset": 8,
                     "size": 8,
@@ -38370,12 +37614,6 @@
                     "name": "VideoDimDisplay",
                     "offset": 196,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align0[3]",
-                    "offset": 197,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -38796,12 +38034,6 @@
                     "offset": 3072,
                     "size": 522,
                     "type": "wchar_t"
-                },
-                {
-                    "name": "__align0[2]",
-                    "offset": 3594,
-                    "size": 2,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "DeallocationStack",
@@ -39475,12 +38707,6 @@
                     "type": "wchar_t"
                 },
                 {
-                    "name": "__align0[2]",
-                    "offset": 3594,
-                    "size": 2,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "DeallocationStack",
                     "offset": 3596,
                     "size": 4,
@@ -39952,12 +39178,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 252,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "WOW32Reserved",
                     "offset": 256,
                     "size": 8,
@@ -39988,12 +39208,6 @@
                     "type": "long"
                 },
                 {
-                    "name": "__align1[4]",
-                    "offset": 708,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "ActivationContextStackPointer",
                     "offset": 712,
                     "size": 8,
@@ -40010,12 +39224,6 @@
                     "offset": 744,
                     "size": 4,
                     "type": "unsigned long"
-                },
-                {
-                    "name": "__align2[4]",
-                    "offset": 748,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "GdiTebBatch",
@@ -40114,12 +39322,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align3[4]",
-                    "offset": 4692,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "StaticUnicodeString",
                     "offset": 4696,
                     "size": 16,
@@ -40130,12 +39332,6 @@
                     "offset": 4712,
                     "size": 522,
                     "type": "wchar_t"
-                },
-                {
-                    "name": "__align4[6]",
-                    "offset": 5234,
-                    "size": 6,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "DeallocationStack",
@@ -40178,12 +39374,6 @@
                     "offset": 5808,
                     "size": 4,
                     "type": "unsigned long"
-                },
-                {
-                    "name": "__align5[4]",
-                    "offset": 5812,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "Instrumentation[11]",
@@ -40270,12 +39460,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align6[4]",
-                    "offset": 5964,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "ReservedForPerf",
                     "offset": 5968,
                     "size": 8,
@@ -40292,12 +39476,6 @@
                     "offset": 5984,
                     "size": 4,
                     "type": "unsigned long"
-                },
-                {
-                    "name": "__align7[4]",
-                    "offset": 5988,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "SavedPriorityState",
@@ -40364,12 +39542,6 @@
                     "offset": 6064,
                     "size": 4,
                     "type": "unsigned long"
-                },
-                {
-                    "name": "__align8[4]",
-                    "offset": 6068,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "CurrentTransactionHandle",
@@ -40646,12 +39818,6 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "__align0[3]",
-                    "offset": 33,
-                    "size": 3,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "ActiveTripPoint[10]",
                     "offset": 36,
                     "size": 40,
@@ -40716,12 +39882,6 @@
                     "name": "ActiveTripPointCount",
                     "offset": 40,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align0[3]",
-                    "offset": 41,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -40988,12 +40148,6 @@
                     "type": "struct _LUID"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 60,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "Privileges",
                     "offset": 64,
                     "size": 24,
@@ -41099,12 +40253,6 @@
                     "name": "TokenInUse",
                     "offset": 176,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align1[3]",
-                    "offset": 177,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -41447,12 +40595,6 @@
                     "name": "IdealProcessor",
                     "offset": 8,
                     "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "__align0[3]",
-                    "offset": 9,
-                    "size": 3,
                     "type": "unsigned char"
                 },
                 {
@@ -49614,12 +48756,6 @@
                     "type": "struct _WMI_BUFFER_HEADER *"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 36,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "ClientContext",
                     "offset": 40,
                     "size": 4,
@@ -49729,12 +48865,6 @@
                     "type": "long long  ( *"
                 },
                 {
-                    "name": "__align0[4]",
-                    "offset": 28,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "StartTime",
                     "offset": 32,
                     "size": 8,
@@ -49769,12 +48899,6 @@
                     "offset": 56,
                     "size": 4,
                     "type": "void *"
-                },
-                {
-                    "name": "__align1[4]",
-                    "offset": 60,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "QueueBlockFreeList",
@@ -49987,12 +49111,6 @@
                     "type": "struct _UNICODE_STRING"
                 },
                 {
-                    "name": "__align2[4]",
-                    "offset": 260,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "RealtimeWriteOffset",
                     "offset": 264,
                     "size": 8,
@@ -50029,12 +49147,6 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "__align3[4]",
-                    "offset": 308,
-                    "size": 4,
-                    "type": "unsigned char"
-                },
-                {
                     "name": "RealtimeReferenceTime",
                     "offset": 312,
                     "size": 16,
@@ -50057,12 +49169,6 @@
                     "offset": 348,
                     "size": 16,
                     "type": "struct _KEVENT"
-                },
-                {
-                    "name": "__align4[4]",
-                    "offset": 364,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "FlushTimeOutTimer",
@@ -50117,12 +49223,6 @@
                     "offset": 544,
                     "size": 4,
                     "type": "struct _EX_FAST_REF"
-                },
-                {
-                    "name": "__align5[4]",
-                    "offset": 548,
-                    "size": 4,
-                    "type": "unsigned char"
                 },
                 {
                     "name": "BufferSequenceNumber",

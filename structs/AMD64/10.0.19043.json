@@ -1,5 +1,5 @@
 {
-    "name": "10.0.19041",
+    "name": "10.0.19043",
     "structs": [
         {
             "infofile": "union __m128.txt",
@@ -12489,39 +12489,9 @@
                     "offset": 24,
                     "size": 16,
                     "type": "struct _UNICODE_STRING"
-                },
-                {
-                    "name": "ClientDriverExtension",
-                    "offset": 40,
-                    "size": 8,
-                    "type": "struct _IO_CLIENT_EXTENSION *"
-                },
-                {
-                    "name": "FsFilterCallbacks",
-                    "offset": 48,
-                    "size": 8,
-                    "type": "struct _FS_FILTER_CALLBACKS *"
-                },
-                {
-                    "name": "KseCallbacks",
-                    "offset": 56,
-                    "size": 8,
-                    "type": "void *"
-                },
-                {
-                    "name": "DvCallbacks",
-                    "offset": 64,
-                    "size": 8,
-                    "type": "void *"
-                },
-                {
-                    "name": "VerifierContext",
-                    "offset": 72,
-                    "size": 8,
-                    "type": "void *"
                 }
             ],
-            "size": 80
+            "size": 40
         },
         {
             "infofile": "struct _DRIVER_OBJECT.txt",
@@ -16150,79 +16120,67 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "TzVirtualizationSupported",
-                    "offset": 1049,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "ExTimeZoneState",
-                    "offset": 1056,
-                    "size": 8,
-                    "type": "struct _EX_TIMEZONE_STATE *"
-                },
-                {
                     "name": "NtSystemRoot",
-                    "offset": 1064,
+                    "offset": 1056,
                     "size": 16,
                     "type": "struct _UNICODE_STRING"
                 },
                 {
                     "name": "SiloRootDirectoryName",
-                    "offset": 1080,
+                    "offset": 1072,
                     "size": 16,
                     "type": "struct _UNICODE_STRING"
                 },
                 {
                     "name": "Storage",
-                    "offset": 1096,
+                    "offset": 1088,
                     "size": 8,
                     "type": "struct _PSP_STORAGE *"
                 },
                 {
                     "name": "State",
-                    "offset": 1104,
+                    "offset": 1096,
                     "size": 4,
                     "type": "enum _SERVERSILO_STATE"
                 },
                 {
                     "name": "ExitStatus",
-                    "offset": 1108,
+                    "offset": 1100,
                     "size": 4,
                     "type": "long"
                 },
                 {
                     "name": "DeleteEvent",
-                    "offset": 1112,
+                    "offset": 1104,
                     "size": 8,
                     "type": "struct _KEVENT *"
                 },
                 {
                     "name": "UserSharedData",
-                    "offset": 1120,
+                    "offset": 1112,
                     "size": 8,
                     "type": "struct _SILO_USER_SHARED_DATA *"
                 },
                 {
                     "name": "UserSharedSection",
-                    "offset": 1128,
+                    "offset": 1120,
                     "size": 8,
                     "type": "void *"
                 },
                 {
                     "name": "TerminateWorkItem",
-                    "offset": 1136,
+                    "offset": 1128,
                     "size": 32,
                     "type": "struct _WORK_QUEUE_ITEM"
                 },
                 {
                     "name": "IsDownlevelContainer",
-                    "offset": 1168,
+                    "offset": 1160,
                     "size": 1,
                     "type": "unsigned char"
                 }
             ],
-            "size": 1176
+            "size": 1168
         },
         {
             "infofile": "struct _ETHREAD.txt",
@@ -19758,103 +19716,6 @@
             "positions": [
             ],
             "size": 0
-        },
-        {
-            "infofile": "struct _EX_TIMEZONE_STATE.txt",
-            "name": "struct _EX_TIMEZONE_STATE",
-            "positions": [
-                {
-                    "name": "TimeZoneInformation",
-                    "offset": 0,
-                    "size": 432,
-                    "type": "struct _RTL_DYNAMIC_TIME_ZONE_INFORMATION"
-                },
-                {
-                    "name": "CurrentTimeZoneId",
-                    "offset": 432,
-                    "size": 4,
-                    "type": "unsigned long"
-                },
-                {
-                    "name": "LastTimeZoneBias",
-                    "offset": 436,
-                    "size": 4,
-                    "type": "long"
-                },
-                {
-                    "name": "TimeZoneBias",
-                    "offset": 440,
-                    "size": 8,
-                    "type": "union _LARGE_INTEGER"
-                },
-                {
-                    "name": "TimeZone",
-                    "offset": 448,
-                    "size": 160,
-                    "type": "struct _TIMEZONE_CHANGE_EVENT"
-                },
-                {
-                    "name": "Century",
-                    "offset": 608,
-                    "size": 160,
-                    "type": "struct _TIMEZONE_CHANGE_EVENT"
-                },
-                {
-                    "name": "NextYear",
-                    "offset": 768,
-                    "size": 160,
-                    "type": "struct _TIMEZONE_CHANGE_EVENT"
-                },
-                {
-                    "name": "OkToTimeZoneRefresh",
-                    "offset": 928,
-                    "size": 4,
-                    "type": "long"
-                },
-                {
-                    "name": "NextCenturyTimeInUTC",
-                    "offset": 936,
-                    "size": 8,
-                    "type": "union _LARGE_INTEGER"
-                },
-                {
-                    "name": "NextCenturyTimeFieldsInLocalTime",
-                    "offset": 944,
-                    "size": 16,
-                    "type": "struct _TIME_FIELDS"
-                },
-                {
-                    "name": "NextYearTimeInUTC",
-                    "offset": 960,
-                    "size": 8,
-                    "type": "union _LARGE_INTEGER"
-                },
-                {
-                    "name": "NextYearTimeFieldsInLocalTime",
-                    "offset": 968,
-                    "size": 16,
-                    "type": "struct _TIME_FIELDS"
-                },
-                {
-                    "name": "LastDynamicTimeZoneYear",
-                    "offset": 984,
-                    "size": 2,
-                    "type": "short"
-                },
-                {
-                    "name": "NextSystemCutoverInUTC",
-                    "offset": 992,
-                    "size": 8,
-                    "type": "union _LARGE_INTEGER"
-                },
-                {
-                    "name": "RefreshFailures",
-                    "offset": 1000,
-                    "size": 4,
-                    "type": "unsigned long"
-                }
-            ],
-            "size": 1008
         },
         {
             "infofile": "struct _EX_WNF_SUBSCRIPTION.txt",
@@ -32416,6 +32277,18 @@
                     "type": "unsigned short"
                 },
                 {
+                    "name": "AllocationProcessorNumber",
+                    "offset": 4,
+                    "size": 2,
+                    "type": "unsigned short"
+                },
+                {
+                    "name": "Reserved",
+                    "offset": 6,
+                    "size": 2,
+                    "type": "unsigned short"
+                },
+                {
                     "name": "MdlAddress",
                     "offset": 8,
                     "size": 8,
@@ -35735,9 +35608,15 @@
                     "offset": 280,
                     "size": 96,
                     "type": "unsigned long"
+                },
+                {
+                    "name": "Prcb",
+                    "offset": 384,
+                    "size": 44800,
+                    "type": "struct _KPRCB"
                 }
             ],
-            "size": 376
+            "size": 45184
         },
         {
             "infofile": "struct _KPRCB.txt",
@@ -36006,6 +35885,140 @@
                     "type": "unsigned long"
                 },
                 {
+                    "name": "PrcbFlags",
+                    "offset": 236,
+                    "size": 4,
+                    "type": "union _KPRCBFLAG"
+                },
+                {
+                    "name": "TrappedSecurityDomain",
+                    "offset": 240,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "BpbState",
+                    "offset": 248,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 0,
+                    "bitsize": 1,
+                    "name": "BpbCpuIdle:1",
+                    "offset": 248,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 1,
+                    "bitsize": 1,
+                    "name": "BpbFlushRsbOnTrap:1",
+                    "offset": 248,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 2,
+                    "bitsize": 1,
+                    "name": "BpbIbpbOnReturn:1",
+                    "offset": 248,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 3,
+                    "bitsize": 1,
+                    "name": "BpbIbpbOnTrap:1",
+                    "offset": 248,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 4,
+                    "bitsize": 1,
+                    "name": "BpbIbpbOnRetpolineExit:1",
+                    "offset": 248,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 5,
+                    "bitsize": 3,
+                    "name": "BpbStateReserved:3",
+                    "offset": 248,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "BpbFeatures",
+                    "offset": 249,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 0,
+                    "bitsize": 1,
+                    "name": "BpbClearOnIdle:1",
+                    "offset": 249,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 1,
+                    "bitsize": 1,
+                    "name": "BpbEnabled:1",
+                    "offset": 249,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 2,
+                    "bitsize": 1,
+                    "name": "BpbSmep:1",
+                    "offset": 249,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 3,
+                    "bitsize": 5,
+                    "name": "BpbFeaturesReserved:5",
+                    "offset": 249,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "BpbCurrentSpecCtrl",
+                    "offset": 250,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "BpbKernelSpecCtrl",
+                    "offset": 251,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "BpbNmiSpecCtrl",
+                    "offset": 252,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "BpbUserSpecCtrl",
+                    "offset": 253,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "PairRegister",
+                    "offset": 254,
+                    "size": 2,
+                    "type": "short"
+                },
+                {
                     "name": "PrcbPad11[2]",
                     "offset": 240,
                     "size": 16,
@@ -36036,6 +36049,116 @@
                     "type": "unsigned long"
                 },
                 {
+                    "name": "BpbRetpolineExitSpecCtrl",
+                    "offset": 1744,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "BpbTrappedRetpolineExitSpecCtrl",
+                    "offset": 1745,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "BpbTrappedBpbState",
+                    "offset": 1746,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 0,
+                    "bitsize": 1,
+                    "name": "BpbTrappedCpuIdle:1",
+                    "offset": 1746,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 1,
+                    "bitsize": 1,
+                    "name": "BpbTrappedFlushRsbOnTrap:1",
+                    "offset": 1746,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 2,
+                    "bitsize": 1,
+                    "name": "BpbTrappedIbpbOnReturn:1",
+                    "offset": 1746,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 3,
+                    "bitsize": 1,
+                    "name": "BpbTrappedIbpbOnTrap:1",
+                    "offset": 1746,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 4,
+                    "bitsize": 1,
+                    "name": "BpbTrappedIbpbOnRetpolineExit:1",
+                    "offset": 1746,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 5,
+                    "bitsize": 3,
+                    "name": "BpbtrappedBpbStateReserved:3",
+                    "offset": 1746,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "BpbRetpolineState",
+                    "offset": 1747,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 0,
+                    "bitsize": 1,
+                    "name": "BpbRunningNonRetpolineCode:1",
+                    "offset": 1747,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 1,
+                    "bitsize": 1,
+                    "name": "BpbIndirectCallsSafe:1",
+                    "offset": 1747,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 2,
+                    "bitsize": 1,
+                    "name": "BpbRetpolineEnabled:1",
+                    "offset": 1747,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "bitoffset": 3,
+                    "bitsize": 5,
+                    "name": "BpbRetpolineStateReserved:5",
+                    "offset": 1747,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "PrcbPad12b",
+                    "offset": 1748,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
                     "name": "PrcbPad12a",
                     "offset": 1744,
                     "size": 8,
@@ -36046,9 +36169,1631 @@
                     "offset": 1752,
                     "size": 24,
                     "type": "unsigned long long"
+                },
+                {
+                    "name": "LockQueue[17]",
+                    "offset": 1776,
+                    "size": 272,
+                    "type": "struct _KSPIN_LOCK_QUEUE"
+                },
+                {
+                    "name": "PPLookasideList[16]",
+                    "offset": 2048,
+                    "size": 256,
+                    "type": "struct _PP_LOOKASIDE_LIST"
+                },
+                {
+                    "name": "PPNxPagedLookasideList[32]",
+                    "offset": 2304,
+                    "size": 3072,
+                    "type": "struct _GENERAL_LOOKASIDE_POOL"
+                },
+                {
+                    "name": "PPNPagedLookasideList[32]",
+                    "offset": 5376,
+                    "size": 3072,
+                    "type": "struct _GENERAL_LOOKASIDE_POOL"
+                },
+                {
+                    "name": "PPPagedLookasideList[32]",
+                    "offset": 8448,
+                    "size": 3072,
+                    "type": "struct _GENERAL_LOOKASIDE_POOL"
+                },
+                {
+                    "name": "MsrIa32TsxCtrl",
+                    "offset": 11520,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "DeferredReadyListHead",
+                    "offset": 11528,
+                    "size": 8,
+                    "type": "struct _SINGLE_LIST_ENTRY"
+                },
+                {
+                    "name": "MmPageFaultCount",
+                    "offset": 11536,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "MmCopyOnWriteCount",
+                    "offset": 11540,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "MmTransitionCount",
+                    "offset": 11544,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "MmDemandZeroCount",
+                    "offset": 11548,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "MmPageReadCount",
+                    "offset": 11552,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "MmPageReadIoCount",
+                    "offset": 11556,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "MmDirtyPagesWriteCount",
+                    "offset": 11560,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "MmDirtyWriteIoCount",
+                    "offset": 11564,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "MmMappedPagesWriteCount",
+                    "offset": 11568,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "MmMappedWriteIoCount",
+                    "offset": 11572,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "KeSystemCalls",
+                    "offset": 11576,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "KeContextSwitches",
+                    "offset": 11580,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad40",
+                    "offset": 11584,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcFastReadNoWait",
+                    "offset": 11588,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcFastReadWait",
+                    "offset": 11592,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcFastReadNotPossible",
+                    "offset": 11596,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcCopyReadNoWait",
+                    "offset": 11600,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcCopyReadWait",
+                    "offset": 11604,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcCopyReadNoWaitMiss",
+                    "offset": 11608,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "IoReadOperationCount",
+                    "offset": 11612,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "IoWriteOperationCount",
+                    "offset": 11616,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "IoOtherOperationCount",
+                    "offset": 11620,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "IoReadTransferCount",
+                    "offset": 11624,
+                    "size": 8,
+                    "type": "union _LARGE_INTEGER"
+                },
+                {
+                    "name": "IoWriteTransferCount",
+                    "offset": 11632,
+                    "size": 8,
+                    "type": "union _LARGE_INTEGER"
+                },
+                {
+                    "name": "IoOtherTransferCount",
+                    "offset": 11640,
+                    "size": 8,
+                    "type": "union _LARGE_INTEGER"
+                },
+                {
+                    "name": "PacketBarrier",
+                    "offset": 11648,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "TargetCount",
+                    "offset": 11652,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "IpiFrozen",
+                    "offset": 11656,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad30",
+                    "offset": 11660,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "IsrDpcStats",
+                    "offset": 11664,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "DeviceInterrupts",
+                    "offset": 11672,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "LookasideIrpFloat",
+                    "offset": 11676,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "InterruptLastCount",
+                    "offset": 11680,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "InterruptRate",
+                    "offset": 11684,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad31",
+                    "offset": 11688,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "PairPrcb",
+                    "offset": 11696,
+                    "size": 8,
+                    "type": "struct _KPRCB *"
+                },
+                {
+                    "name": "StaticAffinity",
+                    "offset": 11704,
+                    "size": 672,
+                    "type": "struct _KSTATIC_AFFINITY_BLOCK"
+                },
+                {
+                    "name": "PrcbPad35[5]",
+                    "offset": 12376,
+                    "size": 40,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "InterruptObjectPool",
+                    "offset": 12416,
+                    "size": 16,
+                    "type": "union _SLIST_HEADER"
+                },
+                {
+                    "name": "DpcRuntimeHistoryHashTable",
+                    "offset": 12432,
+                    "size": 8,
+                    "type": "struct _RTL_HASH_TABLE *"
+                },
+                {
+                    "name": "DpcRuntimeHistoryHashTableCleanupDpc",
+                    "offset": 12440,
+                    "size": 8,
+                    "type": "struct _KDPC *"
+                },
+                {
+                    "name": "CurrentDpcRoutine)(struct _KDPC * ,void * ,void * ,void * )",
+                    "offset": 12448,
+                    "size": 8,
+                    "type": "void  ( *"
+                },
+                {
+                    "name": "CurrentDpcRuntimeHistoryCached",
+                    "offset": 12456,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "CurrentDpcStartTime",
+                    "offset": 12464,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "PrcbPad41[1]",
+                    "offset": 12472,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "DpcData[2]",
+                    "offset": 12480,
+                    "size": 80,
+                    "type": "struct _KDPC_DATA"
+                },
+                {
+                    "name": "DpcStack",
+                    "offset": 12560,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "MaximumDpcQueueDepth",
+                    "offset": 12568,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "DpcRequestRate",
+                    "offset": 12572,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "MinimumDpcRate",
+                    "offset": 12576,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "DpcLastCount",
+                    "offset": 12580,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "ThreadDpcEnable",
+                    "offset": 12584,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "QuantumEnd",
+                    "offset": 12585,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "DpcRoutineActive",
+                    "offset": 12586,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "IdleSchedule",
+                    "offset": 12587,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "DpcRequestSummary",
+                    "offset": 12588,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "DpcRequestSlot[2]",
+                    "offset": 12588,
+                    "size": 4,
+                    "type": "short"
+                },
+                {
+                    "name": "NormalDpcState",
+                    "offset": 12588,
+                    "size": 2,
+                    "type": "short"
+                },
+                {
+                    "name": "ThreadDpcState",
+                    "offset": 12590,
+                    "size": 2,
+                    "type": "short"
+                },
+                {
+                    "bitoffset": 0,
+                    "bitsize": 1,
+                    "name": "DpcNormalProcessingActive:1",
+                    "offset": 12588,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "bitoffset": 1,
+                    "bitsize": 1,
+                    "name": "DpcNormalProcessingRequested:1",
+                    "offset": 12588,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "bitoffset": 2,
+                    "bitsize": 1,
+                    "name": "DpcNormalThreadSignal:1",
+                    "offset": 12588,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "bitoffset": 3,
+                    "bitsize": 1,
+                    "name": "DpcNormalTimerExpiration:1",
+                    "offset": 12588,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "bitoffset": 4,
+                    "bitsize": 1,
+                    "name": "DpcNormalDpcPresent:1",
+                    "offset": 12588,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "bitoffset": 5,
+                    "bitsize": 1,
+                    "name": "DpcNormalLocalInterrupt:1",
+                    "offset": 12588,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "bitoffset": 6,
+                    "bitsize": 10,
+                    "name": "DpcNormalSpare:10",
+                    "offset": 12588,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "bitoffset": 16,
+                    "bitsize": 1,
+                    "name": "DpcThreadActive:1",
+                    "offset": 12588,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "bitoffset": 17,
+                    "bitsize": 1,
+                    "name": "DpcThreadRequested:1",
+                    "offset": 12588,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "bitoffset": 18,
+                    "bitsize": 14,
+                    "name": "DpcThreadSpare:14",
+                    "offset": 12588,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad93",
+                    "offset": 12592,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "LastTick",
+                    "offset": 12596,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "ClockInterrupts",
+                    "offset": 12600,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "ReadyScanTick",
+                    "offset": 12604,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "InterruptObject[256]",
+                    "offset": 12608,
+                    "size": 2048,
+                    "type": "void *"
+                },
+                {
+                    "name": "TimerTable",
+                    "offset": 14656,
+                    "size": 16920,
+                    "type": "struct _KTIMER_TABLE"
+                },
+                {
+                    "name": "PrcbPad92[10]",
+                    "offset": 31576,
+                    "size": 40,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "DpcGate",
+                    "offset": 31616,
+                    "size": 24,
+                    "type": "struct _KGATE"
+                },
+                {
+                    "name": "PrcbPad52",
+                    "offset": 31640,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "CallDpc",
+                    "offset": 31648,
+                    "size": 64,
+                    "type": "struct _KDPC"
+                },
+                {
+                    "name": "ClockKeepAlive",
+                    "offset": 31712,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "PrcbPad60[2]",
+                    "offset": 31716,
+                    "size": 2,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "NmiActive",
+                    "offset": 31718,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "MceActive",
+                    "offset": 31719,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "CombinedNmiMceActive",
+                    "offset": 31718,
+                    "size": 2,
+                    "type": "unsigned short"
+                },
+                {
+                    "name": "DpcWatchdogPeriod",
+                    "offset": 31720,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "DpcWatchdogCount",
+                    "offset": 31724,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "KeSpinLockOrdering",
+                    "offset": 31728,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "DpcWatchdogProfileCumulativeDpcThreshold",
+                    "offset": 31732,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CachedPtes",
+                    "offset": 31736,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "WaitListHead",
+                    "offset": 31744,
+                    "size": 16,
+                    "type": "struct _LIST_ENTRY"
+                },
+                {
+                    "name": "WaitLock",
+                    "offset": 31760,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "ReadySummary",
+                    "offset": 31768,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "AffinitizedSelectionMask",
+                    "offset": 31772,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "QueueIndex",
+                    "offset": 31776,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad75[2]",
+                    "offset": 31780,
+                    "size": 8,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "DpcWatchdogSequenceNumber",
+                    "offset": 31788,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "TimerExpirationDpc",
+                    "offset": 31792,
+                    "size": 64,
+                    "type": "struct _KDPC"
+                },
+                {
+                    "name": "ScbQueue",
+                    "offset": 31856,
+                    "size": 16,
+                    "type": "struct _RTL_RB_TREE"
+                },
+                {
+                    "name": "DispatcherReadyListHead[32]",
+                    "offset": 31872,
+                    "size": 512,
+                    "type": "struct _LIST_ENTRY"
+                },
+                {
+                    "name": "InterruptCount",
+                    "offset": 32384,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "KernelTime",
+                    "offset": 32388,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "UserTime",
+                    "offset": 32392,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "DpcTime",
+                    "offset": 32396,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "InterruptTime",
+                    "offset": 32400,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "AdjustDpcThreshold",
+                    "offset": 32404,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "DebuggerSavedIRQL",
+                    "offset": 32408,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "GroupSchedulingOverQuota",
+                    "offset": 32409,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "DeepSleep",
+                    "offset": 32410,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "PrcbPad80",
+                    "offset": 32411,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "DpcTimeCount",
+                    "offset": 32412,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "DpcTimeLimit",
+                    "offset": 32416,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PeriodicCount",
+                    "offset": 32420,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PeriodicBias",
+                    "offset": 32424,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "AvailableTime",
+                    "offset": 32428,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "KeExceptionDispatchCount",
+                    "offset": 32432,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "ReadyThreadCount",
+                    "offset": 32436,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "ReadyQueueExpectedRunTime",
+                    "offset": 32440,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "StartCycles",
+                    "offset": 32448,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "TaggedCyclesStart",
+                    "offset": 32456,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "TaggedCycles[3]",
+                    "offset": 32464,
+                    "size": 24,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "AffinitizedCycles",
+                    "offset": 32488,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "ImportantCycles",
+                    "offset": 32496,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "UnimportantCycles",
+                    "offset": 32504,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "DpcWatchdogProfileSingleDpcThreshold",
+                    "offset": 32512,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "MmSpinLockOrdering",
+                    "offset": 32516,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "CachedStack",
+                    "offset": 32520,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "PageColor",
+                    "offset": 32528,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "NodeColor",
+                    "offset": 32532,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "NodeShiftedColor",
+                    "offset": 32536,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "SecondaryColorMask",
+                    "offset": 32540,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad81[6]",
+                    "offset": 32544,
+                    "size": 6,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "ExceptionStackActive",
+                    "offset": 32550,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "TbFlushListActive",
+                    "offset": 32551,
+                    "size": 1,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "ExceptionStack",
+                    "offset": 32552,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "PrcbPad82[1]",
+                    "offset": 32560,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "CycleTime",
+                    "offset": 32568,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "Cycles[4][2]",
+                    "offset": 32576,
+                    "size": 64,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "CcFastMdlReadNoWait",
+                    "offset": 32640,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcFastMdlReadWait",
+                    "offset": 32644,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcFastMdlReadNotPossible",
+                    "offset": 32648,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcMapDataNoWait",
+                    "offset": 32652,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcMapDataWait",
+                    "offset": 32656,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcPinMappedDataCount",
+                    "offset": 32660,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcPinReadNoWait",
+                    "offset": 32664,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcPinReadWait",
+                    "offset": 32668,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcMdlReadNoWait",
+                    "offset": 32672,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcMdlReadWait",
+                    "offset": 32676,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcLazyWriteHotSpots",
+                    "offset": 32680,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcLazyWriteIos",
+                    "offset": 32684,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcLazyWritePages",
+                    "offset": 32688,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcDataFlushes",
+                    "offset": 32692,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcDataPages",
+                    "offset": 32696,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcLostDelayedWrites",
+                    "offset": 32700,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcFastReadResourceMiss",
+                    "offset": 32704,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcCopyReadWaitMiss",
+                    "offset": 32708,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcFastMdlReadResourceMiss",
+                    "offset": 32712,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcMapDataNoWaitMiss",
+                    "offset": 32716,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcMapDataWaitMiss",
+                    "offset": 32720,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcPinReadNoWaitMiss",
+                    "offset": 32724,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcPinReadWaitMiss",
+                    "offset": 32728,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcMdlReadNoWaitMiss",
+                    "offset": 32732,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcMdlReadWaitMiss",
+                    "offset": 32736,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CcReadAheadIos",
+                    "offset": 32740,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "MmCacheTransitionCount",
+                    "offset": 32744,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "MmCacheReadCount",
+                    "offset": 32748,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "MmCacheIoCount",
+                    "offset": 32752,
+                    "size": 4,
+                    "type": "long"
+                },
+                {
+                    "name": "PrcbPad91",
+                    "offset": 32756,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "MmInternal",
+                    "offset": 32760,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "PowerState",
+                    "offset": 32768,
+                    "size": 512,
+                    "type": "struct _PROCESSOR_POWER_STATE"
+                },
+                {
+                    "name": "HyperPte",
+                    "offset": 33280,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "ScbList",
+                    "offset": 33288,
+                    "size": 16,
+                    "type": "struct _LIST_ENTRY"
+                },
+                {
+                    "name": "ForceIdleDpc",
+                    "offset": 33304,
+                    "size": 64,
+                    "type": "struct _KDPC"
+                },
+                {
+                    "name": "DpcWatchdogDpc",
+                    "offset": 33368,
+                    "size": 64,
+                    "type": "struct _KDPC"
+                },
+                {
+                    "name": "DpcWatchdogTimer",
+                    "offset": 33432,
+                    "size": 64,
+                    "type": "struct _KTIMER"
+                },
+                {
+                    "name": "Cache[5]",
+                    "offset": 33496,
+                    "size": 60,
+                    "type": "struct _CACHE_DESCRIPTOR"
+                },
+                {
+                    "name": "CacheCount",
+                    "offset": 33556,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CachedCommit",
+                    "offset": 33560,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CachedResidentAvailable",
+                    "offset": 33564,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "WheaInfo",
+                    "offset": 33568,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "EtwSupport",
+                    "offset": 33576,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "ExSaPageArray",
+                    "offset": 33584,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "KeAlignmentFixupCount",
+                    "offset": 33592,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad95",
+                    "offset": 33596,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "HypercallPageList",
+                    "offset": 33600,
+                    "size": 16,
+                    "type": "union _SLIST_HEADER"
+                },
+                {
+                    "name": "StatisticsPage",
+                    "offset": 33616,
+                    "size": 8,
+                    "type": "unsigned long long *"
+                },
+                {
+                    "name": "GenerationTarget",
+                    "offset": 33624,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "PrcbPad85[4]",
+                    "offset": 33632,
+                    "size": 32,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "HypercallCachedPages",
+                    "offset": 33664,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "VirtualApicAssist",
+                    "offset": 33672,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "PackageProcessorSet",
+                    "offset": 33680,
+                    "size": 168,
+                    "type": "struct _KAFFINITY_EX"
+                },
+                {
+                    "name": "PackageId",
+                    "offset": 33848,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad86",
+                    "offset": 33852,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "SharedReadyQueueMask",
+                    "offset": 33856,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "SharedReadyQueue",
+                    "offset": 33864,
+                    "size": 8,
+                    "type": "struct _KSHARED_READY_QUEUE *"
+                },
+                {
+                    "name": "SharedQueueScanOwner",
+                    "offset": 33872,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "ScanSiblingIndex",
+                    "offset": 33876,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "CoreProcessorSet",
+                    "offset": 33880,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "ScanSiblingMask",
+                    "offset": 33888,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "LLCMask",
+                    "offset": 33896,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "CacheProcessorMask[5]",
+                    "offset": 33904,
+                    "size": 40,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "ProcessorProfileControlArea",
+                    "offset": 33944,
+                    "size": 8,
+                    "type": "struct _PROCESSOR_PROFILE_CONTROL_AREA *"
+                },
+                {
+                    "name": "ProfileEventIndexAddress",
+                    "offset": 33952,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "DpcWatchdogProfile",
+                    "offset": 33960,
+                    "size": 8,
+                    "type": "void **"
+                },
+                {
+                    "name": "DpcWatchdogProfileCurrentEmptyCapture",
+                    "offset": 33968,
+                    "size": 8,
+                    "type": "void **"
+                },
+                {
+                    "name": "SchedulerAssist",
+                    "offset": 33976,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "SynchCounters",
+                    "offset": 33984,
+                    "size": 184,
+                    "type": "struct _SYNCH_COUNTERS"
+                },
+                {
+                    "name": "PrcbPad94",
+                    "offset": 34168,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "FsCounters",
+                    "offset": 34176,
+                    "size": 16,
+                    "type": "struct _FILESYSTEM_DISK_COUNTERS"
+                },
+                {
+                    "name": "VendorString[13]",
+                    "offset": 34192,
+                    "size": 13,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "PrcbPad100[3]",
+                    "offset": 34205,
+                    "size": 3,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "FeatureBits",
+                    "offset": 34208,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "UpdateSignature",
+                    "offset": 34216,
+                    "size": 8,
+                    "type": "union _LARGE_INTEGER"
+                },
+                {
+                    "name": "PteBitCache",
+                    "offset": 34224,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "PteBitOffset",
+                    "offset": 34232,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad105",
+                    "offset": 34236,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "Context",
+                    "offset": 34240,
+                    "size": 8,
+                    "type": "struct _CONTEXT *"
+                },
+                {
+                    "name": "ContextFlagsInit",
+                    "offset": 34248,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad115",
+                    "offset": 34252,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "ExtendedState",
+                    "offset": 34256,
+                    "size": 8,
+                    "type": "struct _XSAVE_AREA *"
+                },
+                {
+                    "name": "IsrStack",
+                    "offset": 34264,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "name": "EntropyTimingState",
+                    "offset": 34272,
+                    "size": 336,
+                    "type": "struct _KENTROPY_TIMING_STATE"
+                },
+                {
+                    "name": "PrcbPad110",
+                    "offset": 34608,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "StibpPairingTrace",
+                    "offset": 34616,
+                    "size": 56,
+                    "type": "struct <anonymous-tag>"
+                },
+                {
+                    "name": "AbSelfIoBoostsList",
+                    "offset": 34672,
+                    "size": 8,
+                    "type": "struct _SINGLE_LIST_ENTRY"
+                },
+                {
+                    "name": "AbPropagateBoostsList",
+                    "offset": 34680,
+                    "size": 8,
+                    "type": "struct _SINGLE_LIST_ENTRY"
+                },
+                {
+                    "name": "AbDpc",
+                    "offset": 34688,
+                    "size": 64,
+                    "type": "struct _KDPC"
+                },
+                {
+                    "name": "IoIrpStackProfilerCurrent",
+                    "offset": 34752,
+                    "size": 84,
+                    "type": "struct _IOP_IRP_STACK_PROFILER"
+                },
+                {
+                    "name": "IoIrpStackProfilerPrevious",
+                    "offset": 34836,
+                    "size": 84,
+                    "type": "struct _IOP_IRP_STACK_PROFILER"
+                },
+                {
+                    "name": "SecureFault",
+                    "offset": 34920,
+                    "size": 16,
+                    "type": "struct _KSECURE_FAULT_INFORMATION"
+                },
+                {
+                    "name": "PrcbPad120",
+                    "offset": 34936,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "LocalSharedReadyQueue",
+                    "offset": 34944,
+                    "size": 624,
+                    "type": "struct _KSHARED_READY_QUEUE"
+                },
+                {
+                    "name": "PrcbPad125[2]",
+                    "offset": 35568,
+                    "size": 16,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "TimerExpirationTraceCount",
+                    "offset": 35584,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad127",
+                    "offset": 35588,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "TimerExpirationTrace[16]",
+                    "offset": 35592,
+                    "size": 256,
+                    "type": "struct _KTIMER_EXPIRATION_TRACE"
+                },
+                {
+                    "name": "PrcbPad128[7]",
+                    "offset": 35848,
+                    "size": 56,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "Mailbox",
+                    "offset": 35904,
+                    "size": 8,
+                    "type": "struct _REQUEST_MAILBOX *"
+                },
+                {
+                    "name": "PrcbPad130[7]",
+                    "offset": 35912,
+                    "size": 56,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "McheckContext[2]",
+                    "offset": 35968,
+                    "size": 160,
+                    "type": "struct _MACHINE_CHECK_CONTEXT"
+                },
+                {
+                    "name": "PrcbPad134[4]",
+                    "offset": 36128,
+                    "size": 32,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "SelfmapLockHandle[4]",
+                    "offset": 36160,
+                    "size": 96,
+                    "type": "struct _KLOCK_QUEUE_HANDLE"
+                },
+                {
+                    "name": "PrcbPad134a[4]",
+                    "offset": 36256,
+                    "size": 32,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "PrcbPad138[128]",
+                    "offset": 36288,
+                    "size": 128,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "PrcbPad138a[64]",
+                    "offset": 36416,
+                    "size": 64,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "KernelDirectoryTableBase",
+                    "offset": 36480,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "RspBaseShadow",
+                    "offset": 36488,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "UserRspShadow",
+                    "offset": 36496,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "ShadowFlags",
+                    "offset": 36504,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad138b",
+                    "offset": 36508,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad138c",
+                    "offset": 36512,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "PrcbPad138d",
+                    "offset": 36520,
+                    "size": 2,
+                    "type": "unsigned short"
+                },
+                {
+                    "name": "VerwSelector",
+                    "offset": 36522,
+                    "size": 2,
+                    "type": "unsigned short"
+                },
+                {
+                    "name": "DbgMceNestingLevel",
+                    "offset": 36524,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "DbgMceFlags",
+                    "offset": 36528,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad139b",
+                    "offset": 36532,
+                    "size": 4,
+                    "type": "unsigned long"
+                },
+                {
+                    "name": "PrcbPad140[505]",
+                    "offset": 36536,
+                    "size": 4040,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "PrcbPad140a[8]",
+                    "offset": 40576,
+                    "size": 64,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "PrcbPad141[504]",
+                    "offset": 40640,
+                    "size": 4032,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "PrcbPad141a[64]",
+                    "offset": 44672,
+                    "size": 64,
+                    "type": "unsigned char"
+                },
+                {
+                    "name": "RequestMailbox[1]",
+                    "offset": 44736,
+                    "size": 64,
+                    "type": "struct _REQUEST_MAILBOX"
                 }
             ],
-            "size": 1792
+            "size": 44800
         },
         {
             "infofile": "union _KPRCBFLAG.txt",
@@ -44807,18 +46552,6 @@
                     "offset": 10,
                     "size": 2,
                     "type": "short"
-                },
-                {
-                    "name": "AllocationProcessorNumber",
-                    "offset": 12,
-                    "size": 2,
-                    "type": "unsigned short"
-                },
-                {
-                    "name": "Reserved",
-                    "offset": 14,
-                    "size": 2,
-                    "type": "unsigned short"
                 },
                 {
                     "name": "Process",
@@ -73997,31 +75730,6 @@
             "size": 4160
         },
         {
-            "infofile": "struct _RTL_DYNAMIC_TIME_ZONE_INFORMATION.txt",
-            "name": "struct _RTL_DYNAMIC_TIME_ZONE_INFORMATION",
-            "positions": [
-                {
-                    "name": "tzi",
-                    "offset": 0,
-                    "size": 172,
-                    "type": "struct _RTL_TIME_ZONE_INFORMATION"
-                },
-                {
-                    "name": "TimeZoneKeyName[128]",
-                    "offset": 172,
-                    "size": 256,
-                    "type": "wchar_t"
-                },
-                {
-                    "name": "DynamicDaylightTimeDisabled",
-                    "offset": 428,
-                    "size": 1,
-                    "type": "unsigned char"
-                }
-            ],
-            "size": 432
-        },
-        {
             "infofile": "struct _RTL_FEATURE_CONFIGURATION.txt",
             "name": "struct _RTL_FEATURE_CONFIGURATION",
             "positions": [
@@ -77530,39 +79238,9 @@
                     "offset": 550,
                     "size": 32,
                     "type": "unsigned short"
-                },
-                {
-                    "name": "TimeZoneId",
-                    "offset": 584,
-                    "size": 4,
-                    "type": "unsigned long"
-                },
-                {
-                    "name": "TimeZoneBiasStamp",
-                    "offset": 588,
-                    "size": 4,
-                    "type": "long"
-                },
-                {
-                    "name": "TimeZoneBias",
-                    "offset": 592,
-                    "size": 12,
-                    "type": "struct _KSYSTEM_TIME"
-                },
-                {
-                    "name": "TimeZoneBiasEffectiveStart",
-                    "offset": 608,
-                    "size": 8,
-                    "type": "union _LARGE_INTEGER"
-                },
-                {
-                    "name": "TimeZoneBiasEffectiveEnd",
-                    "offset": 616,
-                    "size": 8,
-                    "type": "union _LARGE_INTEGER"
                 }
             ],
-            "size": 624
+            "size": 584
         },
         {
             "infofile": "struct _SINGLE_LIST_ENTRY.txt",
@@ -81575,31 +83253,6 @@
                 }
             ],
             "size": 8
-        },
-        {
-            "infofile": "struct _TIMEZONE_CHANGE_EVENT.txt",
-            "name": "struct _TIMEZONE_CHANGE_EVENT",
-            "positions": [
-                {
-                    "name": "Dpc",
-                    "offset": 0,
-                    "size": 64,
-                    "type": "struct _KDPC"
-                },
-                {
-                    "name": "Timer",
-                    "offset": 64,
-                    "size": 64,
-                    "type": "struct _KTIMER"
-                },
-                {
-                    "name": "WorkItem",
-                    "offset": 128,
-                    "size": 32,
-                    "type": "struct _WORK_QUEUE_ITEM"
-                }
-            ],
-            "size": 160
         },
         {
             "infofile": "struct _tlgProvider_t.txt",
@@ -90767,68 +92420,32 @@
             "name": "union <anonymous-tag>",
             "positions": [
                 {
-                    "bitoffset": 0,
-                    "bitsize": 3,
-                    "name": "LargePagePolicy:3",
+                    "name": "Msi",
                     "offset": 0,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "bitoffset": 3,
-                    "bitsize": 1,
-                    "name": "FullDecommit:1",
-                    "offset": 0,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "bitoffset": 4,
-                    "bitsize": 1,
-                    "name": "ReleaseEmptySegments:1",
-                    "offset": 0,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "AllFlags",
-                    "offset": 0,
-                    "size": 1,
-                    "type": "unsigned char"
+                    "size": 12,
+                    "type": "struct <anonymous-tag>"
                 }
             ],
-            "size": 1
+            "size": 12
         },
         {
             "infofile": "struct <anonymous-tag>.txt",
             "name": "struct <anonymous-tag>",
             "positions": [
                 {
-                    "name": "Length",
+                    "name": "UserData",
                     "offset": 0,
-                    "size": 4,
-                    "type": "unsigned long"
-                },
-                {
-                    "name": "Key",
-                    "offset": 8,
-                    "size": 4,
-                    "type": "unsigned long"
-                },
-                {
-                    "name": "Flags",
-                    "offset": 12,
-                    "size": 4,
-                    "type": "unsigned long"
-                },
-                {
-                    "name": "ByteOffset",
-                    "offset": 16,
                     "size": 8,
-                    "type": "union _LARGE_INTEGER"
+                    "type": "void *"
+                },
+                {
+                    "name": "Owner",
+                    "offset": 8,
+                    "size": 8,
+                    "type": "void *"
                 }
             ],
-            "size": 24
+            "size": 16
         },
         {
             "infofile": "struct BATTERY_REPORTING_SCALE.txt",

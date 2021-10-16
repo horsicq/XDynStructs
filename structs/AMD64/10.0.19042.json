@@ -1,5 +1,5 @@
 {
-    "name": "10.0.19041",
+    "name": "10.0.19042",
     "structs": [
         {
             "infofile": "union __m128.txt",
@@ -12489,39 +12489,9 @@
                     "offset": 24,
                     "size": 16,
                     "type": "struct _UNICODE_STRING"
-                },
-                {
-                    "name": "ClientDriverExtension",
-                    "offset": 40,
-                    "size": 8,
-                    "type": "struct _IO_CLIENT_EXTENSION *"
-                },
-                {
-                    "name": "FsFilterCallbacks",
-                    "offset": 48,
-                    "size": 8,
-                    "type": "struct _FS_FILTER_CALLBACKS *"
-                },
-                {
-                    "name": "KseCallbacks",
-                    "offset": 56,
-                    "size": 8,
-                    "type": "void *"
-                },
-                {
-                    "name": "DvCallbacks",
-                    "offset": 64,
-                    "size": 8,
-                    "type": "void *"
-                },
-                {
-                    "name": "VerifierContext",
-                    "offset": 72,
-                    "size": 8,
-                    "type": "void *"
                 }
             ],
-            "size": 80
+            "size": 40
         },
         {
             "infofile": "struct _DRIVER_OBJECT.txt",
@@ -13019,19 +12989,13 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "TreeNodeMin",
+                    "name": "TreeNode",
                     "offset": 88,
-                    "size": 24,
-                    "type": "struct _RTL_BALANCED_NODE"
-                },
-                {
-                    "name": "TreeNodeMax",
-                    "offset": 112,
                     "size": 24,
                     "type": "struct _RTL_BALANCED_NODE"
                 }
             ],
-            "size": 136
+            "size": 112
         },
         {
             "infofile": "struct _ECP_LIST.txt",
@@ -15838,12 +15802,6 @@
                     "offset": 2568,
                     "size": 8,
                     "type": "struct _EX_PUSH_LOCK"
-                },
-                {
-                    "name": "DynamicEnforcedCetCompatibleRanges",
-                    "offset": 2576,
-                    "size": 16,
-                    "type": "struct _PS_DYNAMIC_ENFORCED_ADDRESS_RANGES"
                 }
             ],
             "size": 2624
@@ -16150,79 +16108,67 @@
                     "type": "unsigned char"
                 },
                 {
-                    "name": "TzVirtualizationSupported",
-                    "offset": 1049,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "ExTimeZoneState",
-                    "offset": 1056,
-                    "size": 8,
-                    "type": "struct _EX_TIMEZONE_STATE *"
-                },
-                {
                     "name": "NtSystemRoot",
-                    "offset": 1064,
+                    "offset": 1056,
                     "size": 16,
                     "type": "struct _UNICODE_STRING"
                 },
                 {
                     "name": "SiloRootDirectoryName",
-                    "offset": 1080,
+                    "offset": 1072,
                     "size": 16,
                     "type": "struct _UNICODE_STRING"
                 },
                 {
                     "name": "Storage",
-                    "offset": 1096,
+                    "offset": 1088,
                     "size": 8,
                     "type": "struct _PSP_STORAGE *"
                 },
                 {
                     "name": "State",
-                    "offset": 1104,
+                    "offset": 1096,
                     "size": 4,
                     "type": "enum _SERVERSILO_STATE"
                 },
                 {
                     "name": "ExitStatus",
-                    "offset": 1108,
+                    "offset": 1100,
                     "size": 4,
                     "type": "long"
                 },
                 {
                     "name": "DeleteEvent",
-                    "offset": 1112,
+                    "offset": 1104,
                     "size": 8,
                     "type": "struct _KEVENT *"
                 },
                 {
                     "name": "UserSharedData",
-                    "offset": 1120,
+                    "offset": 1112,
                     "size": 8,
                     "type": "struct _SILO_USER_SHARED_DATA *"
                 },
                 {
                     "name": "UserSharedSection",
-                    "offset": 1128,
+                    "offset": 1120,
                     "size": 8,
                     "type": "void *"
                 },
                 {
                     "name": "TerminateWorkItem",
-                    "offset": 1136,
+                    "offset": 1128,
                     "size": 32,
                     "type": "struct _WORK_QUEUE_ITEM"
                 },
                 {
                     "name": "IsDownlevelContainer",
-                    "offset": 1168,
+                    "offset": 1160,
                     "size": 1,
                     "type": "unsigned char"
                 }
             ],
-            "size": 1176
+            "size": 1168
         },
         {
             "infofile": "struct _ETHREAD.txt",
@@ -19760,103 +19706,6 @@
             "size": 0
         },
         {
-            "infofile": "struct _EX_TIMEZONE_STATE.txt",
-            "name": "struct _EX_TIMEZONE_STATE",
-            "positions": [
-                {
-                    "name": "TimeZoneInformation",
-                    "offset": 0,
-                    "size": 432,
-                    "type": "struct _RTL_DYNAMIC_TIME_ZONE_INFORMATION"
-                },
-                {
-                    "name": "CurrentTimeZoneId",
-                    "offset": 432,
-                    "size": 4,
-                    "type": "unsigned long"
-                },
-                {
-                    "name": "LastTimeZoneBias",
-                    "offset": 436,
-                    "size": 4,
-                    "type": "long"
-                },
-                {
-                    "name": "TimeZoneBias",
-                    "offset": 440,
-                    "size": 8,
-                    "type": "union _LARGE_INTEGER"
-                },
-                {
-                    "name": "TimeZone",
-                    "offset": 448,
-                    "size": 160,
-                    "type": "struct _TIMEZONE_CHANGE_EVENT"
-                },
-                {
-                    "name": "Century",
-                    "offset": 608,
-                    "size": 160,
-                    "type": "struct _TIMEZONE_CHANGE_EVENT"
-                },
-                {
-                    "name": "NextYear",
-                    "offset": 768,
-                    "size": 160,
-                    "type": "struct _TIMEZONE_CHANGE_EVENT"
-                },
-                {
-                    "name": "OkToTimeZoneRefresh",
-                    "offset": 928,
-                    "size": 4,
-                    "type": "long"
-                },
-                {
-                    "name": "NextCenturyTimeInUTC",
-                    "offset": 936,
-                    "size": 8,
-                    "type": "union _LARGE_INTEGER"
-                },
-                {
-                    "name": "NextCenturyTimeFieldsInLocalTime",
-                    "offset": 944,
-                    "size": 16,
-                    "type": "struct _TIME_FIELDS"
-                },
-                {
-                    "name": "NextYearTimeInUTC",
-                    "offset": 960,
-                    "size": 8,
-                    "type": "union _LARGE_INTEGER"
-                },
-                {
-                    "name": "NextYearTimeFieldsInLocalTime",
-                    "offset": 968,
-                    "size": 16,
-                    "type": "struct _TIME_FIELDS"
-                },
-                {
-                    "name": "LastDynamicTimeZoneYear",
-                    "offset": 984,
-                    "size": 2,
-                    "type": "short"
-                },
-                {
-                    "name": "NextSystemCutoverInUTC",
-                    "offset": 992,
-                    "size": 8,
-                    "type": "union _LARGE_INTEGER"
-                },
-                {
-                    "name": "RefreshFailures",
-                    "offset": 1000,
-                    "size": 4,
-                    "type": "unsigned long"
-                }
-            ],
-            "size": 1008
-        },
-        {
             "infofile": "struct _EX_WNF_SUBSCRIPTION.txt",
             "name": "struct _EX_WNF_SUBSCRIPTION",
             "positions": [
@@ -21039,19 +20888,19 @@
                     "type": "unsigned char  ( *"
                 },
                 {
-                    "name": "FastIoLock)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,union _LARGE_INTEGER * ,struct _EPROCESS * ,unsigned long ,unsigned char ,unsigned char ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * )",
+                    "name": "FastIoLock)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,union _LARGE_INTEGER * ,struct _KPROCESS * ,unsigned long ,unsigned char ,unsigned char ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * )",
                     "offset": 48,
                     "size": 8,
                     "type": "unsigned char  ( *"
                 },
                 {
-                    "name": "FastIoUnlockSingle)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,union _LARGE_INTEGER * ,struct _EPROCESS * ,unsigned long ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * )",
+                    "name": "FastIoUnlockSingle)(struct _FILE_OBJECT * ,union _LARGE_INTEGER * ,union _LARGE_INTEGER * ,struct _KPROCESS * ,unsigned long ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * )",
                     "offset": 56,
                     "size": 8,
                     "type": "unsigned char  ( *"
                 },
                 {
-                    "name": "FastIoUnlockAll)(struct _FILE_OBJECT * ,struct _EPROCESS * ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * )",
+                    "name": "FastIoUnlockAll)(struct _FILE_OBJECT * ,struct _KPROCESS * ,struct _IO_STATUS_BLOCK * ,struct _DEVICE_OBJECT * )",
                     "offset": 64,
                     "size": 8,
                     "type": "unsigned char  ( *"
@@ -32416,6 +32265,18 @@
                     "type": "unsigned short"
                 },
                 {
+                    "name": "AllocationProcessorNumber",
+                    "offset": 4,
+                    "size": 2,
+                    "type": "unsigned short"
+                },
+                {
+                    "name": "Reserved",
+                    "offset": 6,
+                    "size": 2,
+                    "type": "unsigned short"
+                },
+                {
                     "name": "MdlAddress",
                     "offset": 8,
                     "size": 8,
@@ -33457,6 +33318,24 @@
                     "offset": 16,
                     "size": 16,
                     "type": "struct _LIST_ENTRY"
+                },
+                {
+                    "name": "KernelRoutine)(struct _KAPC * ,void  ( ** )(void * ,void * ,void * ),void ** ,void ** ,void ** )",
+                    "offset": 32,
+                    "size": 8,
+                    "type": "void  ( *"
+                },
+                {
+                    "name": "RundownRoutine)(struct _KAPC * )",
+                    "offset": 40,
+                    "size": 8,
+                    "type": "void  ( *"
+                },
+                {
+                    "name": "NormalRoutine)(void * ,void * ,void * )",
+                    "offset": 48,
+                    "size": 8,
+                    "type": "void  ( *"
                 },
                 {
                     "name": "Reserved[3]",
@@ -40778,10 +40657,10 @@
                     "type": "unsigned long"
                 },
                 {
-                    "name": "Reserved2",
+                    "name": "UserCetAvailableEnvironments",
                     "offset": 780,
                     "size": 4,
-                    "type": "unsigned long"
+                    "type": "union <anonymous-tag>"
                 },
                 {
                     "name": "SystemCallPad[2]",
@@ -44809,18 +44688,6 @@
                     "type": "short"
                 },
                 {
-                    "name": "AllocationProcessorNumber",
-                    "offset": 12,
-                    "size": 2,
-                    "type": "unsigned short"
-                },
-                {
-                    "name": "Reserved",
-                    "offset": 14,
-                    "size": 2,
-                    "type": "unsigned short"
-                },
-                {
                     "name": "Process",
                     "offset": 16,
                     "size": 8,
@@ -45781,65 +45648,9 @@
                     "offset": 8,
                     "size": 4,
                     "type": "unsigned long"
-                },
-                {
-                    "bitoffset": 0,
-                    "bitsize": 1,
-                    "name": "ImageCetShadowStacksReady:1",
-                    "offset": 12,
-                    "size": 4,
-                    "type": "unsigned long"
-                },
-                {
-                    "bitoffset": 1,
-                    "bitsize": 1,
-                    "name": "ImageCetShadowStacksStrictMode:1",
-                    "offset": 12,
-                    "size": 4,
-                    "type": "unsigned long"
-                },
-                {
-                    "bitoffset": 2,
-                    "bitsize": 1,
-                    "name": "ImageCetSetContextIpValidationRelaxedMode:1",
-                    "offset": 12,
-                    "size": 4,
-                    "type": "unsigned long"
-                },
-                {
-                    "bitoffset": 3,
-                    "bitsize": 1,
-                    "name": "ImageCetDynamicApisAllowInProc:1",
-                    "offset": 12,
-                    "size": 4,
-                    "type": "unsigned long"
-                },
-                {
-                    "bitoffset": 4,
-                    "bitsize": 1,
-                    "name": "ImageCetDowngradeReserved1:1",
-                    "offset": 12,
-                    "size": 4,
-                    "type": "unsigned long"
-                },
-                {
-                    "bitoffset": 5,
-                    "bitsize": 1,
-                    "name": "ImageCetDowngradeReserved2:1",
-                    "offset": 12,
-                    "size": 4,
-                    "type": "unsigned long"
-                },
-                {
-                    "bitoffset": 6,
-                    "bitsize": 26,
-                    "name": "Spare:26",
-                    "offset": 12,
-                    "size": 4,
-                    "type": "unsigned long"
                 }
             ],
-            "size": 16
+            "size": 12
         },
         {
             "infofile": "union _MI_FLAGS.txt",
@@ -49350,7 +49161,7 @@
                 {
                     "name": "InternalImageInformation",
                     "offset": 64,
-                    "size": 16,
+                    "size": 12,
                     "type": "struct _MI_EXTRA_IMAGE_INFORMATION"
                 }
             ],
@@ -65180,199 +64991,193 @@
                     "type": "struct _UNICODE_STRING"
                 },
                 {
-                    "name": "CommonReferenceFlags",
-                    "offset": 232,
-                    "size": 4,
-                    "type": "long"
-                },
-                {
                     "name": "RemoveLock",
-                    "offset": 240,
+                    "offset": 232,
                     "size": 32,
                     "type": "struct _IO_REMOVE_LOCK"
                 },
                 {
                     "name": "AcpiRemoveLock",
-                    "offset": 272,
+                    "offset": 264,
                     "size": 32,
                     "type": "struct _IO_REMOVE_LOCK"
                 },
                 {
                     "name": "WorkOrder",
-                    "offset": 304,
+                    "offset": 296,
                     "size": 56,
                     "type": "struct _POP_FX_WORK_ORDER"
                 },
                 {
                     "name": "IdleLock",
-                    "offset": 360,
+                    "offset": 352,
                     "size": 8,
                     "type": "unsigned long long"
                 },
                 {
                     "name": "IdleTimer",
-                    "offset": 368,
+                    "offset": 360,
                     "size": 64,
                     "type": "struct _KTIMER"
                 },
                 {
                     "name": "IdleDpc",
-                    "offset": 432,
+                    "offset": 424,
                     "size": 64,
                     "type": "struct _KDPC"
                 },
                 {
                     "name": "IdleTimeout",
-                    "offset": 496,
+                    "offset": 488,
                     "size": 8,
                     "type": "unsigned long long"
                 },
                 {
                     "name": "IdleStamp",
-                    "offset": 504,
+                    "offset": 496,
                     "size": 8,
                     "type": "unsigned long long"
                 },
                 {
                     "name": "NextIrpDeviceObject[2]",
-                    "offset": 512,
+                    "offset": 504,
                     "size": 16,
                     "type": "struct _DEVICE_OBJECT *"
                 },
                 {
                     "name": "NextIrpPowerState[2]",
-                    "offset": 528,
+                    "offset": 520,
                     "size": 8,
                     "type": "union _POWER_STATE"
                 },
                 {
                     "name": "NextIrpCallerCompletion)[2]",
-                    "offset": 536,
+                    "offset": 528,
                     "size": 16,
                     "type": "void  ( *"
                 },
                 {
                     "name": "NextIrpCallerContext[2]",
-                    "offset": 552,
+                    "offset": 544,
                     "size": 16,
                     "type": "void *"
                 },
                 {
                     "name": "IrpCompleteEvent",
-                    "offset": 568,
+                    "offset": 560,
                     "size": 24,
                     "type": "struct _KEVENT"
                 },
                 {
                     "name": "PowerOnDumpDeviceCallback)(struct _PEP_CRASHDUMP_INFORMATION * )",
-                    "offset": 592,
+                    "offset": 584,
                     "size": 8,
                     "type": "unsigned char  ( *"
                 },
                 {
                     "name": "Accounting",
-                    "offset": 600,
+                    "offset": 592,
                     "size": 224,
                     "type": "struct _POP_FX_ACCOUNTING"
                 },
                 {
                     "name": "Flags",
-                    "offset": 824,
+                    "offset": 816,
                     "size": 4,
                     "type": "unsigned long"
                 },
                 {
                     "name": "ComponentCount",
-                    "offset": 828,
+                    "offset": 820,
                     "size": 4,
                     "type": "unsigned long"
                 },
                 {
                     "name": "Components",
-                    "offset": 832,
+                    "offset": 824,
                     "size": 8,
                     "type": "struct _POP_FX_COMPONENT **"
                 },
                 {
                     "name": "LogEntries",
-                    "offset": 840,
+                    "offset": 832,
                     "size": 4,
                     "type": "unsigned long"
                 },
                 {
                     "name": "Log",
-                    "offset": 848,
+                    "offset": 840,
                     "size": 8,
                     "type": "struct _POP_FX_LOG_ENTRY *"
                 },
                 {
                     "name": "LogIndex",
-                    "offset": 856,
+                    "offset": 848,
                     "size": 4,
                     "type": "long"
                 },
                 {
                     "name": "DripsWatchdogDriverObject",
-                    "offset": 864,
+                    "offset": 856,
                     "size": 8,
                     "type": "struct _DRIVER_OBJECT *"
                 },
                 {
                     "name": "DripsWatchdogContext",
-                    "offset": 872,
+                    "offset": 864,
                     "size": 40,
                     "type": "struct _POP_FX_DRIPS_WATCHDOG_CONTEXT"
                 },
                 {
                     "name": "DirectedTimeout",
-                    "offset": 912,
+                    "offset": 904,
                     "size": 4,
                     "type": "unsigned long"
                 },
                 {
                     "name": "DirectedWorkOrder",
-                    "offset": 920,
+                    "offset": 912,
                     "size": 56,
                     "type": "struct _POP_FX_WORK_ORDER"
                 },
                 {
                     "name": "DirectedWorkWatchdogInfo",
-                    "offset": 976,
+                    "offset": 968,
                     "size": 176,
                     "type": "struct _POP_FX_WORK_ORDER_WATCHDOG_INFO"
                 },
                 {
                     "name": "DirectedLock",
-                    "offset": 1152,
+                    "offset": 1144,
                     "size": 8,
                     "type": "unsigned long long"
                 },
                 {
                     "name": "DirectedTransitionCallCount",
-                    "offset": 1160,
+                    "offset": 1152,
                     "size": 4,
                     "type": "long"
                 },
                 {
                     "name": "DirectedTransitionState",
-                    "offset": 1168,
+                    "offset": 1160,
                     "size": 16,
                     "type": "struct _POP_FX_DEVICE_DIRECTED_TRANSITION_STATE"
                 },
                 {
                     "name": "PowerProfile",
-                    "offset": 1184,
+                    "offset": 1176,
                     "size": 8,
                     "type": "struct _POP_DEVICE_POWER_PROFILE *"
                 },
                 {
                     "name": "FriendlyName",
-                    "offset": 1192,
+                    "offset": 1184,
                     "size": 16,
                     "type": "struct _UNICODE_STRING"
                 }
             ],
-            "size": 1208
+            "size": 1200
         },
         {
             "infofile": "struct _POP_FX_DEVICE_DIRECTED_TRANSITION_STATE.txt",
@@ -72217,25 +72022,6 @@
             "size": 8
         },
         {
-            "infofile": "struct _PS_DYNAMIC_ENFORCED_ADDRESS_RANGES.txt",
-            "name": "struct _PS_DYNAMIC_ENFORCED_ADDRESS_RANGES",
-            "positions": [
-                {
-                    "name": "Tree",
-                    "offset": 0,
-                    "size": 8,
-                    "type": "struct _RTL_AVL_TREE"
-                },
-                {
-                    "name": "Lock",
-                    "offset": 8,
-                    "size": 8,
-                    "type": "struct _EX_PUSH_LOCK"
-                }
-            ],
-            "size": 16
-        },
-        {
             "infofile": "union _PS_INTERLOCKED_TIMER_DELAY_VALUES.txt",
             "name": "union _PS_INTERLOCKED_TIMER_DELAY_VALUES",
             "positions": [
@@ -73995,31 +73781,6 @@
                 }
             ],
             "size": 4160
-        },
-        {
-            "infofile": "struct _RTL_DYNAMIC_TIME_ZONE_INFORMATION.txt",
-            "name": "struct _RTL_DYNAMIC_TIME_ZONE_INFORMATION",
-            "positions": [
-                {
-                    "name": "tzi",
-                    "offset": 0,
-                    "size": 172,
-                    "type": "struct _RTL_TIME_ZONE_INFORMATION"
-                },
-                {
-                    "name": "TimeZoneKeyName[128]",
-                    "offset": 172,
-                    "size": 256,
-                    "type": "wchar_t"
-                },
-                {
-                    "name": "DynamicDaylightTimeDisabled",
-                    "offset": 428,
-                    "size": 1,
-                    "type": "unsigned char"
-                }
-            ],
-            "size": 432
         },
         {
             "infofile": "struct _RTL_FEATURE_CONFIGURATION.txt",
@@ -76249,7 +76010,7 @@
                 {
                     "bitoffset": 0,
                     "bitsize": 1,
-                    "name": "Spare:1",
+                    "name": "ImageCetShadowStacksReady:1",
                     "offset": 2,
                     "size": 1,
                     "type": "unsigned char"
@@ -77530,39 +77291,9 @@
                     "offset": 550,
                     "size": 32,
                     "type": "unsigned short"
-                },
-                {
-                    "name": "TimeZoneId",
-                    "offset": 584,
-                    "size": 4,
-                    "type": "unsigned long"
-                },
-                {
-                    "name": "TimeZoneBiasStamp",
-                    "offset": 588,
-                    "size": 4,
-                    "type": "long"
-                },
-                {
-                    "name": "TimeZoneBias",
-                    "offset": 592,
-                    "size": 12,
-                    "type": "struct _KSYSTEM_TIME"
-                },
-                {
-                    "name": "TimeZoneBiasEffectiveStart",
-                    "offset": 608,
-                    "size": 8,
-                    "type": "union _LARGE_INTEGER"
-                },
-                {
-                    "name": "TimeZoneBiasEffectiveEnd",
-                    "offset": 616,
-                    "size": 8,
-                    "type": "union _LARGE_INTEGER"
                 }
             ],
-            "size": 624
+            "size": 584
         },
         {
             "infofile": "struct _SINGLE_LIST_ENTRY.txt",
@@ -81575,31 +81306,6 @@
                 }
             ],
             "size": 8
-        },
-        {
-            "infofile": "struct _TIMEZONE_CHANGE_EVENT.txt",
-            "name": "struct _TIMEZONE_CHANGE_EVENT",
-            "positions": [
-                {
-                    "name": "Dpc",
-                    "offset": 0,
-                    "size": 64,
-                    "type": "struct _KDPC"
-                },
-                {
-                    "name": "Timer",
-                    "offset": 64,
-                    "size": 64,
-                    "type": "struct _KTIMER"
-                },
-                {
-                    "name": "WorkItem",
-                    "offset": 128,
-                    "size": 32,
-                    "type": "struct _WORK_QUEUE_ITEM"
-                }
-            ],
-            "size": 160
         },
         {
             "infofile": "struct _tlgProvider_t.txt",
@@ -90763,72 +90469,82 @@
             "size": 56
         },
         {
-            "infofile": "union <anonymous-tag>.txt",
-            "name": "union <anonymous-tag>",
-            "positions": [
-                {
-                    "bitoffset": 0,
-                    "bitsize": 3,
-                    "name": "LargePagePolicy:3",
-                    "offset": 0,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "bitoffset": 3,
-                    "bitsize": 1,
-                    "name": "FullDecommit:1",
-                    "offset": 0,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "bitoffset": 4,
-                    "bitsize": 1,
-                    "name": "ReleaseEmptySegments:1",
-                    "offset": 0,
-                    "size": 1,
-                    "type": "unsigned char"
-                },
-                {
-                    "name": "AllFlags",
-                    "offset": 0,
-                    "size": 1,
-                    "type": "unsigned char"
-                }
-            ],
-            "size": 1
-        },
-        {
             "infofile": "struct <anonymous-tag>.txt",
             "name": "struct <anonymous-tag>",
             "positions": [
                 {
-                    "name": "Length",
+                    "name": "SystemContext",
                     "offset": 0,
                     "size": 4,
                     "type": "unsigned long"
                 },
                 {
-                    "name": "Key",
+                    "name": "SystemPowerStateContext",
+                    "offset": 0,
+                    "size": 4,
+                    "type": "struct _SYSTEM_POWER_STATE_CONTEXT"
+                },
+                {
+                    "name": "Type",
                     "offset": 8,
                     "size": 4,
-                    "type": "unsigned long"
+                    "type": "enum _POWER_STATE_TYPE"
                 },
                 {
-                    "name": "Flags",
-                    "offset": 12,
-                    "size": 4,
-                    "type": "unsigned long"
-                },
-                {
-                    "name": "ByteOffset",
+                    "name": "State",
                     "offset": 16,
-                    "size": 8,
-                    "type": "union _LARGE_INTEGER"
+                    "size": 4,
+                    "type": "union _POWER_STATE"
+                },
+                {
+                    "name": "ShutdownType",
+                    "offset": 24,
+                    "size": 4,
+                    "type": "enum POWER_ACTION"
                 }
             ],
-            "size": 24
+            "size": 32
+        },
+        {
+            "infofile": "union <anonymous-tag>.txt",
+            "name": "union <anonymous-tag>",
+            "positions": [
+                {
+                    "name": "NextSlistPfn",
+                    "offset": 0,
+                    "size": 8,
+                    "type": "struct _SINGLE_LIST_ENTRY"
+                },
+                {
+                    "name": "Next",
+                    "offset": 0,
+                    "size": 8,
+                    "type": "void *"
+                },
+                {
+                    "bitoffset": 0,
+                    "bitsize": 36,
+                    "name": "Flink:36",
+                    "offset": 0,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "bitoffset": 36,
+                    "bitsize": 28,
+                    "name": "NodeFlinkHigh:28",
+                    "offset": 0,
+                    "size": 8,
+                    "type": "unsigned long long"
+                },
+                {
+                    "name": "Active",
+                    "offset": 0,
+                    "size": 8,
+                    "type": "struct _MI_ACTIVE_PFN"
+                }
+            ],
+            "size": 8
         },
         {
             "infofile": "struct BATTERY_REPORTING_SCALE.txt",
@@ -91887,7 +91603,7 @@
                     "type": "long  ( *"
                 },
                 {
-                    "name": "HalTimerWatchdogQueryDueTime)(unsigned char )",
+                    "name": "HalTimerWatchdogQueryDueTime)()",
                     "offset": 984,
                     "size": 8,
                     "type": "unsigned long long  ( *"
