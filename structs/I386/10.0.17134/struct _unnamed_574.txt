@@ -1,7 +1,0 @@
-struct _unnamed_574// Size=0x10
-{
-    void  ( * CallerCompletion)(struct _DEVICE_OBJECT * ,unsigned char ,union _POWER_STATE ,void * ,struct _IO_STATUS_BLOCK * );// Offset=0x0 Size=0x4
-    void * CallerContext;// Offset=0x4 Size=0x4
-    struct _DEVICE_OBJECT * CallerDevice;// Offset=0x8 Size=0x4
-    unsigned char SystemWake;// Offset=0xc Size=0x1
-};

@@ -1,7 +1,0 @@
-struct _MI_CROSS_PARTITION_CHARGES// Size=0x10
-{
-    unsigned long CurrentCharges;// Offset=0x0 Size=0x4
-    unsigned long ChargeFailures;// Offset=0x4 Size=0x4
-    unsigned long ChargePeak;// Offset=0x8 Size=0x4
-    unsigned long ChargeMinimum;// Offset=0xc Size=0x4
-};

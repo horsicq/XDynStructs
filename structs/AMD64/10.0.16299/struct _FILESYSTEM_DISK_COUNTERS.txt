@@ -1,5 +1,0 @@
-struct _FILESYSTEM_DISK_COUNTERS// Size=0x10
-{
-    unsigned long long FsBytesRead;// Offset=0x0 Size=0x8
-    unsigned long long FsBytesWritten;// Offset=0x8 Size=0x8
-};

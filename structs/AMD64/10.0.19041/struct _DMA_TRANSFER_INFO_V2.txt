@@ -1,7 +1,0 @@
-struct _DMA_TRANSFER_INFO_V2// Size=0x10
-{
-    unsigned long MapRegisterCount;// Offset=0x0 Size=0x4
-    unsigned long ScatterGatherElementCount;// Offset=0x4 Size=0x4
-    unsigned long ScatterGatherListSize;// Offset=0x8 Size=0x4
-    unsigned long LogicalPageCount;// Offset=0xc Size=0x4
-};

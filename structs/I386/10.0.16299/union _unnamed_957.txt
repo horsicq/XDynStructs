@@ -1,4 +1,0 @@
-union _unnamed_957// Size=0x4
-{
-    void * InstancedWorkingSet;// Offset=0x0 Size=0x4
-};

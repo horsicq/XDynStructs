@@ -1,7 +1,0 @@
-struct _CACHED_CHILD_LIST// Size=0x10
-{
-    unsigned long Count;// Offset=0x0 Size=0x4
-    unsigned char __align0[4];// Offset=0x4 Size=0x4
-    unsigned long long ValueList;// Offset=0x8 Size=0x8
-    struct _CM_KEY_CONTROL_BLOCK * RealKcb;// Offset=0x8 Size=0x8
-};

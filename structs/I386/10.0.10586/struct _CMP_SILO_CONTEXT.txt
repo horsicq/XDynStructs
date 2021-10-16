@@ -1,7 +1,0 @@
-struct _CMP_SILO_CONTEXT// Size=0x10
-{
-    struct _LIST_ENTRY LockEntryHead;// Offset=0x0 Size=0x8
-    unsigned char LockListUnderCleanup;// Offset=0x8 Size=0x1
-    unsigned char __align0[3];// Offset=0x9 Size=0x3
-    struct _EX_PUSH_LOCK ContextLock;// Offset=0xc Size=0x4
-};

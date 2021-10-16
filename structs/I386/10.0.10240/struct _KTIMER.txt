@@ -1,8 +1,0 @@
-struct _KTIMER// Size=0x28
-{
-    struct _DISPATCHER_HEADER Header;// Offset=0x0 Size=0x10
-    union _ULARGE_INTEGER DueTime;// Offset=0x10 Size=0x8
-    struct _LIST_ENTRY TimerListEntry;// Offset=0x18 Size=0x8
-    struct _KDPC * Dpc;// Offset=0x20 Size=0x4
-    unsigned long Period;// Offset=0x24 Size=0x4
-};

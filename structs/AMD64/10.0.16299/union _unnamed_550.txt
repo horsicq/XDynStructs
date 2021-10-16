@@ -1,5 +1,0 @@
-union _unnamed_550// Size=0x4
-{
-    unsigned long LongFlags;// Offset=0x0 Size=0x4
-    struct _MM_SESSION_SPACE_FLAGS Flags;// Offset=0x0 Size=0x4
-};

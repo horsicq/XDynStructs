@@ -1,5 +1,0 @@
-struct _SEP_AUDIT_POLICY// Size=0x1c
-{
-    struct _TOKEN_AUDIT_POLICY AdtTokenPolicy;// Offset=0x0 Size=0x1b
-    unsigned char PolicySetStatus;// Offset=0x1b Size=0x1
-};

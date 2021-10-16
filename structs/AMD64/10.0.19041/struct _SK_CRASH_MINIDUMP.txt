@@ -1,9 +1,0 @@
-struct _SK_CRASH_MINIDUMP// Size=0x1000
-{
-    unsigned long Size;// Offset=0x0 Size=0x4
-    unsigned long Version;// Offset=0x4 Size=0x4
-    unsigned long ModuleCount;// Offset=0x8 Size=0x4
-    unsigned long FrameCount;// Offset=0xc Size=0x4
-    struct _SK_CRASH_MODULE Modules[16];// Offset=0x10 Size=0x480
-    struct _SK_CRASH_STACK_FRAME StackFrames[366];// Offset=0x490 Size=0xb70
-};

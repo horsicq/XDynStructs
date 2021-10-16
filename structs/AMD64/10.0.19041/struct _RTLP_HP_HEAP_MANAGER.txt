@@ -1,8 +1,0 @@
-struct _RTLP_HP_HEAP_MANAGER// Size=0x38d0
-{
-    struct _RTLP_HP_HEAP_GLOBALS * Globals;// Offset=0x0 Size=0x8
-    struct _RTLP_HP_ALLOC_TRACKER AllocTracker;// Offset=0x8 Size=0x50
-    struct _HEAP_VAMGR_CTX VaMgr;// Offset=0x58 Size=0x3840
-    struct _RTLP_HP_METADATA_HEAP_CTX MetadataHeaps[3];// Offset=0x3898 Size=0x30
-    struct _RTL_HP_SUB_ALLOCATOR_CONFIGS SubAllocConfigs;// Offset=0x38c8 Size=0x8
-};

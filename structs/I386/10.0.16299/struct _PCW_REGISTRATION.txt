@@ -1,3 +1,0 @@
-struct _PCW_REGISTRATION// Size=0x0
-{
-};

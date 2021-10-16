@@ -1,8 +1,0 @@
-struct _KENTROPY_TIMING_STATE// Size=0x150
-{
-    unsigned long EntropyCount;// Offset=0x0 Size=0x4
-    unsigned long Buffer[64];// Offset=0x4 Size=0x100
-    unsigned char __align0[4];// Offset=0x104 Size=0x4
-    struct _KDPC Dpc;// Offset=0x108 Size=0x40
-    unsigned long LastDeliveredBuffer;// Offset=0x148 Size=0x4
-};

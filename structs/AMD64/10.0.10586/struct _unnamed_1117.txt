@@ -1,4 +1,0 @@
-struct _unnamed_1117// Size=0x4
-{
-    unsigned long PercentLevel;// Offset=0x0 Size=0x4
-};

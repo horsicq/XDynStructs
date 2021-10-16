@@ -1,8 +1,0 @@
-struct _RTL_RETPOLINE_ROUTINES// Size=0x50
-{
-    unsigned long UnwindDataOffset;// Offset=0x0 Size=0x4
-    unsigned long SwitchtableJump[16];// Offset=0x4 Size=0x40
-    unsigned long CfgIndirectRax;// Offset=0x44 Size=0x4
-    unsigned long NonCfgIndirectRax;// Offset=0x48 Size=0x4
-    unsigned long ImportR10;// Offset=0x4c Size=0x4
-};

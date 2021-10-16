@@ -1,8 +1,0 @@
-union _unnamed_173// Size=0x4
-{
-    unsigned long PteFrame:25;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x19
-    unsigned long PfnImageVerified:1;// Offset=0x0 Size=0x4 BitOffset=0x19 BitSize=0x1
-    unsigned long AweAllocation:1;// Offset=0x0 Size=0x4 BitOffset=0x1a BitSize=0x1
-    unsigned long PrototypePte:1;// Offset=0x0 Size=0x4 BitOffset=0x1b BitSize=0x1
-    unsigned long PageColor:4;// Offset=0x0 Size=0x4 BitOffset=0x1c BitSize=0x4
-};

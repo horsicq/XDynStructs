@@ -1,6 +1,0 @@
-struct _KALPC_HANDLE_DATA// Size=0x24
-{
-    unsigned long ObjectType;// Offset=0x0 Size=0x4
-    unsigned long Count;// Offset=0x4 Size=0x4
-    struct _OB_DUPLICATE_OBJECT_STATE DuplicateContext;// Offset=0x8 Size=0x1c
-};

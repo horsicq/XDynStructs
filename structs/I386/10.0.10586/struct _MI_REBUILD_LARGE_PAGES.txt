@@ -1,6 +1,0 @@
-struct _MI_REBUILD_LARGE_PAGES// Size=0x34
-{
-    long Active;// Offset=0x0 Size=0x4
-    struct _MI_REBUILD_LARGE_PAGE_COUNTDOWN Timer[16][1];// Offset=0x4 Size=0x20
-    struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x24 Size=0x10
-};

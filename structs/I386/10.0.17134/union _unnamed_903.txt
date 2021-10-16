@@ -1,5 +1,0 @@
-union _unnamed_903// Size=0x18
-{
-    struct _KAPC_STATE ApcState;// Offset=0x0 Size=0x18
-    struct _MI_HARD_FAULT_STATE HardFaultState;// Offset=0x0 Size=0x8
-};

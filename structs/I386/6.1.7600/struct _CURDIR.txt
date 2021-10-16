@@ -1,5 +1,0 @@
-struct _CURDIR// Size=0xc
-{
-    struct _UNICODE_STRING DosPath;// Offset=0x0 Size=0x8
-    void * Handle;// Offset=0x8 Size=0x4
-};

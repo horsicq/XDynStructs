@@ -1,4 +1,0 @@
-struct _LOOKASIDE_LIST_EX// Size=0x60
-{
-    struct _GENERAL_LOOKASIDE_POOL L;// Offset=0x0 Size=0x60
-};

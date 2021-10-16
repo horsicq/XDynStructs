@@ -1,7 +1,0 @@
-union _unnamed_1022// Size=0x2
-{
-    unsigned short SignatureLevel:4;// Offset=0x0 Size=0x2 BitOffset=0x0 BitSize=0x4
-    unsigned short SignatureType:3;// Offset=0x0 Size=0x2 BitOffset=0x4 BitSize=0x3
-    unsigned short Unused:9;// Offset=0x0 Size=0x2 BitOffset=0x7 BitSize=0x9
-    unsigned short EntireField;// Offset=0x0 Size=0x2
-};

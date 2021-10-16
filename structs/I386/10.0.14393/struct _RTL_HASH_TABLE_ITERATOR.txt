@@ -1,6 +1,0 @@
-struct _RTL_HASH_TABLE_ITERATOR// Size=0xc
-{
-    struct _RTL_HASH_TABLE * Hash;// Offset=0x0 Size=0x4
-    struct _RTL_HASH_ENTRY * HashEntry;// Offset=0x4 Size=0x4
-    struct _SINGLE_LIST_ENTRY * Bucket;// Offset=0x8 Size=0x4
-};

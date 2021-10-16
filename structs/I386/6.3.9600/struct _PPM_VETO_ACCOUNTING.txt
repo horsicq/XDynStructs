@@ -1,5 +1,0 @@
-struct _PPM_VETO_ACCOUNTING// Size=0xc
-{
-    long VetoPresent;// Offset=0x0 Size=0x4
-    struct _LIST_ENTRY VetoListHead;// Offset=0x4 Size=0x8
-};

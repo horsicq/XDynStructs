@@ -1,6 +1,0 @@
-struct _MI_ACTIVE_PFN// Size=0x8
-{
-    struct _unnamed_1030 Leaf;// Offset=0x0 Size=0x8
-    struct _unnamed_1031 PageTable;// Offset=0x0 Size=0x8
-    unsigned long long EntireActiveField;// Offset=0x0 Size=0x8
-};

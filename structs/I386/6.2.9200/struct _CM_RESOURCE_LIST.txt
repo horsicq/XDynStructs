@@ -1,5 +1,0 @@
-struct _CM_RESOURCE_LIST// Size=0x24
-{
-    unsigned long Count;// Offset=0x0 Size=0x4
-    struct _CM_FULL_RESOURCE_DESCRIPTOR List[1];// Offset=0x4 Size=0x20
-};

@@ -1,9 +1,0 @@
-struct _EX_WORK_QUEUE// Size=0x3c
-{
-    struct _KQUEUE WorkerQueue;// Offset=0x0 Size=0x28
-    unsigned long DynamicThreadCount;// Offset=0x28 Size=0x4
-    unsigned long WorkItemsProcessed;// Offset=0x2c Size=0x4
-    unsigned long WorkItemsProcessedLastPass;// Offset=0x30 Size=0x4
-    unsigned long QueueDepthLastPass;// Offset=0x34 Size=0x4
-    union EX_QUEUE_WORKER_INFO Info;// Offset=0x38 Size=0x4
-};

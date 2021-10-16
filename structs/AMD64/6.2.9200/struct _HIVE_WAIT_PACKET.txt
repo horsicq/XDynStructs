@@ -1,8 +1,0 @@
-struct _HIVE_WAIT_PACKET// Size=0x30
-{
-    struct _KEVENT WakeEvent;// Offset=0x0 Size=0x18
-    long Status;// Offset=0x18 Size=0x4
-    unsigned char __align0[4];// Offset=0x1c Size=0x4
-    struct _HIVE_WAIT_PACKET * Next;// Offset=0x20 Size=0x8
-    unsigned char PrimaryFileWritten;// Offset=0x28 Size=0x1
-};

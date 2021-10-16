@@ -1,5 +1,0 @@
-struct _KLOCK_QUEUE_HANDLE// Size=0xc
-{
-    struct _KSPIN_LOCK_QUEUE LockQueue;// Offset=0x0 Size=0x8
-    unsigned char OldIrql;// Offset=0x8 Size=0x1
-};

@@ -1,8 +1,0 @@
-union _unnamed_230// Size=0x8
-{
-    struct _SINGLE_LIST_ENTRY NextSlistPfn;// Offset=0x0 Size=0x8
-    void * Next;// Offset=0x0 Size=0x8
-    unsigned long long Flink:36;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x24
-    unsigned long long NodeFlinkHigh:28;// Offset=0x0 Size=0x8 BitOffset=0x24 BitSize=0x1c
-    struct _MI_ACTIVE_PFN Active;// Offset=0x0 Size=0x8
-};

@@ -1,5 +1,0 @@
-struct _VF_ADDRESS_RANGE// Size=0x10
-{
-    unsigned char * Start;// Offset=0x0 Size=0x8
-    unsigned char * End;// Offset=0x8 Size=0x8
-};

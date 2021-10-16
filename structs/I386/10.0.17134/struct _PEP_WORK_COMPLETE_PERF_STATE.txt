@@ -1,6 +1,0 @@
-struct _PEP_WORK_COMPLETE_PERF_STATE// Size=0xc
-{
-    struct POHANDLE__ * DeviceHandle;// Offset=0x0 Size=0x4
-    unsigned long Component;// Offset=0x4 Size=0x4
-    unsigned char Succeeded;// Offset=0x8 Size=0x1
-};

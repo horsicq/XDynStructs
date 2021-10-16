@@ -1,4 +1,0 @@
-struct _PS_MITIGATION_AUDIT_OPTIONS_MAP// Size=0x10
-{
-    unsigned long long Map[2];// Offset=0x0 Size=0x10
-};

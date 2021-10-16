@@ -1,7 +1,0 @@
-struct _WNF_DISPATCHER// Size=0x30
-{
-    struct _WNF_NODE_HEADER Header;// Offset=0x0 Size=0x4
-    unsigned char __align0[4];// Offset=0x4 Size=0x4
-    struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x8 Size=0x20
-    long State;// Offset=0x28 Size=0x4
-};

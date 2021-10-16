@@ -1,6 +1,0 @@
-struct _CM_DIRTY_VECTOR_LOG// Size=0x488
-{
-    unsigned long Next;// Offset=0x0 Size=0x4
-    unsigned long Size;// Offset=0x4 Size=0x4
-    struct _CM_DIRTY_VECTOR_LOG_ENTRY Log[16];// Offset=0x8 Size=0x480
-};

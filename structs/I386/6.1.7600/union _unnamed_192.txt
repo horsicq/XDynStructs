@@ -1,5 +1,0 @@
-union _unnamed_192// Size=0x4
-{
-    unsigned long LongFlags3;// Offset=0x0 Size=0x4
-    struct _MMVAD_FLAGS3 VadFlags3;// Offset=0x0 Size=0x4
-};

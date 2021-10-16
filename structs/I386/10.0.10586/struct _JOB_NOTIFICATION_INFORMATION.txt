@@ -1,3 +1,0 @@
-struct _JOB_NOTIFICATION_INFORMATION// Size=0x0
-{
-};

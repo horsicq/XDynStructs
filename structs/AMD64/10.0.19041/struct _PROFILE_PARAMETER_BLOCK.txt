@@ -1,9 +1,0 @@
-struct _PROFILE_PARAMETER_BLOCK// Size=0x10
-{
-    unsigned short Status;// Offset=0x0 Size=0x2
-    unsigned short Reserved;// Offset=0x2 Size=0x2
-    unsigned short DockingState;// Offset=0x4 Size=0x2
-    unsigned short Capabilities;// Offset=0x6 Size=0x2
-    unsigned long DockID;// Offset=0x8 Size=0x4
-    unsigned long SerialNumber;// Offset=0xc Size=0x4
-};

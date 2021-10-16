@@ -1,4 +1,0 @@
-struct _unnamed_979// Size=0x4
-{
-    unsigned long Level;// Offset=0x0 Size=0x4
-};

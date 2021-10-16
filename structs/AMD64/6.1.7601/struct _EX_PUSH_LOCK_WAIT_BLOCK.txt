@@ -1,9 +1,0 @@
-struct _EX_PUSH_LOCK_WAIT_BLOCK// Size=0x40
-{
-    struct _KEVENT WakeEvent;// Offset=0x0 Size=0x18
-    struct _EX_PUSH_LOCK_WAIT_BLOCK * Next;// Offset=0x18 Size=0x8
-    struct _EX_PUSH_LOCK_WAIT_BLOCK * Last;// Offset=0x20 Size=0x8
-    struct _EX_PUSH_LOCK_WAIT_BLOCK * Previous;// Offset=0x28 Size=0x8
-    long ShareCount;// Offset=0x30 Size=0x4
-    long Flags;// Offset=0x34 Size=0x4
-};

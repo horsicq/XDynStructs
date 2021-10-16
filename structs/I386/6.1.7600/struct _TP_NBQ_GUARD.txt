@@ -1,5 +1,0 @@
-struct _TP_NBQ_GUARD// Size=0x10
-{
-    struct _LIST_ENTRY GuardLinks;// Offset=0x0 Size=0x8
-    void * Guards[2];// Offset=0x8 Size=0x8
-};

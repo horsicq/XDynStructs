@@ -1,3 +1,0 @@
-struct _EXP_LICENSE_STATE// Size=0x0
-{
-};

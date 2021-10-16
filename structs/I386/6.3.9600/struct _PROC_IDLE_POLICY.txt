@@ -1,8 +1,0 @@
-struct _PROC_IDLE_POLICY// Size=0x5
-{
-    unsigned char PromotePercent;// Offset=0x0 Size=0x1
-    unsigned char DemotePercent;// Offset=0x1 Size=0x1
-    unsigned char PromotePercentBase;// Offset=0x2 Size=0x1
-    unsigned char DemotePercentBase;// Offset=0x3 Size=0x1
-    unsigned char AllowScaling;// Offset=0x4 Size=0x1
-};

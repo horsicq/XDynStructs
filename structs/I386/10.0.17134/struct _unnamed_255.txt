@@ -1,4 +1,0 @@
-struct _unnamed_255// Size=0x4
-{
-    void * CheckStack;// Offset=0x0 Size=0x4
-};

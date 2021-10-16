@@ -1,8 +1,0 @@
-struct _PPM_COORDINATED_SELECTION// Size=0x18
-{
-    unsigned long MaximumStates;// Offset=0x0 Size=0x4
-    unsigned long SelectedStates;// Offset=0x4 Size=0x4
-    unsigned long DefaultSelection;// Offset=0x8 Size=0x4
-    unsigned char __align0[4];// Offset=0xc Size=0x4
-    unsigned long * Selection;// Offset=0x10 Size=0x8
-};

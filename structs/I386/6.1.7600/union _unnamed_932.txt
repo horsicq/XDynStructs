@@ -1,5 +1,0 @@
-union _unnamed_932// Size=0x8
-{
-    struct _unnamed_931 s1;// Offset=0x0 Size=0x8
-    unsigned long long Value;// Offset=0x0 Size=0x8
-};

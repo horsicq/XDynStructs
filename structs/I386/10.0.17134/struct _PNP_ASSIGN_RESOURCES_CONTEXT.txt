@@ -1,6 +1,0 @@
-struct _PNP_ASSIGN_RESOURCES_CONTEXT// Size=0xc
-{
-    unsigned long IncludeFailedDevices;// Offset=0x0 Size=0x4
-    unsigned long DeviceCount;// Offset=0x4 Size=0x4
-    struct _DEVICE_OBJECT * DeviceList[1];// Offset=0x8 Size=0x4
-};

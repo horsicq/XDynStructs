@@ -1,5 +1,0 @@
-union _unnamed_748// Size=0x50
-{
-    struct _CELL_DATA CellData;// Offset=0x0 Size=0x50
-    unsigned long long List[1];// Offset=0x0 Size=0x8
-};

@@ -1,5 +1,0 @@
-struct _MI_HARD_FAULT_STATE// Size=0x10
-{
-    struct _MMPFN * SwapPfn;// Offset=0x0 Size=0x8
-    struct _MI_STORE_INPAGE_COMPLETE_FLAGS StoreFlags;// Offset=0x8 Size=0x4
-};

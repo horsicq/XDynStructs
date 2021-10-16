@@ -1,5 +1,0 @@
-struct _KSTACK_AREA// Size=0x250
-{
-    struct _KERNEL_STACK_CONTROL StackControl;// Offset=0x0 Size=0x50
-    struct _XSAVE_FORMAT NpxFrame;// Offset=0x50 Size=0x200
-};

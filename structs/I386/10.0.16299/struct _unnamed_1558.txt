@@ -1,4 +1,0 @@
-struct _unnamed_1558// Size=0x4
-{
-    struct _ERESOURCE * ResourceToRelease;// Offset=0x0 Size=0x4
-};

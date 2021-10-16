@@ -1,8 +1,0 @@
-struct _DEVICE_OBJECT_LIST// Size=0x20
-{
-    unsigned long Count;// Offset=0x0 Size=0x4
-    unsigned long MaxCount;// Offset=0x4 Size=0x4
-    unsigned long TagCount;// Offset=0x8 Size=0x4
-    enum _PNP_DEVICE_DELETE_TYPE OperationCode;// Offset=0xc Size=0x4
-    struct _DEVICE_OBJECT_LIST_ENTRY Devices[1];// Offset=0x10 Size=0x10
-};

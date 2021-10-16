@@ -1,7 +1,0 @@
-struct _VI_POOL_ENTRY_INUSE// Size=0x10
-{
-    void * VirtualAddress;// Offset=0x0 Size=0x4
-    void * CallingAddress;// Offset=0x4 Size=0x4
-    unsigned long NumberOfBytes;// Offset=0x8 Size=0x4
-    unsigned long Tag;// Offset=0xc Size=0x4
-};

@@ -1,5 +1,0 @@
-union _unnamed_493// Size=0x8
-{
-    struct _MMBANKED_SECTION * Banked;// Offset=0x0 Size=0x8
-    struct _MMEXTEND_INFO * ExtendedInfo;// Offset=0x0 Size=0x8
-};

@@ -1,8 +1,0 @@
-struct _GEN_ADDR// Size=0xc
-{
-    unsigned char AddressSpaceID;// Offset=0x0 Size=0x1
-    unsigned char BitWidth;// Offset=0x1 Size=0x1
-    unsigned char BitOffset;// Offset=0x2 Size=0x1
-    unsigned char AccessSize;// Offset=0x3 Size=0x1
-    union _LARGE_INTEGER Address;// Offset=0x4 Size=0x8
-};

@@ -1,3 +1,0 @@
-struct _JOB_ACCESS_STATE// Size=0x0
-{
-};

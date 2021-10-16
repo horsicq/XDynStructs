@@ -1,7 +1,0 @@
-union _PCW_CALLBACK_INFORMATION// Size=0x20
-{
-    struct _PCW_COUNTER_INFORMATION AddCounter;// Offset=0x0 Size=0x10
-    struct _PCW_COUNTER_INFORMATION RemoveCounter;// Offset=0x0 Size=0x10
-    struct _PCW_MASK_INFORMATION EnumerateInstances;// Offset=0x0 Size=0x20
-    struct _PCW_MASK_INFORMATION CollectData;// Offset=0x0 Size=0x20
-};

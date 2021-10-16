@@ -1,8 +1,0 @@
-struct _INTERFACE// Size=0x10
-{
-    unsigned short Size;// Offset=0x0 Size=0x2
-    unsigned short Version;// Offset=0x2 Size=0x2
-    void * Context;// Offset=0x4 Size=0x4
-    void  ( * InterfaceReference)(void * );// Offset=0x8 Size=0x4
-    void  ( * InterfaceDereference)(void * );// Offset=0xc Size=0x4
-};

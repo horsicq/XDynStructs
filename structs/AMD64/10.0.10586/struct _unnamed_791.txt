@@ -1,5 +1,0 @@
-struct _unnamed_791// Size=0x4
-{
-    unsigned long SnapSharedExportsFailed:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
-    unsigned long Spare:31;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x1f
-};

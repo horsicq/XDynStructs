@@ -1,5 +1,0 @@
-struct _PROC_PERF_LOAD// Size=0x2
-{
-    unsigned char BusyPercentage;// Offset=0x0 Size=0x1
-    unsigned char FrequencyPercentage;// Offset=0x1 Size=0x1
-};

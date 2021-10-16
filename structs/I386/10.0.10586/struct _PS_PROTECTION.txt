@@ -1,7 +1,0 @@
-struct _PS_PROTECTION// Size=0x1
-{
-    unsigned char Level;// Offset=0x0 Size=0x1
-    unsigned char Type:3;// Offset=0x0 Size=0x1 BitOffset=0x0 BitSize=0x3
-    unsigned char Audit:1;// Offset=0x0 Size=0x1 BitOffset=0x3 BitSize=0x1
-    unsigned char Signer:4;// Offset=0x0 Size=0x1 BitOffset=0x4 BitSize=0x4
-};

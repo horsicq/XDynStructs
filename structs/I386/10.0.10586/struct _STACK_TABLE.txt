@@ -1,7 +1,0 @@
-struct _STACK_TABLE// Size=0x8040
-{
-    unsigned short NumStackTraces;// Offset=0x0 Size=0x2
-    unsigned short TraceCapacity;// Offset=0x2 Size=0x2
-    struct _OBJECT_REF_TRACE * StackTrace[16];// Offset=0x4 Size=0x40
-    unsigned short StackTableHash[16381];// Offset=0x44 Size=0x7ffa
-};

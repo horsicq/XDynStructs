@@ -1,6 +1,0 @@
-struct _OBJECT_NAMESPACE_LOOKUPTABLE// Size=0x260
-{
-    struct _LIST_ENTRY HashBuckets[37];// Offset=0x0 Size=0x250
-    struct _EX_PUSH_LOCK Lock;// Offset=0x250 Size=0x8
-    unsigned long NumberOfPrivateSpaces;// Offset=0x258 Size=0x4
-};

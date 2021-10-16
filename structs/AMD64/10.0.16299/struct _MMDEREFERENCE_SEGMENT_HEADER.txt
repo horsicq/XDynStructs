@@ -1,7 +1,0 @@
-struct _MMDEREFERENCE_SEGMENT_HEADER// Size=0x50
-{
-    struct _KSEMAPHORE Semaphore;// Offset=0x0 Size=0x20
-    struct _LIST_ENTRY ControlAreaDeleteListHead;// Offset=0x20 Size=0x10
-    struct _LIST_ENTRY UnusedSegmentDeleteListHead;// Offset=0x30 Size=0x10
-    struct _LIST_ENTRY PagefileExtensionListHead;// Offset=0x40 Size=0x10
-};

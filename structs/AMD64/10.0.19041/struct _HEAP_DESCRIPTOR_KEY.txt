@@ -1,7 +1,0 @@
-struct _HEAP_DESCRIPTOR_KEY// Size=0x4
-{
-    unsigned long Key;// Offset=0x0 Size=0x4
-    unsigned long EncodedCommittedPageCount:16;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x10
-    unsigned long LargePageCost:8;// Offset=0x0 Size=0x4 BitOffset=0x10 BitSize=0x8
-    unsigned long UnitCount:8;// Offset=0x0 Size=0x4 BitOffset=0x18 BitSize=0x8
-};

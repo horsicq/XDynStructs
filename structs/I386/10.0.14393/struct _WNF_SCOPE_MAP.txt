@@ -1,3 +1,0 @@
-struct _WNF_SCOPE_MAP// Size=0x0
-{
-};

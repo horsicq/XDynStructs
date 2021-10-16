@@ -1,7 +1,0 @@
-struct _IO_SECURITY_CONTEXT// Size=0x10
-{
-    struct _SECURITY_QUALITY_OF_SERVICE * SecurityQos;// Offset=0x0 Size=0x4
-    struct _ACCESS_STATE * AccessState;// Offset=0x4 Size=0x4
-    unsigned long DesiredAccess;// Offset=0x8 Size=0x4
-    unsigned long FullCreateOptions;// Offset=0xc Size=0x4
-};

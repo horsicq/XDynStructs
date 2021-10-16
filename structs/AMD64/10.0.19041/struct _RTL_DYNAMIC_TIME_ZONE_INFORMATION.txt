@@ -1,6 +1,0 @@
-struct _RTL_DYNAMIC_TIME_ZONE_INFORMATION// Size=0x1b0
-{
-    struct _RTL_TIME_ZONE_INFORMATION tzi;// Offset=0x0 Size=0xac
-    wchar_t TimeZoneKeyName[128];// Offset=0xac Size=0x100
-    unsigned char DynamicDaylightTimeDisabled;// Offset=0x1ac Size=0x1
-};

@@ -1,5 +1,0 @@
-struct _unnamed_117// Size=0x8
-{
-    struct _VPB * Vpb;// Offset=0x0 Size=0x4
-    struct _DEVICE_OBJECT * DeviceObject;// Offset=0x4 Size=0x4
-};

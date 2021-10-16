@@ -1,5 +1,0 @@
-struct _unnamed_739// Size=0xc
-{
-    union _LARGE_INTEGER Start;// Offset=0x0 Size=0x8
-    unsigned long Length40;// Offset=0x8 Size=0x4
-};

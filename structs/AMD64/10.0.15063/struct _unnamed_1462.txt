@@ -1,4 +1,0 @@
-struct _unnamed_1462// Size=0x10
-{
-    struct _GUID BlockedDriverGuid;// Offset=0x0 Size=0x10
-};

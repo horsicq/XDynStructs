@@ -1,6 +1,0 @@
-struct _KGDTENTRY// Size=0x8
-{
-    unsigned short LimitLow;// Offset=0x0 Size=0x2
-    unsigned short BaseLow;// Offset=0x2 Size=0x2
-    union _unnamed_478 HighWord;// Offset=0x4 Size=0x4
-};

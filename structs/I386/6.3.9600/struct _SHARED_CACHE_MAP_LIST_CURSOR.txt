@@ -1,5 +1,0 @@
-struct _SHARED_CACHE_MAP_LIST_CURSOR// Size=0xc
-{
-    struct _LIST_ENTRY SharedCacheMapLinks;// Offset=0x0 Size=0x8
-    unsigned long Flags;// Offset=0x8 Size=0x4
-};

@@ -1,9 +1,0 @@
-struct _WHEA_XPF_CMC_DESCRIPTOR// Size=0x3a4
-{
-    unsigned short Type;// Offset=0x0 Size=0x2
-    unsigned char Enabled;// Offset=0x2 Size=0x1
-    unsigned char NumberOfBanks;// Offset=0x3 Size=0x1
-    unsigned long Reserved;// Offset=0x4 Size=0x4
-    struct _WHEA_NOTIFICATION_DESCRIPTOR Notify;// Offset=0x8 Size=0x1c
-    struct _WHEA_XPF_MC_BANK_DESCRIPTOR Banks[32];// Offset=0x24 Size=0x380
-};

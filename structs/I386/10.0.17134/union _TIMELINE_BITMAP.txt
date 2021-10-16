@@ -1,6 +1,0 @@
-union _TIMELINE_BITMAP// Size=0x8
-{
-    unsigned long long Value;// Offset=0x0 Size=0x8
-    unsigned long EndTime;// Offset=0x0 Size=0x4
-    unsigned long Bitmap;// Offset=0x4 Size=0x4
-};

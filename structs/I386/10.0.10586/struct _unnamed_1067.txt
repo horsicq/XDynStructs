@@ -1,5 +1,0 @@
-struct _unnamed_1067// Size=0x20
-{
-    struct _MDL Mdl;// Offset=0x0 Size=0x1c
-    unsigned long Page[1];// Offset=0x1c Size=0x4
-};

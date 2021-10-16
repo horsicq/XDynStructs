@@ -1,4 +1,0 @@
-struct _HEAP_LOCK// Size=0x28
-{
-    union _unnamed_317 Lock;// Offset=0x0 Size=0x28
-};

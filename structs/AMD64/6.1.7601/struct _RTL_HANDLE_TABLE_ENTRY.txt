@@ -1,5 +1,0 @@
-struct _RTL_HANDLE_TABLE_ENTRY// Size=0x8
-{
-    unsigned long Flags;// Offset=0x0 Size=0x4
-    struct _RTL_HANDLE_TABLE_ENTRY * NextFree;// Offset=0x0 Size=0x8
-};

@@ -1,7 +1,0 @@
-struct _MMPTE_SUBSECTION// Size=0x4
-{
-    unsigned long Valid:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
-    unsigned long SubsectionAddressLow:9;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x9
-    unsigned long Prototype:1;// Offset=0x0 Size=0x4 BitOffset=0xa BitSize=0x1
-    unsigned long SubsectionAddressHigh:21;// Offset=0x0 Size=0x4 BitOffset=0xb BitSize=0x15
-};

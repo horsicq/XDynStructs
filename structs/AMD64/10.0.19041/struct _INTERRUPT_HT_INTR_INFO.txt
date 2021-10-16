@@ -1,5 +1,0 @@
-struct _INTERRUPT_HT_INTR_INFO// Size=0x8
-{
-    union <anonymous-tag> LowPart;// Offset=0x0 Size=0x4
-    union <anonymous-tag> HighPart;// Offset=0x4 Size=0x4
-};

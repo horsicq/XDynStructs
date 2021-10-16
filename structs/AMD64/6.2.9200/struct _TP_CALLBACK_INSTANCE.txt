@@ -1,3 +1,0 @@
-struct _TP_CALLBACK_INSTANCE// Size=0x0
-{
-};

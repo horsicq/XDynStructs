@@ -1,9 +1,0 @@
-struct _HAL_CHANNEL_MEMORY_RANGES// Size=0xc
-{
-    unsigned long PageFrameIndex;// Offset=0x0 Size=0x4
-    unsigned short MpnId;// Offset=0x4 Size=0x2
-    unsigned short Node;// Offset=0x6 Size=0x2
-    unsigned short Channel;// Offset=0x8 Size=0x2
-    unsigned char IsPowerManageable;// Offset=0xa Size=0x1
-    unsigned char DeepPowerState;// Offset=0xb Size=0x1
-};

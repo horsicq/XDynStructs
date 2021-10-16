@@ -1,9 +1,0 @@
-struct _DEVICE_MAP// Size=0x34
-{
-    struct _OBJECT_DIRECTORY * DosDevicesDirectory;// Offset=0x0 Size=0x4
-    struct _OBJECT_DIRECTORY * GlobalDosDevicesDirectory;// Offset=0x4 Size=0x4
-    void * DosDevicesDirectoryHandle;// Offset=0x8 Size=0x4
-    long ReferenceCount;// Offset=0xc Size=0x4
-    unsigned long DriveMap;// Offset=0x10 Size=0x4
-    unsigned char DriveType[32];// Offset=0x14 Size=0x20
-};

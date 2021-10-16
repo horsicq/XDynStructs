@@ -1,8 +1,0 @@
-struct _LOCAL_NMISOURCE// Size=0x6
-{
-    unsigned char Type;// Offset=0x0 Size=0x1
-    unsigned char Length;// Offset=0x1 Size=0x1
-    unsigned char ProcessorID;// Offset=0x2 Size=0x1
-    unsigned short Flags;// Offset=0x3 Size=0x2
-    unsigned char LINTIN;// Offset=0x5 Size=0x1
-};

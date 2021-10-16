@@ -1,6 +1,0 @@
-struct _HEAP_PSEUDO_TAG_ENTRY// Size=0xc
-{
-    unsigned long Allocs;// Offset=0x0 Size=0x4
-    unsigned long Frees;// Offset=0x4 Size=0x4
-    unsigned long Size;// Offset=0x8 Size=0x4
-};

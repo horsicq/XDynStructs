@@ -1,5 +1,0 @@
-struct _IMAGE_DATA_DIRECTORY// Size=0x8
-{
-    unsigned long VirtualAddress;// Offset=0x0 Size=0x4
-    unsigned long Size;// Offset=0x4 Size=0x4
-};

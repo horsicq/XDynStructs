@@ -1,7 +1,0 @@
-struct _VF_POOL_TRACE// Size=0x40
-{
-    void * Address;// Offset=0x0 Size=0x4
-    unsigned long Size;// Offset=0x4 Size=0x4
-    struct _ETHREAD * Thread;// Offset=0x8 Size=0x4
-    void * StackTrace[13];// Offset=0xc Size=0x34
-};

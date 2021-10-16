@@ -1,4 +1,0 @@
-struct _unnamed_774// Size=0x4
-{
-    unsigned long Type;// Offset=0x0 Size=0x4
-};

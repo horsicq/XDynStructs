@@ -1,9 +1,0 @@
-struct _unnamed_1601// Size=0xc
-{
-    unsigned long Address;// Offset=0x0 Size=0x4
-    unsigned char Consumed;// Offset=0x4 Size=0x1
-    unsigned char __align0[1];// Offset=0x5 Size=0x1
-    unsigned short ErrorCode;// Offset=0x6 Size=0x2
-    unsigned char ErrorIpValid;// Offset=0x8 Size=0x1
-    unsigned char RestartIpValid;// Offset=0x9 Size=0x1
-};

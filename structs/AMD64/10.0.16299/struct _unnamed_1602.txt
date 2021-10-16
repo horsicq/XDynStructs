@@ -1,8 +1,0 @@
-struct _unnamed_1602// Size=0x20
-{
-    struct _IRP * Irp;// Offset=0x0 Size=0x8
-    void * FileInformation;// Offset=0x8 Size=0x8
-    unsigned long * Length;// Offset=0x10 Size=0x8
-    enum _FILE_INFORMATION_CLASS FileInformationClass;// Offset=0x18 Size=0x4
-    long CompletionStatus;// Offset=0x1c Size=0x4
-};

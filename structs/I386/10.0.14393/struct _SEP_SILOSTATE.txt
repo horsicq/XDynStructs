@@ -1,7 +1,0 @@
-struct _SEP_SILOSTATE// Size=0x10
-{
-    struct _SEP_LOGON_SESSION_REFERENCES * SystemLogonSession;// Offset=0x0 Size=0x4
-    struct _SEP_LOGON_SESSION_REFERENCES * AnonymousLogonSession;// Offset=0x4 Size=0x4
-    void * AnonymousLogonToken;// Offset=0x8 Size=0x4
-    void * AnonymousLogonTokenNoEveryone;// Offset=0xc Size=0x4
-};

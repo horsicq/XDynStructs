@@ -1,9 +1,0 @@
-struct _IOSAPIC// Size=0x10
-{
-    unsigned char Type;// Offset=0x0 Size=0x1
-    unsigned char Length;// Offset=0x1 Size=0x1
-    unsigned char IOSAPICID;// Offset=0x2 Size=0x1
-    unsigned char Reserved;// Offset=0x3 Size=0x1
-    unsigned long SystemVectorBase;// Offset=0x4 Size=0x4
-    unsigned long long IOSAPICAddress;// Offset=0x8 Size=0x8
-};

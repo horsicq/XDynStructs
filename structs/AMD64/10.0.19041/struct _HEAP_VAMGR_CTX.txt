@@ -1,8 +1,0 @@
-struct _HEAP_VAMGR_CTX// Size=0x3840
-{
-    struct _HEAP_VAMGR_VASPACE VaSpace;// Offset=0x0 Size=0x860
-    unsigned long long AllocatorLock;// Offset=0x860 Size=0x8
-    unsigned long AllocatorCount;// Offset=0x868 Size=0x4
-    unsigned char __align0[4];// Offset=0x86c Size=0x4
-    struct _HEAP_VAMGR_ALLOCATOR Allocators[255];// Offset=0x870 Size=0x2fd0
-};

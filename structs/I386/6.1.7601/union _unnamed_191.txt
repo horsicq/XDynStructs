@@ -1,5 +1,0 @@
-union _unnamed_191// Size=0x4
-{
-    long Balance:2;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x2
-    struct _MMVAD * Parent;// Offset=0x0 Size=0x4
-};

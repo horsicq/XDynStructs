@@ -1,5 +1,0 @@
-struct _IO_COMPLETION_CONTEXT// Size=0x8
-{
-    void * Port;// Offset=0x0 Size=0x4
-    void * Key;// Offset=0x4 Size=0x4
-};

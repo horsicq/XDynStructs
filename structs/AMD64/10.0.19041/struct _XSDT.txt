@@ -1,5 +1,0 @@
-struct _XSDT// Size=0x2c
-{
-    struct _DESCRIPTION_HEADER Header;// Offset=0x0 Size=0x24
-    union _LARGE_INTEGER Tables[1];// Offset=0x24 Size=0x8
-};

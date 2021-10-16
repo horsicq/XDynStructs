@@ -1,5 +1,0 @@
-union _unnamed_1180// Size=0x4
-{
-    unsigned long LongFlags;// Offset=0x0 Size=0x4
-    struct _MMPAGE_FILE_EXPANSION_FLAGS Flags;// Offset=0x0 Size=0x4
-};

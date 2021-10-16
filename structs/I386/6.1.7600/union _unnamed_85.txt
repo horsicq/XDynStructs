@@ -1,6 +1,0 @@
-union _unnamed_85// Size=0x30
-{
-    struct _unnamed_84 Overlay;// Offset=0x0 Size=0x28
-    struct _KAPC Apc;// Offset=0x0 Size=0x30
-    void * CompletionKey;// Offset=0x0 Size=0x4
-};

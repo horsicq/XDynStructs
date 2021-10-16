@@ -1,5 +1,0 @@
-union _unnamed_684// Size=0x4
-{
-    struct _unnamed_683 Flags;// Offset=0x0 Size=0x4
-    unsigned long Whole;// Offset=0x0 Size=0x4
-};

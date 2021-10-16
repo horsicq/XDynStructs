@@ -1,6 +1,0 @@
-struct _OB_HANDLE_REVOCATION_BLOCK// Size=0x20
-{
-    struct _LIST_ENTRY RevocationInfos;// Offset=0x0 Size=0x10
-    struct _EX_PUSH_LOCK Lock;// Offset=0x10 Size=0x8
-    struct _EX_RUNDOWN_REF Rundown;// Offset=0x18 Size=0x8
-};

@@ -1,8 +1,0 @@
-struct _KSTACK_AREA// Size=0x210
-{
-    struct _FNSAVE_FORMAT FnArea;// Offset=0x0 Size=0x6c
-    struct _FXSAVE_FORMAT NpxFrame;// Offset=0x0 Size=0x1e0
-    struct _KERNEL_STACK_CONTROL StackControl;// Offset=0x1e0 Size=0x1c
-    unsigned long Cr0NpxState;// Offset=0x1fc Size=0x4
-    unsigned long Padding[4];// Offset=0x200 Size=0x10
-};

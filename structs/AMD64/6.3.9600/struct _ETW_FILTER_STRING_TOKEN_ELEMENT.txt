@@ -1,6 +1,0 @@
-struct _ETW_FILTER_STRING_TOKEN_ELEMENT// Size=0x10
-{
-    unsigned short Length;// Offset=0x0 Size=0x2
-    unsigned char __align0[6];// Offset=0x2 Size=0x6
-    unsigned short * String;// Offset=0x8 Size=0x8
-};

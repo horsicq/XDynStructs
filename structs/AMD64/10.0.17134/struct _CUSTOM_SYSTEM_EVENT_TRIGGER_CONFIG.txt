@@ -1,6 +1,0 @@
-struct _CUSTOM_SYSTEM_EVENT_TRIGGER_CONFIG// Size=0x10
-{
-    unsigned long Size;// Offset=0x0 Size=0x4
-    unsigned char __align0[4];// Offset=0x4 Size=0x4
-    wchar_t * TriggerId;// Offset=0x8 Size=0x8
-};

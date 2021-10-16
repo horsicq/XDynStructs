@@ -1,9 +1,0 @@
-struct _ISA_VECTOR// Size=0xa
-{
-    unsigned char Type;// Offset=0x0 Size=0x1
-    unsigned char Length;// Offset=0x1 Size=0x1
-    unsigned char Bus;// Offset=0x2 Size=0x1
-    unsigned char Source;// Offset=0x3 Size=0x1
-    unsigned long GlobalSystemInterruptVector;// Offset=0x4 Size=0x4
-    unsigned short Flags;// Offset=0x8 Size=0x2
-};

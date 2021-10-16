@@ -1,5 +1,0 @@
-union _unnamed_1116// Size=0x8
-{
-    unsigned long long Long;// Offset=0x0 Size=0x8
-    struct _MI_DECAY_TIMER_LINKAGE e1;// Offset=0x0 Size=0x8
-};

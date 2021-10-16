@@ -1,6 +1,0 @@
-union _unnamed_1546// Size=0x8
-{
-    struct _unnamed_1543 DirtyVectorModifiedContext;// Offset=0x0 Size=0x8
-    struct _unnamed_1544 DirtyDataCaptureContext;// Offset=0x0 Size=0x8
-    struct _unnamed_1545 Raw;// Offset=0x0 Size=0x8
-};

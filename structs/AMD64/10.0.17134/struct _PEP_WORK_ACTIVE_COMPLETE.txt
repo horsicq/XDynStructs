@@ -1,5 +1,0 @@
-struct _PEP_WORK_ACTIVE_COMPLETE// Size=0x10
-{
-    struct POHANDLE__ * DeviceHandle;// Offset=0x0 Size=0x8
-    unsigned long Component;// Offset=0x8 Size=0x4
-};

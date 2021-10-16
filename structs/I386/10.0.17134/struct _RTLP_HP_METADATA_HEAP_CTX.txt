@@ -1,5 +1,0 @@
-struct _RTLP_HP_METADATA_HEAP_CTX// Size=0x8
-{
-    struct _SEGMENT_HEAP * Heap;// Offset=0x0 Size=0x4
-    union _RTL_RUN_ONCE InitOnce;// Offset=0x4 Size=0x4
-};

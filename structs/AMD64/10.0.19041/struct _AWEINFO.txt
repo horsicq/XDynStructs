@@ -1,3 +1,0 @@
-struct _AWEINFO// Size=0x0
-{
-};

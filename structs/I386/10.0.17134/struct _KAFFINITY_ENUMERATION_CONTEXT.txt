@@ -1,6 +1,0 @@
-struct _KAFFINITY_ENUMERATION_CONTEXT// Size=0xc
-{
-    struct _KAFFINITY_EX * Affinity;// Offset=0x0 Size=0x4
-    unsigned long CurrentMask;// Offset=0x4 Size=0x4
-    unsigned short CurrentIndex;// Offset=0x8 Size=0x2
-};

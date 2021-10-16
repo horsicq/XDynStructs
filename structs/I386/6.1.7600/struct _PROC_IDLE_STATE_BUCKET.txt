@@ -1,7 +1,0 @@
-struct _PROC_IDLE_STATE_BUCKET// Size=0x20
-{
-    unsigned long long TotalTime;// Offset=0x0 Size=0x8
-    unsigned long long MinTime;// Offset=0x8 Size=0x8
-    unsigned long long MaxTime;// Offset=0x10 Size=0x8
-    unsigned long Count;// Offset=0x18 Size=0x4
-};

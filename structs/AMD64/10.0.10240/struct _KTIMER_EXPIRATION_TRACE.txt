@@ -1,5 +1,0 @@
-struct _KTIMER_EXPIRATION_TRACE// Size=0x10
-{
-    unsigned long long InterruptTime;// Offset=0x0 Size=0x8
-    union _LARGE_INTEGER PerformanceCounter;// Offset=0x8 Size=0x8
-};

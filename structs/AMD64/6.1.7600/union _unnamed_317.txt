@@ -1,4 +1,0 @@
-union _unnamed_317// Size=0x28
-{
-    struct _RTL_CRITICAL_SECTION CriticalSection;// Offset=0x0 Size=0x28
-};

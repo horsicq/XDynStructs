@@ -1,5 +1,0 @@
-struct _CMSI_PROCESS_TUPLE// Size=0x8
-{
-    void * ProcessHandle;// Offset=0x0 Size=0x4
-    void * ProcessReference;// Offset=0x4 Size=0x4
-};

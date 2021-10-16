@@ -1,6 +1,0 @@
-struct _NLS_DATA_BLOCK// Size=0xc
-{
-    void * AnsiCodePageData;// Offset=0x0 Size=0x4
-    void * OemCodePageData;// Offset=0x4 Size=0x4
-    void * UnicodeCaseTableData;// Offset=0x8 Size=0x4
-};

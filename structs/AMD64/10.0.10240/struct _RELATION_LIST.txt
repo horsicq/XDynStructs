@@ -1,5 +1,0 @@
-struct _RELATION_LIST// Size=0x10
-{
-    struct _DEVICE_OBJECT_LIST * DeviceObjectList;// Offset=0x0 Size=0x8
-    unsigned char Sorted;// Offset=0x8 Size=0x1
-};

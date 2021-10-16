@@ -1,8 +1,0 @@
-struct _POP_THERMAL_TELEMETRY_TRACKER// Size=0x160
-{
-    unsigned char AccountingDisabled;// Offset=0x0 Size=0x1
-    unsigned char __align0[7];// Offset=0x1 Size=0x7
-    unsigned long long LastPassiveUpdateTime;// Offset=0x8 Size=0x8
-    unsigned long long TotalPassiveTime[21];// Offset=0x10 Size=0xa8
-    unsigned long long PassiveTimeSnap[21];// Offset=0xb8 Size=0xa8
-};

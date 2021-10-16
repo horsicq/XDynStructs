@@ -1,5 +1,0 @@
-struct _MI_COMBINE_PAGE_LISTHEAD// Size=0x10
-{
-    struct _RTL_AVL_TREE Table;// Offset=0x0 Size=0x8
-    long Lock;// Offset=0x8 Size=0x4
-};

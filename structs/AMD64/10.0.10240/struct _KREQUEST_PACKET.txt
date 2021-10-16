@@ -1,5 +1,0 @@
-struct _KREQUEST_PACKET// Size=0x20
-{
-    void * CurrentPacket[3];// Offset=0x0 Size=0x18
-    void  ( * WorkerRoutine)(void * ,void * ,void * ,void * );// Offset=0x18 Size=0x8
-};

@@ -1,7 +1,0 @@
-union _INVPCID_DESCRIPTOR// Size=0x10
-{
-    struct <anonymous-tag> IndividualAddress;// Offset=0x0 Size=0x10
-    struct <anonymous-tag> SingleContext;// Offset=0x0 Size=0x10
-    struct <anonymous-tag> AllContextAndGlobals;// Offset=0x0 Size=0x10
-    struct <anonymous-tag> AllContext;// Offset=0x0 Size=0x10
-};

@@ -1,8 +1,0 @@
-struct _PNP_RESOURCE_CONFLICT_TRACE_CONTEXT// Size=0x18
-{
-    unsigned char ResourceType;// Offset=0x0 Size=0x1
-    unsigned char __align0[3];// Offset=0x1 Size=0x3
-    unsigned long AlternativeCount;// Offset=0x4 Size=0x4
-    struct _IO_RESOURCE_DESCRIPTOR * ResourceRequests;// Offset=0x8 Size=0x8
-    void * ArbiterInstance;// Offset=0x10 Size=0x8
-};

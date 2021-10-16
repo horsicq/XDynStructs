@@ -1,4 +1,0 @@
-struct _NPAGED_LOOKASIDE_LIST// Size=0x80
-{
-    struct _GENERAL_LOOKASIDE L;// Offset=0x0 Size=0x80
-};

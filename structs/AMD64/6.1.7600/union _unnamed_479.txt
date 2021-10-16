@@ -1,5 +1,0 @@
-union _unnamed_479// Size=0x18
-{
-    struct _EFI_FIRMWARE_INFORMATION EfiInformation;// Offset=0x0 Size=0x18
-    struct _PCAT_FIRMWARE_INFORMATION PcatInformation;// Offset=0x0 Size=0x4
-};

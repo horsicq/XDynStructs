@@ -1,7 +1,0 @@
-struct _EVENT_FILTER_LEVEL_KW// Size=0x18
-{
-    unsigned long long MatchAnyKeyword;// Offset=0x0 Size=0x8
-    unsigned long long MatchAllKeyword;// Offset=0x8 Size=0x8
-    unsigned char Level;// Offset=0x10 Size=0x1
-    unsigned char FilterIn;// Offset=0x11 Size=0x1
-};

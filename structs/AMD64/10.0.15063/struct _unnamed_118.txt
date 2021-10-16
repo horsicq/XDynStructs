@@ -1,9 +1,0 @@
-struct _unnamed_118// Size=0x20
-{
-    unsigned long Length;// Offset=0x0 Size=0x4
-    unsigned char __align0[4];// Offset=0x4 Size=0x4
-    struct _UNICODE_STRING * FileName;// Offset=0x8 Size=0x8
-    enum _FILE_INFORMATION_CLASS FileInformationClass;// Offset=0x10 Size=0x4
-    unsigned char __align1[4];// Offset=0x14 Size=0x4
-    unsigned long FileIndex;// Offset=0x18 Size=0x4
-};

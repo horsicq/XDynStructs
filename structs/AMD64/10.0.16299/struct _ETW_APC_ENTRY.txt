@@ -1,5 +1,0 @@
-struct _ETW_APC_ENTRY// Size=0x60
-{
-    struct _SLIST_ENTRY SListEntry;// Offset=0x0 Size=0x10
-    struct _KAPC Apc;// Offset=0x0 Size=0x58
-};

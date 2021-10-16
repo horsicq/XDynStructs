@@ -1,9 +1,0 @@
-struct _MI_VAD_ALLOCATION_CELL// Size=0x1c
-{
-    struct _RTL_BITMAP AllocationBitMap;// Offset=0x0 Size=0x8
-    unsigned long BitMapHint;// Offset=0x8 Size=0x4
-    unsigned long LastAllocationSize;// Offset=0xc Size=0x4
-    unsigned long LastAllocationSizeHint;// Offset=0x10 Size=0x4
-    unsigned long LowestBottomUpVadBit;// Offset=0x14 Size=0x4
-    void * LowestBottomUpAllocationAddress;// Offset=0x18 Size=0x4
-};

@@ -1,5 +1,0 @@
-struct _ETW_REF_CLOCK// Size=0x10
-{
-    union _LARGE_INTEGER StartTime;// Offset=0x0 Size=0x8
-    union _LARGE_INTEGER StartPerfClock;// Offset=0x8 Size=0x8
-};

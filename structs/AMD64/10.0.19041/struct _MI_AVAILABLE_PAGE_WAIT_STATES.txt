@@ -1,5 +1,0 @@
-struct _MI_AVAILABLE_PAGE_WAIT_STATES// Size=0x20
-{
-    struct _KEVENT Event;// Offset=0x0 Size=0x18
-    unsigned long EventSets;// Offset=0x18 Size=0x4
-};

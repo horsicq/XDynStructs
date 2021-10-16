@@ -1,7 +1,0 @@
-struct _OBJECT_HEADER_CREATOR_INFO// Size=0x10
-{
-    struct _LIST_ENTRY TypeList;// Offset=0x0 Size=0x8
-    void * CreatorUniqueProcess;// Offset=0x8 Size=0x4
-    unsigned short CreatorBackTraceIndex;// Offset=0xc Size=0x2
-    unsigned short Reserved1;// Offset=0xe Size=0x2
-};

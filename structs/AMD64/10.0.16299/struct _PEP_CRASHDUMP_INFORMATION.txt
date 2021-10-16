@@ -1,5 +1,0 @@
-struct _PEP_CRASHDUMP_INFORMATION// Size=0x10
-{
-    struct PEPHANDLE__ * DeviceHandle;// Offset=0x0 Size=0x8
-    void * DeviceContext;// Offset=0x8 Size=0x8
-};

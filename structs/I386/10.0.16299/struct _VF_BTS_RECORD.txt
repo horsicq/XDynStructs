@@ -1,8 +1,0 @@
-struct _VF_BTS_RECORD// Size=0xc
-{
-    void * JumpedFrom;// Offset=0x0 Size=0x4
-    void * JumpedTo;// Offset=0x4 Size=0x4
-    unsigned long Unused1:3;// Offset=0x8 Size=0x4 BitOffset=0x0 BitSize=0x3
-    unsigned long Predicted:4;// Offset=0x8 Size=0x4 BitOffset=0x3 BitSize=0x4
-    unsigned long Unused2:25;// Offset=0x8 Size=0x4 BitOffset=0x7 BitSize=0x19
-};

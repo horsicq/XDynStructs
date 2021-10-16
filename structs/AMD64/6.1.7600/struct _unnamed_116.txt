@@ -1,4 +1,0 @@
-struct _unnamed_116// Size=0x8
-{
-    struct _SCSI_REQUEST_BLOCK * Srb;// Offset=0x0 Size=0x8
-};

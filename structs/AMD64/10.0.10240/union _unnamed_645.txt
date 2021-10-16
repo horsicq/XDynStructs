@@ -1,4 +1,0 @@
-union _unnamed_645// Size=0x10
-{
-    struct _IO_STATUS_BLOCK IoStatus;// Offset=0x0 Size=0x10
-};

@@ -1,6 +1,0 @@
-struct _XSAVE_AREA_HEADER// Size=0x40
-{
-    unsigned long long Mask;// Offset=0x0 Size=0x8
-    unsigned long long CompactionMask;// Offset=0x8 Size=0x8
-    unsigned long long Reserved2[6];// Offset=0x10 Size=0x30
-};

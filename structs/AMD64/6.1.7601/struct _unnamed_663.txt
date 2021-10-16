@@ -1,4 +1,0 @@
-struct _unnamed_663// Size=0x2
-{
-    wchar_t DeviceId[1];// Offset=0x0 Size=0x2
-};

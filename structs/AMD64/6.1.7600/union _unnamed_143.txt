@@ -1,5 +1,0 @@
-union _unnamed_143// Size=0x48
-{
-    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x10
-    struct _WAIT_CONTEXT_BLOCK Wcb;// Offset=0x0 Size=0x48
-};

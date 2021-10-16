@@ -1,6 +1,0 @@
-union _PSP_CPU_SHARE_CAPTURED_WEIGHT_DATA// Size=0x8
-{
-    unsigned long CapturedCpuShareWeight;// Offset=0x0 Size=0x4
-    unsigned long CapturedTotalWeight;// Offset=0x4 Size=0x4
-    long long CombinedData;// Offset=0x0 Size=0x8
-};

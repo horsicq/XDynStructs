@@ -1,8 +1,0 @@
-struct _ACTIVATION_CONTEXT_STACK// Size=0x28
-{
-    struct _RTL_ACTIVATION_CONTEXT_STACK_FRAME * ActiveFrame;// Offset=0x0 Size=0x8
-    struct _LIST_ENTRY FrameListCache;// Offset=0x8 Size=0x10
-    unsigned long Flags;// Offset=0x18 Size=0x4
-    unsigned long NextCookieSequenceNumber;// Offset=0x1c Size=0x4
-    unsigned long StackId;// Offset=0x20 Size=0x4
-};

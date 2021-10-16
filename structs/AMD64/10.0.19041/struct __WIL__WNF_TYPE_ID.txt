@@ -1,4 +1,0 @@
-struct __WIL__WNF_TYPE_ID// Size=0x10
-{
-    struct _GUID TypeId;// Offset=0x0 Size=0x10
-};

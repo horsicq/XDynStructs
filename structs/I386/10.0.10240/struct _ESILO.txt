@@ -1,3 +1,0 @@
-struct _ESILO// Size=0x0
-{
-};

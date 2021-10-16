@@ -1,5 +1,0 @@
-struct _MMWSLE_NONDIRECT_HASH// Size=0x8
-{
-    void * Key;// Offset=0x0 Size=0x4
-    unsigned long Index;// Offset=0x4 Size=0x4
-};

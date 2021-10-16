@@ -1,8 +1,0 @@
-struct _MMSUPPORT_AGGREGATION// Size=0x20
-{
-    unsigned long PageFaultCount;// Offset=0x0 Size=0x4
-    unsigned char __align0[4];// Offset=0x4 Size=0x4
-    unsigned long long WorkingSetSize;// Offset=0x8 Size=0x8
-    unsigned long long WorkingSetLeafSize;// Offset=0x10 Size=0x8
-    unsigned long long PeakWorkingSetSize;// Offset=0x18 Size=0x8
-};

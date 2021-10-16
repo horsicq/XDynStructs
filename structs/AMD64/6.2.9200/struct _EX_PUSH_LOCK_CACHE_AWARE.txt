@@ -1,4 +1,0 @@
-struct _EX_PUSH_LOCK_CACHE_AWARE// Size=0x100
-{
-    struct _EX_PUSH_LOCK * Locks[32];// Offset=0x0 Size=0x100
-};

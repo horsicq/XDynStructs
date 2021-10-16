@@ -1,5 +1,0 @@
-union _unnamed_456// Size=0x4
-{
-    struct _unnamed_455 s1;// Offset=0x0 Size=0x4
-    unsigned long State;// Offset=0x0 Size=0x4
-};

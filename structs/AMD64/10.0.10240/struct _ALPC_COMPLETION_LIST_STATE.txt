@@ -1,4 +1,0 @@
-struct _ALPC_COMPLETION_LIST_STATE// Size=0x8
-{
-    union _unnamed_1258 u1;// Offset=0x0 Size=0x8
-};

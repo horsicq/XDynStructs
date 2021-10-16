@@ -1,9 +1,0 @@
-struct _OBJECT_REF_INFO// Size=0x28
-{
-    struct _OBJECT_HEADER * ObjectHeader;// Offset=0x0 Size=0x8
-    void * NextRef;// Offset=0x8 Size=0x8
-    unsigned char ImageFileName[16];// Offset=0x10 Size=0x10
-    unsigned short NextPos;// Offset=0x20 Size=0x2
-    unsigned short MaxStacks;// Offset=0x22 Size=0x2
-    struct _OBJECT_REF_STACK_INFO StackInfo[0];
-};

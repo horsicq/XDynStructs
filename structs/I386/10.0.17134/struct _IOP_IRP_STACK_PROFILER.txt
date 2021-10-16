@@ -1,5 +1,0 @@
-struct _IOP_IRP_STACK_PROFILER// Size=0x54
-{
-    unsigned long Profile[20];// Offset=0x0 Size=0x50
-    unsigned long TotalIrps;// Offset=0x50 Size=0x4
-};

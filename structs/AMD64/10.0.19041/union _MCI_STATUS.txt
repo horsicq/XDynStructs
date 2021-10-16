@@ -1,7 +1,0 @@
-union _MCI_STATUS// Size=0x8
-{
-    struct _MCI_STATUS_BITS_COMMON CommonBits;// Offset=0x0 Size=0x8
-    struct _MCI_STATUS_AMD_BITS AmdBits;// Offset=0x0 Size=0x8
-    struct _MCI_STATUS_INTEL_BITS IntelBits;// Offset=0x0 Size=0x8
-    unsigned long long QuadPart;// Offset=0x0 Size=0x8
-};

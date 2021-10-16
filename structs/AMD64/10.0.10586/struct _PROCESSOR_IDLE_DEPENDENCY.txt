@@ -1,7 +1,0 @@
-struct _PROCESSOR_IDLE_DEPENDENCY// Size=0x8
-{
-    unsigned long ProcessorIndex;// Offset=0x0 Size=0x4
-    unsigned char ExpectedState;// Offset=0x4 Size=0x1
-    unsigned char AllowDeeperStates;// Offset=0x5 Size=0x1
-    unsigned char LooseDependency;// Offset=0x6 Size=0x1
-};

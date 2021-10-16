@@ -1,8 +1,0 @@
-struct _HEAP_USERDATA_HEADER// Size=0x20
-{
-    struct _SINGLE_LIST_ENTRY SFreeListEntry;// Offset=0x0 Size=0x8
-    struct _HEAP_SUBSEGMENT * SubSegment;// Offset=0x0 Size=0x8
-    void * Reserved;// Offset=0x8 Size=0x8
-    unsigned long long SizeIndex;// Offset=0x10 Size=0x8
-    unsigned long long Signature;// Offset=0x18 Size=0x8
-};

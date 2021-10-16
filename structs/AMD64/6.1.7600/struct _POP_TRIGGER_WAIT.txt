@@ -1,8 +1,0 @@
-struct _POP_TRIGGER_WAIT// Size=0x38
-{
-    struct _KEVENT Event;// Offset=0x0 Size=0x18
-    long Status;// Offset=0x18 Size=0x4
-    unsigned char __align0[4];// Offset=0x1c Size=0x4
-    struct _LIST_ENTRY Link;// Offset=0x20 Size=0x10
-    struct _POP_ACTION_TRIGGER * Trigger;// Offset=0x30 Size=0x8
-};

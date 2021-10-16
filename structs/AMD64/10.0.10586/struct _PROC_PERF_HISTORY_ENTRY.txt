@@ -1,7 +1,0 @@
-struct _PROC_PERF_HISTORY_ENTRY// Size=0x8
-{
-    unsigned short Utility;// Offset=0x0 Size=0x2
-    unsigned short AffinitizedUtility;// Offset=0x2 Size=0x2
-    unsigned char Frequency;// Offset=0x4 Size=0x1
-    unsigned char TaggedPercent[2];// Offset=0x5 Size=0x2
-};

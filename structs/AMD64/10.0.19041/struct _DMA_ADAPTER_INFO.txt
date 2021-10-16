@@ -1,5 +1,0 @@
-struct _DMA_ADAPTER_INFO// Size=0x18
-{
-    unsigned long Version;// Offset=0x0 Size=0x4
-    struct _DMA_ADAPTER_INFO_V1 V1;// Offset=0x4 Size=0x14
-};

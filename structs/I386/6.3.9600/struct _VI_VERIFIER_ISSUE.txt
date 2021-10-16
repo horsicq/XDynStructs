@@ -1,6 +1,0 @@
-struct _VI_VERIFIER_ISSUE// Size=0x10
-{
-    unsigned long IssueType;// Offset=0x0 Size=0x4
-    void * Address;// Offset=0x4 Size=0x4
-    unsigned long Parameters[2];// Offset=0x8 Size=0x8
-};

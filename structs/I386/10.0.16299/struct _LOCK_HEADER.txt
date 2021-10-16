@@ -1,8 +1,0 @@
-struct _LOCK_HEADER// Size=0x14
-{
-    struct _RTL_AVL_TREE LockTree;// Offset=0x0 Size=0x4
-    struct _RTL_AVL_TREE LockMdlSwitchedTree;// Offset=0x4 Size=0x4
-    unsigned long Count;// Offset=0x8 Size=0x4
-    unsigned long Lock;// Offset=0xc Size=0x4
-    unsigned long Valid;// Offset=0x10 Size=0x4
-};

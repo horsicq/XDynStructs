@@ -1,4 +1,0 @@
-union _unnamed_1553// Size=0xc
-{
-    struct _unnamed_1552 Msi;// Offset=0x0 Size=0xc
-};

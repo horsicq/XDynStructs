@@ -1,9 +1,0 @@
-struct _MMVIEW// Size=0x30
-{
-    unsigned long long Entry;// Offset=0x0 Size=0x8
-    unsigned long long Writable:1;// Offset=0x8 Size=0x8 BitOffset=0x0 BitSize=0x1
-    struct _CONTROL_AREA * ControlArea;// Offset=0x8 Size=0x8
-    struct _LIST_ENTRY ViewLinks;// Offset=0x10 Size=0x10
-    void * SessionViewVa;// Offset=0x20 Size=0x8
-    unsigned long SessionId;// Offset=0x28 Size=0x4
-};

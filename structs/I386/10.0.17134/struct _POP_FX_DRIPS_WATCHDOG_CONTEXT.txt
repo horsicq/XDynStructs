@@ -1,7 +1,0 @@
-struct _POP_FX_DRIPS_WATCHDOG_CONTEXT// Size=0x14
-{
-    struct _LIST_ENTRY Link;// Offset=0x0 Size=0x8
-    unsigned long ComponentIndex;// Offset=0x8 Size=0x4
-    struct _DEVICE_NODE ** ChildDevices;// Offset=0xc Size=0x4
-    unsigned long ChildDeviceCount;// Offset=0x10 Size=0x4
-};

@@ -1,5 +1,0 @@
-union _KQOS_GROUPING_SETS// Size=0x10
-{
-    unsigned long long SingleCoreSet;// Offset=0x0 Size=0x8
-    unsigned long long SmtSet;// Offset=0x8 Size=0x8
-};

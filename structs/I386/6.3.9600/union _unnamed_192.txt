@@ -1,7 +1,0 @@
-union _unnamed_192// Size=0x4
-{
-    void * VirtualAddress;// Offset=0x0 Size=0x4
-    unsigned long Long;// Offset=0x0 Size=0x4
-    struct _MMWSLENTRY e1;// Offset=0x0 Size=0x4
-    struct _MMWSLE_FREE_ENTRY e2;// Offset=0x0 Size=0x4
-};

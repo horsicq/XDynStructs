@@ -1,8 +1,0 @@
-struct _unnamed_132// Size=0x10
-{
-    struct _GUID * InterfaceType;// Offset=0x0 Size=0x4
-    unsigned short Size;// Offset=0x4 Size=0x2
-    unsigned short Version;// Offset=0x6 Size=0x2
-    struct _INTERFACE * Interface;// Offset=0x8 Size=0x4
-    void * InterfaceSpecificData;// Offset=0xc Size=0x4
-};

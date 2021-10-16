@@ -1,7 +1,0 @@
-struct _unnamed_490// Size=0x4
-{
-    unsigned char BaseMid;// Offset=0x0 Size=0x1
-    unsigned char Flags1;// Offset=0x1 Size=0x1
-    unsigned char Flags2;// Offset=0x2 Size=0x1
-    unsigned char BaseHi;// Offset=0x3 Size=0x1
-};

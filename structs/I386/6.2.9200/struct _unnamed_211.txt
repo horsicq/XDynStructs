@@ -1,4 +1,0 @@
-struct _unnamed_211// Size=0x4
-{
-    unsigned long FileOffset;// Offset=0x0 Size=0x4
-};

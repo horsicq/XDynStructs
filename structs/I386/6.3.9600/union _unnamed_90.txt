@@ -1,5 +1,0 @@
-union _unnamed_90// Size=0x8
-{
-    struct _unnamed_89 AsynchronousParameters;// Offset=0x0 Size=0x8
-    union _LARGE_INTEGER AllocationSize;// Offset=0x0 Size=0x8
-};

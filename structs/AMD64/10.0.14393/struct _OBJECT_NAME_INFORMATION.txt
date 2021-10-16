@@ -1,4 +1,0 @@
-struct _OBJECT_NAME_INFORMATION// Size=0x10
-{
-    struct _UNICODE_STRING Name;// Offset=0x0 Size=0x10
-};

@@ -1,9 +1,0 @@
-struct _HEAP_VS_CHUNK_HEADER// Size=0x10
-{
-    union _HEAP_VS_CHUNK_HEADER_SIZE Sizes;// Offset=0x0 Size=0x8
-    unsigned long EncodedSegmentPageOffset:8;// Offset=0x8 Size=0x4 BitOffset=0x0 BitSize=0x8
-    unsigned long UnusedBytes:1;// Offset=0x8 Size=0x4 BitOffset=0x8 BitSize=0x1
-    unsigned long SkipDuringWalk:1;// Offset=0x8 Size=0x4 BitOffset=0x9 BitSize=0x1
-    unsigned long Spare:22;// Offset=0x8 Size=0x4 BitOffset=0xa BitSize=0x16
-    unsigned long AllocatedChunkBits;// Offset=0x8 Size=0x4
-};

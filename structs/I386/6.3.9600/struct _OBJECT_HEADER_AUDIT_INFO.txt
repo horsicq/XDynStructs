@@ -1,5 +1,0 @@
-struct _OBJECT_HEADER_AUDIT_INFO// Size=0x8
-{
-    void * SecurityDescriptor;// Offset=0x0 Size=0x4
-    unsigned long Reserved;// Offset=0x4 Size=0x4
-};

@@ -1,7 +1,0 @@
-union _unnamed_766// Size=0x4
-{
-    unsigned long AsULONG;// Offset=0x0 Size=0x4
-    unsigned long IncreasePolicy:2;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x2
-    unsigned long DecreasePolicy:2;// Offset=0x0 Size=0x4 BitOffset=0x2 BitSize=0x2
-    unsigned long Reserved:28;// Offset=0x0 Size=0x4 BitOffset=0x4 BitSize=0x1c
-};

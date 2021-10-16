@@ -1,6 +1,0 @@
-struct _PO_DIAG_STACK_RECORD// Size=0x10
-{
-    unsigned long StackDepth;// Offset=0x0 Size=0x4
-    unsigned char __align0[4];// Offset=0x4 Size=0x4
-    void * Stack[1];// Offset=0x8 Size=0x8
-};

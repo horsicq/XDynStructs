@@ -1,6 +1,0 @@
-struct _VF_TARGET_DRIVER// Size=0x38
-{
-    struct _VF_AVL_TREE_NODE TreeNode;// Offset=0x0 Size=0x10
-    union _unnamed_783 u1;// Offset=0x10 Size=0x20
-    struct _VF_TARGET_VERIFIED_DRIVER_DATA * VerifiedData;// Offset=0x30 Size=0x8
-};

@@ -1,9 +1,0 @@
-struct _MSUBSECTION// Size=0x54
-{
-    struct _SUBSECTION Core;// Offset=0x0 Size=0x28
-    struct _RTL_BALANCED_NODE SubsectionNode;// Offset=0x28 Size=0xc
-    struct _LIST_ENTRY DereferenceList;// Offset=0x34 Size=0x8
-    unsigned long NumberOfMappedViews;// Offset=0x3c Size=0x4
-    unsigned long NumberOfPfnReferences;// Offset=0x40 Size=0x4
-    struct _MI_PROTOTYPE_PTES_NODE ProtosNode;// Offset=0x44 Size=0x10
-};

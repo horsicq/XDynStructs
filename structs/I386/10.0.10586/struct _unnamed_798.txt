@@ -1,4 +1,0 @@
-struct _unnamed_798// Size=0x2
-{
-    wchar_t ParentId[1];// Offset=0x0 Size=0x2
-};

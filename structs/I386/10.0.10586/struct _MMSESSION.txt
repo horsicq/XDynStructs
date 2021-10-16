@@ -1,8 +1,0 @@
-struct _MMSESSION// Size=0x14
-{
-    struct _EX_PUSH_LOCK SystemSpaceViewLock;// Offset=0x0 Size=0x4
-    struct _EX_PUSH_LOCK * SystemSpaceViewLockPointer;// Offset=0x4 Size=0x4
-    struct _RTL_AVL_TREE ViewRoot;// Offset=0x8 Size=0x4
-    unsigned long ViewCount;// Offset=0xc Size=0x4
-    unsigned long BitmapFailures;// Offset=0x10 Size=0x4
-};

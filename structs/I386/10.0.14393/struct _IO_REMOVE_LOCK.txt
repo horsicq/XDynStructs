@@ -1,4 +1,0 @@
-struct _IO_REMOVE_LOCK// Size=0x18
-{
-    struct _IO_REMOVE_LOCK_COMMON_BLOCK Common;// Offset=0x0 Size=0x18
-};

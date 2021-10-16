@@ -1,4 +1,0 @@
-union _unnamed_733// Size=0x4
-{
-    struct _unnamed_732 NewCell;// Offset=0x0 Size=0x4
-};

@@ -1,6 +1,0 @@
-struct _unnamed_133// Size=0x8
-{
-    unsigned char InPath;// Offset=0x0 Size=0x1
-    unsigned char Reserved[3];// Offset=0x1 Size=0x3
-    enum _DEVICE_USAGE_NOTIFICATION_TYPE Type;// Offset=0x4 Size=0x4
-};

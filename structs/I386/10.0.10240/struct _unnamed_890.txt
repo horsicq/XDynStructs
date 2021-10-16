@@ -1,5 +1,0 @@
-struct _unnamed_890// Size=0xc
-{
-    struct _unnamed_889 Raw;// Offset=0x0 Size=0xc
-    struct _unnamed_888 Translated;// Offset=0x0 Size=0xc
-};

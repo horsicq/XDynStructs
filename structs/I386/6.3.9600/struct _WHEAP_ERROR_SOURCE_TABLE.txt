@@ -1,7 +1,0 @@
-struct _WHEAP_ERROR_SOURCE_TABLE// Size=0x20
-{
-    unsigned long Signature;// Offset=0x0 Size=0x4
-    long Count;// Offset=0x4 Size=0x4
-    struct _LIST_ENTRY Items;// Offset=0x8 Size=0x8
-    struct _KEVENT InsertLock;// Offset=0x10 Size=0x10
-};

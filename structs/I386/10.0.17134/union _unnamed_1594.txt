@@ -1,6 +1,0 @@
-union _unnamed_1594// Size=0x8
-{
-    struct _unnamed_1593 Component;// Offset=0x0 Size=0x8
-    unsigned long long AsULONG64;// Offset=0x0 Size=0x8
-    unsigned char AsBytes[8];// Offset=0x0 Size=0x8
-};

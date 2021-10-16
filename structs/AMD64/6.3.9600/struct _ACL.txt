@@ -1,8 +1,0 @@
-struct _ACL// Size=0x8
-{
-    unsigned char AclRevision;// Offset=0x0 Size=0x1
-    unsigned char Sbz1;// Offset=0x1 Size=0x1
-    unsigned short AclSize;// Offset=0x2 Size=0x2
-    unsigned short AceCount;// Offset=0x4 Size=0x2
-    unsigned short Sbz2;// Offset=0x6 Size=0x2
-};

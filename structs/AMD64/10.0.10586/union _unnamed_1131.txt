@@ -1,7 +1,0 @@
-union _unnamed_1131// Size=0x2
-{
-    unsigned short AsUSHORT;// Offset=0x0 Size=0x2
-    unsigned short AllowScaling:1;// Offset=0x0 Size=0x2 BitOffset=0x0 BitSize=0x1
-    unsigned short Disabled:1;// Offset=0x0 Size=0x2 BitOffset=0x1 BitSize=0x1
-    unsigned short Reserved:14;// Offset=0x0 Size=0x2 BitOffset=0x2 BitSize=0xe
-};

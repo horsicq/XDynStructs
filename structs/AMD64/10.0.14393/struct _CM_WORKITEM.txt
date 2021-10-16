@@ -1,8 +1,0 @@
-struct _CM_WORKITEM// Size=0x28
-{
-    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x10
-    unsigned long Private;// Offset=0x10 Size=0x4
-    unsigned char __align0[4];// Offset=0x14 Size=0x4
-    void  ( * WorkerRoutine)(void * );// Offset=0x18 Size=0x8
-    void * Parameter;// Offset=0x20 Size=0x8
-};

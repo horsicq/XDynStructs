@@ -1,7 +1,0 @@
-struct _MI_CFG_BITMAP_INFO// Size=0x10
-{
-    void * BaseAddress;// Offset=0x0 Size=0x4
-    unsigned long RegionSize;// Offset=0x4 Size=0x4
-    void * VadBaseAddress;// Offset=0x8 Size=0x4
-    struct _MMVAD * BitmapVad;// Offset=0xc Size=0x4
-};

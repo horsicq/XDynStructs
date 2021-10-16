@@ -1,9 +1,0 @@
-struct _MI_SPECIAL_POOL// Size=0x48
-{
-    unsigned long Lock;// Offset=0x0 Size=0x4
-    unsigned char __align0[4];// Offset=0x4 Size=0x4
-    struct _MI_PTE_CHAIN_HEAD Paged;// Offset=0x8 Size=0x18
-    struct _MI_PTE_CHAIN_HEAD NonPaged;// Offset=0x20 Size=0x18
-    unsigned long PagesInUse;// Offset=0x38 Size=0x4
-    struct _RTL_BITMAP SpecialPoolPdes;// Offset=0x3c Size=0x8
-};

@@ -1,7 +1,0 @@
-struct _MI_SPECIAL_POOL// Size=0x40
-{
-    unsigned long long Lock;// Offset=0x0 Size=0x8
-    struct _MI_PTE_CHAIN_HEAD Paged;// Offset=0x8 Size=0x18
-    struct _MI_PTE_CHAIN_HEAD NonPaged;// Offset=0x20 Size=0x18
-    unsigned long long PagesInUse;// Offset=0x38 Size=0x8
-};

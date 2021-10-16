@@ -1,4 +1,0 @@
-struct _unnamed_329// Size=0x4
-{
-    struct _SHARED_CACHE_MAP * SharedCacheMap;// Offset=0x0 Size=0x4
-};

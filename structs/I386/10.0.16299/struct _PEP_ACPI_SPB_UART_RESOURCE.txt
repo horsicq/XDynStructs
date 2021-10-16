@@ -1,9 +1,0 @@
-struct _PEP_ACPI_SPB_UART_RESOURCE// Size=0x24
-{
-    struct _PEP_ACPI_SPB_RESOURCE SpbCommon;// Offset=0x0 Size=0x18
-    unsigned long BaudRate;// Offset=0x18 Size=0x4
-    unsigned short RxBufferSize;// Offset=0x1c Size=0x2
-    unsigned short TxBufferSize;// Offset=0x1e Size=0x2
-    unsigned char Parity;// Offset=0x20 Size=0x1
-    unsigned char LinesInUse;// Offset=0x21 Size=0x1
-};

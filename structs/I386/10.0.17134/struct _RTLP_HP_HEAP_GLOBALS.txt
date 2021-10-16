@@ -1,6 +1,0 @@
-struct _RTLP_HP_HEAP_GLOBALS// Size=0xc
-{
-    unsigned long HeapKey;// Offset=0x0 Size=0x4
-    unsigned long LfhKey;// Offset=0x4 Size=0x4
-    struct _HEAP_FAILURE_INFORMATION * FailureInfo;// Offset=0x8 Size=0x4
-};

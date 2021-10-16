@@ -1,4 +1,0 @@
-struct _DBGKD_QUERY_SPECIAL_CALLS// Size=0x4
-{
-    unsigned long NumberOfSpecialCalls;// Offset=0x0 Size=0x4
-};

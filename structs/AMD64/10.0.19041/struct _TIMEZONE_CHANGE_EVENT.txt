@@ -1,6 +1,0 @@
-struct _TIMEZONE_CHANGE_EVENT// Size=0xa0
-{
-    struct _KDPC Dpc;// Offset=0x0 Size=0x40
-    struct _KTIMER Timer;// Offset=0x40 Size=0x40
-    struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x80 Size=0x20
-};

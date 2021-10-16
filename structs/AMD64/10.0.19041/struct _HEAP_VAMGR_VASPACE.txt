@@ -1,8 +1,0 @@
-struct _HEAP_VAMGR_VASPACE// Size=0x860
-{
-    enum _RTLP_HP_ADDRESS_SPACE_TYPE AddressSpaceType;// Offset=0x0 Size=0x4
-    unsigned char __align0[4];// Offset=0x4 Size=0x4
-    unsigned long long BaseAddress;// Offset=0x8 Size=0x8
-    struct _RTL_SPARSE_ARRAY VaRangeArray;// Offset=0x10 Size=0x50
-    unsigned char VaRangeArrayBuffer[2128];// Offset=0x10 Size=0x850
-};

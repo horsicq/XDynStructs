@@ -1,7 +1,0 @@
-union _unnamed_217// Size=0x4
-{
-    struct _SINGLE_LIST_ENTRY NextSlistPfn;// Offset=0x0 Size=0x4
-    void * Next;// Offset=0x0 Size=0x4
-    unsigned long Flink;// Offset=0x0 Size=0x4
-    struct _MI_ACTIVE_PFN Active;// Offset=0x0 Size=0x4
-};

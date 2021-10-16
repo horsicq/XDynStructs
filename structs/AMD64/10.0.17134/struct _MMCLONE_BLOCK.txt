@@ -1,8 +1,0 @@
-struct _MMCLONE_BLOCK// Size=0x20
-{
-    struct _MMPTE ProtoPte;// Offset=0x0 Size=0x8
-    unsigned long long CrossPartitionReferences;// Offset=0x8 Size=0x8
-    unsigned long long CloneCommitCount;// Offset=0x10 Size=0x8
-    struct _MI_CLONE_BLOCK_FLAGS u1;// Offset=0x10 Size=0x8
-    unsigned long long CloneRefCount;// Offset=0x18 Size=0x8
-};

@@ -1,4 +1,0 @@
-struct _RTL_HP_VS_CONFIG// Size=0x4
-{
-    struct _unnamed_1386 Flags;// Offset=0x0 Size=0x4
-};

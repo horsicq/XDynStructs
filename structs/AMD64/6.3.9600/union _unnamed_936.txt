@@ -1,5 +1,0 @@
-union _unnamed_936// Size=0x8
-{
-    struct _MI_VAD_SEQUENTIAL_INFO SequentialVa;// Offset=0x0 Size=0x8
-    struct _MMEXTEND_INFO * ExtendedInfo;// Offset=0x0 Size=0x8
-};

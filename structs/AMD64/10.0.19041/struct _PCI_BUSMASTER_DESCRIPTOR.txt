@@ -1,8 +1,0 @@
-struct _PCI_BUSMASTER_DESCRIPTOR// Size=0xc
-{
-    enum _PCI_BUSMASTER_RID_TYPE Type;// Offset=0x0 Size=0x4
-    unsigned long Segment;// Offset=0x4 Size=0x4
-    struct <anonymous-tag> DeviceRid;// Offset=0x8 Size=0x4
-    struct <anonymous-tag> BridgeRid;// Offset=0x8 Size=0x4
-    struct <anonymous-tag> MultipleBridges;// Offset=0x8 Size=0x2
-};

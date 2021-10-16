@@ -1,4 +1,0 @@
-struct _unnamed_1334// Size=0x1
-{
-    unsigned char EntireWsle;// Offset=0x0 Size=0x1
-};

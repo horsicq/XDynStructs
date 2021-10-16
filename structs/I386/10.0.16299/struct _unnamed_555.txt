@@ -1,5 +1,0 @@
-struct _unnamed_555// Size=0x8
-{
-    struct _PO_DEVICE_NOTIFY * NotifyDevice;// Offset=0x0 Size=0x4
-    unsigned char FxDeviceActivated;// Offset=0x4 Size=0x1
-};

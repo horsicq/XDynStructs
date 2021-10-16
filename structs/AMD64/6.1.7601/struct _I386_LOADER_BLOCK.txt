@@ -1,6 +1,0 @@
-struct _I386_LOADER_BLOCK// Size=0x10
-{
-    void * CommonDataArea;// Offset=0x0 Size=0x8
-    unsigned long MachineType;// Offset=0x8 Size=0x4
-    unsigned long VirtualBias;// Offset=0xc Size=0x4
-};

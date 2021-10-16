@@ -1,5 +1,0 @@
-struct _RTL_HP_SUB_ALLOCATOR_CONFIGS// Size=0x10
-{
-    struct _RTL_HP_LFH_CONFIG LfhConfigs;// Offset=0x0 Size=0xc
-    struct _RTL_HP_VS_CONFIG VsConfigs;// Offset=0xc Size=0x4
-};

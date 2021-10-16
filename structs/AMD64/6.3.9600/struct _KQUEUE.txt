@@ -1,8 +1,0 @@
-struct _KQUEUE// Size=0x40
-{
-    struct _DISPATCHER_HEADER Header;// Offset=0x0 Size=0x18
-    struct _LIST_ENTRY EntryListHead;// Offset=0x18 Size=0x10
-    unsigned long CurrentCount;// Offset=0x28 Size=0x4
-    unsigned long MaximumCount;// Offset=0x2c Size=0x4
-    struct _LIST_ENTRY ThreadListHead;// Offset=0x30 Size=0x10
-};

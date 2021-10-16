@@ -1,8 +1,0 @@
-struct _MI_IMAGE_SECURITY_REFERENCE// Size=0x40
-{
-    struct _MI_PROTOTYPE_PTES_NODE ProtosNode;// Offset=0x0 Size=0x20
-    void * DynamicRelocations;// Offset=0x20 Size=0x8
-    struct _IMAGE_SECURITY_CONTEXT SecurityContext;// Offset=0x28 Size=0x8
-    union <anonymous-tag> u1;// Offset=0x30 Size=0x8
-    unsigned long long StrongImageReference;// Offset=0x38 Size=0x8
-};

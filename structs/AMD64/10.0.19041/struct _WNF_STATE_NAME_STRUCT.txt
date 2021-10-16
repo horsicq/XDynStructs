@@ -1,8 +1,0 @@
-struct _WNF_STATE_NAME_STRUCT// Size=0x8
-{
-    unsigned long long Version:4;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x4
-    unsigned long long NameLifetime:2;// Offset=0x0 Size=0x8 BitOffset=0x4 BitSize=0x2
-    unsigned long long DataScope:4;// Offset=0x0 Size=0x8 BitOffset=0x6 BitSize=0x4
-    unsigned long long PermanentData:1;// Offset=0x0 Size=0x8 BitOffset=0xa BitSize=0x1
-    unsigned long long Sequence:53;// Offset=0x0 Size=0x8 BitOffset=0xb BitSize=0x35
-};

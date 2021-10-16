@@ -1,9 +1,0 @@
-struct _KSTATIC_AFFINITY_BLOCK// Size=0x2a0
-{
-    struct _KAFFINITY_EX KeFlushTbAffinity;// Offset=0x0 Size=0xa8
-    struct _KAFFINITY_EX KeFlushWbAffinity;// Offset=0x0 Size=0xa8
-    struct _KAFFINITY_EX KeSyncContextAffinity;// Offset=0x0 Size=0xa8
-    struct _KAFFINITY_EX KeFlushTbDeepIdleAffinity;// Offset=0xa8 Size=0xa8
-    struct _KAFFINITY_EX KeIpiSendAffinity;// Offset=0x150 Size=0xa8
-    struct _KAFFINITY_EX KeIpiSendIpiSet;// Offset=0x1f8 Size=0xa8
-};

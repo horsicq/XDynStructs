@@ -1,5 +1,0 @@
-struct _MMSUPPORT_FULL// Size=0x110
-{
-    struct _MMSUPPORT_INSTANCE Instance;// Offset=0x0 Size=0xc0
-    struct _MMSUPPORT_SHARED Shared;// Offset=0xc0 Size=0x50
-};

@@ -1,7 +1,0 @@
-struct _UNLOADED_DRIVERS// Size=0x18
-{
-    struct _UNICODE_STRING Name;// Offset=0x0 Size=0x8
-    void * StartAddress;// Offset=0x8 Size=0x4
-    void * EndAddress;// Offset=0xc Size=0x4
-    union _LARGE_INTEGER CurrentTime;// Offset=0x10 Size=0x8
-};

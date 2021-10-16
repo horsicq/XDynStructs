@@ -1,5 +1,0 @@
-struct _CLIENT_ID64// Size=0x10
-{
-    unsigned long long UniqueProcess;// Offset=0x0 Size=0x8
-    unsigned long long UniqueThread;// Offset=0x8 Size=0x8
-};

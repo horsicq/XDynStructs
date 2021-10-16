@@ -1,8 +1,0 @@
-struct _FAULT_INFORMATION// Size=0x38
-{
-    enum _FAULT_INFORMATION_ARCH Type;// Offset=0x0 Size=0x4
-    unsigned char IsStage1;// Offset=0x4 Size=0x1
-    unsigned char __align0[3];// Offset=0x5 Size=0x3
-    struct _FAULT_INFORMATION_ARM64 Arm64;// Offset=0x8 Size=0x30
-    struct _FAULT_INFORMATION_X64 X64;// Offset=0x8 Size=0x28
-};

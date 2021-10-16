@@ -1,3 +1,0 @@
-struct _SEGMENT_HEAP// Size=0x0
-{
-};

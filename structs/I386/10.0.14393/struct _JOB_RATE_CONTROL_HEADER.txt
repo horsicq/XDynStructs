@@ -1,7 +1,0 @@
-struct _JOB_RATE_CONTROL_HEADER// Size=0x14
-{
-    void * RateControlQuotaReference;// Offset=0x0 Size=0x4
-    struct _RTL_BITMAP OverQuotaHistory;// Offset=0x4 Size=0x8
-    unsigned char * BitMapBuffer;// Offset=0xc Size=0x4
-    unsigned long BitMapBufferSize;// Offset=0x10 Size=0x4
-};

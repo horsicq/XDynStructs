@@ -1,6 +1,0 @@
-struct _CM_CACHED_VALUE_INDEX// Size=0x58
-{
-    unsigned long CellIndex;// Offset=0x0 Size=0x4
-    unsigned char __align0[4];// Offset=0x4 Size=0x4
-    union _unnamed_760 Data;// Offset=0x8 Size=0x50
-};

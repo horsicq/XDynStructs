@@ -1,6 +1,0 @@
-struct _MI_IMAGE_SECURITY_REFERENCE// Size=0xc
-{
-    void * DynamicRelocations;// Offset=0x0 Size=0x4
-    struct _IMAGE_SECURITY_CONTEXT SecurityContext;// Offset=0x4 Size=0x4
-    unsigned long StrongImageReference;// Offset=0x8 Size=0x4
-};

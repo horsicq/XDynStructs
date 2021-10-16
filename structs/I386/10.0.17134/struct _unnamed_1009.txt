@@ -1,6 +1,0 @@
-struct _unnamed_1009// Size=0x4
-{
-    unsigned long Tradable:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
-    unsigned long WsleAge:3;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x3
-    unsigned long NonPagedBuddy:28;// Offset=0x0 Size=0x4 BitOffset=0x4 BitSize=0x1c
-};

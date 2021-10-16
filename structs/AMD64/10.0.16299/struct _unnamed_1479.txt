@@ -1,6 +1,0 @@
-struct _unnamed_1479// Size=0x8
-{
-    unsigned long Gsiv;// Offset=0x0 Size=0x4
-    unsigned long WakeInterrupt:1;// Offset=0x4 Size=0x4 BitOffset=0x0 BitSize=0x1
-    unsigned long ReservedFlags:31;// Offset=0x4 Size=0x4 BitOffset=0x1 BitSize=0x1f
-};

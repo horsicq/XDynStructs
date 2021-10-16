@@ -1,7 +1,0 @@
-union _unnamed_305// Size=0x4
-{
-    struct _unnamed_301 Read;// Offset=0x0 Size=0x4
-    struct _unnamed_302 Write;// Offset=0x0 Size=0x4
-    struct _unnamed_303 Event;// Offset=0x0 Size=0x4
-    struct _unnamed_304 Notification;// Offset=0x0 Size=0x4
-};

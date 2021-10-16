@@ -1,5 +1,0 @@
-struct _LOGGED_STREAM_CALLBACK_V1// Size=0x8
-{
-    void * LogHandle;// Offset=0x0 Size=0x4
-    void  ( * FlushToLsnRoutine)(void * ,union _LARGE_INTEGER );// Offset=0x4 Size=0x4
-};

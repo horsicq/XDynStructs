@@ -1,3 +1,0 @@
-struct _SMBIOS_TABLE_HEADER// Size=0x0
-{
-};

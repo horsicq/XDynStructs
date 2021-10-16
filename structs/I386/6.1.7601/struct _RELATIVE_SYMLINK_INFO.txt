@@ -1,9 +1,0 @@
-struct _RELATIVE_SYMLINK_INFO// Size=0x14
-{
-    unsigned short ExposedNamespaceLength;// Offset=0x0 Size=0x2
-    unsigned short Flags;// Offset=0x2 Size=0x2
-    unsigned short DeviceNameLength;// Offset=0x4 Size=0x2
-    unsigned short Reserved;// Offset=0x6 Size=0x2
-    struct _RELATIVE_SYMLINK_INFO * InteriorMountPoint;// Offset=0x8 Size=0x4
-    struct _UNICODE_STRING OpenedName;// Offset=0xc Size=0x8
-};

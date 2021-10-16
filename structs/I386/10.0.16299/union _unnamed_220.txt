@@ -1,8 +1,0 @@
-union _unnamed_220// Size=0x4
-{
-    unsigned short ReferenceCount;// Offset=0x0 Size=0x2
-    struct _MMPFNENTRY1 e1;// Offset=0x2 Size=0x1
-    struct _MMPFNENTRY3 e3;// Offset=0x3 Size=0x1
-    struct _unnamed_218 e2;// Offset=0x0 Size=0x2
-    struct _unnamed_219 e4;// Offset=0x0 Size=0x4
-};

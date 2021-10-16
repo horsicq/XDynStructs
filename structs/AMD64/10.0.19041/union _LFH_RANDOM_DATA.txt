@@ -1,6 +1,0 @@
-union _LFH_RANDOM_DATA// Size=0x100
-{
-    unsigned char Bytes[256];// Offset=0x0 Size=0x100
-    unsigned short Words[128];// Offset=0x0 Size=0x100
-    unsigned long long Quadwords[32];// Offset=0x0 Size=0x100
-};

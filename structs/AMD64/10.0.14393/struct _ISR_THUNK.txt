@@ -1,8 +1,0 @@
-struct _ISR_THUNK// Size=0x8
-{
-    unsigned char PushImm;// Offset=0x0 Size=0x1
-    unsigned char Vector;// Offset=0x1 Size=0x1
-    unsigned char PushRbp;// Offset=0x2 Size=0x1
-    unsigned char JmpOp;// Offset=0x3 Size=0x1
-    long JmpOffset;// Offset=0x4 Size=0x4
-};

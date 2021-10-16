@@ -1,9 +1,0 @@
-struct DEBUG_MEMORY_REQUIREMENTS// Size=0x20
-{
-    union _LARGE_INTEGER Start;// Offset=0x0 Size=0x8
-    union _LARGE_INTEGER MaxEnd;// Offset=0x8 Size=0x8
-    void * VirtualAddress;// Offset=0x10 Size=0x4
-    unsigned long Length;// Offset=0x14 Size=0x4
-    unsigned char Cached;// Offset=0x18 Size=0x1
-    unsigned char Aligned;// Offset=0x19 Size=0x1
-};

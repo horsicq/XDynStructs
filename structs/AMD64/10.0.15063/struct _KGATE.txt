@@ -1,4 +1,0 @@
-struct _KGATE// Size=0x18
-{
-    struct _DISPATCHER_HEADER Header;// Offset=0x0 Size=0x18
-};

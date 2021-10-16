@@ -1,6 +1,0 @@
-struct FEATURE_LOGGED_TRAITS// Size=0x6
-{
-    unsigned short version;// Offset=0x0 Size=0x2
-    unsigned short baseVersion;// Offset=0x2 Size=0x2
-    unsigned char stage;// Offset=0x4 Size=0x1
-};

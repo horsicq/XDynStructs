@@ -1,8 +1,0 @@
-struct _PS_TRUSTLET_ATTRIBUTE_TYPE// Size=0x4
-{
-    unsigned char Version;// Offset=0x0 Size=0x1
-    unsigned char DataCount;// Offset=0x1 Size=0x1
-    unsigned char SemanticType;// Offset=0x2 Size=0x1
-    union _PS_TRUSTLET_ATTRIBUTE_ACCESSRIGHTS AccessRights;// Offset=0x3 Size=0x1
-    unsigned long AttributeType;// Offset=0x0 Size=0x4
-};

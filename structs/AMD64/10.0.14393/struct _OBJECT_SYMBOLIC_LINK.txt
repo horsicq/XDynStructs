@@ -1,8 +1,0 @@
-struct _OBJECT_SYMBOLIC_LINK// Size=0x28
-{
-    union _LARGE_INTEGER CreationTime;// Offset=0x0 Size=0x8
-    struct _UNICODE_STRING LinkTarget;// Offset=0x8 Size=0x10
-    unsigned long DosDeviceDriveIndex;// Offset=0x18 Size=0x4
-    unsigned long Flags;// Offset=0x1c Size=0x4
-    unsigned long AccessMask;// Offset=0x20 Size=0x4
-};

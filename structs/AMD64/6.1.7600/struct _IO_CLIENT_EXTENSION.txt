@@ -1,5 +1,0 @@
-struct _IO_CLIENT_EXTENSION// Size=0x10
-{
-    struct _IO_CLIENT_EXTENSION * NextExtension;// Offset=0x0 Size=0x8
-    void * ClientIdentificationAddress;// Offset=0x8 Size=0x8
-};

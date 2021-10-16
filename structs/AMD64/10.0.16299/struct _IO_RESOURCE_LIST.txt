@@ -1,7 +1,0 @@
-struct _IO_RESOURCE_LIST// Size=0x28
-{
-    unsigned short Version;// Offset=0x0 Size=0x2
-    unsigned short Revision;// Offset=0x2 Size=0x2
-    unsigned long Count;// Offset=0x4 Size=0x4
-    struct _IO_RESOURCE_DESCRIPTOR Descriptors[1];// Offset=0x8 Size=0x20
-};

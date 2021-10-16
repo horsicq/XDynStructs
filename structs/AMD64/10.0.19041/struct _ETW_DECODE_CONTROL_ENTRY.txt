@@ -1,7 +1,0 @@
-struct _ETW_DECODE_CONTROL_ENTRY// Size=0x30
-{
-    struct _ETW_DECODE_CONTROL_ENTRY * Next;// Offset=0x0 Size=0x8
-    struct _GUID Decode;// Offset=0x8 Size=0x10
-    struct _GUID Control;// Offset=0x18 Size=0x10
-    unsigned char ConsumersNotified;// Offset=0x28 Size=0x1
-};

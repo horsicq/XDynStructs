@@ -1,6 +1,0 @@
-struct _unnamed_219// Size=0xc
-{
-    enum _CM_LOAD_FAILURE_TYPE Failure;// Offset=0x0 Size=0x4
-    long Status;// Offset=0x4 Size=0x4
-    unsigned long Point;// Offset=0x8 Size=0x4
-};

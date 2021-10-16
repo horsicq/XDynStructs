@@ -1,5 +1,0 @@
-union _unnamed_174// Size=0x10
-{
-    struct _I386_LOADER_BLOCK I386;// Offset=0x0 Size=0x10
-    struct _IA64_LOADER_BLOCK Ia64;// Offset=0x0 Size=0x4
-};

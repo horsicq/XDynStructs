@@ -1,5 +1,0 @@
-struct _ENODE// Size=0x1c0
-{
-    struct _KNODE Ncb;// Offset=0x0 Size=0x180
-    struct _WORK_QUEUE_ITEM HotAddProcessorWorkItem;// Offset=0x180 Size=0x20
-};

@@ -1,7 +1,0 @@
-struct _MI_CONTROL_AREA_WAIT_BLOCK// Size=0x28
-{
-    struct _MI_CONTROL_AREA_WAIT_BLOCK * Next;// Offset=0x0 Size=0x8
-    unsigned long WaitReason;// Offset=0x8 Size=0x4
-    unsigned long WaitResponse;// Offset=0xc Size=0x4
-    struct _KGATE Gate;// Offset=0x10 Size=0x18
-};

@@ -1,6 +1,0 @@
-struct _unnamed_208// Size=0x4
-{
-    unsigned short ReferenceCount;// Offset=0x0 Size=0x2
-    unsigned short ShortFlags;// Offset=0x2 Size=0x2
-    unsigned short VolatileShortFlags;// Offset=0x2 Size=0x2
-};

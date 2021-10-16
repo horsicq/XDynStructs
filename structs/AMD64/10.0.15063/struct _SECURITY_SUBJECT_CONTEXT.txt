@@ -1,8 +1,0 @@
-struct _SECURITY_SUBJECT_CONTEXT// Size=0x20
-{
-    void * ClientToken;// Offset=0x0 Size=0x8
-    enum _SECURITY_IMPERSONATION_LEVEL ImpersonationLevel;// Offset=0x8 Size=0x4
-    unsigned char __align0[4];// Offset=0xc Size=0x4
-    void * PrimaryToken;// Offset=0x10 Size=0x8
-    void * ProcessAuditId;// Offset=0x18 Size=0x8
-};

@@ -1,6 +1,0 @@
-struct _CMP_DISCARD_AND_REPLACE_KCB_CONTEXT// Size=0x10
-{
-    struct _CM_KEY_CONTROL_BLOCK * BaseKcb;// Offset=0x0 Size=0x4
-    long PrepareStatus;// Offset=0x4 Size=0x4
-    struct _LIST_ENTRY ClonedKcbListHead;// Offset=0x8 Size=0x8
-};

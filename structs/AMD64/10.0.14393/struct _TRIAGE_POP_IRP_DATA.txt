@@ -1,6 +1,0 @@
-struct _TRIAGE_POP_IRP_DATA// Size=0x20
-{
-    struct _LIST_ENTRY Link;// Offset=0x0 Size=0x10
-    struct _IRP * Irp;// Offset=0x10 Size=0x8
-    struct _DEVICE_OBJECT * Pdo;// Offset=0x18 Size=0x8
-};

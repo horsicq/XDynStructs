@@ -1,7 +1,0 @@
-union _INVPCID_DESCRIPTOR// Size=0x10
-{
-    struct _unnamed_43 IndividualAddress;// Offset=0x0 Size=0x10
-    struct _unnamed_44 SingleContext;// Offset=0x0 Size=0x10
-    struct _unnamed_45 AllContextAndGlobals;// Offset=0x0 Size=0x10
-    struct _unnamed_45 AllContext;// Offset=0x0 Size=0x10
-};

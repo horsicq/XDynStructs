@@ -1,9 +1,0 @@
-struct _PEP_WORK_ACPI_EVALUATE_CONTROL_METHOD_COMPLETE// Size=0x28
-{
-    struct POHANDLE__ * DeviceHandle;// Offset=0x0 Size=0x8
-    unsigned long CompletionFlags;// Offset=0x8 Size=0x4
-    long MethodStatus;// Offset=0xc Size=0x4
-    void * CompletionContext;// Offset=0x10 Size=0x8
-    unsigned long long OutputArgumentSize;// Offset=0x18 Size=0x8
-    struct _ACPI_METHOD_ARGUMENT_V1 * OutputArguments;// Offset=0x20 Size=0x8
-};

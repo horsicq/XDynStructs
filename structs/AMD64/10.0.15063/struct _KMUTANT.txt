@@ -1,8 +1,0 @@
-struct _KMUTANT// Size=0x38
-{
-    struct _DISPATCHER_HEADER Header;// Offset=0x0 Size=0x18
-    struct _LIST_ENTRY MutantListEntry;// Offset=0x18 Size=0x10
-    struct _KTHREAD * OwnerThread;// Offset=0x28 Size=0x8
-    unsigned char Abandoned;// Offset=0x30 Size=0x1
-    unsigned char ApcDisable;// Offset=0x31 Size=0x1
-};

@@ -1,5 +1,0 @@
-struct _NPAGED_LOOKASIDE_LIST// Size=0xc0
-{
-    struct _GENERAL_LOOKASIDE L;// Offset=0x0 Size=0x80
-    unsigned long Lock__ObsoleteButDoNotDelete;// Offset=0x80 Size=0x4
-};

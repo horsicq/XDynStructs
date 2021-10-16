@@ -1,5 +1,0 @@
-union _CLS_LSN// Size=0x8
-{
-    struct _unnamed_1288 offset;// Offset=0x0 Size=0x8
-    unsigned long long ullOffset;// Offset=0x0 Size=0x8
-};

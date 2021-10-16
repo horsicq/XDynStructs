@@ -1,5 +1,0 @@
-union _unnamed_339// Size=0x1
-{
-    struct _unnamed_338 s1;// Offset=0x0 Size=0x1
-    unsigned char Flags;// Offset=0x0 Size=0x1
-};

@@ -1,9 +1,0 @@
-struct _MACHINE_CHECK_CONTEXT// Size=0x50
-{
-    struct _MACHINE_FRAME MachineFrame;// Offset=0x0 Size=0x28
-    unsigned long long Rax;// Offset=0x28 Size=0x8
-    unsigned long long Rcx;// Offset=0x30 Size=0x8
-    unsigned long long Rdx;// Offset=0x38 Size=0x8
-    unsigned long long GsBase;// Offset=0x40 Size=0x8
-    unsigned long long Cr3;// Offset=0x48 Size=0x8
-};

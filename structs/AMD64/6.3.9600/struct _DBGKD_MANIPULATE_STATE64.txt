@@ -1,9 +1,0 @@
-struct _DBGKD_MANIPULATE_STATE64// Size=0x38
-{
-    unsigned long ApiNumber;// Offset=0x0 Size=0x4
-    unsigned short ProcessorLevel;// Offset=0x4 Size=0x2
-    unsigned short Processor;// Offset=0x6 Size=0x2
-    long ReturnStatus;// Offset=0x8 Size=0x4
-    unsigned char __align0[4];// Offset=0xc Size=0x4
-    union _unnamed_310 u;// Offset=0x10 Size=0x28
-};

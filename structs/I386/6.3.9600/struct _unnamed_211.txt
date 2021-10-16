@@ -1,7 +1,0 @@
-struct _unnamed_211// Size=0x10
-{
-    struct _CELL_DATA * List;// Offset=0x0 Size=0x4
-    unsigned long Index;// Offset=0x4 Size=0x4
-    unsigned long Cell;// Offset=0x8 Size=0x4
-    struct _CELL_DATA * CellPoint;// Offset=0xc Size=0x4
-};

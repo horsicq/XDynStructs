@@ -1,8 +1,0 @@
-struct _HANDLE_REVOCATION_INFO// Size=0x20
-{
-    struct _LIST_ENTRY ListEntry;// Offset=0x0 Size=0x10
-    struct _OB_HANDLE_REVOCATION_BLOCK * RevocationBlock;// Offset=0x10 Size=0x8
-    unsigned char AllowHandleRevocation;// Offset=0x18 Size=0x1
-    unsigned char Padding1[3];// Offset=0x19 Size=0x3
-    unsigned char Padding2[4];// Offset=0x1c Size=0x4
-};

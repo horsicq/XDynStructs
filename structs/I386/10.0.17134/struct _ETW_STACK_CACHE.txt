@@ -1,3 +1,0 @@
-struct _ETW_STACK_CACHE// Size=0x0
-{
-};

@@ -1,9 +1,0 @@
-struct _MI_ACCESS_LOG_STATE// Size=0x80
-{
-    struct _MM_PAGE_ACCESS_INFO_HEADER * CcAccessLog;// Offset=0x0 Size=0x8
-    struct _WORK_QUEUE_ITEM DisableAccessLogging;// Offset=0x8 Size=0x20
-    unsigned long Enabled;// Offset=0x28 Size=0x4
-    unsigned long MinLoggingPriority;// Offset=0x2c Size=0x4
-    unsigned char __align0[16];// Offset=0x30 Size=0x10
-    unsigned long long AccessLoggingLock;// Offset=0x40 Size=0x8
-};

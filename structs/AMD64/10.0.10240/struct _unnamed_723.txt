@@ -1,4 +1,0 @@
-struct _unnamed_723// Size=0x4
-{
-    union _unnamed_722 u;// Offset=0x0 Size=0x4
-};

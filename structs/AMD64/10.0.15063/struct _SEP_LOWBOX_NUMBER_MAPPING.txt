@@ -1,7 +1,0 @@
-struct _SEP_LOWBOX_NUMBER_MAPPING// Size=0x28
-{
-    struct _EX_PUSH_LOCK Lock;// Offset=0x0 Size=0x8
-    struct _RTL_BITMAP Bitmap;// Offset=0x8 Size=0x10
-    struct _RTL_DYNAMIC_HASH_TABLE * HashTable;// Offset=0x18 Size=0x8
-    unsigned char Active;// Offset=0x20 Size=0x1
-};

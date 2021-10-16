@@ -1,4 +1,0 @@
-struct _unnamed_340// Size=0x4
-{
-    unsigned long Reason;// Offset=0x0 Size=0x4
-};

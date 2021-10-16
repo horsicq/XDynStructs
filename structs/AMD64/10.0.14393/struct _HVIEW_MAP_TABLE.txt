@@ -1,4 +1,0 @@
-struct _HVIEW_MAP_TABLE// Size=0x800
-{
-    struct _HVIEW_MAP_ENTRY Entries[64];// Offset=0x0 Size=0x800
-};

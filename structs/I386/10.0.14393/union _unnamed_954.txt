@@ -1,7 +1,0 @@
-union _unnamed_954// Size=0x4
-{
-    struct _CONTROL_AREA * ControlArea;// Offset=0x0 Size=0x4
-    struct _FILE_OBJECT * FileObject;// Offset=0x0 Size=0x4
-    unsigned long RemoteImageFileObject:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
-    unsigned long RemoteDataFileObject:1;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x1
-};

@@ -1,9 +1,0 @@
-struct _IMAGE_SECURITY_CONTEXT// Size=0x8
-{
-    void * PageHashes;// Offset=0x0 Size=0x8
-    unsigned long long Value;// Offset=0x0 Size=0x8
-    unsigned long long SecurityBeingCreated:1;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x1
-    unsigned long long SecurityMandatory:1;// Offset=0x0 Size=0x8 BitOffset=0x1 BitSize=0x1
-    unsigned long long Unused:1;// Offset=0x0 Size=0x8 BitOffset=0x2 BitSize=0x1
-    unsigned long long PageHashPointer:61;// Offset=0x0 Size=0x8 BitOffset=0x3 BitSize=0x3d
-};

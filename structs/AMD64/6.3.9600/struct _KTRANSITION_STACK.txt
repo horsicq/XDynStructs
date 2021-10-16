@@ -1,6 +1,0 @@
-struct _KTRANSITION_STACK// Size=0x200
-{
-    unsigned char Stack[512];// Offset=0x0 Size=0x200
-    unsigned char IstStack[480];// Offset=0x0 Size=0x1e0
-    struct _KIST_BASE_FRAME IstFrame;// Offset=0x1e0 Size=0x20
-};

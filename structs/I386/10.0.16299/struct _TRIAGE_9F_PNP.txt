@@ -1,7 +1,0 @@
-struct _TRIAGE_9F_PNP// Size=0xc
-{
-    unsigned short Signature;// Offset=0x0 Size=0x2
-    unsigned short Revision;// Offset=0x2 Size=0x2
-    struct _TRIAGE_PNP_DEVICE_COMPLETION_QUEUE * CompletionQueue;// Offset=0x4 Size=0x4
-    struct _TRIAGE_EX_WORK_QUEUE * DelayedWorkQueue;// Offset=0x8 Size=0x4
-};

@@ -1,7 +1,0 @@
-struct _unnamed_332// Size=0x1c
-{
-    struct _SHARED_CACHE_MAP * SharedCacheMap;// Offset=0x0 Size=0x4
-    struct _IO_STATUS_BLOCK * IoStatus;// Offset=0x4 Size=0x4
-    struct _KEVENT CallerWaitEvent;// Offset=0x8 Size=0x10
-    unsigned char IsLowPriWriteBehind;// Offset=0x18 Size=0x1
-};

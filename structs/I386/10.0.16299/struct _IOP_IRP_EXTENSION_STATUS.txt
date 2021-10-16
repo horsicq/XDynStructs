@@ -1,6 +1,0 @@
-struct _IOP_IRP_EXTENSION_STATUS// Size=0xc
-{
-    unsigned long Flags;// Offset=0x0 Size=0x4
-    unsigned long ActivityId;// Offset=0x4 Size=0x4
-    unsigned long IoTracking;// Offset=0x8 Size=0x4
-};

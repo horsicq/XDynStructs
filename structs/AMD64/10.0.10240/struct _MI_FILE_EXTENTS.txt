@@ -1,4 +1,0 @@
-struct _MI_FILE_EXTENTS// Size=0x8
-{
-    struct _MI_FILE_EXTENTS_WAIT_BLOCK * WaitList;// Offset=0x0 Size=0x8
-};

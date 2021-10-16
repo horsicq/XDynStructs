@@ -1,5 +1,0 @@
-struct _OBJECT_HEADER_PROCESS_INFO// Size=0x10
-{
-    struct _EPROCESS * ExclusiveProcess;// Offset=0x0 Size=0x8
-    unsigned long long Reserved;// Offset=0x8 Size=0x8
-};

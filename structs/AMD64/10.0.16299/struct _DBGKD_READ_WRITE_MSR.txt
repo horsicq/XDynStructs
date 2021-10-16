@@ -1,6 +1,0 @@
-struct _DBGKD_READ_WRITE_MSR// Size=0xc
-{
-    unsigned long Msr;// Offset=0x0 Size=0x4
-    unsigned long DataValueLow;// Offset=0x4 Size=0x4
-    unsigned long DataValueHigh;// Offset=0x8 Size=0x4
-};

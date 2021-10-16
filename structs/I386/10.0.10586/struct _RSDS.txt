@@ -1,7 +1,0 @@
-struct _RSDS// Size=0x1c
-{
-    unsigned long Signature;// Offset=0x0 Size=0x4
-    struct _GUID Guid;// Offset=0x4 Size=0x10
-    unsigned long Age;// Offset=0x14 Size=0x4
-    char PdbName[1];// Offset=0x18 Size=0x1
-};

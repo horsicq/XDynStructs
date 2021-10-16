@@ -1,9 +1,0 @@
-struct _MM_AVL_TABLE// Size=0x30
-{
-    struct _MM_AVL_NODE BalancedRoot;// Offset=0x0 Size=0x18
-    unsigned long long DepthOfTree:5;// Offset=0x18 Size=0x8 BitOffset=0x0 BitSize=0x5
-    unsigned long long TableType:3;// Offset=0x18 Size=0x8 BitOffset=0x5 BitSize=0x3
-    unsigned long long NumberGenericTableElements:56;// Offset=0x18 Size=0x8 BitOffset=0x8 BitSize=0x38
-    void * NodeHint;// Offset=0x20 Size=0x8
-    void * NodeFreeHint;// Offset=0x28 Size=0x8
-};

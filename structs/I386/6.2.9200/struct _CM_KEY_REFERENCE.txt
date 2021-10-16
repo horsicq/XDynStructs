@@ -1,5 +1,0 @@
-struct _CM_KEY_REFERENCE// Size=0x8
-{
-    unsigned long KeyCell;// Offset=0x0 Size=0x4
-    struct _HHIVE * KeyHive;// Offset=0x4 Size=0x4
-};

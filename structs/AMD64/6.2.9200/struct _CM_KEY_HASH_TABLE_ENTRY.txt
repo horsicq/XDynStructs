@@ -1,6 +1,0 @@
-struct _CM_KEY_HASH_TABLE_ENTRY// Size=0x18
-{
-    struct _EX_PUSH_LOCK Lock;// Offset=0x0 Size=0x8
-    struct _KTHREAD * Owner;// Offset=0x8 Size=0x8
-    struct _CM_KEY_HASH * Entry;// Offset=0x10 Size=0x8
-};

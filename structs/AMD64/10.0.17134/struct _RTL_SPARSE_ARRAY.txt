@@ -1,6 +1,0 @@
-struct _RTL_SPARSE_ARRAY// Size=0x50
-{
-    struct _RTL_CSPARSE_BITMAP Bitmap;// Offset=0x0 Size=0x40
-    unsigned long long ElementCount;// Offset=0x40 Size=0x8
-    unsigned long ElementSizeShift;// Offset=0x48 Size=0x4
-};

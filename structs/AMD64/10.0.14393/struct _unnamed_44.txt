@@ -1,7 +1,0 @@
-struct _unnamed_44// Size=0x10
-{
-    unsigned long long Pcid:12;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0xc
-    unsigned long long Reserved:52;// Offset=0x0 Size=0x8 BitOffset=0xc BitSize=0x34
-    unsigned long long EntirePcid;// Offset=0x0 Size=0x8
-    unsigned long long Reserved2;// Offset=0x8 Size=0x8
-};

@@ -1,3 +1,0 @@
-union _PSP_CPU_QUOTA_APC// Size=0x0
-{
-};

@@ -1,6 +1,0 @@
-union _RTL_RUN_ONCE// Size=0x8
-{
-    void * Ptr;// Offset=0x0 Size=0x8
-    unsigned long long Value;// Offset=0x0 Size=0x8
-    unsigned long long State:2;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x2
-};

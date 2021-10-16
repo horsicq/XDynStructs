@@ -1,5 +1,0 @@
-struct wil_details_FeatureReportingCache// Size=0x8
-{
-    union wil_details_ReportedState reported;// Offset=0x0 Size=0x4
-    union wil_details_RecordedState recorded;// Offset=0x4 Size=0x4
-};

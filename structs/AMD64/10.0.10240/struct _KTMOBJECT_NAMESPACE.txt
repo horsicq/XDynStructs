@@ -1,8 +1,0 @@
-struct _KTMOBJECT_NAMESPACE// Size=0xa8
-{
-    struct _RTL_AVL_TABLE Table;// Offset=0x0 Size=0x68
-    struct _KMUTANT Mutex;// Offset=0x68 Size=0x38
-    unsigned short LinksOffset;// Offset=0xa0 Size=0x2
-    unsigned short GuidOffset;// Offset=0xa2 Size=0x2
-    unsigned char Expired;// Offset=0xa4 Size=0x1
-};

@@ -1,5 +1,0 @@
-struct _OBP_SYSTEM_DOS_DEVICE_STATE// Size=0x6c
-{
-    unsigned long GlobalDeviceMap;// Offset=0x0 Size=0x4
-    unsigned long LocalDeviceCount[26];// Offset=0x4 Size=0x68
-};

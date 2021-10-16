@@ -1,6 +1,0 @@
-struct _ETW_BUFFER_QUEUE// Size=0xc
-{
-    struct _SINGLE_LIST_ENTRY * QueueHead;// Offset=0x0 Size=0x4
-    struct _SINGLE_LIST_ENTRY * QueueTail;// Offset=0x4 Size=0x4
-    struct _SINGLE_LIST_ENTRY QueueEntry;// Offset=0x8 Size=0x4
-};

@@ -1,6 +1,0 @@
-struct _REMOTE_PORT_VIEW// Size=0xc
-{
-    unsigned long Length;// Offset=0x0 Size=0x4
-    unsigned long ViewSize;// Offset=0x4 Size=0x4
-    void * ViewBase;// Offset=0x8 Size=0x4
-};

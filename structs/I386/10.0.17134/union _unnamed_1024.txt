@@ -1,5 +1,0 @@
-union _unnamed_1024// Size=0x10
-{
-    struct _VF_TARGET_ALL_SHARED_EXPORT_THUNKS AllSharedExportThunks;// Offset=0x0 Size=0x10
-    struct _unnamed_1023 Flags;// Offset=0x0 Size=0x4
-};

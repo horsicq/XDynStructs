@@ -1,5 +1,0 @@
-struct _ETW_SYSTEM_LOGGER// Size=0x2
-{
-    unsigned char LoggerId;// Offset=0x0 Size=0x1
-    unsigned char ClockType;// Offset=0x1 Size=0x1
-};

@@ -1,5 +1,0 @@
-struct _MI_COMBINE_WORKITEM// Size=0x28
-{
-    void * NextEntry;// Offset=0x0 Size=0x8
-    struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x8 Size=0x20
-};

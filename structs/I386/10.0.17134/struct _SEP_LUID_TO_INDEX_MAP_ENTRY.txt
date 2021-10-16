@@ -1,8 +1,0 @@
-struct _SEP_LUID_TO_INDEX_MAP_ENTRY// Size=0x28
-{
-    struct _RTL_DYNAMIC_HASH_TABLE_ENTRY HashEntry;// Offset=0x0 Size=0xc
-    long ReferenceCount;// Offset=0xc Size=0x4
-    unsigned long long Luid;// Offset=0x10 Size=0x8
-    unsigned long long IndexIntoGlobalSingletonTable;// Offset=0x18 Size=0x8
-    unsigned char MarkedForDeletion;// Offset=0x20 Size=0x1
-};

@@ -1,7 +1,0 @@
-struct _DBGK_SILOSTATE// Size=0x20
-{
-    struct _EX_PUSH_LOCK ErrorPortLock;// Offset=0x0 Size=0x8
-    struct _DBGKP_ERROR_PORT * ErrorPort;// Offset=0x8 Size=0x8
-    struct _EPROCESS * ErrorProcess;// Offset=0x10 Size=0x8
-    struct _KEVENT * ErrorPortRegisteredEvent;// Offset=0x18 Size=0x8
-};

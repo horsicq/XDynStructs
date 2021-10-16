@@ -1,8 +1,0 @@
-struct _ETW_PMC_SUPPORT// Size=0x28
-{
-    enum _KPROFILE_SOURCE Source[4];// Offset=0x0 Size=0x10
-    unsigned long HookIdCount;// Offset=0x10 Size=0x4
-    unsigned short HookId[4];// Offset=0x14 Size=0x8
-    unsigned long CountersCount;// Offset=0x1c Size=0x4
-    struct _HAL_PMC_COUNTERS * ProcessorCtrs[1];// Offset=0x20 Size=0x8
-};

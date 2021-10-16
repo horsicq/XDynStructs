@@ -1,4 +1,0 @@
-struct _MI_ULTRA_MDL_NODE// Size=0x200
-{
-    struct _MI_ALIGNED_SLIST UltraMdlMaps[8];// Offset=0x0 Size=0x200
-};

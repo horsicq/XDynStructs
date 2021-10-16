@@ -1,6 +1,0 @@
-union _HEAP_LFH_SUBSEGMENT_DELAY_FREE// Size=0x8
-{
-    unsigned long long DelayFree:1;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x1
-    unsigned long long Count:63;// Offset=0x0 Size=0x8 BitOffset=0x1 BitSize=0x3f
-    void * AllBits;// Offset=0x0 Size=0x8
-};

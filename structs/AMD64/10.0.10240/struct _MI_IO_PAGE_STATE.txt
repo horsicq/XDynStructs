@@ -1,9 +1,0 @@
-struct _MI_IO_PAGE_STATE// Size=0x58
-{
-    unsigned long long IoPfnLock;// Offset=0x0 Size=0x8
-    struct _RTL_AVL_TREE IoPfnRoot[3];// Offset=0x8 Size=0x18
-    struct _LIST_ENTRY UnusedCachedMaps;// Offset=0x20 Size=0x10
-    unsigned long OldestCacheFlushTimeStamp;// Offset=0x30 Size=0x4
-    unsigned char __align0[4];// Offset=0x34 Size=0x4
-    struct _MI_IO_CACHE_STATS IoCacheStats;// Offset=0x38 Size=0x20
-};

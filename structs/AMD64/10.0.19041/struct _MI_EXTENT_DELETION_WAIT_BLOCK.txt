@@ -1,5 +1,0 @@
-struct _MI_EXTENT_DELETION_WAIT_BLOCK// Size=0x20
-{
-    struct _MI_EXTENT_DELETION_WAIT_BLOCK * Next;// Offset=0x0 Size=0x8
-    struct _KGATE Gate;// Offset=0x8 Size=0x18
-};

@@ -1,7 +1,0 @@
-struct _HV_HYPERVISOR_INTERFACE_INFO// Size=0x10
-{
-    unsigned int Interface;// Offset=0x0 Size=0x4
-    unsigned int ReservedEbx;// Offset=0x4 Size=0x4
-    unsigned int ReservedEcx;// Offset=0x8 Size=0x4
-    unsigned int ReservedEdx;// Offset=0xc Size=0x4
-};

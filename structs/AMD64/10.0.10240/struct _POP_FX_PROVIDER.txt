@@ -1,5 +1,0 @@
-struct _POP_FX_PROVIDER// Size=0x8
-{
-    unsigned long Index;// Offset=0x0 Size=0x4
-    unsigned char Activating;// Offset=0x4 Size=0x1
-};

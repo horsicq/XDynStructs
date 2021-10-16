@@ -1,6 +1,0 @@
-union _MM_STORE_KEY// Size=0x8
-{
-    unsigned long long KeyLow:60;// Offset=0x0 Size=0x8 BitOffset=0x0 BitSize=0x3c
-    unsigned long long KeyHigh:4;// Offset=0x0 Size=0x8 BitOffset=0x3c BitSize=0x4
-    unsigned long long EntireKey;// Offset=0x0 Size=0x8
-};

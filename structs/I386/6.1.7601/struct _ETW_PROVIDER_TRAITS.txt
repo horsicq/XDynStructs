@@ -1,6 +1,0 @@
-struct _ETW_PROVIDER_TRAITS// Size=0x14
-{
-    struct _RTL_BALANCED_NODE Node;// Offset=0x0 Size=0xc
-    unsigned long ReferenceCount;// Offset=0xc Size=0x4
-    unsigned char Traits[1];// Offset=0x10 Size=0x1
-};

@@ -1,4 +1,0 @@
-union _unnamed_210// Size=0x8
-{
-    unsigned long long KeepForever;// Offset=0x0 Size=0x8
-};

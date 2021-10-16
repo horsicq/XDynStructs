@@ -1,3 +1,0 @@
-struct _HEAP_LOCAL_SEGMENT_INFO// Size=0x0
-{
-};

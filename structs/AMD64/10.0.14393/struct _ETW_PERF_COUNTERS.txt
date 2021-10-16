@@ -1,9 +1,0 @@
-struct _ETW_PERF_COUNTERS// Size=0x18
-{
-    long TotalActiveSessions;// Offset=0x0 Size=0x4
-    long TotalBufferMemoryNonPagedPool;// Offset=0x4 Size=0x4
-    long TotalBufferMemoryPagedPool;// Offset=0x8 Size=0x4
-    long TotalGuidsEnabled;// Offset=0xc Size=0x4
-    long TotalGuidsNotEnabled;// Offset=0x10 Size=0x4
-    long TotalGuidsPreEnabled;// Offset=0x14 Size=0x4
-};

@@ -1,8 +1,0 @@
-struct _MI_LDW_WORK_CONTEXT// Size=0x38
-{
-    struct _WORK_QUEUE_ITEM WorkItem;// Offset=0x0 Size=0x20
-    struct _FILE_OBJECT * FileObject;// Offset=0x20 Size=0x8
-    long ErrorStatus;// Offset=0x28 Size=0x4
-    long Active;// Offset=0x2c Size=0x4
-    unsigned char FreeWhenDone;// Offset=0x30 Size=0x1
-};

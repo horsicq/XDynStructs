@@ -1,9 +1,0 @@
-struct _INVERTED_FUNCTION_TABLE// Size=0x1810
-{
-    unsigned long CurrentSize;// Offset=0x0 Size=0x4
-    unsigned long MaximumSize;// Offset=0x4 Size=0x4
-    unsigned long Epoch;// Offset=0x8 Size=0x4
-    unsigned char Overflow;// Offset=0xc Size=0x1
-    unsigned char __align0[3];// Offset=0xd Size=0x3
-    struct _INVERTED_FUNCTION_TABLE_ENTRY TableEntry[256];// Offset=0x10 Size=0x1800
-};

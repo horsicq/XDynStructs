@@ -1,4 +1,0 @@
-struct _MI_PAGE_COLORS// Size=0xc
-{
-    unsigned long PageSize[3];// Offset=0x0 Size=0xc
-};

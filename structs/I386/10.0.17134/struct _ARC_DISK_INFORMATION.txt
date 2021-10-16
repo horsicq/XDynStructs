@@ -1,4 +1,0 @@
-struct _ARC_DISK_INFORMATION// Size=0x8
-{
-    struct _LIST_ENTRY DiskSignatures;// Offset=0x0 Size=0x8
-};

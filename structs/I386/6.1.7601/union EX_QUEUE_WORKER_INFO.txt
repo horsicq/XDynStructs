@@ -1,8 +1,0 @@
-union EX_QUEUE_WORKER_INFO// Size=0x4
-{
-    unsigned long QueueDisabled:1;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0x1
-    unsigned long MakeThreadsAsNecessary:1;// Offset=0x0 Size=0x4 BitOffset=0x1 BitSize=0x1
-    unsigned long WaitMode:1;// Offset=0x0 Size=0x4 BitOffset=0x2 BitSize=0x1
-    unsigned long WorkerCount:29;// Offset=0x0 Size=0x4 BitOffset=0x3 BitSize=0x1d
-    long QueueWorkerInfo;// Offset=0x0 Size=0x4
-};

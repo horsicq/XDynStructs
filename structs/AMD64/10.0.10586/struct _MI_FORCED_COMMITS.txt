@@ -1,5 +1,0 @@
-struct _MI_FORCED_COMMITS// Size=0x8
-{
-    unsigned long Regular;// Offset=0x0 Size=0x4
-    unsigned long Wrap;// Offset=0x4 Size=0x4
-};

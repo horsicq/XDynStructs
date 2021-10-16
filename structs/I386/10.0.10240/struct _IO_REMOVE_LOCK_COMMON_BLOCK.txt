@@ -1,7 +1,0 @@
-struct _IO_REMOVE_LOCK_COMMON_BLOCK// Size=0x18
-{
-    unsigned char Removed;// Offset=0x0 Size=0x1
-    unsigned char Reserved[3];// Offset=0x1 Size=0x3
-    long IoCount;// Offset=0x4 Size=0x4
-    struct _KEVENT RemoveEvent;// Offset=0x8 Size=0x10
-};

@@ -1,7 +1,0 @@
-struct _DBGKD_FILL_MEMORY// Size=0x10
-{
-    unsigned long long Address;// Offset=0x0 Size=0x8
-    unsigned long Length;// Offset=0x8 Size=0x4
-    unsigned short Flags;// Offset=0xc Size=0x2
-    unsigned short PatternLength;// Offset=0xe Size=0x2
-};

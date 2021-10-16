@@ -1,4 +1,0 @@
-struct _MI_SYSTEM_REGION_REFERENCE// Size=0x4
-{
-    struct _unnamed_1504 u1;// Offset=0x0 Size=0x4
-};

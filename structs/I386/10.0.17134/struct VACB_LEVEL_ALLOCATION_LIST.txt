@@ -1,6 +1,0 @@
-struct VACB_LEVEL_ALLOCATION_LIST// Size=0x10
-{
-    struct _LIST_ENTRY VacbLevelList;// Offset=0x0 Size=0x8
-    void * VacbLevelWithBcbListHeads;// Offset=0x8 Size=0x4
-    unsigned long VacbLevelsAllocated;// Offset=0xc Size=0x4
-};

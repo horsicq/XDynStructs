@@ -1,5 +1,0 @@
-struct _PROCESSOR_IDLE_DEPENDENCY// Size=0x6
-{
-    struct _PROCESSOR_NUMBER Processor;// Offset=0x0 Size=0x4
-    unsigned char ExpectedState;// Offset=0x4 Size=0x1
-};

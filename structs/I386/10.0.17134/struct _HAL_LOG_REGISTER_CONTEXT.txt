@@ -1,5 +1,0 @@
-struct _HAL_LOG_REGISTER_CONTEXT// Size=0x8
-{
-    void  ( * LogRoutine)(unsigned long ,void * ,unsigned long );// Offset=0x0 Size=0x4
-    unsigned long Flag;// Offset=0x4 Size=0x4
-};

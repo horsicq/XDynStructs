@@ -1,5 +1,0 @@
-struct _ETW_HASH_BUCKET// Size=0x38
-{
-    struct _LIST_ENTRY ListHead[3];// Offset=0x0 Size=0x30
-    struct _EX_PUSH_LOCK BucketLock;// Offset=0x30 Size=0x8
-};

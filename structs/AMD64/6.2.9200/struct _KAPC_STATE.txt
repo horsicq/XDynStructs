@@ -1,8 +1,0 @@
-struct _KAPC_STATE// Size=0x30
-{
-    struct _LIST_ENTRY ApcListHead[2];// Offset=0x0 Size=0x20
-    struct _KPROCESS * Process;// Offset=0x20 Size=0x8
-    unsigned char KernelApcInProgress;// Offset=0x28 Size=0x1
-    unsigned char KernelApcPending;// Offset=0x29 Size=0x1
-    unsigned char UserApcPending;// Offset=0x2a Size=0x1
-};

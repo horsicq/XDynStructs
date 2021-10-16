@@ -1,9 +1,0 @@
-struct _HANDLE_TRACE_DEBUG_INFO// Size=0x80
-{
-    long RefCount;// Offset=0x0 Size=0x4
-    unsigned long TableSize;// Offset=0x4 Size=0x4
-    unsigned long BitMaskFlags;// Offset=0x8 Size=0x4
-    struct _FAST_MUTEX CloseCompactionLock;// Offset=0xc Size=0x20
-    unsigned long CurrentStackIndex;// Offset=0x2c Size=0x4
-    struct _HANDLE_TRACE_DB_ENTRY TraceDb[1];// Offset=0x30 Size=0x50
-};

@@ -1,6 +1,0 @@
-struct _SK_CRASH_MODULE// Size=0x48
-{
-    wchar_t ImageName[32];// Offset=0x0 Size=0x40
-    unsigned long SizeOfImage;// Offset=0x40 Size=0x4
-    unsigned long TimeDateStamp;// Offset=0x44 Size=0x4
-};

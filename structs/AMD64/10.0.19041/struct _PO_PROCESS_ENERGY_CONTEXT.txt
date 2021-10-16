@@ -1,3 +1,0 @@
-struct _PO_PROCESS_ENERGY_CONTEXT// Size=0x0
-{
-};

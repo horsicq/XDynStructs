@@ -1,7 +1,0 @@
-struct _WHEA_NOTIFICATION_DESCRIPTOR// Size=0x1c
-{
-    unsigned char Type;// Offset=0x0 Size=0x1
-    unsigned char Length;// Offset=0x1 Size=0x1
-    union _WHEA_NOTIFICATION_FLAGS Flags;// Offset=0x2 Size=0x2
-    union _unnamed_1331 u;// Offset=0x4 Size=0x18
-};

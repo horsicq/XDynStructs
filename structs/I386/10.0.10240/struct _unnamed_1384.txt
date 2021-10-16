@@ -1,4 +1,0 @@
-struct _unnamed_1384// Size=0x10
-{
-    struct _GUID DiskId;// Offset=0x0 Size=0x10
-};

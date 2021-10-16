@@ -1,7 +1,0 @@
-struct _DIRTY_PAGE_THRESHOLDS// Size=0x20
-{
-    unsigned long long DirtyPageThreshold;// Offset=0x0 Size=0x8
-    unsigned long long DirtyPageThresholdTop;// Offset=0x8 Size=0x8
-    unsigned long long DirtyPageThresholdBottom;// Offset=0x10 Size=0x8
-    unsigned long DirtyPageTarget;// Offset=0x18 Size=0x4
-};

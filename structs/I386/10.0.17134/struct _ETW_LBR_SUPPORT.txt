@@ -1,7 +1,0 @@
-struct _ETW_LBR_SUPPORT// Size=0x14
-{
-    unsigned long LbrHandle;// Offset=0x0 Size=0x4
-    unsigned long LbrOptions;// Offset=0x4 Size=0x4
-    unsigned long HookIdCount;// Offset=0x8 Size=0x4
-    unsigned short HookId[4];// Offset=0xc Size=0x8
-};

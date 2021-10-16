@@ -1,5 +1,0 @@
-struct _SID_AND_ATTRIBUTES// Size=0x8
-{
-    void * Sid;// Offset=0x0 Size=0x4
-    unsigned long Attributes;// Offset=0x4 Size=0x4
-};

@@ -1,5 +1,0 @@
-struct _MI_VAD_SEQUENTIAL_INFO// Size=0x4
-{
-    unsigned long Length:11;// Offset=0x0 Size=0x4 BitOffset=0x0 BitSize=0xb
-    unsigned long Vpn:21;// Offset=0x0 Size=0x4 BitOffset=0xb BitSize=0x15
-};

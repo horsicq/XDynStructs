@@ -1,4 +1,0 @@
-struct _WNF_LOCK// Size=0x4
-{
-    struct _EX_PUSH_LOCK PushLock;// Offset=0x0 Size=0x4
-};
