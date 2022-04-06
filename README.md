@@ -1,3 +1,3 @@
 # XDynStructs
 
-Structs for xntsv
+Structs
